@@ -1,7 +1,8 @@
 # Contributing
 
-[![中文](https://img.shields.io/badge/中文-当前页面-1f6feb?style=flat-square)](CONTRIBUTING.md)
-[![English](https://img.shields.io/badge/English-Read%20in%20English-9ca3af?style=flat-square)](../CONTRIBUTING.md)
+[![ZH](https://img.shields.io/badge/ZH-CURRENT-1f6feb?style=for-the-badge)](CONTRIBUTING.md)
+[![EN](https://img.shields.io/badge/EN-English-9ca3af?style=for-the-badge)](../CONTRIBUTING.md)
+[![Home](https://img.shields.io/badge/HOME-README-24292f?style=for-the-badge)](README.md)
 
 AI Agent Map 不追求变成“最长的 agent 链接列表”。
 

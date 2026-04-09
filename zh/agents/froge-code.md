@@ -1,7 +1,8 @@
 # Froge Code
 
-[![中文](https://img.shields.io/badge/中文-当前页面-1f6feb?style=flat-square)](froge-code.md)
-[![English](https://img.shields.io/badge/English-Read%20in%20English-9ca3af?style=flat-square)](../../agents/froge-code.md)
+[![ZH](https://img.shields.io/badge/ZH-CURRENT-1f6feb?style=for-the-badge)](froge-code.md)
+[![EN](https://img.shields.io/badge/EN-English-9ca3af?style=for-the-badge)](../../agents/froge-code.md)
+[![Home](https://img.shields.io/badge/HOME-README-24292f?style=for-the-badge)](../README.md)
 
 一句话：这个页面目前按 Automagik Forge 暂定映射，适合 review-first、多尝试、多 worktree 的 coding automation 流程。
 

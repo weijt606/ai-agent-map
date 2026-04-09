@@ -1,8 +1,9 @@
 # AI Agent Map
 
-[![中文](https://img.shields.io/badge/中文-查看中文版-9ca3af?style=flat-square)](zh/README.md)
-[![English](https://img.shields.io/badge/English-Current%20Page-1f6feb?style=flat-square)](README.md)
-[![License](https://img.shields.io/badge/License-MIT-2f855a?style=flat-square)](LICENSE)
+[![ZH](https://img.shields.io/badge/ZH-%E4%B8%AD%E6%96%87-9ca3af?style=for-the-badge)](zh/README.md)
+[![EN](https://img.shields.io/badge/EN-CURRENT-1f6feb?style=for-the-badge)](README.md)
+[![License](https://img.shields.io/badge/LICENSE-MIT-2f855a?style=for-the-badge)](LICENSE)
+[![Agent](https://img.shields.io/badge/AGENT-MAP-24292f?style=for-the-badge)](agents/README.md)
 
 <p align="center">
 	<img src="assets/banner-ferris-wheel.svg" alt="Illustrated banner showing a small traveler at a crossroads looking at a signpost of AI agents, with roads leading toward several mainstream options" width="100%" />
@@ -12,7 +13,7 @@ AI Agent Map is a practical, visual-first guide for comparing mainstream AI agen
 
 The goal is simple: help readers get to a sensible shortlist faster.
 
-## 🧭 What This Repo Is For
+## What This Repo Is For
 
 - The agent landscape is crowded.
 - Many resources explain ideas, but not fit, anti-fit, or operating cost.
@@ -20,7 +21,7 @@ The goal is simple: help readers get to a sensible shortlist faster.
 
 This repo stays focused on selection: what a system is good at, where it breaks down, and what kind of operator cost comes with it.
 
-## 🚦 Where To Start
+## Where To Start
 
 | If your question is... | Start here |
 | --- | --- |
@@ -29,7 +30,7 @@ This repo stays focused on selection: what a system is good at, where it breaks 
 | I already have candidates and want a side-by-side view | [mainstream matrix](comparisons/mainstream-agent-landscape.md) |
 | I care about dimensions like approval, memory, scheduling, and deployment | [capabilities](capabilities/README.md) |
 
-## 🗺️ The First Cut Of The Map
+## The First Cut Of The Map
 
 | Route | Representative projects | Typical user |
 | --- | --- | --- |
@@ -38,7 +39,7 @@ This repo stays focused on selection: what a system is good at, where it breaks 
 | Build-your-own system | [LangChain](agents/langchain.md), [LangGraph](agents/langgraph.md) | Teams building their own agent platform instead of buying one |
 | Self-hosted runtime | [Hermes Agent](agents/hermes-agent.md), [OpenClaw](agents/openclaw.md) | Users who need long-running agents, channels, devices, or deeper control |
 
-## 📚 Repo Structure
+## Repo Structure
 
 | Directory | Purpose |
 | --- | --- |
@@ -47,7 +48,7 @@ This repo stays focused on selection: what a system is good at, where it breaks 
 | [comparisons](comparisons/README.md) | Side-by-side comparisons for real decisions. |
 | [capabilities](capabilities/README.md) | Shared vocabulary for capability differences. |
 
-## 👀 Current Mainstream Coverage
+## Current Mainstream Coverage
 
 | Project | Route | One-line positioning |
 | --- | --- | --- |
@@ -64,7 +65,7 @@ This repo stays focused on selection: what a system is good at, where it breaks 
 | [LangGraph](agents/langgraph.md) | Platform | Low-level framework for durable stateful workflows |
 | [Froge Code](agents/froge-code.md) | Review-first automation | Provisionally mapped to Automagik Forge |
 
-## 🔎 Example Reading Paths
+## Example Reading Paths
 
 If you are still deciding where to begin, use one of these quick routes and then branch out.
 

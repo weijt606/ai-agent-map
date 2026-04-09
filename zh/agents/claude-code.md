@@ -1,7 +1,8 @@
 # Claude Code
 
-[![中文](https://img.shields.io/badge/中文-当前页面-1f6feb?style=flat-square)](claude-code.md)
-[![English](https://img.shields.io/badge/English-Read%20in%20English-9ca3af?style=flat-square)](../../agents/claude-code.md)
+[![ZH](https://img.shields.io/badge/ZH-CURRENT-1f6feb?style=for-the-badge)](claude-code.md)
+[![EN](https://img.shields.io/badge/EN-English-9ca3af?style=for-the-badge)](../../agents/claude-code.md)
+[![Home](https://img.shields.io/badge/HOME-README-24292f?style=for-the-badge)](../README.md)
 
 一句话：如果你想在终端和 IDE 里高频和 agent 协作写代码，Claude Code 通常是最顺手的起点之一。
 

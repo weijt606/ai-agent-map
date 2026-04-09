@@ -1,7 +1,8 @@
 # Hermes Agent
 
-[![中文](https://img.shields.io/badge/中文-当前页面-1f6feb?style=flat-square)](hermes-agent.md)
-[![English](https://img.shields.io/badge/English-Read%20in%20English-9ca3af?style=flat-square)](../../agents/hermes-agent.md)
+[![ZH](https://img.shields.io/badge/ZH-CURRENT-1f6feb?style=for-the-badge)](hermes-agent.md)
+[![EN](https://img.shields.io/badge/EN-English-9ca3af?style=for-the-badge)](../../agents/hermes-agent.md)
+[![Home](https://img.shields.io/badge/HOME-README-24292f?style=for-the-badge)](../README.md)
 
 一句话：Hermes Agent 更像一个需要长期经营的自托管工作环境，而不是只跑一次任务的工具。
 

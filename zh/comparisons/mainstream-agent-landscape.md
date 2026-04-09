@@ -1,7 +1,8 @@
 # 主流 Agent 选型矩阵
 
-[![中文](https://img.shields.io/badge/中文-当前页面-1f6feb?style=flat-square)](mainstream-agent-landscape.md)
-[![English](https://img.shields.io/badge/English-Read%20in%20English-9ca3af?style=flat-square)](../../comparisons/mainstream-agent-landscape.md)
+[![ZH](https://img.shields.io/badge/ZH-CURRENT-1f6feb?style=for-the-badge)](mainstream-agent-landscape.md)
+[![EN](https://img.shields.io/badge/EN-English-9ca3af?style=for-the-badge)](../../comparisons/mainstream-agent-landscape.md)
+[![Home](https://img.shields.io/badge/HOME-README-24292f?style=for-the-badge)](../README.md)
 
 这不是排行榜，而是一张能快速缩小候选集的横向表。
 

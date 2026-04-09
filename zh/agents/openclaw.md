@@ -1,7 +1,8 @@
 # OpenClaw
 
-[![中文](https://img.shields.io/badge/中文-当前页面-1f6feb?style=flat-square)](openclaw.md)
-[![English](https://img.shields.io/badge/English-Read%20in%20English-9ca3af?style=flat-square)](../../agents/openclaw.md)
+[![ZH](https://img.shields.io/badge/ZH-CURRENT-1f6feb?style=for-the-badge)](openclaw.md)
+[![EN](https://img.shields.io/badge/EN-English-9ca3af?style=for-the-badge)](../../agents/openclaw.md)
+[![Home](https://img.shields.io/badge/HOME-README-24292f?style=for-the-badge)](../README.md)
 
 一句话：OpenClaw 更像一个本地优先的 agent runtime 和 control plane，不像单点 coding 工具那样轻。
 

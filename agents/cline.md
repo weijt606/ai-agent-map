@@ -1,7 +1,8 @@
 # Cline
 
-[![中文](https://img.shields.io/badge/中文-查看中文版-9ca3af?style=flat-square)](../zh/agents/cline.md)
-[![English](https://img.shields.io/badge/English-Current%20Page-1f6feb?style=flat-square)](cline.md)
+[![ZH](https://img.shields.io/badge/ZH-%E4%B8%AD%E6%96%87-9ca3af?style=for-the-badge)](../zh/agents/cline.md)
+[![EN](https://img.shields.io/badge/EN-CURRENT-1f6feb?style=for-the-badge)](cline.md)
+[![Home](https://img.shields.io/badge/HOME-README-24292f?style=for-the-badge)](../README.md)
 
 One-line take: Cline is for people who want the agent to be powerful, but do not want to give up control.
 

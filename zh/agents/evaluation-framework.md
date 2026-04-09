@@ -1,7 +1,8 @@
 # Agent Evaluation Framework
 
-[![中文](https://img.shields.io/badge/中文-当前页面-1f6feb?style=flat-square)](evaluation-framework.md)
-[![English](https://img.shields.io/badge/English-Read%20in%20English-9ca3af?style=flat-square)](../../agents/evaluation-framework.md)
+[![ZH](https://img.shields.io/badge/ZH-CURRENT-1f6feb?style=for-the-badge)](evaluation-framework.md)
+[![EN](https://img.shields.io/badge/EN-English-9ca3af?style=for-the-badge)](../../agents/evaluation-framework.md)
+[![Home](https://img.shields.io/badge/HOME-README-24292f?style=for-the-badge)](../README.md)
 
 这个框架不是拿来给 agent 打总分的。
 

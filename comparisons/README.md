@@ -1,20 +1,19 @@
 # Comparisons
 
-中文：
-这个目录只放“有具体决策意义”的比较，不做泛化排行榜。比较的目标是帮助读者做取舍，而不是制造热度排序。
+[![中文](https://img.shields.io/badge/中文-查看中文版-9ca3af?style=flat-square)](../zh/comparisons/README.md)
+[![English](https://img.shields.io/badge/English-Current%20Page-1f6feb?style=flat-square)](README.md)
 
-English:
-This directory is for comparisons that support a concrete decision. It is not a generic leaderboard.
+This directory does one thing: compare the projects that actually end up on the same shortlist.
 
-## 比较原则 | Comparison Rules
+No leaderboard, no total score, no “ultimate best agent” framing.
 
-- 只比较解决同一类问题的系统。 Compare systems that solve the same class of problem.
-- 不给总分，不做绝对强弱结论。 Avoid total scores and absolute winner claims.
-- 必须写清楚 trade-off。 Every comparison must state the trade-off clearly.
-- 优先写“为什么选 A，不选 B”，而不是复述两个项目的功能表。 Explain why a reader should pick A instead of B, not just restate feature lists.
+## Comparison Rules
 
-## 后续方向 | Planned Direction
+- Compare systems that solve the same class of problem.
+- Always state the trade-off, not just the feature list.
+- Prefer “why pick A over B” to “here are two product summaries.”
+- Do not force frameworks and finished agents onto the same axis.
 
-- [mainstream-agent-landscape.md](mainstream-agent-landscape.md): 当前主流 coding agent / runtime / framework 的一页式选型矩阵。
-- Coding automation: direct executor vs review-first orchestration vs custom platform.
-- Self-hosted agent runtime: personal assistant runtime vs developer-first CLI agent.
+## Available Now
+
+- [Mainstream agent selection matrix](mainstream-agent-landscape.md)

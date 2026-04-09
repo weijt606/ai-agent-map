@@ -1,27 +1,28 @@
 # Capabilities
 
-中文：
-这个目录定义跨 agent 的能力维度。它不是功能堆叠清单，而是帮助读者判断“这个 agent 的能力边界在哪里”的公共语言。
+[![中文](https://img.shields.io/badge/中文-查看中文版-9ca3af?style=flat-square)](../zh/capabilities/README.md)
+[![English](https://img.shields.io/badge/English-Current%20Page-1f6feb?style=flat-square)](README.md)
 
-English:
-This directory defines cross-agent capability dimensions. It is not a feature dump. It is the shared language used to describe where an agent's real capability boundary sits.
+This directory is not a feature dump. It is a shared vocabulary.
 
-## 当前能力词汇表 | Current Capability Vocabulary
+The point is to keep profile pages speaking the same language, otherwise it becomes too easy to say “both support it” when the actual strength difference is large.
 
-| Capability | Meaning in this repo |
-| --- | --- |
-| Tool use | Agent can call external tools or APIs such as shell, browser, Slack, or databases. |
-| Code execution | Agent can run code, tests, or shell commands in a real environment. |
-| Memory | Agent can preserve or retrieve useful context across steps or sessions. |
-| Orchestration | Agent can coordinate a workflow, not just answer a prompt. |
-| Multi-agent | Agent can delegate or parallelize work across subagents or role-based workers. |
-| Human approval | Workflow supports explicit review, interrupt, or approval gates. |
-| Scheduling | System can run work on a timer or event trigger. |
-| Delivery surfaces | System can deliver results through CLI, web UI, messaging, or devices. |
-| Deployment control | Team can choose managed, self-hosted, local-first, or framework-level ownership. |
+## Current Priority Dimensions
 
-## 怎么使用这些维度 | How To Use These Dimensions
+| Dimension | What it really means here | Typical question |
+| --- | --- | --- |
+| Tool use | Whether the system can actually call tools or APIs | Does it just talk, or can it really act? |
+| Code execution | Whether it can run commands, tests, and scripts in a real environment | Does it only suggest changes, or can it execute them? |
+| Memory | Whether it can preserve or retrieve useful context across time | Does it still know anything next session? |
+| Orchestration | Whether it coordinates workflow instead of just answering prompts | Does it help move work forward? |
+| Multi-agent | Whether it supports delegation, subagents, or parallel work | Is it one worker or several? |
+| Human approval | Whether there are explicit review and interrupt points | Can you stop the risky actions? |
+| Scheduling | Whether work can run on time or event triggers | Can it work in the background on a schedule? |
+| Delivery surfaces | Where the system meets the operator | Terminal, editor, web, Slack, Telegram, device? |
+| Deployment control | How much control the team has over the runtime boundary | Managed, self-hosted, local-first, framework-only? |
 
-- 先看哪些能力是“必须有”。 First identify which capabilities are mandatory.
-- 再看这些能力是“核心能力”还是“附带支持”。 Then decide whether a capability is core or merely supported.
-- 最后看代价，尤其是安全、运维和 review 责任。 Finally check the cost, especially security, ops, and review burden.
+## How To Use These Dimensions
+
+1. Mark the dimensions that are mandatory for your workflow.
+2. Decide whether each one is a core strength or just incidental support.
+3. Check the cost attached to that dimension: security, approvals, secrets, runtime burden, and operator overhead.

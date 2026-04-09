@@ -1,46 +1,43 @@
 # Agents
 
-中文：
-这个目录收录独立的 agent 页面。每个页面都遵循同一套评估框架，重点写能力边界、适用场景、反向适配和复杂度，而不是简单摘抄项目介绍。
+[![中文](https://img.shields.io/badge/中文-查看中文版-9ca3af?style=flat-square)](../zh/agents/README.md)
+[![English](https://img.shields.io/badge/English-Current%20Page-1f6feb?style=flat-square)](README.md)
 
-English:
-This directory contains standalone agent pages. Each page follows the same evaluation framework, focusing on capability boundaries, fit, anti-fit, and complexity rather than copied product summaries.
+This is not a wall of names.
 
-## 当前条目 | Current Profiles
+Think of it as a shortlist directory: understand the route first, then decide which profile is worth opening.
 
-| Agent | Category | Open Source | Best Fit | Status |
+## Browse By Route
+
+| Route | Representative projects | Best for |
+| --- | --- | --- |
+| Direct execution | [Claude Code](claude-code.md), [Codex](codex.md), [Devin](devin.md), [OpenHands](openhands.md) | People who want to hand a coding task directly to an agent |
+| Strong approval / strong control | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md) | People who want review and human pacing to stay central |
+| Build-your-own platform | [LangChain](langchain.md), [LangGraph](langgraph.md) | Teams building their own agent system |
+| Self-hosted runtime | [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md) | Users who need long-lived agents, channels, devices, or deeper control |
+| Managed background path | [Claude Managed Agents](claude-managed-agents.md) | Users who need scheduled, cloud, or detached execution |
+
+## Current Coverage
+
+| Project | Category | Open source | One-line fit | Status |
 | --- | --- | --- | --- | --- |
-| [Claude Code](claude-code.md) | execution | No | IDE and terminal-first coding automation | Verified public positioning |
-| [Claude Managed Agents](claude-managed-agents.md) | automation | No | Managed and cloud-style Claude task execution | Mapped from current Anthropic docs |
-| [Codex](codex.md) | execution | Mixed | Cloud task delegation with isolated environments | Verified public positioning |
-| [GitHub Copilot](github-copilot.md) | platform | No | Multi-surface agent workflows in VS Code and GitHub | Verified public positioning |
-| [Cline](cline.md) | execution | Yes | Approval-first editor-native coding agent | Verified public project |
-| [OpenHands](openhands.md) | execution | Yes | Self-hosted or hosted AI-driven development agent | Verified public project |
-| [Devin](devin.md) | execution | No | Direct software engineering execution | Verified public positioning |
-| [OpenClaw](openclaw.md) | platform | Yes | Local-first runtime with tools, channels, and routing | Verified public project |
-| [Hermes Agent](hermes-agent.md) | multi-agent | Yes | Self-hosted CLI and messaging agent with memory and delegation | Verified public project |
-| [LangChain](langchain.md) | platform | Yes | Fast path to building custom agents on top of LangGraph | Verified public project |
-| [Froge Code](froge-code.md) | automation | Yes | Review-first coding automation orchestration | Name needs confirmation |
-| [LangGraph](langgraph.md) | platform | Yes | Build custom stateful agent systems | Verified public project |
+| [Claude Code](claude-code.md) | execution | No | Local and IDE-first coding agent | Verified |
+| [Claude Managed Agents](claude-managed-agents.md) | automation | No | Anthropic managed / cloud execution mapping | Mapping documented |
+| [Codex](codex.md) | execution | No | Cloud software engineering agent inside ChatGPT | Verified against current product boundary |
+| [GitHub Copilot](github-copilot.md) | platform | No | Multi-surface agent platform across VS Code and GitHub | Verified |
+| [Cline](cline.md) | execution | Yes | Approval-first editor-native coding agent | Verified |
+| [OpenHands](openhands.md) | execution | Yes | Open-source software engineering agent | Verified |
+| [Devin](devin.md) | execution | No | Managed end-to-end software engineering execution | Verified |
+| [Hermes Agent](hermes-agent.md) | multi-agent | Yes | Self-hosted environment with memory, skills, and subagents | Verified |
+| [OpenClaw](openclaw.md) | platform | Yes | Local-first runtime across channels and devices | Verified |
+| [LangChain](langchain.md) | platform | Yes | High-level framework for custom agents | Verified |
+| [LangGraph](langgraph.md) | platform | Yes | Low-level framework for durable workflows | Verified |
+| [Froge Code](froge-code.md) | automation | Yes | Provisionally mapped to Automagik Forge | Name still needs confirmation |
 
-## 覆盖说明 | Coverage Notes
+## Writing Standard
 
-中文：
-这个目录的策略是先覆盖高频选型对象，再继续扩到更多细分 agent。当前优先覆盖的是 coding agents、managed agents、self-hosted runtimes 和主流 orchestration frameworks。
+See [evaluation framework](evaluation-framework.md).
 
-English:
-The current strategy is to cover the most common decision targets first, then expand into more specialized agents. The current priority areas are coding agents, managed agents, self-hosted runtimes, and mainstream orchestration frameworks.
+## Naming Notes
 
-## 评估框架 | Evaluation Framework
-
-统一结构见 [evaluation-framework.md](evaluation-framework.md)。
-
-The shared structure lives in [evaluation-framework.md](evaluation-framework.md).
-
-## 命名说明 | Naming Notes
-
-中文：
-如果一个条目的公开名称存在歧义，本仓库不会强行“猜对”，而是会保留显式的核验说明。这比写出错误结论更有价值。
-
-English:
-If a project name is publicly ambiguous, the repository keeps an explicit verification note instead of pretending the name has been resolved. That is more useful than a confident but wrong profile.
+If a project name or public boundary is ambiguous, this directory keeps the ambiguity visible instead of pretending verification is complete.

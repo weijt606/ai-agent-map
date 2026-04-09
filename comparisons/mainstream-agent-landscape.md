@@ -1,38 +1,37 @@
-# Mainstream Agent Landscape
+# Mainstream Agent Selection Matrix
 
-中文：
-这不是排行榜，而是一个帮助你快速定位主流 agent 项目的选型矩阵。每一行回答的是“它最适合拿来解决什么问题”，而不是“谁更强”。
+[![中文](https://img.shields.io/badge/中文-查看中文版-9ca3af?style=flat-square)](../zh/comparisons/mainstream-agent-landscape.md)
+[![English](https://img.shields.io/badge/English-Current%20Page-1f6feb?style=flat-square)](mainstream-agent-landscape.md)
 
-English:
-This is not a leaderboard. It is a selection matrix for mainstream agent projects. Each row answers what problem the system is best suited to solve, not which one is universally strongest.
+This is not a leaderboard. It is a first-pass matrix for shrinking the shortlist.
 
-## 一页式选型矩阵 | One-Page Selection Matrix
+Each row answers one question: what kind of problem is this project best suited to solve?
 
-| Agent | Type | Deployment posture | Best for | Main trade-off |
-| --- | --- | --- | --- | --- |
-| [Claude Code](../agents/claude-code.md) | Local-first coding agent | Managed product across terminal, IDE, desktop, web | Tight local coding workflows with MCP, instructions, and subagents | Less ideal for fully detached background-only execution |
-| [Claude Managed Agents](../agents/claude-managed-agents.md) | Managed automation surface | Managed / programmable Anthropic execution paths | Scheduled, background, or embedded Claude agent workflows | Product boundary is spread across several Anthropic concepts |
-| [Codex](../agents/codex.md) | Cloud coding agent | Managed cloud plus CLI / IDE surfaces | Async coding delegation in isolated environments | Less editor-native and more asynchronous |
-| [GitHub Copilot](../agents/github-copilot.md) | Agent platform | VS Code local, CLI, cloud, third-party | GitHub and VS Code centered local-to-cloud handoff | Best inside Microsoft / GitHub tooling |
-| [Cline](../agents/cline.md) | Approval-first coding agent | Local editor and terminal workflows | Powerful coding automation with explicit approvals | Approval overhead is part of the cost |
-| [OpenHands](../agents/openhands.md) | Open-source SWE agent | Self-hosted, cloud, enterprise | Open-source AI-driven development with multiple operating modes | Heavier setup and runtime burden |
-| [Devin](../agents/devin.md) | Managed SWE executor | Managed cloud product | Direct issue-to-PR style engineering execution | Lower control and self-hosting flexibility |
-| [Hermes Agent](../agents/hermes-agent.md) | Self-hosted multi-agent | Self-hosted CLI and gateway | Long-lived agent environment with memory, skills, and delegation | Needs ongoing operational curation |
-| [OpenClaw](../agents/openclaw.md) | Runtime / gateway | Local-first self-hosted runtime | Multi-channel, multi-device, tool-rich assistants | Overkill for pure coding automation |
-| [LangChain](../agents/langchain.md) | High-level framework | Open-source library | Quickly building custom agents | Less precise for advanced durable orchestration |
-| [LangGraph](../agents/langgraph.md) | Low-level orchestration framework | Open-source library | Stateful, durable, approval-heavy agent systems | Highest design and ops burden |
-| [Froge Code](../agents/froge-code.md) | Review-first coding automation | Self-hosted platform, mapped to Forge | Task-board-centric coding automation and multi-attempt review | Name still needs confirmation |
+## One-Page Comparison View
 
-## 快速判断 | Fast Heuristics
+| Project | Route | Where it runs | Operating rhythm | Best for | Main cost |
+| --- | --- | --- | --- | --- | --- |
+| [Claude Code](../agents/claude-code.md) | Local collaboration coding agent | Terminal, IDE, desktop, web | High interaction | Teams who want to code with an agent in-flow | Less ideal for fully detached background execution |
+| [Claude Managed Agents](../agents/claude-managed-agents.md) | Managed automation path | Anthropic managed / cloud execution | Scheduled, detached, programmatic | Background Claude workflows | Public boundary is spread across multiple concepts |
+| [Codex](../agents/codex.md) | Cloud delegation coding agent | Isolated cloud execution plus CLI / IDE | Async delegation | Reviewable task execution with logs and tests | Less immediate than editor-native agents |
+| [GitHub Copilot](../agents/github-copilot.md) | Agent platform | VS Code, local CLI, cloud, GitHub | Local-to-cloud handoff | Teams centered on VS Code and GitHub | Best value depends on ecosystem alignment |
+| [Cline](../agents/cline.md) | Approval-first coding agent | Editor and local terminal | High approval, high control | Powerful editor-native automation with human control | Approval overhead is part of the model |
+| [OpenHands](../agents/openhands.md) | Open-source SWE agent | Self-hosted, cloud, enterprise | Flexible | Teams evaluating serious open-source execution | Heavier setup and runtime requirements |
+| [Devin](../agents/devin.md) | Managed executor | Managed cloud product | Delegate then review | Clear issue-to-PR style execution | Less room for self-hosting and deep customization |
+| [Hermes Agent](../agents/hermes-agent.md) | Self-hosted multi-agent environment | CLI plus gateway | Long-lived | Memory, skills, delegation, channels | Needs ongoing operational curation |
+| [OpenClaw](../agents/openclaw.md) | Runtime / gateway | Local-first self-hosted runtime | Always-on runtime style | Multi-channel, device-aware, tool-rich assistants | Too heavy for pure coding-only work |
+| [LangChain](../agents/langchain.md) | High-level framework | Open-source library | Fast assembly | Building custom agents quickly | Less precise than lower-level orchestration |
+| [LangGraph](../agents/langgraph.md) | Low-level orchestration framework | Open-source library | Platform building | Durable stateful agent workflows | Highest design and ops burden |
+| [Froge Code](../agents/froge-code.md) | Review-first automation platform | Self-hosted platform | Multiple attempts plus human choice | Task-board-centric coding automation | Name still needs confirmation |
 
-- 想边写边配合：先看 [Claude Code](../agents/claude-code.md) 或 [Cline](../agents/cline.md)。
-- 想异步丢任务：先看 [Codex](../agents/codex.md) 或 [Devin](../agents/devin.md)。
-- 想要开源可运行系统：先看 [OpenHands](../agents/openhands.md)、[Hermes Agent](../agents/hermes-agent.md) 或 [OpenClaw](../agents/openclaw.md)。
-- 想自己搭平台：先看 [LangChain](../agents/langchain.md) 和 [LangGraph](../agents/langgraph.md)。
-- 想 review-first：先看 [Froge Code](../agents/froge-code.md) 或 [GitHub Copilot](../agents/github-copilot.md) 的 cloud workflow。
+## How To Read This Table
 
-## 读这个矩阵时不要犯的错 | What Not To Do
+1. Start with the route and eliminate the models that do not match your workflow.
+2. Check where the system runs and remove anything that violates your deployment boundary.
+3. Read the “main cost” column carefully. It is usually more important than the feature list.
 
-- 不要把 framework 和成品 agent 放在同一条评价线上。 Do not evaluate frameworks and finished agents on the same axis.
-- 不要把“支持某能力”当成“在这个能力上最好”。 Do not confuse feature support with primary strength.
-- 不要忽视操作成本。 The operating cost is part of the product.
+## Three Things Not To Mix Up
+
+- A framework is not the same thing as a finished agent.
+- Feature support is not the same thing as primary strength.
+- Operating cost is part of the product.

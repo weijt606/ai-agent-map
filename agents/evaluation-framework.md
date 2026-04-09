@@ -1,99 +1,82 @@
 # Agent Evaluation Framework
 
-中文：
-这个框架不追求给 agent 打一个总分，而是帮助读者回答一个更实用的问题：这个 agent 适不适合我的任务和我的团队。
+[![中文](https://img.shields.io/badge/中文-查看中文版-9ca3af?style=flat-square)](../zh/agents/evaluation-framework.md)
+[![English](https://img.shields.io/badge/English-Current%20Page-1f6feb?style=flat-square)](evaluation-framework.md)
 
-English:
-This framework is not designed to produce a single score. Its purpose is to help a reader answer a more useful question: does this agent fit my task and operating model?
+This framework is not for assigning a total score.
 
-## 必填字段 | Required Fields
+It exists so that different profiles can be compared side by side instead of each one drifting into a totally different writing style.
 
-| Field | What to record | Why it matters |
-| --- | --- | --- |
-| `name` | Canonical project name and vendor or owner | Avoid alias confusion |
-| `category` | `execution`, `automation`, `multi-agent`, or `platform` | Helps readers narrow quickly |
-| `capabilities` | Concrete capability surface such as tool use, execution, memory, scheduling, orchestration | Keeps the profile practical |
-| `best use cases` | Problems this agent is genuinely good at | Turns description into guidance |
-| `not suitable for` | Scenarios where the agent is a poor fit | Prevents bad adoption decisions |
-| `complexity level` | `low`, `medium`, or `high` with a short explanation | Sets setup and ops expectations |
-| `real-world usage notes` | Practical observations, caveats, trust boundaries, or operator requirements | Makes the profile usable for production decisions |
+## Required Fields
 
-## 推荐字段 | Recommended Fields
-
-| Field | What to record |
+| Field | What it should answer |
 | --- | --- |
-| `open_source` | Whether the system is open-source, closed-source, or mixed |
-| `homepage` / `repo` | Official entry points |
-| `verification` | Whether the profile is fully verified or has naming / positioning ambiguity |
-| `delivery model` | Managed SaaS, self-hosted runtime, library, local-first app, and so on |
-| `last_reviewed` | When the profile was last updated |
+| `name` | What the project is actually called and who owns it |
+| `category` | Whether it is mainly an executor, automation system, multi-agent system, or platform |
+| `capabilities` | Where its real strength boundary sits |
+| `best use cases` | What kinds of problems should start here |
+| `not suitable for` | What kinds of problems should not start here |
+| `complexity level` | How heavy it is to operate in practice |
+| `real-world usage notes` | The biggest practical caveats, costs, or operator responsibilities |
 
-## 分类定义 | Category Definitions
+## Recommended Fields
 
-| Category | Meaning |
+| Field | Why it helps |
 | --- | --- |
-| `execution` | A direct worker agent that takes a task and executes it with tools. |
-| `automation` | A system centered on repeatable workflows, task queues, scheduling, approval steps, or task orchestration. |
-| `multi-agent` | A system that explicitly delegates, coordinates, or parallelizes work across subagents. |
-| `platform` | Infrastructure or framework used to build, host, route, or operate agents. |
+| `open_source` | Clarifies whether the project is open, closed, or mixed |
+| `homepage` / `repo` | Points readers to the official source |
+| `verification` | Notes ambiguity in naming or positioning |
+| `delivery model` | Tells readers whether the system is managed, self-hosted, local-first, or framework-only |
+| `last_reviewed` | Signals how recent the verification is |
 
-## 复杂度定义 | Complexity Definitions
+## Category Definitions
 
-| Level | Meaning |
+| Category | Meaning here |
 | --- | --- |
-| `low` | A small team or individual can get value quickly with limited setup and few moving parts. |
-| `medium` | Setup is reasonable, but successful use still requires workflow changes, permissions, or operational discipline. |
-| `high` | The system needs significant orchestration design, infra ownership, security work, or observability to run well. |
+| `execution` | You hand it a task and it does work directly |
+| `automation` | It behaves more like workflow, scheduling, task queue, approval, or orchestration system |
+| `multi-agent` | It explicitly supports delegation, subagents, or parallel collaboration |
+| `platform` | It is mainly infrastructure for building, routing, hosting, or operating agents |
 
-## 写作规则 | Authoring Rules
+## Complexity Definitions
 
-- 优先写任务结果，不优先写架构术语。 Write task outcomes before architecture details.
-- 必须说明边界条件。 Every profile must state the boundary conditions.
-- 不要把“支持某能力”写成“擅长某能力”。 Do not confuse support for a feature with real strength in that area.
-- 尽量写出 operator 视角的成本。 Capture the operator cost: setup, review burden, trust model, and maintenance.
-- 如果公开信息不足，明确说明，不要补全想象中的细节。 If public information is incomplete, say so instead of inventing detail.
+| Level | Meaning here |
+| --- | --- |
+| `low` | Small teams or individuals can get value quickly with little setup |
+| `medium` | Reasonable to start, but still requires workflow, permission, or environment management |
+| `high` | Requires meaningful systems design, infra ownership, security work, or observability |
 
-## 建议的 Front Matter | Suggested Front Matter
+## Writing Rules
 
-```yaml
----
-name: "Agent Name"
-vendor: "Vendor or owner"
-category: "execution"
-open_source: true
-complexity: "medium"
-verification: "verified-public-project"
-last_reviewed: "2026-04-09"
-description: "One-sentence English summary."
-description_zh: "一句中文概述。"
-homepage: "https://example.com"
-repo: "https://github.com/example/repo"
----
-```
+- Write task outcomes before architecture language.
+- Always state anti-fit, not just fit.
+- Do not confuse feature support with primary strength.
+- Capture operator cost: approvals, environment setup, secrets, review burden, maintenance.
+- If public information is incomplete, say so directly.
 
-## 建议的页面结构 | Suggested Page Structure
+## Suggested Page Structure
 
 ```md
 # Agent Name
 
-简短定位。 Short positioning.
+One-line positioning.
 
-## 基本信息 | Snapshot
+## Quick Read
 
-## 能力画像 | Capability Profile
+## When To Pick It
 
-## 最适合的使用场景 | Best Use Cases
+## When Not To Pick It
 
-## 不适合的场景 | Not Suitable For
+## Capability Shape
 
-## 复杂度判断 | Complexity
+## Operating Cost
 
-## 实战备注 | Real-World Usage Notes
+## Bottom Line
 ```
 
-## 这个框架刻意不做什么 | What This Framework Deliberately Avoids
+## What This Framework Avoids On Purpose
 
-- 不做统一分数。 No single total score.
-- 不做“谁更强”的空泛排行。 No vague strength ranking.
-- 不把研究原型和生产工具当成同一类对象。 No false equivalence between research prototypes and production tools.
-- 不以 star、融资、热度代替适配度。 No popularity-based evaluation.
+- No total score.
+- No vague leaderboard.
+- No false equivalence between research prototypes and production tools.
+- No popularity-based ranking disguised as evaluation.

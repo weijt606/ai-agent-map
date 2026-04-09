@@ -15,7 +15,8 @@
 | 是否开源 | 是 |
 | 最适合 | 持久化、有状态、审批流、恢复能力 |
 | 主要代价 | 设计和运维成本最高 |
-| 官方入口 | https://docs.langchain.com/oss/python/langgraph/overview |
+| 官网 | https://docs.langchain.com/oss/python/langgraph/overview |
+| GitHub 仓库 | https://github.com/langchain-ai/langgraph |
 
 ## 什么时候选它
 

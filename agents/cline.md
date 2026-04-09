@@ -15,7 +15,8 @@ One-line take: Cline is for people who want the agent to be powerful, but do not
 | Open source | Yes |
 | Best for | High-control local editor workflows |
 | Main cost | Frequent approvals create friction |
-| Official entry | https://docs.cline.bot/ |
+| Official website | https://docs.cline.bot/ |
+| GitHub repo | https://github.com/cline/cline |
 
 ## When To Pick It
 

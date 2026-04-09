@@ -15,7 +15,8 @@ One-line take: OpenClaw is better understood as a local-first runtime and contro
 | Open source | Yes |
 | Best for | Channels, devices, tools, and long-running assistants |
 | Main cost | Many routing, permission, security, and ops decisions |
-| Official entry | https://openclaw.ai |
+| Official website | https://openclaw.ai |
+| GitHub repo | https://github.com/openclaw/openclaw |
 
 ## When To Pick It
 

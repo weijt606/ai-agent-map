@@ -4,18 +4,18 @@
 [![EN](https://img.shields.io/badge/EN-English-2563eb?style=for-the-badge&labelColor=1d4ed8)](../../agents/froge-code.md)
 [![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-一句话：这个页面目前按 Automagik Forge 暂定映射，适合 review-first、多尝试、多 worktree 的 coding automation 流程。
+一句话：这个页面目前按 Automagik Genie 映射，适合 review-first、多尝试、多 worktree 的 coding automation 流程。
 
 ## 一眼判断
 
 | 项目 | 结论 |
 | --- | --- |
-| 当前映射 | Automagik Forge |
+| 当前映射 | Automagik Genie |
 | 路线 | review-first 自动化平台 |
-| 是否开源 | 是 |
+| 是否开源 | 官方称开源，但公开产品仓库入口暂时不够清晰 |
 | 最适合 | 任务板、多次尝试、人工挑选结果 |
-| 主要代价 | 名称仍待进一步确认，流程也更重 |
-| 官方入口 | https://forge.automag.ik |
+| 主要代价 | 对外品牌命名仍在 Automagik 和 Genie 之间演进，流程也更重 |
+| 官网 | https://automagik.dev/ |
 
 ## 什么时候选它
 

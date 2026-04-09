@@ -33,7 +33,7 @@
 | [OpenClaw](openclaw.md) | platform | 是 | 多渠道、多设备、本地优先 runtime | 已核验 |
 | [LangChain](langchain.md) | platform | 是 | 快速搭自定义 agent 的高层框架 | 已核验 |
 | [LangGraph](langgraph.md) | platform | 是 | 长期运行、有状态 agent workflow 的底层框架 | 已核验 |
-| [Froge Code](froge-code.md) | automation | 是 | 当前按 Automagik Forge 暂定映射 | 名称待进一步确认 |
+| [Froge Code](froge-code.md) | automation | 是 | 当前映射为 Automagik Genie | 对外命名仍在演进 |
 
 ## 写法标准
 

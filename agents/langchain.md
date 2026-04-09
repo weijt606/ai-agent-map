@@ -15,7 +15,8 @@ One-line take: LangChain is not a ready-made agent. It is a higher-level assembl
 | Open source | Yes |
 | Best for | Fast prototyping of custom agents |
 | Main cost | Complex workflows often still push downward into lower-level orchestration |
-| Official entry | https://docs.langchain.com/oss/python/langchain/overview |
+| Official website | https://docs.langchain.com/oss/python/langchain/overview |
+| GitHub repo | https://github.com/langchain-ai/langchain |
 
 ## When To Pick It
 

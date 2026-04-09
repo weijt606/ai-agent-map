@@ -15,7 +15,8 @@ One-line take: LangGraph is for teams that already know they need durable, state
 | Open source | Yes |
 | Best for | Durable state, approval steps, and recoverable workflows |
 | Main cost | Highest design and operations burden |
-| Official entry | https://docs.langchain.com/oss/python/langgraph/overview |
+| Official website | https://docs.langchain.com/oss/python/langgraph/overview |
+| GitHub repo | https://github.com/langchain-ai/langgraph |
 
 ## When To Pick It
 

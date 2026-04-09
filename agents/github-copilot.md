@@ -15,7 +15,7 @@ One-line take: GitHub Copilot now behaves more like an agent platform than a sin
 | Open source | No |
 | Best for | Teams that want local, CLI, and cloud paths in one flow |
 | Main cost | Best value depends heavily on ecosystem alignment |
-| Official entry | https://code.visualstudio.com/docs/copilot/agents/overview |
+| Official website | https://code.visualstudio.com/docs/copilot/agents/overview |
 
 ## When To Pick It
 

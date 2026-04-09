@@ -15,7 +15,8 @@
 | 是否开源 | 是 |
 | 最适合 | 强控制、本地编辑器工作流 |
 | 主要代价 | 高频审批会带来摩擦 |
-| 官方入口 | https://docs.cline.bot/ |
+| 官网 | https://docs.cline.bot/ |
+| GitHub 仓库 | https://github.com/cline/cline |
 
 ## 什么时候选它
 

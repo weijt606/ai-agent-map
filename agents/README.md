@@ -33,7 +33,7 @@ Think of it as a shortlist directory: understand the route first, then decide wh
 | [OpenClaw](openclaw.md) | platform | Yes | Local-first runtime across channels and devices | Verified |
 | [LangChain](langchain.md) | platform | Yes | High-level framework for custom agents | Verified |
 | [LangGraph](langgraph.md) | platform | Yes | Low-level framework for durable workflows | Verified |
-| [Froge Code](froge-code.md) | automation | Yes | Provisionally mapped to Automagik Forge | Name still needs confirmation |
+| [Froge Code](froge-code.md) | automation | Yes | Currently mapped to Automagik Genie | Public naming is still evolving |
 
 ## Writing Standard
 

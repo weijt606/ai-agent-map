@@ -15,7 +15,7 @@
 | 是否开源 | 否 |
 | 最适合 | 后台、定时、程序化的 Claude 执行 |
 | 主要代价 | 官方边界分散在多个文档概念里 |
-| 官方入口 | https://code.claude.com/docs/en/agent-sdk/overview |
+| 官网 | https://code.claude.com/docs/en/agent-sdk/overview |
 
 ## 什么时候选它
 

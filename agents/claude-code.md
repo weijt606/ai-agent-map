@@ -15,7 +15,7 @@ One-line take: if you want a high-frequency coding loop with an agent inside the
 | Open source | No |
 | Best for | High-frequency local coding collaboration |
 | Main cost | You still own permissions, environment, and pacing |
-| Official entry | https://code.claude.com/docs/en/overview |
+| Official website | https://code.claude.com/docs/en/overview |
 
 ## When To Pick It
 

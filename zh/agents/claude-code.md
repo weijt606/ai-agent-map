@@ -15,7 +15,7 @@
 | 是否开源 | 否 |
 | 最适合 | 高频本地 coding 协作 |
 | 主要代价 | 权限、环境和操作节奏仍然要自己管 |
-| 官方入口 | https://code.claude.com/docs/en/overview |
+| 官网 | https://code.claude.com/docs/en/overview |
 
 ## 什么时候选它
 

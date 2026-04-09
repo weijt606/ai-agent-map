@@ -15,7 +15,7 @@
 | 是否开源 | 否 |
 | 最适合 | 本地、CLI、cloud workflow 需要串起来的团队 |
 | 主要代价 | 最佳体验强依赖 VS Code / GitHub 生态 |
-| 官方入口 | https://code.visualstudio.com/docs/copilot/agents/overview |
+| 官网 | https://code.visualstudio.com/docs/copilot/agents/overview |
 
 ## 什么时候选它
 

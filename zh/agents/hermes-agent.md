@@ -15,7 +15,8 @@
 | 是否开源 | 是 |
 | 最适合 | 需要 memory、skills、delegation、消息渠道 |
 | 主要代价 | 需要持续管理权限、工具和记忆 |
-| 官方入口 | https://hermes-agent.nousresearch.com/docs/ |
+| 官网 | https://hermes-agent.nousresearch.com/docs/ |
+| GitHub 仓库 | https://github.com/NousResearch/hermes-agent |
 
 ## 什么时候选它
 

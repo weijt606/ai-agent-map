@@ -12,10 +12,11 @@
 | --- | --- |
 | 厂商 | OpenAI |
 | 路线 | ChatGPT 内的云端软件工程 agent |
-| 是否开源 | 否 |
+| 是否开源 | 否，但 Codex CLI 开源 |
 | 最适合 | 异步任务、隔离环境、日志证据、并行委派 |
 | 主要代价 | 仍偏云端 research preview，远程节奏不如本地 agent 即时 |
-| 官方入口 | https://openai.com/index/introducing-codex/ |
+| 官网 | https://developers.openai.com/codex |
+| GitHub 仓库 | https://github.com/openai/codex |
 
 ## 什么时候选它
 

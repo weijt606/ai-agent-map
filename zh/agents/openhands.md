@@ -15,7 +15,8 @@
 | 是否开源 | 是 |
 | 最适合 | 想走开源路线，但又不只要一个玩具项目 |
 | 主要代价 | Docker、模型配置和运行环境成本更高 |
-| 官方入口 | https://github.com/OpenHands/OpenHands |
+| 官网 | https://openhands.dev/ |
+| GitHub 仓库 | https://github.com/OpenHands/OpenHands |
 
 ## 什么时候选它
 

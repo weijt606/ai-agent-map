@@ -4,18 +4,18 @@
 [![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](froge-code.md)
 [![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-One-line take: this page is currently written against a provisional Automagik Forge mapping and fits review-first, multi-attempt, worktree-based coding automation.
+One-line take: this page is currently written against an Automagik Genie mapping and fits review-first, multi-attempt, worktree-based coding automation.
 
 ## Quick Read
 
 | Item | Conclusion |
 | --- | --- |
-| Current mapping | Automagik Forge |
+| Current mapping | Automagik Genie |
 | Route | Review-first automation platform |
-| Open source | Yes |
+| Open source | Claimed yes, but the public product repo is not clearly exposed yet |
 | Best for | Task boards, multiple attempts, human result selection |
-| Main cost | The name still needs confirmation and the workflow is heavier |
-| Official entry | https://forge.automag.ik |
+| Main cost | Public naming is still evolving between Automagik and Genie, and the workflow is heavier |
+| Official website | https://automagik.dev/ |
 
 ## When To Pick It
 

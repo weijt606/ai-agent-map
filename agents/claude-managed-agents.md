@@ -15,7 +15,7 @@ One-line take: this is the repository label for Anthropic's managed and cloud-st
 | Open source | No |
 | Best for | Scheduled, background, and programmatic Claude execution |
 | Main cost | The public product boundary is spread across multiple concepts |
-| Official entry | https://code.claude.com/docs/en/agent-sdk/overview |
+| Official website | https://code.claude.com/docs/en/agent-sdk/overview |
 
 ## When To Pick It
 

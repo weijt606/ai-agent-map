@@ -15,7 +15,8 @@
 | 是否开源 | 是 |
 | 最适合 | 消息渠道、设备、工具、长期运行型助手 |
 | 主要代价 | 路由、安全、权限和运维决策很多 |
-| 官方入口 | https://openclaw.ai |
+| 官网 | https://openclaw.ai |
+| GitHub 仓库 | https://github.com/openclaw/openclaw |
 
 ## 什么时候选它
 

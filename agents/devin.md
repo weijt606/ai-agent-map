@@ -15,7 +15,7 @@ One-line take: Devin fits teams with clearly scoped engineering work that they w
 | Open source | No |
 | Best for | Clear bugs, issues, and PR-sized feature work |
 | Main cost | Less room for self-hosting and deep customization |
-| Official entry | https://devin.ai/ |
+| Official website | https://devin.ai/ |
 
 ## When To Pick It
 

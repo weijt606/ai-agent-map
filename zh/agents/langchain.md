@@ -15,7 +15,8 @@
 | 是否开源 | 是 |
 | 最适合 | 快速做自定义 agent 原型 |
 | 主要代价 | 复杂 workflow 往往还是要下沉到更底层 |
-| 官方入口 | https://docs.langchain.com/oss/python/langchain/overview |
+| 官网 | https://docs.langchain.com/oss/python/langchain/overview |
+| GitHub 仓库 | https://github.com/langchain-ai/langchain |
 
 ## 什么时候选它
 

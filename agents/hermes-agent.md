@@ -15,7 +15,8 @@ One-line take: Hermes Agent is closer to a long-lived self-hosted working enviro
 | Open source | Yes |
 | Best for | Memory, skills, delegation, messaging, and long-lived workflows |
 | Main cost | Permissions, tools, and memory need ongoing curation |
-| Official entry | https://hermes-agent.nousresearch.com/docs/ |
+| Official website | https://hermes-agent.nousresearch.com/docs/ |
+| GitHub repo | https://github.com/NousResearch/hermes-agent |
 
 ## When To Pick It
 

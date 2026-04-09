@@ -12,10 +12,11 @@ One-line take: Codex is a strong representative of the “delegate to the cloud,
 | --- | --- |
 | Vendor | OpenAI |
 | Route | Cloud software engineering agent inside ChatGPT |
-| Open source | No |
+| Open source | No, except for Codex CLI |
 | Best for | Async tasks, isolated execution, review evidence, and parallel delegation |
 | Main cost | Still a cloud-first research preview, with a less immediate rhythm than local agents |
-| Official entry | https://openai.com/index/introducing-codex/ |
+| Official website | https://developers.openai.com/codex |
+| GitHub repo | https://github.com/openai/codex |
 
 ## When To Pick It
 

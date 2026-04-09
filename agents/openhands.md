@@ -15,7 +15,8 @@ One-line take: OpenHands is one of the most serious open-source software enginee
 | Open source | Yes |
 | Best for | Teams exploring how far open-source execution can go |
 | Main cost | Docker, model configuration, and runtime setup are heavier |
-| Official entry | https://github.com/OpenHands/OpenHands |
+| Official website | https://openhands.dev/ |
+| GitHub repo | https://github.com/OpenHands/OpenHands |
 
 ## When To Pick It
 

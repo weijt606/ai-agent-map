@@ -1,8 +1,8 @@
 # Capabilities
 
-[![ZH](https://img.shields.io/badge/ZH-%E4%B8%AD%E6%96%87-9ca3af?style=for-the-badge)](../zh/capabilities/README.md)
-[![EN](https://img.shields.io/badge/EN-CURRENT-1f6feb?style=for-the-badge)](README.md)
-[![Home](https://img.shields.io/badge/HOME-README-24292f?style=for-the-badge)](../README.md)
+[![ZH](https://img.shields.io/badge/ZH-%E4%B8%AD%E6%96%87-dc2626?style=for-the-badge&labelColor=991b1b)](../zh/capabilities/README.md)
+[![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](README.md)
+[![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
 This directory is not a feature dump. It is a shared vocabulary.
 

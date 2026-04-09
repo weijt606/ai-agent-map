@@ -1,9 +1,9 @@
 # AI Agent Map
 
-[![ZH](https://img.shields.io/badge/ZH-%E4%B8%AD%E6%96%87-9ca3af?style=for-the-badge)](zh/README.md)
-[![EN](https://img.shields.io/badge/EN-CURRENT-1f6feb?style=for-the-badge)](README.md)
-[![License](https://img.shields.io/badge/LICENSE-MIT-2f855a?style=for-the-badge)](LICENSE)
-[![Agent](https://img.shields.io/badge/AGENT-MAP-24292f?style=for-the-badge)](agents/README.md)
+[![ZH](https://img.shields.io/badge/ZH-%E4%B8%AD%E6%96%87-dc2626?style=for-the-badge&labelColor=991b1b)](zh/README.md)
+[![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](README.md)
+[![License](https://img.shields.io/badge/LICENSE-MIT-16a34a?style=for-the-badge&labelColor=166534)](LICENSE)
+[![Agent](https://img.shields.io/badge/AGENT-MAP-d97706?style=for-the-badge&labelColor=92400e)](agents/README.md)
 
 <p align="center">
 	<img src="assets/banner-ferris-wheel.svg" alt="Illustrated banner showing a small traveler at a crossroads looking at a signpost of AI agents, with roads leading toward several mainstream options" width="100%" />

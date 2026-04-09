@@ -1,8 +1,8 @@
 # OpenClaw
 
-[![ZH](https://img.shields.io/badge/ZH-%E4%B8%AD%E6%96%87-9ca3af?style=for-the-badge)](../zh/agents/openclaw.md)
-[![EN](https://img.shields.io/badge/EN-CURRENT-1f6feb?style=for-the-badge)](openclaw.md)
-[![Home](https://img.shields.io/badge/HOME-README-24292f?style=for-the-badge)](../README.md)
+[![ZH](https://img.shields.io/badge/ZH-%E4%B8%AD%E6%96%87-dc2626?style=for-the-badge&labelColor=991b1b)](../zh/agents/openclaw.md)
+[![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](openclaw.md)
+[![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
 One-line take: OpenClaw is better understood as a local-first runtime and control plane than as a lightweight coding tool.
 

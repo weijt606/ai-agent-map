@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="560" viewBox="0 0 1600 560" role="img" aria-labelledby="title desc">
   <title id="title">AI Agent Map stylized signpost banner</title>
-  <desc id="desc">An original illustration of a cool traveler at a crossroads facing a stylized multi-angle signpost of AI agents, with roads leading toward several mainstream destinations.</desc>
+  <desc id="desc">An original illustration of a cool traveler at a crossroads facing a stylized multi-angle signpost of AI agents, with branching roads labeled by common agent routes.</desc>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#b8ccd9" />
@@ -154,26 +154,26 @@
     <g transform="translate(426 342)">
       <circle r="18" fill="#66b585" />
       <circle r="7" fill="#ffffff" />
-      <rect x="24" y="-22" width="158" height="44" rx="18" fill="#fffef9" stroke="#45657b" stroke-width="4" />
-      <text x="103" y="7" text-anchor="middle" class="marker">OpenClaw</text>
+      <rect x="24" y="-22" width="206" height="44" rx="18" fill="#fffef9" stroke="#45657b" stroke-width="4" />
+      <text x="127" y="7" text-anchor="middle" class="marker">Runtime Harness</text>
     </g>
     <g transform="translate(466 224)">
       <circle r="18" fill="#ffd16f" />
       <circle r="7" fill="#ffffff" />
-      <rect x="24" y="-22" width="180" height="44" rx="18" fill="#fffef9" stroke="#45657b" stroke-width="4" />
-      <text x="114" y="7" text-anchor="middle" class="marker">Claude Code</text>
+      <rect x="24" y="-22" width="212" height="44" rx="18" fill="#fffef9" stroke="#45657b" stroke-width="4" />
+      <text x="130" y="7" text-anchor="middle" class="marker">Direct Execution</text>
     </g>
     <g transform="translate(1238 214)">
       <circle r="18" fill="#ffb59d" />
       <circle r="7" fill="#ffffff" />
-      <rect x="24" y="-22" width="124" height="44" rx="18" fill="#fffef9" stroke="#45657b" stroke-width="4" />
-      <text x="86" y="7" text-anchor="middle" class="marker">Codex</text>
+      <rect x="24" y="-22" width="214" height="44" rx="18" fill="#fffef9" stroke="#45657b" stroke-width="4" />
+      <text x="131" y="7" text-anchor="middle" class="marker">Cloud Delegation</text>
     </g>
     <g transform="translate(1258 346)">
       <circle r="18" fill="#8dc7ff" />
       <circle r="7" fill="#ffffff" />
-      <rect x="24" y="-22" width="132" height="44" rx="18" fill="#fffef9" stroke="#45657b" stroke-width="4" />
-      <text x="90" y="7" text-anchor="middle" class="marker">Copilot</text>
+      <rect x="24" y="-22" width="190" height="44" rx="18" fill="#fffef9" stroke="#45657b" stroke-width="4" />
+      <text x="119" y="7" text-anchor="middle" class="marker">Strong Control</text>
     </g>
   </g>
 

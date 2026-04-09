@@ -1,8 +1,8 @@
 # LangChain
 
-[![ZH](https://img.shields.io/badge/ZH-%E4%B8%AD%E6%96%87-9ca3af?style=for-the-badge)](../zh/agents/langchain.md)
-[![EN](https://img.shields.io/badge/EN-CURRENT-1f6feb?style=for-the-badge)](langchain.md)
-[![Home](https://img.shields.io/badge/HOME-README-24292f?style=for-the-badge)](../README.md)
+[![ZH](https://img.shields.io/badge/ZH-%E4%B8%AD%E6%96%87-dc2626?style=for-the-badge&labelColor=991b1b)](../zh/agents/langchain.md)
+[![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](langchain.md)
+[![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
 One-line take: LangChain is not a ready-made agent. It is a higher-level assembly layer for building custom agents quickly.
 

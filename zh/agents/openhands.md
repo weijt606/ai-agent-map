@@ -1,8 +1,8 @@
 # OpenHands
 
-[![ZH](https://img.shields.io/badge/ZH-CURRENT-1f6feb?style=for-the-badge)](openhands.md)
-[![EN](https://img.shields.io/badge/EN-English-9ca3af?style=for-the-badge)](../../agents/openhands.md)
-[![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-24292f?style=for-the-badge)](../README.md)
+[![ZH](https://img.shields.io/badge/ZH-CURRENT-dc2626?style=for-the-badge&labelColor=991b1b)](openhands.md)
+[![EN](https://img.shields.io/badge/EN-English-2563eb?style=for-the-badge&labelColor=1d4ed8)](../../agents/openhands.md)
+[![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
 一句话：OpenHands 是当前最值得认真评估的开源软件工程 agent 之一，因为它不是 demo，而是一套真能跑起来的系统。
 

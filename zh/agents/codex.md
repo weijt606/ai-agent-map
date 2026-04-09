@@ -1,8 +1,8 @@
 # Codex
 
-[![ZH](https://img.shields.io/badge/ZH-CURRENT-1f6feb?style=for-the-badge)](codex.md)
-[![EN](https://img.shields.io/badge/EN-English-9ca3af?style=for-the-badge)](../../agents/codex.md)
-[![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-24292f?style=for-the-badge)](../README.md)
+[![ZH](https://img.shields.io/badge/ZH-CURRENT-dc2626?style=for-the-badge&labelColor=991b1b)](codex.md)
+[![EN](https://img.shields.io/badge/EN-English-2563eb?style=for-the-badge&labelColor=1d4ed8)](../../agents/codex.md)
+[![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
 一句话：如果你喜欢“把任务丢出去，在云端隔离环境里跑完，再回来 review”，Codex 很有代表性。
 

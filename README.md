@@ -25,10 +25,10 @@ This repo stays focused on selection: what a system is good at, where it breaks 
 
 | If your question is... | Start here |
 | --- | --- |
-| I need a shortlist first | [agents](agents/README.md) |
-| I need help choosing for coding automation | [coding automation guide](use-cases/coding-automation.md) |
-| I already have candidates and want a side-by-side view | [mainstream matrix](comparisons/mainstream-agent-landscape.md) |
-| I care about dimensions like approval, memory, scheduling, and deployment | [capabilities](capabilities/README.md) |
+| I need a shortlist first | [![Open agents](https://img.shields.io/badge/OPEN-AGENTS-d97706?style=for-the-badge&labelColor=92400e)](agents/README.md) |
+| I need help choosing for coding automation | [![Read coding guide](https://img.shields.io/badge/READ-CODING%20GUIDE-2563eb?style=for-the-badge&labelColor=1d4ed8)](use-cases/coding-automation.md) |
+| I already have candidates and want a side-by-side view | [![View mainstream matrix](https://img.shields.io/badge/VIEW-MAINSTREAM%20MATRIX-dc2626?style=for-the-badge&labelColor=991b1b)](comparisons/mainstream-agent-landscape.md) |
+| I care about dimensions like approval, memory, scheduling, and deployment | [![Browse capabilities](https://img.shields.io/badge/BROWSE-CAPABILITIES-16a34a?style=for-the-badge&labelColor=166534)](capabilities/README.md) |
 
 ## The First Cut Of The Map
 
@@ -43,10 +43,10 @@ This repo stays focused on selection: what a system is good at, where it breaks 
 
 | Directory | Purpose |
 | --- | --- |
-| [agents](agents/README.md) | One page per agent with positioning, boundary, and trade-off. |
-| [use-cases](use-cases/README.md) | Problem-first selection guides. |
-| [comparisons](comparisons/README.md) | Side-by-side comparisons for real decisions. |
-| [capabilities](capabilities/README.md) | Shared vocabulary for capability differences. |
+| [![Open agents](https://img.shields.io/badge/OPEN-AGENTS-d97706?style=for-the-badge&labelColor=92400e)](agents/README.md) | One page per agent with positioning, boundary, and trade-off. |
+| [![Open use cases](https://img.shields.io/badge/OPEN-USE%20CASES-2563eb?style=for-the-badge&labelColor=1d4ed8)](use-cases/README.md) | Problem-first selection guides. |
+| [![Open comparisons](https://img.shields.io/badge/OPEN-COMPARISONS-dc2626?style=for-the-badge&labelColor=991b1b)](comparisons/README.md) | Side-by-side comparisons for real decisions. |
+| [![Open capabilities](https://img.shields.io/badge/OPEN-CAPABILITIES-16a34a?style=for-the-badge&labelColor=166534)](capabilities/README.md) | Shared vocabulary for capability differences. |
 
 ## Current Mainstream Coverage
 

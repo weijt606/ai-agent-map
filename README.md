@@ -34,10 +34,12 @@ This repo stays focused on selection: what a system is good at, where it breaks 
 
 | Route | Representative projects | Typical user |
 | --- | --- | --- |
-| Direct execution | [Claude Code](agents/claude-code.md), [Codex](agents/codex.md), [Devin](agents/devin.md), [OpenHands](agents/openhands.md) | Someone who wants to hand a concrete coding task to an agent |
-| Strong approval / strong control | [Cline](agents/cline.md), [GitHub Copilot](agents/github-copilot.md), [Froge Code](agents/froge-code.md) | Someone who wants review and human control to stay central |
+| Direct execution | [Claude Code](agents/claude-code.md), [Aider](agents/aider.md), [Codex](agents/codex.md), [Devin](agents/devin.md), [Jules](agents/jules.md), [OpenHands](agents/openhands.md) | Someone who wants to hand a concrete coding task to an agent |
+| Editor-centric AI workflow | [Cursor](agents/cursor.md), [Windsurf](agents/windsurf.md) | Someone who wants the editor itself to stay central |
+| Review-first automation | [Cline](agents/cline.md), [GitHub Copilot](agents/github-copilot.md), [Froge Code](agents/froge-code.md) | Someone who wants review and human control to stay central |
+| Managed background path | [Claude Managed Agents](agents/claude-managed-agents.md) | Someone who needs scheduled, cloud, or detached Anthropic workflows |
 | Build-your-own system | [LangChain](agents/langchain.md), [LangGraph](agents/langgraph.md) | Teams building their own agent platform instead of buying one |
-| Self-hosted runtime | [Hermes Agent](agents/hermes-agent.md), [OpenClaw](agents/openclaw.md) | Users who need long-running agents, channels, devices, or deeper control |
+| Self-hosted / local runtime | [Goose](agents/goose.md), [Hermes Agent](agents/hermes-agent.md), [OpenClaw](agents/openclaw.md) | Users who need long-running agents, local control, channels, or devices |
 
 ## Repo Structure
 
@@ -52,18 +54,23 @@ This repo stays focused on selection: what a system is good at, where it breaks 
 
 | Project | Route | One-line positioning |
 | --- | --- | --- |
+| [Aider](agents/aider.md) | Direct execution | Terminal-first AI pair programmer close to git |
 | [Claude Code](agents/claude-code.md) | Direct execution | Local and IDE-first coding agent |
-| [Claude Managed Agents](agents/claude-managed-agents.md) | Automation | Anthropic managed / cloud execution mapping |
+| [Claude Managed Agents](agents/claude-managed-agents.md) | Managed background path | Anthropic managed / cloud execution mapping |
 | [Codex](agents/codex.md) | Direct execution | Async coding delegation in isolated cloud environments |
+| [Cursor](agents/cursor.md) | Editor-centric platform | AI editor spanning local coding, cloud agents, and integrations |
 | [GitHub Copilot](agents/github-copilot.md) | Platform | Multi-surface agent platform across VS Code and GitHub |
-| [Cline](agents/cline.md) | Strong-control execution | Approval-first editor-native coding agent |
+| [Cline](agents/cline.md) | Review-first execution | Approval-first editor-native coding agent |
+| [Windsurf](agents/windsurf.md) | AI-native IDE | Cascade-centered AI IDE |
 | [OpenHands](agents/openhands.md) | Open-source execution | Open-source software engineering agent |
 | [Devin](agents/devin.md) | Managed execution | End-to-end managed software engineering execution |
+| [Jules](agents/jules.md) | Managed cloud execution | GitHub-connected coding delegation with PR handoff |
+| [Goose](agents/goose.md) | Open-source local platform | Extensible local agent across desktop, CLI, and API |
 | [Hermes Agent](agents/hermes-agent.md) | Multi-agent / self-hosted | Long-lived self-hosted environment with memory and skills |
 | [OpenClaw](agents/openclaw.md) | Runtime | Local-first multi-channel runtime layer |
 | [LangChain](agents/langchain.md) | Platform | High-level framework for building custom agents quickly |
 | [LangGraph](agents/langgraph.md) | Platform | Low-level framework for durable stateful workflows |
-| [Froge Code](agents/froge-code.md) | Review-first automation | Provisionally mapped to Automagik Forge |
+| [Froge Code](agents/froge-code.md) | Review-first automation | Provisionally mapped to Automagik Genie |
 
 ## Example Reading Paths
 
@@ -71,7 +78,8 @@ If you are still deciding where to begin, use one of these quick routes and then
 
 | If you sound like this... | Follow this path | What it helps you answer |
 | --- | --- | --- |
-| I want the best day-to-day coding agent inside my editor | [Claude Code](agents/claude-code.md) → [GitHub Copilot](agents/github-copilot.md) → [Cline](agents/cline.md) → [coding automation guide](use-cases/coding-automation.md) | Direct execution vs assistive IDE flow vs approval-first control |
-| I want to hand off tickets and check back later | [Codex](agents/codex.md) → [Devin](agents/devin.md) → [Claude Managed Agents](agents/claude-managed-agents.md) → [mainstream matrix](comparisons/mainstream-agent-landscape.md) | Async cloud delegation vs managed execution |
-| I need something open-source or self-hosted | [OpenHands](agents/openhands.md) → [Hermes Agent](agents/hermes-agent.md) → [OpenClaw](agents/openclaw.md) → [capabilities](capabilities/README.md) | Open execution, runtime control, and deployment trade-offs |
+| I want a day-to-day coding agent and need to choose terminal vs editor | [Aider](agents/aider.md) → [Claude Code](agents/claude-code.md) → [Cursor](agents/cursor.md) → [Cline](agents/cline.md) → [coding automation guide](use-cases/coding-automation.md) | Terminal-first local loop vs editor-led flow vs approval-first control |
+| I want a dedicated AI IDE instead of stitching tools together | [Cursor](agents/cursor.md) → [Windsurf](agents/windsurf.md) → [GitHub Copilot](agents/github-copilot.md) → [mainstream matrix](comparisons/mainstream-agent-landscape.md) | Dedicated AI editor vs ecosystem platform |
+| I want to hand off tickets and check back later | [Codex](agents/codex.md) → [Jules](agents/jules.md) → [Devin](agents/devin.md) → [Claude Managed Agents](agents/claude-managed-agents.md) → [mainstream matrix](comparisons/mainstream-agent-landscape.md) | Async cloud delegation vs managed background automation |
+| I need something open-source or self-hosted | [Aider](agents/aider.md) → [OpenHands](agents/openhands.md) → [Goose](agents/goose.md) → [Hermes Agent](agents/hermes-agent.md) → [capabilities](capabilities/README.md) | Terminal control, open-source execution, and local runtime ownership |
 | I am building an internal agent stack, not buying a product | [LangChain](agents/langchain.md) → [LangGraph](agents/langgraph.md) → [capabilities](capabilities/README.md) → [mainstream matrix](comparisons/mainstream-agent-landscape.md) | Framework vs runtime vs product boundaries |

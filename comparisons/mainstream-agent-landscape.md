@@ -12,13 +12,18 @@ Each row answers one question: what kind of problem is this project best suited 
 
 | Project | Route | Where it runs | Operating rhythm | Best for | Main cost |
 | --- | --- | --- | --- | --- | --- |
+| [Aider](../agents/aider.md) | Terminal-first pair-programming agent | Local terminal and repo | High interaction, git-centered | Repo-local coding with explicit diffs and model choice | API and model setup are part of the workflow |
 | [Claude Code](../agents/claude-code.md) | Local collaboration coding agent | Terminal, IDE, desktop, web | High interaction | Teams who want to code with an agent in-flow | Less ideal for fully detached background execution |
 | [Claude Managed Agents](../agents/claude-managed-agents.md) | Managed automation path | Anthropic managed / cloud execution | Scheduled, detached, programmatic | Background Claude workflows | Public boundary is spread across multiple concepts |
 | [Codex](../agents/codex.md) | Cloud delegation coding agent | Isolated cloud execution plus CLI / IDE | Async delegation | Reviewable task execution with logs and tests | Less immediate than editor-native agents |
+| [Cursor](../agents/cursor.md) | AI editor / agent platform | Editor, CLI, cloud, web, mobile | Editor-led with optional background delegation | Teams that want one polished AI surface for coding and handoff | Broad product surface can be more than some teams want |
 | [GitHub Copilot](../agents/github-copilot.md) | Agent platform | VS Code, local CLI, cloud, GitHub | Local-to-cloud handoff | Teams centered on VS Code and GitHub | Best value depends on ecosystem alignment |
 | [Cline](../agents/cline.md) | Approval-first coding agent | Editor and local terminal | High approval, high control | Powerful editor-native automation with human control | Approval overhead is part of the model |
+| [Windsurf](../agents/windsurf.md) | AI-native IDE | Dedicated editor and local environment | Editor-first, in-flow | Users who want Cascade-centered AI editing inside a dedicated IDE | Narrower extension story than VS Code |
 | [OpenHands](../agents/openhands.md) | Open-source SWE agent | Self-hosted, cloud, enterprise | Flexible | Teams evaluating serious open-source execution | Heavier setup and runtime requirements |
 | [Devin](../agents/devin.md) | Managed executor | Managed cloud product | Delegate then review | Clear issue-to-PR style execution | Less room for self-hosting and deep customization |
+| [Jules](../agents/jules.md) | Managed cloud coding agent | Google-managed cloud VM, web, CLI, API | Async delegation | GitHub-connected coding tasks with PR-oriented handoff | Cloud-first and some surfaces are still alpha |
+| [Goose](../agents/goose.md) | Extensible local agent | Desktop, CLI, API, local machine | Local and extensible | Open-source local agent with extensions, MCP, and shared config | Product boundary is broader than coding alone |
 | [Hermes Agent](../agents/hermes-agent.md) | Self-hosted multi-agent environment | CLI plus gateway | Long-lived | Memory, skills, delegation, channels | Needs ongoing operational curation |
 | [OpenClaw](../agents/openclaw.md) | Runtime / gateway | Local-first self-hosted runtime | Always-on runtime style | Multi-channel, device-aware, tool-rich assistants | Too heavy for pure coding-only work |
 | [LangChain](../agents/langchain.md) | High-level framework | Open-source library | Fast assembly | Building custom agents quickly | Less precise than lower-level orchestration |

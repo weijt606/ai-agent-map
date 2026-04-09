@@ -12,23 +12,29 @@ Think of it as a shortlist directory: understand the route first, then decide wh
 
 | Route | Representative projects | Best for |
 | --- | --- | --- |
-| Direct execution | [Claude Code](claude-code.md), [Codex](codex.md), [Devin](devin.md), [OpenHands](openhands.md) | People who want to hand a coding task directly to an agent |
-| Strong approval / strong control | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md) | People who want review and human pacing to stay central |
+| Direct execution | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Devin](devin.md), [Jules](jules.md), [OpenHands](openhands.md) | People who want to hand a coding task directly to an agent |
+| Editor-centric AI workflow | [Cursor](cursor.md), [Windsurf](windsurf.md) | Users who want the editor itself to be the main agent surface |
+| Review-first automation | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md) | People who want review and human pacing to stay central |
 | Build-your-own platform | [LangChain](langchain.md), [LangGraph](langgraph.md) | Teams building their own agent system |
-| Self-hosted runtime | [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md) | Users who need long-lived agents, channels, devices, or deeper control |
+| Self-hosted / local runtime | [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md) | Users who need local control, extensions, channels, or deeper runtime ownership |
 | Managed background path | [Claude Managed Agents](claude-managed-agents.md) | Users who need scheduled, cloud, or detached execution |
 
 ## Current Coverage
 
 | Project | Category | Open source | One-line fit | Status |
 | --- | --- | --- | --- | --- |
+| [Aider](aider.md) | execution | Yes | Terminal-first AI pair programming with a strong git loop | Verified |
 | [Claude Code](claude-code.md) | execution | No | Local and IDE-first coding agent | Verified |
 | [Claude Managed Agents](claude-managed-agents.md) | automation | No | Anthropic managed / cloud execution mapping | Mapping documented |
 | [Codex](codex.md) | execution | No | Cloud software engineering agent inside ChatGPT | Verified against current product boundary |
+| [Cursor](cursor.md) | platform | No | AI editor spanning local coding, integrations, and background agents | Verified |
 | [GitHub Copilot](github-copilot.md) | platform | No | Multi-surface agent platform across VS Code and GitHub | Verified |
 | [Cline](cline.md) | execution | Yes | Approval-first editor-native coding agent | Verified |
+| [Windsurf](windsurf.md) | platform | No | AI-native IDE centered on Cascade | Verified |
 | [OpenHands](openhands.md) | execution | Yes | Open-source software engineering agent | Verified |
 | [Devin](devin.md) | execution | No | Managed end-to-end software engineering execution | Verified |
+| [Jules](jules.md) | automation | No | Google managed cloud coding agent with GitHub and PR flow | Verified against current docs |
+| [Goose](goose.md) | platform | Yes | Extensible local agent across desktop, CLI, and API | Verified |
 | [Hermes Agent](hermes-agent.md) | multi-agent | Yes | Self-hosted environment with memory, skills, and subagents | Verified |
 | [OpenClaw](openclaw.md) | platform | Yes | Local-first runtime across channels and devices | Verified |
 | [LangChain](langchain.md) | platform | Yes | High-level framework for custom agents | Verified |

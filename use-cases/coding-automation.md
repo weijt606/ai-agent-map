@@ -13,13 +13,18 @@ That question is no longer the useful one. The better question is: which operati
 | If your real need is... | Start with |
 | --- | --- |
 | Tight local collaboration in the terminal or IDE | [Claude Code](../agents/claude-code.md) |
+| Terminal-first local coding with a strong git loop | [Aider](../agents/aider.md) |
 | Async delegation into cloud execution | [Codex](../agents/codex.md) |
+| Google-managed GitHub-connected cloud delegation | [Jules](../agents/jules.md) |
 | Anthropic background / scheduled / managed path | [Claude Managed Agents](../agents/claude-managed-agents.md) |
+| AI editor that spans local coding, background agents, and integrations | [Cursor](../agents/cursor.md) |
+| Dedicated AI IDE centered on the editor flow | [Windsurf](../agents/windsurf.md) |
 | Strong approval and strong control inside the editor | [Cline](../agents/cline.md) |
 | One flow across VS Code, GitHub, local, and cloud | [GitHub Copilot](../agents/github-copilot.md) |
 | Open-source software engineering agent close to the Devin route | [OpenHands](../agents/openhands.md) |
 | Direct issue-to-execution handoff | [Devin](../agents/devin.md) |
 | Review-first task board with multiple attempts | [Froge Code](../agents/froge-code.md) |
+| Open-source local agent with desktop, CLI, and extensions | [Goose](../agents/goose.md) |
 | Long-lived self-hosted environment with memory and messaging | [Hermes Agent](../agents/hermes-agent.md) |
 | Runtime, channels, devices, and deeper control plane | [OpenClaw](../agents/openclaw.md) |
 | Build your own agent fast instead of buying one | [LangChain](../agents/langchain.md) |
@@ -31,26 +36,33 @@ That question is no longer the useful one. The better question is: which operati
 2. Decide whether you care more about low-ops managed service or high-control self-hosting.
 3. Decide whether you want autonomy-first execution or review-first human control.
 
-## The Four Most Common Routes
+## The Most Common Routes
 
 | Route | Representative projects | What it feels like |
 | --- | --- | --- |
-| Local collaboration | [Claude Code](../agents/claude-code.md), [Cline](../agents/cline.md) | High interaction, fast iteration, strong operator feel |
-| Cloud delegation | [Codex](../agents/codex.md), [Devin](../agents/devin.md) | Assign work, come back later, review the result |
-| Review-first automation | [GitHub Copilot](../agents/github-copilot.md), [Froge Code](../agents/froge-code.md) | Keep humans central while still using powerful agent workflows |
-| Build / self-host | [OpenHands](../agents/openhands.md), [Hermes Agent](../agents/hermes-agent.md), [LangChain](../agents/langchain.md), [LangGraph](../agents/langgraph.md) | More flexibility, more environment and operations cost |
+| Local collaboration | [Claude Code](../agents/claude-code.md), [Aider](../agents/aider.md) | High interaction, fast iteration, strong operator feel |
+| Editor-centric AI workflow | [Cursor](../agents/cursor.md), [Windsurf](../agents/windsurf.md) | Keep the editor central and make the IDE itself part of the agent choice |
+| Cloud delegation | [Codex](../agents/codex.md), [Devin](../agents/devin.md), [Jules](../agents/jules.md) | Assign work, come back later, review the result |
+| Managed background path | [Claude Managed Agents](../agents/claude-managed-agents.md) | Scheduled or detached Anthropic workflows |
+| Review-first automation | [Cline](../agents/cline.md), [GitHub Copilot](../agents/github-copilot.md), [Froge Code](../agents/froge-code.md) | Keep humans central while still using powerful agent workflows |
+| Build / self-host | [OpenHands](../agents/openhands.md), [Goose](../agents/goose.md), [Hermes Agent](../agents/hermes-agent.md), [LangChain](../agents/langchain.md), [LangGraph](../agents/langgraph.md) | More flexibility, more environment and operations cost |
 
 ## Key Trade-Offs
 
 | Project | Biggest upside | Cost you must accept |
 | --- | --- | --- |
 | Claude Code | Smooth local loop with MCP, instructions, and subagents | You still own permissions and local environment control |
+| Aider | Terminal-first pair programming stays close to git | You still own model setup and terminal ergonomics |
 | Claude Managed Agents | Better fit for scheduled and background Anthropic workflows | Product boundary is not represented by one simple public page |
 | Codex | Strong isolation and review evidence | Less immediate than editor-native pair programming |
+| Cursor | One polished surface for editor, delegation, and integrations | Broad product surface and a clearly closed-source boundary |
 | GitHub Copilot | Local, CLI, and cloud workflows can live together | Best fit depends heavily on VS Code and GitHub |
 | Cline | Powerful editor-native workflow with explicit approvals | Approval friction is real |
+| Windsurf | Dedicated AI IDE with strong in-flow editing | Narrower extension story and a more opinionated workflow |
 | OpenHands | Real open-source runnable system with multiple operating modes | Docker and runtime setup are heavier |
 | Devin | Very direct managed execution path | Less control over system boundaries |
+| Jules | Managed GitHub-connected cloud execution with PR flow | Cloud-first delivery and an API surface that is still evolving |
+| Goose | Open-source local agent with extensions, MCP, and shared config | Product boundary is broader than coding-only work |
 | Froge Code | Strong task visibility, multiple attempts, isolated worktrees | The workflow is heavier and provider-dependent |
 | Hermes Agent | Long-lived self-hosted environment with memory and delegation | Needs ongoing curation |
 | OpenClaw | Strong runtime, channels, and device control | Usually too heavy for pure coding-only work |

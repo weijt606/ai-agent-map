@@ -3,9 +3,13 @@
   <desc id="desc">An original illustration of a cool traveler at a crossroads facing a stylized multi-angle signpost of AI agents, with roads leading toward several mainstream destinations.</desc>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#dff2ff" />
-      <stop offset="62%" stop-color="#eef8ff" />
-      <stop offset="100%" stop-color="#fff5de" />
+      <stop offset="0%" stop-color="#b8ccd9" />
+      <stop offset="62%" stop-color="#d9e6eb" />
+      <stop offset="100%" stop-color="#f2f5f1" />
+    </linearGradient>
+    <linearGradient id="cityScape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bacace" />
+      <stop offset="100%" stop-color="#d9e3df" />
     </linearGradient>
     <linearGradient id="land" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#dff0c9" />
@@ -68,7 +72,30 @@
   </defs>
 
   <rect width="1600" height="560" fill="url(#sky)" />
-  <circle cx="1286" cy="106" r="92" fill="#ffd4a1" opacity="0.72" />
+
+  <g fill="url(#cityScape)" opacity="0.8">
+    <rect x="0" y="240" width="80" height="70" />
+    <rect x="80" y="190" width="60" height="120" />
+    <rect x="140" y="220" width="90" height="90" />
+    <rect x="230" y="160" width="110" height="150" />
+    <polygon points="230,160 285,110 340,160" />
+    <rect x="340" y="260" width="70" height="50" />
+    <rect x="410" y="200" width="80" height="110" />
+    <rect x="490" y="150" width="50" height="160" />
+    <rect x="540" y="230" width="100" height="80" />
+    <rect x="640" y="120" width="70" height="190" />
+    <rect x="710" y="210" width="120" height="100" />
+    <rect x="830" y="180" width="60" height="130" />
+    <rect x="890" y="240" width="90" height="70" />
+    <rect x="980" y="140" width="100" height="170" />
+    <polygon points="980,140 1030,80 1080,140" />
+    <rect x="1080" y="260" width="80" height="50" />
+    <rect x="1160" y="190" width="90" height="120" />
+    <rect x="1250" y="220" width="70" height="90" />
+    <rect x="1320" y="130" width="110" height="180" />
+    <rect x="1430" y="210" width="80" height="100" />
+    <rect x="1510" y="250" width="90" height="60" />
+  </g>
 
   <g opacity="0.72" fill="#ffffff">
     <ellipse cx="246" cy="118" rx="92" ry="30" />
@@ -94,9 +121,9 @@
   </g>
 
   <g filter="url(#shadow)">
-    <rect x="56" y="56" width="660" height="106" rx="26" fill="url(#card)" />
-    <text x="96" y="110" class="title">AI Agent Map</text>
-    <text x="96" y="142" class="subtitle">Routes across coding, cloud delegation, and open execution.</text>
+    <rect x="56" y="56" width="310" height="96" rx="20" fill="url(#card)" />
+    <text x="86" y="106" class="title">AI Agent Map</text>
+    <text x="86" y="132" class="subtitle" style="font-size:16px;">Routes to open execution.</text>
   </g>
 
   <g fill="none" stroke="#607154" stroke-opacity="0.16" stroke-width="58" stroke-linecap="round" stroke-linejoin="round">
@@ -218,26 +245,38 @@
     </g>
   </g>
 
-  <g transform="translate(628 356)" filter="url(#shadow)">
+  <g transform="translate(680 350)" filter="url(#shadow)">
     <ellipse cx="0" cy="160" rx="36" ry="10" fill="#2d4b5e" opacity="0.18" />
-    <path d="M-26 62 Q-44 86 -40 122 L-20 124 L-12 68 Z" fill="#c58429" opacity="0.96" />
-    <path d="M-22 66 Q-12 56 2 60" fill="none" stroke="#e0a23c" stroke-width="5" stroke-linecap="round" opacity="0.9" />
-    <circle cx="6" cy="26" r="15" fill="#efbd96" />
-    <rect x="-1" y="39" width="10" height="10" rx="4" fill="#efbd96" />
-    <path d="M-12 20 Q2 2 24 16 L24 28 Q10 34 -10 28 Z" fill="#0f2533" />
-    <path d="M20 18 Q30 20 36 14" fill="none" stroke="#0f2533" stroke-width="4" stroke-linecap="round" />
-    <rect x="-1" y="24" width="10" height="3.5" rx="1.5" fill="#123447" />
-    <rect x="11" y="24" width="10" height="3.5" rx="1.5" fill="#123447" />
-    <rect x="9" y="25" width="2.5" height="1.5" rx="0.75" fill="#7ce8ff" opacity="0.85" />
-    <path d="M-26 84 Q2 50 36 80 L32 126 Q10 138 -24 130 Z" fill="#16384b" />
-    <path d="M-10 82 Q0 92 14 92 Q28 92 38 80" fill="none" stroke="#62ddff" stroke-width="5" stroke-linecap="round" />
-    <path d="M-18 86 L12 94 L8 130 L-20 126 Z" fill="#1d4a60" opacity="0.95" />
-    <path d="M20 86 Q40 98 52 88" fill="none" stroke="#16384b" stroke-width="9" stroke-linecap="round" />
-    <path d="M-20 90 Q-30 108 -28 128" fill="none" stroke="#16384b" stroke-width="9" stroke-linecap="round" />
-    <path d="M6 48 Q16 58 24 76" fill="none" stroke="#1c4e66" stroke-width="4" stroke-linecap="round" opacity="0.85" />
-    <path d="M-2 132 L-8 160" fill="none" stroke="#1d3446" stroke-width="12" stroke-linecap="round" />
-    <path d="M22 130 L28 158" fill="none" stroke="#1d3446" stroke-width="12" stroke-linecap="round" />
-    <ellipse cx="-10" cy="164" rx="13" ry="5" fill="#1d3446" transform="rotate(-8 -10 164)" />
-    <ellipse cx="32" cy="162" rx="13" ry="5" fill="#1d3446" transform="rotate(8 32 162)" />
+    <path d="M-10 110 L-20 156" fill="none" stroke="#1d3446" stroke-width="12" stroke-linecap="round" />
+    <path d="M10 110 L18 152" fill="none" stroke="#1d3446" stroke-width="12" stroke-linecap="round" />
+    <ellipse cx="-22" cy="160" rx="14" ry="5" fill="#1d3446" />
+    <ellipse cx="20" cy="156" rx="14" ry="5" fill="#1d3446" />
+
+    <!-- Backpack -->
+    <path d="M-36 44 Q-54 74 -44 104 L-22 106 Z" fill="#b07926" />
+    <path d="M-28 46 Q-12 36 2 44" fill="none" stroke="#e0a23c" stroke-width="5" stroke-linecap="round" opacity="0.9" />
+
+    <!-- Body -->
+    <path d="M-34 66 Q-16 38 22 54 L26 106 Q4 120 -30 110 Z" fill="#183548" />
+    <path d="M12 50 Q30 62 38 80" fill="none" stroke="#2a5875" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Left Arm -->
+    <path d="M-20 62 Q-26 80 -24 96 L-4 92 Z" fill="#1d425b" />
+    
+    <!-- Right Arm -->
+    <path d="M10 68 Q30 82 46 70" fill="none" stroke="#1d425b" stroke-width="10" stroke-linecap="round" />
+    
+    <!-- Edge details (zippers / tech lines) -->
+    <path d="M-18 56 L4 62" fill="none" stroke="#62ddff" stroke-width="4" stroke-linecap="round" />
+    <path d="M22 66 Q20 80 14 96" fill="none" stroke="#214a60" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Head and Neck -->
+    <path d="M-8 46 L-10 30" fill="none" stroke="#dfa980" stroke-width="6" stroke-linecap="round" />
+    <circle cx="-12" cy="16" r="14" fill="#efbd96" />
+
+    <!-- Cap -->
+    <path d="M-30 8 Q-16 -6 4 8 L12 12 Q-2 20 -22 14 Z" fill="#142c3c" />
+    <rect x="-18" y="6" width="20" height="4" rx="2" fill="#204157" />
+    <rect x="-8" y="7" width="2" height="2" rx="1" fill="#7ce8ff" opacity="0.9" />
   </g>
 </svg>

@@ -2,7 +2,7 @@
 
 [![ZH](https://img.shields.io/badge/ZH-CURRENT-1f6feb?style=for-the-badge)](README.md)
 [![EN](https://img.shields.io/badge/EN-English-9ca3af?style=for-the-badge)](../../agents/README.md)
-[![Home](https://img.shields.io/badge/HOME-README-24292f?style=for-the-badge)](../README.md)
+[![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-24292f?style=for-the-badge)](../README.md)
 
 这里不是“agent 名单墙”。
 

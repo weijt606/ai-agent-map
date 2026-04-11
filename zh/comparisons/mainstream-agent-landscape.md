@@ -16,6 +16,8 @@
 | [Claude Code](../agents/claude-code.md) | 本地协作型 coding agent | 终端、IDE、桌面、Web | 高频交互 | 想边做边和 agent 配合写代码 | 不适合完全脱离人的后台执行 |
 | [Claude Managed Agents](../agents/claude-managed-agents.md) | 管理式自动化路径 | Anthropic 管理式 / 云端执行 | 后台、定时、程序化 | 想把 Claude 跑成后台工作流 | 官方公开边界分散在多个概念里 |
 | [Codex](../agents/codex.md) | 云端委派型 coding agent | 云端隔离环境 + CLI / IDE | 异步委派 | 想丢任务、等结果、看日志和测试证据 | 本地即时协作感弱一些 |
+| [oh-my-claudecode](../agents/oh-my-claudecode.md) | 工作流 / orchestration layer | Claude Code 插件、终端、tmux | session 内驱动 + 编排侧流程 | 已经在用 Claude Code，想补上 skills、teams 和更强运行控制 | 前提是你本来就接受 Claude Code 这层基础表面 |
+| [oh-my-codex](../agents/oh-my-codex.md) | 工作流 / orchestration layer | Codex CLI、本地终端、tmux | 本地工作流标准化 | 已经在用 Codex，想补上 teams、hooks 和持久会话状态 | 流程会更厚，而且最好跑在 macOS / Linux + tmux |
 | [Cursor](../agents/cursor.md) | AI 编辑器 / agent 平台 | 编辑器、CLI、cloud、web、mobile | 编辑器中心，可延伸后台委派 | 想把编码和委派收进一个打磨完整的表面 | 产品边界很宽，可能超过一些团队真实需要 |
 | [GitHub Copilot](../agents/github-copilot.md) | agent 平台 | VS Code、本地 CLI、cloud、GitHub | 本地到云端切换 | 已经工作在 VS Code / GitHub 生态里 | 最佳体验更依赖生态绑定 |
 | [Cline](../agents/cline.md) | approval-first coding agent | 编辑器、本地终端 | 强审批、强控制 | 想让 agent 很强，但每一步都可把关 | 审批频率会带来摩擦 |
@@ -23,6 +25,7 @@
 | [OpenHands](../agents/openhands.md) | 开源 SWE agent | 自托管、cloud、enterprise | 灵活切换 | 想要开源但又不只要一个 demo | 安装和运行成本更高 |
 | [Devin](../agents/devin.md) | 托管执行器 | 托管云产品 | 委派后 review | 想直接把 issue 交给 agent 跑 | 自定义和自托管空间更小 |
 | [Jules](../agents/jules.md) | 托管云端 coding agent | Google 托管云端 VM、web、CLI、API | 异步委派 | 依赖 GitHub、希望 agent 产出 PR 的编码任务 | cloud-first，而且部分表面仍在 alpha |
+| [AI Edge Gallery](../agents/ai-edge-gallery.md) | 端侧 assistant 沙盒 | 移动设备 | 本地试验型 | 想要私有本地模型、mobile actions 和 edge-agent skills | 不是 coding-first agent，也不是通用 orchestration 平台 |
 | [Goose](../agents/goose.md) | 可扩展本地 agent | desktop、CLI、API、本机 | 本地优先、可扩展 | 想要开源本地 agent，加上 extensions、MCP 和共享配置 | 产品边界不只在 coding 上 |
 | [Hermes Agent](../agents/hermes-agent.md) | 自托管多 agent 环境 | CLI + gateway | 长期经营型 | 想要 memory、skills、delegation 和消息渠道 | 需要持续整理权限与环境 |
 | [OpenClaw](../agents/openclaw.md) | runtime / gateway | 本地优先 self-hosted | 常驻运行型 | 需要渠道、设备、工具和 runtime 控制面 | 对纯 coding 工作偏重 |

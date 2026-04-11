@@ -15,6 +15,8 @@
 | 我要在本地终端或 IDE 里高频协作 | [Claude Code](../agents/claude-code.md) |
 | 我要终端优先、本地写代码，还想保留强 git 节奏 | [Aider](../agents/aider.md) |
 | 我要把明确任务异步丢到云端跑 | [Codex](../agents/codex.md) |
+| 我已经在用 Claude Code，只是想补强 teams、skills 和 orchestration | [oh-my-claudecode](../agents/oh-my-claudecode.md) |
+| 我已经在用 Codex CLI，只是想补上 teams、hooks 和持久 workflow state | [oh-my-codex](../agents/oh-my-codex.md) |
 | 我要 Google 托管、GitHub 连接的云端委派 | [Jules](../agents/jules.md) |
 | 我要 Anthropic 的后台 / 定时 / 管理式路径 | [Claude Managed Agents](../agents/claude-managed-agents.md) |
 | 我要一个覆盖本地编码、后台 agent 和集成的 AI 编辑器 | [Cursor](../agents/cursor.md) |
@@ -41,6 +43,7 @@
 | 路线 | 代表项目 | 核心感觉 |
 | --- | --- | --- |
 | 本地协作型 | [Claude Code](../agents/claude-code.md), [Aider](../agents/aider.md) | 边聊边做，节奏快，操作感强 |
+| 底层 agent 之上的工作流层 | [oh-my-claudecode](../agents/oh-my-claudecode.md), [oh-my-codex](../agents/oh-my-codex.md) | 保留 Claude Code 或 Codex 作为执行引擎，再往上叠可复用 orchestration |
 | 编辑器中心工作流 | [Cursor](../agents/cursor.md), [Windsurf](../agents/windsurf.md) | 编辑器本身就是选型的一部分 |
 | 云端委派型 | [Codex](../agents/codex.md), [Devin](../agents/devin.md), [Jules](../agents/jules.md) | 先交任务，再回来 review |
 | 管理式后台路径 | [Claude Managed Agents](../agents/claude-managed-agents.md) | 更偏定时、后台、程序化 Anthropic 工作流 |
@@ -55,6 +58,8 @@
 | Aider | 终端里的 AI 结对编程依然贴着 git 走 | 模型配置和终端 ergonomics 还是要自己扛 |
 | Claude Managed Agents | 更适合后台、定时和程序化运行 | 官方公开边界不是单一产品页 |
 | Codex | 云端隔离、日志和测试证据很清楚 | 更偏异步，不如编辑器内 agent 即时 |
+| oh-my-claudecode | 给 Claude Code 补上 teams、可复用 skills 和更强运行控制 | 你会多背一层工作流，而且仍然依赖 Claude Code |
+| oh-my-codex | 给 Codex 带来更清晰的 clarify-plan-execute operating model | 配置更多、流程更重，而且最佳路径通常离不开 tmux |
 | Cursor | 一个打磨完整的表面把编辑、委派、集成都串起来 | 产品边界更宽，而且闭源属性很明确 |
 | GitHub Copilot | 本地、CLI、cloud 都能串起来 | 最佳体验更依赖 VS Code / GitHub |
 | Cline | 编辑器内强能力 + 强审批 | 高频审批会带来摩擦 |

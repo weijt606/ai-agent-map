@@ -15,6 +15,8 @@ That question is no longer the useful one. The better question is: which operati
 | Tight local collaboration in the terminal or IDE | [Claude Code](../agents/claude-code.md) |
 | Terminal-first local coding with a strong git loop | [Aider](../agents/aider.md) |
 | Async delegation into cloud execution | [Codex](../agents/codex.md) |
+| I already use Claude Code and want teams, skills, and stronger orchestration | [oh-my-claudecode](../agents/oh-my-claudecode.md) |
+| I already use Codex CLI and want teams, hooks, and persistent workflow state | [oh-my-codex](../agents/oh-my-codex.md) |
 | Google-managed GitHub-connected cloud delegation | [Jules](../agents/jules.md) |
 | Anthropic background / scheduled / managed path | [Claude Managed Agents](../agents/claude-managed-agents.md) |
 | AI editor that spans local coding, background agents, and integrations | [Cursor](../agents/cursor.md) |
@@ -41,6 +43,7 @@ That question is no longer the useful one. The better question is: which operati
 | Route | Representative projects | What it feels like |
 | --- | --- | --- |
 | Local collaboration | [Claude Code](../agents/claude-code.md), [Aider](../agents/aider.md) | High interaction, fast iteration, strong operator feel |
+| Workflow layer on top of a base agent | [oh-my-claudecode](../agents/oh-my-claudecode.md), [oh-my-codex](../agents/oh-my-codex.md) | Keep Claude Code or Codex as the execution engine and add reusable orchestration on top |
 | Editor-centric AI workflow | [Cursor](../agents/cursor.md), [Windsurf](../agents/windsurf.md) | Keep the editor central and make the IDE itself part of the agent choice |
 | Cloud delegation | [Codex](../agents/codex.md), [Devin](../agents/devin.md), [Jules](../agents/jules.md) | Assign work, come back later, review the result |
 | Managed background path | [Claude Managed Agents](../agents/claude-managed-agents.md) | Scheduled or detached Anthropic workflows |
@@ -55,6 +58,8 @@ That question is no longer the useful one. The better question is: which operati
 | Aider | Terminal-first pair programming stays close to git | You still own model setup and terminal ergonomics |
 | Claude Managed Agents | Better fit for scheduled and background Anthropic workflows | Product boundary is not represented by one simple public page |
 | Codex | Strong isolation and review evidence | Less immediate than editor-native pair programming |
+| oh-my-claudecode | Claude Code gains teams, reusable skills, and richer runtime control | You add another workflow layer and still depend on Claude Code |
+| oh-my-codex | Codex gets a clearer clarify-plan-execute operating model | More setup, more ceremony, and the best path usually involves tmux |
 | Cursor | One polished surface for editor, delegation, and integrations | Broad product surface and a clearly closed-source boundary |
 | GitHub Copilot | Local, CLI, and cloud workflows can live together | Best fit depends heavily on VS Code and GitHub |
 | Cline | Powerful editor-native workflow with explicit approvals | Approval friction is real |

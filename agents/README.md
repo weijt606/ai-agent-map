@@ -29,11 +29,11 @@ It is a quick view of projects that appeared especially hot in the late-April 20
 
 | Rank | Project | Current stars | Snapshot gain | Directory status | Note |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [Hermes Agent](hermes-agent.md) | 55.9k | +14,811 | Profile included | Clear in-scope self-hosted multi-agent environment |
-| #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 27.9k | +13,938 | Not included | Very hot, but it is a screen-demo tool rather than an agent |
-| #3 | [oh-my-codex](oh-my-codex.md) | 20.9k | +11,503 | Profile included | A fast-rising Codex workflow and orchestration layer |
-| #4 | [oh-my-claudecode](oh-my-claudecode.md) | 27.6k | +5,935 | Profile included | A hot workflow and orchestration layer around Claude Code |
-| #5 | [AI Edge Gallery](ai-edge-gallery.md) | 20.3k | +3,796 | Profile included with caveat | Better read as an on-device assistant sandbox than a coding-first agent |
+| #1 | [Hermes Agent](hermes-agent.md) | 113.0k | +57,100 | Profile included | Clear in-scope self-hosted multi-agent environment with explosive growth |
+| #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 32.4k | +4,500 | Not included | Still hot, but it is a screen-demo tool rather than an agent |
+| #3 | [oh-my-codex](oh-my-codex.md) | 25.3k | +4,400 | Profile included | A fast-rising Codex workflow and orchestration layer |
+| #4 | [oh-my-claudecode](oh-my-claudecode.md) | 31.0k | +3,400 | Profile included | A hot workflow and orchestration layer around Claude Code |
+| #5 | [AI Edge Gallery](ai-edge-gallery.md) | 21.9k | +1,600 | Profile included with caveat | Better read as an on-device assistant sandbox than a coding-first agent |
 
 **Market event (April 23 2026):** OpenAI released [GPT-5.5](gpt-5.5.md) — not a GitHub-trending project, but a model that reshapes the capability ceiling for Codex, ChatGPT, and every OpenAI-API-based agent. See the [GPT-5.5 profile](gpt-5.5.md) for positioning and trade-offs.
 

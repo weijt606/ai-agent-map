@@ -29,11 +29,11 @@
 
 | 排名 | 项目 | 当前 stars | 快照增量 | 目录状态 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [Hermes Agent](hermes-agent.md) | 55.9k | +14,811 | 已收录 profile | 明确属于本仓库范围内的自托管多 agent 环境 |
-| #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 27.9k | +13,938 | 不收录 | 很热，但它本质上是录屏 / 演示工具，不是 agent |
-| #3 | [oh-my-codex](oh-my-codex.md) | 20.9k | +11,503 | 已收录 profile | 围绕 Codex 的高热度工作流和 orchestration layer |
-| #4 | [oh-my-claudecode](oh-my-claudecode.md) | 27.6k | +5,935 | 已收录 profile | 围绕 Claude Code 的高热度工作流和 orchestration layer |
-| #5 | [AI Edge Gallery](ai-edge-gallery.md) | 20.3k | +3,796 | 已收录，但附带范围说明 | 更适合被理解成端侧 assistant 沙盒，而不是 coding-first agent |
+| #1 | [Hermes Agent](hermes-agent.md) | 113.0k | +57,100 | 已收录 profile | 自托管多 agent 环境，增长爆发式 |
+| #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 32.4k | +4,500 | 不收录 | 仍然热门，但本质上是录屏 / 演示工具，不是 agent |
+| #3 | [oh-my-codex](oh-my-codex.md) | 25.3k | +4,400 | 已收录 profile | 围绕 Codex 的高热度工作流和 orchestration layer |
+| #4 | [oh-my-claudecode](oh-my-claudecode.md) | 31.0k | +3,400 | 已收录 profile | 围绕 Claude Code 的高热度工作流和 orchestration layer |
+| #5 | [AI Edge Gallery](ai-edge-gallery.md) | 21.9k | +1,600 | 已收录，但附带范围说明 | 更适合被理解成端侧 assistant 沙盒，而不是 coding-first agent |
 
 **市场事件（2026-04-23）：** OpenAI 发布了 [GPT-5.5](gpt-5.5.md)——不是 GitHub 热门仓库，而是直接抬高了 Codex、ChatGPT 和所有基于 OpenAI API 的 agent 能力天花板的模型发布。详见 [GPT-5.5 profile](gpt-5.5.md)。
 

@@ -38,11 +38,11 @@ This table tracks projects that showed up as especially hot in the late-April 20
 
 | Rank | Project | Current stars | Snapshot gain | Map status | How to read it |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [Hermes Agent](agents/hermes-agent.md) | 55.9k | +14,811 | In scope | Self-hosted multi-agent environment with real momentum and clear fit in this repo |
-| #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 27.9k | +13,938 | Out of scope | Very hot, but it is a screen-demo tool rather than an agent |
-| #3 | [oh-my-codex](agents/oh-my-codex.md) | 20.9k | +11,503 | In scope | A Codex workflow and orchestration layer that is rising quickly |
-| #4 | [oh-my-claudecode](agents/oh-my-claudecode.md) | 27.6k | +5,935 | In scope | A fast-moving orchestration layer around Claude Code |
-| #5 | [AI Edge Gallery](agents/ai-edge-gallery.md) | 20.3k | +3,796 | In scope with caveat | More of an on-device assistant sandbox than a coding-first agent |
+| #1 | [Hermes Agent](agents/hermes-agent.md) | 113.0k | +57,100 | In scope | Self-hosted multi-agent environment with explosive growth and clear fit in this repo |
+| #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 32.4k | +4,500 | Out of scope | Still hot, but it is a screen-demo tool rather than an agent |
+| #3 | [oh-my-codex](agents/oh-my-codex.md) | 25.3k | +4,400 | In scope | A Codex workflow and orchestration layer still climbing fast |
+| #4 | [oh-my-claudecode](agents/oh-my-claudecode.md) | 31.0k | +3,400 | In scope | A fast-moving orchestration layer around Claude Code |
+| #5 | [AI Edge Gallery](agents/ai-edge-gallery.md) | 21.9k | +1,600 | In scope with caveat | More of an on-device assistant sandbox than a coding-first agent |
 
 - Heat is useful for discovery, not for selection by itself.
 - Some hot repos are adjacent to the agent landscape without actually being agents. OpenScreen is the clearest example in this snapshot.

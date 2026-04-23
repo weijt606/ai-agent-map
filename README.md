@@ -34,24 +34,38 @@ This repo stays focused on selection: what a system is good at, where it breaks 
 
 Popularity is not fit.
 
-This table tracks projects that showed up as especially hot in a recent April 2026 GitHub snapshot. The rank follows that snapshot. The total star counts below were checked when this repo was updated.
+This table tracks projects that showed up as especially hot in the late-April 2026 GitHub snapshot. The rank follows that snapshot. The total star counts below were checked when this repo was updated.
 
 | Rank | Project | Current stars | Snapshot gain | Map status | How to read it |
 | --- | --- | --- | --- | --- | --- |
 | #1 | [Hermes Agent](agents/hermes-agent.md) | 55.9k | +14,811 | In scope | Self-hosted multi-agent environment with real momentum and clear fit in this repo |
 | #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 27.9k | +13,938 | Out of scope | Very hot, but it is a screen-demo tool rather than an agent |
 | #3 | [oh-my-codex](agents/oh-my-codex.md) | 20.9k | +11,503 | In scope | A Codex workflow and orchestration layer that is rising quickly |
-| #4 | [AI Edge Gallery](agents/ai-edge-gallery.md) | 20.3k | +3,796 | In scope with caveat | More of an on-device assistant sandbox than a coding-first agent |
-| #5 | [oh-my-claudecode](agents/oh-my-claudecode.md) | 27.6k | +5,935 | In scope | A fast-moving orchestration layer around Claude Code |
+| #4 | [oh-my-claudecode](agents/oh-my-claudecode.md) | 27.6k | +5,935 | In scope | A fast-moving orchestration layer around Claude Code |
+| #5 | [AI Edge Gallery](agents/ai-edge-gallery.md) | 20.3k | +3,796 | In scope with caveat | More of an on-device assistant sandbox than a coding-first agent |
 
 - Heat is useful for discovery, not for selection by itself.
 - Some hot repos are adjacent to the agent landscape without actually being agents. OpenScreen is the clearest example in this snapshot.
+
+## Market Event: GPT-5.5 Enters The Agent Landscape
+
+On April 23 2026, OpenAI released [GPT-5.5](agents/gpt-5.5.md) — positioned as "a new class of intelligence for real work and powering agents." This is not a GitHub-trending project but a model release that reshapes the capability ceiling across multiple agent surfaces already tracked in this repo.
+
+| What changed | Impact on this map |
+| --- | --- |
+| 82.7% on Terminal-Bench 2.0 | Highest agentic coding benchmark at launch — raises the bar for Codex and all OpenAI-API-based agents |
+| 1M token context window | Long-context tasks that were impractical before become viable for API-based agent builders |
+| 2x price vs GPT-5.4 | Cost-sensitive teams must re-benchmark per-task economics |
+| SWE-Bench Pro at 58.6% | Still trails Claude Opus 4.7 (64.3%) — model choice depends on workload |
+
+GPT-5.5 does not replace [Codex](agents/codex.md) as a product entry. It is the model layer underneath. See the [GPT-5.5 profile](agents/gpt-5.5.md) for the full breakdown.
 
 ## The First Cut Of The Map
 
 | Route | Representative projects | Typical user |
 | --- | --- | --- |
 | Direct execution | [Claude Code](agents/claude-code.md), [Aider](agents/aider.md), [Codex](agents/codex.md), [Devin](agents/devin.md), [Jules](agents/jules.md), [OpenHands](agents/openhands.md) | Someone who wants to hand a concrete coding task to an agent |
+| Frontier agentic model | [GPT-5.5](agents/gpt-5.5.md) | Someone choosing which model to wire into their own agent system or evaluating the capability ceiling of OpenAI-based surfaces |
 | Workflow / orchestration layer | [oh-my-claudecode](agents/oh-my-claudecode.md), [oh-my-codex](agents/oh-my-codex.md) | Someone who already likes Claude Code or Codex and wants stronger orchestration on top |
 | Editor-centric AI workflow | [Cursor](agents/cursor.md), [Windsurf](agents/windsurf.md) | Someone who wants the editor itself to stay central |
 | Review-first automation | [Cline](agents/cline.md), [GitHub Copilot](agents/github-copilot.md), [Froge Code](agents/froge-code.md) | Someone who wants review and human control to stay central |
@@ -91,6 +105,7 @@ This table tracks projects that showed up as especially hot in a recent April 20
 | [OpenClaw](agents/openclaw.md) | Runtime | Local-first multi-channel runtime layer |
 | [LangChain](agents/langchain.md) | Platform | High-level framework for building custom agents quickly |
 | [LangGraph](agents/langgraph.md) | Platform | Low-level framework for durable stateful workflows |
+| [GPT-5.5](agents/gpt-5.5.md) | Frontier agentic model | OpenAI's agentic model powering Codex, ChatGPT, and API agent builders |
 | [Froge Code](agents/froge-code.md) | Review-first automation | Provisionally mapped to Automagik Genie |
 
 ## Example Reading Paths
@@ -101,6 +116,7 @@ If you are still deciding where to begin, use one of these quick routes and then
 | --- | --- | --- |
 | I want a day-to-day coding agent and need to choose terminal vs editor | [Aider](agents/aider.md) → [Claude Code](agents/claude-code.md) → [Cursor](agents/cursor.md) → [Cline](agents/cline.md) → [coding automation guide](use-cases/coding-automation.md) | Terminal-first local loop vs editor-led flow vs approval-first control |
 | I already like Claude Code or Codex but want stronger orchestration | [Claude Code](agents/claude-code.md) → [oh-my-claudecode](agents/oh-my-claudecode.md) → [Codex](agents/codex.md) → [oh-my-codex](agents/oh-my-codex.md) → [mainstream matrix](comparisons/mainstream-agent-landscape.md) | When the base agent is enough and when a workflow layer actually adds value |
+| I want to understand GPT-5.5's impact on the agent landscape | [GPT-5.5](agents/gpt-5.5.md) → [Codex](agents/codex.md) → [Claude Code](agents/claude-code.md) → [mainstream matrix](comparisons/mainstream-agent-landscape.md) | How a frontier model release shifts the capability ceiling and what it means for product choice |
 | I want a dedicated AI IDE instead of stitching tools together | [Cursor](agents/cursor.md) → [Windsurf](agents/windsurf.md) → [GitHub Copilot](agents/github-copilot.md) → [mainstream matrix](comparisons/mainstream-agent-landscape.md) | Dedicated AI editor vs ecosystem platform |
 | I want to hand off tickets and check back later | [Codex](agents/codex.md) → [Jules](agents/jules.md) → [Devin](agents/devin.md) → [Claude Managed Agents](agents/claude-managed-agents.md) → [mainstream matrix](comparisons/mainstream-agent-landscape.md) | Async cloud delegation vs managed background automation |
 | I need something open-source or self-hosted | [Aider](agents/aider.md) → [OpenHands](agents/openhands.md) → [Goose](agents/goose.md) → [Hermes Agent](agents/hermes-agent.md) → [capabilities](capabilities/README.md) | Terminal control, open-source execution, and local runtime ownership |

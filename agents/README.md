@@ -13,6 +13,7 @@ Think of it as a shortlist directory: understand the route first, then decide wh
 | Route | Representative projects | Best for |
 | --- | --- | --- |
 | Direct execution | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Devin](devin.md), [Jules](jules.md), [OpenHands](openhands.md) | People who want to hand a coding task directly to an agent |
+| Frontier agentic model | [GPT-5.5](gpt-5.5.md) | People choosing which model to wire into their agent system, or evaluating the capability ceiling of OpenAI surfaces |
 | Workflow / orchestration layer | [oh-my-claudecode](oh-my-claudecode.md), [oh-my-codex](oh-my-codex.md) | Users who already like Claude Code or Codex and want stronger teams, skills, and persistent workflow |
 | Editor-centric AI workflow | [Cursor](cursor.md), [Windsurf](windsurf.md) | Users who want the editor itself to be the main agent surface |
 | Review-first automation | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md) | People who want review and human pacing to stay central |
@@ -24,15 +25,17 @@ Think of it as a shortlist directory: understand the route first, then decide wh
 
 This is not a ranking of quality.
 
-It is a quick view of projects that appeared especially hot in a recent April 2026 GitHub snapshot. The order follows that snapshot, while the star totals below reflect the current counts checked during this repo update.
+It is a quick view of projects that appeared especially hot in the late-April 2026 GitHub snapshot. The order follows that snapshot, while the star totals below reflect the current counts checked during this repo update.
 
 | Rank | Project | Current stars | Snapshot gain | Directory status | Note |
 | --- | --- | --- | --- | --- | --- |
 | #1 | [Hermes Agent](hermes-agent.md) | 55.9k | +14,811 | Profile included | Clear in-scope self-hosted multi-agent environment |
 | #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 27.9k | +13,938 | Not included | Very hot, but it is a screen-demo tool rather than an agent |
 | #3 | [oh-my-codex](oh-my-codex.md) | 20.9k | +11,503 | Profile included | A fast-rising Codex workflow and orchestration layer |
-| #4 | [AI Edge Gallery](ai-edge-gallery.md) | 20.3k | +3,796 | Profile included with caveat | Better read as an on-device assistant sandbox than a coding-first agent |
-| #5 | [oh-my-claudecode](oh-my-claudecode.md) | 27.6k | +5,935 | Profile included | A hot workflow and orchestration layer around Claude Code |
+| #4 | [oh-my-claudecode](oh-my-claudecode.md) | 27.6k | +5,935 | Profile included | A hot workflow and orchestration layer around Claude Code |
+| #5 | [AI Edge Gallery](ai-edge-gallery.md) | 20.3k | +3,796 | Profile included with caveat | Better read as an on-device assistant sandbox than a coding-first agent |
+
+**Market event (April 23 2026):** OpenAI released [GPT-5.5](gpt-5.5.md) — not a GitHub-trending project, but a model that reshapes the capability ceiling for Codex, ChatGPT, and every OpenAI-API-based agent. See the [GPT-5.5 profile](gpt-5.5.md) for positioning and trade-offs.
 
 ## Current Coverage
 
@@ -57,6 +60,7 @@ It is a quick view of projects that appeared especially hot in a recent April 20
 | [OpenClaw](openclaw.md) | platform | Yes | Local-first runtime across channels and devices | Verified |
 | [LangChain](langchain.md) | platform | Yes | High-level framework for custom agents | Verified |
 | [LangGraph](langgraph.md) | platform | Yes | Low-level framework for durable workflows | Verified |
+| [GPT-5.5](gpt-5.5.md) | model / agentic | No | Frontier agentic model powering Codex, ChatGPT, and API surfaces | Verified against launch materials |
 | [Froge Code](froge-code.md) | automation | Yes | Currently mapped to Automagik Genie | Public naming is still evolving |
 
 ## Writing Standard

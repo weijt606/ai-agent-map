@@ -47,6 +47,10 @@
 
 复杂度是 Medium。它帮你减轻本地运维负担，但也会把团队带进“远程委派 + 回来看结果”的异步节奏。当前更准确的理解方式是：主产品是闭源云端 agent，Codex CLI 是相关但独立的本地 companion surface。
 
+## 模型层
+
+截至 2026 年 4 月 23 日，Codex 底层已升级为 [GPT-5.5](gpt-5.5.md)——OpenAI 最新的前沿 agentic 模型。模型升级带来了更强的编码 benchmark（Terminal-Bench 2.0 得分 82.7%）、百万 token 上下文窗口和更高的 token 效率。如果你在评估 Codex，模型层现在比以往更重要。详见 [GPT-5.5 profile](gpt-5.5.md)。
+
 ## 最后一句
 
 把 Codex 理解成 ChatGPT 里的云端 coding agent 会更准确；把 Codex CLI 视为配套本地入口，而不是主产品本体。

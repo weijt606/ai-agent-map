@@ -47,6 +47,10 @@ One-line take: Codex is a strong representative of the “delegate to the cloud,
 
 Complexity is Medium. It reduces local ops burden, but it also pushes the team into a more asynchronous delegate-and-review rhythm. The more accurate 2026 framing is: Codex is the proprietary cloud agent product, while Codex CLI is a related local companion surface.
 
+## Model Layer
+
+As of April 23 2026, Codex is powered by [GPT-5.5](gpt-5.5.md) — OpenAI's latest frontier agentic model. The model upgrade brings stronger coding benchmarks (82.7% Terminal-Bench 2.0), a 1M token context window, and better token efficiency. If you are evaluating Codex, the model layer now matters more than before. See the [GPT-5.5 profile](gpt-5.5.md) for the model-level breakdown.
+
 ## Bottom Line
 
 The cleanest way to understand Codex is as the cloud agent in ChatGPT, with Codex CLI as a related local entry point rather than the core product itself.

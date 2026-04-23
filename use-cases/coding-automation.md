@@ -15,6 +15,7 @@ That question is no longer the useful one. The better question is: which operati
 | Tight local collaboration in the terminal or IDE | [Claude Code](../agents/claude-code.md) |
 | Terminal-first local coding with a strong git loop | [Aider](../agents/aider.md) |
 | Async delegation into cloud execution | [Codex](../agents/codex.md) |
+| Strongest OpenAI model for agentic coding with 1M context | [GPT-5.5](../agents/gpt-5.5.md) |
 | I already use Claude Code and want teams, skills, and stronger orchestration | [oh-my-claudecode](../agents/oh-my-claudecode.md) |
 | I already use Codex CLI and want teams, hooks, and persistent workflow state | [oh-my-codex](../agents/oh-my-codex.md) |
 | Google-managed GitHub-connected cloud delegation | [Jules](../agents/jules.md) |
@@ -58,6 +59,7 @@ That question is no longer the useful one. The better question is: which operati
 | Aider | Terminal-first pair programming stays close to git | You still own model setup and terminal ergonomics |
 | Claude Managed Agents | Better fit for scheduled and background Anthropic workflows | Product boundary is not represented by one simple public page |
 | Codex | Strong isolation and review evidence | Less immediate than editor-native pair programming |
+| GPT-5.5 | Highest agentic coding benchmarks and 1M context window | 2x API cost, fully proprietary, trails Claude on SWE-Bench Pro |
 | oh-my-claudecode | Claude Code gains teams, reusable skills, and richer runtime control | You add another workflow layer and still depend on Claude Code |
 | oh-my-codex | Codex gets a clearer clarify-plan-execute operating model | More setup, more ceremony, and the best path usually involves tmux |
 | Cursor | One polished surface for editor, delegation, and integrations | Broad product surface and a clearly closed-source boundary |

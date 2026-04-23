@@ -15,6 +15,7 @@
 | 我要在本地终端或 IDE 里高频协作 | [Claude Code](../agents/claude-code.md) |
 | 我要终端优先、本地写代码，还想保留强 git 节奏 | [Aider](../agents/aider.md) |
 | 我要把明确任务异步丢到云端跑 | [Codex](../agents/codex.md) |
+| 我要当前最强的 OpenAI agentic coding 模型，百万 token 上下文 | [GPT-5.5](../agents/gpt-5.5.md) |
 | 我已经在用 Claude Code，只是想补强 teams、skills 和 orchestration | [oh-my-claudecode](../agents/oh-my-claudecode.md) |
 | 我已经在用 Codex CLI，只是想补上 teams、hooks 和持久 workflow state | [oh-my-codex](../agents/oh-my-codex.md) |
 | 我要 Google 托管、GitHub 连接的云端委派 | [Jules](../agents/jules.md) |
@@ -58,6 +59,7 @@
 | Aider | 终端里的 AI 结对编程依然贴着 git 走 | 模型配置和终端 ergonomics 还是要自己扛 |
 | Claude Managed Agents | 更适合后台、定时和程序化运行 | 官方公开边界不是单一产品页 |
 | Codex | 云端隔离、日志和测试证据很清楚 | 更偏异步，不如编辑器内 agent 即时 |
+| GPT-5.5 | 发布时 agentic coding benchmark 最高、百万 token 上下文 | API 成本是 GPT-5.4 的 2 倍，完全闭源，SWE-Bench Pro 落后于 Claude |
 | oh-my-claudecode | 给 Claude Code 补上 teams、可复用 skills 和更强运行控制 | 你会多背一层工作流，而且仍然依赖 Claude Code |
 | oh-my-codex | 给 Codex 带来更清晰的 clarify-plan-execute operating model | 配置更多、流程更重，而且最佳路径通常离不开 tmux |
 | Cursor | 一个打磨完整的表面把编辑、委派、集成都串起来 | 产品边界更宽，而且闭源属性很明确 |

@@ -13,6 +13,7 @@
 | 路线 | 代表项目 | 适合谁 |
 | --- | --- | --- |
 | 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Devin](devin.md), [Jules](jules.md), [OpenHands](openhands.md) | 想直接把 coding 任务交给 agent |
+| 前沿 agentic 模型 | [GPT-5.5](gpt-5.5.md) | 在选要接入自己 agent 系统的模型，或在评估 OpenAI 系 agent 能力上限 |
 | 工作流 / orchestration layer | [oh-my-claudecode](oh-my-claudecode.md), [oh-my-codex](oh-my-codex.md) | 已经在用 Claude Code 或 Codex，只想补强 teams、skills 和持久工作流 |
 | 编辑器中心工作流 | [Cursor](cursor.md), [Windsurf](windsurf.md) | 想让编辑器本身成为 agent 主表面 |
 | review-first 自动化 | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md) | 想把 review 和人工节奏留在核心 |
@@ -24,15 +25,17 @@
 
 这不是质量排行榜。
 
-它只是把 2026 年 4 月一张 GitHub 热门快照里特别热的项目先摆出来。顺序沿用那张快照，下面的 star 总数则是这次更新目录时重新核对过的当前值。
+它只是把 2026 年 4 月下旬 GitHub 热门快照里特别热的项目先摆出来。顺序沿用那张快照，下面的 star 总数则是这次更新目录时重新核对过的当前值。
 
 | 排名 | 项目 | 当前 stars | 快照增量 | 目录状态 | 备注 |
 | --- | --- | --- | --- | --- | --- |
 | #1 | [Hermes Agent](hermes-agent.md) | 55.9k | +14,811 | 已收录 profile | 明确属于本仓库范围内的自托管多 agent 环境 |
 | #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 27.9k | +13,938 | 不收录 | 很热，但它本质上是录屏 / 演示工具，不是 agent |
 | #3 | [oh-my-codex](oh-my-codex.md) | 20.9k | +11,503 | 已收录 profile | 围绕 Codex 的高热度工作流和 orchestration layer |
-| #4 | [AI Edge Gallery](ai-edge-gallery.md) | 20.3k | +3,796 | 已收录，但附带范围说明 | 更适合被理解成端侧 assistant 沙盒，而不是 coding-first agent |
-| #5 | [oh-my-claudecode](oh-my-claudecode.md) | 27.6k | +5,935 | 已收录 profile | 围绕 Claude Code 的高热度工作流和 orchestration layer |
+| #4 | [oh-my-claudecode](oh-my-claudecode.md) | 27.6k | +5,935 | 已收录 profile | 围绕 Claude Code 的高热度工作流和 orchestration layer |
+| #5 | [AI Edge Gallery](ai-edge-gallery.md) | 20.3k | +3,796 | 已收录，但附带范围说明 | 更适合被理解成端侧 assistant 沙盒，而不是 coding-first agent |
+
+**市场事件（2026-04-23）：** OpenAI 发布了 [GPT-5.5](gpt-5.5.md)——不是 GitHub 热门仓库，而是直接抬高了 Codex、ChatGPT 和所有基于 OpenAI API 的 agent 能力天花板的模型发布。详见 [GPT-5.5 profile](gpt-5.5.md)。
 
 ## 当前已收录
 
@@ -57,6 +60,7 @@
 | [OpenClaw](openclaw.md) | platform | 是 | 多渠道、多设备、本地优先 runtime | 已核验 |
 | [LangChain](langchain.md) | platform | 是 | 快速搭自定义 agent 的高层框架 | 已核验 |
 | [LangGraph](langgraph.md) | platform | 是 | 长期运行、有状态 agent workflow 的底层框架 | 已核验 |
+| [GPT-5.5](gpt-5.5.md) | model / agentic | 否 | 驱动 Codex、ChatGPT 和 API 的前沿 agentic 模型 | 已按发布材料核验 |
 | [Froge Code](froge-code.md) | automation | 是 | 当前映射为 Automagik Genie | 对外命名仍在演进 |
 
 ## 写法标准

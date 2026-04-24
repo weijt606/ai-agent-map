@@ -22,6 +22,7 @@ That question is no longer the useful one. The better question is: which operati
 | Anthropic background / scheduled / managed path | [Claude Managed Agents](../agents/claude-managed-agents.md) |
 | AI editor that spans local coding, background agents, and integrations | [Cursor](../agents/cursor.md) |
 | Dedicated AI IDE centered on the editor flow | [Windsurf](../agents/windsurf.md) |
+| Open-source editor extension with full model freedom | [Continue](../agents/continue.md) |
 | Strong approval and strong control inside the editor | [Cline](../agents/cline.md) |
 | One flow across VS Code, GitHub, local, and cloud | [GitHub Copilot](../agents/github-copilot.md) |
 | Open-source software engineering agent close to the Devin route | [OpenHands](../agents/openhands.md) |
@@ -66,6 +67,7 @@ That question is no longer the useful one. The better question is: which operati
 | GitHub Copilot | Local, CLI, and cloud workflows can live together | Best fit depends heavily on VS Code and GitHub |
 | Cline | Powerful editor-native workflow with explicit approvals | Approval friction is real |
 | Windsurf | Dedicated AI IDE with strong in-flow editing | Narrower extension story and a more opinionated workflow |
+| Continue | Open-source, full model freedom, team config sharing | You own model setup — more configuration than turnkey alternatives |
 | OpenHands | Real open-source runnable system with multiple operating modes | Docker and runtime setup are heavier |
 | Devin | Very direct managed execution path | Less control over system boundaries |
 | Jules | Managed GitHub-connected cloud execution with PR flow | Cloud-first delivery and an API surface that is still evolving |

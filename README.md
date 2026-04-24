@@ -67,10 +67,12 @@ GPT-5.5 does not replace [Codex](agents/codex.md) as a product entry. It is the 
 | Direct execution | [Claude Code](agents/claude-code.md), [Aider](agents/aider.md), [Codex](agents/codex.md), [Devin](agents/devin.md), [Jules](agents/jules.md), [OpenHands](agents/openhands.md) | Someone who wants to hand a concrete coding task to an agent |
 | Frontier agentic model | [GPT-5.5](agents/gpt-5.5.md) | Someone choosing which model to wire into their own agent system or evaluating the capability ceiling of OpenAI-based surfaces |
 | Workflow / orchestration layer | [oh-my-claudecode](agents/oh-my-claudecode.md), [oh-my-codex](agents/oh-my-codex.md) | Someone who already likes Claude Code or Codex and wants stronger orchestration on top |
-| Editor-centric AI workflow | [Cursor](agents/cursor.md), [Windsurf](agents/windsurf.md) | Someone who wants the editor itself to stay central |
+| Editor-centric AI workflow | [Cursor](agents/cursor.md), [Windsurf](agents/windsurf.md), [Continue](agents/continue.md) | Someone who wants the editor itself to stay central |
 | Review-first automation | [Cline](agents/cline.md), [GitHub Copilot](agents/github-copilot.md), [Froge Code](agents/froge-code.md) | Someone who wants review and human control to stay central |
 | Managed background path | [Claude Managed Agents](agents/claude-managed-agents.md) | Someone who needs scheduled, cloud, or detached Anthropic workflows |
-| Build-your-own system | [LangChain](agents/langchain.md), [LangGraph](agents/langgraph.md) | Teams building their own agent platform instead of buying one |
+| General-purpose autonomous agent | [AutoGPT](agents/autogpt.md) | Someone who wants a visual agent-builder for autonomous, general-purpose tasks |
+| Build-your-own system | [LangChain](agents/langchain.md), [LangGraph](agents/langgraph.md), [CrewAI](agents/crewai.md), [LlamaIndex](agents/llamaindex.md) | Teams building their own agent platform instead of buying one |
+| Runtime and tools | [n8n](agents/n8n.md), [MemGPT](agents/memgpt.md) | Teams that need workflow automation with AI agents, or persistent memory for stateful agents |
 | Self-hosted / local runtime | [AI Edge Gallery](agents/ai-edge-gallery.md), [Goose](agents/goose.md), [Hermes Agent](agents/hermes-agent.md), [OpenClaw](agents/openclaw.md) | Users who need on-device privacy, long-running agents, local control, channels, or devices |
 
 ## Repo Structure
@@ -105,7 +107,13 @@ GPT-5.5 does not replace [Codex](agents/codex.md) as a product entry. It is the 
 | [OpenClaw](agents/openclaw.md) | Runtime | Local-first multi-channel runtime layer |
 | [LangChain](agents/langchain.md) | Platform | High-level framework for building custom agents quickly |
 | [LangGraph](agents/langgraph.md) | Platform | Low-level framework for durable stateful workflows |
+| [Continue](agents/continue.md) | Editor-centric | Open-source IDE extension with full model freedom |
 | [GPT-5.5](agents/gpt-5.5.md) | Frontier agentic model | OpenAI's agentic model powering Codex, ChatGPT, and API agent builders |
+| [AutoGPT](agents/autogpt.md) | Autonomous agent platform | Visual agent builder with workflows, marketplace, and multi-model support |
+| [CrewAI](agents/crewai.md) | Multi-agent framework | Role-based agent collaboration with fast prototyping |
+| [LlamaIndex](agents/llamaindex.md) | Data-first framework | RAG and agentic applications over documents and data |
+| [n8n](agents/n8n.md) | Workflow automation | Visual workflow platform with native AI agent nodes and 400+ integrations |
+| [MemGPT](agents/memgpt.md) | Stateful agent platform | Persistent memory agents that learn across sessions (now Letta) |
 | [Froge Code](agents/froge-code.md) | Review-first automation | Provisionally mapped to Automagik Genie |
 
 ## Example Reading Paths

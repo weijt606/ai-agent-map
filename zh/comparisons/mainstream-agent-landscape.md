@@ -32,6 +32,12 @@
 | [OpenClaw](../agents/openclaw.md) | runtime / gateway | 本地优先 self-hosted | 常驻运行型 | 需要渠道、设备、工具和 runtime 控制面 | 对纯 coding 工作偏重 |
 | [LangChain](../agents/langchain.md) | 高层框架 | 开源库 | 快速搭建型 | 想快速做自定义 agent 原型 | 精细状态控制不如更底层框架 |
 | [LangGraph](../agents/langgraph.md) | 底层 orchestration 框架 | 开源库 | 平台建设型 | 需要持久化、有状态、可恢复 workflow | 设计和运维成本最高 |
+| [Continue](../agents/continue.md) | 开源编辑器 AI 扩展 | VS Code、JetBrains | 编辑器中心、自选模型 | 想要模型自由和开源 IDE 助手的团队 | 模型配置和管理由你自己负责 |
+| [AutoGPT](../agents/autogpt.md) | 自主 agent 平台 | 云平台或自托管 Docker | 自主循环执行 | 可视化 agent 搭建，带市场和多模型支持 | 可靠性仍在追赶；自主循环 token 消耗很快 |
+| [CrewAI](../agents/crewai.md) | 多 agent 编排框架 | 本地或 CrewAI Cloud | 角色型 crew 协作 | 按角色分工快速搭多 agent 原型 | 复杂条件逻辑需要转向 LangGraph |
+| [LlamaIndex](../agents/llamaindex.md) | 数据优先 RAG 与 agent 框架 | 本地或 LlamaCloud | 数据摄取和检索优先 | 需要 agent 基于文档、数据库和 API 推理的应用 | 不是通用 agent 编排器 |
+| [n8n](../agents/n8n.md) | 可视化工作流自动化 | 自托管或 n8n Cloud | 事件驱动工作流 | 带 400+ 真实集成的 AI agent 工作流和可视化构建 | Fair-code license，不是纯 OSI 开源 |
+| [MemGPT](../agents/memgpt.md) | 有状态 agent 平台 | 自托管 Docker 或 Letta Cloud | 长期运行、有状态 | 需要跨会话记忆和不断学习的 agent | 记忆管理会增加额外 LLM 调用；会替换你现有的 agent 栈 |
 | [Froge Code](../agents/froge-code.md) | review-first 自动化平台 | 自托管平台 | 多尝试 + 人工挑选 | 想把 coding automation 做成任务板流程 | 名称仍待进一步确认 |
 
 ## 怎么读这张表

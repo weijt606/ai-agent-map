@@ -15,9 +15,11 @@ Think of it as a shortlist directory: understand the route first, then decide wh
 | Direct execution | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Devin](devin.md), [Jules](jules.md), [OpenHands](openhands.md) | People who want to hand a coding task directly to an agent |
 | Frontier agentic model | [GPT-5.5](gpt-5.5.md) | People choosing which model to wire into their agent system, or evaluating the capability ceiling of OpenAI surfaces |
 | Workflow / orchestration layer | [oh-my-claudecode](oh-my-claudecode.md), [oh-my-codex](oh-my-codex.md) | Users who already like Claude Code or Codex and want stronger teams, skills, and persistent workflow |
-| Editor-centric AI workflow | [Cursor](cursor.md), [Windsurf](windsurf.md) | Users who want the editor itself to be the main agent surface |
+| Editor-centric AI workflow | [Cursor](cursor.md), [Windsurf](windsurf.md), [Continue](continue.md) | Users who want the editor itself to be the main agent surface |
 | Review-first automation | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md) | People who want review and human pacing to stay central |
-| Build-your-own platform | [LangChain](langchain.md), [LangGraph](langgraph.md) | Teams building their own agent system |
+| General-purpose autonomous agent | [AutoGPT](autogpt.md) | People who want a visual agent-builder for autonomous general-purpose tasks |
+| Build-your-own platform | [LangChain](langchain.md), [LangGraph](langgraph.md), [CrewAI](crewai.md), [LlamaIndex](llamaindex.md) | Teams building their own agent system |
+| Runtime and tools | [n8n](n8n.md), [MemGPT](memgpt.md) | Teams needing workflow automation with AI agents, or persistent memory for stateful agents |
 | Self-hosted / local runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md) | Users who need local control, on-device privacy, extensions, channels, or deeper runtime ownership |
 | Managed background path | [Claude Managed Agents](claude-managed-agents.md) | Users who need scheduled, cloud, or detached execution |
 
@@ -60,7 +62,13 @@ It is a quick view of projects that appeared especially hot in the late-April 20
 | [OpenClaw](openclaw.md) | platform | Yes | Local-first runtime across channels and devices | Verified |
 | [LangChain](langchain.md) | platform | Yes | High-level framework for custom agents | Verified |
 | [LangGraph](langgraph.md) | platform | Yes | Low-level framework for durable workflows | Verified |
+| [Continue](continue.md) | platform | Yes | Open-source IDE extension with full model freedom | Verified |
 | [GPT-5.5](gpt-5.5.md) | model / agentic | No | Frontier agentic model powering Codex, ChatGPT, and API surfaces | Verified against launch materials |
+| [AutoGPT](autogpt.md) | autonomous | Yes | Visual agent-builder platform with workflows and marketplace | Verified |
+| [CrewAI](crewai.md) | multi-agent | Yes | Role-based multi-agent orchestration framework | Verified |
+| [LlamaIndex](llamaindex.md) | platform | Yes | Data-first RAG and agent framework | Verified |
+| [n8n](n8n.md) | runtime / tools | Fair-code | Visual workflow automation with native AI agent nodes | Verified |
+| [MemGPT](memgpt.md) | runtime / tools | Yes | Stateful agents with persistent memory (now Letta) | Verified |
 | [Froge Code](froge-code.md) | automation | Yes | Currently mapped to Automagik Genie | Public naming is still evolving |
 
 ## Writing Standard

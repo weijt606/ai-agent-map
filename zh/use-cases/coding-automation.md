@@ -22,6 +22,7 @@
 | 我要 Anthropic 的后台 / 定时 / 管理式路径 | [Claude Managed Agents](../agents/claude-managed-agents.md) |
 | 我要一个覆盖本地编码、后台 agent 和集成的 AI 编辑器 | [Cursor](../agents/cursor.md) |
 | 我要以编辑器流为中心的专用 AI IDE | [Windsurf](../agents/windsurf.md) |
+| 我要开源编辑器扩展，模型完全由我自己选 | [Continue](../agents/continue.md) |
 | 我要编辑器内强审批、强控制 | [Cline](../agents/cline.md) |
 | 我要 VS Code + GitHub 里本地和云端切换 | [GitHub Copilot](../agents/github-copilot.md) |
 | 我要一个开源、接近 Devin 路线的软件工程 agent | [OpenHands](../agents/openhands.md) |
@@ -66,6 +67,7 @@
 | GitHub Copilot | 本地、CLI、cloud 都能串起来 | 最佳体验更依赖 VS Code / GitHub |
 | Cline | 编辑器内强能力 + 强审批 | 高频审批会带来摩擦 |
 | Windsurf | AI 原生 IDE 的 in-flow 编辑体验很强 | 扩展生态更收敛，工作流也更有主张 |
+| Continue | 开源、模型完全自由、支持团队配置共享 | 模型配置自己管——上手门槛比开箱即用产品高 |
 | OpenHands | 开源路线完整，CLI / GUI / cloud 都能走 | 安装、Docker、模型配置成本更高 |
 | Devin | 托管式执行很直接 | 自定义和控制边界更少 |
 | Jules | GitHub 连接、托管云端执行、PR 回收路径清楚 | cloud-first，而且 API 边界还在演进 |

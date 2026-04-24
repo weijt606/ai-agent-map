@@ -32,6 +32,12 @@ Each row answers one question: what kind of problem is this project best suited 
 | [OpenClaw](../agents/openclaw.md) | Runtime / gateway | Local-first self-hosted runtime | Always-on runtime style | Multi-channel, device-aware, tool-rich assistants | Too heavy for pure coding-only work |
 | [LangChain](../agents/langchain.md) | High-level framework | Open-source library | Fast assembly | Building custom agents quickly | Less precise than lower-level orchestration |
 | [LangGraph](../agents/langgraph.md) | Low-level orchestration framework | Open-source library | Platform building | Durable stateful agent workflows | Highest design and ops burden |
+| [Continue](../agents/continue.md) | Open-source editor AI extension | VS Code, JetBrains | Editor-centric, BYO model | Teams wanting model freedom and open-source IDE assistant | You own model setup and configuration |
+| [AutoGPT](../agents/autogpt.md) | Autonomous agent platform | Cloud platform or self-hosted Docker | Autonomous loop execution | Visual agent building with marketplace and multi-model support | Reliability still catching up; token spend adds up fast on autonomous loops |
+| [CrewAI](../agents/crewai.md) | Multi-agent orchestration framework | Local or CrewAI Cloud | Role-based crew collaboration | Fast multi-agent prototyping with role-based agent teams | Complex conditional logic pushes you toward LangGraph |
+| [LlamaIndex](../agents/llamaindex.md) | Data-first RAG and agent framework | Local or LlamaCloud | Data ingestion and retrieval-first | Applications that need agents to reason over documents, databases, and APIs | Not a general-purpose agent orchestrator |
+| [n8n](../agents/n8n.md) | Visual workflow automation | Self-hosted or n8n Cloud | Event-driven workflow | AI agent workflows with 400+ real integrations and visual builder | Fair-code license, not pure OSI open-source |
+| [MemGPT](../agents/memgpt.md) | Stateful agent platform | Self-hosted Docker or Letta Cloud | Long-running stateful | Agents that need to remember across sessions and learn over time | Extra LLM calls for memory management; replaces your agent stack |
 | [Froge Code](../agents/froge-code.md) | Review-first automation platform | Self-hosted platform | Multiple attempts plus human choice | Task-board-centric coding automation | Name still needs confirmation |
 
 ## How To Read This Table

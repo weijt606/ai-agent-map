@@ -29,6 +29,8 @@ This is not a ranking of quality.
 
 It is a quick view of projects that appeared especially hot in the late-April 2026 GitHub snapshot. The order follows that snapshot, while the star totals below reflect the current counts checked during this repo update.
 
+> **Last updated:** 2026-04-24 · **Snapshot window:** 2026-04-17 → 2026-04-24 (7-day gain) · **Star counts:** checked at update time
+
 | Rank | Project | Current stars | Snapshot gain | Directory status | Note |
 | --- | --- | --- | --- | --- | --- |
 | #1 | [Hermes Agent](hermes-agent.md) | 113.0k | +57,100 | Profile included | Clear in-scope self-hosted multi-agent environment with explosive growth |

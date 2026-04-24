@@ -38,6 +38,16 @@ Each row answers one question: what kind of problem is this project best suited 
 | [LlamaIndex](../agents/llamaindex.md) | Data-first RAG and agent framework | Local or LlamaCloud | Data ingestion and retrieval-first | Applications that need agents to reason over documents, databases, and APIs | Not a general-purpose agent orchestrator |
 | [n8n](../agents/n8n.md) | Visual workflow automation | Self-hosted or n8n Cloud | Event-driven workflow | AI agent workflows with 400+ real integrations and visual builder | Fair-code license, not pure OSI open-source |
 | [MemGPT](../agents/memgpt.md) | Stateful agent platform | Self-hosted Docker or Letta Cloud | Long-running stateful | Agents that need to remember across sessions and learn over time | Extra LLM calls for memory management; replaces your agent stack |
+| [Agent Zero](../agents/agent-zero.md) | Autonomous agent framework | Self-hosted Docker | Autonomous self-building | Developers wanting max autonomy with dynamic tool creation | No enterprise support, no hosted option |
+| [BabyAGI](../agents/babyagi.md) | Experimental autonomous agent | Local Python | Experimental | Studying autonomous agent design patterns | Not for production — educational only |
+| [Julep](../agents/julep.md) | Durable workflow engine | Self-hosted Docker | Multi-step stateful | Temporal-grade durable agent workflows with persistent memory | Self-hosted only, small vendor risk |
+| [Haystack](../agents/haystack.md) | RAG and agent framework | Local Python or deepset Enterprise | Production pipeline | Production RAG with lower overhead than LangChain | Smaller ecosystem than LangChain |
+| [Semantic Kernel](../agents/semantic-kernel.md) | Enterprise AI orchestration SDK | .NET, Python, Java | Plugin-driven orchestration | .NET and Azure teams needing typed AI orchestration | Python ecosystem smaller than LangChain |
+| [DSPy](../agents/dspy.md) | Prompt optimization framework | Local Python | Compiler-driven optimization | Teams wanting algorithmically optimized prompts at scale | Steep learning curve, research-grade tooling |
+| [Open Interpreter](../agents/open-interpreter.md) | Local code execution agent | Local machine | Natural language to code | Developers wanting LLMs to execute code directly on their machine | No sandbox — every command runs for real |
+| [LiteLLM](../agents/litellm.md) | LLM API gateway | Self-hosted proxy | Infrastructure layer | Teams running multiple LLM providers needing unified access | Self-hosted infra overhead, latency under load |
+| [Pydantic AI](../agents/pydantic-ai.md) | Type-safe agent framework | Local Python | Type-driven development | Python teams wanting type safety and structured outputs | Smaller ecosystem than LangChain |
+| [Flowise](../agents/flowise.md) | Visual LLM app builder | Self-hosted or Flowise Cloud | Drag-and-drop visual | Teams wanting no-code RAG chatbots and agent flows | Complex flows become fragile at scale |
 | [Froge Code](../agents/froge-code.md) | Review-first automation platform | Self-hosted platform | Multiple attempts plus human choice | Task-board-centric coding automation | Name still needs confirmation |
 
 ## How To Read This Table

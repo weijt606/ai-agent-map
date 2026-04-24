@@ -38,6 +38,16 @@
 | [LlamaIndex](../agents/llamaindex.md) | 数据优先 RAG 与 agent 框架 | 本地或 LlamaCloud | 数据摄取和检索优先 | 需要 agent 基于文档、数据库和 API 推理的应用 | 不是通用 agent 编排器 |
 | [n8n](../agents/n8n.md) | 可视化工作流自动化 | 自托管或 n8n Cloud | 事件驱动工作流 | 带 400+ 真实集成的 AI agent 工作流和可视化构建 | Fair-code license，不是纯 OSI 开源 |
 | [MemGPT](../agents/memgpt.md) | 有状态 agent 平台 | 自托管 Docker 或 Letta Cloud | 长期运行、有状态 | 需要跨会话记忆和不断学习的 agent | 记忆管理会增加额外 LLM 调用；会替换你现有的 agent 栈 |
+| [Agent Zero](../agents/agent-zero.md) | 自主 agent 框架 | 自托管 Docker | 自主自构建 | 想要最大自主性和动态工具创建的开发者 | 无企业支持，无托管选项 |
+| [BabyAGI](../agents/babyagi.md) | 实验性自主 agent | 本地 Python | 实验 | 研究自主 agent 设计模式 | 非生产用——仅供教学 |
+| [Julep](../agents/julep.md) | 持久化工作流引擎 | 自托管 Docker | 多步有状态 | 需要 Temporal 级持久化 agent 工作流和持久记忆 | 仅自托管，小厂商风险 |
+| [Haystack](../agents/haystack.md) | RAG 和 agent 框架 | 本地 Python 或 deepset Enterprise | 生产 pipeline | 想要比 LangChain 更低开销的生产 RAG | 生态比 LangChain 小 |
+| [Semantic Kernel](../agents/semantic-kernel.md) | 企业级 AI 编排 SDK | .NET、Python、Java | 插件驱动编排 | .NET / Azure 团队需要类型化 AI 编排 | Python 生态不如 LangChain 广 |
+| [DSPy](../agents/dspy.md) | Prompt 优化框架 | 本地 Python | 编译器驱动优化 | 想在规模化场景下用算法优化 prompt | 学习曲线陡，工具链偏研究级 |
+| [Open Interpreter](../agents/open-interpreter.md) | 本地代码执行 agent | 本机 | 自然语言到代码 | 想让 LLM 直接在本机执行代码的开发者 | 无沙盒——每条命令都是真实操作 |
+| [LiteLLM](../agents/litellm.md) | LLM API 网关 | 自托管代理 | 基础设施层 | 同时用多家 LLM provider、需要统一访问的团队 | 自托管基础设施开销，高负载下延迟 |
+| [Pydantic AI](../agents/pydantic-ai.md) | 类型安全 agent 框架 | 本地 Python | 类型驱动开发 | 想要类型安全和结构化输出的 Python 团队 | 生态比 LangChain 小 |
+| [Flowise](../agents/flowise.md) | 可视化 LLM 应用构建器 | 自托管或 Flowise Cloud | 拖拽可视化 | 想不写代码搭 RAG chatbot 和 agent 流程的团队 | 复杂流程在规模化时变脆弱 |
 | [Froge Code](../agents/froge-code.md) | review-first 自动化平台 | 自托管平台 | 多尝试 + 人工挑选 | 想把 coding automation 做成任务板流程 | 名称仍待进一步确认 |
 
 ## 怎么读这张表

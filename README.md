@@ -6,7 +6,7 @@
 [![Agent](https://img.shields.io/badge/AGENT-MAP-d97706?style=for-the-badge&labelColor=92400e)](agents/README.md)
 
 <p align="center">
-	<img src="assets/ai-agent-map-pixel.png" alt="Pixel-art style AI Agent Map banner showing four regions — daily coding agents, general autonomous agents, frameworks and platforms, and runtimes and tools — with agent icons placed on an illustrated treasure-map landscape" width="100%" />
+	<img src="assets/ai-agent-map-pixel-en.png" alt="Pixel-art style AI Agent Map banner showing four regions — daily coding agents, general autonomous agents, frameworks and platforms, and runtimes and tools — with agent icons placed on an illustrated treasure-map landscape" width="100%" />
 </p>
 
 AI Agent Map is a practical, visual-first guide for comparing mainstream AI agents, agent platforms, runtimes, and orchestration tools.
@@ -36,15 +36,16 @@ Popularity is not fit.
 
 This table tracks projects that showed up as especially hot in the late-April 2026 GitHub snapshot. The rank follows that snapshot. The total star counts below were checked when this repo was updated.
 
-> **Last updated:** 2026-04-24 · **Snapshot window:** 2026-04-17 → 2026-04-24 (7-day gain) · **Star counts:** checked at update time
+> **Last updated:** 2026-04-26 · **Snapshot window:** 2026-04-19 → 2026-04-26 (7-day gain) · **Star counts:** checked at update time
 
 | Rank | Project | Current stars | Snapshot gain | Map status | How to read it |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [Hermes Agent](agents/hermes-agent.md) | 113.0k | +57,100 | In scope | Self-hosted multi-agent environment with explosive growth and clear fit in this repo |
-| #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 32.4k | +4,500 | Out of scope | Still hot, but it is a screen-demo tool rather than an agent |
-| #3 | [oh-my-codex](agents/oh-my-codex.md) | 25.3k | +4,400 | In scope | A Codex workflow and orchestration layer still climbing fast |
-| #4 | [oh-my-claudecode](agents/oh-my-claudecode.md) | 31.0k | +3,400 | In scope | A fast-moving orchestration layer around Claude Code |
-| #5 | [AI Edge Gallery](agents/ai-edge-gallery.md) | 21.9k | +1,600 | In scope with caveat | More of an on-device assistant sandbox than a coding-first agent |
+| #1 | [Hermes Agent](agents/hermes-agent.md) | 118.2k | +58,500 | In scope | Self-hosted multi-agent environment, still the standout grower in this snapshot |
+| #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 32.9k | +3,800 | Out of scope | Still hot, but it is a screen-demo tool rather than an agent |
+| #3 | [oh-my-codex](agents/oh-my-codex.md) | 26.1k | +3,500 | In scope | A Codex workflow and orchestration layer still climbing |
+| #4 | [oh-my-claudecode](agents/oh-my-claudecode.md) | 31.4k | +2,800 | In scope | A workflow and orchestration layer around Claude Code |
+| #5 | [AI Edge Gallery](agents/ai-edge-gallery.md) | 22.1k | +1,400 | In scope with caveat | More of an on-device assistant sandbox than a coding-first agent |
+| #6 (new) | [Mercury Agent](agents/mercury-agent.md) | 1.4k | +1,400 | In scope | Brand-new entrant (created 2026-04-20) — permission-hardened self-hosted agent for CLI and Telegram |
 
 - Heat is useful for discovery, not for selection by itself.
 - Some hot repos are adjacent to the agent landscape without actually being agents. OpenScreen is the clearest example in this snapshot.
@@ -75,7 +76,7 @@ GPT-5.5 does not replace [Codex](agents/codex.md) as a product entry. It is the 
 | General-purpose autonomous agent | [AutoGPT](agents/autogpt.md), [Agent Zero](agents/agent-zero.md), [BabyAGI](agents/babyagi.md), [Julep](agents/julep.md) | Someone who wants autonomous, general-purpose task execution |
 | Build-your-own system | [LangChain](agents/langchain.md), [LangGraph](agents/langgraph.md), [CrewAI](agents/crewai.md), [LlamaIndex](agents/llamaindex.md), [Haystack](agents/haystack.md), [Semantic Kernel](agents/semantic-kernel.md), [DSPy](agents/dspy.md), [Pydantic AI](agents/pydantic-ai.md) | Teams building their own agent platform instead of buying one |
 | Runtime and tools | [n8n](agents/n8n.md), [MemGPT](agents/memgpt.md), [Open Interpreter](agents/open-interpreter.md), [LiteLLM](agents/litellm.md), [Flowise](agents/flowise.md) | Teams that need workflow automation, code execution, LLM gateways, or visual builders |
-| Self-hosted / local runtime | [AI Edge Gallery](agents/ai-edge-gallery.md), [Goose](agents/goose.md), [Hermes Agent](agents/hermes-agent.md), [OpenClaw](agents/openclaw.md) | Users who need on-device privacy, long-running agents, local control, channels, or devices |
+| Self-hosted / local runtime | [AI Edge Gallery](agents/ai-edge-gallery.md), [Goose](agents/goose.md), [Hermes Agent](agents/hermes-agent.md), [OpenClaw](agents/openclaw.md), [Mercury Agent](agents/mercury-agent.md) | Users who need on-device privacy, long-running agents, local control, channels, or devices |
 
 ## Repo Structure
 
@@ -127,6 +128,7 @@ GPT-5.5 does not replace [Codex](agents/codex.md) as a product entry. It is the 
 | [Pydantic AI](agents/pydantic-ai.md) | Framework | Type-safe Python agent framework with structured outputs |
 | [Flowise](agents/flowise.md) | Visual builder | Drag-and-drop LLM app and agent builder on top of LangChain |
 | [Froge Code](agents/froge-code.md) | Review-first automation | Provisionally mapped to Automagik Genie |
+| [Mercury Agent](agents/mercury-agent.md) | Self-hosted multi-channel | Permission-hardened agent for CLI and Telegram with token budgets |
 
 ## Example Reading Paths
 

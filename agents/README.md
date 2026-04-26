@@ -20,7 +20,7 @@ Think of it as a shortlist directory: understand the route first, then decide wh
 | General-purpose autonomous agent | [AutoGPT](autogpt.md), [Agent Zero](agent-zero.md), [BabyAGI](babyagi.md), [Julep](julep.md) | People who want autonomous general-purpose task execution |
 | Build-your-own platform | [LangChain](langchain.md), [LangGraph](langgraph.md), [CrewAI](crewai.md), [LlamaIndex](llamaindex.md), [Haystack](haystack.md), [Semantic Kernel](semantic-kernel.md), [DSPy](dspy.md), [Pydantic AI](pydantic-ai.md) | Teams building their own agent system |
 | Runtime and tools | [n8n](n8n.md), [MemGPT](memgpt.md), [Open Interpreter](open-interpreter.md), [LiteLLM](litellm.md), [Flowise](flowise.md) | Teams needing workflow automation, code execution, LLM gateways, or visual builders |
-| Self-hosted / local runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md) | Users who need local control, on-device privacy, extensions, channels, or deeper runtime ownership |
+| Self-hosted / local runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md), [Mercury Agent](mercury-agent.md) | Users who need local control, on-device privacy, extensions, channels, or deeper runtime ownership |
 | Managed background path | [Claude Managed Agents](claude-managed-agents.md) | Users who need scheduled, cloud, or detached execution |
 
 ## Recent Heat Snapshot
@@ -29,15 +29,16 @@ This is not a ranking of quality.
 
 It is a quick view of projects that appeared especially hot in the late-April 2026 GitHub snapshot. The order follows that snapshot, while the star totals below reflect the current counts checked during this repo update.
 
-> **Last updated:** 2026-04-24 · **Snapshot window:** 2026-04-17 → 2026-04-24 (7-day gain) · **Star counts:** checked at update time
+> **Last updated:** 2026-04-26 · **Snapshot window:** 2026-04-19 → 2026-04-26 (7-day gain) · **Star counts:** checked at update time
 
 | Rank | Project | Current stars | Snapshot gain | Directory status | Note |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [Hermes Agent](hermes-agent.md) | 113.0k | +57,100 | Profile included | Clear in-scope self-hosted multi-agent environment with explosive growth |
-| #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 32.4k | +4,500 | Not included | Still hot, but it is a screen-demo tool rather than an agent |
-| #3 | [oh-my-codex](oh-my-codex.md) | 25.3k | +4,400 | Profile included | A fast-rising Codex workflow and orchestration layer |
-| #4 | [oh-my-claudecode](oh-my-claudecode.md) | 31.0k | +3,400 | Profile included | A hot workflow and orchestration layer around Claude Code |
-| #5 | [AI Edge Gallery](ai-edge-gallery.md) | 21.9k | +1,600 | Profile included with caveat | Better read as an on-device assistant sandbox than a coding-first agent |
+| #1 | [Hermes Agent](hermes-agent.md) | 118.2k | +58,500 | Profile included | Self-hosted multi-agent environment, still the standout grower |
+| #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 32.9k | +3,800 | Not included | Still hot, but it is a screen-demo tool rather than an agent |
+| #3 | [oh-my-codex](oh-my-codex.md) | 26.1k | +3,500 | Profile included | A Codex workflow and orchestration layer still climbing |
+| #4 | [oh-my-claudecode](oh-my-claudecode.md) | 31.4k | +2,800 | Profile included | A workflow and orchestration layer around Claude Code |
+| #5 | [AI Edge Gallery](ai-edge-gallery.md) | 22.1k | +1,400 | Profile included with caveat | Better read as an on-device assistant sandbox than a coding-first agent |
+| #6 (new) | [Mercury Agent](mercury-agent.md) | 1.4k | +1,400 | Profile included | Brand-new entrant (created 2026-04-20) — permission-hardened CLI / Telegram agent |
 
 **Market event (April 23 2026):** OpenAI released [GPT-5.5](gpt-5.5.md) — not a GitHub-trending project, but a model that reshapes the capability ceiling for Codex, ChatGPT, and every OpenAI-API-based agent. See the [GPT-5.5 profile](gpt-5.5.md) for positioning and trade-offs.
 
@@ -82,6 +83,7 @@ It is a quick view of projects that appeared especially hot in the late-April 20
 | [Pydantic AI](pydantic-ai.md) | platform | Yes | Type-safe Python agent framework with structured outputs | Verified |
 | [Flowise](flowise.md) | runtime / tools | Yes | Visual drag-and-drop LLM app and agent builder | Verified |
 | [Froge Code](froge-code.md) | automation | Yes | Currently mapped to Automagik Genie | Public naming is still evolving |
+| [Mercury Agent](mercury-agent.md) | multi-channel runtime | Yes | Permission-hardened self-hosted agent for CLI and Telegram with token budgets | Verified against current repo |
 
 ## Writing Standard
 

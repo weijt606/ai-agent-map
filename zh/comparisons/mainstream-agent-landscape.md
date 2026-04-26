@@ -29,6 +29,7 @@
 | [AI Edge Gallery](../agents/ai-edge-gallery.md) | 端侧 assistant 沙盒 | 移动设备 | 本地试验型 | 想要私有本地模型、mobile actions 和 edge-agent skills | 不是 coding-first agent，也不是通用 orchestration 平台 |
 | [Goose](../agents/goose.md) | 可扩展本地 agent | desktop、CLI、API、本机 | 本地优先、可扩展 | 想要开源本地 agent，加上 extensions、MCP 和共享配置 | 产品边界不只在 coding 上 |
 | [Hermes Agent](../agents/hermes-agent.md) | 自托管多 agent 环境 | CLI + gateway | 长期经营型 | 想要 memory、skills、delegation 和消息渠道 | 需要持续整理权限与环境 |
+| [Mercury Agent](../agents/mercury-agent.md) | 权限硬化多通道 agent | 自托管 daemon，CLI + Telegram | 常驻 + 显式审批 | 想要长期常驻、严格审批、有 token 预算和持久记忆的个人或团队 | 你自己负责 daemon、权限策略和通道表面 |
 | [OpenClaw](../agents/openclaw.md) | runtime / gateway | 本地优先 self-hosted | 常驻运行型 | 需要渠道、设备、工具和 runtime 控制面 | 对纯 coding 工作偏重 |
 | [LangChain](../agents/langchain.md) | 高层框架 | 开源库 | 快速搭建型 | 想快速做自定义 agent 原型 | 精细状态控制不如更底层框架 |
 | [LangGraph](../agents/langgraph.md) | 底层 orchestration 框架 | 开源库 | 平台建设型 | 需要持久化、有状态、可恢复 workflow | 设计和运维成本最高 |

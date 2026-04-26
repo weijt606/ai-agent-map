@@ -20,7 +20,7 @@
 | 通用自主 agent | [AutoGPT](autogpt.md), [Agent Zero](agent-zero.md), [BabyAGI](babyagi.md), [Julep](julep.md) | 想要通用自主任务执行 |
 | 自建平台 | [LangChain](langchain.md), [LangGraph](langgraph.md), [CrewAI](crewai.md), [LlamaIndex](llamaindex.md), [Haystack](haystack.md), [Semantic Kernel](semantic-kernel.md), [DSPy](dspy.md), [Pydantic AI](pydantic-ai.md) | 想自己搭 agent system |
 | 运行时 & 工具 | [n8n](n8n.md), [MemGPT](memgpt.md), [Open Interpreter](open-interpreter.md), [LiteLLM](litellm.md), [Flowise](flowise.md) | 需要工作流自动化、代码执行、LLM 网关或可视化构建器 |
-| 自托管 / 本地 runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md) | 需要端侧隐私、本地控制、扩展、渠道或更深的 runtime ownership |
+| 自托管 / 本地 runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md), [Mercury Agent](mercury-agent.md) | 需要端侧隐私、本地控制、扩展、渠道或更深的 runtime ownership |
 | 管理式后台路径 | [Claude Managed Agents](claude-managed-agents.md) | 需要云端、定时、后台执行 |
 
 ## 近期热门快照
@@ -29,15 +29,16 @@
 
 它只是把 2026 年 4 月下旬 GitHub 热门快照里特别热的项目先摆出来。顺序沿用那张快照，下面的 star 总数则是这次更新目录时重新核对过的当前值。
 
-> **最后更新：** 2026-04-24 · **快照窗口：** 2026-04-17 → 2026-04-24（7 天增量） · **Star 总数：** 更新时实时核对
+> **最后更新：** 2026-04-26 · **快照窗口：** 2026-04-19 → 2026-04-26（7 天增量） · **Star 总数：** 更新时实时核对
 
 | 排名 | 项目 | 当前 stars | 快照增量 | 目录状态 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [Hermes Agent](hermes-agent.md) | 113.0k | +57,100 | 已收录 profile | 自托管多 agent 环境，增长爆发式 |
-| #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 32.4k | +4,500 | 不收录 | 仍然热门，但本质上是录屏 / 演示工具，不是 agent |
-| #3 | [oh-my-codex](oh-my-codex.md) | 25.3k | +4,400 | 已收录 profile | 围绕 Codex 的高热度工作流和 orchestration layer |
-| #4 | [oh-my-claudecode](oh-my-claudecode.md) | 31.0k | +3,400 | 已收录 profile | 围绕 Claude Code 的高热度工作流和 orchestration layer |
-| #5 | [AI Edge Gallery](ai-edge-gallery.md) | 21.9k | +1,600 | 已收录，但附带范围说明 | 更适合被理解成端侧 assistant 沙盒，而不是 coding-first agent |
+| #1 | [Hermes Agent](hermes-agent.md) | 118.2k | +58,500 | 已收录 profile | 自托管多 agent 环境，仍是这次快照增长最猛的项目 |
+| #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 32.9k | +3,800 | 不收录 | 仍然热门，但本质上是录屏 / 演示工具，不是 agent |
+| #3 | [oh-my-codex](oh-my-codex.md) | 26.1k | +3,500 | 已收录 profile | 围绕 Codex 的工作流和 orchestration layer，仍在爬升 |
+| #4 | [oh-my-claudecode](oh-my-claudecode.md) | 31.4k | +2,800 | 已收录 profile | 围绕 Claude Code 的工作流和 orchestration layer |
+| #5 | [AI Edge Gallery](ai-edge-gallery.md) | 22.1k | +1,400 | 已收录，但附带范围说明 | 更适合被理解成端侧 assistant 沙盒，而不是 coding-first agent |
+| #6（新） | [Mercury Agent](mercury-agent.md) | 1.4k | +1,400 | 已收录 profile | 全新条目（2026-04-20 创建）——权限硬化的 CLI + Telegram 自托管 agent |
 
 **市场事件（2026-04-23）：** OpenAI 发布了 [GPT-5.5](gpt-5.5.md)——不是 GitHub 热门仓库，而是直接抬高了 Codex、ChatGPT 和所有基于 OpenAI API 的 agent 能力天花板的模型发布。详见 [GPT-5.5 profile](gpt-5.5.md)。
 
@@ -82,6 +83,7 @@
 | [Pydantic AI](pydantic-ai.md) | platform | 是 | 类型安全 Python agent 框架，结构化输出 | 已核验 |
 | [Flowise](flowise.md) | runtime / tools | 是 | 拖拽式 LLM 应用和 agent 可视化构建器 | 已核验 |
 | [Froge Code](froge-code.md) | automation | 是 | 当前映射为 Automagik Genie | 对外命名仍在演进 |
+| [Mercury Agent](mercury-agent.md) | multi-channel runtime | 是 | 权限硬化的 CLI + Telegram 自托管 agent，带 token 预算 | 已按当前仓库核验 |
 
 ## 写法标准
 

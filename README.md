@@ -34,21 +34,24 @@ This repo stays focused on selection: what a system is good at, where it breaks 
 
 Popularity is not fit.
 
-This table tracks projects that showed up as especially hot in the late-April 2026 GitHub snapshot. The rank follows that snapshot. The total star counts below were checked when this repo was updated.
+This table tracks projects that showed up as especially hot in the latest weekly GitHub snapshot. The rank follows the 7-day gain. The total star counts below were checked when this repo was updated.
 
-> **Last updated:** 2026-04-26 · **Snapshot window:** 2026-04-19 → 2026-04-26 (7-day gain) · **Star counts:** checked at update time
+> **Last updated:** 2026-05-02 · **Snapshot window:** 2026-04-26 → 2026-05-02 (7-day gain) · **Star counts:** checked at update time
 
 | Rank | Project | Current stars | Snapshot gain | Map status | How to read it |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [Hermes Agent](agents/hermes-agent.md) | 118.2k | +58,500 | In scope | Self-hosted multi-agent environment, still the standout grower in this snapshot |
-| #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 32.9k | +3,800 | Out of scope | Still hot, but it is a screen-demo tool rather than an agent |
-| #3 | [oh-my-codex](agents/oh-my-codex.md) | 26.1k | +3,500 | In scope | A Codex workflow and orchestration layer still climbing |
-| #4 | [oh-my-claudecode](agents/oh-my-claudecode.md) | 31.4k | +2,800 | In scope | A workflow and orchestration layer around Claude Code |
-| #5 | [AI Edge Gallery](agents/ai-edge-gallery.md) | 22.1k | +1,400 | In scope with caveat | More of an on-device assistant sandbox than a coding-first agent |
-| #6 (new) | [Mercury Agent](agents/mercury-agent.md) | 1.4k | +1,400 | In scope | Brand-new entrant (created 2026-04-20) — permission-hardened self-hosted agent for CLI and Telegram |
+| #1 | [Hermes Agent](agents/hermes-agent.md) | 129k | +10,800 | In scope | Self-hosted multi-agent environment, still leading absolute growth though decelerating from last week's +58k |
+| #2 (new) | [Codex CLI](agents/codex.md) | 79.5k | +3,900 | In scope | OpenAI's terminal-native coding agent — surge driven by April 16 Computer Use + parallel multi-agent update and the GPT-5.5 backbone |
+| #3 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 34.2k | +1,300 | Out of scope | Still hot, but it is a screen-demo tool rather than an agent |
+| #4 | [oh-my-codex](agents/oh-my-codex.md) | 27.2k | +1,100 | In scope | Codex CLI orchestration layer, still riding the Codex wave |
+| #5 | [oh-my-claudecode](agents/oh-my-claudecode.md) | 32.2k | +800 | In scope | Workflow and orchestration layer around Claude Code |
+| #6 | [Mercury Agent](agents/mercury-agent.md) | 1.9k | +500 | In scope | Sustained week-2 growth — permission-hardened self-hosted CLI / Telegram agent |
+| #7 | [AI Edge Gallery](agents/ai-edge-gallery.md) | 22.4k | +300 | In scope with caveat | On-device assistant sandbox, growth flattening |
+| Watchlist | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 8.7k | n/a this week | Not yet in scope | New self-evolving agent from a Fudan team — 3.3K-line seed grows a personal skill tree on every task. Tracking before deciding on a profile |
 
 - Heat is useful for discovery, not for selection by itself.
 - Some hot repos are adjacent to the agent landscape without actually being agents. OpenScreen is the clearest example in this snapshot.
+- Codex CLI is now the second-fastest grower this week — the headline event is OpenAI's April 16 "Codex for (almost) everything" update, which adds Computer Use (autonomous mouse/keyboard across any macOS app), parallel background agents, an in-app browser, and 90+ plugins on top of the GPT-5.5 model layer.
 
 ## Market Event: GPT-5.5 Enters The Agent Landscape
 
@@ -62,6 +65,20 @@ On April 23 2026, OpenAI released [GPT-5.5](agents/gpt-5.5.md) — positioned as
 | SWE-Bench Pro at 58.6% | Still trails Claude Opus 4.7 (64.3%) — model choice depends on workload |
 
 GPT-5.5 does not replace [Codex](agents/codex.md) as a product entry. It is the model layer underneath. See the [GPT-5.5 profile](agents/gpt-5.5.md) for the full breakdown.
+
+### Codex Product Update (April 16 2026)
+
+A week before the GPT-5.5 release, OpenAI shipped "Codex for (almost) everything," a major capability expansion on the [Codex](agents/codex.md) product surface itself.
+
+| What changed | Why it matters |
+| --- | --- |
+| Background Computer Use | Codex can see, click, and type with its own cursor across any macOS app — even ones without an API |
+| Parallel multi-agent execution | Multiple Codex agents can run on the same Mac in parallel without interfering with foreground work |
+| 90+ new plugins | Atlassian Rovo, CircleCI, CodeRabbit, GitLab Issues, Microsoft Suite, and more |
+| In-app browser + proactive suggestions | Direct iteration on frontend designs and proactive proposals from project context and memory |
+| 3M weekly active developers | Reported in April 2026, nearly 2x early-March 2026 |
+
+Combined with the GPT-5.5 backbone, this is the most consequential agent product update in the snapshot window.
 
 ## The First Cut Of The Map
 

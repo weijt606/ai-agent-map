@@ -39,9 +39,22 @@
 | Isolated execution | 很强 | 每个任务独立运行是核心卖点 |
 | Code execution | 强 | 能跑命令、测试、类型检查 |
 | Review evidence | 强 | 很适合 review-first 团队 |
-| Background delegation | 强 | 任务委派是第一心智模型 |
+| Background delegation | 很强 | 4 月 16 日更新后多 agent 可并行在同一台机器跑 |
 | GitHub / PR handoff | 强 | 适合把结果带回 review 流程 |
-| Local companion surfaces | 中 | Codex CLI 相关，但不应把 CLI 的开源属性算到主产品上 |
+| Computer use | 强（2026-04-16 新增） | 在任意 macOS app 内后台鼠键操作，包括没有 API 的 app |
+| Local companion surfaces | 强（原"中"） | Codex CLI 已成为一线表面，v0.128 加入持久化 /goal workflow 和 MultiAgentV2 |
+
+## 近期能力扩展
+
+2026 年 4 月 16 日，OpenAI 推出 "Codex for (almost) everything"，是 2026 年 Codex 产品表面的最大单次更新。对选型来说重要的变化：
+
+- **后台 Computer Use：** Codex 用自己的鼠标和键盘操作任意 macOS app——与通用 computer-use agent 的差距被拉平。
+- **并行多 agent 执行：** 多个 Codex agent 可以在同一台 Mac 并行运行，不干扰前台工作。
+- **内置浏览器 + 主动建议：** 前端迭代不用切上下文，并基于项目记忆主动提议工作。
+- **90+ plugin：** Atlassian Rovo、CircleCI、CodeRabbit、GitLab Issues、Microsoft Suite 等。
+- **周活 300 万开发者**（2026 年 4 月数据），约为 3 月初的 2 倍。
+
+Codex CLI（开源终端伴侣，github.com/openai/codex）也走得很快：2026-04-30 的 v0.128.0 引入持久化 /goal workflow、MultiAgentV2 控制、plugin marketplace 安装和更细的权限 profile。现在 CLI 与 Claude Code、Aider 在同一个选型对话里讨论，云端 Codex 产品则作为互补的后台路径。
 
 ## 使用代价
 
@@ -53,4 +66,4 @@
 
 ## 最后一句
 
-把 Codex 理解成 ChatGPT 里的云端 coding agent 会更准确；把 Codex CLI 视为配套本地入口，而不是主产品本体。
+经过 2026 年 4 月 16 日更新，Codex 更适合理解成一个多表面 coding agent：ChatGPT 里的云端 agent、带 Computer Use 和并行后台执行的桌面 app，再加上已经能与 Claude Code、Aider 正面比较的开源终端 CLI。

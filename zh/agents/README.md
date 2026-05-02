@@ -27,20 +27,24 @@
 
 这不是质量排行榜。
 
-它只是把 2026 年 4 月下旬 GitHub 热门快照里特别热的项目先摆出来。顺序沿用那张快照，下面的 star 总数则是这次更新目录时重新核对过的当前值。
+它只是把最近一周 GitHub 快照里特别热的 agent 项目摆出来。顺序按 7 天增量；下面的 star 总数是这次更新目录时重新核对过的当前值。
 
-> **最后更新：** 2026-04-26 · **快照窗口：** 2026-04-19 → 2026-04-26（7 天增量） · **Star 总数：** 更新时实时核对
+> **最后更新：** 2026-05-02 · **快照窗口：** 2026-04-26 → 2026-05-02（7 天增量） · **Star 总数：** 更新时实时核对
 
 | 排名 | 项目 | 当前 stars | 快照增量 | 目录状态 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [Hermes Agent](hermes-agent.md) | 118.2k | +58,500 | 已收录 profile | 自托管多 agent 环境，仍是这次快照增长最猛的项目 |
-| #2 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 32.9k | +3,800 | 不收录 | 仍然热门，但本质上是录屏 / 演示工具，不是 agent |
-| #3 | [oh-my-codex](oh-my-codex.md) | 26.1k | +3,500 | 已收录 profile | 围绕 Codex 的工作流和 orchestration layer，仍在爬升 |
-| #4 | [oh-my-claudecode](oh-my-claudecode.md) | 31.4k | +2,800 | 已收录 profile | 围绕 Claude Code 的工作流和 orchestration layer |
-| #5 | [AI Edge Gallery](ai-edge-gallery.md) | 22.1k | +1,400 | 已收录，但附带范围说明 | 更适合被理解成端侧 assistant 沙盒，而不是 coding-first agent |
-| #6（新） | [Mercury Agent](mercury-agent.md) | 1.4k | +1,400 | 已收录 profile | 全新条目（2026-04-20 创建）——权限硬化的 CLI + Telegram 自托管 agent |
+| #1 | [Hermes Agent](hermes-agent.md) | 129k | +10,800 | 已收录 profile | 自托管多 agent 环境，仍是绝对增量最大，但比上周 +58k 已开始放缓 |
+| #2（新） | [Codex CLI](codex.md) | 79.5k | +3,900 | 已收录 profile | OpenAI 终端原生 coding agent——本周飙升直接动因是 4 月 16 日的 Computer Use + 并行多 agent 更新，加上 GPT-5.5 底层 |
+| #3 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 34.2k | +1,300 | 不收录 | 仍然热门，但本质上是录屏 / 演示工具，不是 agent |
+| #4 | [oh-my-codex](oh-my-codex.md) | 27.2k | +1,100 | 已收录 profile | Codex CLI 的 orchestration layer，搭着 Codex 浪潮继续涨 |
+| #5 | [oh-my-claudecode](oh-my-claudecode.md) | 32.2k | +800 | 已收录 profile | 围绕 Claude Code 的工作流和 orchestration layer |
+| #6 | [Mercury Agent](mercury-agent.md) | 1.9k | +500 | 已收录 profile | 进入第二周仍在持续涨——权限硬化的 CLI + Telegram 自托管 agent |
+| #7 | [AI Edge Gallery](ai-edge-gallery.md) | 22.4k | +300 | 已收录，但附带范围说明 | 端侧 assistant 沙盒，增长趋于平缓 |
+| 候补 | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 8.7k | 本周暂未单列 | 暂不收录 | 复旦团队的自演进 agent，3.3K 行种子代码动态生长出个人 skill tree，先观察再决定是否做 profile |
 
-**市场事件（2026-04-23）：** OpenAI 发布了 [GPT-5.5](gpt-5.5.md)——不是 GitHub 热门仓库，而是直接抬高了 Codex、ChatGPT 和所有基于 OpenAI API 的 agent 能力天花板的模型发布。详见 [GPT-5.5 profile](gpt-5.5.md)。
+**市场事件：**
+- **2026-04-16** —— OpenAI 推出 "Codex for (almost) everything"，在 [Codex](codex.md) 产品表面加入后台 Computer Use、并行多 agent 执行、内置浏览器，以及 90+ plugin。同时披露周活 300 万开发者，约为 3 月初的 2 倍。
+- **2026-04-23** —— OpenAI 发布 [GPT-5.5](gpt-5.5.md)，是 Codex、ChatGPT 和所有基于 OpenAI API 的 agent 的底层模型。
 
 ## 当前已收录
 

@@ -39,9 +39,22 @@ One-line take: Codex is a strong representative of the “delegate to the cloud,
 | Isolated execution | Very strong | The isolation model is core |
 | Code execution | Strong | Commands, tests, and validation matter here |
 | Review evidence | Strong | Well aligned with review-heavy teams |
-| Background delegation | Strong | This is the primary mental model |
+| Background delegation | Very strong | Multiple agents can now run on the same machine in parallel after the April 16 update |
 | GitHub / PR handoff | Strong | Well suited to review-oriented workflows |
-| Local companion surfaces | Medium | Codex CLI is related, but its open-source status should not be treated as the product's status |
+| Computer use | Strong (new April 16 2026) | Background cursor and keyboard control across any macOS app, including ones without an API |
+| Local companion surfaces | Strong (was Medium) | Codex CLI is now a first-class surface, with persisted /goal workflows and MultiAgentV2 in v0.128 |
+
+## Recent Capability Expansion
+
+On April 16 2026, OpenAI shipped "Codex for (almost) everything," the largest single update to the Codex product surface in 2026. Key shifts for selection:
+
+- **Background Computer Use:** Codex sees, clicks, and types with its own cursor across any macOS application — closing the gap with general-purpose computer-use agents.
+- **Parallel multi-agent execution:** Multiple Codex agents can run on the same Mac in parallel without interfering with foreground work.
+- **In-app browser + proactive suggestions:** Frontend iteration without context-switching, plus proposed work pulled from project memory.
+- **90+ plugins:** Atlassian Rovo, CircleCI, CodeRabbit, GitLab Issues, Microsoft Suite, and more.
+- **3M weekly active developers** reported in April 2026 — nearly 2x early-March 2026.
+
+Codex CLI (the open-source terminal companion at github.com/openai/codex) also moved fast: v0.128.0 on April 30 2026 added persisted /goal workflows, MultiAgentV2 controls, plugin marketplace install, and richer permission profiles. The CLI now sits in the same selection conversation as Claude Code and Aider for terminal-first coding agents, with the cloud Codex product as a complementary background path.
 
 ## Operating Cost
 
@@ -53,4 +66,4 @@ As of April 23 2026, Codex is powered by [GPT-5.5](gpt-5.5.md) — OpenAI's late
 
 ## Bottom Line
 
-The cleanest way to understand Codex is as the cloud agent in ChatGPT, with Codex CLI as a related local entry point rather than the core product itself.
+After the April 16 2026 update, Codex is best read as a multi-surface coding agent: the cloud agent in ChatGPT, the desktop app with Computer Use and parallel background execution, and Codex CLI as an open-source terminal surface that has caught up enough to compete head-to-head with Claude Code and Aider.

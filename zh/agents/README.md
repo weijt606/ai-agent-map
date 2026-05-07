@@ -31,16 +31,18 @@
 
 > **最后更新：** 2026-05-08 · **快照窗口：** 2026-05-02 → 2026-05-08（7 天增量） · **Star 总数：** 更新时实时核对
 
+项目名链接指向上游 GitHub 仓库。本目录已收录的 profile，在"目录状态"列单独给出链接。
+
 | 排名 | 项目 | 当前 stars | 快照增量 | 目录状态 | 备注 |
 | --- | --- | --- | --- | --- | --- |
 | #1（新） | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 71.1k | +8,800 | 不收录 | Tauric Research 的多 agent 金融研究框架——本周增量最大，但是垂直领域（交易）研究工具，不是通用 agent 基础设施 |
-| #2 | [Hermes Agent](hermes-agent.md) | 137k | +8,400 | 已收录 profile | 连续第三周持续涨——已收录项目里绝对增量最大的 |
-| #3（新） | [Pi](pi.md) | 46k | +5,000 | 本周新增 profile | 极简终端 coding agent harness；4 月 8 日被 Earendil（Lefos）收购，原本的个人项目获得真实资金，星标增长重新加速 |
+| #2 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 137k | +8,400 | [Profile](hermes-agent.md) | 连续第三周持续涨——已收录项目里绝对增量最大的 |
+| #3（新） | [Pi](https://github.com/earendil-works/pi) | 46k | +5,000 | [Profile](pi.md)（本周新增） | 极简终端 coding agent harness；4 月 8 日被 Earendil（Lefos）收购，原本的个人项目获得真实资金，星标增长重新加速 |
 | #4（新） | [Pixelle-Video](https://github.com/AIDC-AI/Pixelle-Video) | 13.3k | +4,100 | 不收录 | 端到端视频生成流水线——流程是 agentic，但本质是内容工具而非通用 agent |
-| #5 | [Codex CLI](codex.md) | 80.7k | +1,200 | 已收录 profile | OpenAI 终端原生 coding agent——上周 +3.9k 已降温，但绝对基数已超过 80k |
+| #5 | [Codex CLI](https://github.com/openai/codex) | 80.7k | +1,200 | [Profile](codex.md) | OpenAI 终端原生 coding agent——上周 +3.9k 已降温，但绝对基数已超过 80k |
 | #6 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 35.1k | +900 | 不收录 | 仍然热门，但本质上是录屏 / 演示工具，不是 agent |
 | #7（新） | [ml-intern](https://github.com/huggingface/ml-intern) | 8.9k | +800 | 候补观察 | Hugging Face 的自主 ML 工程师 agent——读论文、训模型、上线 ML 代码，先观察再决定是否做 profile |
-| #8 | [oh-my-claudecode](oh-my-claudecode.md) | 32.9k | +700 | 已收录 profile | 围绕 Claude Code 的工作流和 orchestration layer |
+| #8 | [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 32.9k | +700 | [Profile](oh-my-claudecode.md) | 围绕 Claude Code 的工作流和 orchestration layer |
 | 候补 | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 9.5k | +800 | 暂不收录 | 复旦团队的自演进 agent，第二周持续观察，增量放缓但仍在涨 |
 
 **市场事件：**

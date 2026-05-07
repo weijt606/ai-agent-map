@@ -38,16 +38,18 @@ This table tracks projects that showed up as especially hot in the latest weekly
 
 > **Last updated:** 2026-05-08 · **Snapshot window:** 2026-05-02 → 2026-05-08 (7-day gain) · **Star counts:** checked at update time
 
+Project names link to the upstream GitHub repo. When this map has a written profile, it is linked separately in the "Map status" column.
+
 | Rank | Project | Current stars | Snapshot gain | Map status | How to read it |
 | --- | --- | --- | --- | --- | --- |
 | #1 (new) | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 71.1k | +8,800 | Out of scope | Multi-agent finance research framework from Tauric Research — biggest weekly gain, but it is domain-specific (trading) and explicitly research-only, not generic agent infrastructure |
-| #2 | [Hermes Agent](agents/hermes-agent.md) | 137k | +8,400 | In scope | Self-hosted multi-agent environment — sustained week-3 growth, still the leader among in-scope projects |
-| #3 (new) | [Pi](agents/pi.md) | 46k | +5,000 | In scope (new profile) | Minimal terminal coding-agent harness; April 8 acquisition by Earendil (Lefos) put real funding behind it and re-accelerated star growth |
+| #2 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 137k | +8,400 | In scope · [profile](agents/hermes-agent.md) | Self-hosted multi-agent environment — sustained week-3 growth, still the leader among in-scope projects |
+| #3 (new) | [Pi](https://github.com/earendil-works/pi) | 46k | +5,000 | In scope · [profile](agents/pi.md) (new) | Minimal terminal coding-agent harness; April 8 acquisition by Earendil (Lefos) put real funding behind it and re-accelerated star growth |
 | #4 (new) | [Pixelle-Video](https://github.com/AIDC-AI/Pixelle-Video) | 13.3k | +4,100 | Out of scope | End-to-end video generation pipeline — agentic in flow, but it is a content-production tool, not a general-purpose agent |
-| #5 | [Codex CLI](agents/codex.md) | 80.7k | +1,200 | In scope | Terminal-native OpenAI coding agent — last week's +3.9k surge has cooled, but absolute base now exceeds 80k |
+| #5 | [Codex CLI](https://github.com/openai/codex) | 80.7k | +1,200 | In scope · [profile](agents/codex.md) | Terminal-native OpenAI coding agent — last week's +3.9k surge has cooled, but absolute base now exceeds 80k |
 | #6 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 35.1k | +900 | Out of scope | Still hot, but it is a screen-demo tool rather than an agent |
 | #7 (new) | [ml-intern](https://github.com/huggingface/ml-intern) | 8.9k | +800 | Watchlist | Hugging Face's autonomous ML engineer — reads papers, trains models, ships ML code; tracking before adding a profile |
-| #8 | [oh-my-claudecode](agents/oh-my-claudecode.md) | 32.9k | +700 | In scope | Workflow and orchestration layer around Claude Code |
+| #8 | [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 32.9k | +700 | In scope · [profile](agents/oh-my-claudecode.md) | Workflow and orchestration layer around Claude Code |
 | Watchlist | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 9.5k | +800 | Not yet in scope | Self-evolving agent from a Fudan team — week-2 of tracking, growth slowed but still present |
 
 - Heat is useful for discovery, not for selection by itself.

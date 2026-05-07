@@ -36,22 +36,24 @@ Popularity is not fit.
 
 This table tracks projects that showed up as especially hot in the latest weekly GitHub snapshot. The rank follows the 7-day gain. The total star counts below were checked when this repo was updated.
 
-> **Last updated:** 2026-05-02 · **Snapshot window:** 2026-04-26 → 2026-05-02 (7-day gain) · **Star counts:** checked at update time
+> **Last updated:** 2026-05-08 · **Snapshot window:** 2026-05-02 → 2026-05-08 (7-day gain) · **Star counts:** checked at update time
 
 | Rank | Project | Current stars | Snapshot gain | Map status | How to read it |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [Hermes Agent](agents/hermes-agent.md) | 129k | +10,800 | In scope | Self-hosted multi-agent environment, still leading absolute growth though decelerating from last week's +58k |
-| #2 (new) | [Codex CLI](agents/codex.md) | 79.5k | +3,900 | In scope | OpenAI's terminal-native coding agent — surge driven by April 16 Computer Use + parallel multi-agent update and the GPT-5.5 backbone |
-| #3 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 34.2k | +1,300 | Out of scope | Still hot, but it is a screen-demo tool rather than an agent |
-| #4 | [oh-my-codex](agents/oh-my-codex.md) | 27.2k | +1,100 | In scope | Codex CLI orchestration layer, still riding the Codex wave |
-| #5 | [oh-my-claudecode](agents/oh-my-claudecode.md) | 32.2k | +800 | In scope | Workflow and orchestration layer around Claude Code |
-| #6 | [Mercury Agent](agents/mercury-agent.md) | 1.9k | +500 | In scope | Sustained week-2 growth — permission-hardened self-hosted CLI / Telegram agent |
-| #7 | [AI Edge Gallery](agents/ai-edge-gallery.md) | 22.4k | +300 | In scope with caveat | On-device assistant sandbox, growth flattening |
-| Watchlist | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 8.7k | n/a this week | Not yet in scope | New self-evolving agent from a Fudan team — 3.3K-line seed grows a personal skill tree on every task. Tracking before deciding on a profile |
+| #1 (new) | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 71.1k | +8,800 | Out of scope | Multi-agent finance research framework from Tauric Research — biggest weekly gain, but it is domain-specific (trading) and explicitly research-only, not generic agent infrastructure |
+| #2 | [Hermes Agent](agents/hermes-agent.md) | 137k | +8,400 | In scope | Self-hosted multi-agent environment — sustained week-3 growth, still the leader among in-scope projects |
+| #3 (new) | [Pi](agents/pi.md) | 46k | +5,000 | In scope (new profile) | Minimal terminal coding-agent harness; April 8 acquisition by Earendil (Lefos) put real funding behind it and re-accelerated star growth |
+| #4 (new) | [Pixelle-Video](https://github.com/AIDC-AI/Pixelle-Video) | 13.3k | +4,100 | Out of scope | End-to-end video generation pipeline — agentic in flow, but it is a content-production tool, not a general-purpose agent |
+| #5 | [Codex CLI](agents/codex.md) | 80.7k | +1,200 | In scope | Terminal-native OpenAI coding agent — last week's +3.9k surge has cooled, but absolute base now exceeds 80k |
+| #6 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 35.1k | +900 | Out of scope | Still hot, but it is a screen-demo tool rather than an agent |
+| #7 (new) | [ml-intern](https://github.com/huggingface/ml-intern) | 8.9k | +800 | Watchlist | Hugging Face's autonomous ML engineer — reads papers, trains models, ships ML code; tracking before adding a profile |
+| #8 | [oh-my-claudecode](agents/oh-my-claudecode.md) | 32.9k | +700 | In scope | Workflow and orchestration layer around Claude Code |
+| Watchlist | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 9.5k | +800 | Not yet in scope | Self-evolving agent from a Fudan team — week-2 of tracking, growth slowed but still present |
 
 - Heat is useful for discovery, not for selection by itself.
-- Some hot repos are adjacent to the agent landscape without actually being agents. OpenScreen is the clearest example in this snapshot.
-- Codex CLI is now the second-fastest grower this week — the headline event is OpenAI's April 16 "Codex for (almost) everything" update, which adds Computer Use (autonomous mouse/keyboard across any macOS app), parallel background agents, an in-app browser, and 90+ plugins on top of the GPT-5.5 model layer.
+- This snapshot has more out-of-scope hot projects than usual: TradingAgents, Pixelle-Video, and OpenScreen are all big gainers but each is domain-specific (finance / video / demos) rather than generic agent infrastructure.
+- The headline in-scope newcomer is [Pi](agents/pi.md) — a small, opinionated coding-agent harness whose acquisition by Earendil on April 8 2026 reshaped the project's trajectory. Profile added this week.
+- Mercury Agent and AI Edge Gallery are still listed in the directory but dropped out of the top 8 this week as their gains flattened to ~+100 / ~+300.
 
 ## Market Event: GPT-5.5 Enters The Agent Landscape
 
@@ -84,7 +86,7 @@ Combined with the GPT-5.5 backbone, this is the most consequential agent product
 
 | Route | Representative projects | Typical user |
 | --- | --- | --- |
-| Direct execution | [Claude Code](agents/claude-code.md), [Aider](agents/aider.md), [Codex](agents/codex.md), [Devin](agents/devin.md), [Jules](agents/jules.md), [OpenHands](agents/openhands.md) | Someone who wants to hand a concrete coding task to an agent |
+| Direct execution | [Claude Code](agents/claude-code.md), [Aider](agents/aider.md), [Codex](agents/codex.md), [Pi](agents/pi.md), [Devin](agents/devin.md), [Jules](agents/jules.md), [OpenHands](agents/openhands.md) | Someone who wants to hand a concrete coding task to an agent |
 | Frontier agentic model | [GPT-5.5](agents/gpt-5.5.md) | Someone choosing which model to wire into their own agent system or evaluating the capability ceiling of OpenAI-based surfaces |
 | Workflow / orchestration layer | [oh-my-claudecode](agents/oh-my-claudecode.md), [oh-my-codex](agents/oh-my-codex.md) | Someone who already likes Claude Code or Codex and wants stronger orchestration on top |
 | Editor-centric AI workflow | [Cursor](agents/cursor.md), [Windsurf](agents/windsurf.md), [Continue](agents/continue.md) | Someone who wants the editor itself to stay central |
@@ -146,6 +148,7 @@ Combined with the GPT-5.5 backbone, this is the most consequential agent product
 | [Flowise](agents/flowise.md) | Visual builder | Drag-and-drop LLM app and agent builder on top of LangChain |
 | [Froge Code](agents/froge-code.md) | Review-first automation | Provisionally mapped to Automagik Genie |
 | [Mercury Agent](agents/mercury-agent.md) | Self-hosted multi-channel | Permission-hardened agent for CLI and Telegram with token budgets |
+| [Pi](agents/pi.md) | Direct execution | Minimal terminal coding-agent harness with multi-provider LLM support |
 
 ## Example Reading Paths
 
@@ -160,3 +163,7 @@ If you are still deciding where to begin, use one of these quick routes and then
 | I want to hand off tickets and check back later | [Codex](agents/codex.md) → [Jules](agents/jules.md) → [Devin](agents/devin.md) → [Claude Managed Agents](agents/claude-managed-agents.md) → [mainstream matrix](comparisons/mainstream-agent-landscape.md) | Async cloud delegation vs managed background automation |
 | I need something open-source or self-hosted | [Aider](agents/aider.md) → [OpenHands](agents/openhands.md) → [Goose](agents/goose.md) → [Hermes Agent](agents/hermes-agent.md) → [capabilities](capabilities/README.md) | Terminal control, open-source execution, and local runtime ownership |
 | I am building an internal agent stack, not buying a product | [LangChain](agents/langchain.md) → [LangGraph](agents/langgraph.md) → [capabilities](capabilities/README.md) → [mainstream matrix](comparisons/mainstream-agent-landscape.md) | Framework vs runtime vs product boundaries |
+
+## Disclaimer
+
+Star counts and 7-day gains are point-in-time GitHub snapshots taken when the repo is updated; numbers shift quickly between weekly refreshes and small rounding differences are expected. Project descriptions, vendors, and capability summaries reflect public information at the time of writing and may change as projects evolve, get acquired, or pivot. This map is selection guidance — not endorsement, financial advice, or a production-readiness guarantee. Verify against each project's own docs before committing to a choice.

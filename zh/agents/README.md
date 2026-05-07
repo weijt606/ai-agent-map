@@ -12,7 +12,7 @@
 
 | 路线 | 代表项目 | 适合谁 |
 | --- | --- | --- |
-| 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Devin](devin.md), [Jules](jules.md), [OpenHands](openhands.md) | 想直接把 coding 任务交给 agent |
+| 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Pi](pi.md), [Devin](devin.md), [Jules](jules.md), [OpenHands](openhands.md) | 想直接把 coding 任务交给 agent |
 | 前沿 agentic 模型 | [GPT-5.5](gpt-5.5.md) | 在选要接入自己 agent 系统的模型，或在评估 OpenAI 系 agent 能力上限 |
 | 工作流 / orchestration layer | [oh-my-claudecode](oh-my-claudecode.md), [oh-my-codex](oh-my-codex.md) | 已经在用 Claude Code 或 Codex，只想补强 teams、skills 和持久工作流 |
 | 编辑器中心工作流 | [Cursor](cursor.md), [Windsurf](windsurf.md), [Continue](continue.md) | 想让编辑器本身成为 agent 主表面 |
@@ -29,20 +29,22 @@
 
 它只是把最近一周 GitHub 快照里特别热的 agent 项目摆出来。顺序按 7 天增量；下面的 star 总数是这次更新目录时重新核对过的当前值。
 
-> **最后更新：** 2026-05-02 · **快照窗口：** 2026-04-26 → 2026-05-02（7 天增量） · **Star 总数：** 更新时实时核对
+> **最后更新：** 2026-05-08 · **快照窗口：** 2026-05-02 → 2026-05-08（7 天增量） · **Star 总数：** 更新时实时核对
 
 | 排名 | 项目 | 当前 stars | 快照增量 | 目录状态 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [Hermes Agent](hermes-agent.md) | 129k | +10,800 | 已收录 profile | 自托管多 agent 环境，仍是绝对增量最大，但比上周 +58k 已开始放缓 |
-| #2（新） | [Codex CLI](codex.md) | 79.5k | +3,900 | 已收录 profile | OpenAI 终端原生 coding agent——本周飙升直接动因是 4 月 16 日的 Computer Use + 并行多 agent 更新，加上 GPT-5.5 底层 |
-| #3 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 34.2k | +1,300 | 不收录 | 仍然热门，但本质上是录屏 / 演示工具，不是 agent |
-| #4 | [oh-my-codex](oh-my-codex.md) | 27.2k | +1,100 | 已收录 profile | Codex CLI 的 orchestration layer，搭着 Codex 浪潮继续涨 |
-| #5 | [oh-my-claudecode](oh-my-claudecode.md) | 32.2k | +800 | 已收录 profile | 围绕 Claude Code 的工作流和 orchestration layer |
-| #6 | [Mercury Agent](mercury-agent.md) | 1.9k | +500 | 已收录 profile | 进入第二周仍在持续涨——权限硬化的 CLI + Telegram 自托管 agent |
-| #7 | [AI Edge Gallery](ai-edge-gallery.md) | 22.4k | +300 | 已收录，但附带范围说明 | 端侧 assistant 沙盒，增长趋于平缓 |
-| 候补 | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 8.7k | 本周暂未单列 | 暂不收录 | 复旦团队的自演进 agent，3.3K 行种子代码动态生长出个人 skill tree，先观察再决定是否做 profile |
+| #1（新） | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 71.1k | +8,800 | 不收录 | Tauric Research 的多 agent 金融研究框架——本周增量最大，但是垂直领域（交易）研究工具，不是通用 agent 基础设施 |
+| #2 | [Hermes Agent](hermes-agent.md) | 137k | +8,400 | 已收录 profile | 连续第三周持续涨——已收录项目里绝对增量最大的 |
+| #3（新） | [Pi](pi.md) | 46k | +5,000 | 本周新增 profile | 极简终端 coding agent harness；4 月 8 日被 Earendil（Lefos）收购，原本的个人项目获得真实资金，星标增长重新加速 |
+| #4（新） | [Pixelle-Video](https://github.com/AIDC-AI/Pixelle-Video) | 13.3k | +4,100 | 不收录 | 端到端视频生成流水线——流程是 agentic，但本质是内容工具而非通用 agent |
+| #5 | [Codex CLI](codex.md) | 80.7k | +1,200 | 已收录 profile | OpenAI 终端原生 coding agent——上周 +3.9k 已降温，但绝对基数已超过 80k |
+| #6 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 35.1k | +900 | 不收录 | 仍然热门，但本质上是录屏 / 演示工具，不是 agent |
+| #7（新） | [ml-intern](https://github.com/huggingface/ml-intern) | 8.9k | +800 | 候补观察 | Hugging Face 的自主 ML 工程师 agent——读论文、训模型、上线 ML 代码，先观察再决定是否做 profile |
+| #8 | [oh-my-claudecode](oh-my-claudecode.md) | 32.9k | +700 | 已收录 profile | 围绕 Claude Code 的工作流和 orchestration layer |
+| 候补 | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 9.5k | +800 | 暂不收录 | 复旦团队的自演进 agent，第二周持续观察，增量放缓但仍在涨 |
 
 **市场事件：**
+- **2026-04-08** —— Earendil（Armin Ronacher 的公司）从 Mario Zechner 手中收购 [Pi](pi.md) 项目，仓库从 `badlogic/pi-mono` 迁到 `earendil-works/pi`；Earendil 同时启动云端 agent 平台 Lefos。
 - **2026-04-16** —— OpenAI 推出 "Codex for (almost) everything"，在 [Codex](codex.md) 产品表面加入后台 Computer Use、并行多 agent 执行、内置浏览器，以及 90+ plugin。同时披露周活 300 万开发者，约为 3 月初的 2 倍。
 - **2026-04-23** —— OpenAI 发布 [GPT-5.5](gpt-5.5.md)，是 Codex、ChatGPT 和所有基于 OpenAI API 的 agent 的底层模型。
 
@@ -88,6 +90,7 @@
 | [Flowise](flowise.md) | runtime / tools | 是 | 拖拽式 LLM 应用和 agent 可视化构建器 | 已核验 |
 | [Froge Code](froge-code.md) | automation | 是 | 当前映射为 Automagik Genie | 对外命名仍在演进 |
 | [Mercury Agent](mercury-agent.md) | multi-channel runtime | 是 | 权限硬化的 CLI + Telegram 自托管 agent，带 token 预算 | 已按当前仓库核验 |
+| [Pi](pi.md) | execution / toolkit | 是 | 极简终端 coding agent harness，多 LLM provider 支持 | 2026-04 被 Earendil 收购后已核验 |
 
 ## 写法标准
 

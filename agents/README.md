@@ -12,7 +12,7 @@ Think of it as a shortlist directory: understand the route first, then decide wh
 
 | Route | Representative projects | Best for |
 | --- | --- | --- |
-| Direct execution | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Devin](devin.md), [Jules](jules.md), [OpenHands](openhands.md) | People who want to hand a coding task directly to an agent |
+| Direct execution | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Pi](pi.md), [Devin](devin.md), [Jules](jules.md), [OpenHands](openhands.md) | People who want to hand a coding task directly to an agent |
 | Frontier agentic model | [GPT-5.5](gpt-5.5.md) | People choosing which model to wire into their agent system, or evaluating the capability ceiling of OpenAI surfaces |
 | Workflow / orchestration layer | [oh-my-claudecode](oh-my-claudecode.md), [oh-my-codex](oh-my-codex.md) | Users who already like Claude Code or Codex and want stronger teams, skills, and persistent workflow |
 | Editor-centric AI workflow | [Cursor](cursor.md), [Windsurf](windsurf.md), [Continue](continue.md) | Users who want the editor itself to be the main agent surface |
@@ -29,20 +29,22 @@ This is not a ranking of quality.
 
 It is a quick view of projects that appeared especially hot in the latest weekly GitHub snapshot. The order follows the 7-day gain, while the star totals below reflect the current counts checked during this repo update.
 
-> **Last updated:** 2026-05-02 · **Snapshot window:** 2026-04-26 → 2026-05-02 (7-day gain) · **Star counts:** checked at update time
+> **Last updated:** 2026-05-08 · **Snapshot window:** 2026-05-02 → 2026-05-08 (7-day gain) · **Star counts:** checked at update time
 
 | Rank | Project | Current stars | Snapshot gain | Directory status | Note |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [Hermes Agent](hermes-agent.md) | 129k | +10,800 | Profile included | Still leading absolute growth, decelerating from last week's +58k |
-| #2 (new) | [Codex CLI](codex.md) | 79.5k | +3,900 | Profile included | OpenAI's terminal-native coding agent — surge driven by April 16 Computer Use + parallel multi-agent update and the GPT-5.5 backbone |
-| #3 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 34.2k | +1,300 | Not included | Still hot, but it is a screen-demo tool rather than an agent |
-| #4 | [oh-my-codex](oh-my-codex.md) | 27.2k | +1,100 | Profile included | A Codex CLI workflow / orchestration layer riding the Codex wave |
-| #5 | [oh-my-claudecode](oh-my-claudecode.md) | 32.2k | +800 | Profile included | Workflow and orchestration layer around Claude Code |
-| #6 | [Mercury Agent](mercury-agent.md) | 1.9k | +500 | Profile included | Sustained week-2 growth — permission-hardened CLI / Telegram self-hosted agent |
-| #7 | [AI Edge Gallery](ai-edge-gallery.md) | 22.4k | +300 | Profile included with caveat | On-device assistant sandbox, growth flattening |
-| Watchlist | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 8.7k | n/a this week | Not yet included | New self-evolving agent from a Fudan team — 3.3K-line seed dynamically grows a personal skill tree. Tracking before adding a profile |
+| #1 (new) | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 71.1k | +8,800 | Not included | Tauric Research's multi-agent finance research framework — biggest weekly gain, but a domain-specific (trading) research tool, not generic agent infrastructure |
+| #2 | [Hermes Agent](hermes-agent.md) | 137k | +8,400 | Profile included | Sustained week-3 growth — still the in-scope leader for absolute weekly gain |
+| #3 (new) | [Pi](pi.md) | 46k | +5,000 | Profile added this week | Minimal terminal coding-agent harness; April 8 acquisition by Earendil (Lefos) put real funding behind a previously solo project and reaccelerated star growth |
+| #4 (new) | [Pixelle-Video](https://github.com/AIDC-AI/Pixelle-Video) | 13.3k | +4,100 | Not included | End-to-end video generation pipeline — agentic in flow, but a content tool rather than a general-purpose agent |
+| #5 | [Codex CLI](codex.md) | 80.7k | +1,200 | Profile included | OpenAI's terminal-native coding agent — last week's +3.9k surge has cooled, but absolute base now exceeds 80k |
+| #6 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 35.1k | +900 | Not included | Still hot, but a screen-demo tool rather than an agent |
+| #7 (new) | [ml-intern](https://github.com/huggingface/ml-intern) | 8.9k | +800 | Watchlist | Hugging Face's autonomous ML engineer — reads papers, trains models, ships ML code. Tracking before adding a profile |
+| #8 | [oh-my-claudecode](oh-my-claudecode.md) | 32.9k | +700 | Profile included | Workflow and orchestration layer around Claude Code |
+| Watchlist | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 9.5k | +800 | Not yet included | Fudan team's self-evolving agent — week-2 of tracking; growth slowed but still on the list |
 
 **Market events:**
+- **April 8 2026** — Earendil (Armin Ronacher's company) acquired the [Pi](pi.md) project from Mario Zechner; the repo moved from `badlogic/pi-mono` to `earendil-works/pi`, and Earendil also began building Lefos, a cloud agent platform on top of it.
 - **April 16 2026** — OpenAI shipped "Codex for (almost) everything," adding Background Computer Use, parallel multi-agent execution, an in-app browser, and 90+ plugins on the [Codex](codex.md) product surface. Reported 3M weekly active developers, ~2x early-March 2026.
 - **April 23 2026** — OpenAI released [GPT-5.5](gpt-5.5.md), the model layer powering Codex, ChatGPT, and every OpenAI-API-based agent.
 
@@ -88,6 +90,7 @@ It is a quick view of projects that appeared especially hot in the latest weekly
 | [Flowise](flowise.md) | runtime / tools | Yes | Visual drag-and-drop LLM app and agent builder | Verified |
 | [Froge Code](froge-code.md) | automation | Yes | Currently mapped to Automagik Genie | Public naming is still evolving |
 | [Mercury Agent](mercury-agent.md) | multi-channel runtime | Yes | Permission-hardened self-hosted agent for CLI and Telegram with token budgets | Verified against current repo |
+| [Pi](pi.md) | execution / toolkit | Yes | Minimal terminal coding-agent harness with multi-provider LLM support | Verified after April 2026 acquisition by Earendil |
 
 ## Writing Standard
 

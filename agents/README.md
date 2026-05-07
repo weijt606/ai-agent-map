@@ -17,7 +17,7 @@ Think of it as a shortlist directory: understand the route first, then decide wh
 | Workflow / orchestration layer | [oh-my-claudecode](oh-my-claudecode.md), [oh-my-codex](oh-my-codex.md) | Users who already like Claude Code or Codex and want stronger teams, skills, and persistent workflow |
 | Editor-centric AI workflow | [Cursor](cursor.md), [Windsurf](windsurf.md), [Continue](continue.md) | Users who want the editor itself to be the main agent surface |
 | Review-first automation | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md) | People who want review and human pacing to stay central |
-| General-purpose autonomous agent | [AutoGPT](autogpt.md), [Agent Zero](agent-zero.md), [BabyAGI](babyagi.md), [Julep](julep.md) | People who want autonomous general-purpose task execution |
+| General-purpose autonomous agent | [AutoGPT](autogpt.md), [Agent Zero](agent-zero.md), [BabyAGI](babyagi.md), [Julep](julep.md), [GenericAgent](generic-agent.md), [ml-intern](ml-intern.md) | People who want autonomous general-purpose task execution (ml-intern is the ML-specialized variant) |
 | Build-your-own platform | [LangChain](langchain.md), [LangGraph](langgraph.md), [CrewAI](crewai.md), [LlamaIndex](llamaindex.md), [Haystack](haystack.md), [Semantic Kernel](semantic-kernel.md), [DSPy](dspy.md), [Pydantic AI](pydantic-ai.md) | Teams building their own agent system |
 | Runtime and tools | [n8n](n8n.md), [MemGPT](memgpt.md), [Open Interpreter](open-interpreter.md), [LiteLLM](litellm.md), [Flowise](flowise.md) | Teams needing workflow automation, code execution, LLM gateways, or visual builders |
 | Self-hosted / local runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md), [Mercury Agent](mercury-agent.md) | Users who need local control, on-device privacy, extensions, channels, or deeper runtime ownership |
@@ -41,9 +41,9 @@ Project names link to the upstream GitHub repo. When a profile exists in this di
 | #4 (new) | [Pixelle-Video](https://github.com/AIDC-AI/Pixelle-Video) | 13.3k | +4,100 | Not included | End-to-end video generation pipeline — agentic in flow, but a content tool rather than a general-purpose agent |
 | #5 | [Codex CLI](https://github.com/openai/codex) | 80.7k | +1,200 | [Profile](codex.md) | OpenAI's terminal-native coding agent — last week's +3.9k surge has cooled, but absolute base now exceeds 80k |
 | #6 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 35.1k | +900 | Not included | Still hot, but a screen-demo tool rather than an agent |
-| #7 (new) | [ml-intern](https://github.com/huggingface/ml-intern) | 8.9k | +800 | Watchlist | Hugging Face's autonomous ML engineer — reads papers, trains models, ships ML code. Tracking before adding a profile |
+| #7 (new) | [ml-intern](https://github.com/huggingface/ml-intern) | 8.9k | +800 | [Profile](ml-intern.md) (added this week) | Hugging Face's autonomous ML engineer — fills the domain-specific autonomous agent gap |
 | #8 | [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 32.9k | +700 | [Profile](oh-my-claudecode.md) | Workflow and orchestration layer around Claude Code |
-| Watchlist | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 9.5k | +800 | Not yet included | Fudan team's self-evolving agent — week-2 of tracking; growth slowed but still on the list |
+| #9 | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 9.5k | +800 | [Profile](generic-agent.md) (added this week) | Fudan team's self-evolving agent — promoted from watchlist; covers a niche the rest of the directory doesn't (small-seed self-evolution) |
 
 **Market events:**
 - **April 8 2026** — Earendil (Armin Ronacher's company) acquired the [Pi](pi.md) project from Mario Zechner; the repo moved from `badlogic/pi-mono` to `earendil-works/pi`, and Earendil also began building Lefos, a cloud agent platform on top of it.
@@ -93,6 +93,8 @@ Project names link to the upstream GitHub repo. When a profile exists in this di
 | [Froge Code](froge-code.md) | automation | Yes | Currently mapped to Automagik Genie | Public naming is still evolving |
 | [Mercury Agent](mercury-agent.md) | multi-channel runtime | Yes | Permission-hardened self-hosted agent for CLI and Telegram with token budgets | Verified against current repo |
 | [Pi](pi.md) | execution / toolkit | Yes | Minimal terminal coding-agent harness with multi-provider LLM support | Verified after April 2026 acquisition by Earendil |
+| [ml-intern](ml-intern.md) | autonomous (domain-specific) | Yes | Autonomous ML engineering agent built on the Hugging Face ecosystem | Verified |
+| [GenericAgent](generic-agent.md) | autonomous (self-evolving) | Yes | Small-seed agent that grows a personal skill tree on every task | Verified after week-2 of watchlist tracking |
 
 ## Writing Standard
 

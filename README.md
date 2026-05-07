@@ -48,14 +48,14 @@ Project names link to the upstream GitHub repo. When this map has a written prof
 | #4 (new) | [Pixelle-Video](https://github.com/AIDC-AI/Pixelle-Video) | 13.3k | +4,100 | Out of scope | End-to-end video generation pipeline — agentic in flow, but it is a content-production tool, not a general-purpose agent |
 | #5 | [Codex CLI](https://github.com/openai/codex) | 80.7k | +1,200 | In scope · [profile](agents/codex.md) | Terminal-native OpenAI coding agent — last week's +3.9k surge has cooled, but absolute base now exceeds 80k |
 | #6 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 35.1k | +900 | Out of scope | Still hot, but it is a screen-demo tool rather than an agent |
-| #7 (new) | [ml-intern](https://github.com/huggingface/ml-intern) | 8.9k | +800 | Watchlist | Hugging Face's autonomous ML engineer — reads papers, trains models, ships ML code; tracking before adding a profile |
+| #7 (new) | [ml-intern](https://github.com/huggingface/ml-intern) | 8.9k | +800 | In scope · [profile](agents/ml-intern.md) (new) | Hugging Face's autonomous ML engineer — fills the "domain-specific autonomous agent" gap on this map |
 | #8 | [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 32.9k | +700 | In scope · [profile](agents/oh-my-claudecode.md) | Workflow and orchestration layer around Claude Code |
-| Watchlist | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 9.5k | +800 | Not yet in scope | Self-evolving agent from a Fudan team — week-2 of tracking, growth slowed but still present |
+| #9 | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 9.5k | +800 | In scope · [profile](agents/generic-agent.md) (new) | Self-evolving agent from a Fudan team — promoted from watchlist this week; covers a niche (small-seed self-evolution) the rest of the map doesn't |
 
 - Heat is useful for discovery, not for selection by itself.
-- This snapshot has more out-of-scope hot projects than usual: TradingAgents, Pixelle-Video, and OpenScreen are all big gainers but each is domain-specific (finance / video / demos) rather than generic agent infrastructure.
-- The headline in-scope newcomer is [Pi](agents/pi.md) — a small, opinionated coding-agent harness whose acquisition by Earendil on April 8 2026 reshaped the project's trajectory. Profile added this week.
-- Mercury Agent and AI Edge Gallery are still listed in the directory but dropped out of the top 8 this week as their gains flattened to ~+100 / ~+300.
+- TradingAgents, Pixelle-Video, and OpenScreen stay out of scope on purpose: TradingAgents is a real LangGraph-based multi-agent framework but its roles are hardcoded for finance and the authors mark it research-only — readers wanting that pattern can build it on top of [LangGraph](agents/langgraph.md). Pixelle-Video is a video-generation pipeline (a content tool, not an agent), and OpenScreen is a screen-demo tool unrelated to agent selection.
+- This week added three new in-scope profiles: [Pi](agents/pi.md), [ml-intern](agents/ml-intern.md), and [GenericAgent](agents/generic-agent.md). The latter two were on the previous watchlist and graduated as their fit became clearer.
+- Mercury Agent and AI Edge Gallery are still listed in the directory but dropped out of the top 9 this week as their gains flattened to ~+100 / ~+300.
 
 ## Market Event: GPT-5.5 Enters The Agent Landscape
 
@@ -94,7 +94,7 @@ Combined with the GPT-5.5 backbone, this is the most consequential agent product
 | Editor-centric AI workflow | [Cursor](agents/cursor.md), [Windsurf](agents/windsurf.md), [Continue](agents/continue.md) | Someone who wants the editor itself to stay central |
 | Review-first automation | [Cline](agents/cline.md), [GitHub Copilot](agents/github-copilot.md), [Froge Code](agents/froge-code.md) | Someone who wants review and human control to stay central |
 | Managed background path | [Claude Managed Agents](agents/claude-managed-agents.md) | Someone who needs scheduled, cloud, or detached Anthropic workflows |
-| General-purpose autonomous agent | [AutoGPT](agents/autogpt.md), [Agent Zero](agents/agent-zero.md), [BabyAGI](agents/babyagi.md), [Julep](agents/julep.md) | Someone who wants autonomous, general-purpose task execution |
+| General-purpose autonomous agent | [AutoGPT](agents/autogpt.md), [Agent Zero](agents/agent-zero.md), [BabyAGI](agents/babyagi.md), [Julep](agents/julep.md), [GenericAgent](agents/generic-agent.md), [ml-intern](agents/ml-intern.md) | Someone who wants autonomous, general-purpose task execution (or, in ml-intern's case, autonomous ML engineering) |
 | Build-your-own system | [LangChain](agents/langchain.md), [LangGraph](agents/langgraph.md), [CrewAI](agents/crewai.md), [LlamaIndex](agents/llamaindex.md), [Haystack](agents/haystack.md), [Semantic Kernel](agents/semantic-kernel.md), [DSPy](agents/dspy.md), [Pydantic AI](agents/pydantic-ai.md) | Teams building their own agent platform instead of buying one |
 | Runtime and tools | [n8n](agents/n8n.md), [MemGPT](agents/memgpt.md), [Open Interpreter](agents/open-interpreter.md), [LiteLLM](agents/litellm.md), [Flowise](agents/flowise.md) | Teams that need workflow automation, code execution, LLM gateways, or visual builders |
 | Self-hosted / local runtime | [AI Edge Gallery](agents/ai-edge-gallery.md), [Goose](agents/goose.md), [Hermes Agent](agents/hermes-agent.md), [OpenClaw](agents/openclaw.md), [Mercury Agent](agents/mercury-agent.md) | Users who need on-device privacy, long-running agents, local control, channels, or devices |
@@ -151,6 +151,8 @@ Combined with the GPT-5.5 backbone, this is the most consequential agent product
 | [Froge Code](agents/froge-code.md) | Review-first automation | Provisionally mapped to Automagik Genie |
 | [Mercury Agent](agents/mercury-agent.md) | Self-hosted multi-channel | Permission-hardened agent for CLI and Telegram with token budgets |
 | [Pi](agents/pi.md) | Direct execution | Minimal terminal coding-agent harness with multi-provider LLM support |
+| [ml-intern](agents/ml-intern.md) | Domain-specific autonomous agent | Hugging Face's autonomous ML engineer — research, code, and ship ML using HF tooling |
+| [GenericAgent](agents/generic-agent.md) | Self-evolving autonomous agent | Small-seed agent that grows a personal skill tree on every task |
 
 ## Example Reading Paths
 

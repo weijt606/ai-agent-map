@@ -17,7 +17,7 @@
 | 工作流 / orchestration layer | [oh-my-claudecode](oh-my-claudecode.md), [oh-my-codex](oh-my-codex.md) | 已经在用 Claude Code 或 Codex，只想补强 teams、skills 和持久工作流 |
 | 编辑器中心工作流 | [Cursor](cursor.md), [Windsurf](windsurf.md), [Continue](continue.md) | 想让编辑器本身成为 agent 主表面 |
 | review-first 自动化 | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md) | 想把 review 和人工节奏留在核心 |
-| 通用自主 agent | [AutoGPT](autogpt.md), [Agent Zero](agent-zero.md), [BabyAGI](babyagi.md), [Julep](julep.md) | 想要通用自主任务执行 |
+| 通用自主 agent | [AutoGPT](autogpt.md), [Agent Zero](agent-zero.md), [BabyAGI](babyagi.md), [Julep](julep.md), [GenericAgent](generic-agent.md), [ml-intern](ml-intern.md) | 想要通用自主任务执行（ml-intern 是 ML 工程取向的特化版） |
 | 自建平台 | [LangChain](langchain.md), [LangGraph](langgraph.md), [CrewAI](crewai.md), [LlamaIndex](llamaindex.md), [Haystack](haystack.md), [Semantic Kernel](semantic-kernel.md), [DSPy](dspy.md), [Pydantic AI](pydantic-ai.md) | 想自己搭 agent system |
 | 运行时 & 工具 | [n8n](n8n.md), [MemGPT](memgpt.md), [Open Interpreter](open-interpreter.md), [LiteLLM](litellm.md), [Flowise](flowise.md) | 需要工作流自动化、代码执行、LLM 网关或可视化构建器 |
 | 自托管 / 本地 runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md), [Mercury Agent](mercury-agent.md) | 需要端侧隐私、本地控制、扩展、渠道或更深的 runtime ownership |
@@ -41,9 +41,9 @@
 | #4（新） | [Pixelle-Video](https://github.com/AIDC-AI/Pixelle-Video) | 13.3k | +4,100 | 不收录 | 端到端视频生成流水线——流程是 agentic，但本质是内容工具而非通用 agent |
 | #5 | [Codex CLI](https://github.com/openai/codex) | 80.7k | +1,200 | [Profile](codex.md) | OpenAI 终端原生 coding agent——上周 +3.9k 已降温，但绝对基数已超过 80k |
 | #6 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 35.1k | +900 | 不收录 | 仍然热门，但本质上是录屏 / 演示工具，不是 agent |
-| #7（新） | [ml-intern](https://github.com/huggingface/ml-intern) | 8.9k | +800 | 候补观察 | Hugging Face 的自主 ML 工程师 agent——读论文、训模型、上线 ML 代码，先观察再决定是否做 profile |
+| #7（新） | [ml-intern](https://github.com/huggingface/ml-intern) | 8.9k | +800 | [Profile](ml-intern.md)（本周新增） | Hugging Face 的自主 ML 工程师 agent——补上垂直领域自主 agent 的空缺 |
 | #8 | [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 32.9k | +700 | [Profile](oh-my-claudecode.md) | 围绕 Claude Code 的工作流和 orchestration layer |
-| 候补 | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 9.5k | +800 | 暂不收录 | 复旦团队的自演进 agent，第二周持续观察，增量放缓但仍在涨 |
+| #9 | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 9.5k | +800 | [Profile](generic-agent.md)（本周新增） | 复旦团队的自演进 agent——本周从候补升级，覆盖目录此前缺的"小种子自演进"细分 |
 
 **市场事件：**
 - **2026-04-08** —— Earendil（Armin Ronacher 的公司）从 Mario Zechner 手中收购 [Pi](pi.md) 项目，仓库从 `badlogic/pi-mono` 迁到 `earendil-works/pi`；Earendil 同时启动云端 agent 平台 Lefos。
@@ -93,6 +93,8 @@
 | [Froge Code](froge-code.md) | automation | 是 | 当前映射为 Automagik Genie | 对外命名仍在演进 |
 | [Mercury Agent](mercury-agent.md) | multi-channel runtime | 是 | 权限硬化的 CLI + Telegram 自托管 agent，带 token 预算 | 已按当前仓库核验 |
 | [Pi](pi.md) | execution / toolkit | 是 | 极简终端 coding agent harness，多 LLM provider 支持 | 2026-04 被 Earendil 收购后已核验 |
+| [ml-intern](ml-intern.md) | autonomous（垂直领域） | 是 | 基于 Hugging Face 生态的自主 ML 工程 agent | 已核验 |
+| [GenericAgent](generic-agent.md) | autonomous（自演进） | 是 | 从小种子起步、每完成任务长 skill tree 的自主 agent | 候补 2 周后已核验 |
 
 ## 写法标准
 

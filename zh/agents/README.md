@@ -12,9 +12,10 @@
 
 | 路线 | 代表项目 | 适合谁 |
 | --- | --- | --- |
-| 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Pi](pi.md), [Devin](devin.md), [Jules](jules.md), [OpenHands](openhands.md) | 想直接把 coding 任务交给 agent |
+| 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Pi](pi.md), [DeepSeek-TUI](deepseek-tui.md), [Devin](devin.md), [Jules](jules.md), [OpenHands](openhands.md) | 想直接把 coding 任务交给 agent |
 | 前沿 agentic 模型 | [GPT-5.5](gpt-5.5.md) | 在选要接入自己 agent 系统的模型，或在评估 OpenAI 系 agent 能力上限 |
-| 工作流 / orchestration layer | [oh-my-claudecode](oh-my-claudecode.md), [oh-my-codex](oh-my-codex.md) | 已经在用 Claude Code 或 Codex，只想补强 teams、skills 和持久工作流 |
+| Agentic skills 框架 | [Superpowers](superpowers.md) | 想要一套方法论 + 可组合 skills 层、能接到 Claude Code、Codex、Cursor 等 agent 之上 |
+| 工作流 / orchestration layer | [oh-my-claudecode](oh-my-claudecode.md), [oh-my-codex](oh-my-codex.md), [Ruflo](ruflo.md) | 已经在用 Claude Code 或 Codex，只想补强 teams、skills 和持久工作流（Ruflo 进一步推到跨机器联邦） |
 | 编辑器中心工作流 | [Cursor](cursor.md), [Windsurf](windsurf.md), [Continue](continue.md) | 想让编辑器本身成为 agent 主表面 |
 | review-first 自动化 | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md) | 想把 review 和人工节奏留在核心 |
 | 通用自主 agent | [AutoGPT](autogpt.md), [Agent Zero](agent-zero.md), [BabyAGI](babyagi.md), [Julep](julep.md), [GenericAgent](generic-agent.md), [ml-intern](ml-intern.md) | 想要通用自主任务执行（ml-intern 是 ML 工程取向的特化版） |
@@ -29,23 +30,25 @@
 
 它只是把最近一周 GitHub 快照里特别热的 agent 项目摆出来。顺序按 7 天增量；下面的 star 总数是这次更新目录时重新核对过的当前值。
 
-> **最后更新：** 2026-05-08 · **快照窗口：** 2026-05-02 → 2026-05-08（7 天增量） · **Star 总数：** 更新时实时核对
+> **最后更新：** 2026-05-19 · **快照窗口：** 2026-05-12 → 2026-05-18（7 天增量，估算） · **Star 总数：** 更新时实时核对
 
 项目名链接指向上游 GitHub 仓库。本目录已收录的 profile，在"目录状态"列单独给出链接。
 
 | 排名 | 项目 | 当前 stars | 快照增量 | 目录状态 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| #1（新） | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 71.1k | +8,800 | 不收录 | Tauric Research 的多 agent 金融研究框架——本周增量最大，但是垂直领域（交易）研究工具，不是通用 agent 基础设施 |
-| #2 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 137k | +8,400 | [Profile](hermes-agent.md) | 连续第三周持续涨——已收录项目里绝对增量最大的 |
-| #3（新） | [Pi](https://github.com/earendil-works/pi) | 46k | +5,000 | [Profile](pi.md)（本周新增） | 极简终端 coding agent harness；4 月 8 日被 Earendil（Lefos）收购，原本的个人项目获得真实资金，星标增长重新加速 |
-| #4（新） | [Pixelle-Video](https://github.com/AIDC-AI/Pixelle-Video) | 13.3k | +4,100 | 不收录 | 端到端视频生成流水线——流程是 agentic，但本质是内容工具而非通用 agent |
-| #5 | [Codex CLI](https://github.com/openai/codex) | 80.7k | +1,200 | [Profile](codex.md) | OpenAI 终端原生 coding agent——上周 +3.9k 已降温，但绝对基数已超过 80k |
-| #6 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 35.1k | +900 | 不收录 | 仍然热门，但本质上是录屏 / 演示工具，不是 agent |
-| #7（新） | [ml-intern](https://github.com/huggingface/ml-intern) | 8.9k | +800 | [Profile](ml-intern.md)（本周新增） | Hugging Face 的自主 ML 工程师 agent——补上垂直领域自主 agent 的空缺 |
-| #8 | [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 32.9k | +700 | [Profile](oh-my-claudecode.md) | 围绕 Claude Code 的工作流和 orchestration layer |
-| #9 | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 9.5k | +800 | [Profile](generic-agent.md)（本周新增） | 复旦团队的自演进 agent——本周从候补升级，覆盖目录此前缺的"小种子自演进"细分 |
+| #1（新） | [DeepSeek-TUI](https://github.com/Hmbown/DeepSeek-TUI) | 32.3k | +13,500 | [Profile](deepseek-tui.md)（本周新增） | DeepSeek 原生的终端 coding agent——本快照单周飙升最大 |
+| #2（新） | [mattpocock/skills](https://github.com/mattpocock/skills) | 93.3k | +12,000 | 候补 | Matt Pocock 的个人 `.claude/skills` 集——本身不是 agent，但是 skills 浪潮的标志性样本 |
+| #3（新） | [openhuman](https://github.com/tinyhumansai/openhuman) | 19.4k | +11,500 | 候补 | 自称"个人 AI 超级智能"的桌面 agent——定位还在收敛 |
+| #4（新） | [anthropics/financial-services](https://github.com/anthropics/financial-services) | 25.7k | +9,000 | 不收录 | Anthropic 金融服务行业垂直 SDK——agent 相关，但不是通用 agent 基础设施 |
+| #5（新） | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 43.6k | +7,500 | 候补 | Addy Osmani 的 AI coding agent 生产级工程 skills——同一波 skills 浪潮的另一个数据点 |
+| #6（新） | [Superpowers](https://github.com/obra/superpowers) | 197.7k | +6,500 | [Profile](superpowers.md)（本周新增） | Jesse Vincent 的 agentic skills 框架——可组合 skills + 对接 Claude Code、Codex、Cursor、GitHub Copilot、Gemini 等的插件 marketplace |
+| #7（新） | [Ruflo](https://github.com/ruvnet/ruflo) | 53.0k | +5,500 | [Profile](ruflo.md)（本周新增） | Claude Code 的多 agent 编排平台（前身 Claude Flow）——跨机器联邦、神经记忆、100+ 专用 agent |
+| #8（新） | [agentmemory](https://github.com/rohitg00/agentmemory) | 13.6k | +5,000 | 候补 | AI coding agent 的持久记忆层——和 [MemGPT](memgpt.md) 有重叠 |
+| #9 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 157.3k | +4,500 | [Profile](hermes-agent.md) | 连续第四周增长——已收录项目里仍是绝对总数最高 |
+| #10 | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 77.2k | +4,500 | 不收录 | Tauric Research 的多 agent 金融框架——仍热门，但范围判断不变（仅供研究、垂直领域） |
 
 **市场事件：**
+- **2026 年 5 月（本次快照）** —— `.claude/skills` 浪潮：本周热门前 6 中有 3 个是 skills 框架或策展式 skills 仓库（Superpowers、mattpocock/skills、agent-skills）。新写入的 [Superpowers](superpowers.md) profile 覆盖框架那一端。
 - **2026-04-08** —— Earendil（Armin Ronacher 的公司）从 Mario Zechner 手中收购 [Pi](pi.md) 项目，仓库从 `badlogic/pi-mono` 迁到 `earendil-works/pi`；Earendil 同时启动云端 agent 平台 Lefos。
 - **2026-04-16** —— OpenAI 推出 "Codex for (almost) everything"，在 [Codex](codex.md) 产品表面加入后台 Computer Use、并行多 agent 执行、内置浏览器，以及 90+ plugin。同时披露周活 300 万开发者，约为 3 月初的 2 倍。
 - **2026-04-23** —— OpenAI 发布 [GPT-5.5](gpt-5.5.md)，是 Codex、ChatGPT 和所有基于 OpenAI API 的 agent 的底层模型。
@@ -95,6 +98,9 @@
 | [Pi](pi.md) | execution / toolkit | 是 | 极简终端 coding agent harness，多 LLM provider 支持 | 2026-04 被 Earendil 收购后已核验 |
 | [ml-intern](ml-intern.md) | autonomous（垂直领域） | 是 | 基于 Hugging Face 生态的自主 ML 工程 agent | 已核验 |
 | [GenericAgent](generic-agent.md) | autonomous（自演进） | 是 | 从小种子起步、每完成任务长 skill tree 的自主 agent | 候补 2 周后已核验 |
+| [Superpowers](superpowers.md) | skills 框架 / 方法论 | 是 | 可组合 agentic skills 框架，集成 Claude Code、Codex、Cursor、Copilot、Gemini | 已按 v5.1（2026-05）核验 |
+| [DeepSeek-TUI](deepseek-tui.md) | execution（DeepSeek 原生） | 是 | DeepSeek 原生的终端 coding agent | 已在 2026-05 飙升期核验 |
+| [Ruflo](ruflo.md) | 多 agent 编排 | 是 | 跨机器联邦的 Claude 编排平台（前身 Claude Flow） | 改名后已核验 |
 
 ## 写法标准
 

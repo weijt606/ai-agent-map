@@ -36,26 +36,45 @@ Popularity is not fit.
 
 This table tracks projects that showed up as especially hot in the latest weekly GitHub snapshot. The rank follows the 7-day gain. The total star counts below were checked when this repo was updated.
 
-> **Last updated:** 2026-05-08 · **Snapshot window:** 2026-05-02 → 2026-05-08 (7-day gain) · **Star counts:** checked at update time
+> **Last updated:** 2026-05-19 · **Snapshot window:** 2026-05-12 → 2026-05-18 (7-day gain, approximate) · **Star counts:** checked at update time
 
 Project names link to the upstream GitHub repo. When this map has a written profile, it is linked separately in the "Map status" column.
 
 | Rank | Project | Current stars | Snapshot gain | Map status | How to read it |
 | --- | --- | --- | --- | --- | --- |
-| #1 (new) | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 71.1k | +8,800 | Out of scope | Multi-agent finance research framework from Tauric Research — biggest weekly gain, but it is domain-specific (trading) and explicitly research-only, not generic agent infrastructure |
-| #2 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 137k | +8,400 | In scope · [profile](agents/hermes-agent.md) | Self-hosted multi-agent environment — sustained week-3 growth, still the leader among in-scope projects |
-| #3 (new) | [Pi](https://github.com/earendil-works/pi) | 46k | +5,000 | In scope · [profile](agents/pi.md) (new) | Minimal terminal coding-agent harness; April 8 acquisition by Earendil (Lefos) put real funding behind it and re-accelerated star growth |
-| #4 (new) | [Pixelle-Video](https://github.com/AIDC-AI/Pixelle-Video) | 13.3k | +4,100 | Out of scope | End-to-end video generation pipeline — agentic in flow, but it is a content-production tool, not a general-purpose agent |
-| #5 | [Codex CLI](https://github.com/openai/codex) | 80.7k | +1,200 | In scope · [profile](agents/codex.md) | Terminal-native OpenAI coding agent — last week's +3.9k surge has cooled, but absolute base now exceeds 80k |
-| #6 | [OpenScreen](https://github.com/siddharthvaddem/openscreen) | 35.1k | +900 | Out of scope | Still hot, but it is a screen-demo tool rather than an agent |
-| #7 (new) | [ml-intern](https://github.com/huggingface/ml-intern) | 8.9k | +800 | In scope · [profile](agents/ml-intern.md) (new) | Hugging Face's autonomous ML engineer — fills the "domain-specific autonomous agent" gap on this map |
-| #8 | [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 32.9k | +700 | In scope · [profile](agents/oh-my-claudecode.md) | Workflow and orchestration layer around Claude Code |
-| #9 | [GenericAgent](https://github.com/lsdefine/GenericAgent) | 9.5k | +800 | In scope · [profile](agents/generic-agent.md) (new) | Self-evolving agent from a Fudan team — promoted from watchlist this week; covers a niche (small-seed self-evolution) the rest of the map doesn't |
+| #1 (new) | [DeepSeek-TUI](https://github.com/Hmbown/DeepSeek-TUI) | 32.3k | +13,500 | In scope · [profile](agents/deepseek-tui.md) (new) | DeepSeek-native terminal coding agent — the biggest single-week surge in this snapshot, fills a real gap as the first directory entry built around the DeepSeek model family |
+| #2 (new) | [mattpocock/skills](https://github.com/mattpocock/skills) | 93.3k | +12,000 | Watchlist | A curated `.claude/skills` collection by Matt Pocock — not an agent itself, but a representative example of the skills wave (see Market Event below) |
+| #3 (new) | [openhuman](https://github.com/tinyhumansai/openhuman) | 19.4k | +11,500 | Watchlist | Self-described "personal AI super intelligence" desktop agent — positioning still settling; revisit in 1-2 weeks once the boundary is clearer |
+| #4 (new) | [anthropics/financial-services](https://github.com/anthropics/financial-services) | 25.7k | +9,000 | Out of scope | Anthropic's vertical SDK for financial services — agent-adjacent, but a domain accelerator pack rather than a generic agent surface |
+| #5 (new) | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 43.6k | +7,500 | Watchlist | Production-grade engineering skills for AI coding agents from Addy Osmani — another data point in the same skills wave |
+| #6 (new) | [Superpowers](https://github.com/obra/superpowers) | 197.7k | +6,500 | In scope · [profile](agents/superpowers.md) (new) | Jesse Vincent's agentic skills framework and methodology — composable skills + plugin marketplace integration with Claude Code, Codex, Cursor, GitHub Copilot, Gemini and more |
+| #7 (new) | [Ruflo](https://github.com/ruvnet/ruflo) | 53.0k | +5,500 | In scope · [profile](agents/ruflo.md) (new) | Multi-agent orchestration platform for Claude Code (rebranded from Claude Flow) — federation across machines, 100+ specialized agents, neural memory |
+| #8 (new) | [agentmemory](https://github.com/rohitg00/agentmemory) | 13.6k | +5,000 | Watchlist | Persistent memory layer for AI coding agents — overlaps with [MemGPT](agents/memgpt.md) territory; revisit if it sustains its second week of growth |
+| #9 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 157.3k | +4,500 | In scope · [profile](agents/hermes-agent.md) | Self-hosted multi-agent environment — fourth consecutive week of growth, now past 157k absolute |
+| #10 | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 77.2k | +4,500 | Out of scope | Tauric Research's multi-agent finance framework — still hot but unchanged scope decision: domain-specific, research-only |
 
 - Heat is useful for discovery, not for selection by itself.
-- TradingAgents, Pixelle-Video, and OpenScreen stay out of scope on purpose: TradingAgents is a real LangGraph-based multi-agent framework but its roles are hardcoded for finance and the authors mark it research-only — readers wanting that pattern can build it on top of [LangGraph](agents/langgraph.md). Pixelle-Video is a video-generation pipeline (a content tool, not an agent), and OpenScreen is a screen-demo tool unrelated to agent selection.
-- This week added three new in-scope profiles: [Pi](agents/pi.md), [ml-intern](agents/ml-intern.md), and [GenericAgent](agents/generic-agent.md). The latter two were on the previous watchlist and graduated as their fit became clearer.
-- Mercury Agent and AI Edge Gallery are still listed in the directory but dropped out of the top 9 this week as their gains flattened to ~+100 / ~+300.
+- This week added three new in-scope profiles: [Superpowers](agents/superpowers.md), [DeepSeek-TUI](agents/deepseek-tui.md), and [Ruflo](agents/ruflo.md). Each one is the most-starred representative of a route not previously covered (skills framework / methodology, DeepSeek-native terminal agent, multi-machine federation orchestration).
+- `mattpocock/skills` and `addyosmani/agent-skills` are intentionally on watchlist rather than profiled: a curated `.claude/skills` directory is a content asset, not an agent surface — the underlying skills pattern is captured through the [Superpowers](agents/superpowers.md) profile.
+- `openhuman` and `agentmemory` are on watchlist for one more week; positioning needs to stabilize before a profile is worthwhile.
+- `anthropics/financial-services` is intentionally out of scope: Anthropic is shipping vertical SDKs alongside the agent platform, but this map only tracks generic agent infrastructure. Note the trend ("agent vendors going vertical") even if the repo itself does not get a profile.
+- Codex CLI (83.7k, ~+2.3k), Pi (51.5k, ~+3.0k), oh-my-claudecode (34.3k, ~+1.4k), GenericAgent (11.8k, ~+1.5k), ml-intern (9.6k, ~+0.7k) all continued to grow but dropped out of the top 10 this week as the skills wave and DeepSeek-TUI absorbed most of the trending oxygen.
+
+## Market Event: The `.claude/skills` Wave (May 2026)
+
+In the May 12 → 18 snapshot, three of the top six trending repositories were `.claude/skills` collections or frameworks built on top of Anthropic's skill pattern:
+
+| Repo | Stars | Shape |
+| --- | --- | --- |
+| [Superpowers](agents/superpowers.md) | 197.7k | A complete skills framework + methodology, with plugin integrations into Claude Code, Codex, Cursor, GitHub Copilot, Gemini, OpenCode, and Factory Droid |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | 93.3k | A curated personal `.claude/skills` directory from Matt Pocock — 18 skills across engineering, productivity, and miscellaneous |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 43.6k | A production-grade engineering skills set for AI coding agents from Addy Osmani |
+
+What it means for selection:
+
+- The `.claude/skills` directory pattern Anthropic introduced has crossed from curiosity into shared infrastructure — engineers are now publishing their personal skill libraries the way they used to publish dotfiles.
+- For people choosing a coding agent, the underlying agent matters less than it did six months ago — the skill layer on top is doing more of the work.
+- This map now treats the "agentic skills framework" as a route in its own right via the new [Superpowers](agents/superpowers.md) profile. Pure curated skill collections (`mattpocock/skills`, `addyosmani/agent-skills`) are tracked as watchlist entries rather than profiled, because they are content assets rather than agent surfaces.
 
 ## Market Event: GPT-5.5 Enters The Agent Landscape
 
@@ -88,9 +107,10 @@ Combined with the GPT-5.5 backbone, this is the most consequential agent product
 
 | Route | Representative projects | Typical user |
 | --- | --- | --- |
-| Direct execution | [Claude Code](agents/claude-code.md), [Aider](agents/aider.md), [Codex](agents/codex.md), [Pi](agents/pi.md), [Devin](agents/devin.md), [Jules](agents/jules.md), [OpenHands](agents/openhands.md) | Someone who wants to hand a concrete coding task to an agent |
+| Direct execution | [Claude Code](agents/claude-code.md), [Aider](agents/aider.md), [Codex](agents/codex.md), [Pi](agents/pi.md), [DeepSeek-TUI](agents/deepseek-tui.md), [Devin](agents/devin.md), [Jules](agents/jules.md), [OpenHands](agents/openhands.md) | Someone who wants to hand a concrete coding task to an agent |
 | Frontier agentic model | [GPT-5.5](agents/gpt-5.5.md) | Someone choosing which model to wire into their own agent system or evaluating the capability ceiling of OpenAI-based surfaces |
-| Workflow / orchestration layer | [oh-my-claudecode](agents/oh-my-claudecode.md), [oh-my-codex](agents/oh-my-codex.md) | Someone who already likes Claude Code or Codex and wants stronger orchestration on top |
+| Agentic skills framework | [Superpowers](agents/superpowers.md) | Someone who wants a methodology + composable skills layer that plugs into Claude Code, Codex, Cursor, and similar agents |
+| Workflow / orchestration layer | [oh-my-claudecode](agents/oh-my-claudecode.md), [oh-my-codex](agents/oh-my-codex.md), [Ruflo](agents/ruflo.md) | Someone who already likes Claude Code or Codex and wants stronger orchestration on top (Ruflo extends this to multi-machine federation and 100+ specialized agents) |
 | Editor-centric AI workflow | [Cursor](agents/cursor.md), [Windsurf](agents/windsurf.md), [Continue](agents/continue.md) | Someone who wants the editor itself to stay central |
 | Review-first automation | [Cline](agents/cline.md), [GitHub Copilot](agents/github-copilot.md), [Froge Code](agents/froge-code.md) | Someone who wants review and human control to stay central |
 | Managed background path | [Claude Managed Agents](agents/claude-managed-agents.md) | Someone who needs scheduled, cloud, or detached Anthropic workflows |
@@ -153,6 +173,9 @@ Combined with the GPT-5.5 backbone, this is the most consequential agent product
 | [Pi](agents/pi.md) | Direct execution | Minimal terminal coding-agent harness with multi-provider LLM support |
 | [ml-intern](agents/ml-intern.md) | Domain-specific autonomous agent | Hugging Face's autonomous ML engineer — research, code, and ship ML using HF tooling |
 | [GenericAgent](agents/generic-agent.md) | Self-evolving autonomous agent | Small-seed agent that grows a personal skill tree on every task |
+| [Superpowers](agents/superpowers.md) | Agentic skills framework | Methodology and composable skills layer that plugs into Claude Code, Codex, Cursor, and other agents |
+| [DeepSeek-TUI](agents/deepseek-tui.md) | Direct execution | DeepSeek-native terminal coding agent |
+| [Ruflo](agents/ruflo.md) | Workflow / orchestration layer | Multi-agent orchestration platform for Claude with federation across machines, neural memory, and 100+ specialized agents |
 
 ## Example Reading Paths
 

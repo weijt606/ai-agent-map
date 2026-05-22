@@ -36,45 +36,47 @@ Popularity is not fit.
 
 This table tracks projects that showed up as especially hot in the latest weekly GitHub snapshot. The rank follows the 7-day gain. The total star counts below were checked when this repo was updated.
 
-> **Last updated:** 2026-05-19 · **Snapshot window:** 2026-05-12 → 2026-05-18 (7-day gain, approximate) · **Star counts:** checked at update time
+> **Last updated:** 2026-05-23 · **Snapshot window:** 2026-05-16 → 2026-05-22 (7-day gain, approximate) · **Star counts:** checked at update time
 
 Project names link to the upstream GitHub repo. When this map has a written profile, it is linked separately in the "Map status" column.
 
 | Rank | Project | Current stars | Snapshot gain | Map status | How to read it |
 | --- | --- | --- | --- | --- | --- |
-| #1 (new) | [DeepSeek-TUI](https://github.com/Hmbown/DeepSeek-TUI) | 32.3k | +13,500 | In scope · [profile](agents/deepseek-tui.md) (new) | DeepSeek-native terminal coding agent — the biggest single-week surge in this snapshot, fills a real gap as the first directory entry built around the DeepSeek model family |
-| #2 (new) | [mattpocock/skills](https://github.com/mattpocock/skills) | 93.3k | +12,000 | Watchlist | A curated `.claude/skills` collection by Matt Pocock — not an agent itself, but a representative example of the skills wave (see Market Event below) |
-| #3 (new) | [openhuman](https://github.com/tinyhumansai/openhuman) | 19.4k | +11,500 | Watchlist | Self-described "personal AI super intelligence" desktop agent — positioning still settling; revisit in 1-2 weeks once the boundary is clearer |
-| #4 (new) | [anthropics/financial-services](https://github.com/anthropics/financial-services) | 25.7k | +9,000 | Out of scope | Anthropic's vertical SDK for financial services — agent-adjacent, but a domain accelerator pack rather than a generic agent surface |
-| #5 (new) | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 43.6k | +7,500 | Watchlist | Production-grade engineering skills for AI coding agents from Addy Osmani — another data point in the same skills wave |
-| #6 (new) | [Superpowers](https://github.com/obra/superpowers) | 197.7k | +6,500 | In scope · [profile](agents/superpowers.md) (new) | Jesse Vincent's agentic skills framework and methodology — composable skills + plugin marketplace integration with Claude Code, Codex, Cursor, GitHub Copilot, Gemini and more |
-| #7 (new) | [Ruflo](https://github.com/ruvnet/ruflo) | 53.0k | +5,500 | In scope · [profile](agents/ruflo.md) (new) | Multi-agent orchestration platform for Claude Code (rebranded from Claude Flow) — federation across machines, 100+ specialized agents, neural memory |
-| #8 (new) | [agentmemory](https://github.com/rohitg00/agentmemory) | 13.6k | +5,000 | Watchlist | Persistent memory layer for AI coding agents — overlaps with [MemGPT](agents/memgpt.md) territory; revisit if it sustains its second week of growth |
-| #9 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 157.3k | +4,500 | In scope · [profile](agents/hermes-agent.md) | Self-hosted multi-agent environment — fourth consecutive week of growth, now past 157k absolute |
-| #10 | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 77.2k | +4,500 | Out of scope | Tauric Research's multi-agent finance framework — still hot but unchanged scope decision: domain-specific, research-only |
+| #1 | [mattpocock/skills](https://github.com/mattpocock/skills) | 100.9k | +7,600 | Watchlist (Skills Wave) | Matt Pocock's curated `.claude/skills` directory crossed 100k this week — still the largest week-over-week gainer among already-tracked entries |
+| #2 (new) | [anthropics/skills](https://github.com/anthropics/skills) | 139.3k | ~+7,000 | Watchlist (Skills Wave canonical) | Anthropic's own reference `.claude/skills` repo — the upstream source of the wave; tracked as content asset, not agent surface |
+| #3 | [openhuman](https://github.com/tinyhumansai/openhuman) | 25.7k | +6,300 | In scope · [profile](agents/openhuman.md) (new) | Second straight week of strong growth — open-source desktop life-integration agent (Rust + Tauri, GPL-3.0); positioning now reads clearly enough to write up |
+| #4 (new) | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 16.4k | ~+6,000 | In scope · [profile](agents/codegraph.md) (new) | Pre-indexed code knowledge graph + MCP server targeting [Claude Code](agents/claude-code.md), [Cursor](agents/cursor.md), [Codex](agents/codex.md) CLI, opencode, [Hermes Agent](agents/hermes-agent.md) — first agent-context-infrastructure entry |
+| #5 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 163.1k | +5,800 | In scope · [profile](agents/hermes-agent.md) | Fifth consecutive week of growth — still the in-scope absolute leader (now past 163k) |
+| #6 (new) | [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | 39.5k | ~+5,500 | In scope · [profile](agents/cli-anything.md) (new) | HKUDS lab's "make all software agent-native" framework — auto-generates Click-based CLIs from arbitrary source code so agents can drive non-API apps |
+| #7 | [Superpowers](https://github.com/obra/superpowers) | 202.8k | +5,100 | In scope · [profile](agents/superpowers.md) | Crossed 200k — the agentic skills framework keeps growing alongside the broader wave |
+| #8 (new) | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 25.2k | ~+4,500 | Watchlist (Skills Wave) | Ready-to-use Agent Skills for research / science / engineering / finance / writing — another curated collection in the wave |
+| #9 (new) | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 19.0k | ~+4,500 | Watchlist (Skills Wave) | Curated academic research skills for Claude Code — research → write → review → revise → finalize pipeline |
+| #10 (new) | [humanlayer/12-factor-agents](https://github.com/humanlayer/12-factor-agents) | 21.7k | ~+3,500 | Out of scope | "12-factor" principles doc for production LLM-powered software — methodology asset, not an agent surface, but a meaningful market signal |
 
 - Heat is useful for discovery, not for selection by itself.
-- This week added three new in-scope profiles: [Superpowers](agents/superpowers.md), [DeepSeek-TUI](agents/deepseek-tui.md), and [Ruflo](agents/ruflo.md). Each one is the most-starred representative of a route not previously covered (skills framework / methodology, DeepSeek-native terminal agent, multi-machine federation orchestration).
-- `mattpocock/skills` and `addyosmani/agent-skills` are intentionally on watchlist rather than profiled: a curated `.claude/skills` directory is a content asset, not an agent surface — the underlying skills pattern is captured through the [Superpowers](agents/superpowers.md) profile.
-- `openhuman` and `agentmemory` are on watchlist for one more week; positioning needs to stabilize before a profile is worthwhile.
-- `anthropics/financial-services` is intentionally out of scope: Anthropic is shipping vertical SDKs alongside the agent platform, but this map only tracks generic agent infrastructure. Note the trend ("agent vendors going vertical") even if the repo itself does not get a profile.
-- Codex CLI (83.7k, ~+2.3k), Pi (51.5k, ~+3.0k), oh-my-claudecode (34.3k, ~+1.4k), GenericAgent (11.8k, ~+1.5k), ml-intern (9.6k, ~+0.7k) all continued to grow but dropped out of the top 10 this week as the skills wave and DeepSeek-TUI absorbed most of the trending oxygen.
+- This week added three new in-scope profiles — each one opens a route the map had not yet covered: [openhuman](agents/openhuman.md) (life-integration desktop agent), [codegraph](agents/codegraph.md) (agent context infrastructure), [CLI-Anything](agents/cli-anything.md) (agent-native software bridge).
+- The `.claude/skills` wave that started last week has intensified. Six of the top ten are skills collections, frameworks, or methodology docs (`mattpocock/skills`, `anthropics/skills`, `Superpowers`, `scientific-agent-skills`, `academic-research-skills`, `12-factor-agents`). Policy unchanged: curated collections and principles docs are tracked as Skills Wave entries, not profiled — the framework end is already covered through [Superpowers](agents/superpowers.md).
+- [humanlayer/12-factor-agents](https://github.com/humanlayer/12-factor-agents) is intentionally out of scope: principles and methodology docs are valuable signals but this map only profiles runnable agent surfaces and runtime infrastructure.
+- [agentmemory](https://github.com/rohitg00/agentmemory) 16.4k (+2.8k), [DeepSeek-TUI](agents/deepseek-tui.md) 33.5k (+1.2k), [Ruflo](agents/ruflo.md) 54.2k (+1.2k), [Pi](agents/pi.md) 52.9k (+1.4k), [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 44.9k (+1.3k), [TradingAgents](https://github.com/TauricResearch/TradingAgents) 78.6k (+1.4k), [Codex CLI](https://github.com/openai/codex) 84.7k (+1.0k), [financial-services](https://github.com/anthropics/financial-services) 26.7k (+1.0k) all continued to grow at modest pace, dropped out of (or never made) the top 10 as the new wave absorbed most of the trending oxygen.
 
-## Market Event: The `.claude/skills` Wave (May 2026)
+## Market Event: The `.claude/skills` Wave (May 2026, expanding)
 
-In the May 12 → 18 snapshot, three of the top six trending repositories were `.claude/skills` collections or frameworks built on top of Anthropic's skill pattern:
+The wave that broke into trending in mid-May has intensified. Across the May 12 → 22 snapshots, six of the top ten trending repositories are now skills frameworks, curated skills collections, or methodology docs built on Anthropic's skill pattern:
 
 | Repo | Stars | Shape |
 | --- | --- | --- |
-| [Superpowers](agents/superpowers.md) | 197.7k | A complete skills framework + methodology, with plugin integrations into Claude Code, Codex, Cursor, GitHub Copilot, Gemini, OpenCode, and Factory Droid |
-| [mattpocock/skills](https://github.com/mattpocock/skills) | 93.3k | A curated personal `.claude/skills` directory from Matt Pocock — 18 skills across engineering, productivity, and miscellaneous |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 43.6k | A production-grade engineering skills set for AI coding agents from Addy Osmani |
+| [anthropics/skills](https://github.com/anthropics/skills) | 139.3k | Anthropic's own canonical Agent Skills reference repository — the upstream source of the pattern |
+| [Superpowers](agents/superpowers.md) | 202.8k | A complete skills framework + methodology, with plugin integrations into Claude Code, Codex, Cursor, GitHub Copilot, Gemini, OpenCode, and Factory Droid |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | 100.9k | A curated personal `.claude/skills` directory from Matt Pocock — now past 100k stars |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 44.9k | A production-grade engineering skills set for AI coding agents from Addy Osmani |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 25.2k | Ready-to-use Agent Skills for research / science / engineering / analysis / finance / writing |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 19.0k | Curated academic research pipeline (research → write → review → revise → finalize) for Claude Code |
 
 What it means for selection:
 
-- The `.claude/skills` directory pattern Anthropic introduced has crossed from curiosity into shared infrastructure — engineers are now publishing their personal skill libraries the way they used to publish dotfiles.
-- For people choosing a coding agent, the underlying agent matters less than it did six months ago — the skill layer on top is doing more of the work.
-- This map now treats the "agentic skills framework" as a route in its own right via the new [Superpowers](agents/superpowers.md) profile. Pure curated skill collections (`mattpocock/skills`, `addyosmani/agent-skills`) are tracked as watchlist entries rather than profiled, because they are content assets rather than agent surfaces.
+- The `.claude/skills` directory pattern Anthropic introduced has crossed from curiosity into shared infrastructure — engineers are now publishing their personal skill libraries the way they used to publish dotfiles, and Anthropic's own reference repo is the canonical anchor.
+- For people choosing a coding agent, the underlying agent matters less than it did six months ago — the skill layer on top is doing more of the work, and the breadth of available skill collections is now domain-spanning (engineering, science, academic research, finance, productivity).
+- This map treats the "agentic skills framework" as a route in its own right via the [Superpowers](agents/superpowers.md) profile. Curated skill collections (`anthropics/skills`, `mattpocock/skills`, `addyosmani/agent-skills`, `scientific-agent-skills`, `academic-research-skills`) are tracked as Skills Wave watchlist entries rather than profiled, because they are content assets rather than agent surfaces.
 
 ## Market Event: GPT-5.5 Enters The Agent Landscape
 
@@ -116,8 +118,8 @@ Combined with the GPT-5.5 backbone, this is the most consequential agent product
 | Managed background path | [Claude Managed Agents](agents/claude-managed-agents.md) | Someone who needs scheduled, cloud, or detached Anthropic workflows |
 | General-purpose autonomous agent | [AutoGPT](agents/autogpt.md), [Agent Zero](agents/agent-zero.md), [BabyAGI](agents/babyagi.md), [Julep](agents/julep.md), [GenericAgent](agents/generic-agent.md), [ml-intern](agents/ml-intern.md) | Someone who wants autonomous, general-purpose task execution (or, in ml-intern's case, autonomous ML engineering) |
 | Build-your-own system | [LangChain](agents/langchain.md), [LangGraph](agents/langgraph.md), [CrewAI](agents/crewai.md), [LlamaIndex](agents/llamaindex.md), [Haystack](agents/haystack.md), [Semantic Kernel](agents/semantic-kernel.md), [DSPy](agents/dspy.md), [Pydantic AI](agents/pydantic-ai.md) | Teams building their own agent platform instead of buying one |
-| Runtime and tools | [n8n](agents/n8n.md), [MemGPT](agents/memgpt.md), [Open Interpreter](agents/open-interpreter.md), [LiteLLM](agents/litellm.md), [Flowise](agents/flowise.md) | Teams that need workflow automation, code execution, LLM gateways, or visual builders |
-| Self-hosted / local runtime | [AI Edge Gallery](agents/ai-edge-gallery.md), [Goose](agents/goose.md), [Hermes Agent](agents/hermes-agent.md), [OpenClaw](agents/openclaw.md), [Mercury Agent](agents/mercury-agent.md) | Users who need on-device privacy, long-running agents, local control, channels, or devices |
+| Runtime and tools | [n8n](agents/n8n.md), [MemGPT](agents/memgpt.md), [Open Interpreter](agents/open-interpreter.md), [LiteLLM](agents/litellm.md), [Flowise](agents/flowise.md), [CodeGraph](agents/codegraph.md), [CLI-Anything](agents/cli-anything.md) | Teams that need workflow automation, code execution, LLM gateways, agent context infrastructure, agent-driven CLIs, or visual builders |
+| Self-hosted / local runtime | [AI Edge Gallery](agents/ai-edge-gallery.md), [Goose](agents/goose.md), [Hermes Agent](agents/hermes-agent.md), [OpenClaw](agents/openclaw.md), [Mercury Agent](agents/mercury-agent.md), [OpenHuman](agents/openhuman.md) | Users who need on-device privacy, long-running agents, local control, channels, devices, or personal-data life integration |
 
 ## Repo Structure
 
@@ -176,6 +178,9 @@ Combined with the GPT-5.5 backbone, this is the most consequential agent product
 | [Superpowers](agents/superpowers.md) | Agentic skills framework | Methodology and composable skills layer that plugs into Claude Code, Codex, Cursor, and other agents |
 | [DeepSeek-TUI](agents/deepseek-tui.md) | Direct execution | DeepSeek-native terminal coding agent |
 | [Ruflo](agents/ruflo.md) | Workflow / orchestration layer | Multi-agent orchestration platform for Claude with federation across machines, neural memory, and 100+ specialized agents |
+| [OpenHuman](agents/openhuman.md) | Self-hosted / local runtime | Desktop life-integration agent with 118+ connectors, local Memory Tree, and Ollama support |
+| [CodeGraph](agents/codegraph.md) | Runtime and tools | Pre-indexed code knowledge graph + MCP server for Claude Code, Cursor, Codex CLI, opencode, and Hermes Agent |
+| [CLI-Anything](agents/cli-anything.md) | Runtime and tools | Auto-generates Click-based CLIs for arbitrary software so agents can drive non-API apps |
 
 ## Example Reading Paths
 

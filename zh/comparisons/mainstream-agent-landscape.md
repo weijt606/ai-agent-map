@@ -50,6 +50,9 @@
 | [Pydantic AI](../agents/pydantic-ai.md) | 类型安全 agent 框架 | 本地 Python | 类型驱动开发 | 想要类型安全和结构化输出的 Python 团队 | 生态比 LangChain 小 |
 | [Flowise](../agents/flowise.md) | 可视化 LLM 应用构建器 | 自托管或 Flowise Cloud | 拖拽可视化 | 想不写代码搭 RAG chatbot 和 agent 流程的团队 | 复杂流程在规模化时变脆弱 |
 | [Froge Code](../agents/froge-code.md) | review-first 自动化平台 | 自托管平台 | 多尝试 + 人工挑选 | 想把 coding automation 做成任务板流程 | 名称仍待进一步确认 |
+| [OpenHuman](../agents/openhuman.md) | 自托管桌面生活集成 agent | 本地桌面（Tauri） | 常驻 + 20 分钟自动拉取 | 想要一个已经认识你的 Gmail、Notion、GitHub、日历的个人 AI 助手 | GPL-3.0；价值随你接入的 118+ 连接器数量放大 |
+| [CodeGraph](../agents/codegraph.md) | Agent 上下文基础设施 | 本地 MCP server + SQLite | 一次索引 + 文件实时 watch | 让 Claude Code、Cursor、Codex CLI、opencode、Hermes Agent 的代码问答更便宜 | 多了一层索引；只在中到大仓库回本 |
+| [CLI-Anything](../agents/cli-anything.md) | Agent-native 软件桥接 | 生成 Click PyPI CLI 的 pipeline | 一次生成、持续维护 | 让 agent 驱动那些没有 API 的软件（Blender、GIMP、LibreOffice 等） | 上游应用演进后生成的 CLI 需要重新验证 |
 
 ## 怎么读这张表
 

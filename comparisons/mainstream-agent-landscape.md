@@ -50,6 +50,9 @@ Each row answers one question: what kind of problem is this project best suited 
 | [Pydantic AI](../agents/pydantic-ai.md) | Type-safe agent framework | Local Python | Type-driven development | Python teams wanting type safety and structured outputs | Smaller ecosystem than LangChain |
 | [Flowise](../agents/flowise.md) | Visual LLM app builder | Self-hosted or Flowise Cloud | Drag-and-drop visual | Teams wanting no-code RAG chatbots and agent flows | Complex flows become fragile at scale |
 | [Froge Code](../agents/froge-code.md) | Review-first automation platform | Self-hosted platform | Multiple attempts plus human choice | Task-board-centric coding automation | Name still needs confirmation |
+| [OpenHuman](../agents/openhuman.md) | Self-hosted desktop life-integration agent | Local desktop (Tauri) | Always-on with 20-min auto-fetch | Personal AI assistant that already knows your Gmail, Notion, GitHub, calendar | GPL-3.0; value scales with how many of the 118+ connectors you wire up |
+| [CodeGraph](../agents/codegraph.md) | Agent context infrastructure | Local MCP server + SQLite | Indexes once, then live-watches files | Cheaper code Q&A for Claude Code, Cursor, Codex CLI, opencode, Hermes Agent | Extra indexing layer; payoff only on medium-to-large repos |
+| [CLI-Anything](../agents/cli-anything.md) | Agent-native software bridge | Pipeline that emits Click-based PyPI CLIs | Generate-once, then maintain | Letting agents drive software without exposed APIs (Blender, GIMP, LibreOffice, etc.) | Generated CLIs need re-validation as upstream apps evolve |
 
 ## How To Read This Table
 

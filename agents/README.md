@@ -20,8 +20,8 @@ Think of it as a shortlist directory: understand the route first, then decide wh
 | Review-first automation | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md) | People who want review and human pacing to stay central |
 | General-purpose autonomous agent | [AutoGPT](autogpt.md), [Agent Zero](agent-zero.md), [BabyAGI](babyagi.md), [Julep](julep.md), [GenericAgent](generic-agent.md), [ml-intern](ml-intern.md) | People who want autonomous general-purpose task execution (ml-intern is the ML-specialized variant) |
 | Build-your-own platform | [LangChain](langchain.md), [LangGraph](langgraph.md), [CrewAI](crewai.md), [LlamaIndex](llamaindex.md), [Haystack](haystack.md), [Semantic Kernel](semantic-kernel.md), [DSPy](dspy.md), [Pydantic AI](pydantic-ai.md) | Teams building their own agent system |
-| Runtime and tools | [n8n](n8n.md), [MemGPT](memgpt.md), [Open Interpreter](open-interpreter.md), [LiteLLM](litellm.md), [Flowise](flowise.md) | Teams needing workflow automation, code execution, LLM gateways, or visual builders |
-| Self-hosted / local runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md), [Mercury Agent](mercury-agent.md) | Users who need local control, on-device privacy, extensions, channels, or deeper runtime ownership |
+| Runtime and tools | [n8n](n8n.md), [MemGPT](memgpt.md), [Open Interpreter](open-interpreter.md), [LiteLLM](litellm.md), [Flowise](flowise.md), [CodeGraph](codegraph.md), [CLI-Anything](cli-anything.md) | Teams needing workflow automation, code execution, LLM gateways, agent context infrastructure, agent-driven CLIs, or visual builders |
+| Self-hosted / local runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md), [Mercury Agent](mercury-agent.md), [OpenHuman](openhuman.md) | Users who need local control, on-device privacy, extensions, channels, runtime ownership, or personal-data life integration |
 | Managed background path | [Claude Managed Agents](claude-managed-agents.md) | Users who need scheduled, cloud, or detached execution |
 
 ## Recent Heat Snapshot
@@ -30,25 +30,25 @@ This is not a ranking of quality.
 
 It is a quick view of projects that appeared especially hot in the latest weekly GitHub snapshot. The order follows the 7-day gain, while the star totals below reflect the current counts checked during this repo update.
 
-> **Last updated:** 2026-05-19 · **Snapshot window:** 2026-05-12 → 2026-05-18 (7-day gain, approximate) · **Star counts:** checked at update time
+> **Last updated:** 2026-05-23 · **Snapshot window:** 2026-05-16 → 2026-05-22 (7-day gain, approximate) · **Star counts:** checked at update time
 
 Project names link to the upstream GitHub repo. When a profile exists in this directory, it is linked separately in the "Directory status" column.
 
 | Rank | Project | Current stars | Snapshot gain | Directory status | Note |
 | --- | --- | --- | --- | --- | --- |
-| #1 (new) | [DeepSeek-TUI](https://github.com/Hmbown/DeepSeek-TUI) | 32.3k | +13,500 | [Profile](deepseek-tui.md) (added this week) | DeepSeek-native terminal coding agent — biggest single-week surge in this snapshot |
-| #2 (new) | [mattpocock/skills](https://github.com/mattpocock/skills) | 93.3k | +12,000 | Watchlist | Matt Pocock's curated `.claude/skills` directory — not an agent itself; representative example of the skills wave |
-| #3 (new) | [openhuman](https://github.com/tinyhumansai/openhuman) | 19.4k | +11,500 | Watchlist | Self-described "personal AI super intelligence" desktop agent — positioning still settling |
-| #4 (new) | [anthropics/financial-services](https://github.com/anthropics/financial-services) | 25.7k | +9,000 | Not included | Anthropic's vertical SDK for financial services — agent-adjacent, not generic agent infrastructure |
-| #5 (new) | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 43.6k | +7,500 | Watchlist | Production-grade engineering skills for AI coding agents — another data point in the same skills wave |
-| #6 (new) | [Superpowers](https://github.com/obra/superpowers) | 197.7k | +6,500 | [Profile](superpowers.md) (added this week) | Jesse Vincent's agentic skills framework — composable skills + plugin marketplace with Claude Code, Codex, Cursor, GitHub Copilot, Gemini, and more |
-| #7 (new) | [Ruflo](https://github.com/ruvnet/ruflo) | 53.0k | +5,500 | [Profile](ruflo.md) (added this week) | Multi-agent orchestration platform for Claude Code (rebranded from Claude Flow) — multi-machine federation, neural memory, 100+ specialized agents |
-| #8 (new) | [agentmemory](https://github.com/rohitg00/agentmemory) | 13.6k | +5,000 | Watchlist | Persistent memory layer for AI coding agents — overlaps with [MemGPT](memgpt.md) territory |
-| #9 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 157.3k | +4,500 | [Profile](hermes-agent.md) | Fourth consecutive week of growth — still the in-scope absolute leader |
-| #10 | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 77.2k | +4,500 | Not included | Tauric Research's multi-agent finance framework — still hot, scope unchanged (research-only, domain-specific) |
+| #1 | [mattpocock/skills](https://github.com/mattpocock/skills) | 100.9k | +7,600 | Watchlist (Skills Wave) | Crossed 100k — largest week-over-week gainer among already-tracked entries |
+| #2 (new) | [anthropics/skills](https://github.com/anthropics/skills) | 139.3k | ~+7,000 | Watchlist (Skills Wave canonical) | Anthropic's own reference `.claude/skills` repo — the canonical anchor of the wave |
+| #3 | [openhuman](https://github.com/tinyhumansai/openhuman) | 25.7k | +6,300 | [Profile](openhuman.md) (added this week) | Second consecutive week of strong growth — open-source desktop life-integration agent (Rust + Tauri, GPL-3.0) |
+| #4 (new) | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 16.4k | ~+6,000 | [Profile](codegraph.md) (added this week) | Pre-indexed code knowledge graph + MCP server for [Claude Code](claude-code.md), [Cursor](cursor.md), [Codex](codex.md) CLI, opencode, [Hermes Agent](hermes-agent.md) |
+| #5 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 163.1k | +5,800 | [Profile](hermes-agent.md) | Fifth consecutive week of growth — still the in-scope absolute leader |
+| #6 (new) | [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | 39.5k | ~+5,500 | [Profile](cli-anything.md) (added this week) | HKUDS academic group's "make all software agent-native" auto-CLI framework |
+| #7 | [Superpowers](https://github.com/obra/superpowers) | 202.8k | +5,100 | [Profile](superpowers.md) | Crossed 200k — the agentic skills framework keeps growing |
+| #8 (new) | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 25.2k | ~+4,500 | Watchlist (Skills Wave) | Ready-to-use Agent Skills for research / science / engineering / finance / writing |
+| #9 (new) | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 19.0k | ~+4,500 | Watchlist (Skills Wave) | Curated academic research pipeline for Claude Code |
+| #10 (new) | [humanlayer/12-factor-agents](https://github.com/humanlayer/12-factor-agents) | 21.7k | ~+3,500 | Not included | "12-factor" principles doc for production LLM-powered software — methodology, not agent surface |
 
 **Market events:**
-- **May 2026 (this snapshot)** — The `.claude/skills` wave: three of the top six trending repos are skills frameworks or curated skills collections (Superpowers, mattpocock/skills, agent-skills). The new [Superpowers](superpowers.md) profile captures the framework end of this trend.
+- **May 2026 (expanding)** — The `.claude/skills` wave has intensified — six of the top ten now sit in the skills/methodology cluster. Three new in-scope profiles this week ([openhuman](openhuman.md), [codegraph](codegraph.md), [cli-anything](cli-anything.md)) cover routes the wave is exposing: life-integration runtimes, agent context infrastructure, and agent-native software bridges. Anthropic's own [skills](https://github.com/anthropics/skills) repo joins the watchlist as the canonical anchor.
 - **April 8 2026** — Earendil (Armin Ronacher's company) acquired the [Pi](pi.md) project from Mario Zechner; the repo moved from `badlogic/pi-mono` to `earendil-works/pi`, and Earendil also began building Lefos, a cloud agent platform on top of it.
 - **April 16 2026** — OpenAI shipped "Codex for (almost) everything," adding Background Computer Use, parallel multi-agent execution, an in-app browser, and 90+ plugins on the [Codex](codex.md) product surface. Reported 3M weekly active developers, ~2x early-March 2026.
 - **April 23 2026** — OpenAI released [GPT-5.5](gpt-5.5.md), the model layer powering Codex, ChatGPT, and every OpenAI-API-based agent.
@@ -101,6 +101,9 @@ Project names link to the upstream GitHub repo. When a profile exists in this di
 | [Superpowers](superpowers.md) | skills framework / methodology | Yes | Composable agentic skills framework with Claude Code, Codex, Cursor, Copilot, Gemini plugins | Verified at v5.1 (May 2026) |
 | [DeepSeek-TUI](deepseek-tui.md) | execution (DeepSeek-native) | Yes | DeepSeek-native terminal coding agent | Verified during May 2026 surge |
 | [Ruflo](ruflo.md) | multi-agent orchestration | Yes | Multi-machine federated Claude orchestration platform (formerly Claude Flow) | Verified after rebrand |
+| [OpenHuman](openhuman.md) | self-hosted / local runtime | Yes | Open-source desktop life-integration agent with 118+ connectors, local Memory Tree, Ollama support | Verified after two-week trending run |
+| [CodeGraph](codegraph.md) | runtime / agent context | Yes | Pre-indexed code knowledge graph + MCP server for Claude Code, Cursor, Codex CLI, opencode, Hermes Agent | Verified during May 2026 trending surge |
+| [CLI-Anything](cli-anything.md) | runtime / agent-native bridge | Yes | Auto-generates Click-based CLIs for arbitrary software so agents can drive non-API apps | Verified at v1 (May 2026) with HKUDS ownership |
 
 ## Writing Standard
 

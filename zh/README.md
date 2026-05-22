@@ -105,6 +105,27 @@ GPT-5.5 发布前一周，OpenAI 先推出了 "Codex for (almost) everything"—
 
 叠加 GPT-5.5 底层模型，这是这次快照窗口里影响最大的一次 agent 产品更新。
 
+## Agent Harness 框架一览
+
+「harness」指的是把 LLM 变成 agent 所需的最小骨架——loop、工具表面、权限模型、skills 接口。这一类项目可以被你 fork、审计、端到端拥有，而不是直接接受厂商产品。
+
+| 项目 | Stars | 许可证 | 最适合 | 体量 |
+| --- | --- | --- | --- | --- |
+| [Pi](agents/pi.md) | 52.9k | MIT（TS） | 终端优先 coding harness，LLM provider 覆盖广 | 小核心 + 可选 skills / extensions |
+| [OpenHands](agents/openhands.md) | 74.5k | 开源 | 完整开源 SWE agent（CLI + GUI + 云端可选） | 最重——更像成品 |
+| [SWE-agent](agents/swe-agent.md) | 19.3k | MIT（Py） | SWE-bench 背后的研究参考、single-YAML 配置 | 中等；上游精力已经转到 mini-swe-agent |
+| [mini-swe-agent](agents/mini-swe-agent.md) | 4.5k | MIT（Py） | ~100 行接班版；SWE-bench Verified >74% | 极小——一坐能读完 |
+| [OpenHarness](agents/openharness.md) | 13.0k | MIT（Py） | 10 子系统开源 harness，兼容 anthropics/skills + MCP + 43 工具 | 中等；生产形态，和 [CLI-Anything](agents/cli-anything.md) 同团队 |
+
+怎么读这张表：
+
+- 按体量挑，不按 star 挑。合适的 harness 是你愿意维护那一块表面积的那一个。
+- 想要最小可信 base 去 fork：[mini-swe-agent](agents/mini-swe-agent.md)。
+- 想要自托管一套生产形态开源 runtime：[OpenHarness](agents/openharness.md)。
+- 想发 SWE-bench 论文：[SWE-agent](agents/swe-agent.md) 是规范参考；mini-swe-agent 是日常在用的接班版。
+- 想要日常顺手的终端 coding harness：[Pi](agents/pi.md)。
+- 想要更完整但仍开源的 SWE agent 成品：[OpenHands](agents/openhands.md)。
+
 ## 先把地图摊开
 
 | 路线 | 代表项目 | 常见使用者 |

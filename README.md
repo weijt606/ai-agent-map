@@ -105,6 +105,27 @@ A week before the GPT-5.5 release, OpenAI shipped "Codex for (almost) everything
 
 Combined with the GPT-5.5 backbone, this is the most consequential agent product update in the snapshot window.
 
+## Agent Harness Frameworks At A Glance
+
+A "harness" is the minimal scaffolding around an LLM that turns it into an agent — the loop, the tool surface, the permission model, the skills hook. These are projects you can fork, audit, and own end-to-end, rather than vendor products you adopt as-is.
+
+| Project | Stars | License | Sweet spot | Footprint |
+| --- | --- | --- | --- | --- |
+| [Pi](agents/pi.md) | 52.9k | MIT (TS) | Terminal-first coding harness with broad LLM provider coverage | Small core + opt-in skills/extensions |
+| [OpenHands](agents/openhands.md) | 74.5k | Open source | Full open-source SWE agent (CLI + GUI + cloud option) | Heaviest — closer to a product |
+| [SWE-agent](agents/swe-agent.md) | 19.3k | MIT (Py) | Research reference behind SWE-bench, single-YAML config | Medium; upstream moving focus to mini-swe-agent |
+| [mini-swe-agent](agents/mini-swe-agent.md) | 4.5k | MIT (Py) | ~100-line successor; SWE-bench Verified >74% | Tiny — readable in one sitting |
+| [OpenHarness](agents/openharness.md) | 13.0k | MIT (Py) | 10-subsystem open harness with anthropics/skills + MCP + 43 tools | Medium; production-shaped, sibling to [CLI-Anything](agents/cli-anything.md) |
+
+How to read this row:
+
+- Pick by footprint, not by stars. The right harness is the one whose surface area you are willing to maintain.
+- If you want the smallest credible base to fork: [mini-swe-agent](agents/mini-swe-agent.md).
+- If you want a production-shaped open runtime to self-host: [OpenHarness](agents/openharness.md).
+- If you want to publish SWE-bench numbers: [SWE-agent](agents/swe-agent.md) is the canonical reference; mini-swe-agent is the working successor.
+- If you want a terminal-first day-to-day coding harness: [Pi](agents/pi.md).
+- If you want a more complete SWE agent product that is still open source: [OpenHands](agents/openhands.md).
+
 ## The First Cut Of The Map
 
 | Route | Representative projects | Typical user |

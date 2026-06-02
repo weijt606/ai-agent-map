@@ -34,7 +34,7 @@
 
 | 维度 | 评估 | 说明 |
 | --- | --- | --- |
-| 跨 agent 集成 | 非常强 | 对 [Claude Code](claude-code.md)、[Cursor](cursor.md)、[Codex](codex.md) CLI、opencode、[Hermes Agent](hermes-agent.md) 都有一等公民 MCP plugin |
+| 跨 agent 集成 | 非常强 | 对 [Claude Code](claude-code.md)、[Cursor](cursor.md)、[Codex](codex.md) CLI、OpenCode、Gemini、AntiGravity、Kiro、[Hermes Agent](hermes-agent.md) 都有一等公民 MCP plugin |
 | 纯本地运行 | 非常强 | Tree-sitter + SQLite + FTS5，没有任何外部依赖 |
 | 语言覆盖 | 强 | 19+ 语言，包括 TypeScript、Python、Go、Rust、Java |
 | 实时同步 | 强 | 原生操作系统文件 watcher 保持图谱实时更新 |
@@ -46,4 +46,4 @@
 
 ## 底线
 
-CodeGraph 是本仓库里第一个专门写给"agent 上下文基础设施"这层的 profile——意识到当 agent 越来越多做代码探索时，提升它最便宜的办法不是换更强的 agent，而是给它预先算好的结构。MCP 优先的设计让它能干净地嵌进本仓库已经收录的 agent（[Claude Code](claude-code.md)、[Cursor](cursor.md)、[Codex](codex.md) CLI、opencode、[Hermes Agent](hermes-agent.md)）。如果你每周在代码问答上烧的 token 已经显著，那 35-70% 的官方改进数据就是评估时要打的基线。
+CodeGraph 是本仓库里第一个专门写给"agent 上下文基础设施"这层的 profile——意识到当 agent 越来越多做代码探索时，提升它最便宜的办法不是换更强的 agent，而是给它预先算好的结构。MCP 优先的设计让它能干净地嵌进本仓库已经收录的 agent（[Claude Code](claude-code.md)、[Cursor](cursor.md)、[Codex](codex.md) CLI、OpenCode、Gemini、AntiGravity、Kiro、[Hermes Agent](hermes-agent.md)）。如果你每周在代码问答上烧的 token 已经显著，那 35-70% 的官方改进数据就是评估时要打的基线。

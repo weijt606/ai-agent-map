@@ -12,7 +12,7 @@ Think of it as a shortlist directory: understand the route first, then decide wh
 
 | Route | Representative projects | Best for |
 | --- | --- | --- |
-| Direct execution | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [DeepSeek-TUI](deepseek-tui.md), [Devin](devin.md), [Jules](jules.md) | People who want to hand a coding task directly to an agent |
+| Direct execution | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [CodeWhale](codewhale.md), [Devin](devin.md), [Jules](jules.md) | People who want to hand a coding task directly to an agent |
 | Agent harness framework | [Pi](pi.md), [OpenHands](openhands.md), [SWE-agent](swe-agent.md), [mini-swe-agent](mini-swe-agent.md), [OpenHarness](openharness.md) | People who want to own the loop, tool surface, and permissions instead of inheriting a vendor product |
 | Frontier agentic model | [GPT-5.5](gpt-5.5.md) | People choosing which model to wire into their agent system, or evaluating the capability ceiling of OpenAI surfaces |
 | Agentic skills framework | [Superpowers](superpowers.md) | Users who want a methodology + composable skills layer that plugs into Claude Code, Codex, Cursor, and other agents |
@@ -31,25 +31,27 @@ This is not a ranking of quality.
 
 It is a quick view of projects that appeared especially hot in the latest weekly GitHub snapshot. The order follows the 7-day gain, while the star totals below reflect the current counts checked during this repo update.
 
-> **Last updated:** 2026-05-23 · **Snapshot window:** 2026-05-16 → 2026-05-22 (7-day gain, approximate) · **Star counts:** checked at update time
+> **Last updated:** 2026-06-02 · **Snapshot window:** 2026-05-23 → 2026-06-01 (gain since last update, ~10 days, approximate) · **Star counts:** checked at update time
 
 Project names link to the upstream GitHub repo. When a profile exists in this directory, it is linked separately in the "Directory status" column.
 
 | Rank | Project | Current stars | Snapshot gain | Directory status | Note |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [mattpocock/skills](https://github.com/mattpocock/skills) | 100.9k | +7,600 | Watchlist (Skills Wave) | Crossed 100k — largest week-over-week gainer among already-tracked entries |
-| #2 (new) | [anthropics/skills](https://github.com/anthropics/skills) | 139.3k | ~+7,000 | Watchlist (Skills Wave canonical) | Anthropic's own reference `.claude/skills` repo — the canonical anchor of the wave |
-| #3 | [openhuman](https://github.com/tinyhumansai/openhuman) | 25.7k | +6,300 | [Profile](openhuman.md) (added this week) | Second consecutive week of strong growth — open-source desktop life-integration agent (Rust + Tauri, GPL-3.0) |
-| #4 (new) | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 16.4k | ~+6,000 | [Profile](codegraph.md) (added this week) | Pre-indexed code knowledge graph + MCP server for [Claude Code](claude-code.md), [Cursor](cursor.md), [Codex](codex.md) CLI, opencode, [Hermes Agent](hermes-agent.md) |
-| #5 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 163.1k | +5,800 | [Profile](hermes-agent.md) | Fifth consecutive week of growth — still the in-scope absolute leader |
-| #6 (new) | [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | 39.5k | ~+5,500 | [Profile](cli-anything.md) (added this week) | HKUDS academic group's "make all software agent-native" auto-CLI framework |
-| #7 | [Superpowers](https://github.com/obra/superpowers) | 202.8k | +5,100 | [Profile](superpowers.md) | Crossed 200k — the agentic skills framework keeps growing |
-| #8 (new) | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 25.2k | ~+4,500 | Watchlist (Skills Wave) | Ready-to-use Agent Skills for research / science / engineering / finance / writing |
-| #9 (new) | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 19.0k | ~+4,500 | Watchlist (Skills Wave) | Curated academic research pipeline for Claude Code |
-| #10 (new) | [humanlayer/12-factor-agents](https://github.com/humanlayer/12-factor-agents) | 21.7k | ~+3,500 | Not included | "12-factor" principles doc for production LLM-powered software — methodology, not agent surface |
+| #1 (↑) | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 37.5k | +21,100 | [Profile](codegraph.md) | Breakout of the window — more than doubled (16.4k → 37.5k); now indexes for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent |
+| #2 | [mattpocock/skills](https://github.com/mattpocock/skills) | 114.7k | +13,800 | Watchlist (Skills Wave) | Still accelerating — curated `.claude/skills` directory cleared 114k |
+| #3 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 176.6k | +13,500 | [Profile](hermes-agent.md) | Sixth consecutive window of growth — still the in-scope absolute leader |
+| #4 | [Superpowers](https://github.com/obra/superpowers) | 215.5k | +12,700 | [Profile](superpowers.md) | Crossed 215k — the agentic skills framework keeps compounding |
+| #5 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 26.0k | +7,000 | Watchlist (Skills Wave) | Fastest-growing curated skills collection this window — academic research pipeline for Claude Code |
+| #6 | [anthropics/skills](https://github.com/anthropics/skills) | 145.5k | +6,200 | Watchlist (Skills Wave canonical) | Anthropic's own reference `.claude/skills` repo — steady but no longer the top mover |
+| #7 | [Pi](https://github.com/earendil-works/pi) | 58.8k | +5,900 | [Profile](pi.md) | Re-accelerated after the deep-customization playbook landed |
+| #8 | [openhuman](https://github.com/tinyhumansai/openhuman) | 30.4k | +4,700 | [Profile](openhuman.md) | Third straight strong window — life-integration desktop agent crossed 30k |
+| #9 | [agentmemory](https://github.com/rohitg00/agentmemory) | 20.6k | +4,200 | Watchlist (memory layer) | Picked up pace, crossed 20k — agent memory infrastructure, tracked with [MemGPT](memgpt.md) |
+| #10 | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 82.1k | +3,500 | Not included | Vertical finance-research multi-agent system — out of scope as a domain vertical |
 
 **Market events:**
-- **May 2026 (expanding)** — The `.claude/skills` wave has intensified — six of the top ten now sit in the skills/methodology cluster. Three new in-scope profiles this week ([openhuman](openhuman.md), [codegraph](codegraph.md), [cli-anything](cli-anything.md)) cover routes the wave is exposing: life-integration runtimes, agent context infrastructure, and agent-native software bridges. Anthropic's own [skills](https://github.com/anthropics/skills) repo joins the watchlist as the canonical anchor.
+- **Late May 2026 — rebrand** — The agent profiled here as DeepSeek-TUI renamed to [CodeWhale](codewhale.md) (`Hmbown/CodeWhale`, now 36.6k) and broadened from DeepSeek-only to **DeepSeek + MiMo**. Old `DeepSeek-TUI` links redirect; this directory now uses the new name.
+- **Late May 2026 — code-context breakout** — [codegraph](codegraph.md) more than doubled in one window (16.4k → 37.5k), the clearest sign yet that "agent context infrastructure" is its own demand center. New harness-framework newcomer [jcode](https://github.com/1jehuang/jcode) (1jehuang, Rust, 6.8k) joins the watchlist alongside [SWE-agent](swe-agent.md) / [mini-swe-agent](mini-swe-agent.md) and [OpenHarness](openharness.md).
+- **May 2026 (cooling)** — The `.claude/skills` wave continues but narrowed from six of the top ten to four ([mattpocock/skills](https://github.com/mattpocock/skills), [Superpowers](superpowers.md), [academic-research-skills](https://github.com/Imbad0202/academic-research-skills), [anthropics/skills](https://github.com/anthropics/skills)) as code-context and harness infrastructure absorbed more of the trending oxygen. Anthropic's own [skills](https://github.com/anthropics/skills) repo remains the canonical anchor.
 - **April 8 2026** — Earendil (Armin Ronacher's company) acquired the [Pi](pi.md) project from Mario Zechner; the repo moved from `badlogic/pi-mono` to `earendil-works/pi`, and Earendil also began building Lefos, a cloud agent platform on top of it.
 - **April 16 2026** — OpenAI shipped "Codex for (almost) everything," adding Background Computer Use, parallel multi-agent execution, an in-app browser, and 90+ plugins on the [Codex](codex.md) product surface. Reported 3M weekly active developers, ~2x early-March 2026.
 - **April 23 2026** — OpenAI released [GPT-5.5](gpt-5.5.md), the model layer powering Codex, ChatGPT, and every OpenAI-API-based agent.
@@ -100,7 +102,7 @@ Project names link to the upstream GitHub repo. When a profile exists in this di
 | [ml-intern](ml-intern.md) | autonomous (domain-specific) | Yes | Autonomous ML engineering agent built on the Hugging Face ecosystem | Verified |
 | [GenericAgent](generic-agent.md) | autonomous (self-evolving) | Yes | Small-seed agent that grows a personal skill tree on every task | Verified after week-2 of watchlist tracking |
 | [Superpowers](superpowers.md) | skills framework / methodology | Yes | Composable agentic skills framework with Claude Code, Codex, Cursor, Copilot, Gemini plugins | Verified at v5.1 (May 2026) |
-| [DeepSeek-TUI](deepseek-tui.md) | execution (DeepSeek-native) | Yes | DeepSeek-native terminal coding agent | Verified during May 2026 surge |
+| [CodeWhale](codewhale.md) | execution (DeepSeek + MiMo) | Yes | DeepSeek + MiMo terminal coding agent (formerly DeepSeek-TUI) | Verified during May 2026 surge |
 | [Ruflo](ruflo.md) | multi-agent orchestration | Yes | Multi-machine federated Claude orchestration platform (formerly Claude Flow) | Verified after rebrand |
 | [OpenHuman](openhuman.md) | self-hosted / local runtime | Yes | Open-source desktop life-integration agent with 118+ connectors, local Memory Tree, Ollama support | Verified after two-week trending run |
 | [CodeGraph](codegraph.md) | runtime / agent context | Yes | Pre-indexed code knowledge graph + MCP server for Claude Code, Cursor, Codex CLI, opencode, Hermes Agent | Verified during May 2026 trending surge |

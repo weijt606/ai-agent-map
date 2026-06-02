@@ -34,7 +34,7 @@ One-line take: CodeGraph is a local code knowledge graph plus MCP server — it 
 
 | Dimension | Assessment | Notes |
 | --- | --- | --- |
-| Cross-agent integration | Very strong | First-class MCP plugins for [Claude Code](claude-code.md), [Cursor](cursor.md), [Codex](codex.md) CLI, opencode, [Hermes Agent](hermes-agent.md) |
+| Cross-agent integration | Very strong | First-class MCP plugins for [Claude Code](claude-code.md), [Cursor](cursor.md), [Codex](codex.md) CLI, OpenCode, Gemini, AntiGravity, Kiro, and [Hermes Agent](hermes-agent.md) |
 | Local-only operation | Very strong | Tree-sitter + SQLite + FTS5 — no external dependencies |
 | Language coverage | Strong | 19+ languages including TypeScript, Python, Go, Rust, Java |
 | Live syncing | Strong | Native OS file watchers keep the graph current |
@@ -46,4 +46,4 @@ Complexity is Low to Medium. Initial indexing happens automatically; the steady-
 
 ## Bottom Line
 
-CodeGraph is the first profile in this map dedicated to "agent context infrastructure" — the realization that as agents do more code exploration, the cheapest way to make them better is not to upgrade the agent but to give it pre-computed structure. The MCP-first design slots cleanly into already-tracked agents ([Claude Code](claude-code.md), [Cursor](cursor.md), [Codex](codex.md) CLI, opencode, [Hermes Agent](hermes-agent.md)). If you spend serious tokens on code Q&A, the published 35-70% improvements are the bar to evaluate against.
+CodeGraph is the first profile in this map dedicated to "agent context infrastructure" — the realization that as agents do more code exploration, the cheapest way to make them better is not to upgrade the agent but to give it pre-computed structure. The MCP-first design slots cleanly into already-tracked agents ([Claude Code](claude-code.md), [Cursor](cursor.md), [Codex](codex.md) CLI, OpenCode, Gemini, AntiGravity, Kiro, and [Hermes Agent](hermes-agent.md)). If you spend serious tokens on code Q&A, the published 35-70% improvements are the bar to evaluate against.

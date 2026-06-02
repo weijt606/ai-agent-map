@@ -12,7 +12,7 @@
 
 | 路线 | 代表项目 | 适合谁 |
 | --- | --- | --- |
-| 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [DeepSeek-TUI](deepseek-tui.md), [Devin](devin.md), [Jules](jules.md) | 想直接把 coding 任务交给 agent |
+| 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [CodeWhale](codewhale.md), [Devin](devin.md), [Jules](jules.md) | 想直接把 coding 任务交给 agent |
 | Agent harness 框架 | [Pi](pi.md), [OpenHands](openhands.md), [SWE-agent](swe-agent.md), [mini-swe-agent](mini-swe-agent.md), [OpenHarness](openharness.md) | 想自己掌控 loop、工具表面和权限，不直接接受厂商成品 |
 | 前沿 agentic 模型 | [GPT-5.5](gpt-5.5.md) | 在选要接入自己 agent 系统的模型，或在评估 OpenAI 系 agent 能力上限 |
 | Agentic skills 框架 | [Superpowers](superpowers.md) | 想要一套方法论 + 可组合 skills 层、能接到 Claude Code、Codex、Cursor 等 agent 之上 |
@@ -31,25 +31,27 @@
 
 它只是把最近一周 GitHub 快照里特别热的 agent 项目摆出来。顺序按 7 天增量；下面的 star 总数是这次更新目录时重新核对过的当前值。
 
-> **最后更新：** 2026-05-23 · **快照窗口：** 2026-05-16 → 2026-05-22（7 天增量，估算） · **Star 总数：** 更新时实时核对
+> **最后更新：** 2026-06-02 · **快照窗口：** 2026-05-23 → 2026-06-01（自上次更新以来的增量，约 10 天，估算） · **Star 总数：** 更新时实时核对
 
 项目名链接指向上游 GitHub 仓库。本目录已收录的 profile，在"目录状态"列单独给出链接。
 
 | 排名 | 项目 | 当前 stars | 快照增量 | 目录状态 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [mattpocock/skills](https://github.com/mattpocock/skills) | 100.9k | +7,600 | 候补（Skills 浪潮） | 本周突破 10 万——已收录项目中增量最大 |
-| #2（新） | [anthropics/skills](https://github.com/anthropics/skills) | 139.3k | ~+7,000 | 候补（Skills 浪潮源头） | Anthropic 自家的 `.claude/skills` 参考仓库——整套范式的锚点 |
-| #3 | [openhuman](https://github.com/tinyhumansai/openhuman) | 25.7k | +6,300 | [Profile](openhuman.md)（本周新增） | 连续第二周强增长——开源桌面生活集成 agent（Rust + Tauri，GPL-3.0） |
-| #4（新） | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 16.4k | ~+6,000 | [Profile](codegraph.md)（本周新增） | 为 [Claude Code](claude-code.md)、[Cursor](cursor.md)、[Codex](codex.md) CLI、opencode、[Hermes Agent](hermes-agent.md) 提供预索引代码知识图谱 + MCP server |
-| #5 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 163.1k | +5,800 | [Profile](hermes-agent.md) | 连续第五周增长——已收录项目里仍是绝对总数最高 |
-| #6（新） | [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | 39.5k | ~+5,500 | [Profile](cli-anything.md)（本周新增） | HKUDS 学术组的「让所有软件 agent 原生化」自动 CLI 框架 |
-| #7 | [Superpowers](https://github.com/obra/superpowers) | 202.8k | +5,100 | [Profile](superpowers.md) | 突破 20 万——agentic skills 框架持续涨 |
-| #8（新） | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 25.2k | ~+4,500 | 候补（Skills 浪潮） | 面向研究/科学/工程/金融/写作的现成 Agent Skills 集 |
-| #9（新） | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 19.0k | ~+4,500 | 候补（Skills 浪潮） | 面向 Claude Code 的策展式学术研究 skills 管线 |
-| #10（新） | [humanlayer/12-factor-agents](https://github.com/humanlayer/12-factor-agents) | 21.7k | ~+3,500 | 不收录 | 生产级 LLM 软件「12 因素」原则文档——方法论资产，不是 agent 表面 |
+| #1（↑） | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 37.5k | +21,100 | [Profile](codegraph.md) | 本窗口的黑马——翻倍多（16.4k → 37.5k）；现在为 Claude Code、Codex、Gemini、Cursor、OpenCode、AntiGravity、Kiro、Hermes Agent 建索引 |
+| #2 | [mattpocock/skills](https://github.com/mattpocock/skills) | 114.7k | +13,800 | 候补（Skills 浪潮） | 仍在加速——策展式 `.claude/skills` 目录越过 114k |
+| #3 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 176.6k | +13,500 | [Profile](hermes-agent.md) | 连续第六个窗口增长——已收录项目里仍是绝对总数最高 |
+| #4 | [Superpowers](https://github.com/obra/superpowers) | 215.5k | +12,700 | [Profile](superpowers.md) | 突破 215k——agentic skills 框架持续复利增长 |
+| #5 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 26.0k | +7,000 | 候补（Skills 浪潮） | 本窗口增速最快的策展式 skills 集——面向 Claude Code 的学术研究管线 |
+| #6 | [anthropics/skills](https://github.com/anthropics/skills) | 145.5k | +6,200 | 候补（Skills 浪潮源头） | Anthropic 自家的 `.claude/skills` 参考仓库——稳定但已不是增量最大的 |
+| #7 | [Pi](https://github.com/earendil-works/pi) | 58.8k | +5,900 | [Profile](pi.md) | 深度定制 playbook 落地后重新提速 |
+| #8 | [openhuman](https://github.com/tinyhumansai/openhuman) | 30.4k | +4,700 | [Profile](openhuman.md) | 连续第三个强劲窗口——生活集成桌面 agent 越过 30k |
+| #9 | [agentmemory](https://github.com/rohitg00/agentmemory) | 20.6k | +4,200 | 候补（memory 层） | 提速并越过 20k——agent 记忆基础设施，与 [MemGPT](memgpt.md) 并列跟踪 |
+| #10 | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 82.1k | +3,500 | 不收录 | 垂直的金融研究多 agent 系统——作为领域垂直不收录 |
 
 **市场事件：**
-- **2026 年 5 月（仍在扩散）** —— `.claude/skills` 浪潮进一步放大——前 10 中有 6 个进入 skills / 方法论集群。本周新增三条 in-scope profile（[openhuman](openhuman.md)、[codegraph](codegraph.md)、[cli-anything](cli-anything.md)）覆盖浪潮暴露出来的三条路线：生活集成 runtime、agent 上下文基础设施、agent-native 软件桥接。Anthropic 自家的 [skills](https://github.com/anthropics/skills) 仓库进入候补，作为整套范式的锚点。
+- **2026 年 5 月底 —— 更名** —— 本目录以 DeepSeek-TUI 收录的 agent 已改名为 [CodeWhale](codewhale.md)（`Hmbown/CodeWhale`，现 36.6k），并从只支持 DeepSeek 扩展到 **DeepSeek + MiMo**。旧的 `DeepSeek-TUI` 链接会重定向；本目录已统一改用新名。
+- **2026 年 5 月底 —— 代码上下文黑马** —— [codegraph](codegraph.md) 单窗口翻倍多（16.4k → 37.5k），是目前最清晰的信号：「agent 上下文基础设施」正在成为独立需求中心。全新的 harness 框架 [jcode](https://github.com/1jehuang/jcode)（1jehuang，Rust，6.8k）加入候补，与 [SWE-agent](swe-agent.md) / [mini-swe-agent](mini-swe-agent.md) 和 [OpenHarness](openharness.md) 并列。
+- **2026 年 5 月（降温）** —— `.claude/skills` 浪潮仍在继续，但从前 10 占 6 个收窄到 4 个（[mattpocock/skills](https://github.com/mattpocock/skills)、[Superpowers](superpowers.md)、[academic-research-skills](https://github.com/Imbad0202/academic-research-skills)、[anthropics/skills](https://github.com/anthropics/skills)），因为代码上下文和 harness 基础设施抢走了更多热度。Anthropic 自家的 [skills](https://github.com/anthropics/skills) 仍是整套范式的锚点。
 - **2026-04-08** —— Earendil（Armin Ronacher 的公司）从 Mario Zechner 手中收购 [Pi](pi.md) 项目，仓库从 `badlogic/pi-mono` 迁到 `earendil-works/pi`；Earendil 同时启动云端 agent 平台 Lefos。
 - **2026-04-16** —— OpenAI 推出 "Codex for (almost) everything"，在 [Codex](codex.md) 产品表面加入后台 Computer Use、并行多 agent 执行、内置浏览器，以及 90+ plugin。同时披露周活 300 万开发者，约为 3 月初的 2 倍。
 - **2026-04-23** —— OpenAI 发布 [GPT-5.5](gpt-5.5.md)，是 Codex、ChatGPT 和所有基于 OpenAI API 的 agent 的底层模型。
@@ -100,7 +102,7 @@
 | [ml-intern](ml-intern.md) | autonomous（垂直领域） | 是 | 基于 Hugging Face 生态的自主 ML 工程 agent | 已核验 |
 | [GenericAgent](generic-agent.md) | autonomous（自演进） | 是 | 从小种子起步、每完成任务长 skill tree 的自主 agent | 候补 2 周后已核验 |
 | [Superpowers](superpowers.md) | skills 框架 / 方法论 | 是 | 可组合 agentic skills 框架，集成 Claude Code、Codex、Cursor、Copilot、Gemini | 已按 v5.1（2026-05）核验 |
-| [DeepSeek-TUI](deepseek-tui.md) | execution（DeepSeek 原生） | 是 | DeepSeek 原生的终端 coding agent | 已在 2026-05 飙升期核验 |
+| [CodeWhale](codewhale.md) | execution（DeepSeek + MiMo） | 是 | DeepSeek + MiMo 终端 coding agent（原 DeepSeek-TUI） | 已在 2026-05 飙升期核验 |
 | [Ruflo](ruflo.md) | 多 agent 编排 | 是 | 跨机器联邦的 Claude 编排平台（前身 Claude Flow） | 改名后已核验 |
 | [OpenHuman](openhuman.md) | 自托管 / 本地 runtime | 是 | 带 118+ 连接器、本地 Memory Tree、Ollama 支持的开源桌面生活集成 agent | 连续两周热度后已核验 |
 | [CodeGraph](codegraph.md) | runtime / agent 上下文 | 是 | 为 Claude Code、Cursor、Codex CLI、opencode、Hermes Agent 服务的预索引代码知识图谱 + MCP server | 2026-05 trending 期间已核验 |

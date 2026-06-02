@@ -36,28 +36,30 @@ Popularity is not fit.
 
 This table tracks projects that showed up as especially hot in the latest weekly GitHub snapshot. The rank follows the 7-day gain. The total star counts below were checked when this repo was updated.
 
-> **Last updated:** 2026-05-23 · **Snapshot window:** 2026-05-16 → 2026-05-22 (7-day gain, approximate) · **Star counts:** checked at update time
+> **Last updated:** 2026-06-02 · **Snapshot window:** 2026-05-23 → 2026-06-01 (gain since last update, ~10 days, approximate) · **Star counts:** checked at update time
 
 Project names link to the upstream GitHub repo. When this map has a written profile, it is linked separately in the "Map status" column.
 
 | Rank | Project | Current stars | Snapshot gain | Map status | How to read it |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [mattpocock/skills](https://github.com/mattpocock/skills) | 100.9k | +7,600 | Watchlist (Skills Wave) | Matt Pocock's curated `.claude/skills` directory crossed 100k this week — still the largest week-over-week gainer among already-tracked entries |
-| #2 (new) | [anthropics/skills](https://github.com/anthropics/skills) | 139.3k | ~+7,000 | Watchlist (Skills Wave canonical) | Anthropic's own reference `.claude/skills` repo — the upstream source of the wave; tracked as content asset, not agent surface |
-| #3 | [openhuman](https://github.com/tinyhumansai/openhuman) | 25.7k | +6,300 | In scope · [profile](agents/openhuman.md) (new) | Second straight week of strong growth — open-source desktop life-integration agent (Rust + Tauri, GPL-3.0); positioning now reads clearly enough to write up |
-| #4 (new) | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 16.4k | ~+6,000 | In scope · [profile](agents/codegraph.md) (new) | Pre-indexed code knowledge graph + MCP server targeting [Claude Code](agents/claude-code.md), [Cursor](agents/cursor.md), [Codex](agents/codex.md) CLI, opencode, [Hermes Agent](agents/hermes-agent.md) — first agent-context-infrastructure entry |
-| #5 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 163.1k | +5,800 | In scope · [profile](agents/hermes-agent.md) | Fifth consecutive week of growth — still the in-scope absolute leader (now past 163k) |
-| #6 (new) | [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | 39.5k | ~+5,500 | In scope · [profile](agents/cli-anything.md) (new) | HKUDS lab's "make all software agent-native" framework — auto-generates Click-based CLIs from arbitrary source code so agents can drive non-API apps |
-| #7 | [Superpowers](https://github.com/obra/superpowers) | 202.8k | +5,100 | In scope · [profile](agents/superpowers.md) | Crossed 200k — the agentic skills framework keeps growing alongside the broader wave |
-| #8 (new) | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 25.2k | ~+4,500 | Watchlist (Skills Wave) | Ready-to-use Agent Skills for research / science / engineering / finance / writing — another curated collection in the wave |
-| #9 (new) | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 19.0k | ~+4,500 | Watchlist (Skills Wave) | Curated academic research skills for Claude Code — research → write → review → revise → finalize pipeline |
-| #10 (new) | [humanlayer/12-factor-agents](https://github.com/humanlayer/12-factor-agents) | 21.7k | ~+3,500 | Out of scope | "12-factor" principles doc for production LLM-powered software — methodology asset, not an agent surface, but a meaningful market signal |
+| #1 (↑) | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 37.5k | +21,100 | In scope · [profile](agents/codegraph.md) | Breakout of the window — more than doubled (16.4k → 37.5k). The pre-indexed code knowledge graph now indexes for [Claude Code](agents/claude-code.md), [Codex](agents/codex.md), Gemini, [Cursor](agents/cursor.md), OpenCode, AntiGravity, Kiro, and [Hermes Agent](agents/hermes-agent.md); agent-context infrastructure is turning into its own demand center |
+| #2 | [mattpocock/skills](https://github.com/mattpocock/skills) | 114.7k | +13,800 | Watchlist (Skills Wave) | Still accelerating — Matt Pocock's curated `.claude/skills` directory added another ~14k and cleared 114k |
+| #3 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 176.6k | +13,500 | In scope · [profile](agents/hermes-agent.md) | Sixth consecutive window of growth — the in-scope absolute leader keeps climbing (now past 176k) |
+| #4 | [Superpowers](https://github.com/obra/superpowers) | 215.5k | +12,700 | In scope · [profile](agents/superpowers.md) | The agentic skills framework crossed 215k — the wave's framework anchor keeps compounding |
+| #5 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 26.0k | +7,000 | Watchlist (Skills Wave) | Fastest-growing curated skills collection this window — academic research pipeline for Claude Code, now past 25k |
+| #6 | [anthropics/skills](https://github.com/anthropics/skills) | 145.5k | +6,200 | Watchlist (Skills Wave canonical) | Anthropic's own reference `.claude/skills` repo — the upstream source; growth steady but no longer the wave's top mover |
+| #7 | [Pi](https://github.com/earendil-works/pi) | 58.8k | +5,900 | In scope · [profile](agents/pi.md) | Re-accelerated — the Earendil-owned harness gained ~6k after the deep-customization playbook landed |
+| #8 | [openhuman](https://github.com/tinyhumansai/openhuman) | 30.4k | +4,700 | In scope · [profile](agents/openhuman.md) | Third straight strong window — life-integration desktop agent crossed 30k |
+| #9 | [agentmemory](https://github.com/rohitg00/agentmemory) | 20.6k | +4,200 | Watchlist (memory layer) | Picked up pace and crossed 20k — agent memory infrastructure, tracked alongside [MemGPT](agents/memgpt.md) |
+| #10 | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 82.1k | +3,500 | Out of scope | Vertical finance-research multi-agent system — high total, steady gain, but out of scope as a domain vertical |
 
 - Heat is useful for discovery, not for selection by itself.
-- This week added three new in-scope profiles — each one opens a route the map had not yet covered: [openhuman](agents/openhuman.md) (life-integration desktop agent), [codegraph](agents/codegraph.md) (agent context infrastructure), [CLI-Anything](agents/cli-anything.md) (agent-native software bridge).
-- The `.claude/skills` wave that started last week has intensified. Six of the top ten are skills collections, frameworks, or methodology docs (`mattpocock/skills`, `anthropics/skills`, `Superpowers`, `scientific-agent-skills`, `academic-research-skills`, `12-factor-agents`). Policy unchanged: curated collections and principles docs are tracked as Skills Wave entries, not profiled — the framework end is already covered through [Superpowers](agents/superpowers.md).
-- [humanlayer/12-factor-agents](https://github.com/humanlayer/12-factor-agents) is intentionally out of scope: principles and methodology docs are valuable signals but this map only profiles runnable agent surfaces and runtime infrastructure.
-- [agentmemory](https://github.com/rohitg00/agentmemory) 16.4k (+2.8k), [DeepSeek-TUI](agents/deepseek-tui.md) 33.5k (+1.2k), [Ruflo](agents/ruflo.md) 54.2k (+1.2k), [Pi](agents/pi.md) 52.9k (+1.4k), [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 44.9k (+1.3k), [TradingAgents](https://github.com/TauricResearch/TradingAgents) 78.6k (+1.4k), [Codex CLI](https://github.com/openai/codex) 84.7k (+1.0k), [financial-services](https://github.com/anthropics/financial-services) 26.7k (+1.0k) all continued to grow at modest pace, dropped out of (or never made) the top 10 as the new wave absorbed most of the trending oxygen.
+- No new in-scope profiles this update — it is a heat refresh plus alignment fixes. The breakout is an already-tracked entry: [codegraph](agents/codegraph.md) more than doubled, confirming "agent context infrastructure" as a route worth watching on its own.
+- **Rebrand to track:** the project profiled here as DeepSeek-TUI renamed to [CodeWhale](agents/codewhale.md) (`Hmbown/CodeWhale`, now 36.6k, +3.1k) and broadened from DeepSeek-only to **DeepSeek + MiMo**. Old `DeepSeek-TUI` links redirect; the profile and tables in this map now use the new name.
+- **New on the radar:** [jcode](https://github.com/1jehuang/jcode) (1jehuang, "Coding Agent Harness," Rust, 6.8k) hit GitHub Trending as a fresh harness-framework newcomer — added to the watchlist alongside [SWE-agent](agents/swe-agent.md) / [mini-swe-agent](agents/mini-swe-agent.md) and [OpenHarness](agents/openharness.md).
+- The `.claude/skills` wave continues but is no longer the single story: four of the top ten are skills collections or frameworks (`mattpocock/skills`, `Superpowers`, `academic-research-skills`, `anthropics/skills`), down from six last week as code-context and harness infrastructure absorbed more of the trending oxygen. Policy unchanged: curated collections are tracked as Skills Wave entries, the framework end is covered through [Superpowers](agents/superpowers.md).
+- [OpenClaw](agents/openclaw.md) remains the absolute leader at 376.2k stars; it is profiled but stays out of the gain-ranked table because reliable week-over-week deltas for a project this large are noisy.
+- Continuing to grow but outside the top 10 by gain: [Codex CLI](https://github.com/openai/codex) 87.9k (+3.2k), [Ruflo](agents/ruflo.md) 57.4k (+3.2k), [CodeWhale](agents/codewhale.md) 36.6k (+3.1k), [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 47.7k (+2.8k), [financial-services](https://github.com/anthropics/financial-services) 29.4k (+2.7k), [CLI-Anything](agents/cli-anything.md) 41.8k (+2.3k), [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) 26.9k (+1.7k), [12-factor-agents](https://github.com/humanlayer/12-factor-agents) 22.9k (+1.2k).
 
 ## Market Event: The `.claude/skills` Wave (May 2026, expanding)
 
@@ -65,12 +67,12 @@ The wave that broke into trending in mid-May has intensified. Across the May 12 
 
 | Repo | Stars | Shape |
 | --- | --- | --- |
-| [anthropics/skills](https://github.com/anthropics/skills) | 139.3k | Anthropic's own canonical Agent Skills reference repository — the upstream source of the pattern |
-| [Superpowers](agents/superpowers.md) | 202.8k | A complete skills framework + methodology, with plugin integrations into Claude Code, Codex, Cursor, GitHub Copilot, Gemini, OpenCode, and Factory Droid |
-| [mattpocock/skills](https://github.com/mattpocock/skills) | 100.9k | A curated personal `.claude/skills` directory from Matt Pocock — now past 100k stars |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 44.9k | A production-grade engineering skills set for AI coding agents from Addy Osmani |
-| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 25.2k | Ready-to-use Agent Skills for research / science / engineering / analysis / finance / writing |
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 19.0k | Curated academic research pipeline (research → write → review → revise → finalize) for Claude Code |
+| [anthropics/skills](https://github.com/anthropics/skills) | 145.5k | Anthropic's own canonical Agent Skills reference repository — the upstream source of the pattern |
+| [Superpowers](agents/superpowers.md) | 215.5k | A complete skills framework + methodology, with plugin integrations into Claude Code, Codex, Cursor, GitHub Copilot, Gemini, OpenCode, and Factory Droid |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | 114.7k | A curated personal `.claude/skills` directory from Matt Pocock — now past 114k stars |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 47.7k | A production-grade engineering skills set for AI coding agents from Addy Osmani |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 26.9k | Ready-to-use Agent Skills for research / science / engineering / analysis / finance / writing |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 26.0k | Curated academic research pipeline (research → write → review → revise → finalize) for Claude Code |
 
 What it means for selection:
 
@@ -111,11 +113,11 @@ A "harness" is the minimal scaffolding around an LLM that turns it into an agent
 
 | Project | Stars | License | Sweet spot | Footprint |
 | --- | --- | --- | --- | --- |
-| [Pi](agents/pi.md) | 52.9k | MIT (TS) | Terminal-first coding harness with broad LLM provider coverage | Small core + opt-in skills/extensions |
-| [OpenHands](agents/openhands.md) | 74.5k | Open source | Full open-source SWE agent (CLI + GUI + cloud option) | Heaviest — closer to a product |
-| [SWE-agent](agents/swe-agent.md) | 19.3k | MIT (Py) | Research reference behind SWE-bench, single-YAML config | Medium; upstream moving focus to mini-swe-agent |
-| [mini-swe-agent](agents/mini-swe-agent.md) | 4.5k | MIT (Py) | ~100-line successor; SWE-bench Verified >74% | Tiny — readable in one sitting |
-| [OpenHarness](agents/openharness.md) | 13.0k | MIT (Py) | 10-subsystem open harness with anthropics/skills + MCP + 43 tools | Medium; production-shaped, sibling to [CLI-Anything](agents/cli-anything.md) |
+| [Pi](agents/pi.md) | 58.8k | MIT (TS) | Terminal-first coding harness with broad LLM provider coverage | Small core + opt-in skills/extensions |
+| [OpenHands](agents/openhands.md) | 75.7k | Open source | Full open-source SWE agent (CLI + GUI + cloud option) | Heaviest — closer to a product |
+| [SWE-agent](agents/swe-agent.md) | 19.4k | MIT (Py) | Research reference behind SWE-bench, single-YAML config | Medium; upstream moving focus to mini-swe-agent |
+| [mini-swe-agent](agents/mini-swe-agent.md) | 4.8k | MIT (Py) | ~100-line successor; SWE-bench Verified >74% | Tiny — readable in one sitting |
+| [OpenHarness](agents/openharness.md) | 13.4k | MIT (Py) | 10-subsystem open harness with anthropics/skills + MCP + 43 tools | Medium; production-shaped, sibling to [CLI-Anything](agents/cli-anything.md) |
 
 How to read this row:
 
@@ -130,7 +132,7 @@ How to read this row:
 
 | Route | Representative projects | Typical user |
 | --- | --- | --- |
-| Direct execution | [Claude Code](agents/claude-code.md), [Aider](agents/aider.md), [Codex](agents/codex.md), [DeepSeek-TUI](agents/deepseek-tui.md), [Devin](agents/devin.md), [Jules](agents/jules.md) | Someone who wants to hand a concrete coding task to an agent |
+| Direct execution | [Claude Code](agents/claude-code.md), [Aider](agents/aider.md), [Codex](agents/codex.md), [CodeWhale](agents/codewhale.md), [Devin](agents/devin.md), [Jules](agents/jules.md) | Someone who wants to hand a concrete coding task to an agent |
 | Agent harness framework | [Pi](agents/pi.md), [OpenHands](agents/openhands.md), [SWE-agent](agents/swe-agent.md), [mini-swe-agent](agents/mini-swe-agent.md), [OpenHarness](agents/openharness.md) | Someone who wants to own the agent loop, tool surface, and permissions instead of inheriting a vendor's product |
 | Frontier agentic model | [GPT-5.5](agents/gpt-5.5.md) | Someone choosing which model to wire into their own agent system or evaluating the capability ceiling of OpenAI-based surfaces |
 | Agentic skills framework | [Superpowers](agents/superpowers.md) | Someone who wants a methodology + composable skills layer that plugs into Claude Code, Codex, Cursor, and similar agents |
@@ -198,7 +200,7 @@ How to read this row:
 | [ml-intern](agents/ml-intern.md) | Domain-specific autonomous agent | Hugging Face's autonomous ML engineer — research, code, and ship ML using HF tooling |
 | [GenericAgent](agents/generic-agent.md) | Self-evolving autonomous agent | Small-seed agent that grows a personal skill tree on every task |
 | [Superpowers](agents/superpowers.md) | Agentic skills framework | Methodology and composable skills layer that plugs into Claude Code, Codex, Cursor, and other agents |
-| [DeepSeek-TUI](agents/deepseek-tui.md) | Direct execution | DeepSeek-native terminal coding agent |
+| [CodeWhale](agents/codewhale.md) | Direct execution | DeepSeek + MiMo terminal coding agent (formerly DeepSeek-TUI) |
 | [Ruflo](agents/ruflo.md) | Workflow / orchestration layer | Multi-agent orchestration platform for Claude with federation across machines, neural memory, and 100+ specialized agents |
 | [OpenHuman](agents/openhuman.md) | Self-hosted / local runtime | Desktop life-integration agent with 118+ connectors, local Memory Tree, and Ollama support |
 | [CodeGraph](agents/codegraph.md) | Runtime and tools | Pre-indexed code knowledge graph + MCP server for Claude Code, Cursor, Codex CLI, opencode, and Hermes Agent |

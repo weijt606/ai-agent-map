@@ -28,6 +28,7 @@
 | 我要以编辑器流为中心的专用 AI IDE | [Windsurf](../agents/windsurf.md) |
 | 我要开源编辑器扩展，模型完全由我自己选 | [Continue](../agents/continue.md) |
 | 我要编辑器内强审批、强控制 | [Cline](../agents/cline.md) |
+| 我要企业标准化 AI 编码，带评审和私有化部署 | [CoStrict](../agents/costrict.md) |
 | 我要 VS Code + GitHub 里本地和云端切换 | [GitHub Copilot](../agents/github-copilot.md) |
 | 我要一个开源、接近 Devin 路线的软件工程 agent | [OpenHands](../agents/openhands.md) |
 | 我要把明确 issue 直接交给 agent 执行 | [Devin](../agents/devin.md) |

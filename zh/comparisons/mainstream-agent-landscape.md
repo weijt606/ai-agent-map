@@ -25,6 +25,7 @@
 | [Cursor](../agents/cursor.md) | AI 编辑器 / agent 平台 | 编辑器、CLI、cloud、web、mobile | 编辑器中心，可延伸后台委派 | 想把编码和委派收进一个打磨完整的表面 | 产品边界很宽，可能超过一些团队真实需要 |
 | [GitHub Copilot](../agents/github-copilot.md) | agent 平台 | VS Code、本地 CLI、cloud、GitHub | 本地到云端切换 | 已经工作在 VS Code / GitHub 生态里 | 最佳体验更依赖生态绑定 |
 | [Cline](../agents/cline.md) | approval-first coding agent | 编辑器、本地终端 | 强审批、强控制 | 想让 agent 很强，但每一步都可把关 | 审批频率会带来摩擦 |
+| [CoStrict](../agents/costrict.md) | 企业 review-first coding agent | VS Code、JetBrains、CLI、私有化部署 | 标准化流程 + 评审关卡 | 需要可审计 AI 编码、代码评审、本地隔离的企业 | 严格流程对单人/快速迭代是负担 |
 | [Windsurf](../agents/windsurf.md) | AI 原生 IDE | 专用编辑器和本地环境 | 编辑器中心、顺滑 in-flow | 想在专用 IDE 里使用 Cascade 风格 AI 编辑 | 扩展故事比 VS Code 更收敛 |
 | [OpenHands](../agents/openhands.md) | 开源 SWE agent | 自托管、cloud、enterprise | 灵活切换 | 想要开源但又不只要一个 demo | 安装和运行成本更高 |
 | [Devin](../agents/devin.md) | 托管执行器 | 托管云产品 | 委派后 review | 想直接把 issue 交给 agent 跑 | 自定义和自托管空间更小 |

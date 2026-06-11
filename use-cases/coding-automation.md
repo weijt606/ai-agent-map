@@ -28,6 +28,7 @@ That question is no longer the useful one. The better question is: which operati
 | Dedicated AI IDE centered on the editor flow | [Windsurf](../agents/windsurf.md) |
 | Open-source editor extension with full model freedom | [Continue](../agents/continue.md) |
 | Strong approval and strong control inside the editor | [Cline](../agents/cline.md) |
+| Enterprise standardized AI coding with review and private deployment | [CoStrict](../agents/costrict.md) |
 | One flow across VS Code, GitHub, local, and cloud | [GitHub Copilot](../agents/github-copilot.md) |
 | Open-source software engineering agent close to the Devin route | [OpenHands](../agents/openhands.md) |
 | Direct issue-to-execution handoff | [Devin](../agents/devin.md) |

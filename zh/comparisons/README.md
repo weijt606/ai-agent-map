@@ -18,3 +18,4 @@
 ## 当前已写
 
 - [主流 agent 选型矩阵](mainstream-agent-landscape.md)
+- [终端编码 CLI Agent](coding-cli-agents.md)

@@ -14,6 +14,10 @@
 | --- | --- |
 | 我要在本地终端或 IDE 里高频协作 | [Claude Code](../agents/claude-code.md) |
 | 我要终端优先、本地写代码，还想保留强 git 节奏 | [Aider](../agents/aider.md) |
+| 我要厂商官方、Kimi 原生的终端编码循环 | [Kimi Code](../agents/kimi-code.md) |
+| 我要终端写代码，且内置跨会话记忆 | [MiMoCode](../agents/mimocode.md) |
+| 我要在低成本 DeepSeek / MiMo 模型上跑 Claude Code 循环 | [CodeWhale](../agents/codewhale.md) |
+| 我要把各厂商终端编码 CLI 摆一起对比 | [终端编码 CLI agent](../comparisons/coding-cli-agents.md) |
 | 我要把明确任务异步丢到云端跑 | [Codex](../agents/codex.md) |
 | 我要当前最强的 OpenAI agentic coding 模型，百万 token 上下文 | [GPT-5.5](../agents/gpt-5.5.md) |
 | 我已经在用 Claude Code，只是想补强 teams、skills 和 orchestration | [oh-my-claudecode](../agents/oh-my-claudecode.md) |
@@ -44,7 +48,7 @@
 
 | 路线 | 代表项目 | 核心感觉 |
 | --- | --- | --- |
-| 本地协作型 | [Claude Code](../agents/claude-code.md), [Aider](../agents/aider.md) | 边聊边做，节奏快，操作感强 |
+| 本地协作型 | [Claude Code](../agents/claude-code.md), [Aider](../agents/aider.md), [Kimi Code](../agents/kimi-code.md), [MiMoCode](../agents/mimocode.md), [CodeWhale](../agents/codewhale.md) | 边聊边做，节奏快，操作感强 |
 | 底层 agent 之上的工作流层 | [oh-my-claudecode](../agents/oh-my-claudecode.md), [oh-my-codex](../agents/oh-my-codex.md) | 保留 Claude Code 或 Codex 作为执行引擎，再往上叠可复用 orchestration |
 | 编辑器中心工作流 | [Cursor](../agents/cursor.md), [Windsurf](../agents/windsurf.md) | 编辑器本身就是选型的一部分 |
 | 云端委派型 | [Codex](../agents/codex.md), [Devin](../agents/devin.md), [Jules](../agents/jules.md) | 先交任务，再回来 review |

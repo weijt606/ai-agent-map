@@ -16,6 +16,9 @@
 | [Claude Code](../agents/claude-code.md) | 本地协作型 coding agent | 终端、IDE、桌面、Web | 高频交互 | 想边做边和 agent 配合写代码 | 不适合完全脱离人的后台执行 |
 | [Claude Managed Agents](../agents/claude-managed-agents.md) | 管理式自动化路径 | Anthropic 管理式 / 云端执行 | 后台、定时、程序化 | 想把 Claude 跑成后台工作流 | 官方公开边界分散在多个概念里 |
 | [Codex](../agents/codex.md) | 云端委派型 coding agent | 云端隔离环境 + CLI / IDE | 异步委派 | 想丢任务、等结果、看日志和测试证据 | 本地即时协作感弱一些 |
+| [Kimi Code](../agents/kimi-code.md) | 厂商官方终端 coding CLI | 本地终端、ACP 编辑器、VS Code | 高交互 | Kimi 原生的编码循环，IDE/ACP 触达强 | 正从旧版 kimi-cli 迁移中 |
+| [MiMoCode](../agents/mimocode.md) | 记忆优先的终端 coding CLI | 本地终端 | 高交互、长程 | 跨会话记忆重要的单仓库工作 | 上线才几天，表面还在快速变 |
+| [CodeWhale](../agents/codewhale.md) | DeepSeek/MiMo 原生终端 coding agent | 本地终端（Rust TUI） | 高交互 | 在低成本国产模型上跑 Claude Code 循环 | 设计上绑定较窄的模型集 |
 | [GPT-5.5](../agents/gpt-5.5.md) | 前沿 agentic 模型 | ChatGPT、Codex、API、GitHub Copilot | 模型升级覆盖多个表面 | 在选最强 OpenAI 模型的 agent builder，或在评估新能力天花板的团队 | API 价格是 GPT-5.4 的 2 倍，完全闭源 |
 | [oh-my-claudecode](../agents/oh-my-claudecode.md) | 工作流 / orchestration layer | Claude Code 插件、终端、tmux | session 内驱动 + 编排侧流程 | 已经在用 Claude Code，想补上 skills、teams 和更强运行控制 | 前提是你本来就接受 Claude Code 这层基础表面 |
 | [oh-my-codex](../agents/oh-my-codex.md) | 工作流 / orchestration layer | Codex CLI、本地终端、tmux | 本地工作流标准化 | 已经在用 Codex，想补上 teams、hooks 和持久会话状态 | 流程会更厚，而且最好跑在 macOS / Linux + tmux |

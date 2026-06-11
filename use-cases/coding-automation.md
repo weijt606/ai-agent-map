@@ -14,6 +14,10 @@ That question is no longer the useful one. The better question is: which operati
 | --- | --- |
 | Tight local collaboration in the terminal or IDE | [Claude Code](../agents/claude-code.md) |
 | Terminal-first local coding with a strong git loop | [Aider](../agents/aider.md) |
+| Vendor-official Kimi-native terminal coding loop | [Kimi Code](../agents/kimi-code.md) |
+| Terminal coding with built-in cross-session memory | [MiMoCode](../agents/mimocode.md) |
+| Claude-Code loop on low-cost DeepSeek / MiMo models | [CodeWhale](../agents/codewhale.md) |
+| Comparing vendor terminal coding CLIs side by side | [terminal coding CLI agents](../comparisons/coding-cli-agents.md) |
 | Async delegation into cloud execution | [Codex](../agents/codex.md) |
 | Strongest OpenAI model for agentic coding with 1M context | [GPT-5.5](../agents/gpt-5.5.md) |
 | I already use Claude Code and want teams, skills, and stronger orchestration | [oh-my-claudecode](../agents/oh-my-claudecode.md) |
@@ -44,7 +48,7 @@ That question is no longer the useful one. The better question is: which operati
 
 | Route | Representative projects | What it feels like |
 | --- | --- | --- |
-| Local collaboration | [Claude Code](../agents/claude-code.md), [Aider](../agents/aider.md) | High interaction, fast iteration, strong operator feel |
+| Local collaboration | [Claude Code](../agents/claude-code.md), [Aider](../agents/aider.md), [Kimi Code](../agents/kimi-code.md), [MiMoCode](../agents/mimocode.md), [CodeWhale](../agents/codewhale.md) | High interaction, fast iteration, strong operator feel |
 | Workflow layer on top of a base agent | [oh-my-claudecode](../agents/oh-my-claudecode.md), [oh-my-codex](../agents/oh-my-codex.md) | Keep Claude Code or Codex as the execution engine and add reusable orchestration on top |
 | Editor-centric AI workflow | [Cursor](../agents/cursor.md), [Windsurf](../agents/windsurf.md) | Keep the editor central and make the IDE itself part of the agent choice |
 | Cloud delegation | [Codex](../agents/codex.md), [Devin](../agents/devin.md), [Jules](../agents/jules.md) | Assign work, come back later, review the result |

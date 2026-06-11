@@ -18,3 +18,4 @@ No leaderboard, no total score, no “ultimate best agent” framing.
 ## Available Now
 
 - [Mainstream agent selection matrix](mainstream-agent-landscape.md)
+- [Terminal coding CLI agents](coding-cli-agents.md)

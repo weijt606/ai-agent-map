@@ -1,0 +1,49 @@
+{
+  "updated": "2026-06-17",
+  "repos": {
+    "nousresearch/hermes-agent": {
+      "full_name": "NousResearch/hermes-agent",
+      "stars": 196095
+    },
+    "mattpocock/skills": {
+      "full_name": "mattpocock/skills",
+      "stars": 133323
+    },
+    "colbymchenry/codegraph": {
+      "full_name": "colbymchenry/codegraph",
+      "stars": 50985
+    },
+    "obra/superpowers": {
+      "full_name": "obra/superpowers",
+      "stars": 230917
+    },
+    "addyosmani/agent-skills": {
+      "full_name": "addyosmani/agent-skills",
+      "stars": 62162
+    },
+    "imbad0202/academic-research-skills": {
+      "full_name": "Imbad0202/academic-research-skills",
+      "stars": 32433
+    },
+    "anthropics/skills": {
+      "full_name": "anthropics/skills",
+      "stars": 152126
+    },
+    "tauricresearch/tradingagents": {
+      "full_name": "TauricResearch/TradingAgents",
+      "stars": 86936
+    },
+    "earendil-works/pi": {
+      "full_name": "earendil-works/pi",
+      "stars": 63576
+    },
+    "openai/codex": {
+      "full_name": "openai/codex",
+      "stars": 91735
+    },
+    "rohitg00/agentmemory": {
+      "full_name": "rohitg00/agentmemory",
+      "stars": 23255
+    }
+  }
+}

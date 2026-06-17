@@ -1,0 +1,24 @@
+name: validate
+
+# Repo-level safety net for the "validate before it lands" rule: every push and
+# PR to main runs the same full integrity check the weekly-update gate runs
+# locally. A red check here means the heat tables, bilingual mirrors, or internal
+# links are inconsistent.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run full validation
+        run: python3 scripts/validate.py

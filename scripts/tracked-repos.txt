@@ -1,0 +1,25 @@
+# Tracked repos for ai-agent-map heat ranking. One slug per line. '#' = comment.
+# Format: owner/repo  [display-name]
+NousResearch/hermes-agent
+mattpocock/skills
+colbymchenry/codegraph
+obra/superpowers
+addyosmani/agent-skills
+Imbad0202/academic-research-skills
+anthropics/skills
+TauricResearch/TradingAgents
+earendil-works/pi
+openai/codex
+rohitg00/agentmemory
+anthropics/financial-services
+Hmbown/CodeWhale
+tinyhumansai/openhuman
+K-Dense-AI/scientific-agent-skills
+HKUDS/CLI-Anything
+humanlayer/12-factor-agents
+1jehuang/jcode
+MoonshotAI/kimi-code
+XiaomiMiMo/MiMo-Code
+zgsm-ai/costrict
+openclaw/openclaw
+ruvnet/ruflo

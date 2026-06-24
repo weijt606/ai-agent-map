@@ -37,15 +37,15 @@
 
 | 排名 | 项目 | 当前 stars | 快照增量 | 目录状态 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| #1（↑） | [mattpocock/skills](https://github.com/mattpocock/skills) | 144.5k | +11,147 | 候补（Skills 浪潮） | 以本窗口最大涨幅夺回增量榜首——策展式 `.claude/skills` 目录越过 144k |
-| #2（↑） | [Superpowers](https://github.com/obra/superpowers) | 237.6k | +6,649 | [Profile](superpowers.md) | 突破 237k——agentic skills 框架持续复利增长 |
-| #3（↑） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 201.7k | +5,622 | [Profile](hermes-agent.md) | 重新爬回增量表并突破 200k——已收录项目里绝对总数第一 |
-| #4（↓） | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 66.3k | +4,163 | 候补（Skills 浪潮） | 从上周榜首降温但仍在涨——Addy Osmani 的策展式 agent-skills 集越过 66k |
-| #5（↑） | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 54.1k | +3,091 | [Profile](codegraph.md) | 稳步上行——预索引代码知识图谱越过 54k |
-| #6（↑） | [anthropics/skills](https://github.com/anthropics/skills) | 154.7k | +2,531 | 候补（Skills 浪潮源头） | Anthropic 自家的 `.claude/skills` 参考仓库——稳定增长越过 154k |
-| #7（↑） | [Pi](https://github.com/earendil-works/pi) | 65.3k | +1,737 | [Profile](pi.md) | 稳步上行——Earendil 接手的 harness 越过 65k |
+| #1&#8288;（↑） | [mattpocock/skills](https://github.com/mattpocock/skills) | 144.5k | +11,147 | 候补（Skills 浪潮） | 以本窗口最大涨幅夺回增量榜首——策展式 `.claude/skills` 目录越过 144k |
+| #2&#8288;（↑） | [Superpowers](https://github.com/obra/superpowers) | 237.6k | +6,649 | [Profile](superpowers.md) | 突破 237k——agentic skills 框架持续复利增长 |
+| #3&#8288;（↑） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 201.7k | +5,622 | [Profile](hermes-agent.md) | 重新爬回增量表并突破 200k——已收录项目里绝对总数第一 |
+| #4&#8288;（↓） | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 66.3k | +4,163 | 候补（Skills 浪潮） | 从上周榜首降温但仍在涨——Addy Osmani 的策展式 agent-skills 集越过 66k |
+| #5&#8288;（↑） | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 54.1k | +3,091 | [Profile](codegraph.md) | 稳步上行——预索引代码知识图谱越过 54k |
+| #6&#8288;（↑） | [anthropics/skills](https://github.com/anthropics/skills) | 154.7k | +2,531 | 候补（Skills 浪潮源头） | Anthropic 自家的 `.claude/skills` 参考仓库——稳定增长越过 154k |
+| #7&#8288;（↑） | [Pi](https://github.com/earendil-works/pi) | 65.3k | +1,737 | [Profile](pi.md) | 稳步上行——Earendil 接手的 harness 越过 65k |
 | #8 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 34.1k | +1,716 | 候补（Skills 浪潮） | 仍在快速增长——面向 Claude Code 的学术研究管线越过 34k |
-| #9（新） | [Codex CLI](https://github.com/openai/codex) | 93.4k | +1,616 | [Profile](codex.md) | 重回增量表——OpenAI 的 Codex CLI 越过 93k |
+| #9&#8288;（新） | [Codex CLI](https://github.com/openai/codex) | 93.4k | +1,616 | [Profile](codex.md) | 重回增量表——OpenAI 的 Codex CLI 越过 93k |
 | #10 | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 88.3k | +1,396 | 不收录 | 垂直的金融研究多 agent 系统——作为领域垂直不收录 |
 
 **市场事件：**

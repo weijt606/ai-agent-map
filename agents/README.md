@@ -31,25 +31,25 @@ This is not a ranking of quality.
 
 It is a quick view of projects that appeared especially hot in the latest weekly GitHub snapshot. The order follows the 7-day gain, while the star totals below reflect the current counts checked during this repo update.
 
-> **Last updated:** 2026-06-17 · **Snapshot window:** 2026-06-11 → 2026-06-17 (gain since last update, ~6 days, approximate) · **Star counts:** checked at update time
+> **Last updated:** 2026-06-24 · **Snapshot window:** 2026-06-17 → 2026-06-24 (gain since last update, ~7 days, approximate) · **Star counts:** checked at update time
 
 Project names link to the upstream GitHub repo. When a profile exists in this directory, it is linked separately in the "Directory status" column.
 
 | Rank | Project | Current stars | Snapshot gain | Directory status | Note |
 | --- | --- | --- | --- | --- | --- |
-| #1 (↑) | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 62.2k | +8,800 | Watchlist (Skills Wave) | Took the gain lead — Addy Osmani's curated agent-skills collection cleared 62k |
-| #2 | [mattpocock/skills](https://github.com/mattpocock/skills) | 133.3k | +8,200 | Watchlist (Skills Wave) | Still compounding — curated `.claude/skills` directory cleared 133k |
-| #3 (↑) | [Superpowers](https://github.com/obra/superpowers) | 230.9k | +6,600 | [Profile](superpowers.md) | Crossed 230k — the agentic skills framework keeps compounding |
-| #4 (new) | [MiMoCode](https://github.com/XiaomiMiMo/MiMo-Code) | 9.6k | +6,500 | [Profile](mimocode.md) | Breakout — Xiaomi's first-party MiMo CLI roughly tripled (3.1k → 9.6k) in its first full window after profiling |
-| #5 (↓) | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 196.1k | +5,600 | [Profile](hermes-agent.md) | Cooled from the gain lead but kept climbing — the in-scope absolute leader cleared 196k |
-| #6 (↓) | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 51.0k | +3,800 | [Profile](codegraph.md) | Slower than its breakout window but still climbing — pre-indexed code knowledge graph cleared 51k |
-| #7 | [anthropics/skills](https://github.com/anthropics/skills) | 152.1k | +2,800 | Watchlist (Skills Wave canonical) | Anthropic's own reference `.claude/skills` repo — steady, past 152k |
-| #8 (↓) | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 32.4k | +2,300 | Watchlist (Skills Wave) | Still fast-growing — academic research pipeline for Claude Code crossed 32k |
-| #9 | [Pi](https://github.com/earendil-works/pi) | 63.6k | +1,900 | [Profile](pi.md) | Steady climb — the Earendil-owned harness crossed 63k |
-| #10 (↓) | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 86.9k | +1,800 | Not included | Vertical finance-research multi-agent system — out of scope as a domain vertical |
+| #1 (↑) | [mattpocock/skills](https://github.com/mattpocock/skills) | 144.5k | +11,147 | Watchlist (Skills Wave) | Retook the gain lead with the window's biggest surge — curated `.claude/skills` directory cleared 144k |
+| #2 (↑) | [Superpowers](https://github.com/obra/superpowers) | 237.6k | +6,649 | [Profile](superpowers.md) | Crossed 237k — the agentic skills framework keeps compounding |
+| #3 (↑) | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 201.7k | +5,622 | [Profile](hermes-agent.md) | Climbed back up the gain table and broke 200k — the in-scope absolute leader |
+| #4 (↓) | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 66.3k | +4,163 | Watchlist (Skills Wave) | Cooled from last week's lead but kept climbing — Addy Osmani's curated agent-skills collection cleared 66k |
+| #5 (↑) | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 54.1k | +3,091 | [Profile](codegraph.md) | Steady climb — pre-indexed code knowledge graph cleared 54k |
+| #6 (↑) | [anthropics/skills](https://github.com/anthropics/skills) | 154.7k | +2,531 | Watchlist (Skills Wave canonical) | Anthropic's own reference `.claude/skills` repo — steady, past 154k |
+| #7 (↑) | [Pi](https://github.com/earendil-works/pi) | 65.3k | +1,737 | [Profile](pi.md) | Steady climb — the Earendil-owned harness crossed 65k |
+| #8 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 34.1k | +1,716 | Watchlist (Skills Wave) | Still fast-growing — academic research pipeline for Claude Code crossed 34k |
+| #9 (new) | [Codex CLI](https://github.com/openai/codex) | 93.4k | +1,616 | [Profile](codex.md) | Re-entered the gain table — OpenAI's Codex CLI cleared 93k |
+| #10 | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 88.3k | +1,396 | Not included | Vertical finance-research multi-agent system — out of scope as a domain vertical |
 
 **Market events:**
-- **June 11–17 2026 — MiMoCode breakout** — [MiMoCode](mimocode.md) (`XiaomiMiMo/MiMo-Code`), profiled here only the previous week, roughly tripled from ~3.1k to ~9.6k stars in its first full window and entered the gain top 10 at #4. New-inclusion scan also added [rmux](https://github.com/Helvesec/rmux) (Helvesec, Rust, 1.8k, universal typed-SDK CLI multiplexer) and [microsoft/intelligent-terminal](https://github.com/microsoft/intelligent-terminal) (1.1k) to the watchlist; neither clears the in-scope bar yet.
+- **June 17–24 2026 — Skills Wave lead rotates, MiMoCode cools** — [mattpocock/skills](https://github.com/mattpocock/skills) posted the window's biggest gain (+11.1k, past 144k) to retake the #1 gain spot, while last week's breakout [MiMoCode](mimocode.md) added only ~1.0k (9.6k → 10.6k) and dropped off the gain top 10. [Codex CLI](codex.md) re-entered the table at #9 and [Hermes Agent](hermes-agent.md) broke 200k. New-inclusion scan found no new in-scope surface; the biggest fresh repos ([op7418/guizang-social-card-skill](https://github.com/op7418/guizang-social-card-skill) 4.0k, [ruvnet/agent-harness-generator](https://github.com/ruvnet/agent-harness-generator) 0.3k) stay on the watchlist.
 - **Late May 2026 — rebrand** — The agent profiled here as DeepSeek-TUI renamed to [CodeWhale](codewhale.md) (`Hmbown/CodeWhale`, now 36.6k) and broadened from DeepSeek-only to **DeepSeek + MiMo**. Old `DeepSeek-TUI` links redirect; this directory now uses the new name.
 - **Late May 2026 — code-context breakout** — [codegraph](codegraph.md) more than doubled in one window (16.4k → 37.5k), the clearest sign yet that "agent context infrastructure" is its own demand center. New harness-framework newcomer [jcode](https://github.com/1jehuang/jcode) (1jehuang, Rust, 6.8k) joins the watchlist alongside [SWE-agent](swe-agent.md) / [mini-swe-agent](mini-swe-agent.md) and [OpenHarness](openharness.md).
 - **May 2026 (cooling)** — The `.claude/skills` wave continues but narrowed from six of the top ten to four ([mattpocock/skills](https://github.com/mattpocock/skills), [Superpowers](superpowers.md), [academic-research-skills](https://github.com/Imbad0202/academic-research-skills), [anthropics/skills](https://github.com/anthropics/skills)) as code-context and harness infrastructure absorbed more of the trending oxygen. Anthropic's own [skills](https://github.com/anthropics/skills) repo remains the canonical anchor.

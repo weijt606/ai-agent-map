@@ -31,24 +31,25 @@
 
 它只是把最近一周 GitHub 快照里特别热的 agent 项目摆出来。顺序按 7 天增量；下面的 star 总数是这次更新目录时重新核对过的当前值。
 
-> **最后更新：** 2026-07-02 · **快照窗口：** 2026-06-24 → 2026-07-02（自上次更新以来的增量，约 8 天，估算） · **Star 总数：** 更新时实时核对
+> **最后更新：** 2026-07-08 · **快照窗口：** 2026-07-02 → 2026-07-08（自上次更新以来的增量，约 6 天，估算） · **Star 总数：** 更新时实时核对
 
 项目名链接指向上游 GitHub 仓库。本目录已收录的 profile，在"目录状态"列单独给出链接。
 
 | 排名 | 项目 | 当前 stars | 快照增量 | 目录状态 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| #1&#8288;（=） | [mattpocock/skills](https://github.com/mattpocock/skills) | 153.9k | +9,323 | 候补（Skills 浪潮） | 连续第二个窗口守住增量榜首——策展式 `.claude/skills` 目录越过 153k |
-| #2&#8288;（=） | [Superpowers](https://github.com/obra/superpowers) | 244.0k | +6,392 | [Profile](superpowers.md) | 突破 244k——agentic skills 框架持续复利增长 |
-| #3&#8288;（=） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 207.7k | +5,918 | [Profile](hermes-agent.md) | 稳居第三——已收录项目里绝对总数第一，越过 207k |
-| #4&#8288;（↑） | [anthropics/skills](https://github.com/anthropics/skills) | 157.6k | +2,885 | 候补（Skills 浪潮源头） | 上升两位——Anthropic 自家的 `.claude/skills` 参考仓库，越过 157k |
-| #5&#8288;（=） | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 57.0k | +2,832 | [Profile](codegraph.md) | 稳步上行——预索引代码知识图谱越过 57k |
-| #6&#8288;（↓） | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 68.5k | +2,167 | 候补（Skills 浪潮） | 进一步降温但仍在涨——Addy Osmani 的策展式 agent-skills 集越过 68k |
-| #7&#8288;（↑） | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 90.4k | +2,009 | 不收录 | 垂直的金融研究多 agent 系统上升三位越过 90k——作为领域垂直不收录 |
-| #8&#8288;（↓） | [Pi](https://github.com/earendil-works/pi) | 67.2k | +1,819 | [Profile](pi.md) | 稳步上行——Earendil 接手的 harness 越过 67k |
-| #9&#8288;（↓） | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 35.9k | +1,728 | 候补（Skills 浪潮） | 仍在快速增长——面向 Claude Code 的学术研究管线逼近 36k |
-| #10&#8288;（↓） | [Codex CLI](https://github.com/openai/codex) | 95.1k | +1,678 | [Profile](codex.md) | 守住增量表——OpenAI 的 Codex CLI 越过 95k |
+| #1&#8288;（=） | [mattpocock/skills](https://github.com/mattpocock/skills) | 160.5k | +6,609 | 候补（Skills 浪潮） | 连续第三个窗口守住增量榜首——策展式 `.claude/skills` 目录越过 160k |
+| #2&#8288;（=） | [Superpowers](https://github.com/obra/superpowers) | 249.4k | +5,343 | [Profile](superpowers.md) | 逼近 250k——agentic skills 框架持续复利增长 |
+| #3&#8288;（↑） | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 72.8k | +4,296 | 候补（Skills 浪潮） | 本窗口涨幅最大——从 #6 上升三位，Addy Osmani 的策展式 agent-skills 集越过 72k |
+| #4&#8288;（↓） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 211.3k | +3,572 | [Profile](hermes-agent.md) | 降温一位到 #4——已收录项目里绝对总数第一，越过 211k |
+| #5&#8288;（↓） | [anthropics/skills](https://github.com/anthropics/skills) | 159.4k | +1,779 | 候补（Skills 浪潮源头） | 下滑一位——Anthropic 自家的 `.claude/skills` 参考仓库，逼近 160k |
+| #6&#8288;（↓） | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 58.5k | +1,576 | [Profile](codegraph.md) | 稳步上行——预索引代码知识图谱越过 58k |
+| #7&#8288;（↑） | [Pi](https://github.com/earendil-works/pi) | 68.6k | +1,431 | [Profile](pi.md) | 上升一位——Earendil 接手的 harness 越过 68k |
+| #8&#8288;（↓） | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 91.8k | +1,424 | 不收录 | 垂直的金融研究多 agent 系统下滑一位越过 91k——作为领域垂直不收录 |
+| #9&#8288;（↑） | [Codex CLI](https://github.com/openai/codex) | 96.2k | +1,180 | [Profile](codex.md) | 上升一位——OpenAI 的 Codex CLI 逼近 96k |
+| #10&#8288;（↓） | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 36.9k | +948 | 候补（Skills 浪潮） | 下滑一位但仍在涨——面向 Claude Code 的学术研究管线越过 36k |
 
 **市场事件：**
+- **2026 年 7 月 2–8 —— curated skills 轮换、仍无黑马** —— [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 是本窗口涨幅最大的项目（+4.3k），从 #6 上升三位到 #3，把 curated 那一端重新炒热。[mattpocock/skills](https://github.com/mattpocock/skills) 连续第三个窗口守住 #1 增量位（+6.6k，越过 160k），而 [Hermes Agent](hermes-agent.md) 和 [anthropics/skills](https://github.com/anthropics/skills) 各降温一位。Skills 浪潮仍 5/10；[TradingAgents](https://github.com/TauricResearch/TradingAgents) 下滑到 #8。本周新收录扫描没有新的达到收录门槛的 agent 表面；最新且体量最大的新仓库——[langchain-ai/openwiki](https://github.com/langchain-ai/openwiki)（9.6k，一个替 agent 写并维护文档的 CLI）和 [vercel/eve](https://github.com/vercel/eve)（3.3k，Vercel 的 agent 构建框架）——加入候补。
 - **2026 年 6 月 24 – 7 月 2 —— 榜首冻结** —— 本窗口没有黑马：[mattpocock/skills](https://github.com/mattpocock/skills) 连续第二个窗口守住 #1 增量位（+9.3k，越过 153k），[Superpowers](superpowers.md) 与 [Hermes Agent](hermes-agent.md) 稳守 #2/#3。Skills 浪潮内部（仍 5/10）：[anthropics/skills](https://github.com/anthropics/skills) 升到 #4，[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 降到 #6；[TradingAgents](https://github.com/TauricResearch/TradingAgents) 以更高的 #7 重回表内。本周新收录扫描没有新的达到收录门槛的 agent 表面；最新的候补——[tigicion/dao-code](https://github.com/tigicion/dao-code)（1.2k，DeepSeek-V4 终端 coding CLI）和 [JimLiu/baoyu-design](https://github.com/JimLiu/baoyu-design)（2.2k，把 Claude Design 打包成 Agent Skill）——加入候补。
 - **2026 年 6 月 17–24 —— Skills 浪潮榜首轮换、MiMoCode 降温** —— [mattpocock/skills](https://github.com/mattpocock/skills) 拿到本窗口最大涨幅（+11.1k，越过 144k）夺回 #1 增量位，而上周的黑马 [MiMoCode](mimocode.md) 只涨了约 1.0k（9.6k → 10.6k），跌出增量前 10。[Codex CLI](codex.md) 以 #9 重回表内，[Hermes Agent](hermes-agent.md) 突破 200k。本周新收录扫描没有新的达到收录门槛的 agent 表面；最大的几个新仓库（[op7418/guizang-social-card-skill](https://github.com/op7418/guizang-social-card-skill) 4.0k、[ruvnet/agent-harness-generator](https://github.com/ruvnet/agent-harness-generator) 0.3k）留在候补。
 - **2026 年 5 月底 —— 更名** —— 本目录以 DeepSeek-TUI 收录的 agent 已改名为 [CodeWhale](codewhale.md)（`Hmbown/CodeWhale`，现 36.6k），并从只支持 DeepSeek 扩展到 **DeepSeek + MiMo**。旧的 `DeepSeek-TUI` 链接会重定向；本目录已统一改用新名。

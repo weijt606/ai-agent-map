@@ -20,6 +20,7 @@ Three things change every week, not just the rank:
 
 1. **Fetch the data.**
    ```
+   export GITHUB_TOKEN=$(gh auth token)   # required in practice: 42+ tracked repos vs 60 req/hr unauthenticated
    scripts/weekly-update.sh check
    ```
    This prints each tracked repo with its current stars, the previous snapshot
@@ -37,6 +38,12 @@ Three things change every week, not just the rank:
    every table to the same date. Update the "continuing to grow" / off-table
    bullet and the OpenClaw line.
 
+   The rankings/ boards, the history file, and the trend charts are regenerated
+   automatically by `publish` — do **not** hand-edit anything between
+   `<!-- auto:... -->` markers in rankings/ files or the SVGs in assets/. Do give
+   the editorial prose in rankings/ (the trend read-out, section intros) a quick
+   look in case the story has moved on.
+
 3. **Update hot topics.** Rewrite the narrative bullets under each table and add
    a dated "Market events" entry for anything structural (a breakout, a rebrand,
    an acquisition, a wave re-broadening/cooling). EN and zh must say the same
@@ -53,21 +60,34 @@ Three things change every week, not just the rank:
    If nothing clears the bar, add the best candidates to the watchlist bullet and
    record them for next week.
 
+   **Every slug added to `tracked-repos.txt` needs a matching entry in
+   `scripts/catalog.json`** (display name, category agent/infra/skill, vertical,
+   infra group, profile path, scope) — `render-rankings.py` fails hard on a
+   tracked repo with no metadata.
+
 5. **Publish (gated).**
    ```
    scripts/weekly-update.sh publish "Refresh weekly heat ranking (YYYY-MM-DD): <headline>"
    ```
-   This runs `scripts/validate.py` first. If validation fails, it aborts and
-   pushes nothing — fix the errors and re-run. If it passes, it stamps the new
-   snapshot, commits, and pushes.
+   This stamps the snapshot (+ appends the full fetch to `history.json` raw),
+   records the README heat table as the week's history window, regenerates the
+   rankings/ tables and both trend SVGs, then runs `scripts/validate.py`. If
+   validation fails, nothing is committed or pushed — the regenerated files stay
+   in the working tree; fix the errors and re-run. Every generation step is
+   idempotent for the same date.
 
 ## What validation checks (`scripts/validate.py`)
 
 - Internal markdown links resolve to real files.
-- Bilingual parity: every EN doc under agents/ comparisons/ use-cases/ has a zh
-  mirror and vice versa.
-- All four heat tables share one `Last updated` date.
-- Each heat table has ranks #1..#10 with no duplicates.
+- Bilingual parity: every EN doc under agents/ comparisons/ use-cases/ rankings/
+  has a zh mirror and vice versa.
+- All dated files (four heat tables + six rankings docs) share one
+  `Last updated` date.
+- Every ranked table block is consecutive #1..#N; the four heat tables must
+  open with exactly #1..#10.
+- `history.json` cross-check: the latest window matches the README heat table
+  row for row (slug / stars / gain), window dates strictly increase, every slug
+  has a catalog.json entry, and both trend SVGs carry the latest window date.
 - No leftover TODO/FIXME/PLACEHOLDER markers (warning only).
 
 ## Commit message convention

@@ -7,12 +7,15 @@
 #       the editorial heat-table refresh.
 #
 #   scripts/weekly-update.sh publish "<commit message>"
-#       The push gate. Runs the full validation check; ONLY if it passes does it
-#       stamp the snapshot, stage everything, commit, and push. If validation
-#       fails, nothing is committed or pushed and the script exits non-zero.
+#       The push gate. Stamps the snapshot (+ history raw), records the README
+#       heat table into history, regenerates the rankings tables and both trend
+#       SVGs, THEN runs the full validation check. ONLY if validation passes is
+#       anything committed and pushed. On failure the regenerated files stay in
+#       the working tree for inspection, but nothing is committed or pushed.
 #
 # The publish path enforces the rule: a push happens only after the full
-# integrity check passes.
+# integrity check passes. Generation runs before validation because validate.py
+# cross-checks the generated artifacts (history window vs README, SVG freshness).
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -30,14 +33,24 @@ case "$cmd" in
       exit 2
     fi
 
+    echo "==> Stamping snapshot + history raw…"
+    python3 scripts/fetch-stars.py --write >/dev/null
+
+    echo "==> Recording README heat table into history…"
+    python3 scripts/append-history.py
+
+    echo "==> Regenerating rankings tables…"
+    python3 scripts/render-rankings.py
+
+    echo "==> Rerendering trend charts…"
+    python3 scripts/render-trend.py
+
     echo "==> Running full validation (gate)…"
     if ! python3 scripts/validate.py; then
       echo "==> Validation FAILED — aborting, nothing committed or pushed." >&2
+      echo "==> Regenerated files are left in the working tree for inspection." >&2
       exit 1
     fi
-
-    echo "==> Validation passed. Stamping snapshot…"
-    python3 scripts/fetch-stars.py --write >/dev/null
 
     if git diff --quiet && git diff --cached --quiet; then
       echo "==> No changes to commit. Done."

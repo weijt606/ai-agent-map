@@ -4,14 +4,14 @@
 [![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](gpt-5.5.md)
 [![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-One-line take: GPT-5.5 is OpenAI's frontier agentic model, designed from the ground up to carry multi-step tasks through to completion with tool use and self-checking.
+One-line take: GPT-5.5 was OpenAI's frontier agentic model of spring 2026 — designed to carry multi-step tasks through to completion with tool use and self-checking — and was succeeded by GPT-5.6 on July 9 2026 (see Post-Launch Landscape below).
 
 ## Quick Read
 
 | Item | Conclusion |
 | --- | --- |
 | Vendor | OpenAI |
-| Route | Frontier agentic model powering Codex, ChatGPT, and API surfaces |
+| Route | Frontier agentic model powering Codex, ChatGPT, and API surfaces (succeeded by GPT-5.6, July 2026) |
 | Open source | No |
 | Best for | High-autonomy coding, research, multi-step agent workflows, and long-context tasks |
 | Main cost | 2x the API price of GPT-5.4, and the model boundary blurs with the Codex product boundary |
@@ -36,7 +36,7 @@ When a model release changes what agents built on top of it can do, the model it
 
 - You want an open-source or self-hosted model. GPT-5.5 is fully proprietary.
 - You are cost-sensitive — input is $5/M tokens, output is $30/M tokens (2x GPT-5.4).
-- You need the best tool-use and SWE-bench performance — Claude Opus 4.7 currently leads on SWE-Bench Pro (64.3% vs 58.6%).
+- You need the current frontier — the landscape has moved past spring 2026 on both sides (GPT-5.6, Claude Fable 5, Opus 4.8); see Post-Launch Landscape below.
 - You want a finished agent product, not a model. In that case, look at [Codex](codex.md) (the product) instead.
 - You want local execution without cloud dependency.
 
@@ -70,6 +70,18 @@ Complexity is Medium to High. The model itself is straightforward to use through
 
 This profile covers GPT-5.5 as a model. The [Codex](codex.md) profile covers the product — the cloud execution environment, isolation model, and review workflow. GPT-5.5 powers Codex but is not the same thing. If you are choosing between agent products, start with Codex. If you are choosing which model to wire into your own agent system, this profile is the right one.
 
+## Post-Launch Landscape (as of July 2026)
+
+The frontier moved fast after GPT-5.5's April launch. Three releases changed the model-layer selection picture:
+
+| Release | Date | What it changed |
+| --- | --- | --- |
+| **Claude Opus 4.8** (Anthropic) | May 28 2026 | Fixed Opus 4.7's verbosity and tool-calling issues; added Dynamic workflows (hundreds of parallel subagents in Claude Code); $5/$25 per M tokens |
+| **[Claude Fable 5](claude-fable-5.md)** (Anthropic) | June 9 2026 | First Mythos-class model — a tier above Opus; $10/$50 per M tokens, metered credits in Claude subscriptions since July 7 |
+| **GPT-5.6** (OpenAI) | July 9 2026 | Succeeds GPT-5.5 across ChatGPT/Codex/API in three tiers — Sol ($5/$30), Terra ($2.5/$15), Luna ($1/$6) — with an Ultra multi-agent setting; leads the Artificial Analysis Coding Agent Index (Sol 80 vs Fable 5 77.2, GPT-5.5 76.4, Opus 4.8 72.5) |
+
+Practical read: GPT-5.6 Sol costs the same as GPT-5.5 and outperforms it, so for new work GPT-5.5 is effectively a legacy choice; the real July 2026 model-layer decision is GPT-5.6 tier selection versus Fable 5 credits versus Opus 4.8 as the dependable default.
+
 ## Bottom Line
 
-GPT-5.5 is a genuine capability jump for OpenAI's agent ecosystem — strongest agentic coding benchmarks at launch, 1M context, and better token efficiency. The trade-off is clear: it is the most expensive OpenAI model to date, it is fully proprietary, and it trails Claude on some tool-use benchmarks. Its biggest impact is raising the ceiling for everything built on the OpenAI API.
+GPT-5.5 was a genuine capability jump for OpenAI's agent ecosystem — strongest agentic coding benchmarks at its April launch, 1M context, and better token efficiency. As of July 2026 it has been superseded by GPT-5.6 at the same flagship price; this profile stays in the map as the reference point for how the spring 2026 model race reshaped agent selection.

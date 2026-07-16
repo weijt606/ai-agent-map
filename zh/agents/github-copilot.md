@@ -39,6 +39,18 @@
 | Permission control | 强 | 控制粒度比较清楚 |
 | Custom agents | 中 | 适合做角色化和专用入口 |
 
+## 2026 年年中动态
+
+2026 年 6–7 月的更新把 Copilot 进一步推向 agent 平台，而不是补全工具：
+
+- **Agent finder（6 月 17 日）**：Copilot 自己为任务找到合适的能力，不再需要手工配置 MCP / skills / agents。
+- **JetBrains AI Assistant（6 月 30 日）**：Copilot Agent 成为 JetBrains agent 选择器里的一等选项——它开始进入其他厂商的表面里竞争。
+- **VS Code（6 月）**：agentic 浏览器工具 GA（在编辑器内导航、检查、截图、验证 web 应用）、agent 会话分组管理与成本可见性、兼容 Anthropic / OpenAI 模型的 1M token 上下文。
+- **Code review（6 月 18 日）**：Copilot code review 支持仓库级 AGENTS.md。
+- **Copilot CLI（7 月）**：plan mode 硬拦截会改动工作区的工具调用，另有语音模式持久化、canvas 支持、更细的 subagent 控制；/security-review 命令进入公测。
+
+选型要点：平台优势还在复利——Copilot 越来越像整条 GitHub 工作流的 agent 层，而不是单个助手。
+
 ## 使用代价
 
 复杂度是 Medium。基础使用很轻，但一旦你开始混用本地 agent、CLI、cloud path 和权限模式，工作流会明显变复杂。

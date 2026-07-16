@@ -41,6 +41,15 @@ One-line take: Cursor is for teams that want an AI editor to span local coding, 
 | Integrations | Strong | GitHub, Slack, Linear, JetBrains, and more are part of the story |
 | Self-hosting | Weak | This is not the reason to choose Cursor |
 
+## Mid-2026 Updates
+
+The agent surface kept widening through the summer:
+
+- **June 2026**: Design Mode in the Cursor browser (click, draw, or describe UI changes by voice for agents to apply); **Cursor for iOS** in public beta on all paid plans — always-on agents, Remote Control, live notifications, mobile review; Teams pricing reworked with a new Premium seat (5x the included usage of Standard at 3x the cost).
+- **July 2026 (v3.11, July 10)**: cloud-agent upgrades in the Agents Window — faster environment setup, reusable snapshots, and /in-cloud subagents for isolated parallel work; side chats and agent-transcript search; Bugbot reviews over 3x faster and 22% cheaper.
+
+Selection takeaway: Cursor is pushing hardest on "agents you carry with you" (mobile, cloud, always-on) — the editor is now one of several surfaces.
+
 ## Operating Cost
 
 Complexity is Medium. The main cost is not installation. It is deciding how much of your workflow should live inside one AI editor and how much autonomy you want to grant its broader agent surface.

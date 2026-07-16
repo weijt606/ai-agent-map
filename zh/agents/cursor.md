@@ -41,6 +41,15 @@
 | Integrations | 强 | GitHub、Slack、Linear、JetBrains 等都在路线里 |
 | Self-hosting | 弱 | 这不是选 Cursor 的原因 |
 
+## 2026 年年中动态
+
+整个夏天 agent 表面还在继续变宽：
+
+- **2026 年 6 月**：Cursor 浏览器内的 Design Mode（点击、涂画或语音描述 UI 改动，交给 agent 执行）；**Cursor for iOS** 在全部付费计划公测——常驻 agent、Remote Control、实时通知、移动端 review；Teams 定价改版，新增 Premium 席位（3 倍价格换 5 倍用量）。
+- **2026 年 7 月（v3.11，7 月 10 日）**：Agents Window 的云端 agent 升级——环境启动更快、可复用快照、/in-cloud subagent 隔离并行；side chats 和 agent 记录搜索；Bugbot review 快 3 倍以上且便宜 22%。
+
+选型要点：Cursor 现在押注最重的是"随身携带的 agent"（移动端、云端、常驻）——编辑器只是若干表面之一。
+
 ## 使用代价
 
 复杂度是 Medium。真正的代价不在安装，而在于你要决定多少工作流放进同一个 AI 编辑器里，以及愿意给它多大的 agent 自主性。

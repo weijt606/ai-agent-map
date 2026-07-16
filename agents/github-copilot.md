@@ -39,6 +39,18 @@ One-line take: GitHub Copilot now behaves more like an agent platform than a sin
 | Permission control | Strong | Control levels are fairly explicit |
 | Custom agents | Medium | Useful for role-based entry points |
 
+## Mid-2026 Updates
+
+June–July 2026 pushed Copilot further toward an agent platform than an autocomplete product:
+
+- **Agent finder (June 17)**: Copilot discovers the right capability for a task on its own instead of requiring manual MCP/skills/agents configuration.
+- **JetBrains AI Assistant (June 30)**: Copilot Agent became a first-class option in the JetBrains agent picker — it now competes inside other vendors' surfaces.
+- **VS Code (June)**: agentic browser tools GA (navigate, inspect, screenshot, validate web apps in-editor), agent-session organization with cost visibility, and 1M-token context with compatible Anthropic and OpenAI models.
+- **Code review (June 18)**: repository-level AGENTS.md support in Copilot code review.
+- **Copilot CLI (July)**: plan mode now hard-blocks mutating tool calls while planning, plus voice-mode persistence, canvas support, and tighter subagent controls; a /security-review command entered public preview.
+
+Selection takeaway: the platform advantage keeps compounding — Copilot is increasingly the agent layer of the whole GitHub workflow rather than a single assistant.
+
 ## Operating Cost
 
 Complexity is Medium. Basic use is easy, but mixing local agents, CLI paths, cloud runs, and multiple permission modes makes the workflow more complex fast.

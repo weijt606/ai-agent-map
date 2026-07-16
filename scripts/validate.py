@@ -4,21 +4,37 @@
 Checks, in order:
   1. Internal markdown links resolve to a real file (relative links only;
      http(s)/anchors/mailto are skipped).
-  2. Bilingual parity: every EN doc under agents/, comparisons/, use-cases/ has
-     a matching mirror under zh/<same path>, and vice versa.
-  3. Heat tables across the four index files agree on one "Last updated" date.
-  4. Each heat table has 10 ranked rows (#1..#10) with no duplicate ranks.
-  5. No leftover TODO/PLACEHOLDER/FIXME markers in tracked markdown.
+  2. Bilingual parity: every EN doc under agents/, comparisons/, use-cases/,
+     rankings/ has a matching mirror under zh/<same path>, and vice versa.
+  3. All dated files (four heat READMEs + six rankings docs) agree on one
+     "Last updated" date.
+  4. Ranked tables are well-formed: consecutive rank rows form a block, and
+     every block must run #1..#N with no gaps or duplicates. The four heat
+     READMEs must additionally open with an exactly-#1..#10 block.
+  5. scripts/history.json cross-check: the latest window matches the README
+     heat table row for row (slug, stars to 0.1k tolerance, gain), window
+     dates strictly increase, ranks run 1..depth, every slug has a
+     scripts/catalog.json entry, and both trend SVGs carry the latest date.
+  6. No leftover TODO/PLACEHOLDER/FIXME markers in tracked markdown
+     (warning only).
 
 Exit code 0 = clean, 1 = at least one failure. Run from the repo root.
 """
+import json
 import os
 import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MIRRORED_DIRS = ["agents", "comparisons", "use-cases"]
+MIRRORED_DIRS = ["agents", "comparisons", "use-cases", "rankings"]
 HEAT_FILES = ["README.md", "zh/README.md", "agents/README.md", "zh/agents/README.md"]
+RANKINGS_FILES = [
+    "rankings/README.md", "rankings/agent-verticals.md", "rankings/skill-verticals.md",
+    "zh/rankings/README.md", "zh/rankings/agent-verticals.md", "zh/rankings/skill-verticals.md",
+]
+TREND_SVGS = ["assets/heat-trend-en.svg", "assets/heat-trend-zh.svg"]
+HISTORY = os.path.join(ROOT, "scripts", "history.json")
+CATALOG = os.path.join(ROOT, "scripts", "catalog.json")
 
 errors = []
 warnings = []
@@ -75,9 +91,23 @@ DATE_RE = re.compile(r"(?:Last updated|最后更新)[:：*]*\s*(\d{4}-\d{2}-\d{2
 RANK_RE = re.compile(r"^\|\s*#(\d+)")
 
 
+def rank_blocks(lines):
+    """Group adjacent ranked table rows into blocks; any other line breaks a block."""
+    block = []
+    for ln in lines:
+        m = RANK_RE.match(ln)
+        if m:
+            block.append(int(m.group(1)))
+        elif block:
+            yield block
+            block = []
+    if block:
+        yield block
+
+
 def check_heat():
     dates = {}
-    for rel in HEAT_FILES:
+    for rel in HEAT_FILES + RANKINGS_FILES:
         path = os.path.join(ROOT, rel)
         if not os.path.exists(path):
             errors.append(f"[heat] missing file {rel}")
@@ -89,12 +119,101 @@ def check_heat():
             errors.append(f"[heat] {rel}: no 'Last updated' date found")
         else:
             dates[rel] = m.group(1)
-        ranks = [int(RANK_RE.match(ln).group(1)) for ln in lines if RANK_RE.match(ln)]
-        ranks = ranks[:10] if len(ranks) >= 10 else ranks
-        if sorted(ranks) != list(range(1, 11)):
-            errors.append(f"[heat] {rel}: expected ranks #1..#10, got {ranks}")
+        blocks = list(rank_blocks(lines))
+        for i, b in enumerate(blocks, 1):
+            if b != list(range(1, len(b) + 1)):
+                errors.append(f"[rank] {rel}: table {i} is not consecutive #1..#N: {b}")
+        if rel in HEAT_FILES and (not blocks or len(blocks[0]) != 10):
+            got = len(blocks[0]) if blocks else 0
+            errors.append(f"[heat] {rel}: first heat table must have exactly ranks #1..#10, got {got} rows")
     if len(set(dates.values())) > 1:
         errors.append(f"[heat] 'Last updated' dates disagree across files: {dates}")
+    return next(iter(dates.values()), None)
+
+
+SLUG_RE = re.compile(r"https://github\.com/([\w.-]+/[\w.-]+)")
+STARS_K_RE = re.compile(r"^([\d.]+)k$")
+GAIN_CELL_RE = re.compile(r"^~?\+([\d,]+)$")
+
+
+def readme_top10():
+    """Parse the first ranked block of README.md into (slug, stars, gain) rows."""
+    rows = []
+    with open(os.path.join(ROOT, "README.md"), encoding="utf-8") as fh:
+        in_block = False
+        for line in fh:
+            if not RANK_RE.match(line):
+                if in_block:
+                    break
+                continue
+            in_block = True
+            cells = [c.strip() for c in line.strip().strip("|").split("|")]
+            if len(cells) < 4:
+                errors.append(f"[history] malformed README heat row: {line.strip()[:60]}")
+                return []
+            sm = SLUG_RE.search(cells[1])
+            st = STARS_K_RE.match(cells[2])
+            gm = GAIN_CELL_RE.match(cells[3].replace("&nbsp;", ""))
+            if not (sm and st and gm):
+                errors.append(f"[history] unparseable README heat row: {line.strip()[:60]}")
+                return []
+            rows.append((sm.group(1).lower(), int(round(float(st.group(1)) * 1000)),
+                         int(gm.group(1).replace(",", ""))))
+    return rows
+
+
+def check_history(heat_date):
+    try:
+        with open(HISTORY, encoding="utf-8") as fh:
+            hist = json.load(fh)
+        with open(CATALOG, encoding="utf-8") as fh:
+            catalog = json.load(fh)
+    except (OSError, json.JSONDecodeError) as e:
+        errors.append(f"[history] cannot read history/catalog: {e}")
+        return
+
+    windows = hist.get("windows", [])
+    if not windows:
+        errors.append("[history] history.json has no windows")
+        return
+
+    prev = None
+    for w in windows:
+        if prev is not None and w["date"] <= prev:
+            errors.append(f"[history] window dates not strictly increasing at {w['date']}")
+        prev = w["date"]
+        ranks = [e["rank"] for e in w["entries"]]
+        if ranks != list(range(1, w.get("depth", len(ranks)) + 1)):
+            errors.append(f"[history] window {w['date']}: ranks are not 1..depth: {ranks}")
+        for e in w["entries"]:
+            if e["slug"] not in catalog:
+                errors.append(f"[history] window {w['date']}: slug {e['slug']} missing from catalog.json")
+
+    latest = windows[-1]
+    if heat_date and latest["date"] != heat_date:
+        errors.append(f"[history] latest window date {latest['date']} != heat 'Last updated' {heat_date}")
+
+    rows = readme_top10()
+    if rows:
+        if len(rows) != len(latest["entries"]):
+            errors.append(f"[history] README has {len(rows)} heat rows but latest window has {len(latest['entries'])}")
+        for (slug, stars, gain), entry in zip(rows, latest["entries"]):
+            if slug != entry["slug"]:
+                errors.append(f"[history] rank #{entry['rank']}: README slug {slug} != history {entry['slug']}")
+                continue
+            if abs(entry["stars"] - stars) >= 100:
+                errors.append(f"[history] {slug}: README stars ~{stars} vs history {entry['stars']} (beyond 0.1k tolerance)")
+            if entry["gain"] != gain:
+                errors.append(f"[history] {slug}: README gain {gain} != history {entry['gain']}")
+
+    for rel in TREND_SVGS:
+        path = os.path.join(ROOT, rel)
+        if not os.path.exists(path):
+            errors.append(f"[svg] missing {rel}")
+            continue
+        with open(path, encoding="utf-8") as fh:
+            if latest["date"] not in fh.read():
+                errors.append(f"[svg] {rel} is stale: does not mention latest window date {latest['date']} — rerun render-trend.py")
 
 
 PLACEHOLDER_RE = re.compile(r"\b(TODO|FIXME|PLACEHOLDER|XXX|TBD)\b")
@@ -112,7 +231,8 @@ def check_placeholders():
 def main():
     check_links()
     check_parity()
-    check_heat()
+    heat_date = check_heat()
+    check_history(heat_date)
     check_placeholders()
 
     for w in warnings:

@@ -61,6 +61,16 @@ Project names link to the upstream GitHub repo. When this map has a written prof
 - [OpenClaw](agents/openclaw.md) remains the absolute leader at 382.8k stars (+0.7k); it is profiled but stays out of the gain-ranked table because reliable week-over-week deltas for a project this large are noisy.
 - Continuing to grow but outside the top 10 by gain: [Ruflo](agents/ruflo.md) 64.3k (+0.8k), [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) 30.8k (+0.4k), [openhuman](agents/openhuman.md) 34.8k (+0.4k), [CLI-Anything](agents/cli-anything.md) 45.3k (+0.3k), [MiMoCode](agents/mimocode.md) 11.9k (+0.3k), [agentmemory](https://github.com/rohitg00/agentmemory) 25.1k (+0.3k), [financial-services](https://github.com/anthropics/financial-services) 33.5k (+0.2k), [CodeWhale](agents/codewhale.md) 39.7k (+0.2k), [12-factor-agents](https://github.com/humanlayer/12-factor-agents) 24.2k (+0.2k), [jcode](https://github.com/1jehuang/jcode) 8.3k (+0.1k), [Kimi Code](agents/kimi-code.md) 3.1k (+0.1k), [CoStrict](agents/costrict.md) 4.3k (flat).
 
+### Ranking Trend
+
+How the weekly top 10 has shifted since tracking began — each line is one project, breaks mean it fell off the board that week:
+
+<p align="center">
+  <img src="assets/heat-trend-en.svg" alt="Weekly heat ranking trend (bump chart)" width="100%" />
+</p>
+
+Full stock rankings by category — agents, agent infra, skills, and their verticals, sorted by total stars — live in [rankings/](rankings/README.md).
+
 ## Market Event: The `.claude/skills` Wave (May 2026, expanding)
 
 The wave that broke into trending in mid-May has intensified. Across the May 12 → 22 snapshots, six of the top ten trending repositories are now skills frameworks, curated skills collections, or methodology docs built on Anthropic's skill pattern:

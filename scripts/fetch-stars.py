@@ -4,7 +4,9 @@
 Reads the previous snapshot from scripts/snapshot.json (if present), fetches the
 current star count for each tracked slug via the public GitHub API, and prints a
 gain table sorted by 7-day gain. With --write it also rewrites snapshot.json so
-the next run can compute deltas.
+the next run can compute deltas, and appends the full snapshot (stars + gain per
+repo) to the `raw` section of scripts/history.json, which feeds the category
+rankings under rankings/. Same-date re-runs overwrite the raw entry (idempotent).
 
 Used both for the manual weekly refresh and by the automated Wednesday routine.
 Auth: set GITHUB_TOKEN in the environment to lift the 60 req/hr unauthenticated
@@ -20,6 +22,7 @@ import urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 MANIFEST = os.path.join(HERE, "tracked-repos.txt")
 SNAPSHOT = os.path.join(HERE, "snapshot.json")
+HISTORY = os.path.join(HERE, "history.json")
 
 
 def slugs():
@@ -92,11 +95,41 @@ def main():
         print(line)
 
     if write:
-        out = {"updated": time.strftime("%Y-%m-%d"), "repos": current}
+        today = time.strftime("%Y-%m-%d")
+        append_raw(today, rows)
+        out = {"updated": today, "repos": current}
         with open(SNAPSHOT, "w") as fh:
             json.dump(out, fh, indent=2, ensure_ascii=False)
             fh.write("\n")
         print(f"\nwrote {SNAPSHOT} ({len(current)} repos)")
+
+
+def append_raw(date, rows):
+    """Append today's full snapshot to history.json's raw section.
+
+    Runs BEFORE snapshot.json is overwritten so gains are relative to the
+    previous snapshot. Fails hard: a publish must not proceed with a broken
+    or missing history file.
+    """
+    try:
+        with open(HISTORY, encoding="utf-8") as fh:
+            hist = json.load(fh)
+    except (OSError, json.JSONDecodeError) as e:
+        print(f"ERROR: cannot read {HISTORY}: {e}", file=sys.stderr)
+        sys.exit(1)
+    stars = {}
+    for slug, cur, _prev, gain, err in rows:
+        if cur is None:
+            continue
+        stars[slug.lower()] = {"stars": cur, "gain": gain}
+    entry = {"date": date, "stars": stars}
+    raw = [r for r in hist.setdefault("raw", []) if r.get("date") != date]
+    raw.append(entry)
+    hist["raw"] = raw
+    with open(HISTORY, "w", encoding="utf-8") as fh:
+        json.dump(hist, fh, indent=2, ensure_ascii=False)
+        fh.write("\n")
+    print(f"appended raw snapshot for {date} to history.json ({len(stars)} repos)")
 
 
 if __name__ == "__main__":

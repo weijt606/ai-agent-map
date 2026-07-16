@@ -19,3 +19,4 @@
 
 - [主流 agent 选型矩阵](mainstream-agent-landscape.md)
 - [终端编码 CLI Agent](coding-cli-agents.md)
+- [Agent Harness 框架对比](agent-harness-frameworks.md)

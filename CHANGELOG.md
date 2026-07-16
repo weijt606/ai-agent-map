@@ -4,6 +4,13 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-07-16 — Home-page slimdown, vendor refresh, and the market-events archive
+
+- **README restructured for density**: the two Market Event sections collapsed into a three-bullet Market Pulse; the 50-row coverage table folded into four collapsible groups; heat-table side notes folded; the harness table moved to [comparisons/agent-harness-frameworks.md](comparisons/agent-harness-frameworks.md); navigation merged with a rankings entry added.
+- **Vendor profiles caught up to July 2026**: Codex (merged into the ChatGPT app July 9, GPT-5.6-powered), Claude Code (Fable 5 / Opus 4.8 model arc), Cursor, GitHub Copilot, and GPT-5.5 (post-launch landscape).
+- **New [Claude Fable 5](agents/claude-fable-5.md) profile** — Anthropic's Mythos-class tier joins the Frontier agentic model route.
+- **New [market-events.md](market-events.md)** (EN + zh): the durable archive of structural events, with refreshed skills-wave numbers.
+
 ## 2026-07-16 — Rankings expansion: trend chart, category boards, vertical boards
 
 - **Weekly rank-trend bump chart** (`assets/heat-trend-{en,zh}.svg`), embedded on both home pages and in [rankings/](rankings/README.md). Every weekly top-N window since 2026-04-11 was reconstructed from git history into `scripts/history.json`; the chart re-renders on every publish.

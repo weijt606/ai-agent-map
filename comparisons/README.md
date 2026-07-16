@@ -19,3 +19,4 @@ No leaderboard, no total score, no “ultimate best agent” framing.
 
 - [Mainstream agent selection matrix](mainstream-agent-landscape.md)
 - [Terminal coding CLI agents](coding-cli-agents.md)
+- [Agent harness frameworks](agent-harness-frameworks.md)

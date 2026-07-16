@@ -4,6 +4,13 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-07-16 —— 主页瘦身、厂商信息刷新、市场事件档案
+
+- **README 重构降密度**：两个市场事件板块收成三条"市场脉搏"要点；50 行覆盖表折叠成四个可展开分组；热榜附注折叠；harness 表迁至 [comparisons/agent-harness-frameworks.md](comparisons/agent-harness-frameworks.md)；导航合并并新增排行入口。
+- **厂商 profile 追平 2026 年 7 月**：Codex（7 月 9 日并入 ChatGPT 应用、GPT-5.6 驱动）、Claude Code（Fable 5 / Opus 4.8 模型演进）、Cursor、GitHub Copilot、GPT-5.5（发布后格局）。
+- **新增 [Claude Fable 5](agents/claude-fable-5.md) profile**——Anthropic 的 Mythos 级加入前沿 agentic 模型路线。
+- **新增 [market-events.md](../market-events.md)**（EN + zh）：结构性事件的长期档案，skills 浪潮数据已刷新。
+
 ## 2026-07-16 —— 排行体系扩建：趋势图、分类榜、垂类榜
 
 - **每周排名趋势图（bump chart）**（`assets/heat-trend-{en,zh}.svg`），嵌入两个语言的主页和 [rankings/](rankings/README.md)。2026-04-11 以来的每个每周 top-N 窗口已从 git 历史回溯进 `scripts/history.json`；图表随每次发布自动重绘。

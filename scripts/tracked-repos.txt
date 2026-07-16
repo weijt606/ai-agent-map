@@ -23,3 +23,24 @@ XiaomiMiMo/MiMo-Code
 zgsm-ai/costrict
 openclaw/openclaw
 ruvnet/ruflo
+# --- Major open-source agents (added 2026-07-16 for category/vertical rankings) ---
+anthropics/claude-code
+Aider-AI/aider
+cline/cline
+continuedev/continue
+OpenHands/OpenHands
+SWE-agent/SWE-agent
+SWE-agent/mini-swe-agent
+HKUDS/OpenHarness
+aaif-goose/goose
+Significant-Gravitas/AutoGPT
+# --- Agent infra (added 2026-07-16) ---
+langchain-ai/langchain
+langchain-ai/langgraph
+crewAIInc/crewAI
+run-llama/llama_index
+n8n-io/n8n
+letta-ai/letta
+openinterpreter/openinterpreter
+BerriAI/litellm
+FlowiseAI/Flowise

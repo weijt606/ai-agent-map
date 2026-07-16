@@ -1,0 +1,248 @@
+{
+  "version": 1,
+  "_comment": "Weekly heat-ranking history. 'windows' mirrors the editorial top-N table in README.md (appended by scripts/append-history.py after each publish; backfilled 2026-07-16 from git history, stars reconstructed from 0.1k-precision table values). 'raw' holds the full machine snapshot per fetch (appended by fetch-stars.py --write). Slugs are lowercased owner/repo; display names live in catalog.json.",
+  "windows": [
+    {
+      "date": "2026-04-11",
+      "window_start": null,
+      "window_end": null,
+      "source_commit": "e35c138",
+      "depth": 5,
+      "note": "stars approximate; no window line in this era, date = commit date; near-duplicate refresh 1879413 (2026-04-23) folded into this window",
+      "entries": [
+        {"rank": 1, "slug": "nousresearch/hermes-agent", "stars": 55900, "gain": 14811},
+        {"rank": 2, "slug": "siddharthvaddem/openscreen", "stars": 27900, "gain": 13938},
+        {"rank": 3, "slug": "yeachan-heo/oh-my-codex", "stars": 20900, "gain": 11503},
+        {"rank": 4, "slug": "google-ai-edge/gallery", "stars": 20300, "gain": 3796},
+        {"rank": 5, "slug": "yeachan-heo/oh-my-claudecode", "stars": 27600, "gain": 5935}
+      ]
+    },
+    {
+      "date": "2026-04-23",
+      "window_start": null,
+      "window_end": null,
+      "source_commit": "659a1bb",
+      "depth": 5,
+      "note": "stars approximate; no window line in this era, date = commit date",
+      "entries": [
+        {"rank": 1, "slug": "nousresearch/hermes-agent", "stars": 113000, "gain": 57100},
+        {"rank": 2, "slug": "siddharthvaddem/openscreen", "stars": 32400, "gain": 4500},
+        {"rank": 3, "slug": "yeachan-heo/oh-my-codex", "stars": 25300, "gain": 4400},
+        {"rank": 4, "slug": "yeachan-heo/oh-my-claudecode", "stars": 31000, "gain": 3400},
+        {"rank": 5, "slug": "google-ai-edge/gallery", "stars": 21900, "gain": 1600}
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "window_start": "2026-04-19",
+      "window_end": "2026-04-26",
+      "source_commit": "7e3d83f",
+      "depth": 6,
+      "note": "stars approximate",
+      "entries": [
+        {"rank": 1, "slug": "nousresearch/hermes-agent", "stars": 118200, "gain": 58500},
+        {"rank": 2, "slug": "siddharthvaddem/openscreen", "stars": 32900, "gain": 3800},
+        {"rank": 3, "slug": "yeachan-heo/oh-my-codex", "stars": 26100, "gain": 3500},
+        {"rank": 4, "slug": "yeachan-heo/oh-my-claudecode", "stars": 31400, "gain": 2800},
+        {"rank": 5, "slug": "google-ai-edge/gallery", "stars": 22100, "gain": 1400},
+        {"rank": 6, "slug": "cosmicstack-labs/mercury-agent", "stars": 1400, "gain": 1400}
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "window_start": "2026-04-26",
+      "window_end": "2026-05-02",
+      "source_commit": "1411bbf",
+      "depth": 7,
+      "note": "stars approximate",
+      "entries": [
+        {"rank": 1, "slug": "nousresearch/hermes-agent", "stars": 129000, "gain": 10800},
+        {"rank": 2, "slug": "openai/codex", "stars": 79500, "gain": 3900},
+        {"rank": 3, "slug": "siddharthvaddem/openscreen", "stars": 34200, "gain": 1300},
+        {"rank": 4, "slug": "yeachan-heo/oh-my-codex", "stars": 27200, "gain": 1100},
+        {"rank": 5, "slug": "yeachan-heo/oh-my-claudecode", "stars": 32200, "gain": 800},
+        {"rank": 6, "slug": "cosmicstack-labs/mercury-agent", "stars": 1900, "gain": 500},
+        {"rank": 7, "slug": "google-ai-edge/gallery", "stars": 22400, "gain": 300}
+      ]
+    },
+    {
+      "date": "2026-05-08",
+      "window_start": "2026-05-02",
+      "window_end": "2026-05-08",
+      "source_commit": "8ae7f4a",
+      "depth": 8,
+      "note": "stars approximate",
+      "entries": [
+        {"rank": 1, "slug": "tauricresearch/tradingagents", "stars": 71100, "gain": 8800},
+        {"rank": 2, "slug": "nousresearch/hermes-agent", "stars": 137000, "gain": 8400},
+        {"rank": 3, "slug": "earendil-works/pi", "stars": 46000, "gain": 5000},
+        {"rank": 4, "slug": "aidc-ai/pixelle-video", "stars": 13300, "gain": 4100},
+        {"rank": 5, "slug": "openai/codex", "stars": 80700, "gain": 1200},
+        {"rank": 6, "slug": "siddharthvaddem/openscreen", "stars": 35100, "gain": 900},
+        {"rank": 7, "slug": "huggingface/ml-intern", "stars": 8900, "gain": 800},
+        {"rank": 8, "slug": "yeachan-heo/oh-my-claudecode", "stars": 32900, "gain": 700}
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "window_start": "2026-05-16",
+      "window_end": "2026-05-22",
+      "source_commit": "b4def7b",
+      "depth": 10,
+      "note": "stars approximate; some gains were published as ~ estimates",
+      "entries": [
+        {"rank": 1, "slug": "mattpocock/skills", "stars": 100900, "gain": 7600},
+        {"rank": 2, "slug": "anthropics/skills", "stars": 139300, "gain": 7000},
+        {"rank": 3, "slug": "tinyhumansai/openhuman", "stars": 25700, "gain": 6300},
+        {"rank": 4, "slug": "colbymchenry/codegraph", "stars": 16400, "gain": 6000},
+        {"rank": 5, "slug": "nousresearch/hermes-agent", "stars": 163100, "gain": 5800},
+        {"rank": 6, "slug": "hkuds/cli-anything", "stars": 39500, "gain": 5500},
+        {"rank": 7, "slug": "obra/superpowers", "stars": 202800, "gain": 5100},
+        {"rank": 8, "slug": "k-dense-ai/scientific-agent-skills", "stars": 25200, "gain": 4500},
+        {"rank": 9, "slug": "imbad0202/academic-research-skills", "stars": 19000, "gain": 4500},
+        {"rank": 10, "slug": "humanlayer/12-factor-agents", "stars": 21700, "gain": 3500}
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "window_start": "2026-05-23",
+      "window_end": "2026-06-01",
+      "source_commit": "9abfd51",
+      "depth": 10,
+      "note": "stars approximate",
+      "entries": [
+        {"rank": 1, "slug": "colbymchenry/codegraph", "stars": 37500, "gain": 21100},
+        {"rank": 2, "slug": "mattpocock/skills", "stars": 114700, "gain": 13800},
+        {"rank": 3, "slug": "nousresearch/hermes-agent", "stars": 176600, "gain": 13500},
+        {"rank": 4, "slug": "obra/superpowers", "stars": 215500, "gain": 12700},
+        {"rank": 5, "slug": "imbad0202/academic-research-skills", "stars": 26000, "gain": 7000},
+        {"rank": 6, "slug": "anthropics/skills", "stars": 145500, "gain": 6200},
+        {"rank": 7, "slug": "earendil-works/pi", "stars": 58800, "gain": 5900},
+        {"rank": 8, "slug": "tinyhumansai/openhuman", "stars": 30400, "gain": 4700},
+        {"rank": 9, "slug": "rohitg00/agentmemory", "stars": 20600, "gain": 4200},
+        {"rank": 10, "slug": "tauricresearch/tradingagents", "stars": 82100, "gain": 3500}
+      ]
+    },
+    {
+      "date": "2026-06-11",
+      "window_start": "2026-06-02",
+      "window_end": "2026-06-11",
+      "source_commit": "e16bb26",
+      "depth": 10,
+      "note": "stars approximate",
+      "entries": [
+        {"rank": 1, "slug": "nousresearch/hermes-agent", "stars": 190500, "gain": 13900},
+        {"rank": 2, "slug": "mattpocock/skills", "stars": 125100, "gain": 10400},
+        {"rank": 3, "slug": "colbymchenry/codegraph", "stars": 47200, "gain": 9700},
+        {"rank": 4, "slug": "obra/superpowers", "stars": 224300, "gain": 8800},
+        {"rank": 5, "slug": "addyosmani/agent-skills", "stars": 53400, "gain": 5700},
+        {"rank": 6, "slug": "imbad0202/academic-research-skills", "stars": 30100, "gain": 4100},
+        {"rank": 7, "slug": "anthropics/skills", "stars": 149300, "gain": 3800},
+        {"rank": 8, "slug": "tauricresearch/tradingagents", "stars": 85100, "gain": 3000},
+        {"rank": 9, "slug": "earendil-works/pi", "stars": 61700, "gain": 2900},
+        {"rank": 10, "slug": "openai/codex", "stars": 90400, "gain": 2500}
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "window_start": "2026-06-11",
+      "window_end": "2026-06-17",
+      "source_commit": "f15984a",
+      "depth": 10,
+      "note": "stars approximate",
+      "entries": [
+        {"rank": 1, "slug": "addyosmani/agent-skills", "stars": 62200, "gain": 8800},
+        {"rank": 2, "slug": "mattpocock/skills", "stars": 133300, "gain": 8200},
+        {"rank": 3, "slug": "obra/superpowers", "stars": 230900, "gain": 6600},
+        {"rank": 4, "slug": "xiaomimimo/mimo-code", "stars": 9600, "gain": 6500},
+        {"rank": 5, "slug": "nousresearch/hermes-agent", "stars": 196100, "gain": 5600},
+        {"rank": 6, "slug": "colbymchenry/codegraph", "stars": 51000, "gain": 3800},
+        {"rank": 7, "slug": "anthropics/skills", "stars": 152100, "gain": 2800},
+        {"rank": 8, "slug": "imbad0202/academic-research-skills", "stars": 32400, "gain": 2300},
+        {"rank": 9, "slug": "earendil-works/pi", "stars": 63600, "gain": 1900},
+        {"rank": 10, "slug": "tauricresearch/tradingagents", "stars": 86900, "gain": 1800}
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "window_start": "2026-06-17",
+      "window_end": "2026-06-24",
+      "source_commit": "65125fa",
+      "depth": 10,
+      "note": "stars approximate",
+      "entries": [
+        {"rank": 1, "slug": "mattpocock/skills", "stars": 144500, "gain": 11147},
+        {"rank": 2, "slug": "obra/superpowers", "stars": 237600, "gain": 6649},
+        {"rank": 3, "slug": "nousresearch/hermes-agent", "stars": 201700, "gain": 5622},
+        {"rank": 4, "slug": "addyosmani/agent-skills", "stars": 66300, "gain": 4163},
+        {"rank": 5, "slug": "colbymchenry/codegraph", "stars": 54100, "gain": 3091},
+        {"rank": 6, "slug": "anthropics/skills", "stars": 154700, "gain": 2531},
+        {"rank": 7, "slug": "earendil-works/pi", "stars": 65300, "gain": 1737},
+        {"rank": 8, "slug": "imbad0202/academic-research-skills", "stars": 34100, "gain": 1716},
+        {"rank": 9, "slug": "openai/codex", "stars": 93400, "gain": 1616},
+        {"rank": 10, "slug": "tauricresearch/tradingagents", "stars": 88300, "gain": 1396}
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "window_start": "2026-06-24",
+      "window_end": "2026-07-02",
+      "source_commit": "2d15443",
+      "depth": 10,
+      "note": "stars approximate",
+      "entries": [
+        {"rank": 1, "slug": "mattpocock/skills", "stars": 153900, "gain": 9323},
+        {"rank": 2, "slug": "obra/superpowers", "stars": 244000, "gain": 6392},
+        {"rank": 3, "slug": "nousresearch/hermes-agent", "stars": 207700, "gain": 5918},
+        {"rank": 4, "slug": "anthropics/skills", "stars": 157600, "gain": 2885},
+        {"rank": 5, "slug": "colbymchenry/codegraph", "stars": 57000, "gain": 2832},
+        {"rank": 6, "slug": "addyosmani/agent-skills", "stars": 68500, "gain": 2167},
+        {"rank": 7, "slug": "tauricresearch/tradingagents", "stars": 90400, "gain": 2009},
+        {"rank": 8, "slug": "earendil-works/pi", "stars": 67200, "gain": 1819},
+        {"rank": 9, "slug": "imbad0202/academic-research-skills", "stars": 35900, "gain": 1728},
+        {"rank": 10, "slug": "openai/codex", "stars": 95100, "gain": 1678}
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "window_start": "2026-07-02",
+      "window_end": "2026-07-08",
+      "source_commit": "85d8bbc",
+      "depth": 10,
+      "note": "stars approximate",
+      "entries": [
+        {"rank": 1, "slug": "mattpocock/skills", "stars": 160500, "gain": 6609},
+        {"rank": 2, "slug": "obra/superpowers", "stars": 249400, "gain": 5343},
+        {"rank": 3, "slug": "addyosmani/agent-skills", "stars": 72800, "gain": 4296},
+        {"rank": 4, "slug": "nousresearch/hermes-agent", "stars": 211300, "gain": 3572},
+        {"rank": 5, "slug": "anthropics/skills", "stars": 159400, "gain": 1779},
+        {"rank": 6, "slug": "colbymchenry/codegraph", "stars": 58500, "gain": 1576},
+        {"rank": 7, "slug": "earendil-works/pi", "stars": 68600, "gain": 1431},
+        {"rank": 8, "slug": "tauricresearch/tradingagents", "stars": 91800, "gain": 1424},
+        {"rank": 9, "slug": "openai/codex", "stars": 96200, "gain": 1180},
+        {"rank": 10, "slug": "imbad0202/academic-research-skills", "stars": 36900, "gain": 948}
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "window_start": "2026-07-08",
+      "window_end": "2026-07-14",
+      "source_commit": "72b0c2a",
+      "depth": 10,
+      "note": "stars approximate",
+      "entries": [
+        {"rank": 1, "slug": "mattpocock/skills", "stars": 168300, "gain": 7712},
+        {"rank": 2, "slug": "addyosmani/agent-skills", "stars": 77900, "gain": 5052},
+        {"rank": 3, "slug": "obra/superpowers", "stars": 253800, "gain": 4445},
+        {"rank": 4, "slug": "nousresearch/hermes-agent", "stars": 214200, "gain": 2915},
+        {"rank": 5, "slug": "earendil-works/pi", "stars": 70500, "gain": 1907},
+        {"rank": 6, "slug": "anthropics/skills", "stars": 160900, "gain": 1490},
+        {"rank": 7, "slug": "openai/codex", "stars": 97700, "gain": 1459},
+        {"rank": 8, "slug": "colbymchenry/codegraph", "stars": 59700, "gain": 1147},
+        {"rank": 9, "slug": "tauricresearch/tradingagents", "stars": 92800, "gain": 1038},
+        {"rank": 10, "slug": "imbad0202/academic-research-skills", "stars": 37700, "gain": 821}
+      ]
+    }
+  ],
+  "raw": []
+}

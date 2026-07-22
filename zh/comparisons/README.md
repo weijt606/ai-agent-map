@@ -20,3 +20,7 @@
 - [主流 agent 选型矩阵](mainstream-agent-landscape.md)
 - [终端编码 CLI Agent](coding-cli-agents.md)
 - [Agent Harness 框架对比](agent-harness-frameworks.md)
+- [Agent 记忆方案对比](memory-approaches.md) —— 项目在*怎么*记这件事上的差异
+- [成本 & benchmark](cost-and-benchmarks.md) —— 编码能力 vs 价格，以及 agent 怎么收费
+
+另见[能力矩阵](../capabilities/matrix.md) —— 每个项目在统一能力维度上的打分。

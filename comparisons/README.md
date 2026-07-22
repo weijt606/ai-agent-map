@@ -20,3 +20,7 @@ No leaderboard, no total score, no “ultimate best agent” framing.
 - [Mainstream agent selection matrix](mainstream-agent-landscape.md)
 - [Terminal coding CLI agents](coding-cli-agents.md)
 - [Agent harness frameworks](agent-harness-frameworks.md)
+- [Agent memory approaches](memory-approaches.md) — how projects differ on *how* they remember
+- [Cost & benchmarks](cost-and-benchmarks.md) — coding capability vs price, and how agents bill
+
+See also the [capability matrix](../capabilities/matrix.md) — every project scored across the shared capability dimensions.

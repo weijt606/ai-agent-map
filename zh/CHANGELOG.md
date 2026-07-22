@@ -4,6 +4,16 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-07-22 —— 能力矩阵、成本/benchmark、记忆方案页
+
+三个纯新增的对比面，把地图推过"只看流行度"，且不动现有路线/覆盖结构：
+
+- **新增 [能力矩阵](capabilities/matrix.md)**（EN + zh）——把九个[能力维度](capabilities/README.md)并排应用到约 40 个项目，按核心（●）/ 支持（◐）/ 有限（○）/ 非目标（—）打分，按路线分组。终于用起了此前定义却从未大规模应用的能力词表。
+- **新增 [成本 & benchmark](comparisons/cost-and-benchmarks.md)**（EN + zh）——前沿模型能力（Artificial Analysis 编码 agent 指数、SWE-Bench Pro）vs 每 token 价格，加上每个编码 agent 怎么收费（开源自带 / 订阅 / 按量额度 / 托管席位）。复用厂商 profile 里已确立的数字。
+- **新增 [记忆方案对比](comparisons/memory-approaches.md)**（EN + zh）——把地图上带记忆的项目按*怎么*记分类（自编辑、被动语义、文件/关键词、代码知识图谱、个人数据树、长驻运行时），串起 jcode、MiMoCode、Letta、CodeGraph、OpenHuman、Hermes、Mercury。
+
+两个对比页从 [comparisons/](comparisons/README.md) 链接；矩阵从 [capabilities/](capabilities/README.md) 链接。
+
 ## 2026-07-22 —— jcode 加入 harness 路线
 
 - **新增 [jcode](agents/jcode.md) profile**（EN + zh）——这个 Rust 多会话 coding harness（`1jehuang/jcode`，MIT，10.6k）在进入每周增量前 10（#7）后，从候补转正为已收录 profile。它与 [Pi](agents/pi.md) 一起归入 **agent harness 框架** 路线，并接入 [harness 对比](comparisons/agent-harness-frameworks.md)（现为六个）、[选型矩阵](comparisons/mainstream-agent-landscape.md) 和 [编码自动化指南](use-cases/coding-automation.md)。覆盖数升至 55 个 profile；`catalog.json` 已把 jcode 标为已收录。

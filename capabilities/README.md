@@ -27,3 +27,7 @@ The point is to keep profile pages speaking the same language, otherwise it beco
 1. Mark the dimensions that are mandatory for your workflow.
 2. Decide whether each one is a core strength or just incidental support.
 3. Check the cost attached to that dimension: security, approvals, secrets, runtime burden, and operator overhead.
+
+## The Matrix
+
+These dimensions are applied to every project, side by side, in the **[capability matrix](matrix.md)** — scored on whether each capability is a core strength (●), solid support (◐), limited (○), or not a goal (—). Start there when you are choosing between projects rather than reading one profile.

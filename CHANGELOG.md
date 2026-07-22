@@ -4,6 +4,16 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-07-22 — Capability matrix, cost/benchmark, and memory-approaches pages
+
+Three additive comparison surfaces that move the map beyond popularity, without touching the existing route/coverage structure:
+
+- **New [capability matrix](capabilities/matrix.md)** (EN + zh) — applies the nine [capability dimensions](capabilities/README.md) to ~40 projects side by side, scored core (●) / support (◐) / limited (○) / not-a-goal (—), grouped by route. Finally uses the capabilities vocabulary that had been defined but never applied at scale.
+- **New [cost & benchmarks](comparisons/cost-and-benchmarks.md)** (EN + zh) — frontier-model capability (Artificial Analysis Coding Agent Index, SWE-Bench Pro) vs per-token price, plus how each coding agent bills (open-source BYO / subscription / metered credits / managed seat). Reuses the numbers already established in the vendor profiles.
+- **New [memory approaches](comparisons/memory-approaches.md)** (EN + zh) — sorts the map's memory-carrying projects by *how* they remember (self-editing, passive semantic, file/keyword, code knowledge graph, personal-data tree, long-lived runtime), tying together jcode, MiMoCode, Letta, CodeGraph, OpenHuman, Hermes, and Mercury.
+
+Both comparison pages are linked from [comparisons/](comparisons/README.md); the matrix from [capabilities/](capabilities/README.md).
+
 ## 2026-07-22 — jcode joins the harness route
 
 - **New [jcode](agents/jcode.md) profile** (EN + zh) — the Rust multi-session coding harness (`1jehuang/jcode`, MIT, 10.6k) graduated from the watchlist to an in-scope profile after entering the weekly gain top 10 at #7. It joins the **agent harness framework** route alongside [Pi](agents/pi.md), the [harness comparison](comparisons/agent-harness-frameworks.md) (now six), the [selection matrix](comparisons/mainstream-agent-landscape.md), and the [coding-automation guide](use-cases/coding-automation.md). Coverage is now 55 profiles; `catalog.json` marks jcode in-scope.

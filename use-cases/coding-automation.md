@@ -17,7 +17,9 @@ That question is no longer the useful one. The better question is: which operati
 | Vendor-official Kimi-native terminal coding loop | [Kimi Code](../agents/kimi-code.md) |
 | Terminal coding with built-in cross-session memory | [MiMoCode](../agents/mimocode.md) |
 | Claude-Code loop on low-cost DeepSeek / MiMo models | [CodeWhale](../agents/codewhale.md) |
+| A fast, provider-neutral harness you own, with passive memory across many sessions | [jcode](../agents/jcode.md) |
 | Comparing vendor terminal coding CLIs side by side | [terminal coding CLI agents](../comparisons/coding-cli-agents.md) |
+| Comparing own-the-loop harness frameworks | [agent harness frameworks](../comparisons/agent-harness-frameworks.md) |
 | Async delegation into cloud execution | [Codex](../agents/codex.md) |
 | Strongest OpenAI model for agentic coding with 1M context | [GPT-5.5](../agents/gpt-5.5.md) |
 | I already use Claude Code and want teams, skills, and stronger orchestration | [oh-my-claudecode](../agents/oh-my-claudecode.md) |
@@ -55,6 +57,7 @@ That question is no longer the useful one. The better question is: which operati
 | Cloud delegation | [Codex](../agents/codex.md), [Devin](../agents/devin.md), [Jules](../agents/jules.md) | Assign work, come back later, review the result |
 | Managed background path | [Claude Managed Agents](../agents/claude-managed-agents.md) | Scheduled or detached Anthropic workflows |
 | Review-first automation | [Cline](../agents/cline.md), [GitHub Copilot](../agents/github-copilot.md), [Froge Code](../agents/froge-code.md) | Keep humans central while still using powerful agent workflows |
+| Own-the-loop harness | [jcode](../agents/jcode.md), [OpenHands](../agents/openhands.md) | Keep the vendor product out — you own the loop, tools, and permissions (see the [harness comparison](../comparisons/agent-harness-frameworks.md)) |
 | Build / self-host | [OpenHands](../agents/openhands.md), [Goose](../agents/goose.md), [Hermes Agent](../agents/hermes-agent.md), [LangChain](../agents/langchain.md), [LangGraph](../agents/langgraph.md) | More flexibility, more environment and operations cost |
 
 ## Key Trade-Offs

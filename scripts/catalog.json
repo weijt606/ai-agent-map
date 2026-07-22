@@ -1,52 +1,403 @@
 {
   "_comment": "Per-repo metadata for rankings and the trend chart. Keys are lowercased owner/repo slugs (same convention as snapshot.json). Fields: display / display_zh (falls back to display), category = agent|infra|skill, vertical (agent: coding|general|finance; skill: collections|research|finance|methodology; infra: null — infra uses group instead), group (infra only: framework|orchestration|memory-context|gateway-runtime|workflow), profile (repo-relative path or null), scope = in|watchlist|out, tracked=false marks historical-only entries that appear in history.json but are no longer polled. CLI-Anything is classed as infra/gateway-runtime (it bridges software for agents, it is not an end-to-end agent).",
-  "nousresearch/hermes-agent": {"display": "Hermes Agent", "category": "agent", "vertical": "general", "group": null, "profile": "agents/hermes-agent.md", "scope": "in"},
-  "mattpocock/skills": {"display": "mattpocock/skills", "category": "skill", "vertical": "collections", "group": null, "profile": null, "scope": "watchlist"},
-  "colbymchenry/codegraph": {"display": "CodeGraph", "category": "infra", "vertical": null, "group": "memory-context", "profile": "agents/codegraph.md", "scope": "in"},
-  "obra/superpowers": {"display": "Superpowers", "category": "skill", "vertical": "collections", "group": null, "profile": "agents/superpowers.md", "scope": "in"},
-  "addyosmani/agent-skills": {"display": "addyosmani/agent-skills", "category": "skill", "vertical": "collections", "group": null, "profile": null, "scope": "watchlist"},
-  "imbad0202/academic-research-skills": {"display": "academic-research-skills", "category": "skill", "vertical": "research", "group": null, "profile": null, "scope": "watchlist"},
-  "anthropics/skills": {"display": "anthropics/skills", "category": "skill", "vertical": "collections", "group": null, "profile": null, "scope": "watchlist"},
-  "tauricresearch/tradingagents": {"display": "TradingAgents", "category": "agent", "vertical": "finance", "group": null, "profile": null, "scope": "out"},
-  "earendil-works/pi": {"display": "Pi", "category": "agent", "vertical": "coding", "group": null, "profile": "agents/pi.md", "scope": "in"},
-  "openai/codex": {"display": "Codex CLI", "category": "agent", "vertical": "coding", "group": null, "profile": "agents/codex.md", "scope": "in"},
-  "rohitg00/agentmemory": {"display": "agentmemory", "category": "infra", "vertical": null, "group": "memory-context", "profile": null, "scope": "watchlist"},
-  "anthropics/financial-services": {"display": "anthropics/financial-services", "display_zh": "anthropics/financial-services", "category": "skill", "vertical": "finance", "group": null, "profile": null, "scope": "out"},
-  "hmbown/codewhale": {"display": "CodeWhale", "category": "agent", "vertical": "coding", "group": null, "profile": "agents/codewhale.md", "scope": "in"},
-  "tinyhumansai/openhuman": {"display": "OpenHuman", "category": "agent", "vertical": "general", "group": null, "profile": "agents/openhuman.md", "scope": "in"},
-  "k-dense-ai/scientific-agent-skills": {"display": "scientific-agent-skills", "category": "skill", "vertical": "research", "group": null, "profile": null, "scope": "watchlist"},
-  "hkuds/cli-anything": {"display": "CLI-Anything", "category": "infra", "vertical": null, "group": "gateway-runtime", "profile": "agents/cli-anything.md", "scope": "in"},
-  "humanlayer/12-factor-agents": {"display": "12-factor-agents", "category": "skill", "vertical": "methodology", "group": null, "profile": null, "scope": "out"},
-  "1jehuang/jcode": {"display": "jcode", "category": "agent", "vertical": "coding", "group": null, "profile": null, "scope": "watchlist"},
-  "moonshotai/kimi-code": {"display": "Kimi Code", "category": "agent", "vertical": "coding", "group": null, "profile": "agents/kimi-code.md", "scope": "in"},
-  "xiaomimimo/mimo-code": {"display": "MiMoCode", "category": "agent", "vertical": "coding", "group": null, "profile": "agents/mimocode.md", "scope": "in"},
-  "zgsm-ai/costrict": {"display": "CoStrict", "category": "agent", "vertical": "coding", "group": null, "profile": "agents/costrict.md", "scope": "in"},
-  "openclaw/openclaw": {"display": "OpenClaw", "category": "agent", "vertical": "general", "group": null, "profile": "agents/openclaw.md", "scope": "in"},
-  "ruvnet/ruflo": {"display": "Ruflo", "category": "infra", "vertical": null, "group": "orchestration", "profile": "agents/ruflo.md", "scope": "in"},
-  "anthropics/claude-code": {"display": "Claude Code", "category": "agent", "vertical": "coding", "group": null, "profile": "agents/claude-code.md", "scope": "in"},
-  "aider-ai/aider": {"display": "Aider", "category": "agent", "vertical": "coding", "group": null, "profile": "agents/aider.md", "scope": "in"},
-  "cline/cline": {"display": "Cline", "category": "agent", "vertical": "coding", "group": null, "profile": "agents/cline.md", "scope": "in"},
-  "continuedev/continue": {"display": "Continue", "category": "agent", "vertical": "coding", "group": null, "profile": "agents/continue.md", "scope": "in"},
-  "openhands/openhands": {"display": "OpenHands", "category": "agent", "vertical": "coding", "group": null, "profile": "agents/openhands.md", "scope": "in"},
-  "swe-agent/swe-agent": {"display": "SWE-agent", "category": "agent", "vertical": "coding", "group": null, "profile": "agents/swe-agent.md", "scope": "in"},
-  "swe-agent/mini-swe-agent": {"display": "mini-swe-agent", "category": "agent", "vertical": "coding", "group": null, "profile": "agents/mini-swe-agent.md", "scope": "in"},
-  "hkuds/openharness": {"display": "OpenHarness", "category": "agent", "vertical": "coding", "group": null, "profile": "agents/openharness.md", "scope": "in"},
-  "aaif-goose/goose": {"display": "Goose", "category": "agent", "vertical": "general", "group": null, "profile": "agents/goose.md", "scope": "in"},
-  "significant-gravitas/autogpt": {"display": "AutoGPT", "category": "agent", "vertical": "general", "group": null, "profile": "agents/autogpt.md", "scope": "in"},
-  "langchain-ai/langchain": {"display": "LangChain", "category": "infra", "vertical": null, "group": "framework", "profile": "agents/langchain.md", "scope": "in"},
-  "langchain-ai/langgraph": {"display": "LangGraph", "category": "infra", "vertical": null, "group": "orchestration", "profile": "agents/langgraph.md", "scope": "in"},
-  "crewaiinc/crewai": {"display": "CrewAI", "category": "infra", "vertical": null, "group": "framework", "profile": "agents/crewai.md", "scope": "in"},
-  "run-llama/llama_index": {"display": "LlamaIndex", "category": "infra", "vertical": null, "group": "framework", "profile": "agents/llamaindex.md", "scope": "in"},
-  "n8n-io/n8n": {"display": "n8n", "category": "infra", "vertical": null, "group": "workflow", "profile": "agents/n8n.md", "scope": "in"},
-  "letta-ai/letta": {"display": "Letta (MemGPT)", "category": "infra", "vertical": null, "group": "memory-context", "profile": "agents/memgpt.md", "scope": "in"},
-  "openinterpreter/openinterpreter": {"display": "Open Interpreter", "category": "agent", "vertical": "general", "group": null, "profile": "agents/open-interpreter.md", "scope": "in"},
-  "berriai/litellm": {"display": "LiteLLM", "category": "infra", "vertical": null, "group": "gateway-runtime", "profile": "agents/litellm.md", "scope": "in"},
-  "flowiseai/flowise": {"display": "Flowise", "category": "infra", "vertical": null, "group": "workflow", "profile": "agents/flowise.md", "scope": "in"},
-  "yeachan-heo/oh-my-codex": {"display": "oh-my-codex", "category": "infra", "vertical": null, "group": "orchestration", "profile": "agents/oh-my-codex.md", "scope": "in", "tracked": false},
-  "yeachan-heo/oh-my-claudecode": {"display": "oh-my-claudecode", "category": "infra", "vertical": null, "group": "orchestration", "profile": "agents/oh-my-claudecode.md", "scope": "in", "tracked": false},
-  "siddharthvaddem/openscreen": {"display": "OpenScreen", "category": "agent", "vertical": "general", "group": null, "profile": null, "scope": "out", "tracked": false},
-  "google-ai-edge/gallery": {"display": "AI Edge Gallery", "category": "agent", "vertical": "general", "group": null, "profile": "agents/ai-edge-gallery.md", "scope": "in", "tracked": false},
-  "cosmicstack-labs/mercury-agent": {"display": "Mercury Agent", "category": "agent", "vertical": "general", "group": null, "profile": "agents/mercury-agent.md", "scope": "in", "tracked": false},
-  "aidc-ai/pixelle-video": {"display": "Pixelle-Video", "category": "agent", "vertical": "general", "group": null, "profile": null, "scope": "out", "tracked": false},
-  "huggingface/ml-intern": {"display": "ml-intern", "category": "agent", "vertical": "general", "group": null, "profile": "agents/ml-intern.md", "scope": "in", "tracked": false}
+  "nousresearch/hermes-agent": {
+    "display": "Hermes Agent",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/hermes-agent.md",
+    "scope": "in"
+  },
+  "mattpocock/skills": {
+    "display": "mattpocock/skills",
+    "category": "skill",
+    "vertical": "collections",
+    "group": null,
+    "profile": null,
+    "scope": "watchlist"
+  },
+  "colbymchenry/codegraph": {
+    "display": "CodeGraph",
+    "category": "infra",
+    "vertical": null,
+    "group": "memory-context",
+    "profile": "agents/codegraph.md",
+    "scope": "in"
+  },
+  "obra/superpowers": {
+    "display": "Superpowers",
+    "category": "skill",
+    "vertical": "collections",
+    "group": null,
+    "profile": "agents/superpowers.md",
+    "scope": "in"
+  },
+  "addyosmani/agent-skills": {
+    "display": "addyosmani/agent-skills",
+    "category": "skill",
+    "vertical": "collections",
+    "group": null,
+    "profile": null,
+    "scope": "watchlist"
+  },
+  "imbad0202/academic-research-skills": {
+    "display": "academic-research-skills",
+    "category": "skill",
+    "vertical": "research",
+    "group": null,
+    "profile": null,
+    "scope": "watchlist"
+  },
+  "anthropics/skills": {
+    "display": "anthropics/skills",
+    "category": "skill",
+    "vertical": "collections",
+    "group": null,
+    "profile": null,
+    "scope": "watchlist"
+  },
+  "tauricresearch/tradingagents": {
+    "display": "TradingAgents",
+    "category": "agent",
+    "vertical": "finance",
+    "group": null,
+    "profile": null,
+    "scope": "out"
+  },
+  "earendil-works/pi": {
+    "display": "Pi",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/pi.md",
+    "scope": "in"
+  },
+  "openai/codex": {
+    "display": "Codex CLI",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/codex.md",
+    "scope": "in"
+  },
+  "rohitg00/agentmemory": {
+    "display": "agentmemory",
+    "category": "infra",
+    "vertical": null,
+    "group": "memory-context",
+    "profile": null,
+    "scope": "watchlist"
+  },
+  "anthropics/financial-services": {
+    "display": "anthropics/financial-services",
+    "display_zh": "anthropics/financial-services",
+    "category": "skill",
+    "vertical": "finance",
+    "group": null,
+    "profile": null,
+    "scope": "out"
+  },
+  "hmbown/codewhale": {
+    "display": "CodeWhale",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/codewhale.md",
+    "scope": "in"
+  },
+  "tinyhumansai/openhuman": {
+    "display": "OpenHuman",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/openhuman.md",
+    "scope": "in"
+  },
+  "k-dense-ai/scientific-agent-skills": {
+    "display": "scientific-agent-skills",
+    "category": "skill",
+    "vertical": "research",
+    "group": null,
+    "profile": null,
+    "scope": "watchlist"
+  },
+  "hkuds/cli-anything": {
+    "display": "CLI-Anything",
+    "category": "infra",
+    "vertical": null,
+    "group": "gateway-runtime",
+    "profile": "agents/cli-anything.md",
+    "scope": "in"
+  },
+  "humanlayer/12-factor-agents": {
+    "display": "12-factor-agents",
+    "category": "skill",
+    "vertical": "methodology",
+    "group": null,
+    "profile": null,
+    "scope": "out"
+  },
+  "1jehuang/jcode": {
+    "display": "jcode",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/jcode.md",
+    "scope": "in"
+  },
+  "moonshotai/kimi-code": {
+    "display": "Kimi Code",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/kimi-code.md",
+    "scope": "in"
+  },
+  "xiaomimimo/mimo-code": {
+    "display": "MiMoCode",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/mimocode.md",
+    "scope": "in"
+  },
+  "zgsm-ai/costrict": {
+    "display": "CoStrict",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/costrict.md",
+    "scope": "in"
+  },
+  "openclaw/openclaw": {
+    "display": "OpenClaw",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/openclaw.md",
+    "scope": "in"
+  },
+  "ruvnet/ruflo": {
+    "display": "Ruflo",
+    "category": "infra",
+    "vertical": null,
+    "group": "orchestration",
+    "profile": "agents/ruflo.md",
+    "scope": "in"
+  },
+  "anthropics/claude-code": {
+    "display": "Claude Code",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/claude-code.md",
+    "scope": "in"
+  },
+  "aider-ai/aider": {
+    "display": "Aider",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/aider.md",
+    "scope": "in"
+  },
+  "cline/cline": {
+    "display": "Cline",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/cline.md",
+    "scope": "in"
+  },
+  "continuedev/continue": {
+    "display": "Continue",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/continue.md",
+    "scope": "in"
+  },
+  "openhands/openhands": {
+    "display": "OpenHands",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/openhands.md",
+    "scope": "in"
+  },
+  "swe-agent/swe-agent": {
+    "display": "SWE-agent",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/swe-agent.md",
+    "scope": "in"
+  },
+  "swe-agent/mini-swe-agent": {
+    "display": "mini-swe-agent",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/mini-swe-agent.md",
+    "scope": "in"
+  },
+  "hkuds/openharness": {
+    "display": "OpenHarness",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/openharness.md",
+    "scope": "in"
+  },
+  "aaif-goose/goose": {
+    "display": "Goose",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/goose.md",
+    "scope": "in"
+  },
+  "significant-gravitas/autogpt": {
+    "display": "AutoGPT",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/autogpt.md",
+    "scope": "in"
+  },
+  "langchain-ai/langchain": {
+    "display": "LangChain",
+    "category": "infra",
+    "vertical": null,
+    "group": "framework",
+    "profile": "agents/langchain.md",
+    "scope": "in"
+  },
+  "langchain-ai/langgraph": {
+    "display": "LangGraph",
+    "category": "infra",
+    "vertical": null,
+    "group": "orchestration",
+    "profile": "agents/langgraph.md",
+    "scope": "in"
+  },
+  "crewaiinc/crewai": {
+    "display": "CrewAI",
+    "category": "infra",
+    "vertical": null,
+    "group": "framework",
+    "profile": "agents/crewai.md",
+    "scope": "in"
+  },
+  "run-llama/llama_index": {
+    "display": "LlamaIndex",
+    "category": "infra",
+    "vertical": null,
+    "group": "framework",
+    "profile": "agents/llamaindex.md",
+    "scope": "in"
+  },
+  "n8n-io/n8n": {
+    "display": "n8n",
+    "category": "infra",
+    "vertical": null,
+    "group": "workflow",
+    "profile": "agents/n8n.md",
+    "scope": "in"
+  },
+  "letta-ai/letta": {
+    "display": "Letta (MemGPT)",
+    "category": "infra",
+    "vertical": null,
+    "group": "memory-context",
+    "profile": "agents/memgpt.md",
+    "scope": "in"
+  },
+  "openinterpreter/openinterpreter": {
+    "display": "Open Interpreter",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/open-interpreter.md",
+    "scope": "in"
+  },
+  "berriai/litellm": {
+    "display": "LiteLLM",
+    "category": "infra",
+    "vertical": null,
+    "group": "gateway-runtime",
+    "profile": "agents/litellm.md",
+    "scope": "in"
+  },
+  "flowiseai/flowise": {
+    "display": "Flowise",
+    "category": "infra",
+    "vertical": null,
+    "group": "workflow",
+    "profile": "agents/flowise.md",
+    "scope": "in"
+  },
+  "yeachan-heo/oh-my-codex": {
+    "display": "oh-my-codex",
+    "category": "infra",
+    "vertical": null,
+    "group": "orchestration",
+    "profile": "agents/oh-my-codex.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "yeachan-heo/oh-my-claudecode": {
+    "display": "oh-my-claudecode",
+    "category": "infra",
+    "vertical": null,
+    "group": "orchestration",
+    "profile": "agents/oh-my-claudecode.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "siddharthvaddem/openscreen": {
+    "display": "OpenScreen",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": null,
+    "scope": "out",
+    "tracked": false
+  },
+  "google-ai-edge/gallery": {
+    "display": "AI Edge Gallery",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/ai-edge-gallery.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "cosmicstack-labs/mercury-agent": {
+    "display": "Mercury Agent",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/mercury-agent.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "aidc-ai/pixelle-video": {
+    "display": "Pixelle-Video",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": null,
+    "scope": "out",
+    "tracked": false
+  },
+  "huggingface/ml-intern": {
+    "display": "ml-intern",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/ml-intern.md",
+    "scope": "in",
+    "tracked": false
+  }
 }

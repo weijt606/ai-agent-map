@@ -6,13 +6,14 @@
 
 "harness" 是把 LLM 变成 agent 的最小脚手架——循环、工具表面、权限模型、skills 挂载点。这些项目你可以 fork、审计、端到端拥有，而不是照单全收的厂商产品。
 
-五个项目的当前 star 总量见[分类排行](../rankings/README.md)；本页比的是形态，不是体量。
+六个项目的当前 star 总量见[分类排行](../rankings/README.md)；本页比的是形态，不是体量。
 
 ## 一览
 
 | 项目 | 许可证 | 甜点区 | 体量 |
 | --- | --- | --- | --- |
 | [Pi](../agents/pi.md) | MIT（TS） | 终端优先的 coding harness，LLM 提供商覆盖面广 | 小核心 + 按需 skills/扩展 |
+| [jcode](../agents/jcode.md) | MIT（Rust） | 快、占用小、面向多会话工作流的终端 harness，带被动语义记忆 | 精简 Rust 二进制——同类中启动最快、RAM 最低 |
 | [OpenHands](../agents/openhands.md) | 开源 | 完整的开源 SWE agent（CLI + GUI + 云选项） | 最重——更接近产品 |
 | [SWE-agent](../agents/swe-agent.md) | MIT（Py） | SWE-bench 背后的研究参考实现，单 YAML 配置 | 中等；上游重心转向 mini-swe-agent |
 | [mini-swe-agent](../agents/mini-swe-agent.md) | MIT（Py） | ~100 行的接班版；SWE-bench Verified >74% | 极小——一次就能读完 |
@@ -24,5 +25,5 @@
 - 想要最小可信的 fork 底座：[mini-swe-agent](../agents/mini-swe-agent.md)。
 - 想要生产形态、可自托管的开放 runtime：[OpenHarness](../agents/openharness.md)。
 - 想发表 SWE-bench 成绩：[SWE-agent](../agents/swe-agent.md) 是规范参考，mini-swe-agent 是实际接班者。
-- 想要终端优先的日常 coding harness：[Pi](../agents/pi.md)。
+- 想要终端优先的日常 coding harness：[Pi](../agents/pi.md)；如果优先要速度、多会话下的低 RAM、以及内置被动记忆，选 [jcode](../agents/jcode.md)。
 - 想要更完整但仍开源的 SWE agent 产品：[OpenHands](../agents/openhands.md)。

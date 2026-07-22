@@ -797,6 +797,76 @@
           "gain": 821
         }
       ]
+    },
+    {
+      "date": "2026-07-22",
+      "window_start": "2026-07-14",
+      "window_end": "2026-07-22",
+      "source_commit": "",
+      "depth": 10,
+      "note": "",
+      "entries": [
+        {
+          "rank": 1,
+          "slug": "mattpocock/skills",
+          "stars": 181846,
+          "gain": 13570
+        },
+        {
+          "rank": 2,
+          "slug": "obra/superpowers",
+          "stars": 259273,
+          "gain": 5432
+        },
+        {
+          "rank": 3,
+          "slug": "earendil-works/pi",
+          "stars": 75371,
+          "gain": 4876
+        },
+        {
+          "rank": 4,
+          "slug": "nousresearch/hermes-agent",
+          "stars": 218828,
+          "gain": 4588
+        },
+        {
+          "rank": 5,
+          "slug": "openai/codex",
+          "stars": 100647,
+          "gain": 2954
+        },
+        {
+          "rank": 6,
+          "slug": "anthropics/skills",
+          "stars": 163371,
+          "gain": 2510
+        },
+        {
+          "rank": 7,
+          "slug": "1jehuang/jcode",
+          "stars": 10638,
+          "gain": 2319
+        },
+        {
+          "rank": 8,
+          "slug": "colbymchenry/codegraph",
+          "stars": 61648,
+          "gain": 1968
+        },
+        {
+          "rank": 9,
+          "slug": "addyosmani/agent-skills",
+          "stars": 79814,
+          "gain": 1908
+        },
+        {
+          "rank": 10,
+          "slug": "moonshotai/kimi-code",
+          "stars": 4531,
+          "gain": 1452
+        }
+      ]
     }
   ],
   "raw": [
@@ -970,6 +1040,179 @@
         },
         "flowiseai/flowise": {
           "stars": 54676,
+          "gain": null
+        }
+      }
+    },
+    {
+      "date": "2026-07-22",
+      "stars": {
+        "mattpocock/skills": {
+          "stars": 181846,
+          "gain": 13570
+        },
+        "obra/superpowers": {
+          "stars": 259273,
+          "gain": 5432
+        },
+        "earendil-works/pi": {
+          "stars": 75371,
+          "gain": 4876
+        },
+        "nousresearch/hermes-agent": {
+          "stars": 218828,
+          "gain": 4588
+        },
+        "openai/codex": {
+          "stars": 100647,
+          "gain": 2954
+        },
+        "anthropics/skills": {
+          "stars": 163371,
+          "gain": 2510
+        },
+        "1jehuang/jcode": {
+          "stars": 10638,
+          "gain": 2319
+        },
+        "colbymchenry/codegraph": {
+          "stars": 61648,
+          "gain": 1968
+        },
+        "addyosmani/agent-skills": {
+          "stars": 79814,
+          "gain": 1908
+        },
+        "moonshotai/kimi-code": {
+          "stars": 4531,
+          "gain": 1452
+        },
+        "imbad0202/academic-research-skills": {
+          "stars": 38961,
+          "gain": 1286
+        },
+        "tauricresearch/tradingagents": {
+          "stars": 94073,
+          "gain": 1258
+        },
+        "ruvnet/ruflo": {
+          "stars": 65523,
+          "gain": 1205
+        },
+        "openclaw/openclaw": {
+          "stars": 383811,
+          "gain": 982
+        },
+        "k-dense-ai/scientific-agent-skills": {
+          "stars": 31471,
+          "gain": 641
+        },
+        "hkuds/cli-anything": {
+          "stars": 45744,
+          "gain": 481
+        },
+        "rohitg00/agentmemory": {
+          "stars": 25560,
+          "gain": 473
+        },
+        "humanlayer/12-factor-agents": {
+          "stars": 24650,
+          "gain": 425
+        },
+        "tinyhumansai/openhuman": {
+          "stars": 35210,
+          "gain": 420
+        },
+        "xiaomimimo/mimo-code": {
+          "stars": 12334,
+          "gain": 393
+        },
+        "hmbown/codewhale": {
+          "stars": 40012,
+          "gain": 263
+        },
+        "anthropics/financial-services": {
+          "stars": 33704,
+          "gain": 246
+        },
+        "zgsm-ai/costrict": {
+          "stars": 4316,
+          "gain": 24
+        },
+        "anthropics/claude-code": {
+          "stars": 138685,
+          "gain": null
+        },
+        "aider-ai/aider": {
+          "stars": 47617,
+          "gain": null
+        },
+        "cline/cline": {
+          "stars": 64930,
+          "gain": null
+        },
+        "continuedev/continue": {
+          "stars": 35032,
+          "gain": null
+        },
+        "openhands/openhands": {
+          "stars": 81701,
+          "gain": null
+        },
+        "swe-agent/swe-agent": {
+          "stars": 19886,
+          "gain": null
+        },
+        "swe-agent/mini-swe-agent": {
+          "stars": 5959,
+          "gain": null
+        },
+        "hkuds/openharness": {
+          "stars": 14985,
+          "gain": null
+        },
+        "aaif-goose/goose": {
+          "stars": 51465,
+          "gain": null
+        },
+        "significant-gravitas/autogpt": {
+          "stars": 185652,
+          "gain": null
+        },
+        "langchain-ai/langchain": {
+          "stars": 142327,
+          "gain": null
+        },
+        "langchain-ai/langgraph": {
+          "stars": 37861,
+          "gain": null
+        },
+        "crewaiinc/crewai": {
+          "stars": 55966,
+          "gain": null
+        },
+        "run-llama/llama_index": {
+          "stars": 51009,
+          "gain": null
+        },
+        "n8n-io/n8n": {
+          "stars": 197463,
+          "gain": null
+        },
+        "letta-ai/letta": {
+          "stars": 23916,
+          "gain": null
+        },
+        "openinterpreter/openinterpreter": {
+          "stars": 67116,
+          "gain": null
+        },
+        "berriai/litellm": {
+          "stars": 54367,
+          "gain": null
+        },
+        "flowiseai/flowise": {
+          "stars": 54832,
           "gain": null
         }
       }

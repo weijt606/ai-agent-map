@@ -4,6 +4,10 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-07-22 —— jcode 加入 harness 路线
+
+- **新增 [jcode](agents/jcode.md) profile**（EN + zh）——这个 Rust 多会话 coding harness（`1jehuang/jcode`，MIT，10.6k）在进入每周增量前 10（#7）后，从候补转正为已收录 profile。它与 [Pi](agents/pi.md) 一起归入 **agent harness 框架** 路线，并接入 [harness 对比](comparisons/agent-harness-frameworks.md)（现为六个）、[选型矩阵](comparisons/mainstream-agent-landscape.md) 和 [编码自动化指南](use-cases/coding-automation.md)。覆盖数升至 55 个 profile；`catalog.json` 已把 jcode 标为已收录。
+
 ## 2026-07-16 —— 主页瘦身、厂商信息刷新、市场事件档案
 
 - **README 重构降密度**：两个市场事件板块收成三条"市场脉搏"要点；50 行覆盖表折叠成四个可展开分组；热榜附注折叠；harness 表迁至 [comparisons/agent-harness-frameworks.md](comparisons/agent-harness-frameworks.md)；导航合并并新增排行入口。

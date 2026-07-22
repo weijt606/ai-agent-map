@@ -57,6 +57,7 @@
 | [OpenHuman](../agents/openhuman.md) | 自托管桌面生活集成 agent | 本地桌面（Tauri） | 常驻 + 20 分钟自动拉取 | 想要一个已经认识你的 Gmail、Notion、GitHub、日历的个人 AI 助手 | GPL-3.0；价值随你接入的 118+ 连接器数量放大 |
 | [CodeGraph](../agents/codegraph.md) | Agent 上下文基础设施 | 本地 MCP server + SQLite | 一次索引 + 文件实时 watch | 让 Claude Code、Cursor、Codex CLI、opencode、Hermes Agent 的代码问答更便宜 | 多了一层索引；只在中到大仓库回本 |
 | [CLI-Anything](../agents/cli-anything.md) | Agent-native 软件桥接 | 生成 Click PyPI CLI 的 pipeline | 一次生成、持续维护 | 让 agent 驱动那些没有 API 的软件（Blender、GIMP、LibreOffice 等） | 上游应用演进后生成的 CLI 需要重新验证 |
+| [jcode](../agents/jcode.md) | 性能优先的 coding harness | 本地终端（Rust） | 多会话、自己掌控循环 | 想要快、低 RAM、provider 中立、跨多会话带被动语义记忆的 harness | 项目较年轻；配置和功能仍在移动 |
 | [SWE-agent](../agents/swe-agent.md) | 研究级 SWE harness | 本地 Python | single-YAML 实验循环 | 复现 SWE-bench 数字、做攻击型安全 CTF 研究 | 上游开发精力已经大部分转移到 mini-swe-agent |
 | [mini-swe-agent](../agents/mini-swe-agent.md) | 极简 SWE harness | 本地 Python | fork-and-modify | 一次看完整个 agent loop、改任何想改的部分 | 故意做得很轻——工具、UI 和可运维性自己补 |
 | [OpenHarness](../agents/openharness.md) | 生产形态开源 harness | 本地 CLI / TUI | 按子系统逐个可审计 | 自托管一个带权限、skills、MCP 的生产级 harness | 比 mini-swe-agent 重；价值取决于你是否真的用上更宽的功能 |

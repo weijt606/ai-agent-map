@@ -14,7 +14,7 @@ In scope: foreground, single-developer terminal loops whose primary job is writi
 
 - **Editor-centric surfaces** — [Cursor](../agents/cursor.md), [Windsurf](../agents/windsurf.md), [Continue](../agents/continue.md) (the editor is the agent, not the terminal).
 - **Cloud delegation / managed execution** — [Devin](../agents/devin.md), [Jules](../agents/jules.md), [Claude Managed Agents](../agents/claude-managed-agents.md) (you hand off and check back, not a foreground loop).
-- **Harness frameworks you fork and own** — [Pi](../agents/pi.md), [OpenHands](../agents/openhands.md), [SWE-agent](../agents/swe-agent.md) (see the [harness frameworks at a glance](../README.md#agent-harness-frameworks-at-a-glance)). Pi is terminal-first and coding-capable, but its value is owning the loop, not adopting a vendor product.
+- **Harness frameworks you fork and own** — [Pi](../agents/pi.md), [jcode](../agents/jcode.md), [OpenHands](../agents/openhands.md), [SWE-agent](../agents/swe-agent.md) (compared in [agent harness frameworks](agent-harness-frameworks.md)). Pi and jcode are terminal-first and coding-capable, but their value is owning the loop, not adopting a vendor product.
 
 ## One-Page Comparison
 

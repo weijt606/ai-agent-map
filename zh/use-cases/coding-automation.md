@@ -17,7 +17,9 @@
 | 我要厂商官方、Kimi 原生的终端编码循环 | [Kimi Code](../agents/kimi-code.md) |
 | 我要终端写代码，且内置跨会话记忆 | [MiMoCode](../agents/mimocode.md) |
 | 我要在低成本 DeepSeek / MiMo 模型上跑 Claude Code 循环 | [CodeWhale](../agents/codewhale.md) |
+| 我要一个自己拥有、快、provider 中立、跨多会话带被动记忆的 harness | [jcode](../agents/jcode.md) |
 | 我要把各厂商终端编码 CLI 摆一起对比 | [终端编码 CLI agent](../comparisons/coding-cli-agents.md) |
+| 我要对比自己掌控循环的 harness 框架 | [agent harness 框架](../comparisons/agent-harness-frameworks.md) |
 | 我要把明确任务异步丢到云端跑 | [Codex](../agents/codex.md) |
 | 我要当前最强的 OpenAI agentic coding 模型，百万 token 上下文 | [GPT-5.5](../agents/gpt-5.5.md) |
 | 我已经在用 Claude Code，只是想补强 teams、skills 和 orchestration | [oh-my-claudecode](../agents/oh-my-claudecode.md) |
@@ -55,6 +57,7 @@
 | 云端委派型 | [Codex](../agents/codex.md), [Devin](../agents/devin.md), [Jules](../agents/jules.md) | 先交任务，再回来 review |
 | 管理式后台路径 | [Claude Managed Agents](../agents/claude-managed-agents.md) | 更偏定时、后台、程序化 Anthropic 工作流 |
 | review-first 自动化 | [Cline](../agents/cline.md), [GitHub Copilot](../agents/github-copilot.md), [Froge Code](../agents/froge-code.md) | 让 agent 很强，但把合并和节奏留给人 |
+| 自己掌控循环的 harness | [jcode](../agents/jcode.md), [OpenHands](../agents/openhands.md) | 把厂商成品挡在外面——你拥有循环、工具和权限（见 [harness 框架对比](../comparisons/agent-harness-frameworks.md)） |
 | 自建 / 自托管 | [OpenHands](../agents/openhands.md), [Goose](../agents/goose.md), [Hermes Agent](../agents/hermes-agent.md), [LangChain](../agents/langchain.md), [LangGraph](../agents/langgraph.md) | 灵活，但要自己承担环境和运维 |
 
 ## 关键取舍

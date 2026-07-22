@@ -6,13 +6,14 @@
 
 A "harness" is the minimal scaffolding around an LLM that turns it into an agent — the loop, the tool surface, the permission model, the skills hook. These are projects you can fork, audit, and own end-to-end, rather than vendor products you adopt as-is.
 
-Current star totals for all five live in the [rankings boards](../rankings/README.md); this page compares shape, not size.
+Current star totals for all six live in the [rankings boards](../rankings/README.md); this page compares shape, not size.
 
 ## At A Glance
 
 | Project | License | Sweet spot | Footprint |
 | --- | --- | --- | --- |
 | [Pi](../agents/pi.md) | MIT (TS) | Terminal-first coding harness with broad LLM provider coverage | Small core + opt-in skills/extensions |
+| [jcode](../agents/jcode.md) | MIT (Rust) | Fast, low-footprint terminal harness for multi-session workflows, with passive semantic memory | Lean Rust binary — fastest boot / lowest RAM in class |
 | [OpenHands](../agents/openhands.md) | Open source | Full open-source SWE agent (CLI + GUI + cloud option) | Heaviest — closer to a product |
 | [SWE-agent](../agents/swe-agent.md) | MIT (Py) | Research reference behind SWE-bench, single-YAML config | Medium; upstream moving focus to mini-swe-agent |
 | [mini-swe-agent](../agents/mini-swe-agent.md) | MIT (Py) | ~100-line successor; SWE-bench Verified >74% | Tiny — readable in one sitting |
@@ -24,5 +25,5 @@ Current star totals for all five live in the [rankings boards](../rankings/READM
 - If you want the smallest credible base to fork: [mini-swe-agent](../agents/mini-swe-agent.md).
 - If you want a production-shaped open runtime to self-host: [OpenHarness](../agents/openharness.md).
 - If you want to publish SWE-bench numbers: [SWE-agent](../agents/swe-agent.md) is the canonical reference; mini-swe-agent is the working successor.
-- If you want a terminal-first day-to-day coding harness: [Pi](../agents/pi.md).
+- If you want a terminal-first day-to-day coding harness: [Pi](../agents/pi.md), or [jcode](../agents/jcode.md) if speed, low RAM across many sessions, and built-in passive memory are the priorities.
 - If you want a more complete SWE agent product that is still open source: [OpenHands](../agents/openhands.md).

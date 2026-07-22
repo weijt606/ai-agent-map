@@ -38,34 +38,34 @@ Popularity is not fit.
 
 This table tracks projects that showed up as especially hot in the latest weekly GitHub snapshot. The rank follows the 7-day gain. The total star counts below were checked when this repo was updated.
 
-> **Last updated:** 2026-07-14 · **Snapshot window:** 2026-07-08 → 2026-07-14 (gain since last update, ~6 days, approximate) · **Star counts:** checked at update time
+> **Last updated:** 2026-07-22 · **Snapshot window:** 2026-07-14 → 2026-07-22 (gain since last update, ~8 days, approximate) · **Star counts:** checked at update time
 
 Project names link to the upstream GitHub repo. When this map has a written profile, it is linked separately in the "Map status" column.
 
 | Rank | Project | Current stars | Snapshot gain | Map status | How to read it |
 | --- | --- | --- | --- | --- | --- |
-| #1&nbsp;(=) | [mattpocock/skills](https://github.com/mattpocock/skills) | 168.3k | +7,712 | Watchlist (Skills Wave) | Held the gain lead for a fourth straight window — Matt Pocock's curated `.claude/skills` directory cleared 168k |
-| #2&nbsp;(↑) | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 77.9k | +5,052 | Watchlist (Skills Wave) | Climbed one spot to #2 — Addy Osmani's curated agent-skills collection cleared 77k |
-| #3&nbsp;(↓) | [Superpowers](https://github.com/obra/superpowers) | 253.8k | +4,445 | In scope · [profile](agents/superpowers.md) | Slipped one spot but crossed 253k — the wave's framework anchor keeps compounding |
-| #4&nbsp;(=) | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 214.2k | +2,915 | In scope · [profile](agents/hermes-agent.md) | Steady at #4 — the in-scope absolute leader cleared 214k |
-| #5&nbsp;(↑) | [Pi](https://github.com/earendil-works/pi) | 70.5k | +1,907 | In scope · [profile](agents/pi.md) | Jumped two spots from #7 — the Earendil-owned harness cleared 70k |
-| #6&nbsp;(↓) | [anthropics/skills](https://github.com/anthropics/skills) | 160.9k | +1,490 | Watchlist (Skills Wave canonical) | Slipped one spot — Anthropic's own reference `.claude/skills` repo, the upstream source, cleared 160k |
-| #7&nbsp;(↑) | [Codex CLI](https://github.com/openai/codex) | 97.7k | +1,459 | In scope · [profile](agents/codex.md) | Climbed two spots from #9 — OpenAI's Codex CLI neared 98k |
-| #8&nbsp;(↓) | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 59.7k | +1,147 | In scope · [profile](agents/codegraph.md) | Cooled two spots to #8 — the pre-indexed code knowledge graph neared 60k |
-| #9&nbsp;(↓) | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 92.8k | +1,038 | Out of scope | Vertical finance-research multi-agent system slipped one spot and cleared 92k — high total, steady gain, but out of scope as a domain vertical |
-| #10&nbsp;(=) | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 37.7k | +821 | Watchlist (Skills Wave) | Held #10 — academic research pipeline for Claude Code cleared 37k |
+| #1&nbsp;(=) | [mattpocock/skills](https://github.com/mattpocock/skills) | 181.8k | +13,570 | Watchlist (Skills Wave) | Held the gain lead for a fifth straight window with its biggest jump yet — Matt Pocock's curated `.claude/skills` directory cleared 181k |
+| #2&nbsp;(↑) | [Superpowers](https://github.com/obra/superpowers) | 259.3k | +5,432 | In scope · [profile](agents/superpowers.md) | Reclaimed #2 and neared 260k — the wave's framework anchor keeps compounding |
+| #3&nbsp;(↑) | [Pi](https://github.com/earendil-works/pi) | 75.4k | +4,876 | In scope · [profile](agents/pi.md) | Jumped two spots to #3 — the Earendil-owned harness cleared 75k |
+| #4&nbsp;(=) | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 218.8k | +4,588 | In scope · [profile](agents/hermes-agent.md) | Steady at #4 — the in-scope absolute leader cleared 218k |
+| #5&nbsp;(↑) | [Codex CLI](https://github.com/openai/codex) | 100.6k | +2,954 | In scope · [profile](agents/codex.md) | Climbed two spots to #5 and crossed 100k — OpenAI's Codex CLI |
+| #6&nbsp;(=) | [anthropics/skills](https://github.com/anthropics/skills) | 163.4k | +2,510 | Watchlist (Skills Wave canonical) | Held #6 — Anthropic's own reference `.claude/skills` repo, the upstream source, cleared 163k |
+| #7&nbsp;(new) | [jcode](https://github.com/1jehuang/jcode) | 10.6k | +2,319 | In scope · [profile](agents/jcode.md) | Entered the table — the Rust multi-session coding harness accelerated from the watchlist, cleared 10k, and is now profiled |
+| #8&nbsp;(=) | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 61.6k | +1,968 | In scope · [profile](agents/codegraph.md) | Held #8 — the pre-indexed code knowledge graph cleared 61k |
+| #9&nbsp;(↓) | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 79.8k | +1,908 | Watchlist (Skills Wave) | Cooled from #2 to #9 as its gain roughly halved — Addy Osmani's curated agent-skills collection neared 80k |
+| #10&nbsp;(new) | [Kimi Code](https://github.com/MoonshotAI/kimi-code) | 4.5k | +1,452 | In scope · [profile](agents/kimi-code.md) | Entered the table — Moonshot's vendor-official Kimi-native CLI cleared 4.5k |
 
 - Heat is useful for discovery, not for selection by itself.
-- The headline this window is more curated-skills rotation with no breakout: [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) climbed one spot to #2 (+5.1k, past 77k), overtaking [Superpowers](agents/superpowers.md), which slipped to #3 (past 253k). Above them [mattpocock/skills](https://github.com/mattpocock/skills) held the #1 gain spot for a fourth straight window (+7.7k, past 168k). The only real reshuffle below was [Pi](agents/pi.md) jumping two spots to #5 and [Codex CLI](agents/codex.md) two spots to #7, pushing [anthropics/skills](https://github.com/anthropics/skills) and [codegraph](agents/codegraph.md) down.
-- **New-inclusion scan** turned up no new in-scope surface this window. The freshest and largest new repos are [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering) (7.3k, JavaScript — patterns, starters and CLI tooling for "loop engineering") and [inkeep/open-knowledge](https://github.com/inkeep/open-knowledge) (2.8k, TypeScript — an AI-native markdown wiki editor); both join the watchlist alongside the still-climbing [langchain-ai/openwiki](https://github.com/langchain-ai/openwiki) (10.9k), [op7418/guizang-social-card-skill](https://github.com/op7418/guizang-social-card-skill) (5.0k), [vercel/eve](https://github.com/vercel/eve) (3.5k), [JimLiu/baoyu-design](https://github.com/JimLiu/baoyu-design) (2.6k) and [tigicion/dao-code](https://github.com/tigicion/dao-code) (1.6k). None clears the in-scope bar yet.
+- The headline this window is **[mattpocock/skills](https://github.com/mattpocock/skills) surging to a fifth straight #1** with its biggest gain yet (+13.6k, past 181k — nearly double its usual pace), while last window's #2 [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) collapsed to #9 as its gain roughly halved (+1.9k). [Superpowers](agents/superpowers.md) reclaimed #2 (+5.4k, near 260k) and [Pi](agents/pi.md) jumped to #3 (+4.9k, past 75k), with [Codex CLI](agents/codex.md) crossing 100k at #5. The other story is two in-scope newcomers entering the gain table: **[jcode](agents/jcode.md) at #7** and [Kimi Code](agents/kimi-code.md) at #10, pushing [TradingAgents](https://github.com/TauricResearch/TradingAgents) and [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) off it.
+- **New-inclusion decision: [jcode](agents/jcode.md) is promoted from the watchlist to an in-scope profile.** The Rust multi-session coding harness (`1jehuang/jcode`, 10.6k, MIT) has climbed steadily since May and now enters the gain-ranked top 10 at #7 (+2.3k); it joins the [agent harness framework](comparisons/agent-harness-frameworks.md) route alongside [Pi](agents/pi.md). Nothing else cleared the bar. The freshest new repos — [Sahir619/fable-method](https://github.com/Sahir619/fable-method) (1.8k, the Fable 5 workflow distilled into skills), [ai4s-research/open-science](https://github.com/ai4s-research/open-science) (0.9k, a local-first AI research workbench) and [KlaatAI/klaatcode](https://github.com/KlaatAI/klaatcode) (0.2k, an open terminal coding agent) — join the watchlist, none in-scope yet.
 
 <details>
 <summary>More window notes: skills-wave share, OpenClaw, and everything growing outside the top 10</summary>
 
-- The `.claude/skills` wave still holds five of the top ten (`mattpocock/skills`, `addyosmani/agent-skills`, `Superpowers`, `anthropics/skills`, `academic-research-skills`). Policy unchanged: curated collections are tracked as Skills Wave entries, the framework end is covered through [Superpowers](agents/superpowers.md).
-- [TradingAgents](https://github.com/TauricResearch/TradingAgents) slipped to #9 (+1.0k, past 92k) but stays out of scope as a finance-research vertical; [Codex CLI](agents/codex.md) climbed to #7 (near 98k) and [Pi](agents/pi.md) to #5 (past 70k).
-- [OpenClaw](agents/openclaw.md) remains the absolute leader at 382.8k stars (+0.7k); it is profiled but stays out of the gain-ranked table because reliable week-over-week deltas for a project this large are noisy.
-- Continuing to grow but outside the top 10 by gain: [Ruflo](agents/ruflo.md) 64.3k (+0.8k), [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) 30.8k (+0.4k), [openhuman](agents/openhuman.md) 34.8k (+0.4k), [CLI-Anything](agents/cli-anything.md) 45.3k (+0.3k), [MiMoCode](agents/mimocode.md) 11.9k (+0.3k), [agentmemory](https://github.com/rohitg00/agentmemory) 25.1k (+0.3k), [financial-services](https://github.com/anthropics/financial-services) 33.5k (+0.2k), [CodeWhale](agents/codewhale.md) 39.7k (+0.2k), [12-factor-agents](https://github.com/humanlayer/12-factor-agents) 24.2k (+0.2k), [jcode](https://github.com/1jehuang/jcode) 8.3k (+0.1k), [Kimi Code](agents/kimi-code.md) 3.1k (+0.1k), [CoStrict](agents/costrict.md) 4.3k (flat).
+- The `.claude/skills` wave narrowed to four of the top ten (`mattpocock/skills`, `Superpowers`, `anthropics/skills`, `addyosmani/agent-skills`) as `academic-research-skills` dropped off the gain table. Policy unchanged: curated collections are tracked as Skills Wave entries, the framework end is covered through [Superpowers](agents/superpowers.md).
+- [TradingAgents](https://github.com/TauricResearch/TradingAgents) rose to 94.1k (+1.3k) but fell off the top 10 and stays out of scope as a finance-research vertical; [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) also dropped off at 39.0k (+1.3k).
+- [OpenClaw](agents/openclaw.md) remains the absolute leader at 383.8k stars (+1.0k); it is profiled but stays out of the gain-ranked table because reliable week-over-week deltas for a project this large are noisy.
+- Continuing to grow but outside the top 10 by gain: [Ruflo](agents/ruflo.md) 65.5k (+1.2k), [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) 31.5k (+0.6k), [CLI-Anything](agents/cli-anything.md) 45.7k (+0.5k), [agentmemory](https://github.com/rohitg00/agentmemory) 25.6k (+0.5k), [12-factor-agents](https://github.com/humanlayer/12-factor-agents) 24.7k (+0.4k), [openhuman](agents/openhuman.md) 35.2k (+0.4k), [MiMoCode](agents/mimocode.md) 12.3k (+0.4k), [CodeWhale](agents/codewhale.md) 40.0k (+0.3k), [financial-services](https://github.com/anthropics/financial-services) 33.7k (+0.2k), [CoStrict](agents/costrict.md) 4.3k (flat).
 
 </details>
 
@@ -92,7 +92,7 @@ The three structural stories shaping selection right now — full records with d
 | Route | Representative projects | Typical user |
 | --- | --- | --- |
 | Direct execution | [Claude Code](agents/claude-code.md), [Aider](agents/aider.md), [Codex](agents/codex.md), [Kimi Code](agents/kimi-code.md), [MiMoCode](agents/mimocode.md), [CodeWhale](agents/codewhale.md), [Devin](agents/devin.md), [Jules](agents/jules.md) | Someone who wants to hand a concrete coding task to an agent (see the [terminal coding CLI comparison](comparisons/coding-cli-agents.md)) |
-| Agent harness framework | [Pi](agents/pi.md), [OpenHands](agents/openhands.md), [SWE-agent](agents/swe-agent.md), [mini-swe-agent](agents/mini-swe-agent.md), [OpenHarness](agents/openharness.md) | Someone who wants to own the agent loop, tool surface, and permissions instead of inheriting a vendor's product (see the [harness comparison](comparisons/agent-harness-frameworks.md)) |
+| Agent harness framework | [Pi](agents/pi.md), [jcode](agents/jcode.md), [OpenHands](agents/openhands.md), [SWE-agent](agents/swe-agent.md), [mini-swe-agent](agents/mini-swe-agent.md), [OpenHarness](agents/openharness.md) | Someone who wants to own the agent loop, tool surface, and permissions instead of inheriting a vendor's product (see the [harness comparison](comparisons/agent-harness-frameworks.md)) |
 | Frontier agentic model | [Claude Fable 5](agents/claude-fable-5.md), [GPT-5.5](agents/gpt-5.5.md) | Someone choosing which model to wire into their own agent system or evaluating the capability ceiling of Anthropic / OpenAI surfaces |
 | Agentic skills framework | [Superpowers](agents/superpowers.md) | Someone who wants a methodology + composable skills layer that plugs into Claude Code, Codex, Cursor, and similar agents |
 | Workflow / orchestration layer | [oh-my-claudecode](agents/oh-my-claudecode.md), [oh-my-codex](agents/oh-my-codex.md), [Ruflo](agents/ruflo.md) | Someone who already likes Claude Code or Codex and wants stronger orchestration on top (Ruflo extends this to multi-machine federation and 100+ specialized agents) |
@@ -106,10 +106,10 @@ The three structural stories shaping selection right now — full records with d
 
 ## Current Mainstream Coverage
 
-54 profiled projects, grouped by what they are. Expand a group, or browse the full route/coverage tables in [agents/](agents/README.md).
+55 profiled projects, grouped by what they are. Expand a group, or browse the full route/coverage tables in [agents/](agents/README.md).
 
 <details>
-<summary><strong>Coding agents, editors, and orchestration</strong> (23 projects)</summary>
+<summary><strong>Coding agents, editors, and orchestration</strong> (24 projects)</summary>
 
 | Project | Route | One-line positioning |
 | --- | --- | --- |
@@ -129,6 +129,7 @@ The three structural stories shaping selection right now — full records with d
 | [Continue](agents/continue.md) | Editor-centric | Open-source IDE extension with full model freedom |
 | [Froge Code](agents/froge-code.md) | Review-first automation | Provisionally mapped to Automagik Genie |
 | [Pi](agents/pi.md) | Direct execution | Minimal terminal coding-agent harness with multi-provider LLM support |
+| [jcode](agents/jcode.md) | Agent harness framework | Rust multi-session coding harness — fastest boot, provider-neutral OAuth, passive semantic memory |
 | [CodeWhale](agents/codewhale.md) | Direct execution | DeepSeek + MiMo terminal coding agent (formerly DeepSeek-TUI) |
 | [Kimi Code](agents/kimi-code.md) | Direct execution | Moonshot AI's official Kimi-native terminal coding CLI (successor to kimi-cli) |
 | [MiMoCode](agents/mimocode.md) | Direct execution | Xiaomi's official MiMo terminal coding agent with built-in cross-session memory |

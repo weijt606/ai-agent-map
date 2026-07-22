@@ -14,7 +14,7 @@
 
 - **编辑器中心表面** —— [Cursor](../agents/cursor.md)、[Windsurf](../agents/windsurf.md)、[Continue](../agents/continue.md)（编辑器本身是 agent，而不是终端）。
 - **云端委派 / 托管执行** —— [Devin](../agents/devin.md)、[Jules](../agents/jules.md)、[Claude Managed Agents](../agents/claude-managed-agents.md)（你交出去再回来查，不是前台循环）。
-- **可 fork 自有的 harness 框架** —— [Pi](../agents/pi.md)、[OpenHands](../agents/openhands.md)、[SWE-agent](../agents/swe-agent.md)（见 [harness 框架一览](../README.md#agent-harness-框架一览)）。Pi 是终端优先、能写代码，但它的价值是拥有循环，而不是采用一个厂商产品。
+- **可 fork 自有的 harness 框架** —— [Pi](../agents/pi.md)、[jcode](../agents/jcode.md)、[OpenHands](../agents/openhands.md)、[SWE-agent](../agents/swe-agent.md)（见 [agent harness 框架对比](agent-harness-frameworks.md)）。Pi 和 jcode 都是终端优先、能写代码，但它们的价值是拥有循环，而不是采用一个厂商产品。
 
 ## 一页对比
 

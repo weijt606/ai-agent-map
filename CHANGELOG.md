@@ -4,6 +4,10 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-07-22 — jcode joins the harness route
+
+- **New [jcode](agents/jcode.md) profile** (EN + zh) — the Rust multi-session coding harness (`1jehuang/jcode`, MIT, 10.6k) graduated from the watchlist to an in-scope profile after entering the weekly gain top 10 at #7. It joins the **agent harness framework** route alongside [Pi](agents/pi.md), the [harness comparison](comparisons/agent-harness-frameworks.md) (now six), the [selection matrix](comparisons/mainstream-agent-landscape.md), and the [coding-automation guide](use-cases/coding-automation.md). Coverage is now 55 profiles; `catalog.json` marks jcode in-scope.
+
 ## 2026-07-16 — Home-page slimdown, vendor refresh, and the market-events archive
 
 - **README restructured for density**: the two Market Event sections collapsed into a three-bullet Market Pulse; the 50-row coverage table folded into four collapsible groups; heat-table side notes folded; the harness table moved to [comparisons/agent-harness-frameworks.md](comparisons/agent-harness-frameworks.md); navigation merged with a rankings entry added.

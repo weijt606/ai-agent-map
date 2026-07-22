@@ -81,6 +81,14 @@ How the weekly top 10 has shifted since tracking began — each line is one proj
 
 Full stock rankings by category — agents, agent infra, skills, and their verticals, sorted by total stars — live in [rankings/](rankings/README.md).
 
+## Beyond The Rank
+
+Popularity tells you what to look at. These three pages tell you what to pick:
+
+- **[Capability matrix](capabilities/matrix.md)** — every project scored side by side (●/◐/○/—) across the nine shared [capability dimensions](capabilities/README.md), grouped by route. The answer to "for this capability, who treats it as a core strength."
+- **[Cost & benchmarks](comparisons/cost-and-benchmarks.md)** — frontier-model capability vs per-token price, plus how each coding agent actually bills. Since the model layer went tiered and metered, "which tier for this task" is the selection decision.
+- **[Memory approaches](comparisons/memory-approaches.md)** — six different things projects mean by "has memory," from self-editing stores to passive semantic recall, and which to pick for what you need to persist.
+
 ## Market Pulse
 
 The three structural stories shaping selection right now — full records with dates and sources live in [market-events.md](market-events.md):

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="322" viewBox="0 0 920 322" font-family="system-ui, -apple-system, sans-serif">
+<rect width="920" height="322" rx="10" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)"/>
+<text x="46" y="26" font-size="16" font-weight="700" fill="#0b0b0b">Who holds the weekly top 10 — seats by layer</text>
+<text x="46" y="44" font-size="11" fill="#52514e">Last updated 2026-07-22 · one bar per weekly window · amber = the skills wave</text>
+<line x1="46" y1="266.0" x2="670" y2="266.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="38" y="269.5" font-size="10" fill="#52514e" text-anchor="end">0</text>
+<line x1="46" y1="226.0" x2="670" y2="226.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="38" y="229.5" font-size="10" fill="#52514e" text-anchor="end">2</text>
+<line x1="46" y1="186.0" x2="670" y2="186.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="38" y="189.5" font-size="10" fill="#52514e" text-anchor="end">4</text>
+<line x1="46" y1="146.0" x2="670" y2="146.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="38" y="149.5" font-size="10" fill="#52514e" text-anchor="end">6</text>
+<line x1="46" y1="106.0" x2="670" y2="106.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="38" y="109.5" font-size="10" fill="#52514e" text-anchor="end">8</text>
+<line x1="46" y1="66.0" x2="670" y2="66.0" stroke="#e1e0d9" stroke-width="1"/>
+<text x="38" y="69.5" font-size="10" fill="#52514e" text-anchor="end">10</text>
+<rect x="46.0" y="206.0" width="35.3" height="60.0" fill="#2a78d6" rx="1.5"/>
+<text x="63.6" y="239.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="46.0" y="166.0" width="35.3" height="40.0" fill="#898781" rx="1.5"/>
+<text x="63.6" y="189.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">2</text>
+<text x="63.6" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">04-11</text>
+<rect x="91.3" y="206.0" width="35.3" height="60.0" fill="#2a78d6" rx="1.5"/>
+<text x="108.9" y="239.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="91.3" y="166.0" width="35.3" height="40.0" fill="#898781" rx="1.5"/>
+<text x="108.9" y="189.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">2</text>
+<text x="108.9" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">04-23</text>
+<rect x="136.6" y="186.0" width="35.3" height="80.0" fill="#2a78d6" rx="1.5"/>
+<text x="154.2" y="229.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="136.6" y="146.0" width="35.3" height="40.0" fill="#898781" rx="1.5"/>
+<text x="154.2" y="169.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">2</text>
+<text x="154.2" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">04-26</text>
+<rect x="181.9" y="166.0" width="35.3" height="100.0" fill="#2a78d6" rx="1.5"/>
+<text x="199.5" y="219.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">5</text>
+<rect x="181.9" y="126.0" width="35.3" height="40.0" fill="#898781" rx="1.5"/>
+<text x="199.5" y="149.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">2</text>
+<text x="199.5" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">05-02</text>
+<rect x="227.1" y="126.0" width="35.3" height="140.0" fill="#2a78d6" rx="1.5"/>
+<text x="244.8" y="199.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">7</text>
+<rect x="227.1" y="106.0" width="35.3" height="20.0" fill="#898781" rx="1.5"/>
+<text x="244.8" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">05-08</text>
+<rect x="272.4" y="226.0" width="35.3" height="40.0" fill="#2a78d6" rx="1.5"/>
+<text x="290.1" y="249.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">2</text>
+<rect x="272.4" y="186.0" width="35.3" height="40.0" fill="#898781" rx="1.5"/>
+<text x="290.1" y="209.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">2</text>
+<rect x="272.4" y="66.0" width="35.3" height="120.0" fill="#eda100" rx="1.5"/>
+<text x="290.1" y="129.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">6</text>
+<text x="290.1" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">05-23</text>
+<rect x="317.7" y="186.0" width="35.3" height="80.0" fill="#2a78d6" rx="1.5"/>
+<text x="335.4" y="229.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="317.7" y="146.0" width="35.3" height="40.0" fill="#898781" rx="1.5"/>
+<text x="335.4" y="169.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">2</text>
+<rect x="317.7" y="66.0" width="35.3" height="80.0" fill="#eda100" rx="1.5"/>
+<text x="335.4" y="109.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">4</text>
+<text x="335.4" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">06-02</text>
+<rect x="363.0" y="186.0" width="35.3" height="80.0" fill="#2a78d6" rx="1.5"/>
+<text x="380.6" y="229.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="363.0" y="166.0" width="35.3" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="363.0" y="66.0" width="35.3" height="100.0" fill="#eda100" rx="1.5"/>
+<text x="380.6" y="119.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">5</text>
+<text x="380.6" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">06-11</text>
+<rect x="408.3" y="186.0" width="35.3" height="80.0" fill="#2a78d6" rx="1.5"/>
+<text x="425.9" y="229.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="408.3" y="166.0" width="35.3" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="408.3" y="66.0" width="35.3" height="100.0" fill="#eda100" rx="1.5"/>
+<text x="425.9" y="119.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">5</text>
+<text x="425.9" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">06-17</text>
+<rect x="453.6" y="186.0" width="35.3" height="80.0" fill="#2a78d6" rx="1.5"/>
+<text x="471.2" y="229.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="453.6" y="166.0" width="35.3" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="453.6" y="66.0" width="35.3" height="100.0" fill="#eda100" rx="1.5"/>
+<text x="471.2" y="119.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">5</text>
+<text x="471.2" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">06-24</text>
+<rect x="498.9" y="186.0" width="35.3" height="80.0" fill="#2a78d6" rx="1.5"/>
+<text x="516.5" y="229.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="498.9" y="166.0" width="35.3" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="498.9" y="66.0" width="35.3" height="100.0" fill="#eda100" rx="1.5"/>
+<text x="516.5" y="119.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">5</text>
+<text x="516.5" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">07-02</text>
+<rect x="544.1" y="186.0" width="35.3" height="80.0" fill="#2a78d6" rx="1.5"/>
+<text x="561.8" y="229.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="544.1" y="166.0" width="35.3" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="544.1" y="66.0" width="35.3" height="100.0" fill="#eda100" rx="1.5"/>
+<text x="561.8" y="119.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">5</text>
+<text x="561.8" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">07-08</text>
+<rect x="589.4" y="186.0" width="35.3" height="80.0" fill="#2a78d6" rx="1.5"/>
+<text x="607.1" y="229.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="589.4" y="166.0" width="35.3" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="589.4" y="66.0" width="35.3" height="100.0" fill="#eda100" rx="1.5"/>
+<text x="607.1" y="119.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">5</text>
+<text x="607.1" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">07-14</text>
+<rect x="634.7" y="166.0" width="35.3" height="100.0" fill="#2a78d6" rx="1.5"/>
+<text x="652.4" y="219.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">5</text>
+<rect x="634.7" y="146.0" width="35.3" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="634.7" y="66.0" width="35.3" height="80.0" fill="#eda100" rx="1.5"/>
+<text x="652.4" y="109.5" font-size="10" font-weight="600" fill="#ffffff" text-anchor="middle">4</text>
+<text x="652.4" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">07-22</text>
+<rect x="694" y="65" width="12" height="12" rx="2" fill="#eda100"/>
+<text x="712" y="75.5" font-size="11.5" fill="#0b0b0b">skill</text>
+<rect x="694" y="87" width="12" height="12" rx="2" fill="#898781"/>
+<text x="712" y="97.5" font-size="11.5" fill="#0b0b0b">infra</text>
+<rect x="694" y="109" width="12" height="12" rx="2" fill="#2a78d6"/>
+<text x="712" y="119.5" font-size="11.5" fill="#0b0b0b">agent</text>
+<text x="694" y="150" font-size="10.5" fill="#52514e">latest window:</text>
+<text x="694" y="166" font-size="10.5" font-weight="600" fill="#0b0b0b">skill 4 · agent 5 · infra 1</text>
+<text x="46" y="308" font-size="10" fill="#52514e">Table depth grew over time: top 5–8 before 2026-05-23, top 10 since — shorter early bars reflect that, not fewer projects.</text>
+</svg>

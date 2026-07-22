@@ -4,6 +4,13 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-07-22 — Route map and top-10 composition charts
+
+Two new home-page visuals (EN + zh), same design language as the bump chart:
+
+- **Route ecosystem map** (`assets/route-map-{en,zh}.svg`, from `scripts/render-route-map.py`) — the "First Cut" table drawn as an actual map: 12 routes as cards grouped into four decisions, each naming its flagships. Embedded at the top of the route section on both home pages; regenerated manually when routes change (playbook step 5).
+- **Top-10 composition chart** (`assets/heat-composition-{en,zh}.svg`, from `scripts/render-composition.py`) — stacked bars of weekly top-10 seats by layer (agent / infra / skill), computed from `history.json` + `catalog.json`. The quantitative form of the skills-wave story; wired into `publish` so it refreshes weekly, and into `validate.py`'s SVG freshness gate.
+
 ## 2026-07-22 — Capability matrix, cost/benchmark, and memory-approaches pages
 
 Three additive comparison surfaces that move the map beyond popularity, without touching the existing route/coverage structure:

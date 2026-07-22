@@ -45,6 +45,9 @@ case "$cmd" in
     echo "==> Rerendering trend charts…"
     python3 scripts/render-trend.py
 
+    echo "==> Rerendering composition charts…"
+    python3 scripts/render-composition.py
+
     echo "==> Running full validation (gate)…"
     if ! python3 scripts/validate.py; then
       echo "==> Validation FAILED — aborting, nothing committed or pushed." >&2

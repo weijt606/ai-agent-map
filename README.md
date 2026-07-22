@@ -79,6 +79,12 @@ How the weekly top 10 has shifted since tracking began — each line is one proj
   <img src="assets/heat-trend-en.svg" alt="Weekly heat ranking trend (bump chart)" width="100%" />
 </p>
 
+And the same windows read as seats per layer — the quantitative version of the skills-wave story the bullets tell in prose:
+
+<p align="center">
+  <img src="assets/heat-composition-en.svg" alt="Weekly top-10 composition by layer (stacked bars)" width="100%" />
+</p>
+
 Full stock rankings by category — agents, agent infra, skills, and their verticals, sorted by total stars — live in [rankings/](rankings/README.md).
 
 ## Beyond The Rank
@@ -98,6 +104,10 @@ The three structural stories shaping selection right now — full records with d
 - **Product boundaries are collapsing upward**: OpenAI merged Codex into the ChatGPT app (July 9) — on the OpenAI side, "which coding agent" is turning into "how you use ChatGPT." See [Codex](agents/codex.md).
 
 ## The First Cut Of The Map
+
+<p align="center">
+  <img src="assets/route-map-en.svg" alt="The AI Agent Map — 12 routes grouped into four decisions" width="100%" />
+</p>
 
 | Route | Representative projects | Typical user |
 | --- | --- | --- |

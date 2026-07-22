@@ -32,7 +32,10 @@ RANKINGS_FILES = [
     "rankings/README.md", "rankings/agent-verticals.md", "rankings/skill-verticals.md",
     "zh/rankings/README.md", "zh/rankings/agent-verticals.md", "zh/rankings/skill-verticals.md",
 ]
-TREND_SVGS = ["assets/heat-trend-en.svg", "assets/heat-trend-zh.svg"]
+TREND_SVGS = [
+    "assets/heat-trend-en.svg", "assets/heat-trend-zh.svg",
+    "assets/heat-composition-en.svg", "assets/heat-composition-zh.svg",
+]
 HISTORY = os.path.join(ROOT, "scripts", "history.json")
 CATALOG = os.path.join(ROOT, "scripts", "catalog.json")
 

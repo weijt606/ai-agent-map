@@ -4,6 +4,13 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-07-22 —— 路线地图与 Top-10 构成图
+
+两张新的主页可视化（EN + zh），与 bump chart 同一套设计语言：
+
+- **路线生态地图**（`assets/route-map-{en,zh}.svg`，由 `scripts/render-route-map.py` 生成）——把"先摊开"那张表画成真正的地图：12 条路线作为卡片、按四类决策分组，每张卡列出旗舰项目。嵌在两个主页路线区顶部；路线变化时手动重渲（playbook step 5）。
+- **Top-10 构成图**（`assets/heat-composition-{en,zh}.svg`，由 `scripts/render-composition.py` 生成）——每周 Top-10 席位按层（agent / infra / skill）的堆叠柱状图，数据来自 `history.json` + `catalog.json`。skills 浪潮故事的量化形态；已接进 `publish` 每周自动刷新，并纳入 `validate.py` 的 SVG 新鲜度闸门。
+
 ## 2026-07-22 —— 能力矩阵、成本/benchmark、记忆方案页
 
 三个纯新增的对比面，把地图推过"只看流行度"，且不动现有路线/覆盖结构：

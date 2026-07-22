@@ -42,11 +42,11 @@ changes actually touch them — see step 5.
    every table to the same date. Update the "continuing to grow" / off-table
    bullet and the OpenClaw line.
 
-   The rankings/ boards, the history file, and the trend charts are regenerated
-   automatically by `publish` — do **not** hand-edit anything between
-   `<!-- auto:... -->` markers in rankings/ files or the SVGs in assets/. Do give
-   the editorial prose in rankings/ (the trend read-out, section intros) a quick
-   look in case the story has moved on.
+   The rankings/ boards, the history file, the trend charts, and the top-10
+   composition charts are regenerated automatically by `publish` — do **not**
+   hand-edit anything between `<!-- auto:... -->` markers in rankings/ files or
+   the SVGs in assets/. Do give the editorial prose in rankings/ (the trend
+   read-out, section intros) a quick look in case the story has moved on.
 
 3. **Update hot topics.** Rewrite the narrative bullets under each table and add
    a dated "Market events" entry for anything structural (a breakout, a rebrand,
@@ -81,6 +81,11 @@ changes actually touch them — see step 5.
      recorded in market-events) → refresh the affected rows in
      `comparisons/cost-and-benchmarks.md` ×2, including the "as of" month in
      its note line.
+   - **Route or profile-count change** (new profile, new/renamed route) → update
+     the data block in `scripts/render-route-map.py` (names, "+N" counts — they
+     must keep summing to the home page's profile total) and rerun it to refresh
+     `assets/route-map-{en,zh}.svg`. The route map is a manual asset; `publish`
+     does not regenerate it.
    - Keep the rule from the profiles: only numbers already established
      elsewhere in the map (vendor profiles, market-events) go into
      cost-and-benchmarks — never invent a figure during a routine refresh.

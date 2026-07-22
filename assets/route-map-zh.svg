@@ -22,7 +22,7 @@
 <text x="39.0" y="199.0" font-size="10.5" fill="#52514e">oh-my-claudecode, oh-my-codex, Ruflo</text>
 <rect x="319.3" y="158.0" width="281.3" height="58" rx="7" fill="#ffffff" stroke="rgba(11,11,11,0.12)"/>
 <rect x="319.3" y="158.0" width="3.5" height="58" rx="1.75" fill="#2a78d6"/>
-<text x="332.3" y="180.0" font-size="12" font-weight="600" fill="#0b0b0b">托管后台路径</text>
+<text x="332.3" y="180.0" font-size="12" font-weight="600" fill="#0b0b0b">管理式后台路径</text>
 <text x="332.3" y="199.0" font-size="10.5" fill="#52514e">Claude Managed Agents</text>
 <circle cx="31" cy="243" r="5" fill="#eb6834"/>
 <text x="44" y="247" font-size="12.5" font-weight="700" fill="#0b0b0b">自己掌控循环</text>
@@ -32,21 +32,21 @@
 <text x="39.0" y="303.0" font-size="10.5" fill="#52514e">Pi, jcode, OpenHands · 等 3 个</text>
 <rect x="319.3" y="262.0" width="281.3" height="58" rx="7" fill="#ffffff" stroke="rgba(11,11,11,0.12)"/>
 <rect x="319.3" y="262.0" width="3.5" height="58" rx="1.75" fill="#eb6834"/>
-<text x="332.3" y="284.0" font-size="12" font-weight="600" fill="#0b0b0b">自托管 / 本地运行时</text>
+<text x="332.3" y="284.0" font-size="12" font-weight="600" fill="#0b0b0b">自托管 / 本地 runtime</text>
 <text x="332.3" y="303.0" font-size="10.5" fill="#52514e">Hermes Agent, OpenClaw, Goose · 等 3 个</text>
 <rect x="612.7" y="262.0" width="281.3" height="58" rx="7" fill="#ffffff" stroke="rgba(11,11,11,0.12)"/>
 <rect x="612.7" y="262.0" width="3.5" height="58" rx="1.75" fill="#eb6834"/>
 <text x="625.7" y="284.0" font-size="12" font-weight="600" fill="#0b0b0b">通用自主 agent</text>
 <text x="625.7" y="303.0" font-size="10.5" fill="#52514e">AutoGPT, Agent Zero, BabyAGI · 等 3 个</text>
 <circle cx="31" cy="347" r="5" fill="#1baf7a"/>
-<text x="44" y="351" font-size="12.5" font-weight="700" fill="#0b0b0b">自建系统</text>
+<text x="44" y="351" font-size="12.5" font-weight="700" fill="#0b0b0b">自建与基础设施</text>
 <rect x="26.0" y="366.0" width="281.3" height="58" rx="7" fill="#ffffff" stroke="rgba(11,11,11,0.12)"/>
 <rect x="26.0" y="366.0" width="3.5" height="58" rx="1.75" fill="#1baf7a"/>
-<text x="39.0" y="388.0" font-size="12" font-weight="600" fill="#0b0b0b">自建框架</text>
+<text x="39.0" y="388.0" font-size="12" font-weight="600" fill="#0b0b0b">自建系统</text>
 <text x="39.0" y="407.0" font-size="10.5" fill="#52514e">LangChain, LangGraph, CrewAI · 等 5 个</text>
 <rect x="319.3" y="366.0" width="281.3" height="58" rx="7" fill="#ffffff" stroke="rgba(11,11,11,0.12)"/>
 <rect x="319.3" y="366.0" width="3.5" height="58" rx="1.75" fill="#1baf7a"/>
-<text x="332.3" y="388.0" font-size="12" font-weight="600" fill="#0b0b0b">运行时与工具</text>
+<text x="332.3" y="388.0" font-size="12" font-weight="600" fill="#0b0b0b">运行时 &amp; 工具</text>
 <text x="332.3" y="407.0" font-size="10.5" fill="#52514e">n8n, MemGPT, CodeGraph · 等 4 个</text>
 <circle cx="31" cy="451" r="5" fill="#4a3aa7"/>
 <text x="44" y="455" font-size="12.5" font-weight="700" fill="#0b0b0b">模型与技能层</text>

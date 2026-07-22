@@ -24,7 +24,7 @@
 | **GPT-5.6 Luna**（OpenAI） | — | — | $1 / $6 | GPT-5.6 的经济档 |
 | **Claude Fable 5**（Anthropic） | **77.2** | — | $10 / $50 | Mythos 级；按量额度计费，不打包进订阅 |
 | **GPT-5.5**（OpenAI） | **76.4** | SWE-Bench Pro 58.6% | —（≈GPT-5.4 的 2×） | 2026 春季参照模型 |
-| **Claude Opus 4.8**（Anthropic） | **72.5** | — | — | Claude Code 里 Fable 5 额度用完后可靠的默认 |
+| **Claude Opus 4.8**（Anthropic） | **72.5** | — | $5 / $25 | 两侧都是 Fable 5 的一半（见 [Fable 5 profile](../agents/claude-fable-5.md)）；Claude Code 里可靠的默认 |
 
 > SWE-Bench Pro 参照点：Claude Opus 4.7 得 64.3%，高于 GPT-5.5 的 58.6%。破折号（—）表示本图未追踪该数字，不是零。数据截至 **2026 年 7 月**，取自厂商 profile（[Claude Fable 5](../agents/claude-fable-5.md)、[GPT-5.5](../agents/gpt-5.5.md)）；价格和指数位次会变——预算前务必以厂商为准。
 

@@ -36,7 +36,7 @@
 <text x="332.3" y="303.0" font-size="10.5" fill="#52514e">Hermes Agent, OpenClaw, Goose · +3 more</text>
 <rect x="612.7" y="262.0" width="281.3" height="58" rx="7" fill="#ffffff" stroke="rgba(11,11,11,0.12)"/>
 <rect x="612.7" y="262.0" width="3.5" height="58" rx="1.75" fill="#eb6834"/>
-<text x="625.7" y="284.0" font-size="12" font-weight="600" fill="#0b0b0b">General-purpose autonomous</text>
+<text x="625.7" y="284.0" font-size="12" font-weight="600" fill="#0b0b0b">General-purpose autonomous agent</text>
 <text x="625.7" y="303.0" font-size="10.5" fill="#52514e">AutoGPT, Agent Zero, BabyAGI · +3 more</text>
 <circle cx="31" cy="347" r="5" fill="#1baf7a"/>
 <text x="44" y="351" font-size="12.5" font-weight="700" fill="#0b0b0b">Build your own</text>

@@ -24,7 +24,7 @@ The **Artificial Analysis Coding Agent Index** is the cross-model capability num
 | **GPT-5.6 Luna** (OpenAI) | — | — | $1 / $6 | Budget tier of GPT-5.6 |
 | **Claude Fable 5** (Anthropic) | **77.2** | — | $10 / $50 | Mythos-class; runs on metered credits, not bundled in subscriptions |
 | **GPT-5.5** (OpenAI) | **76.4** | SWE-Bench Pro 58.6% | — (≈2× GPT-5.4) | Spring 2026 reference model |
-| **Claude Opus 4.8** (Anthropic) | **72.5** | — | — | The dependable default inside Claude Code once Fable 5 credits run out |
+| **Claude Opus 4.8** (Anthropic) | **72.5** | — | $5 / $25 | Half of Fable 5 on both sides (per the [Fable 5 profile](../agents/claude-fable-5.md)); the dependable default inside Claude Code |
 
 > Reference point for SWE-Bench Pro: Claude Opus 4.7 scored 64.3%, ahead of GPT-5.5's 58.6%. A dash (—) means the figure is not tracked in this map, not that it is zero. Numbers are as of **July 2026** and sourced from the vendor profiles ([Claude Fable 5](../agents/claude-fable-5.md), [GPT-5.5](../agents/gpt-5.5.md)); prices and index positions move — always confirm against the vendor before budgeting.
 

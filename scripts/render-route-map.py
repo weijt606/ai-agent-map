@@ -38,16 +38,16 @@ GROUPS = [
         ("Editor-centric AI workflow", "编辑器中心", ["Cursor", "Windsurf", "Continue"], 3),
         ("Review-first automation", "评审优先自动化", ["Cline", "GitHub Copilot"], 4),
         ("Workflow / orchestration layer", "工作流编排层", ["oh-my-claudecode", "oh-my-codex", "Ruflo"], 3),
-        ("Managed background path", "托管后台路径", ["Claude Managed Agents"], 1),
+        ("Managed background path", "管理式后台路径", ["Claude Managed Agents"], 1),
     ]),
     ("Own the loop", "自己掌控循环", "#eb6834", [
         ("Agent harness framework", "Agent harness 框架", ["Pi", "jcode", "OpenHands"], 6),
-        ("Self-hosted / local runtime", "自托管 / 本地运行时", ["Hermes Agent", "OpenClaw", "Goose"], 6),
-        ("General-purpose autonomous", "通用自主 agent", ["AutoGPT", "Agent Zero", "BabyAGI"], 6),
+        ("Self-hosted / local runtime", "自托管 / 本地 runtime", ["Hermes Agent", "OpenClaw", "Goose"], 6),
+        ("General-purpose autonomous agent", "通用自主 agent", ["AutoGPT", "Agent Zero", "BabyAGI"], 6),
     ]),
-    ("Build your own", "自建系统", "#1baf7a", [
-        ("Build-your-own system", "自建框架", ["LangChain", "LangGraph", "CrewAI"], 8),
-        ("Runtime and tools", "运行时与工具", ["n8n", "MemGPT", "CodeGraph"], 7),
+    ("Build your own", "自建与基础设施", "#1baf7a", [
+        ("Build-your-own system", "自建系统", ["LangChain", "LangGraph", "CrewAI"], 8),
+        ("Runtime and tools", "运行时 & 工具", ["n8n", "MemGPT", "CodeGraph"], 7),
     ]),
     ("The model & skill layer", "模型与技能层", "#4a3aa7", [
         ("Frontier agentic model", "前沿 agentic 模型", ["Claude Fable 5", "GPT-5.5"], 2),

@@ -16,6 +16,10 @@ Three things change every week, not just the rank:
    Add a profile if a project clears the in-scope bar; otherwise add it to the
    watchlist bullet and note it for next week.
 
+Plus one **conditional** pass: the selection surfaces (capability matrix,
+cost & benchmarks, memory approaches) are refreshed only when the window's
+changes actually touch them — see step 5.
+
 ## Steps
 
 1. **Fetch the data.**
@@ -65,7 +69,23 @@ Three things change every week, not just the rank:
    infra group, profile path, scope) — `render-rankings.py` fails hard on a
    tracked repo with no metadata.
 
-5. **Publish (gated).**
+5. **Sync the selection surfaces (conditional — skip when nothing applies).**
+   These pages are hand-maintained; they only change when the window produced a
+   matching event:
+   - **New in-scope profile** → add a scored row to `capabilities/matrix.md` ×2
+     in its route group (●/◐/○/— per the legend), and mention it in the group's
+     "Standouts" line if it changes the story.
+   - **New profile with memory as a headline feature** → wire it into the right
+     section of `comparisons/memory-approaches.md` ×2.
+   - **Model-layer event** (new model/tier, price change, new benchmark number
+     recorded in market-events) → refresh the affected rows in
+     `comparisons/cost-and-benchmarks.md` ×2, including the "as of" month in
+     its note line.
+   - Keep the rule from the profiles: only numbers already established
+     elsewhere in the map (vendor profiles, market-events) go into
+     cost-and-benchmarks — never invent a figure during a routine refresh.
+
+6. **Publish (gated).**
    ```
    scripts/weekly-update.sh publish "Refresh weekly heat ranking (YYYY-MM-DD): <headline>"
    ```

@@ -21,6 +21,12 @@
 
 > 打分刻意做得粗——它是选型辅助，不是 benchmark。反映的是每个项目在其 profile 里*自述*的重心，不是实验室实测。要看成本和编码能力的硬数字，见 [成本 & benchmark](../comparisons/cost-and-benchmarks.md)。
 
+## 一个格子背后的证据
+
+光一个符号无法核实、也无法反驳——半年后没人记得它当时对应哪个版本、在哪验证、什么时候验证。所以格子可以带一条**[证据记录](evidence-records.md)**：符号还在，但它和 `scope`、`source`、`version`、`review_date`、以及那个用来定分歧的字段 `evidence_type`（`documentation` = 宣传的 vs `source`/`demo`/`benchmark` = 实测的）一起走。记忆格子再进一步拆成生命周期子 schema——因为两个都打 ● 的记忆格子行为可能天差地别。
+
+这一套正分阶段推进；[jcode](../agents/jcode.md) 的记忆格子已跑通全流程作为模板——下表它的 `Mem` 符号链到它的记录。schema、记忆子 schema 和分阶段计划见 **[证据记录](evidence-records.md)**。schema 出自 [u/teugent](https://www.reddit.com/r/AI_Agents/comments/1v56023/)。
+
 ## 终端编码 CLI
 
 | 项目 | Tool | Exec | Mem | Orch | Multi | Appr | Sched | Surf | Deploy |
@@ -39,7 +45,7 @@
 | 项目 | Tool | Exec | Mem | Orch | Multi | Appr | Sched | Surf | Deploy |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | [Pi](../agents/pi.md) | ● | ● | ◐ | ◐ | ○ | ◐ | ○ | ○ | ● |
-| [jcode](../agents/jcode.md) | ● | ● | ● | ◐ | ◐ | ◐ | ○ | ○ | ● |
+| [jcode](../agents/jcode.md) | ● | ● | [●](evidence-records.md#完整样例jcode-记忆格子) | ◐ | ◐ | ◐ | ○ | ○ | ● |
 | [OpenHands](../agents/openhands.md) | ● | ● | ◐ | ● | ◐ | ◐ | ◐ | ◐ | ● |
 | [SWE-agent](../agents/swe-agent.md) | ● | ● | ○ | ○ | — | ○ | — | ○ | ● |
 | [mini-swe-agent](../agents/mini-swe-agent.md) | ◐ | ● | — | ○ | — | ○ | — | ○ | ● |

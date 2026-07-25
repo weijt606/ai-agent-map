@@ -21,6 +21,12 @@ Columns, abbreviated from the [dimension vocabulary](README.md): **Tool** = tool
 
 > Scores are coarse by design — a selection aid, not a benchmark. They reflect each project's *stated* center of gravity as captured in its profile, not a lab measurement. For hard numbers on cost and coding capability, see [cost & benchmarks](../comparisons/cost-and-benchmarks.md).
 
+## Evidence Behind A Cell
+
+A bare mark can't be verified or disputed — six months on, nobody remembers which edition it applied to, where it was checked, or when. So a cell can carry an **[evidence record](evidence-records.md)**: the mark stays, but it travels with `scope`, `source`, `version`, `review_date`, and — the field that settles disagreements — `evidence_type` (`documentation` = advertised vs `source`/`demo`/`benchmark` = observed). Memory cells decompose further into a lifecycle sub-schema, because two ● memory cells can behave nothing alike.
+
+This is rolling out in phases; [jcode](../agents/jcode.md)'s memory cell is worked end-to-end as the template — its `Mem` mark below links to its record. See **[evidence records](evidence-records.md)** for the schema, the memory sub-schema, and the phase plan. Schema credit: [u/teugent](https://www.reddit.com/r/AI_Agents/comments/1v56023/).
+
 ## Terminal Coding CLIs
 
 | Project | Tool | Exec | Mem | Orch | Multi | Appr | Sched | Surf | Deploy |
@@ -39,7 +45,7 @@ Standouts: Claude Code and Codex are the broadest **delivery surfaces**; Codex i
 | Project | Tool | Exec | Mem | Orch | Multi | Appr | Sched | Surf | Deploy |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | [Pi](../agents/pi.md) | ● | ● | ◐ | ◐ | ○ | ◐ | ○ | ○ | ● |
-| [jcode](../agents/jcode.md) | ● | ● | ● | ◐ | ◐ | ◐ | ○ | ○ | ● |
+| [jcode](../agents/jcode.md) | ● | ● | [●](evidence-records.md#worked-example-jcode-memory-cell) | ◐ | ◐ | ◐ | ○ | ○ | ● |
 | [OpenHands](../agents/openhands.md) | ● | ● | ◐ | ● | ◐ | ◐ | ◐ | ◐ | ● |
 | [SWE-agent](../agents/swe-agent.md) | ● | ● | ○ | ○ | — | ○ | — | ○ | ● |
 | [mini-swe-agent](../agents/mini-swe-agent.md) | ◐ | ● | — | ○ | — | ○ | — | ○ | ● |

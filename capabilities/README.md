@@ -31,3 +31,5 @@ The point is to keep profile pages speaking the same language, otherwise it beco
 ## The Matrix
 
 These dimensions are applied to every project, side by side, in the **[capability matrix](matrix.md)** — scored on whether each capability is a core strength (●), solid support (◐), limited (○), or not a goal (—). Start there when you are choosing between projects rather than reading one profile.
+
+A bare mark can't be verified or disputed, so cells can carry an **[evidence record](evidence-records.md)** — the mark plus where, when, and against which edition it was checked, and whether the evidence is *advertised* or *observed*. See that page for the schema, the memory lifecycle sub-schema, and the phased rollout.

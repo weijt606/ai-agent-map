@@ -26,12 +26,15 @@ In scope: foreground, single-developer terminal loops whose primary job is writi
 | [Kimi Code](../agents/kimi-code.md) | Moonshot AI | Kimi (K2) | TypeScript / MIT | First-party Kimi loop with strong IDE reach via ACP + a VS Code extension |
 | [MiMoCode](../agents/mimocode.md) | Xiaomi | MiMo (MiMo Auto) | TypeScript / MIT | Persistent cross-session memory built in — keeps project understanding across runs |
 | [CodeWhale](../agents/codewhale.md) | Hmbown (community) | DeepSeek + MiMo | Rust / open source | Claude-Code shape refit around low-cost Chinese-stack models as first-class citizens |
+| [Grok Build](../agents/grok-build.md) | SpaceXAI / xAI | Grok | Rust / Apache-2.0 (source-available) | One binary covering three modes — full-screen TUI, headless CI, and an ACP server editors can drive |
 
-> Vendor-official CLIs (Claude Code, Codex, Kimi Code, MiMoCode) tune the model and the loop together. Third-party/community CLIs (Aider, CodeWhale) trade that for portability or a specific cost/model target.
+> Vendor-official CLIs (Claude Code, Codex, Kimi Code, MiMoCode, Grok Build) tune the model and the loop together. Third-party/community CLIs (Aider, CodeWhale) trade that for portability or a specific cost/model target.
+>
+> **Open source is not one thing here.** Aider (Apache-2.0), Kimi Code and MiMoCode (MIT) take outside contributions. [Grok Build](../agents/grok-build.md) ships Apache-2.0 source but is a periodic export from SpaceXAI's monorepo and **explicitly does not accept external contributions** — read it, fork it, but you cannot upstream to it.
 
 ## How To Choose
 
-1. **Start from the model you want to run.** If you are committed to a vendor's models, its first-party CLI is usually the best-tuned path: Claude → [Claude Code](../agents/claude-code.md), GPT-5.x → [Codex](../agents/codex.md), Kimi → [Kimi Code](../agents/kimi-code.md), MiMo → [MiMoCode](../agents/mimocode.md), DeepSeek/MiMo on a budget → [CodeWhale](../agents/codewhale.md).
+1. **Start from the model you want to run.** If you are committed to a vendor's models, its first-party CLI is usually the best-tuned path: Claude → [Claude Code](../agents/claude-code.md), GPT-5.x → [Codex](../agents/codex.md), Kimi → [Kimi Code](../agents/kimi-code.md), MiMo → [MiMoCode](../agents/mimocode.md), Grok → [Grok Build](../agents/grok-build.md), DeepSeek/MiMo on a budget → [CodeWhale](../agents/codewhale.md).
 2. **If model freedom matters more than tuning,** pick a provider-neutral base: [Aider](../agents/aider.md) for a finished CLI, or step up to the [Pi](../agents/pi.md) harness if you want to own the loop.
 3. **If long-horizon memory on one repo is the pain point,** [MiMoCode](../agents/mimocode.md)'s built-in cross-session memory is the clearest differentiator; otherwise pair any CLI with [CodeGraph](../agents/codegraph.md) for code-context indexing.
 4. **If you need cloud delegation or background runs,** none of these foreground loops fit — go to [Codex](../agents/codex.md) (cloud side), [Jules](../agents/jules.md), or [Devin](../agents/devin.md).
@@ -40,6 +43,7 @@ In scope: foreground, single-developer terminal loops whose primary job is writi
 
 - **A vendor CLI is not just a model endpoint.** Claude Code, Kimi Code, and MiMoCode tune the agent loop, tools, and prompts around their own model — that is the value over pointing a generic harness at the same API.
 - **MiMoCode is not [CodeWhale](../agents/codewhale.md).** MiMoCode is Xiaomi's first-party CLI; CodeWhale is a community Rust TUI that wraps DeepSeek + MiMo. They share a model family, not a codebase.
+- **Apache-2.0 does not mean community-built.** [Grok Build](../agents/grok-build.md) carries a real OSS license on a tree that is closed to contributions and synced from a private monorepo. If your reason for choosing open source is influence over the roadmap rather than the right to read and fork, check the contribution policy, not just the LICENSE file.
 - **A coding CLI is not a harness.** If you want to fork, audit, and own the loop end-to-end, that is [Pi](../agents/pi.md) / [OpenHands](../agents/openhands.md) territory, not a vendor product you adopt as-is.
 
 For the broader, all-routes view, see the [mainstream agent selection matrix](mainstream-agent-landscape.md). For a problem-first walkthrough, see the [coding automation guide](../use-cases/coding-automation.md).

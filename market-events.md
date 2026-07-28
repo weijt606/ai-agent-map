@@ -4,6 +4,14 @@
 
 Structural events that reshaped agent selection — model releases, product mergers, and waves — newest first. The weekly play-by-play lives in the "Market events" timeline in [agents/README.md](agents/README.md); this page keeps the durable records.
 
+## July 14 2026 — xAI Ships Grok Build, And Open Source Splits In Two
+
+SpaceXAI (xAI) released **[Grok Build](agents/grok-build.md)** (`grok`), a Rust terminal coding agent in the Claude Code mold — full-screen TUI, headless mode for CI, and an Agent Client Protocol server so editors can drive it, plus MCP servers, skills, plugins, hooks, and sandboxing. It reached **23.2k stars and 4.4k forks within 15 days**, the fastest debut this map has recorded. Every major model vendor now ships a first-party coding CLI.
+
+**Impact on selection:** the vendor-CLI field is now essentially complete (Anthropic, OpenAI, Moonshot, Xiaomi, xAI), so "which coding CLI" is increasingly downstream of "which model do you pay for." The more durable lesson is a governance split the map now has to make explicit: Grok Build is **Apache-2.0 but closed to contributions** — a periodic export from a private monorepo, with in-tree ports of `openai/codex` and `sst/opencode` tool code. Source-available and community-built have visibly diverged, and the LICENSE file no longer tells you which one you are getting. Details: [Grok Build](agents/grok-build.md), [terminal coding CLI comparison](comparisons/coding-cli-agents.md).
+
+Sources: [xai-org/grok-build](https://github.com/xai-org/grok-build), [x.ai/cli](https://x.ai/cli), [docs.x.ai/build/overview](https://docs.x.ai/build/overview).
+
 ## July 9 2026 — Codex Merges Into ChatGPT; GPT-5.6 Ships
 
 OpenAI merged the standalone Codex app into the ChatGPT desktop app (macOS/Windows): Codex is now a dedicated coding entry next to Chat and the new agentic **ChatGPT Work** mode, available on every plan including Free. The same day, **GPT-5.6** replaced GPT-5.5 across ChatGPT, Codex, and the API in three tiers — Sol ($5/$30 per M tokens), Terra ($2.5/$15), Luna ($1/$6) — plus an Ultra multi-agent setting. Codex reports 5M+ weekly users, over 1M of them working outside software development.

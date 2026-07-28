@@ -40,34 +40,36 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 
 这张表记录的是最近一周 GitHub 快照里特别热的 agent 项目。排名按 7 天增量。下面的总 star 数是这次更新仓库时重新核对过的当前值。
 
-> **最后更新：** 2026-07-22 · **快照窗口：** 2026-07-14 → 2026-07-22（自上次更新以来的增量，约 8 天，估算） · **Star 总数：** 更新时实时核对
+> **最后更新：** 2026-07-29 · **快照窗口：** 2026-07-22 → 2026-07-29（自上次更新以来的增量，7 天，估算） · **Star 总数：** 更新时实时核对
 
 项目名链接指向上游 GitHub 仓库。本仓库已写入的 profile，在"在本仓库中的状态"列单独给出链接。
 
 | 排名 | 项目 | 当前 stars | 快照增量 | 在本仓库中的状态 | 应该怎么读 |
 | --- | --- | --- | --- | --- | --- |
-| #1&#8288;（=） | [mattpocock/skills](https://github.com/mattpocock/skills) | 181.8k | +13,570 | 候补（Skills 浪潮） | 连续第五个窗口守住增量榜首，且涨幅创新高——Matt Pocock 的 `.claude/skills` 个人技能集越过 181k |
-| #2&#8288;（↑） | [Superpowers](https://github.com/obra/superpowers) | 259.3k | +5,432 | 已收录 · [profile](agents/superpowers.md) | 夺回 #2 并逼近 260k——浪潮的框架锚点持续复利增长 |
-| #3&#8288;（↑） | [Pi](https://github.com/earendil-works/pi) | 75.4k | +4,876 | 已收录 · [profile](agents/pi.md) | 跳升两位到 #3——Earendil 接手的 harness 越过 75k |
-| #4&#8288;（=） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 218.8k | +4,588 | 已收录 · [profile](agents/hermes-agent.md) | 稳守 #4——已收录项目里绝对总数第一，越过 218k |
-| #5&#8288;（↑） | [Codex CLI](https://github.com/openai/codex) | 100.6k | +2,954 | 已收录 · [profile](agents/codex.md) | 上升两位到 #5 并越过 10 万——OpenAI 的 Codex CLI |
-| #6&#8288;（=） | [anthropics/skills](https://github.com/anthropics/skills) | 163.4k | +2,510 | 候补（Skills 浪潮源头） | 稳守 #6——Anthropic 自家的 `.claude/skills` 参考仓库，上游源头，越过 163k |
-| #7&#8288;（新） | [jcode](https://github.com/1jehuang/jcode) | 10.6k | +2,319 | 已收录 · [profile](agents/jcode.md) | 进入榜单——Rust 多会话 coding harness 从候补加速冲入，越过 10k，本周转正写入 profile |
-| #8&#8288;（=） | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 61.6k | +1,968 | 已收录 · [profile](agents/codegraph.md) | 稳守 #8——预索引代码知识图谱越过 61k |
-| #9&#8288;（↓） | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 79.8k | +1,908 | 候补（Skills 浪潮） | 增量近乎腰斩，从 #2 降温到 #9——Addy Osmani 的 curated agent-skills 集逼近 80k |
-| #10&#8288;（新） | [Kimi Code](https://github.com/MoonshotAI/kimi-code) | 4.5k | +1,452 | 已收录 · [profile](agents/kimi-code.md) | 进入榜单——月之暗面官方的 Kimi 原生 CLI 越过 4.5k |
+| #1&#8288;（=） | [mattpocock/skills](https://github.com/mattpocock/skills) | 192.9k | +11,033 | 候补（Skills 浪潮） | 连续第六个窗口守住增量榜首——Matt Pocock 的 `.claude/skills` 个人技能集越过 192k，但涨幅已从上窗口的新高回落 |
+| #2&#8288;（↑） | [Pi](https://github.com/earendil-works/pi) | 79.7k | +4,286 | 已收录 · [profile](agents/pi.md) | 升到 #2 并逼近 80k——Earendil 接手的 harness 是前五里最稳的增长者 |
+| #3&#8288;（↓） | [Superpowers](https://github.com/obra/superpowers) | 262.7k | +3,409 | 已收录 · [profile](agents/superpowers.md) | 增量掉了三分之一，退到 #3，但越过 262k——仍是浪潮的框架锚点 |
+| #4&#8288;（=） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 221.9k | +3,057 | 已收录 · [profile](agents/hermes-agent.md) | 连续第三个窗口稳守 #4——已收录项目里绝对总数第一，越过 221k |
+| #5&#8288;（↑） | [jcode](https://github.com/1jehuang/jcode) | 12.8k | +2,156 | 已收录 · [profile](agents/jcode.md) | 转正后第一个完整窗口就升两位——Rust 多会话 harness 越过 12.7k |
+| #6&#8288;（↓） | [Codex CLI](https://github.com/openai/codex) | 102.1k | +1,498 | 已收录 · [profile](agents/codex.md) | 过了 10 万之后增量腰斩，退到 #6——越过 102k |
+| #7&#8288;（↑） | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 63.1k | +1,464 | 已收录 · [profile](agents/codegraph.md) | 升一位到 #7——预索引代码知识图谱越过 63k |
+| #8&#8288;（↓） | [anthropics/skills](https://github.com/anthropics/skills) | 164.8k | +1,439 | 候补（Skills 浪潮源头） | 增量近乎腰斩，退两位——Anthropic 自家参考仓库越过 164k |
+| #9&#8288;（↑） | [Kimi Code](https://github.com/MoonshotAI/kimi-code) | 5.5k | +997 | 已收录 · [profile](agents/kimi-code.md) | 升一位到 #9——月之暗面官方的 Kimi 原生 CLI 越过 5.5k |
+| #10&#8288;（新） | [n8n](https://github.com/n8n-io/n8n) | 198.4k | +973 | 已收录 · [profile](agents/n8n.md) | 首次进入本表——工作流自动化运行时逼近 198.5k，以 8 个 star 之差拿下最后一席 |
 
 - 热度适合拿来发现新项目，不适合直接当选型顺序。
-- 本窗口头条是 **[mattpocock/skills](https://github.com/mattpocock/skills) 连续第五次登顶** 且涨幅创新高（+13.6k，越过 181k，几乎是平时的两倍），而上窗口的 #2 [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 增量近乎腰斩、崩到 #9（+1.9k）。[Superpowers](agents/superpowers.md) 夺回 #2（+5.4k，逼近 260k）、[Pi](agents/pi.md) 跳到 #3（+4.9k，越过 75k），[Codex CLI](agents/codex.md) 在 #5 越过 10 万。另一条线是两个已收录新面孔进入增量榜：**[jcode](agents/jcode.md) 在 #7**、[Kimi Code](agents/kimi-code.md) 在 #10，把 [TradingAgents](https://github.com/TauricResearch/TradingAgents) 和 [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) 挤出榜单。
-- **新收录决策：[jcode](agents/jcode.md) 从候补转正为已收录 profile。** 这个 Rust 多会话 coding harness（`1jehuang/jcode`，10.6k，MIT）自 5 月起持续上涨，本窗口进入按增量的前 10（#7，+2.3k）；它与 [Pi](agents/pi.md) 一起归入 [agent harness 框架](comparisons/agent-harness-frameworks.md) 路线。其余没有达标项。最新的新仓库——[Sahir619/fable-method](https://github.com/Sahir619/fable-method)（1.8k，把 Fable 5 工作流蒸馏成 skills）、[ai4s-research/open-science](https://github.com/ai4s-research/open-science)（0.9k，本地优先的 AI 研究工作台）、[KlaatAI/klaatcode](https://github.com/KlaatAI/klaatcode)（0.2k，开源终端 coding agent）——加入候补，均未达收录门槛。
+- 本窗口的头条发生在**增量榜之外**：[xAI/SpaceXAI 发布了 **Grok Build**](agents/grok-build.md)，一个厂商官方的 Rust 终端 coding agent，**上线 15 天就拿到 23.2k star、4.4k fork**——本地图记录过的最响亮首秀。它没有出现在下面的排名里，是因为窗口开始时它还没被纳入跟踪，因此还没有可比的 7 天增量；从本周起开始跟踪，下周给出第一个真实增量。
+- 榜单本身的故事是**全面降温**。前 10 的每一项增量都低于上窗口——[mattpocock/skills](https://github.com/mattpocock/skills) 仍拿下连续第六个 #1 但已离开新高（+11.0k vs +13.6k），[Superpowers](agents/superpowers.md) 丢掉三分之一增量退到 #3，[Codex CLI](agents/codex.md) 在越过 10 万后腰斩到 #6。其中一部分只是算术——本窗口是 7 天，上次约 8 天——但名次变化是真实的。[Pi](agents/pi.md) 升到 #2（+4.3k，逼近 80k），**[jcode](agents/jcode.md) 升到 #5**（+2.2k，越过 12.7k），转正后第一个完整窗口就验证了上周的决策。
+- **[n8n](agents/n8n.md) 首次进入增量榜，位列 #10**（+973，逼近 198.5k）——而且只以 **8 个 star** 领先 [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)（+965），后者从 #9 直接掉出榜单。最后一席请当作抛硬币，不是信号。
+- **新收录决策：[Grok Build](agents/grok-build.md) 作为已收录 profile 加入。** 这个厂商官方终端 coding agent（`xai-org/grok-build`，Rust，Apache-2.0，23.2k）归入 coding CLI 路线，与 [Codex](agents/codex.md)、[Claude Code](agents/claude-code.md)、[Kimi Code](agents/kimi-code.md) 和 [MiMoCode](agents/mimocode.md) 并列。采用前请先读它的治理：许可证是真的，但这个仓库是 SpaceXAI monorepo 的周期性导出，而且**不接受外部贡献**——源码可见，不是社区共建。其余没有达标项。加入候补：[vercel/eve](https://github.com/vercel/eve)（4.2k，Vercel 的 agent 框架，已开始发布）、[elder-plinius/T3MP3ST](https://github.com/elder-plinius/T3MP3ST)（5.3k，攻击性安全 meta-harness——作为红队垂直不收录）、[risa-labs-inc/BossConsole](https://github.com/risa-labs-inc/BossConsole)（0.2k，驱动其他 agent 的 JVM 操作台）。
 
 <details>
 <summary>更多窗口笔记：skills 浪潮占比、OpenClaw、以及榜外仍在涨的项目</summary>
 
-- `.claude/skills` 浪潮收窄到前 10 的 4 个（`mattpocock/skills`、`Superpowers`、`anthropics/skills`、`addyosmani/agent-skills`），`academic-research-skills` 掉出增量榜。策略不变：curated 集合作为 Skills 浪潮条目跟踪，框架那一端通过 [Superpowers](agents/superpowers.md) 覆盖。
-- [TradingAgents](https://github.com/TauricResearch/TradingAgents) 升到 94.1k（+1.3k）但掉出前 10，作为金融研究垂直不收录；[academic-research-skills](https://github.com/Imbad0202/academic-research-skills) 也掉出榜单，39.0k（+1.3k）。
-- [OpenClaw](agents/openclaw.md) 仍是绝对总数第一，383.8k star（+1.0k）；它已有 profile，但因为这种体量的项目周环比增量噪声太大，不进按增量排名的表。
-- 本周仍在涨但没进前 10（按增量）：[Ruflo](agents/ruflo.md) 65.5k（+1.2k）、[scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) 31.5k（+0.6k）、[CLI-Anything](agents/cli-anything.md) 45.7k（+0.5k）、[agentmemory](https://github.com/rohitg00/agentmemory) 25.6k（+0.5k）、[12-factor-agents](https://github.com/humanlayer/12-factor-agents) 24.7k（+0.4k）、[openhuman](agents/openhuman.md) 35.2k（+0.4k）、[MiMoCode](agents/mimocode.md) 12.3k（+0.4k）、[CodeWhale](agents/codewhale.md) 40.0k（+0.3k）、[financial-services](https://github.com/anthropics/financial-services) 33.7k（+0.2k）、[CoStrict](agents/costrict.md) 4.3k（基本持平）。
+- `.claude/skills` 浪潮再次收窄，到前 10 的 3 个（`mattpocock/skills`、`Superpowers`、`anthropics/skills`），`addyosmani/agent-skills` 掉出榜单。这已是连续第三次收窄——5/10、4/10、现在 3/10——最合理的解读是浪潮正在向那两三个标志性集合集中，而不是整体降温：光 `mattpocock/skills` 一个的增量仍超过榜上 #4 以下所有项目之和。策略不变：curated 集合作为 Skills 浪潮条目跟踪，框架那一端通过 [Superpowers](agents/superpowers.md) 覆盖。
+- [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 以 8 个 star 之差掉出榜单，80.8k（+965）；[academic-research-skills](https://github.com/Imbad0202/academic-research-skills) 仍在榜外，39.9k（+964）；[TradingAgents](https://github.com/TauricResearch/TradingAgents) 到 94.9k（+809），作为金融研究垂直仍不收录。
+- [OpenClaw](agents/openclaw.md) 仍是绝对总数第一，384.4k star（+0.6k）；它已有 profile，但因为这种体量的项目周环比增量噪声太大，不进按增量排名的表。
+- 本周仍在涨但没进前 10（按增量）：[Ruflo](agents/ruflo.md) 66.4k（+0.9k）、[scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) 32.0k（+0.5k）、[CLI-Anything](agents/cli-anything.md) 46.2k（+0.5k）、[LangGraph](agents/langgraph.md) 38.4k（+0.5k）、[LangChain](agents/langchain.md) 142.8k（+0.5k）、[LiteLLM](agents/litellm.md) 54.9k（+0.6k）、[Goose](agents/goose.md) 51.9k（+0.4k）、[agentmemory](https://github.com/rohitg00/agentmemory) 25.9k（+0.4k）、[openhuman](agents/openhuman.md) 35.6k（+0.4k）、[CrewAI](agents/crewai.md) 56.3k（+0.3k）、[MiMoCode](agents/mimocode.md) 12.5k（+0.2k）、[CodeWhale](agents/codewhale.md) 40.2k（+0.2k）、[CoStrict](agents/costrict.md) 4.3k（+12，基本持平）。
 
 </details>
 
@@ -111,7 +113,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 
 | 路线 | 代表项目 | 常见使用者 |
 | --- | --- | --- |
-| 直接执行型 | [Claude Code](agents/claude-code.md), [Aider](agents/aider.md), [Codex](agents/codex.md), [Kimi Code](agents/kimi-code.md), [MiMoCode](agents/mimocode.md), [CodeWhale](agents/codewhale.md), [Devin](agents/devin.md), [Jules](agents/jules.md) | 想把明确 coding 任务交给 agent 的人（见[终端编码 CLI 对比](comparisons/coding-cli-agents.md)） |
+| 直接执行型 | [Claude Code](agents/claude-code.md), [Aider](agents/aider.md), [Codex](agents/codex.md), [Kimi Code](agents/kimi-code.md), [MiMoCode](agents/mimocode.md), [CodeWhale](agents/codewhale.md), [Grok Build](agents/grok-build.md), [Devin](agents/devin.md), [Jules](agents/jules.md) | 想把明确 coding 任务交给 agent 的人（见[终端编码 CLI 对比](comparisons/coding-cli-agents.md)） |
 | Agent harness 框架 | [Pi](agents/pi.md), [jcode](agents/jcode.md), [OpenHands](agents/openhands.md), [SWE-agent](agents/swe-agent.md), [mini-swe-agent](agents/mini-swe-agent.md), [OpenHarness](agents/openharness.md) | 想自己掌控 agent loop、工具表面和权限，而不是直接接受厂商成品的人（见 [harness 框架对比](comparisons/agent-harness-frameworks.md)） |
 | 前沿 agentic 模型 | [Claude Fable 5](agents/claude-fable-5.md), [GPT-5.5](agents/gpt-5.5.md) | 在选要接入自己 agent 系统的模型，或在评估 Anthropic / OpenAI 系 agent 能力上限的人 |
 | Agentic skills 框架 | [Superpowers](agents/superpowers.md) | 想要一套方法论 + 可组合 skills 层、能接到 Claude Code、Codex、Cursor 等 agent 之上的人 |
@@ -153,6 +155,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 | [CodeWhale](agents/codewhale.md) | 直接执行 | DeepSeek + MiMo 终端 coding agent（原 DeepSeek-TUI） |
 | [Kimi Code](agents/kimi-code.md) | 直接执行 | Moonshot AI 官方、Kimi 原生的终端 coding CLI（kimi-cli 继任者） |
 | [MiMoCode](agents/mimocode.md) | 直接执行 | 小米官方的 MiMo 终端 coding agent，内置跨会话记忆 |
+| [Grok Build](agents/grok-build.md) | 直接执行 | SpaceXAI 官方的 Rust 终端 coding agent——全屏 TUI、headless CI 模式、ACP 编辑器服务 |
 | [CoStrict](agents/costrict.md) | review-first 自动化 | Cline 血统的企业 coding agent，含严格标准化流程、AI 代码评审、私有化部署 |
 | [SWE-agent](agents/swe-agent.md) | Agent harness 框架 | Princeton + Stanford 的 SWE-bench 原始 harness，single-YAML 配置 |
 | [mini-swe-agent](agents/mini-swe-agent.md) | Agent harness 框架 | SWE-agent 的 ~100 行 Python 接班版，SWE-bench Verified 仍 >74% |

@@ -37,8 +37,9 @@
 | [Kimi Code](../agents/kimi-code.md) | ● | ● | ○ | ○ | — | ◐ | — | ◐ | ◐ |
 | [MiMoCode](../agents/mimocode.md) | ● | ● | ● | ○ | — | ◐ | — | ○ | ◐ |
 | [CodeWhale](../agents/codewhale.md) | ● | ● | ○ | ○ | — | ◐ | — | ○ | ◐ |
+| [Grok Build](../agents/grok-build.md) | ● | ● | ○ | ◐ | — | ◐ | ○ | ◐ | ◐ |
 
-看点：Claude Code 和 Codex 的**交互面**最广；Codex 在这组里唯一强在**多 agent**（并行云端 agent）；MiMoCode 是唯一把**记忆**当招牌的 CLI；Aider 在显式 diff 的**人工审批**上领先。
+看点：Claude Code 和 Codex 的**交互面**最广；Codex 在这组里唯一强在**多 agent**（并行云端 agent）；MiMoCode 是唯一把**记忆**当招牌的 CLI；Aider 在显式 diff 的**人工审批**上领先。Grok Build 是最新加入的一个，在厂商 CLI 里**工具调用** + **代码执行**这对组合最强（MCP、skills、插件、hooks、沙箱、工作区 checkpoint），但注意它的**部署控制**分数对应的是一棵源码可见、却不接受贡献的树。
 
 ## 自己掌控循环的 harness 框架
 

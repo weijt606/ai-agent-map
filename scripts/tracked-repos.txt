@@ -19,6 +19,7 @@ HKUDS/CLI-Anything
 humanlayer/12-factor-agents
 1jehuang/jcode
 MoonshotAI/kimi-code
+xai-org/grok-build
 XiaomiMiMo/MiMo-Code
 zgsm-ai/costrict
 openclaw/openclaw

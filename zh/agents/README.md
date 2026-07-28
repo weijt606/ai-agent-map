@@ -12,7 +12,7 @@
 
 | 路线 | 代表项目 | 适合谁 |
 | --- | --- | --- |
-| 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Kimi Code](kimi-code.md), [MiMoCode](mimocode.md), [CodeWhale](codewhale.md), [Devin](devin.md), [Jules](jules.md) | 想直接把 coding 任务交给 agent（在[终端编码 CLI agent](../comparisons/coding-cli-agents.md) 里对比） |
+| 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Kimi Code](kimi-code.md), [MiMoCode](mimocode.md), [CodeWhale](codewhale.md), [Grok Build](grok-build.md), [Devin](devin.md), [Jules](jules.md) | 想直接把 coding 任务交给 agent（在[终端编码 CLI agent](../comparisons/coding-cli-agents.md) 里对比） |
 | Agent harness 框架 | [Pi](pi.md), [jcode](jcode.md), [OpenHands](openhands.md), [SWE-agent](swe-agent.md), [mini-swe-agent](mini-swe-agent.md), [OpenHarness](openharness.md) | 想自己掌控 loop、工具表面和权限，不直接接受厂商成品 |
 | 前沿 agentic 模型 | [Claude Fable 5](claude-fable-5.md)、[GPT-5.5](gpt-5.5.md) | 在选要接入自己 agent 系统的模型，或在评估 Anthropic / OpenAI 系 agent 能力上限 |
 | Agentic skills 框架 | [Superpowers](superpowers.md) | 想要一套方法论 + 可组合 skills 层、能接到 Claude Code、Codex、Cursor 等 agent 之上 |
@@ -31,26 +31,27 @@
 
 它只是把最近一周 GitHub 快照里特别热的 agent 项目摆出来。顺序按 7 天增量；下面的 star 总数是这次更新目录时重新核对过的当前值。
 
-> **最后更新：** 2026-07-22 · **快照窗口：** 2026-07-14 → 2026-07-22（自上次更新以来的增量，约 8 天，估算） · **Star 总数：** 更新时实时核对
+> **最后更新：** 2026-07-29 · **快照窗口：** 2026-07-22 → 2026-07-29（自上次更新以来的增量，7 天，估算） · **Star 总数：** 更新时实时核对
 
 项目名链接指向上游 GitHub 仓库。本目录已收录的 profile，在"目录状态"列单独给出链接。
 
 | 排名 | 项目 | 当前 stars | 快照增量 | 目录状态 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| #1&#8288;（=） | [mattpocock/skills](https://github.com/mattpocock/skills) | 181.8k | +13,570 | 候补（Skills 浪潮） | 连续第五个窗口守住增量榜首、涨幅创新高——策展式 `.claude/skills` 目录越过 181k |
-| #2&#8288;（↑） | [Superpowers](https://github.com/obra/superpowers) | 259.3k | +5,432 | [Profile](superpowers.md) | 夺回 #2 并逼近 260k——agentic skills 框架持续复利增长 |
-| #3&#8288;（↑） | [Pi](https://github.com/earendil-works/pi) | 75.4k | +4,876 | [Profile](pi.md) | 跳升两位到 #3——Earendil 接手的 harness 越过 75k |
-| #4&#8288;（=） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 218.8k | +4,588 | [Profile](hermes-agent.md) | 稳守 #4——已收录项目里绝对总数第一，越过 218k |
-| #5&#8288;（↑） | [Codex CLI](https://github.com/openai/codex) | 100.6k | +2,954 | [Profile](codex.md) | 上升两位到 #5 并越过 10 万——OpenAI 的 Codex CLI |
-| #6&#8288;（=） | [anthropics/skills](https://github.com/anthropics/skills) | 163.4k | +2,510 | 候补（Skills 浪潮源头） | 稳守 #6——Anthropic 自家的 `.claude/skills` 参考仓库，越过 163k |
-| #7&#8288;（新） | [jcode](https://github.com/1jehuang/jcode) | 10.6k | +2,319 | [Profile](jcode.md) | 进入榜单——Rust 多会话 coding harness 从候补加速冲入，越过 10k，本周转正 |
-| #8&#8288;（=） | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 61.6k | +1,968 | [Profile](codegraph.md) | 稳守 #8——预索引代码知识图谱越过 61k |
-| #9&#8288;（↓） | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 79.8k | +1,908 | 候补（Skills 浪潮） | 增量近乎腰斩，从 #2 降温到 #9——Addy Osmani 的策展式 agent-skills 集逼近 80k |
-| #10&#8288;（新） | [Kimi Code](https://github.com/MoonshotAI/kimi-code) | 4.5k | +1,452 | [Profile](kimi-code.md) | 进入榜单——月之暗面官方的 Kimi 原生 CLI 越过 4.5k |
+| #1&#8288;（=） | [mattpocock/skills](https://github.com/mattpocock/skills) | 192.9k | +11,033 | 候补（Skills 浪潮） | 连续第六个窗口守住增量榜首——策展式 `.claude/skills` 目录越过 192k，但已离开上窗口的新高 |
+| #2&#8288;（↑） | [Pi](https://github.com/earendil-works/pi) | 79.7k | +4,286 | [Profile](pi.md) | 升到 #2 并逼近 80k——前五里最稳的增长者 |
+| #3&#8288;（↓） | [Superpowers](https://github.com/obra/superpowers) | 262.7k | +3,409 | [Profile](superpowers.md) | 增量掉了三分之一，退到 #3，但越过 262k |
+| #4&#8288;（=） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 221.9k | +3,057 | [Profile](hermes-agent.md) | 连续第三个窗口稳守 #4——越过 221k |
+| #5&#8288;（↑） | [jcode](https://github.com/1jehuang/jcode) | 12.8k | +2,156 | [Profile](jcode.md) | 转正后第一个完整窗口就升两位——Rust 多会话 harness 越过 12.7k |
+| #6&#8288;（↓） | [Codex CLI](https://github.com/openai/codex) | 102.1k | +1,498 | [Profile](codex.md) | 过 10 万后增量腰斩，退到 #6——越过 102k |
+| #7&#8288;（↑） | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 63.1k | +1,464 | [Profile](codegraph.md) | 升一位到 #7——预索引代码知识图谱越过 63k |
+| #8&#8288;（↓） | [anthropics/skills](https://github.com/anthropics/skills) | 164.8k | +1,439 | 候补（Skills 浪潮源头） | 增量近乎腰斩，退两位——越过 164k |
+| #9&#8288;（↑） | [Kimi Code](https://github.com/MoonshotAI/kimi-code) | 5.5k | +997 | [Profile](kimi-code.md) | 升一位到 #9——月之暗面官方 Kimi 原生 CLI 越过 5.5k |
+| #10&#8288;（新） | [n8n](https://github.com/n8n-io/n8n) | 198.4k | +973 | [Profile](n8n.md) | 首次进入本表——工作流自动化运行时以 8 个 star 之差拿下最后一席 |
 
 历史名次变化的趋势图见 [rankings/](../rankings/README.md)，那里还有按 star 总量排序的分类榜与垂类榜。
 
 **市场事件：**
+- **2026-07-22 → 07-29 —— Grok Build 登场；榜单全面降温** —— xAI/SpaceXAI 发布 **[Grok Build](grok-build.md)**，厂商官方的 Rust 终端 coding agent，**15 天拿到 23.2k star、4.4k fork**——本地图记录过的最响亮首秀。新收录决策：**Grok Build 作为已收录 profile 加入** coding CLI 路线；注意它的治理——Apache-2.0，但仓库是 monorepo 的周期性导出，且**不接受外部贡献**。因窗口开始时尚未纳入跟踪，本周暂无排名。榜单上前 10 的增量全线回落（部分原因是本窗口 7 天、上次约 8 天）：[mattpocock/skills](https://github.com/mattpocock/skills) 拿下连续第六个 #1 但已离开新高（+11.0k），[Superpowers](superpowers.md) 退到 #3，[Codex CLI](codex.md) 腰斩到 #6，而 [Pi](pi.md) 升到 #2、[jcode](jcode.md) 升到 #5。[n8n](n8n.md) 以 8 个 star 之差从 [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 手里拿下 #10，后者掉出榜单。Skills 浪潮连续第三次收窄，到 3/10。
 - **2026-07-14 → 07-22 —— jcode 转正写入 profile；mattpocock 暴涨、addyosmani 崩盘** —— [mattpocock/skills](https://github.com/mattpocock/skills) 连续第五次登顶且涨幅创新高（+13.6k，越过 181k），上窗口的 #2 [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 增量近乎腰斩、跌到 #9。两个已收录新面孔进入增量榜：**[jcode](jcode.md)** 在 #7、[Kimi Code](kimi-code.md) 在 #10。新收录决策：**[jcode](jcode.md)（`1jehuang/jcode`，Rust，10.6k）自 5 月起持续上涨，本窗口从候补转正为完整 profile**，归入 [agent harness 框架](../comparisons/agent-harness-frameworks.md) 路线。[Codex CLI](codex.md) 越过 10 万。Skills 浪潮收窄到 4/10，[academic-research-skills](https://github.com/Imbad0202/academic-research-skills) 和 [TradingAgents](https://github.com/TauricResearch/TradingAgents) 掉出榜单。
 - **2026-07-09 —— Codex 并入 ChatGPT；GPT-5.6 发布** —— OpenAI 把独立 Codex 应用并入 ChatGPT 桌面应用（Codex 成为与 Chat 和新 agentic 模式 ChatGPT Work 并列的入口，全计划含免费版可用），同日 GPT-5.6（Sol/Terra/Luna 三档）在 ChatGPT、Codex 和 API 接棒 GPT-5.5。详见[市场事件](../market-events.md)、[Codex](codex.md)、[GPT-5.5](gpt-5.5.md)。
 - **2026-06-09 → 07-07 —— Claude 5 家族登场，一波三折** —— Anthropic 发布 [Claude Fable 5](claude-fable-5.md)，首个 Mythos 级模型（位于 Opus 之上的新等级），成为 Claude Code 默认模型；6 月 12 日因短暂出口管制全球下架，7 月 1 日在更严格安全分类器后恢复（回退 Opus 4.8），7 月 7 日改按额度计费。Opus 4.8 本身 5 月 28 日已发布。详见[市场事件](../market-events.md)。

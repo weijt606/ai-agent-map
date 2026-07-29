@@ -31,6 +31,7 @@ This repo stays focused on selection: what a system is good at, where it breaks 
 | I care about dimensions like approval, memory, scheduling, and deployment | [![Browse capabilities](https://img.shields.io/badge/BROWSE-CAPABILITIES-16a34a?style=for-the-badge&labelColor=166534)](capabilities/README.md) |
 | I want every project scored on those dimensions, side by side | [Capability matrix](capabilities/matrix.md) |
 | I want to know what it actually costs to run, and which model tier is worth it | [Cost & benchmarks](comparisons/cost-and-benchmarks.md) · [Memory approaches](comparisons/memory-approaches.md) |
+| My agents already run — I need to know whether they still work | [Observability & evaluation](comparisons/observability-and-evals.md) |
 | I want the stock rankings and the weekly trend chart | [![View rankings](https://img.shields.io/badge/VIEW-RANKINGS-7c3aed?style=for-the-badge&labelColor=5b21b6)](rankings/README.md) |
 | I want problem-first guides or the full comparison list | [Use cases](use-cases/README.md) · [Comparisons](comparisons/README.md) |
 
@@ -91,11 +92,12 @@ Full stock rankings by category — agents, agent infra, skills, and their verti
 
 ## Beyond The Rank
 
-Popularity tells you what to look at. These three pages tell you what to pick:
+Popularity tells you what to look at. These four pages tell you what to pick:
 
 - **[Capability matrix](capabilities/matrix.md)** — every project scored side by side (●/◐/○/—) across the nine shared [capability dimensions](capabilities/README.md), grouped by route. The answer to "for this capability, who treats it as a core strength."
 - **[Cost & benchmarks](comparisons/cost-and-benchmarks.md)** — frontier-model capability vs per-token price, plus how each coding agent actually bills. Since the model layer went tiered and metered, "which tier for this task" is the selection decision.
 - **[Memory approaches](comparisons/memory-approaches.md)** — six different things projects mean by "has memory," from self-editing stores to passive semantic recall, and which to pick for what you need to persist.
+- **[Observability & evaluation](comparisons/observability-and-evals.md)** — the layer under everything above: once an agent runs unattended, failure stops looking like a crash and starts looking like silent quality drift. Compares [Langfuse](agents/langfuse.md), Opik, Phoenix, Helicone, LangSmith and others — and untangles the four different things "open source" means in that field.
 
 ## Market Pulse
 
@@ -108,7 +110,7 @@ The three structural stories shaping selection right now — full records with d
 ## The First Cut Of The Map
 
 <p align="center">
-  <img src="assets/route-map-en.svg" alt="The AI Agent Map — 12 routes grouped into four decisions" width="100%" />
+  <img src="assets/route-map-en.svg" alt="The AI Agent Map — 13 routes grouped into four decisions" width="100%" />
 </p>
 
 | Route | Representative projects | Typical user |
@@ -124,14 +126,15 @@ The three structural stories shaping selection right now — full records with d
 | General-purpose autonomous agent | [AutoGPT](agents/autogpt.md), [Agent Zero](agents/agent-zero.md), [BabyAGI](agents/babyagi.md), [Julep](agents/julep.md), [GenericAgent](agents/generic-agent.md), [ml-intern](agents/ml-intern.md) | Someone who wants autonomous, general-purpose task execution (or, in ml-intern's case, autonomous ML engineering) |
 | Build-your-own system | [LangChain](agents/langchain.md), [LangGraph](agents/langgraph.md), [CrewAI](agents/crewai.md), [LlamaIndex](agents/llamaindex.md), [Haystack](agents/haystack.md), [Semantic Kernel](agents/semantic-kernel.md), [DSPy](agents/dspy.md), [Pydantic AI](agents/pydantic-ai.md) | Teams building their own agent platform instead of buying one |
 | Runtime and tools | [n8n](agents/n8n.md), [MemGPT](agents/memgpt.md), [Open Interpreter](agents/open-interpreter.md), [LiteLLM](agents/litellm.md), [Flowise](agents/flowise.md), [CodeGraph](agents/codegraph.md), [CLI-Anything](agents/cli-anything.md) | Teams that need workflow automation, code execution, LLM gateways, agent context infrastructure, agent-driven CLIs, or visual builders |
+| Observability and evals | [Langfuse](agents/langfuse.md) | Someone whose agents already run in production and needs to know what they did, what they cost, and whether quality is drifting (see [observability & evaluation](comparisons/observability-and-evals.md)) |
 | Self-hosted / local runtime | [AI Edge Gallery](agents/ai-edge-gallery.md), [Goose](agents/goose.md), [Hermes Agent](agents/hermes-agent.md), [OpenClaw](agents/openclaw.md), [Mercury Agent](agents/mercury-agent.md), [OpenHuman](agents/openhuman.md) | Users who need on-device privacy, long-running agents, local control, channels, devices, or personal-data life integration |
 
 ## Current Mainstream Coverage
 
-55 profiled projects, grouped by what they are. Expand a group, or browse the full route/coverage tables in [agents/](agents/README.md).
+57 profiled projects, grouped by what they are. Expand a group, or browse the full route/coverage tables in [agents/](agents/README.md).
 
 <details>
-<summary><strong>Coding agents, editors, and orchestration</strong> (24 projects)</summary>
+<summary><strong>Coding agents, editors, and orchestration</strong> (25 projects)</summary>
 
 | Project | Route | One-line positioning |
 | --- | --- | --- |
@@ -185,7 +188,7 @@ The three structural stories shaping selection right now — full records with d
 </details>
 
 <details>
-<summary><strong>Frameworks and infrastructure</strong> (15 projects)</summary>
+<summary><strong>Frameworks and infrastructure</strong> (16 projects)</summary>
 
 | Project | Route | One-line positioning |
 | --- | --- | --- |

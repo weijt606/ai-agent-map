@@ -31,6 +31,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 | 我在意审批、记忆、调度、部署这类能力维度 | [![浏览 能力维度](https://img.shields.io/badge/%E6%B5%8F%E8%A7%88-%E8%83%BD%E5%8A%9B%E7%BB%B4%E5%BA%A6-16a34a?style=for-the-badge&labelColor=166534)](capabilities/README.md) |
 | 我想看每个项目在这些维度上并排打分 | [能力矩阵](capabilities/matrix.md) |
 | 我想知道跑起来到底多少钱、哪一档模型值得 | [成本 & benchmark](comparisons/cost-and-benchmarks.md) · [记忆方案](comparisons/memory-approaches.md) |
+| agent 已经在跑了——我需要知道它是不是还正常 | [观测与评估](comparisons/observability-and-evals.md) |
 | 我想看存量排行和每周趋势图 | [![查看 排行](https://img.shields.io/badge/%E6%9F%A5%E7%9C%8B-%E6%8E%92%E8%A1%8C-7c3aed?style=for-the-badge&labelColor=5b21b6)](rankings/README.md) |
 | 我想看问题导向的指南或全部对比页 | [用例](use-cases/README.md) · [对比](comparisons/README.md) |
 
@@ -91,11 +92,12 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 
 ## 榜单之外
 
-热度告诉你该看什么。这三页告诉你该选什么：
+热度告诉你该看什么。这四页告诉你该选什么：
 
 - **[能力矩阵](capabilities/matrix.md)** —— 每个项目在九个统一[能力维度](capabilities/README.md)上并排打分（●/◐/○/—），按路线分组。回答"就这项能力而言，谁把它当核心强项"。
 - **[成本 & benchmark](comparisons/cost-and-benchmarks.md)** —— 前沿模型能力 vs 每 token 价格，加上每个编码 agent 实际怎么收费。模型层分档按量之后，"这个任务用哪一档"就是选型决策本身。
 - **[记忆方案对比](comparisons/memory-approaches.md)** —— "有记忆"这句话背后的六种不同含义，从自编辑存储到被动语义召回，以及你要持久化什么就该选哪种。
+- **[观测与评估](comparisons/observability-and-evals.md)** —— 上面这一切之下的那一层：agent 一旦无人值守地跑起来，故障就不再长得像崩溃，而是长得像静默的质量漂移。对比 [Langfuse](agents/langfuse.md)、Opik、Phoenix、Helicone、LangSmith 等——并理清这个领域里"开源"的四种不同含义。
 
 ## 市场脉搏
 
@@ -108,7 +110,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 ## 先把地图摊开
 
 <p align="center">
-  <img src="../assets/route-map-zh.svg" alt="AI Agent 选型地图——12 条路线按四类决策分组" width="100%" />
+  <img src="../assets/route-map-zh.svg" alt="AI Agent 选型地图——13 条路线按四类决策分组" width="100%" />
 </p>
 
 | 路线 | 代表项目 | 常见使用者 |
@@ -124,14 +126,15 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 | 通用自主 agent | [AutoGPT](agents/autogpt.md), [Agent Zero](agents/agent-zero.md), [BabyAGI](agents/babyagi.md), [Julep](agents/julep.md), [GenericAgent](agents/generic-agent.md), [ml-intern](agents/ml-intern.md) | 想要通用自主任务执行的人（ml-intern 是 ML 工程取向的特化版本） |
 | 自建系统 | [LangChain](agents/langchain.md), [LangGraph](agents/langgraph.md), [CrewAI](agents/crewai.md), [LlamaIndex](agents/llamaindex.md), [Haystack](agents/haystack.md), [Semantic Kernel](agents/semantic-kernel.md), [DSPy](agents/dspy.md), [Pydantic AI](agents/pydantic-ai.md) | 想自己搭 agent 平台的团队 |
 | 运行时 & 工具 | [n8n](agents/n8n.md), [MemGPT](agents/memgpt.md), [Open Interpreter](agents/open-interpreter.md), [LiteLLM](agents/litellm.md), [Flowise](agents/flowise.md), [CodeGraph](agents/codegraph.md), [CLI-Anything](agents/cli-anything.md) | 需要工作流自动化、代码执行、LLM 网关、agent 上下文基础设施、agent 驱动 CLI 或可视化构建器的团队 |
+| 观测与评估 | [Langfuse](agents/langfuse.md) | agent 已经跑在生产上，需要知道它做了什么、花了多少、质量有没有漂移的人（见[观测与评估](comparisons/observability-and-evals.md)） |
 | 自托管 / 本地 runtime | [AI Edge Gallery](agents/ai-edge-gallery.md), [Goose](agents/goose.md), [Hermes Agent](agents/hermes-agent.md), [OpenClaw](agents/openclaw.md), [Mercury Agent](agents/mercury-agent.md), [OpenHuman](agents/openhuman.md) | 需要端侧隐私、长期运行、本地控制、渠道、设备或个人数据生活集成能力的人 |
 
 ## 当前已覆盖的主流项目
 
-已收录 55 个项目，按形态分组。展开任意一组，或到 [agents/](agents/README.md) 浏览完整的路线表与覆盖表。
+已收录 57 个项目，按形态分组。展开任意一组，或到 [agents/](agents/README.md) 浏览完整的路线表与覆盖表。
 
 <details>
-<summary><strong>编码 agent、编辑器与编排</strong>（24 个）</summary>
+<summary><strong>编码 agent、编辑器与编排</strong>（25 个）</summary>
 
 | 项目 | 路线 | 一句话定位 |
 | --- | --- | --- |
@@ -185,7 +188,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 </details>
 
 <details>
-<summary><strong>框架与基础设施</strong>（15 个）</summary>
+<summary><strong>框架与基础设施</strong>（16 个）</summary>
 
 | 项目 | 路线 | 一句话定位 |
 | --- | --- | --- |

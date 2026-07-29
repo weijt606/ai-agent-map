@@ -41,10 +41,10 @@ VERTICAL_LABELS = {
 GROUP_LABELS = {
     "en": {"framework": "Framework", "orchestration": "Orchestration",
            "memory-context": "Memory & context", "gateway-runtime": "Gateway & runtime",
-           "workflow": "Workflow"},
+           "workflow": "Workflow", "observability": "Observability & evals"},
     "zh": {"framework": "框架", "orchestration": "编排",
            "memory-context": "记忆与上下文", "gateway-runtime": "网关与执行",
-           "workflow": "工作流"},
+           "workflow": "工作流", "observability": "观测与评估"},
 }
 HEADERS = {
     "en": {

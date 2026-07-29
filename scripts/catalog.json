@@ -1,5 +1,5 @@
 {
-  "_comment": "Per-repo metadata for rankings and the trend chart. Keys are lowercased owner/repo slugs (same convention as snapshot.json). Fields: display / display_zh (falls back to display), category = agent|infra|skill, vertical (agent: coding|general|finance; skill: collections|research|finance|methodology; infra: null — infra uses group instead), group (infra only: framework|orchestration|memory-context|gateway-runtime|workflow), profile (repo-relative path or null), scope = in|watchlist|out, tracked=false marks historical-only entries that appear in history.json but are no longer polled. CLI-Anything is classed as infra/gateway-runtime (it bridges software for agents, it is not an end-to-end agent).",
+  "_comment": "Per-repo metadata for rankings and the trend chart. Keys are lowercased owner/repo slugs (same convention as snapshot.json). Fields: display / display_zh (falls back to display), category = agent|infra|skill, vertical (agent: coding|general|finance; skill: collections|research|finance|methodology; infra: null — infra uses group instead), group (infra only: framework|orchestration|memory-context|gateway-runtime|workflow), profile (repo-relative path or null), scope = in|watchlist|out, tracked=false marks entries that are not polled for stars: either historical-only entries that appear in history.json, or newly-profiled projects not yet added to tracked-repos.txt (flip to tracked on the next weekly refresh, which stamps them into the snapshot). CLI-Anything is classed as infra/gateway-runtime (it bridges software for agents, it is not an end-to-end agent).",
   "nousresearch/hermes-agent": {
     "display": "Hermes Agent",
     "category": "agent",
@@ -336,6 +336,15 @@
     "group": "gateway-runtime",
     "profile": "agents/litellm.md",
     "scope": "in"
+  },
+  "langfuse/langfuse": {
+    "display": "Langfuse",
+    "category": "infra",
+    "vertical": null,
+    "group": "observability",
+    "profile": "agents/langfuse.md",
+    "scope": "in",
+    "tracked": false
   },
   "flowiseai/flowise": {
     "display": "Flowise",

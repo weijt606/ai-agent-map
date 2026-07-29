@@ -64,6 +64,12 @@ changes actually touch them — see step 5.
    If nothing clears the bar, add the best candidates to the watchlist bullet and
    record them for next week.
 
+   **Pending pickups:** a profile may already exist in `catalog.json` with
+   `"tracked": false` (profiled, but not yet polled for stars). Flip it to
+   tracked by removing that field and adding its slug to `tracked-repos.txt` —
+   this step's fetch then stamps it into the snapshot, so `render-rankings.py`
+   picks it up in the same run. **Currently pending: `langfuse/langfuse`.**
+
    **Every slug added to `tracked-repos.txt` needs a matching entry in
    `scripts/catalog.json`** (display name, category agent/infra/skill, vertical,
    infra group, profile path, scope) — `render-rankings.py` fails hard on a

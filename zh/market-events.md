@@ -4,6 +4,14 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
+## 2026-01 —— ClickHouse 收购 Langfuse
+
+ClickHouse 收购了 **[Langfuse](agents/langfuse.md)**——star 数最高的开源 LLM/agent 观测平台（截至 2026-07-29 为 32.0k）。Langfuse 以开放内核模式提供追踪、评估、prompt 管理和数据集——核心 MIT，治理类功能在单独的 Enterprise 许可之下——并且自托管仍然免费且不限量。
+
+**对选型的影响：** agent 观测正在被吸收进通用数据基础设施，而不是继续作为独立品类存在；如果你押注某个厂商保持独立，这一点很重要。它同时凸显了本地图现在明确记录的一个区别：在这一层，"开源"横跨四种不同的东西——宽松许可（Opik、Traceloop、Helicone，Apache-2.0）、开放内核（Langfuse）、源码可见但未获 OSI 认可（Arize Phoenix，Elastic 2.0）、以及完全闭源（LangSmith、Braintrust）。Langfuse 表示自己仍然 100% 开源、路线图不变；那是厂商承诺，不是可核实的保证。详见 [Langfuse](agents/langfuse.md)、[观测与评估](comparisons/observability-and-evals.md)。
+
+来源：[Joining ClickHouse](https://langfuse.com/blog/joining-clickhouse)、[ClickHouse 公告](https://clickhouse.com/blog/clickhouse-acquires-langfuse-open-source-llm-observability)、[langfuse/langfuse](https://github.com/langfuse/langfuse)。
+
 ## 2026-07-14 —— xAI 发布 Grok Build，"开源"就此分成两种
 
 SpaceXAI（xAI）发布了 **[Grok Build](agents/grok-build.md)**（`grok`），一个 Claude Code 形态的 Rust 终端 coding agent——全屏 TUI、CI 用的 headless 模式、以及让编辑器驱动它的 Agent Client Protocol server，外加 MCP server、skills、插件、hooks 和沙箱。它**在 15 天内拿到 23.2k star、4.4k fork**，是本地图记录过的最快首秀。至此每家主要模型厂商都有了自己的第一方 coding CLI。

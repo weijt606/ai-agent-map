@@ -4,6 +4,14 @@
 
 Structural events that reshaped agent selection — model releases, product mergers, and waves — newest first. The weekly play-by-play lives in the "Market events" timeline in [agents/README.md](agents/README.md); this page keeps the durable records.
 
+## January 2026 — ClickHouse Acquires Langfuse
+
+ClickHouse acquired **[Langfuse](agents/langfuse.md)**, the most-starred open-source LLM/agent observability platform (32.0k stars as of 2026-07-29). Langfuse offers tracing, evaluation, prompt management, and datasets under an open-core model — MIT core, with governance features under a separate Enterprise license — and remains free to self-host without limits.
+
+**Impact on selection:** agent observability is being absorbed into general data infrastructure rather than remaining a standalone category, which matters if you are betting on a vendor staying independent. It also sharpens a distinction this map now documents explicitly: in this layer "open source" spans four different things — permissive (Opik, Traceloop, Helicone under Apache-2.0), open core (Langfuse), source-available but not OSI-approved (Arize Phoenix under Elastic 2.0), and fully closed (LangSmith, Braintrust). Langfuse states it remains 100% open source with an unchanged roadmap; that is a vendor commitment, not a verifiable guarantee. Details: [Langfuse](agents/langfuse.md), [observability & evaluation](comparisons/observability-and-evals.md).
+
+Sources: [Joining ClickHouse](https://langfuse.com/blog/joining-clickhouse), [ClickHouse announcement](https://clickhouse.com/blog/clickhouse-acquires-langfuse-open-source-llm-observability), [langfuse/langfuse](https://github.com/langfuse/langfuse).
+
 ## July 14 2026 — xAI Ships Grok Build, And Open Source Splits In Two
 
 SpaceXAI (xAI) released **[Grok Build](agents/grok-build.md)** (`grok`), a Rust terminal coding agent in the Claude Code mold — full-screen TUI, headless mode for CI, and an Agent Client Protocol server so editors can drive it, plus MCP servers, skills, plugins, hooks, and sandboxing. It reached **23.2k stars and 4.4k forks within 15 days**, the fastest debut this map has recorded. Every major model vendor now ships a first-party coding CLI.

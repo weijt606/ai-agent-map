@@ -107,10 +107,11 @@ Standouts: no **delivery surface** — they are libraries you build on. LangGrap
 | [Open Interpreter](../agents/open-interpreter.md) | ● | ● | ○ | ○ | — | ◐ | ○ | ◐ | ● |
 | [Flowise](../agents/flowise.md) | ● | ◐ | ◐ | ● | ◐ | ○ | ◐ | ◐ | ● |
 | [LiteLLM](../agents/litellm.md) | — | — | — | ○ | — | — | — | — | ● |
+| [Langfuse](../agents/langfuse.md) | — | ○ | ○ | — | — | ◐ | ○ | ◐ | ● |
 | [CodeGraph](../agents/codegraph.md) | ◐ | — | ● | — | — | — | — | ◐ | ● |
 | [CLI-Anything](../agents/cli-anything.md) | ● | ◐ | — | — | — | — | — | ◐ | ● |
 
-Standouts: this group is glue, so the shape is lopsided. n8n leads on **scheduling** (event/cron triggers); Letta is the reference for self-editing **memory**; CodeGraph's "memory" is a code knowledge graph (context, not conversation); LiteLLM is a pure gateway — its only real column is **deployment control**.
+Standouts: this group is glue, so the shape is lopsided. n8n leads on **scheduling** (event/cron triggers); Letta is the reference for self-editing **memory**; CodeGraph's "memory" is a code knowledge graph (context, not conversation); LiteLLM is a pure gateway — its only real column is **deployment control**. [Langfuse](../agents/langfuse.md) scores almost nothing here by design: it *watches* agents rather than acting, so its real columns are **deployment control** (free unlimited self-host) and **human approval** (annotation queues, LLM-as-a-judge review) — see [observability & evals](../comparisons/observability-and-evals.md).
 
 ## Self-Hosted, Multi-Channel & Autonomous
 

@@ -48,6 +48,7 @@ GROUPS = [
     ("Build your own", "自建与基础设施", "#1baf7a", [
         ("Build-your-own system", "自建系统", ["LangChain", "LangGraph", "CrewAI"], 8),
         ("Runtime and tools", "运行时 & 工具", ["n8n", "MemGPT", "CodeGraph"], 7),
+        ("Observability and evals", "观测与评估", ["Langfuse"], 1),
     ]),
     ("The model & skill layer", "模型与技能层", "#4a3aa7", [
         ("Frontier agentic model", "前沿 agentic 模型", ["Claude Fable 5", "GPT-5.5"], 2),
@@ -57,13 +58,13 @@ GROUPS = [
 
 TEXT = {
     "en": {
-        "title": "The AI Agent Map — the first cut: 12 routes, {total} profiles",
-        "subtitle": "Four decisions, twelve routes. Full tables with links follow below.",
+        "title": "The AI Agent Map — the first cut: 13 routes, {total} profiles",
+        "subtitle": "Four decisions, thirteen routes. Full tables with links follow below.",
         "more": "+{n} more",
     },
     "zh": {
-        "title": "AI Agent 选型地图——先摊开：12 条路线、{total} 个 profile",
-        "subtitle": "四类决策、十二条路线。带链接的完整表格见下文。",
+        "title": "AI Agent 选型地图——先摊开：13 条路线、{total} 个 profile",
+        "subtitle": "四类决策、十三条路线。带链接的完整表格见下文。",
         "more": "等 {n} 个",
     },
 }

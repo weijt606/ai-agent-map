@@ -34,7 +34,7 @@ CARD_BORDER = "rgba(11,11,11,0.12)"
 # route: (name_en, name_zh, [shown projects], total_profiles)
 GROUPS = [
     ("Use an agent on your code", "让 agent 直接上手你的代码", "#2a78d6", [
-        ("Direct execution", "直接执行", ["Claude Code", "Codex", "Aider", "Kimi Code"], 8),
+        ("Direct execution", "直接执行", ["Claude Code", "Codex", "Grok Build", "Kimi Code"], 9),
         ("Editor-centric AI workflow", "编辑器中心", ["Cursor", "Windsurf", "Continue"], 3),
         ("Review-first automation", "评审优先自动化", ["Cline", "GitHub Copilot"], 4),
         ("Workflow / orchestration layer", "工作流编排层", ["oh-my-claudecode", "oh-my-codex", "Ruflo"], 3),

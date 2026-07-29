@@ -4,6 +4,14 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
+## 2026-07-14 —— xAI 发布 Grok Build，"开源"就此分成两种
+
+SpaceXAI（xAI）发布了 **[Grok Build](agents/grok-build.md)**（`grok`），一个 Claude Code 形态的 Rust 终端 coding agent——全屏 TUI、CI 用的 headless 模式、以及让编辑器驱动它的 Agent Client Protocol server，外加 MCP server、skills、插件、hooks 和沙箱。它**在 15 天内拿到 23.2k star、4.4k fork**，是本地图记录过的最快首秀。至此每家主要模型厂商都有了自己的第一方 coding CLI。
+
+**对选型的影响：** 厂商 CLI 这一格基本填满了（Anthropic、OpenAI、月之暗面、小米、xAI），所以"选哪个 coding CLI"越来越取决于"你在为哪个模型付费"。更耐久的一课是本地图现在必须讲明的治理分叉：Grok Build 是 **Apache-2.0，但不接受贡献**——它是私有 monorepo 的周期性导出，树内还带有 `openai/codex` 和 `sst/opencode` 工具代码的移植。"源码可见"和"社区共建"已经明显分道扬镳，而 LICENSE 文件不再能告诉你拿到的是哪一种。详见 [Grok Build](agents/grok-build.md)、[终端编码 CLI 对比](comparisons/coding-cli-agents.md)。
+
+来源：[xai-org/grok-build](https://github.com/xai-org/grok-build)、[x.ai/cli](https://x.ai/cli)、[docs.x.ai/build/overview](https://docs.x.ai/build/overview)。
+
 ## 2026-07-09 —— Codex 并入 ChatGPT；GPT-5.6 发布
 
 OpenAI 把独立的 Codex 应用并入 ChatGPT 桌面应用（macOS/Windows）：Codex 成为与 Chat 和新的 agentic 模式 **ChatGPT Work** 并列的专属编码入口，所有计划（含免费版）可用。同日，**GPT-5.6** 在 ChatGPT、Codex 和 API 全面接棒 GPT-5.5，分三档——Sol（$5/$30 每百万 token）、Terra（$2.5/$15）、Luna（$1/$6），另有 Ultra 多 agent 模式。Codex 周活超 500 万，其中 100 万以上用于软件开发以外的工作。

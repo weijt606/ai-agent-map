@@ -26,12 +26,15 @@
 | [Kimi Code](../agents/kimi-code.md) | Moonshot AI | Kimi（K2） | TypeScript / MIT | 第一方 Kimi 循环，通过 ACP + VS Code 插件有强 IDE 触达 |
 | [MiMoCode](../agents/mimocode.md) | 小米 | MiMo（MiMo Auto） | TypeScript / MIT | 内置持久跨会话记忆——跨多次运行保留项目理解 |
 | [CodeWhale](../agents/codewhale.md) | Hmbown（社区） | DeepSeek + MiMo | Rust / 开源 | Claude Code 形态重新围绕低成本国产模型搭建，国产模型当一等公民 |
+| [Grok Build](../agents/grok-build.md) | SpaceXAI / xAI | Grok | Rust / Apache-2.0（源码可见） | 一个二进制覆盖三种模式——全屏 TUI、headless CI、以及编辑器可驱动的 ACP server |
 
-> 厂商官方 CLI（Claude Code、Codex、Kimi Code、MiMoCode）把模型和循环一起调优。第三方/社区 CLI（Aider、CodeWhale）用这点换取可移植性或特定的成本/模型目标。
+> 厂商官方 CLI（Claude Code、Codex、Kimi Code、MiMoCode、Grok Build）把模型和循环一起调优。第三方/社区 CLI（Aider、CodeWhale）用这点换取可移植性或特定的成本/模型目标。
+>
+> **这里的“开源”不是一回事。** Aider（Apache-2.0）、Kimi Code 和 MiMoCode（MIT）接受外部贡献。[Grok Build](../agents/grok-build.md) 发的是 Apache-2.0 源码，但它是 SpaceXAI monorepo 的周期性导出，而且**明确不接受外部贡献**——你可以读、可以 fork，但无法合回上游。
 
 ## 怎么选
 
-1. **从你想跑的模型出发。** 如果你绑定某厂商的模型，它的第一方 CLI 通常是调得最好的路径：Claude → [Claude Code](../agents/claude-code.md)，GPT-5.x → [Codex](../agents/codex.md)，Kimi → [Kimi Code](../agents/kimi-code.md)，MiMo → [MiMoCode](../agents/mimocode.md)，想省钱跑 DeepSeek/MiMo → [CodeWhale](../agents/codewhale.md)。
+1. **从你想跑的模型出发。** 如果你绑定某厂商的模型，它的第一方 CLI 通常是调得最好的路径：Claude → [Claude Code](../agents/claude-code.md)，GPT-5.x → [Codex](../agents/codex.md)，Kimi → [Kimi Code](../agents/kimi-code.md)，MiMo → [MiMoCode](../agents/mimocode.md)，Grok → [Grok Build](../agents/grok-build.md)，想省钱跑 DeepSeek/MiMo → [CodeWhale](../agents/codewhale.md)。
 2. **如果模型自由比调优更重要，** 选 provider 中立的底座：要成品 CLI 就用 [Aider](../agents/aider.md)，想拥有循环就上 [Pi](../agents/pi.md) harness。
 3. **如果单仓库长程记忆是痛点，** [MiMoCode](../agents/mimocode.md) 内置的跨会话记忆是最清晰的差异点；否则给任意 CLI 配上 [CodeGraph](../agents/codegraph.md) 做代码上下文索引。
 4. **如果你需要云端委派或后台运行，** 这些前台循环都不合适——去 [Codex](../agents/codex.md)（云端那侧）、[Jules](../agents/jules.md) 或 [Devin](../agents/devin.md)。
@@ -40,6 +43,7 @@
 
 - **厂商 CLI 不只是一个模型端点。** Claude Code、Kimi Code、MiMoCode 把 agent 循环、工具和 prompt 围绕自家模型调优——这就是它相对于"拿通用 harness 指向同一个 API"的价值。
 - **MiMoCode 不是 [CodeWhale](../agents/codewhale.md)。** MiMoCode 是小米第一方 CLI；CodeWhale 是包装 DeepSeek + MiMo 的社区 Rust TUI。它们共享一个模型家族，不共享代码库。
+- **Apache-2.0 不等于社区共建。** [Grok Build](../agents/grok-build.md) 顶着一个真实的开源许可证，但那棵树不接受贡献、且从私有 monorepo 同步而来。如果你选开源是为了对路线图有影响力、而不只是读和 fork 的权利，那要看的是贡献政策，不是 LICENSE 文件。
 - **coding CLI 不是 harness。** 如果你想端到端 fork、审计、拥有循环，那是 [Pi](../agents/pi.md) / [OpenHands](../agents/openhands.md) 的领地，而不是一个照单全收的厂商产品。
 
 想要更全、覆盖所有路线的视角，看[主流 agent 选型矩阵](mainstream-agent-landscape.md)。想要问题优先的走查，看[编码自动化指南](../use-cases/coding-automation.md)。

@@ -153,6 +153,14 @@
     "profile": "agents/kimi-code.md",
     "scope": "in"
   },
+  "xai-org/grok-build": {
+    "display": "Grok Build",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/grok-build.md",
+    "scope": "in"
+  },
   "xiaomimimo/mimo-code": {
     "display": "MiMoCode",
     "category": "agent",

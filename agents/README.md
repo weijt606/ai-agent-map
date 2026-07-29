@@ -12,7 +12,7 @@ Think of it as a shortlist directory: understand the route first, then decide wh
 
 | Route | Representative projects | Best for |
 | --- | --- | --- |
-| Direct execution | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Kimi Code](kimi-code.md), [MiMoCode](mimocode.md), [CodeWhale](codewhale.md), [Devin](devin.md), [Jules](jules.md) | People who want to hand a coding task directly to an agent (compared in [terminal coding CLI agents](../comparisons/coding-cli-agents.md)) |
+| Direct execution | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Kimi Code](kimi-code.md), [MiMoCode](mimocode.md), [CodeWhale](codewhale.md), [Grok Build](grok-build.md), [Devin](devin.md), [Jules](jules.md) | People who want to hand a coding task directly to an agent (compared in [terminal coding CLI agents](../comparisons/coding-cli-agents.md)) |
 | Agent harness framework | [Pi](pi.md), [jcode](jcode.md), [OpenHands](openhands.md), [SWE-agent](swe-agent.md), [mini-swe-agent](mini-swe-agent.md), [OpenHarness](openharness.md) | People who want to own the loop, tool surface, and permissions instead of inheriting a vendor product |
 | Frontier agentic model | [Claude Fable 5](claude-fable-5.md), [GPT-5.5](gpt-5.5.md) | People choosing which model to wire into their agent system, or evaluating the capability ceiling of Anthropic / OpenAI surfaces |
 | Agentic skills framework | [Superpowers](superpowers.md) | Users who want a methodology + composable skills layer that plugs into Claude Code, Codex, Cursor, and other agents |
@@ -31,26 +31,27 @@ This is not a ranking of quality.
 
 It is a quick view of projects that appeared especially hot in the latest weekly GitHub snapshot. The order follows the 7-day gain, while the star totals below reflect the current counts checked during this repo update.
 
-> **Last updated:** 2026-07-22 · **Snapshot window:** 2026-07-14 → 2026-07-22 (gain since last update, ~8 days, approximate) · **Star counts:** checked at update time
+> **Last updated:** 2026-07-29 · **Snapshot window:** 2026-07-22 → 2026-07-29 (gain since last update, 7 days, approximate) · **Star counts:** checked at update time
 
 Project names link to the upstream GitHub repo. When a profile exists in this directory, it is linked separately in the "Directory status" column.
 
 | Rank | Project | Current stars | Snapshot gain | Directory status | Note |
 | --- | --- | --- | --- | --- | --- |
-| #1&nbsp;(=) | [mattpocock/skills](https://github.com/mattpocock/skills) | 181.8k | +13,570 | Watchlist (Skills Wave) | Held the gain lead for a fifth straight window with its biggest jump yet — curated `.claude/skills` directory cleared 181k |
-| #2&nbsp;(↑) | [Superpowers](https://github.com/obra/superpowers) | 259.3k | +5,432 | [Profile](superpowers.md) | Reclaimed #2 and neared 260k — the agentic skills framework keeps compounding |
-| #3&nbsp;(↑) | [Pi](https://github.com/earendil-works/pi) | 75.4k | +4,876 | [Profile](pi.md) | Jumped two spots to #3 — the Earendil-owned harness cleared 75k |
-| #4&nbsp;(=) | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 218.8k | +4,588 | [Profile](hermes-agent.md) | Steady at #4 — the in-scope absolute leader cleared 218k |
-| #5&nbsp;(↑) | [Codex CLI](https://github.com/openai/codex) | 100.6k | +2,954 | [Profile](codex.md) | Climbed two spots to #5 and crossed 100k — OpenAI's Codex CLI |
-| #6&nbsp;(=) | [anthropics/skills](https://github.com/anthropics/skills) | 163.4k | +2,510 | Watchlist (Skills Wave canonical) | Held #6 — Anthropic's own reference `.claude/skills` repo, cleared 163k |
-| #7&nbsp;(new) | [jcode](https://github.com/1jehuang/jcode) | 10.6k | +2,319 | [Profile](jcode.md) | Entered the table — the Rust multi-session coding harness accelerated off the watchlist, cleared 10k, and is now profiled |
-| #8&nbsp;(=) | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 61.6k | +1,968 | [Profile](codegraph.md) | Held #8 — pre-indexed code knowledge graph cleared 61k |
-| #9&nbsp;(↓) | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 79.8k | +1,908 | Watchlist (Skills Wave) | Cooled from #2 to #9 as its gain roughly halved — Addy Osmani's curated agent-skills collection neared 80k |
-| #10&nbsp;(new) | [Kimi Code](https://github.com/MoonshotAI/kimi-code) | 4.5k | +1,452 | [Profile](kimi-code.md) | Entered the table — Moonshot's vendor-official Kimi-native CLI cleared 4.5k |
+| #1&nbsp;(=) | [mattpocock/skills](https://github.com/mattpocock/skills) | 192.9k | +11,033 | Watchlist (Skills Wave) | Sixth straight window at the gain lead — curated `.claude/skills` directory cleared 192k, though off last window's record |
+| #2&nbsp;(↑) | [Pi](https://github.com/earendil-works/pi) | 79.7k | +4,286 | [Profile](pi.md) | Climbed to #2 and neared 80k — the steadiest gainer in the top five |
+| #3&nbsp;(↓) | [Superpowers](https://github.com/obra/superpowers) | 262.7k | +3,409 | [Profile](superpowers.md) | Slipped to #3 as its gain fell by a third, but crossed 262k |
+| #4&nbsp;(=) | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 221.9k | +3,057 | [Profile](hermes-agent.md) | Steady at #4 for a third straight window — cleared 221k |
+| #5&nbsp;(↑) | [jcode](https://github.com/1jehuang/jcode) | 12.8k | +2,156 | [Profile](jcode.md) | Rose two spots in its first full window as a profile — the Rust multi-session harness cleared 12.7k |
+| #6&nbsp;(↓) | [Codex CLI](https://github.com/openai/codex) | 102.1k | +1,498 | [Profile](codex.md) | Eased to #6 as its gain halved post-100k — cleared 102k |
+| #7&nbsp;(↑) | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 63.1k | +1,464 | [Profile](codegraph.md) | Up one to #7 — pre-indexed code knowledge graph cleared 63k |
+| #8&nbsp;(↓) | [anthropics/skills](https://github.com/anthropics/skills) | 164.8k | +1,439 | Watchlist (Skills Wave canonical) | Slipped two spots as its gain nearly halved — cleared 164k |
+| #9&nbsp;(↑) | [Kimi Code](https://github.com/MoonshotAI/kimi-code) | 5.5k | +997 | [Profile](kimi-code.md) | Up one to #9 — Moonshot's vendor-official Kimi-native CLI cleared 5.5k |
+| #10&nbsp;(new) | [n8n](https://github.com/n8n-io/n8n) | 198.4k | +973 | [Profile](n8n.md) | First appearance on this table — the workflow-automation runtime took the last seat by 8 stars |
 
 Rank history over time is charted in [rankings/](../rankings/README.md), alongside category and vertical boards sorted by total stars.
 
 **Market events:**
+- **July 22–29 2026 — Grok Build lands; the board cools broadly** — xAI/SpaceXAI shipped **[Grok Build](grok-build.md)**, a vendor-official Rust terminal coding agent, reaching **23.2k stars and 4.4k forks in 15 days** — the loudest debut this map has recorded. New-inclusion decision: **Grok Build is added as an in-scope profile** on the coding-CLI route; note its governance — Apache-2.0 but a periodic monorepo export that **does not accept external contributions**. It carries no rank yet because it was untracked when the window opened. On the table, every top-10 gain fell (partly a 7-day window against ~8 last time): [mattpocock/skills](https://github.com/mattpocock/skills) took a sixth straight #1 off its record (+11.0k), [Superpowers](superpowers.md) slipped to #3, [Codex CLI](codex.md) halved to #6, while [Pi](pi.md) rose to #2 and [jcode](jcode.md) to #5. [n8n](n8n.md) entered at #10 by 8 stars over [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills), which fell off. Skills wave narrowed a third straight time, to 3/10.
 - **July 14–22 2026 — jcode promoted to a profile; mattpocock surges, addyosmani collapses** — [mattpocock/skills](https://github.com/mattpocock/skills) took a fifth straight #1 with its biggest gain yet (+13.6k, past 181k), while last window's #2 [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) fell to #9 as its gain roughly halved. Two in-scope newcomers entered the gain table: **[jcode](jcode.md)** at #7 and [Kimi Code](kimi-code.md) at #10. New-inclusion decision: **[jcode](jcode.md) (`1jehuang/jcode`, Rust, 10.6k) graduated from the watchlist to a full profile** in the [agent harness framework](../comparisons/agent-harness-frameworks.md) route, after climbing steadily since May. [Codex CLI](codex.md) crossed 100k. Skills wave narrowed to 4/10 as [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) and [TradingAgents](https://github.com/TauricResearch/TradingAgents) fell off the table.
 - **July 9 2026 — Codex merges into ChatGPT; GPT-5.6 ships** — OpenAI folded the standalone Codex app into the ChatGPT desktop app (Codex is now an entry next to Chat and the new agentic ChatGPT Work mode, on every plan including Free), and GPT-5.6 (Sol/Terra/Luna tiers) replaced GPT-5.5 across ChatGPT, Codex, and the API. Details in [market-events](../market-events.md), [Codex](codex.md), [GPT-5.5](gpt-5.5.md).
 - **June 9 – July 7 2026 — Claude 5 family arrives, with turbulence** — Anthropic released [Claude Fable 5](claude-fable-5.md), the first Mythos-class model (a tier above Opus), as the default Claude Code model; it was pulled worldwide June 12 under short-lived export controls, returned July 1 behind stricter safety classifiers (Opus 4.8 fallback), and moved to metered credits July 7. Opus 4.8 itself had shipped May 28. Details in [market-events](../market-events.md).

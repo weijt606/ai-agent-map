@@ -37,8 +37,9 @@ This is rolling out in phases; [jcode](../agents/jcode.md)'s memory cell is work
 | [Kimi Code](../agents/kimi-code.md) | ● | ● | ○ | ○ | — | ◐ | — | ◐ | ◐ |
 | [MiMoCode](../agents/mimocode.md) | ● | ● | ● | ○ | — | ◐ | — | ○ | ◐ |
 | [CodeWhale](../agents/codewhale.md) | ● | ● | ○ | ○ | — | ◐ | — | ○ | ◐ |
+| [Grok Build](../agents/grok-build.md) | ● | ● | ○ | ◐ | — | ◐ | ○ | ◐ | ◐ |
 
-Standouts: Claude Code and Codex are the broadest **delivery surfaces**; Codex is alone here on **multi-agent** (parallel cloud agents); MiMoCode is the only CLI treating **memory** as a headline feature; Aider leads on explicit-diff **human approval**.
+Standouts: Claude Code and Codex are the broadest **delivery surfaces**; Codex is alone here on **multi-agent** (parallel cloud agents); MiMoCode is the only CLI treating **memory** as a headline feature; Aider leads on explicit-diff **human approval**. Grok Build is the newest entry and the strongest **tool use** + **code execution** pairing among the vendor CLIs (MCP, skills, plugins, hooks, sandboxing, workspace checkpoints), but note its **deployment control** score reflects a source-available tree that does not accept contributions.
 
 ## Own-The-Loop Harness Frameworks
 

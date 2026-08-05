@@ -51,8 +51,12 @@ Standouts: Claude Code and Codex are the broadest **delivery surfaces**; Codex i
 | [SWE-agent](../agents/swe-agent.md) | ● | ● | ○ | ○ | — | ○ | — | ○ | ● |
 | [mini-swe-agent](../agents/mini-swe-agent.md) | ◐ | ● | — | ○ | — | ○ | — | ○ | ● |
 | [OpenHarness](../agents/openharness.md) | ● | ● | ◐ | ● | ◐ | ◐ | ◐ | ◐ | ● |
+| [QM](../agents/qm.md) | ◐ | ● | ● | ● | ◐ | ● | ● | ● | ● |
+| [Omnigent](../agents/omnigent.md) | ● | ● | ○ | ● | ● | ● | ○ | ● | ● |
 
 Standouts: the whole route is defined by **deployment control** (you own the loop). jcode is the only harness with **memory** as a headline (passive semantic graph — see [memory approaches](../comparisons/memory-approaches.md)); OpenHands and OpenHarness carry the most **orchestration**.
+
+The two meta-harnesses score wide because they add the layer the single-loop harnesses deliberately leave out — and they split cleanly. [QM](../agents/qm.md) is the only entry on this route with **memory**, **scheduling**, and **delivery surfaces** all as core, because each scope owns its own memory, crons, and Slack/web presence; its **tool use** is deliberately ◐ (a small fixed tool surface, extended through skills rather than breadth). [Omnigent](../agents/omnigent.md) instead leads on **multi-agent** — mixing several harnesses in one session, including having one review another — and both make **human approval** core through policy engines rather than per-edit prompts. Read both marks with their maturity in mind: QM is days old and Omnigent is self-declared alpha, so these reflect stated design centers, not field-proven behavior.
 
 ## Editor-Centric & Review-First
 
@@ -64,8 +68,11 @@ Standouts: the whole route is defined by **deployment control** (you own the loo
 | [Cline](../agents/cline.md) | ● | ● | ○ | ○ | — | ● | — | ◐ | ◐ |
 | [GitHub Copilot](../agents/github-copilot.md) | ● | ◐ | ○ | ◐ | ◐ | ◐ | ◐ | ● | ○ |
 | [CoStrict](../agents/costrict.md) | ● | ● | ○ | ● | ◐ | ● | ○ | ◐ | ● |
+| [Open Code Review](../agents/open-code-review.md) | ● | — | — | ● | ◐ | ◐ | ○ | ● | ● |
 
 Standouts: Cline and CoStrict make **human approval** the whole point; CoStrict is the only one here strong on **deployment control** (private, on-prem) and **orchestration** (a standardized requirement→review workflow).
+
+[Open Code Review](../agents/open-code-review.md) is the odd shape in this group and worth reading carefully: it scores **—** on code execution and memory because it never runs your code and keeps no state beyond a resumable session, and only **◐** on human approval — not because humans are sidelined, but because it has no approval gate to offer: it comments and stops. Its **orchestration** ● is unusual for a review tool and is the actual product — deterministic file selection, bundling into concurrent sub-agents, and rule matching wrapped around the model. Its **delivery surfaces** ● covers a CLI, four CI systems, and plugins for Claude Code, Codex, Cursor, and OpenCode.
 
 ## Managed & Cloud Delegation
 

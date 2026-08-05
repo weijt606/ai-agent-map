@@ -51,8 +51,12 @@
 | [SWE-agent](../agents/swe-agent.md) | ● | ● | ○ | ○ | — | ○ | — | ○ | ● |
 | [mini-swe-agent](../agents/mini-swe-agent.md) | ◐ | ● | — | ○ | — | ○ | — | ○ | ● |
 | [OpenHarness](../agents/openharness.md) | ● | ● | ◐ | ● | ◐ | ◐ | ◐ | ◐ | ● |
+| [QM](../agents/qm.md) | ◐ | ● | ● | ● | ◐ | ● | ● | ● | ● |
+| [Omnigent](../agents/omnigent.md) | ● | ● | ○ | ● | ● | ● | ○ | ● | ● |
 
 看点：整条路线由**部署控制**定义（你拥有循环）。jcode 是唯一把**记忆**当招牌的 harness（被动语义图谱——见[记忆方案](../comparisons/memory-approaches.md)）；OpenHands 和 OpenHarness 的**编排**最重。
+
+两个元 harness 打分面很宽，因为它们补的正是单循环 harness 刻意不做的那一层——而且两者分得很干净。[QM](../agents/qm.md) 是这条路线上唯一把**记忆**、**调度**和**交付表面**同时做成核心的，因为每个作用域自带记忆、cron 以及 Slack/web 的存在感；它的**工具使用**故意只给 ◐（工具面小而固定，靠 skill 扩展而不是靠铺广度）。[Omnigent](../agents/omnigent.md) 则在**多 agent** 上领先——在一个会话里混用多个 harness，包括让一个去评审另一个——而两者都靠策略引擎（而不是逐次编辑弹窗）把**人工审批**做成核心。读这两行时请带上成熟度：QM 才几天大，Omnigent 自标 alpha，所以这些分反映的是它们声明的设计重心，不是实战验证过的行为。
 
 ## 编辑器中心 & 评审优先
 
@@ -64,8 +68,11 @@
 | [Cline](../agents/cline.md) | ● | ● | ○ | ○ | — | ● | — | ◐ | ◐ |
 | [GitHub Copilot](../agents/github-copilot.md) | ● | ◐ | ○ | ◐ | ◐ | ◐ | ◐ | ● | ○ |
 | [CoStrict](../agents/costrict.md) | ● | ● | ○ | ● | ◐ | ● | ○ | ◐ | ● |
+| [Open Code Review](../agents/open-code-review.md) | ● | — | — | ● | ◐ | ◐ | ○ | ● | ● |
 
 看点：Cline 和 CoStrict 把**人工审批**当作全部重点；CoStrict 是这组里唯一在**部署控制**（私有化、本地部署）和**编排**（需求→评审的标准化流程）上都强的。
+
+[Open Code Review](../agents/open-code-review.md) 在这一组里形状特别，值得仔细读：它在代码执行和记忆上是 **—**，因为它从不运行你的代码，除了可续跑的会话之外也不保留状态；人工审批只给 **◐**，不是因为把人晾在一边，而是因为它根本没有"审批闸口"可给——它只留评论然后停下。它的**编排** ● 对一个评审工具来说很反常，而这恰恰就是产品本身：确定性的文件选择、打包成并发子 agent、以及包在模型外面的规则匹配。它的**交付表面** ● 覆盖一个 CLI、四套 CI 系统，以及 Claude Code、Codex、Cursor、OpenCode 的插件。
 
 ## 托管 & 云端委派
 

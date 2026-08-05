@@ -343,8 +343,7 @@
     "vertical": null,
     "group": "observability",
     "profile": "agents/langfuse.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   },
   "flowiseai/flowise": {
     "display": "Flowise",
@@ -352,6 +351,30 @@
     "vertical": null,
     "group": "workflow",
     "profile": "agents/flowise.md",
+    "scope": "in"
+  },
+  "yc-software/qm": {
+    "display": "QM",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/qm.md",
+    "scope": "in"
+  },
+  "alibaba/open-code-review": {
+    "display": "Open Code Review",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/open-code-review.md",
+    "scope": "in"
+  },
+  "omnigent-ai/omnigent": {
+    "display": "Omnigent",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/omnigent.md",
     "scope": "in"
   },
   "yeachan-heo/oh-my-codex": {

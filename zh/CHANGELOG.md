@@ -4,6 +4,16 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-08-05 —— 元 harness 这一层，以及一个专职评审 agent
+
+三个新 profile（EN + zh），地图收录数来到 60：
+
+- **新增 [QM](agents/qm.md)**（`yc-software/qm`，MIT）—— Y Combinator 面向 Slack 和 web 的多人协作 agent harness。这是本地图第一个围绕"很多人共用一套部署"来设计的条目：按人、按房间各一个作用域，各自拥有记忆、文件、keychain、权限、cron 和常驻沙箱，底下的 core 可以互换地跑 Pi、OpenCode、Codex 或 Claude Code。
+- **新增 [Omnigent](agents/omnigent.md)**（`omnigent-ai/omnigent`，Apache-2.0）—— 同一个元 harness 思路，但收窄到单个开发者：在一个会话里跑多个 harness，跟着你在终端、浏览器、手机和桌面之间走，带策略和九家云沙箱供应商。自标 alpha。
+- **新增 [Open Code Review](agents/open-code-review.md)**（`alibaba/open-code-review`，Apache-2.0）—— 阿里跑了两年的内部评审助手，开源版。在模型外面包一条确定性流水线，用召回换准确，还有一个直接跑在你现有 coding agent 大模型上的委派模式。
+
+结构性影响：[agent harness 框架](comparisons/agent-harness-frameworks.md) 新增**元 harness**小节，把"运行 harness 的层"和"harness 本身"分开；[市场事件](../market-events.md) 记录了这个模式的出现；[能力矩阵](capabilities/matrix.md)、[主流格局](comparisons/mainstream-agent-landscape.md)、[编码自动化](use-cases/coding-automation.md) 都补上了新行。同时把 Grok Build 补进主流格局矩阵，并把市场事件按该页声明的"新的在前"重新排序。
+
 ## 2026-07-22 —— 路线地图与 Top-10 构成图
 
 两张新的主页可视化（EN + zh），与 bump chart 同一套设计语言：

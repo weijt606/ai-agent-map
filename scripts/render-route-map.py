@@ -36,12 +36,12 @@ GROUPS = [
     ("Use an agent on your code", "让 agent 直接上手你的代码", "#2a78d6", [
         ("Direct execution", "直接执行", ["Claude Code", "Codex", "Grok Build", "Kimi Code"], 9),
         ("Editor-centric AI workflow", "编辑器中心", ["Cursor", "Windsurf", "Continue"], 3),
-        ("Review-first automation", "评审优先自动化", ["Cline", "GitHub Copilot"], 4),
+        ("Review-first automation", "评审优先自动化", ["Cline", "GitHub Copilot"], 5),
         ("Workflow / orchestration layer", "工作流编排层", ["oh-my-claudecode", "oh-my-codex", "Ruflo"], 3),
         ("Managed background path", "管理式后台路径", ["Claude Managed Agents"], 1),
     ]),
     ("Own the loop", "自己掌控循环", "#eb6834", [
-        ("Agent harness framework", "Agent harness 框架", ["Pi", "jcode", "OpenHands"], 6),
+        ("Agent harness framework", "Agent harness 框架", ["Pi", "jcode", "QM"], 8),
         ("Self-hosted / local runtime", "自托管 / 本地 runtime", ["Hermes Agent", "OpenClaw", "Goose"], 6),
         ("General-purpose autonomous agent", "通用自主 agent", ["AutoGPT", "Agent Zero", "BabyAGI"], 6),
     ]),

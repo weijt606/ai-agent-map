@@ -31,6 +31,8 @@ That question is no longer the useful one. The better question is: which operati
 | Open-source editor extension with full model freedom | [Continue](../agents/continue.md) |
 | Strong approval and strong control inside the editor | [Cline](../agents/cline.md) |
 | Enterprise standardized AI coding with review and private deployment | [CoStrict](../agents/costrict.md) |
+| Repeatable, line-accurate code review in CI, without general-agent token cost | [Open Code Review](../agents/open-code-review.md) |
+| Running several harnesses under one approval and spend policy | [Omnigent](../agents/omnigent.md) (one developer) · [QM](../agents/qm.md) (a whole team) |
 | One flow across VS Code, GitHub, local, and cloud | [GitHub Copilot](../agents/github-copilot.md) |
 | Open-source software engineering agent close to the Devin route | [OpenHands](../agents/openhands.md) |
 | Direct issue-to-execution handoff | [Devin](../agents/devin.md) |
@@ -56,8 +58,9 @@ That question is no longer the useful one. The better question is: which operati
 | Editor-centric AI workflow | [Cursor](../agents/cursor.md), [Windsurf](../agents/windsurf.md) | Keep the editor central and make the IDE itself part of the agent choice |
 | Cloud delegation | [Codex](../agents/codex.md), [Devin](../agents/devin.md), [Jules](../agents/jules.md) | Assign work, come back later, review the result |
 | Managed background path | [Claude Managed Agents](../agents/claude-managed-agents.md) | Scheduled or detached Anthropic workflows |
-| Review-first automation | [Cline](../agents/cline.md), [GitHub Copilot](../agents/github-copilot.md), [Froge Code](../agents/froge-code.md) | Keep humans central while still using powerful agent workflows |
+| Review-first automation | [Cline](../agents/cline.md), [GitHub Copilot](../agents/github-copilot.md), [Froge Code](../agents/froge-code.md), [Open Code Review](../agents/open-code-review.md) | Keep humans central while still using powerful agent workflows (Open Code Review is the review-only end — it comments, it never lands changes) |
 | Own-the-loop harness | [jcode](../agents/jcode.md), [OpenHands](../agents/openhands.md) | Keep the vendor product out — you own the loop, tools, and permissions (see the [harness comparison](../comparisons/agent-harness-frameworks.md)) |
+| Meta-harness over several loops | [Omnigent](../agents/omnigent.md), [QM](../agents/qm.md) | You already run more than one harness and want one place for approval, spend, sandboxing, and session continuity |
 | Build / self-host | [OpenHands](../agents/openhands.md), [Goose](../agents/goose.md), [Hermes Agent](../agents/hermes-agent.md), [LangChain](../agents/langchain.md), [LangGraph](../agents/langgraph.md) | More flexibility, more environment and operations cost |
 
 ## Key Trade-Offs

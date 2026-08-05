@@ -4,6 +4,16 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-08-05 — The meta-harness layer, and a dedicated review agent
+
+Three new profiles (EN + zh), taking the map to 60:
+
+- **New [QM](agents/qm.md)** (`yc-software/qm`, MIT) — Y Combinator's multiplayer agent harness for Slack and the web. The map's first entry designed around *many people sharing one deployment*: a scope per person and per room, each with its own memory, files, keychain, permissions, crons, and durable sandbox, over a core that runs Pi, OpenCode, Codex, or Claude Code interchangeably.
+- **New [Omnigent](agents/omnigent.md)** (`omnigent-ai/omnigent`, Apache-2.0) — the same meta-harness idea scoped to one developer: several harnesses inside a single session, following you across terminal, browser, phone, and desktop, with policy and nine cloud sandbox providers. Self-declared alpha.
+- **New [Open Code Review](agents/open-code-review.md)** (`alibaba/open-code-review`, Apache-2.0) — Alibaba's two-year internal review assistant, open-sourced. A deterministic pipeline wrapped around the model, trading recall for precision, with a delegation mode that runs on your existing coding agent's LLM.
+
+Structural consequences: [agent harness frameworks](comparisons/agent-harness-frameworks.md) gains a **meta-harness** section separating layers that *run* harnesses from harnesses themselves; [market-events](market-events.md) records the pattern's arrival; the [capability matrix](capabilities/matrix.md), [mainstream landscape](comparisons/mainstream-agent-landscape.md), and [coding automation](use-cases/coding-automation.md) all carry the new rows. Grok Build was also backfilled into the mainstream landscape matrix, and the market-events entries were re-sorted into the newest-first order the page claims.
+
 ## 2026-07-22 — Route map and top-10 composition charts
 
 Two new home-page visuals (EN + zh), same design language as the bump chart:

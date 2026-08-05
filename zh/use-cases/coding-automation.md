@@ -31,6 +31,8 @@
 | 我要开源编辑器扩展，模型完全由我自己选 | [Continue](../agents/continue.md) |
 | 我要编辑器内强审批、强控制 | [Cline](../agents/cline.md) |
 | 我要企业标准化 AI 编码，带评审和私有化部署 | [CoStrict](../agents/costrict.md) |
+| 我要 CI 里可复现、行级精确的代码评审，又不想付通用 agent 的 token 账 | [Open Code Review](../agents/open-code-review.md) |
+| 我要把好几个 harness 收到同一套审批和花费策略下 | [Omnigent](../agents/omnigent.md)（单个开发者）· [QM](../agents/qm.md)（整个团队） |
 | 我要 VS Code + GitHub 里本地和云端切换 | [GitHub Copilot](../agents/github-copilot.md) |
 | 我要一个开源、接近 Devin 路线的软件工程 agent | [OpenHands](../agents/openhands.md) |
 | 我要把明确 issue 直接交给 agent 执行 | [Devin](../agents/devin.md) |
@@ -56,8 +58,9 @@
 | 编辑器中心工作流 | [Cursor](../agents/cursor.md), [Windsurf](../agents/windsurf.md) | 编辑器本身就是选型的一部分 |
 | 云端委派型 | [Codex](../agents/codex.md), [Devin](../agents/devin.md), [Jules](../agents/jules.md) | 先交任务，再回来 review |
 | 管理式后台路径 | [Claude Managed Agents](../agents/claude-managed-agents.md) | 更偏定时、后台、程序化 Anthropic 工作流 |
-| review-first 自动化 | [Cline](../agents/cline.md), [GitHub Copilot](../agents/github-copilot.md), [Froge Code](../agents/froge-code.md) | 让 agent 很强，但把合并和节奏留给人 |
+| review-first 自动化 | [Cline](../agents/cline.md), [GitHub Copilot](../agents/github-copilot.md), [Froge Code](../agents/froge-code.md), [Open Code Review](../agents/open-code-review.md) | 让 agent 很强，但把合并和节奏留给人（Open Code Review 是纯评审那一端——只留评论，从不落改动） |
 | 自己掌控循环的 harness | [jcode](../agents/jcode.md), [OpenHands](../agents/openhands.md) | 把厂商成品挡在外面——你拥有循环、工具和权限（见 [harness 框架对比](../comparisons/agent-harness-frameworks.md)） |
+| 跨多个循环的元 harness | [Omnigent](../agents/omnigent.md), [QM](../agents/qm.md) | 你本来就在跑不止一个 harness，想要一个统一管审批、花费、沙箱和会话连续性的地方 |
 | 自建 / 自托管 | [OpenHands](../agents/openhands.md), [Goose](../agents/goose.md), [Hermes Agent](../agents/hermes-agent.md), [LangChain](../agents/langchain.md), [LangGraph](../agents/langgraph.md) | 灵活，但要自己承担环境和运维 |
 
 ## 关键取舍

@@ -6,7 +6,9 @@
 
 A "harness" is the minimal scaffolding around an LLM that turns it into an agent — the loop, the tool surface, the permission model, the skills hook. These are projects you can fork, audit, and own end-to-end, rather than vendor products you adopt as-is.
 
-Current star totals for all six live in the [rankings boards](../rankings/README.md); this page compares shape, not size.
+Current star totals for all eight live in the [rankings boards](../rankings/README.md); this page compares shape, not size.
+
+Two shapes now sit under this route. **Single-loop harnesses** *are* the loop — you fork one and own it. **Meta-harnesses** run several of those loops under one layer, and are what you reach for once "which harness" stops being a single answer.
 
 ## At A Glance
 
@@ -19,6 +21,17 @@ Current star totals for all six live in the [rankings boards](../rankings/README
 | [mini-swe-agent](../agents/mini-swe-agent.md) | MIT (Py) | ~100-line successor; SWE-bench Verified >74% | Tiny — readable in one sitting |
 | [OpenHarness](../agents/openharness.md) | MIT (Py) | 10-subsystem open harness with anthropics/skills + MCP + 43 tools | Medium; production-shaped, sibling to [CLI-Anything](../agents/cli-anything.md) |
 
+## Meta-Harnesses
+
+These do not ship a loop of their own. They run the harnesses above (and vendor products like [Claude Code](../agents/claude-code.md) and [Codex](../agents/codex.md)) behind one interface, and add the things a bare loop leaves out: identity, approval policy, sandboxing, scheduling, and a place other people can watch from.
+
+| Project | License | Runs | The unit it optimizes for | Watch out for |
+| --- | --- | --- | --- | --- |
+| [QM](../agents/qm.md) | MIT (TS) | Pi, OpenCode, Codex, Claude Code | **A company.** Scope = a person, channel, group message, or project, each with its own memory, files, keychain, permissions, crons, and durable sandbox | Days old; a real deployment to operate (Postgres, sandboxes, your own cloud account); contributions accepted as written proposals, not code |
+| [Omnigent](../agents/omnigent.md) | Apache-2.0 (Py) | Claude Code, Codex, Cursor, OpenCode, Hermes, Pi, custom YAML agents | **A developer.** Session = the unit; it follows you across terminal, browser, phone, and desktop, and can run in one of nine cloud sandbox providers | Self-declared **alpha**; prerequisite chain spans three language ecosystems (`uv`, Node, tmux, `bwrap` on Linux) |
+
+The distinction that matters when choosing between them: QM assumes **many people share one deployment** and gives each of them isolation; Omnigent assumes **one person drives many agents** and gives them continuity and policy. Neither is a substitute for the other.
+
 ## How To Choose
 
 - Pick by footprint, not by stars. The right harness is the one whose surface area you are willing to maintain.
@@ -27,3 +40,4 @@ Current star totals for all six live in the [rankings boards](../rankings/README
 - If you want to publish SWE-bench numbers: [SWE-agent](../agents/swe-agent.md) is the canonical reference; mini-swe-agent is the working successor.
 - If you want a terminal-first day-to-day coding harness: [Pi](../agents/pi.md), or [jcode](../agents/jcode.md) if speed, low RAM across many sessions, and built-in passive memory are the priorities.
 - If you want a more complete SWE agent product that is still open source: [OpenHands](../agents/openhands.md).
+- If the question is no longer "which harness" but "how do several of them behave under one policy": [Omnigent](../agents/omnigent.md) for one developer across devices, [QM](../agents/qm.md) for a whole team in Slack and the web. Both add a dependency in the middle of your agent loop — take that on when you genuinely run more than one harness, not before.

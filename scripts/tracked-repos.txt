@@ -45,3 +45,9 @@ letta-ai/letta
 openinterpreter/openinterpreter
 BerriAI/litellm
 FlowiseAI/Flowise
+# --- Observability and evals (added 2026-08-05) ---
+langfuse/langfuse
+# --- New inclusions 2026-08-05 ---
+yc-software/qm
+alibaba/open-code-review
+omnigent-ai/omnigent

@@ -4,13 +4,13 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
-## 2026-01 —— ClickHouse 收购 Langfuse
+## 2026-07 → 08 —— "元 harness"出现了
 
-ClickHouse 收购了 **[Langfuse](agents/langfuse.md)**——star 数最高的开源 LLM/agent 观测平台（截至 2026-07-29 为 32.0k）。Langfuse 以开放内核模式提供追踪、评估、prompt 管理和数据集——核心 MIT，治理类功能在单独的 Enterprise 许可之下——并且自托管仍然免费且不限量。
+两个项目在相隔几周之内从两端做出了同一件事。**[QM](agents/qm.md)**（`yc-software/qm`，MIT）——Y Combinator 面向 Slack 和 web 的*多人协作* agent——**头七天拿到约 11.4k star、1.3k fork**；**[Omnigent](agents/omnigent.md)**（`omnigent-ai/omnigent`，Apache-2.0）越过 8k。两者都不自带 agent 循环。它们都是把*别人的* harness——Pi、OpenCode、Codex、Claude Code、Cursor、Hermes——收到一个接口背后的层，并补上裸循环缺的东西：身份、审批策略、花费上限、沙箱、调度和会话连续性。
 
-**对选型的影响：** agent 观测正在被吸收进通用数据基础设施，而不是继续作为独立品类存在；如果你押注某个厂商保持独立，这一点很重要。它同时凸显了本地图现在明确记录的一个区别：在这一层，"开源"横跨四种不同的东西——宽松许可（Opik、Traceloop、Helicone，Apache-2.0）、开放内核（Langfuse）、源码可见但未获 OSI 认可（Arize Phoenix，Elastic 2.0）、以及完全闭源（LangSmith、Braintrust）。Langfuse 表示自己仍然 100% 开源、路线图不变；那是厂商承诺，不是可核实的保证。详见 [Langfuse](agents/langfuse.md)、[观测与评估](comparisons/observability-and-evals.md)。
+**对选型的影响：** 过去两年，harness 的问题一直是"我 fork 哪一个"。这两个项目假定答案是"好几个，而且这没问题"——这等于押注循环本身正在商品化，持久价值在它上面那层治理里。如果这个押注成立，"选哪个 harness"就变成一个可逆决策，真正重要的选择上移了一层。注意两者在"记账单位"上分得很干净：QM 的单位是**组织**（按人和按房间各一个作用域、一档由管理员设定的安全姿态、自托管在你自己的云里），Omnigent 的单位是**开发者**（一个会话跟着你在终端、浏览器、手机和桌面之间走，可跑在九家云沙箱供应商上）。也要注意成熟度：QM 才几天大，Omnigent 自标 alpha，所以这是一个值得跟踪的形态，还不是一个值得依赖的层。QM 还带着本地图为 Grok Build 标注过的那类治理提醒，只是换了一种形式——许可证是 MIT，但贡献只接受*文字提案*，不收代码。详见 [QM](agents/qm.md)、[Omnigent](agents/omnigent.md)、[agent harness 框架](comparisons/agent-harness-frameworks.md)。
 
-来源：[Joining ClickHouse](https://langfuse.com/blog/joining-clickhouse)、[ClickHouse 公告](https://clickhouse.com/blog/clickhouse-acquires-langfuse-open-source-llm-observability)、[langfuse/langfuse](https://github.com/langfuse/langfuse)。
+来源：[yc-software/qm](https://github.com/yc-software/qm)、[qm.ycombinator.com](https://qm.ycombinator.com)、[omnigent-ai/omnigent](https://github.com/omnigent-ai/omnigent)、[omnigent.ai](https://omnigent.ai)。
 
 ## 2026-07-14 —— xAI 发布 Grok Build，"开源"就此分成两种
 
@@ -56,3 +56,11 @@ Anthropic 发布 **Claude Fable 5** 和 **Claude Mythos 5**——同一底层模
 相隔一周的两次 OpenAI 发布定下了春季格局。**4 月 16 日**：并入 ChatGPT 之前 Codex 最大的一次产品更新——任意 macOS app 的后台 Computer Use、同机并行多 agent 执行、带主动建议的内置浏览器、90+ plugin、周活 300 万开发者（3 月初的 2 倍）。**4 月 23 日**：**GPT-5.5** 作为 OpenAI 前沿 agentic 模型发布——Terminal-Bench 2.0 得分 82.7%（发布时最高）、1M token 上下文窗口、价格是 GPT-5.4 的 2 倍。
 
 **对选型的影响：** 两者一起抬高了所有 OpenAI 系表面的能力上限，把模型层带进了 agent 选型。两者如今都已被接棒（见 7 月 9 日条目），但仍是"2026 竞赛跑得有多快"的参照点。详见 [GPT-5.5](agents/gpt-5.5.md)、[Codex](agents/codex.md)。
+
+## 2026-01 —— ClickHouse 收购 Langfuse
+
+ClickHouse 收购了 **[Langfuse](agents/langfuse.md)**——star 数最高的开源 LLM/agent 观测平台（截至 2026-07-29 为 32.0k）。Langfuse 以开放内核模式提供追踪、评估、prompt 管理和数据集——核心 MIT，治理类功能在单独的 Enterprise 许可之下——并且自托管仍然免费且不限量。
+
+**对选型的影响：** agent 观测正在被吸收进通用数据基础设施，而不是继续作为独立品类存在；如果你押注某个厂商保持独立，这一点很重要。它同时凸显了本地图现在明确记录的一个区别：在这一层，"开源"横跨四种不同的东西——宽松许可（Opik、Traceloop、Helicone，Apache-2.0）、开放内核（Langfuse）、源码可见但未获 OSI 认可（Arize Phoenix，Elastic 2.0）、以及完全闭源（LangSmith、Braintrust）。Langfuse 表示自己仍然 100% 开源、路线图不变；那是厂商承诺，不是可核实的保证。详见 [Langfuse](agents/langfuse.md)、[观测与评估](comparisons/observability-and-evals.md)。
+
+来源：[Joining ClickHouse](https://langfuse.com/blog/joining-clickhouse)、[ClickHouse 公告](https://clickhouse.com/blog/clickhouse-acquires-langfuse-open-source-llm-observability)、[langfuse/langfuse](https://github.com/langfuse/langfuse)。

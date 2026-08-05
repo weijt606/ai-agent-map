@@ -61,6 +61,10 @@
 | [SWE-agent](../agents/swe-agent.md) | 研究级 SWE harness | 本地 Python | single-YAML 实验循环 | 复现 SWE-bench 数字、做攻击型安全 CTF 研究 | 上游开发精力已经大部分转移到 mini-swe-agent |
 | [mini-swe-agent](../agents/mini-swe-agent.md) | 极简 SWE harness | 本地 Python | fork-and-modify | 一次看完整个 agent loop、改任何想改的部分 | 故意做得很轻——工具、UI 和可运维性自己补 |
 | [OpenHarness](../agents/openharness.md) | 生产形态开源 harness | 本地 CLI / TUI | 按子系统逐个可审计 | 自托管一个带权限、skills、MCP 的生产级 harness | 比 mini-swe-agent 重；价值取决于你是否真的用上更宽的功能 |
+| [Grok Build](../agents/grok-build.md) | 厂商官方终端 coding agent | 本地终端（Rust TUI）、headless CI、ACP 编辑器 | 高交互；一个二进制三种模式 | 在用 Grok 模型、想要一方 TUI 并要 CI 和编辑器触达的人 | Apache-2.0，但仓库是 monorepo 导出，不接受外部贡献 |
+| [QM](../agents/qm.md) | 多人协作 agent harness | Slack、web 应用，自托管在 Fly 或 AWS | 一套部署；按人、按房间各一个隔离作用域 | 想让全公司共用一个 agent、但不共用状态的团队 | 才几天大；是一套真要运维的部署，而且贡献只收文字提案不收代码 |
+| [Omnigent](../agents/omnigent.md) | 跨其它 harness 的元 harness | 终端、浏览器、手机、macOS 应用、九家云沙箱供应商 | 在一个会话里混用多个 harness | 本来就在跑多个 harness、想要统一策略的开发者 | 自标 alpha；前置依赖链横跨三个语言生态 |
+| [Open Code Review](../agents/open-code-review.md) | 专职代码评审 agent | CLI、四套 CI 系统、Claude Code / Codex / Cursor / OpenCode 插件 | 准确率优先的评审；只留评论，从不动手 | 想在 CI 里用零头的 token 拿到可复现、行级精确评审的团队 | 召回被刻意压得比通用 agent 低，而支撑这个说法的 benchmark 是厂商自跑的 |
 
 ## 怎么读这张表
 

@@ -4,7 +4,7 @@
 
 `.claude/skills` 浪潮按方向细分——每个垂类按当前 star 总量排序，本周增量仅作参考。浪潮本身的背景见[主页](../README.md#市场事件claudeskills-浪潮2026-年-5-月仍在扩散)。
 
-> **最后更新：** 2026-07-29
+> **最后更新：** 2026-08-05
 
 ## 通用技能集
 
@@ -13,10 +13,10 @@
 <!-- auto:vertical:skill:collections -->
 | 排名 | 项目 | Stars | 本周增量 | 状态 |
 | --- | --- | --- | --- | --- |
-| #1 | [Superpowers](https://github.com/obra/superpowers) | 262.7k | +3,410 | 已收录 · [profile](../agents/superpowers.md) |
-| #2 | [mattpocock/skills](https://github.com/mattpocock/skills) | 192.9k | +11,043 | 候补 |
-| #3 | [anthropics/skills](https://github.com/anthropics/skills) | 164.8k | +1,440 | 候补 |
-| #4 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 80.8k | +966 | 候补 |
+| #1 | [Superpowers](https://github.com/obra/superpowers) | 266.9k | +4,174 | 已收录 · [profile](../agents/superpowers.md) |
+| #2 | [mattpocock/skills](https://github.com/mattpocock/skills) | 204.0k | +11,136 | 候补 |
+| #3 | [anthropics/skills](https://github.com/anthropics/skills) | 166.4k | +1,558 | 候补 |
+| #4 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 81.7k | +945 | 候补 |
 <!-- /auto:vertical:skill:collections -->
 
 ## 学术科研
@@ -26,8 +26,8 @@
 <!-- auto:vertical:skill:research -->
 | 排名 | 项目 | Stars | 本周增量 | 状态 |
 | --- | --- | --- | --- | --- |
-| #1 | [academic-research-skills](https://github.com/imbad0202/academic-research-skills) | 39.9k | +964 | 候补 |
-| #2 | [scientific-agent-skills](https://github.com/k-dense-ai/scientific-agent-skills) | 32.0k | +546 | 候补 |
+| #1 | [academic-research-skills](https://github.com/imbad0202/academic-research-skills) | 41.0k | +1,048 | 候补 |
+| #2 | [scientific-agent-skills](https://github.com/k-dense-ai/scientific-agent-skills) | 32.7k | +682 | 候补 |
 <!-- /auto:vertical:skill:research -->
 
 ## 金融
@@ -37,7 +37,7 @@
 <!-- auto:vertical:skill:finance -->
 | 排名 | 项目 | Stars | 本周增量 | 状态 |
 | --- | --- | --- | --- | --- |
-| #1 | [anthropics/financial-services](https://github.com/anthropics/financial-services) | 33.9k | +163 | 不收录 |
+| #1 | [anthropics/financial-services](https://github.com/anthropics/financial-services) | 34.0k | +143 | 不收录 |
 <!-- /auto:vertical:skill:finance -->
 
 ## 方法论
@@ -47,5 +47,5 @@
 <!-- auto:vertical:skill:methodology -->
 | 排名 | 项目 | Stars | 本周增量 | 状态 |
 | --- | --- | --- | --- | --- |
-| #1 | [12-factor-agents](https://github.com/humanlayer/12-factor-agents) | 24.9k | +264 | 不收录 |
+| #1 | [12-factor-agents](https://github.com/humanlayer/12-factor-agents) | 25.1k | +169 | 不收录 |
 <!-- /auto:vertical:skill:methodology -->

@@ -13,12 +13,12 @@
 | 路线 | 代表项目 | 适合谁 |
 | --- | --- | --- |
 | 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Kimi Code](kimi-code.md), [MiMoCode](mimocode.md), [CodeWhale](codewhale.md), [Grok Build](grok-build.md), [Devin](devin.md), [Jules](jules.md) | 想直接把 coding 任务交给 agent（在[终端编码 CLI agent](../comparisons/coding-cli-agents.md) 里对比） |
-| Agent harness 框架 | [Pi](pi.md), [jcode](jcode.md), [OpenHands](openhands.md), [SWE-agent](swe-agent.md), [mini-swe-agent](mini-swe-agent.md), [OpenHarness](openharness.md) | 想自己掌控 loop、工具表面和权限，不直接接受厂商成品 |
+| Agent harness 框架 | [Pi](pi.md), [jcode](jcode.md), [OpenHands](openhands.md), [SWE-agent](swe-agent.md), [mini-swe-agent](mini-swe-agent.md), [OpenHarness](openharness.md), [QM](qm.md), [Omnigent](omnigent.md) | 想自己掌控 loop、工具表面和权限，不直接接受厂商成品（QM 和 Omnigent 在一层之下同时跑多个 harness） |
 | 前沿 agentic 模型 | [Claude Fable 5](claude-fable-5.md)、[GPT-5.5](gpt-5.5.md) | 在选要接入自己 agent 系统的模型，或在评估 Anthropic / OpenAI 系 agent 能力上限 |
 | Agentic skills 框架 | [Superpowers](superpowers.md) | 想要一套方法论 + 可组合 skills 层、能接到 Claude Code、Codex、Cursor 等 agent 之上 |
 | 工作流 / orchestration layer | [oh-my-claudecode](oh-my-claudecode.md), [oh-my-codex](oh-my-codex.md), [Ruflo](ruflo.md) | 已经在用 Claude Code 或 Codex，只想补强 teams、skills 和持久工作流（Ruflo 进一步推到跨机器联邦） |
 | 编辑器中心工作流 | [Cursor](cursor.md), [Windsurf](windsurf.md), [Continue](continue.md) | 想让编辑器本身成为 agent 主表面 |
-| review-first 自动化 | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md), [CoStrict](costrict.md) | 想把 review 和人工节奏留在核心（CoStrict 瞄准企业严格流程 + 私有化部署） |
+| review-first 自动化 | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md), [CoStrict](costrict.md), [Open Code Review](open-code-review.md) | 想把 review 和人工节奏留在核心（CoStrict 瞄准企业严格流程 + 私有化部署；Open Code Review 只做评审，为 CI 里的准确率调优） |
 | 通用自主 agent | [AutoGPT](autogpt.md), [Agent Zero](agent-zero.md), [BabyAGI](babyagi.md), [Julep](julep.md), [GenericAgent](generic-agent.md), [ml-intern](ml-intern.md) | 想要通用自主任务执行（ml-intern 是 ML 工程取向的特化版） |
 | 自建平台 | [LangChain](langchain.md), [LangGraph](langgraph.md), [CrewAI](crewai.md), [LlamaIndex](llamaindex.md), [Haystack](haystack.md), [Semantic Kernel](semantic-kernel.md), [DSPy](dspy.md), [Pydantic AI](pydantic-ai.md) | 想自己搭 agent system |
 | 运行时 & 工具 | [n8n](n8n.md), [MemGPT](memgpt.md), [Open Interpreter](open-interpreter.md), [LiteLLM](litellm.md), [Flowise](flowise.md), [CodeGraph](codegraph.md), [CLI-Anything](cli-anything.md) | 需要工作流自动化、代码执行、LLM 网关、agent 上下文基础设施、agent 驱动 CLI 或可视化构建器 |
@@ -31,26 +31,27 @@
 
 它只是把最近一周 GitHub 快照里特别热的 agent 项目摆出来。顺序按 7 天增量；下面的 star 总数是这次更新目录时重新核对过的当前值。
 
-> **最后更新：** 2026-07-29 · **快照窗口：** 2026-07-22 → 2026-07-29（自上次更新以来的增量，7 天，估算） · **Star 总数：** 更新时实时核对
+> **最后更新：** 2026-08-05 · **快照窗口：** 2026-07-29 → 2026-08-05（自上次更新以来的增量，7 天，估算） · **Star 总数：** 更新时实时核对
 
 项目名链接指向上游 GitHub 仓库。本目录已收录的 profile，在"目录状态"列单独给出链接。
 
 | 排名 | 项目 | 当前 stars | 快照增量 | 目录状态 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| #1&#8288;（=） | [mattpocock/skills](https://github.com/mattpocock/skills) | 192.9k | +11,033 | 候补（Skills 浪潮） | 连续第六个窗口守住增量榜首——策展式 `.claude/skills` 目录越过 192k，但已离开上窗口的新高 |
-| #2&#8288;（↑） | [Pi](https://github.com/earendil-works/pi) | 79.7k | +4,286 | [Profile](pi.md) | 升到 #2 并逼近 80k——前五里最稳的增长者 |
-| #3&#8288;（↓） | [Superpowers](https://github.com/obra/superpowers) | 262.7k | +3,409 | [Profile](superpowers.md) | 增量掉了三分之一，退到 #3，但越过 262k |
-| #4&#8288;（=） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 221.9k | +3,057 | [Profile](hermes-agent.md) | 连续第三个窗口稳守 #4——越过 221k |
-| #5&#8288;（↑） | [jcode](https://github.com/1jehuang/jcode) | 12.8k | +2,156 | [Profile](jcode.md) | 转正后第一个完整窗口就升两位——Rust 多会话 harness 越过 12.7k |
-| #6&#8288;（↓） | [Codex CLI](https://github.com/openai/codex) | 102.1k | +1,498 | [Profile](codex.md) | 过 10 万后增量腰斩，退到 #6——越过 102k |
-| #7&#8288;（↑） | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 63.1k | +1,464 | [Profile](codegraph.md) | 升一位到 #7——预索引代码知识图谱越过 63k |
-| #8&#8288;（↓） | [anthropics/skills](https://github.com/anthropics/skills) | 164.8k | +1,439 | 候补（Skills 浪潮源头） | 增量近乎腰斩，退两位——越过 164k |
-| #9&#8288;（↑） | [Kimi Code](https://github.com/MoonshotAI/kimi-code) | 5.5k | +997 | [Profile](kimi-code.md) | 升一位到 #9——月之暗面官方 Kimi 原生 CLI 越过 5.5k |
-| #10&#8288;（新） | [n8n](https://github.com/n8n-io/n8n) | 198.4k | +973 | [Profile](n8n.md) | 首次进入本表——工作流自动化运行时以 8 个 star 之差拿下最后一席 |
+| #1&#8288;（=） | [mattpocock/skills](https://github.com/mattpocock/skills) | 204.0k | +11,136 | 候补（Skills 浪潮） | 连续第七个窗口守住增量榜首，增量还涨了——冲破 **20 万** |
+| #2&#8288;（=） | [Pi](https://github.com/earendil-works/pi) | 83.9k | +4,263 | [Profile](pi.md) | 稳守 #2 并越过 83.9k——仍是前五里最稳的增长者 |
+| #3&#8288;（=） | [Superpowers](https://github.com/obra/superpowers) | 266.9k | +4,174 | [Profile](superpowers.md) | 稳守 #3，把上窗口丢掉的增量基本收回——越过 266k |
+| #4&#8288;（=） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 225.8k | +3,865 | [Profile](hermes-agent.md) | 连续第四个窗口稳守 #4，增量涨四分之一——越过 225k |
+| #5&#8288;（=） | [jcode](https://github.com/1jehuang/jcode) | 16.0k | +3,163 | [Profile](jcode.md) | 稳守 #5，一周长出自身体量的四分之一（12.8k → 16.0k） |
+| #6&#8288;（=） | [Codex CLI](https://github.com/openai/codex) | 104.1k | +1,917 | [Profile](codex.md) | 稳守 #6，过 10 万后的低谷已回弹——越过 104k |
+| #7&#8288;（↑） | [anthropics/skills](https://github.com/anthropics/skills) | 166.4k | +1,558 | 候补（Skills 浪潮源头） | 升一位到 #7——越过 166k |
+| #8&#8288;（↓） | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 64.7k | +1,552 | [Profile](codegraph.md) | 以 6 个 star 之差退一位——预索引代码知识图谱越过 64k |
+| #9&#8288;（新） | [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 41.0k | +1,048 | 候补（Skills 浪潮） | 缺席两个窗口后重回榜单，逼近 41k——让 skills 浪潮重新扩面 |
+| #10&#8288;（=） | [n8n](https://github.com/n8n-io/n8n) | 199.4k | +964 | [Profile](n8n.md) | 以 24 个 star 之差守住最后一席，马上要破 20 万 |
 
 历史名次变化的趋势图见 [rankings/](../rankings/README.md)，那里还有按 star 总量排序的分类榜与垂类榜。
 
 **市场事件：**
+- **2026-07-29 → 08-05 —— QM 以 Y Combinator 的量级首发；榜单重新加速；mattpocock 破 20 万** —— `yc-software/qm`，一个跑在 Slack 和 web 上的**多人协作 agent harness**，头七天拿到约 11.4k star、1.3k fork。新收录决策：**新增三个 profile** —— **[QM](qm.md)**（MIT，TypeScript；按人和按房间分作用域的状态，跑在 harness 无关的 core 上；贡献只收文字提案不收代码）、**[Omnigent](omnigent.md)**（`omnigent-ai/omnigent`，Apache-2.0，8.1k——同一个元 harness 思路但面向单个开发者，自标 alpha）、**[Open Code Review](open-code-review.md)**（`alibaba/open-code-review`，Apache-2.0，19.0k——补漏；阿里跑了两年的内部评审助手，用召回换准确）。榜单上，上窗口的"全面降温"在 7 天对 7 天的干净对比下反转了：前 10 大部分增量回升，[mattpocock/skills](https://github.com/mattpocock/skills) 拿下连续第七个 #1 并冲破 **20 万**，而且 **#1 到 #6 一位没动**。[jcode](jcode.md) 一周长出自身体量的四分之一（+3.2k 到 16.0k）。[Grok Build](grok-build.md) 交出第一个可比增量，**差 24 个 star 没进榜**（+940）——发布尖峰过后的急剧减速。随着 [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) 回归，Skills 浪潮重新扩面到 4/10。[Langfuse](langfuse.md) 本窗口纳入跟踪，32.6k。
 - **2026-07-22 → 07-29 —— Grok Build 登场；榜单全面降温** —— xAI/SpaceXAI 发布 **[Grok Build](grok-build.md)**，厂商官方的 Rust 终端 coding agent，**15 天拿到 23.2k star、4.4k fork**——本地图记录过的最响亮首秀。新收录决策：**Grok Build 作为已收录 profile 加入** coding CLI 路线；注意它的治理——Apache-2.0，但仓库是 monorepo 的周期性导出，且**不接受外部贡献**。因窗口开始时尚未纳入跟踪，本周暂无排名。榜单上前 10 的增量全线回落（部分原因是本窗口 7 天、上次约 8 天）：[mattpocock/skills](https://github.com/mattpocock/skills) 拿下连续第六个 #1 但已离开新高（+11.0k），[Superpowers](superpowers.md) 退到 #3，[Codex CLI](codex.md) 腰斩到 #6，而 [Pi](pi.md) 升到 #2、[jcode](jcode.md) 升到 #5。[n8n](n8n.md) 以 8 个 star 之差从 [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 手里拿下 #10，后者掉出榜单。Skills 浪潮连续第三次收窄，到 3/10。
 - **2026-07-14 → 07-22 —— jcode 转正写入 profile；mattpocock 暴涨、addyosmani 崩盘** —— [mattpocock/skills](https://github.com/mattpocock/skills) 连续第五次登顶且涨幅创新高（+13.6k，越过 181k），上窗口的 #2 [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 增量近乎腰斩、跌到 #9。两个已收录新面孔进入增量榜：**[jcode](jcode.md)** 在 #7、[Kimi Code](kimi-code.md) 在 #10。新收录决策：**[jcode](jcode.md)（`1jehuang/jcode`，Rust，10.6k）自 5 月起持续上涨，本窗口从候补转正为完整 profile**，归入 [agent harness 框架](../comparisons/agent-harness-frameworks.md) 路线。[Codex CLI](codex.md) 越过 10 万。Skills 浪潮收窄到 4/10，[academic-research-skills](https://github.com/Imbad0202/academic-research-skills) 和 [TradingAgents](https://github.com/TauricResearch/TradingAgents) 掉出榜单。
 - **2026-07-09 —— Codex 并入 ChatGPT；GPT-5.6 发布** —— OpenAI 把独立 Codex 应用并入 ChatGPT 桌面应用（Codex 成为与 Chat 和新 agentic 模式 ChatGPT Work 并列的入口，全计划含免费版可用），同日 GPT-5.6（Sol/Terra/Luna 三档）在 ChatGPT、Codex 和 API 接棒 GPT-5.5。详见[市场事件](../market-events.md)、[Codex](codex.md)、[GPT-5.5](gpt-5.5.md)。

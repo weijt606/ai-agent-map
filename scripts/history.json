@@ -950,61 +950,61 @@
           "rank": 1,
           "slug": "mattpocock/skills",
           "stars": 204025,
-          "gain": 11099
+          "gain": 11136
         },
         {
           "rank": 2,
           "slug": "earendil-works/pi",
           "stars": 83924,
-          "gain": 4245
+          "gain": 4263
         },
         {
           "rank": 3,
           "slug": "obra/superpowers",
           "stars": 266857,
-          "gain": 4157
+          "gain": 4174
         },
         {
           "rank": 4,
           "slug": "nousresearch/hermes-agent",
           "stars": 225750,
-          "gain": 3852
+          "gain": 3865
         },
         {
           "rank": 5,
           "slug": "1jehuang/jcode",
           "stars": 15963,
-          "gain": 3160
+          "gain": 3163
         },
         {
           "rank": 6,
           "slug": "openai/codex",
           "stars": 104065,
-          "gain": 1914
+          "gain": 1917
         },
         {
           "rank": 7,
           "slug": "anthropics/skills",
           "stars": 166369,
-          "gain": 1549
+          "gain": 1558
         },
         {
           "rank": 8,
           "slug": "colbymchenry/codegraph",
           "stars": 64666,
-          "gain": 1545
+          "gain": 1552
         },
         {
           "rank": 9,
           "slug": "imbad0202/academic-research-skills",
           "stars": 40973,
-          "gain": 1046
+          "gain": 1048
         },
         {
           "rank": 10,
           "slug": "n8n-io/n8n",
           "stars": 199400,
-          "gain": 960
+          "gain": 964
         }
       ]
     }

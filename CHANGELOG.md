@@ -4,6 +4,14 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-08-12 — The weekly refresh stops drifting
+
+Tooling only; no content surfaces changed. The weekly flow ran two independent GitHub fetches — one in `check` (whose numbers get hand-written into the heat tables) and another in `publish` (which stamps the snapshot that drives `rankings/` and the SVGs). Stars moved between them, so every refresh ended with the tables and the generated boards disagreeing by a few stars, and a manual reconciliation pass afterwards.
+
+- **`check` now records its fetch** to `scripts/.fetch-cache.json` (gitignored), and **`publish` reuses that same-day fetch** instead of calling the API again. The stamped snapshot and the heat tables are the same numbers by construction. Slugs added to `tracked-repos.txt` between the two calls — exactly what the playbook's pending-pickup step does — are fetched individually and merged in; a cache from an earlier date is ignored as stale. `publish "<msg>" --refetch` forces a fresh fetch.
+- **`validate.py` gained a `[drift]` check** comparing the README heat gains against the fetch that was actually stamped (`history.json`'s newest `raw` entry). The existing history cross-check could never catch this, because its window is copied *from* the README and so agrees with it by construction. This is the backstop for the paths that still fetch twice (`--refetch`, or publishing on a later day than the check).
+- Negative weekly gains now print as `-1,234` rather than `+-1,234`.
+
 ## 2026-08-05 — The meta-harness layer, and a dedicated review agent
 
 Three new profiles (EN + zh), taking the map to 60:

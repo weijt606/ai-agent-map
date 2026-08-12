@@ -31,6 +31,12 @@ changes actually touch them — see step 5.
    value, and the 7-day gain. The snapshot window is the previous `snapshot.json`
    `updated` date → today.
 
+   It also records the fetch in `scripts/.fetch-cache.json` (gitignored), which
+   `publish` reuses in step 6 instead of hitting the API again. That is what
+   keeps the stamped snapshot identical to the numbers you are about to write
+   into the heat tables — **do the editing between `check` and `publish` on the
+   same day** and there is nothing to reconcile afterwards.
+
 2. **Refresh the rank** in all four heat tables. Keep them in lockstep:
    - `README.md` — "Recent Heat Ranking"
    - `zh/README.md` — "近期热度排名"
@@ -67,8 +73,17 @@ changes actually touch them — see step 5.
    **Pending pickups:** a profile may already exist in `catalog.json` with
    `"tracked": false` (profiled, but not yet polled for stars). Flip it to
    tracked by removing that field and adding its slug to `tracked-repos.txt` —
-   this step's fetch then stamps it into the snapshot, so `render-rankings.py`
-   picks it up in the same run. **Currently pending: `langfuse/langfuse`.**
+   `publish` then stamps it into the snapshot, so `render-rankings.py` picks it
+   up in the same run. Slugs added here after the step-1 `check` are simply
+   absent from the fetch cache, so `publish` fetches those individually and
+   reuses the rest; no full re-fetch is triggered.
+   Note that `tracked: false` alone does **not** mean pending — most entries
+   carrying it (`oh-my-codex`, `oh-my-claudecode`, `ai-edge-gallery`,
+   `mercury-agent`, `ml-intern`, and two out-of-scope ones) are permanent
+   history-only records that are deliberately never polled. A pending pickup is
+   only ever a profile written during the *previous* refresh, so carry it
+   forward by naming it here when you write it. **As of 2026-08-12: none
+   pending** (`langfuse/langfuse` was flipped on 2026-08-05).
 
    **Every slug added to `tracked-repos.txt` needs a matching entry in
    `scripts/catalog.json`** (display name, category agent/infra/skill, vertical,
@@ -106,6 +121,21 @@ changes actually touch them — see step 5.
    validation fails, nothing is committed or pushed — the regenerated files stay
    in the working tree; fix the errors and re-run. Every generation step is
    idempotent for the same date.
+
+   The stamp **reuses the step-1 `check` fetch** rather than calling the API
+   again, so the snapshot, the rankings/ boards and your heat tables all carry
+   the same numbers. Watch the one status line it prints on stderr:
+   - `reusing the check fetch from …` — expected; nothing to reconcile.
+   - `WARNING: no same-day check cache found` — you are on a different day from
+     your `check` run (or the cache was deleted). It fetches fresh, which means
+     the stamped values can drift from your hand-written tables. Either re-run
+     `check` and redo the tables, or reconcile the four heat tables against
+     `snapshot.json` afterwards and re-run the generators.
+
+   Add `--refetch` as a third argument to deliberately force a fresh fetch:
+   ```
+   scripts/weekly-update.sh publish "<msg>" --refetch
+   ```
 
 ## What validation checks (`scripts/validate.py`)
 

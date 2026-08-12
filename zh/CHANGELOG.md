@@ -4,6 +4,14 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-08-12 —— 周更不再漂了
+
+只动工具链，没有改任何内容页。此前周更会打两次独立的 GitHub 请求——一次在 `check`（它的数字被手写进热度表），另一次在 `publish`（它 stamp 出的 snapshot 驱动 `rankings/` 和几张 SVG）。两次之间 star 会涨，于是每周结束时热度表和生成的榜单都会差几个 star，必须再做一轮人工对账。
+
+- **`check` 现在会把这次抓取记录到** `scripts/.fetch-cache.json`（已 gitignore），**`publish` 直接复用当天这份结果**而不再打 API。snapshot 和热度表从构造上就是同一批数字。两次调用之间新加进 `tracked-repos.txt` 的 slug——正是 playbook 里"pending pickup"那一步会做的事——会被单独抓取并合并进来；非当天的缓存视为过期忽略。`publish "<msg>" --refetch` 可强制重新抓取。
+- **`validate.py` 新增 `[drift]` 检查**，把 README 热度表的增量与真正被 stamp 的那次抓取（`history.json` 最新的 `raw` 条目）对照。原有的 history 交叉校验永远抓不到这类问题，因为它的 window 就是*从* README 抄进去的，天然自洽。这条是为仍会抓两次的路径（`--refetch`，或在 check 之后隔天才 publish）兜底。
+- 负增量现在显示成 `-1,234`，不再是 `+-1,234`。
+
 ## 2026-08-05 —— 元 harness 这一层，以及一个专职评审 agent
 
 三个新 profile（EN + zh），地图收录数来到 60：

@@ -3,8 +3,9 @@
 #
 #   scripts/weekly-update.sh check
 #       Fetch current stars and print the gain table vs the last snapshot.
-#       Read-only — does NOT touch snapshot.json or any doc. Use this to drive
-#       the editorial heat-table refresh.
+#       Does NOT touch snapshot.json or any doc. Use this to drive the
+#       editorial heat-table refresh. It does record the fetch in
+#       scripts/.fetch-cache.json (gitignored) so publish can reuse it.
 #
 #   scripts/weekly-update.sh publish "<commit message>"
 #       The push gate. Stamps the snapshot (+ history raw), records the README
@@ -12,6 +13,12 @@
 #       SVGs, THEN runs the full validation check. ONLY if validation passes is
 #       anything committed and pushed. On failure the regenerated files stay in
 #       the working tree for inspection, but nothing is committed or pushed.
+#
+#       Publish REUSES the same-day fetch recorded by check rather than hitting
+#       the API again, so the stamped snapshot matches the numbers you wrote
+#       into the heat tables. (Two independent fetches used to drift by 2-37
+#       stars and forced a manual reconciliation pass every week.) Pass
+#       --refetch as the third argument to force a fresh fetch instead.
 #
 # The publish path enforces the rule: a push happens only after the full
 # integrity check passes. Generation runs before validation because validate.py
@@ -34,7 +41,9 @@ case "$cmd" in
     fi
 
     echo "==> Stamping snapshot + history raw…"
-    python3 scripts/fetch-stars.py --write >/dev/null
+    # Third arg may be --refetch to bypass the cached check fetch. The gain
+    # table is silenced; status (reused vs fresh fetch) goes to stderr.
+    python3 scripts/fetch-stars.py --write ${3:+"$3"} >/dev/null
 
     echo "==> Recording README heat table into history…"
     python3 scripts/append-history.py

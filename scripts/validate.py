@@ -11,6 +11,9 @@ Checks, in order:
   4. Ranked tables are well-formed: consecutive rank rows form a block, and
      every block must run #1..#N with no gaps or duplicates. The four heat
      READMEs must additionally open with an exactly-#1..#10 block.
+  5b. Drift: the README heat table's gains match the fetch publish actually
+     stamped (history.json's newest `raw` entry). Catches heat tables written
+     from one fetch while the snapshot/rankings/SVGs were stamped from another.
   5. scripts/history.json cross-check: the latest window matches the README
      heat table row for row (slug, stars to 0.1k tolerance, gain), window
      dates strictly increase, ranks run 1..depth, every slug has a
@@ -165,6 +168,51 @@ def readme_top10():
     return rows
 
 
+def check_snapshot_drift(heat_date):
+    """Catch heat tables written from a different fetch than the stamped one.
+
+    `history.json`'s newest `raw` entry is the fetch that publish stamped into
+    snapshot.json, so it is the authority. The README table is hand-written from
+    the earlier `check` run. Those are normally the same fetch (publish reuses
+    the cached one), but --refetch, a publish on a later day, or a deleted cache
+    reintroduce two independent fetches — and then the tables, the rankings/
+    boards and the SVGs silently disagree by a few stars.
+
+    The existing history cross-check cannot see this: its window is copied from
+    the README, so it agrees with the README by construction.
+    """
+    try:
+        with open(HISTORY, encoding="utf-8") as fh:
+            hist = json.load(fh)
+    except (OSError, json.JSONDecodeError):
+        return  # already reported by check_history
+    raw = hist.get("raw") or []
+    if not raw:
+        return
+    latest_raw = raw[-1]
+    # Only meaningful once publish has stamped today's fetch; mid-edit the raw
+    # entry is still last week's and check_history already flags that state.
+    if not heat_date or latest_raw.get("date") != heat_date:
+        return
+    stars = latest_raw.get("stars") or {}
+    for slug, readme_stars, readme_gain in readme_top10():
+        entry = stars.get(slug)
+        if not entry:
+            errors.append(f"[drift] {slug}: in README heat table but not in the "
+                          f"{heat_date} fetch recorded in history.json raw")
+            continue
+        if entry.get("gain") != readme_gain:
+            errors.append(
+                f"[drift] {slug}: README gain +{readme_gain:,} != stamped fetch "
+                f"+{entry['gain']:,} — the heat tables were written from a "
+                f"different fetch than the one publish stamped")
+        got = entry.get("stars")
+        if isinstance(got, int) and abs(got - readme_stars) > 100:
+            errors.append(
+                f"[drift] {slug}: README stars ~{readme_stars:,} vs stamped "
+                f"{got:,} (beyond 0.1k tolerance)")
+
+
 def check_history(heat_date):
     try:
         with open(HISTORY, encoding="utf-8") as fh:
@@ -236,6 +284,7 @@ def main():
     check_parity()
     heat_date = check_heat()
     check_history(heat_date)
+    check_snapshot_drift(heat_date)
     check_placeholders()
 
     for w in warnings:

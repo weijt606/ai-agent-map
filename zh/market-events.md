@@ -4,6 +4,20 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
+## 2026-08-05 → 08-10 —— Meta 补上厂商 CLI 的最后一块；Claude Code 支持自托管
+
+一周之内落地了三件事，而它们共同推动的是厂商层，不是开源层。
+
+**Meta 在 8 月 5 日发布了 [Muse Code](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2)（beta）**，一个终端 coding agent，底下是新的 coding 向模型 **Muse Spark 1.2**。它一条命令安装，每个任务可以调度多个常驻子 agent，而真正有辨识度的一点是：每一次模型调用、工具运行、审批和编辑都会追加写入本地事件日志，使运行时**可精确重放、可从崩溃处重启**，因而能扛长任务。内置技能是 `/plan`（把任务变成需要审批的计划）、`/grill`（对该计划做压力测试）和 `/goal`。Muse Spark 1.2 通过 Muse Code、Meta Model API 和 OpenRouter 提供。
+
+**Anthropic 在 8 月 6 日把 [Claude Code 自托管环境](https://claude.com/blog/run-claude-code-sessions-on-your-own-compute)推入公开 beta** —— 会话跑在客户自己的基础设施上，在客户自己的网络里、紧挨内部服务，而不是 Anthropic 托管的算力。仅限 Team 和 Enterprise，默认关闭，使用 ZDR 的组织不可用。
+
+**OpenAI 在 8 月 10 日发布 [GPT-5.6-Cyber](https://developers.openai.com/api/docs/models/gpt-5.6-cyber)**，基于 GPT-5.6 Sol 的安全专用模型，需通过 Daybreak 计划审批才能使用。
+
+**对选型的影响：** 本地图 7 月写过"每一家主要模型厂商现在都有自己的一方 coding CLI"，并把这个阵营列为 Anthropic、OpenAI、Moonshot、小米、xAI。Meta 是当时显眼的缺席者，现在不是了——但要注意它是*怎么*来的。Muse Code 是通过 Meta Model API 分发的 beta，**没有公开仓库**，所以它连 Grok Build 那种 source-available 的一端都没够到；本地图的榜单也因此不跟踪它。厂商阵营在不到一个月里合拢，而且合拢时用的多半是你读不到源码的 agent——这才是真正的故事。同时，Claude Code 和 GPT-5.6-Cyber 从另一个角度指向同一件事：厂商现在竞争的差异点是**部署方式与访问控制**——这个 loop 跑在谁的基础设施上、谁被允许跑它——而不是 loop 本身。Muse Code 那个可精确重放的事件日志，是这批发布里唯一一个真正的能力想法，而它对付的正是[观测层](comparisons/observability-and-evals.md)从外部切入的同一个持久性问题。Muse Spark 1.2 的价格与指数位次尚未在本地图记录，因此不会出现在[成本与基准](comparisons/cost-and-benchmarks.md)页。
+
+来源：[Introducing Muse Code and Muse Spark 1.2](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2)、[developer.meta.com/ai/models/muse-spark](https://developer.meta.com/ai/models/muse-spark/)、[Self-hosted environments for Claude Code](https://claude.com/blog/run-claude-code-sessions-on-your-own-compute)、[Claude Code 自托管文档](https://code.claude.com/docs/en/self-hosted-environments)、[GPT-5.6-Cyber](https://developers.openai.com/api/docs/models/gpt-5.6-cyber)。
+
 ## 2026-07 → 08 —— "元 harness"出现了
 
 两个项目在相隔几周之内从两端做出了同一件事。**[QM](agents/qm.md)**（`yc-software/qm`，MIT）——Y Combinator 面向 Slack 和 web 的*多人协作* agent——**头七天拿到约 11.4k star、1.3k fork**；**[Omnigent](agents/omnigent.md)**（`omnigent-ai/omnigent`，Apache-2.0）越过 8k。两者都不自带 agent 循环。它们都是把*别人的* harness——Pi、OpenCode、Codex、Claude Code、Cursor、Hermes——收到一个接口背后的层，并补上裸循环缺的东西：身份、审批策略、花费上限、沙箱、调度和会话连续性。
@@ -38,18 +52,20 @@ Anthropic 发布 **Claude Fable 5** 和 **Claude Mythos 5**——同一底层模
 
 ## 2026-05（持续中）—— `.claude/skills` 浪潮
 
-5 月中旬冲上 GitHub trending 的浪潮持续复利：curated skill 合集与 skills 框架此后一直占据每周热度前 10 的约一半。Star 数截至 2026-07-16：
+5 月中旬冲上 GitHub trending 的浪潮持续复利：curated skill 合集与 skills 框架此后一直占据每周热度前 10 的约一半。Star 数截至 2026-08-12：
 
 | 仓库 | Stars | 形态 |
 | --- | --- | --- |
-| [Superpowers](agents/superpowers.md) | 255.9k | 完整的 skills 框架 + 方法论，接入 Claude Code、Codex、Cursor、Copilot 等 |
-| [mattpocock/skills](https://github.com/mattpocock/skills) | 173.8k | Matt Pocock 的个人 `.claude/skills` 精选目录 |
-| [anthropics/skills](https://github.com/anthropics/skills) | 161.6k | Anthropic 官方 Agent Skills 参考仓库——模式的上游源头 |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 78.7k | Addy Osmani 面向 coding agent 的生产级工程技能集 |
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 38.1k | 面向 Claude Code 的学术研究管线 |
-| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 31.0k | 覆盖科研/科学/工程/分析/金融/写作的即用型技能 |
+| [Superpowers](agents/superpowers.md) | 270.9k | 完整的 skills 框架 + 方法论，接入 Claude Code、Codex、Cursor、Copilot 等 |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | 214.3k | Matt Pocock 的个人 `.claude/skills` 精选目录 |
+| [anthropics/skills](https://github.com/anthropics/skills) | 168.4k | Anthropic 官方 Agent Skills 参考仓库——模式的上游源头 |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 86.4k | Addy Osmani 面向 coding agent 的生产级工程技能集 |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 42.1k | 面向 Claude Code 的学术研究管线 |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 33.3k | 覆盖科研/科学/工程/分析/金融/写作的即用型技能 |
 
-**对选型的影响：** `.claude/skills` 模式已经从新鲜事物变成共享基础设施——工程师像当年发布 dotfiles 一样发布自己的技能库，很多任务里技能层和底层 agent 同样重要。本地图通过 [Superpowers](agents/superpowers.md) 覆盖框架端，curated 合集作为候补跟踪（内容资产而非 agent 表面）；浪潮有自己的榜单，见 [rankings/skill-verticals.md](rankings/skill-verticals.md)。
+进入 8 月，这个浪潮不再在*广度*上扩张，而是开始原地轮换：它已连续两个窗口稳定占据每周前 10 的四席，但成员一直在换，而且涨势越来越集中在两个体量最大的 curated 目录上。在 2026-08-05 → 08-12 窗口里，`mattpocock/skills` 和 `addyosmani/agent-skills` 第一次同时拿下增量榜前两席，后者是在整整缺席一个窗口之后以 4.9 倍跳增回来的（+945 → +4,657）。
+
+**对选型的影响：** `.claude/skills` 模式已经从新鲜事物变成共享基础设施——工程师像当年发布 dotfiles 一样发布自己的技能库，很多任务里技能层和底层 agent 同样重要。但这种集中值得留意：如果一个浪潮的增量越来越归拢到两个个人目录上，那它带的是关键人风险，而不是一个正在扩张的生态。本地图通过 [Superpowers](agents/superpowers.md) 覆盖框架端，curated 合集作为候补跟踪（内容资产而非 agent 表面）；浪潮有自己的榜单，见 [rankings/skill-verticals.md](rankings/skill-verticals.md)。
 
 ## 2026-04 —— GPT-5.5 与 "Codex for (almost) everything"
 

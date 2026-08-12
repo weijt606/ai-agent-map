@@ -47,6 +47,7 @@ The model layer under Claude Code moved a lot in mid-2026; the product's selecti
 - **June 9 2026 — [Claude Fable 5](claude-fable-5.md)**: Anthropic's first Mythos-class model (a tier above Opus) became the default model in Claude Code for Pro and Max subscribers.
 - **June 12 → July 1 2026**: Fable 5 was pulled globally under short-lived US export controls, then returned behind stricter safety classifiers — a blocked request falls back to Opus 4.8 automatically.
 - **From July 7 2026**: Fable 5 is no longer bundled in subscriptions; it runs on metered usage credits, so the effective model ceiling in Claude Code now depends on your credit budget, with Opus 4.8 as the dependable default.
+- **August 6 2026 — self-hosted environments (public beta)**: sessions can run on your own infrastructure, inside your network and next to internal services and toolchains, instead of Anthropic-hosted compute. Team and Enterprise plans only, **off by default**, and unavailable to organizations on zero-data-retention. This narrows — but does not close — the gap flagged under "When Not To Pick It": execution can now be yours, the model and the client still are not.
 
 ## Operating Cost
 

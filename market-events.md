@@ -4,6 +4,20 @@
 
 Structural events that reshaped agent selection — model releases, product mergers, and waves — newest first. The weekly play-by-play lives in the "Market events" timeline in [agents/README.md](agents/README.md); this page keeps the durable records.
 
+## August 5–10 2026 — Meta Closes The Vendor-CLI Field; Claude Code Goes Self-Hosted
+
+Three things landed in one week, and together they move the vendor layer rather than the open-source one.
+
+**Meta shipped [Muse Code](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2) (beta) on August 5**, a terminal coding agent powered by a new coding-focused model, **Muse Spark 1.2**. It installs with one command, coordinates multiple persistent subagents per task, and — the genuinely distinctive part — appends every model call, tool run, approval, and edit to a local event log, making the runtime **replay-exact and restart-safe** for long jobs. Default skills are `/plan` (task → approval-gated plan), `/grill` (stress-test that plan), and `/goal`. Muse Spark 1.2 is available through Muse Code, the Meta Model API, and OpenRouter.
+
+**Anthropic put [self-hosted environments for Claude Code](https://claude.com/blog/run-claude-code-sessions-on-your-own-compute) into public beta on August 6** — sessions run on the customer's own infrastructure, inside their network and next to internal services, instead of Anthropic-hosted compute. Team and Enterprise only, off by default, unavailable to organizations on ZDR.
+
+**OpenAI released [GPT-5.6-Cyber](https://developers.openai.com/api/docs/models/gpt-5.6-cyber) on August 10**, a security-specialized model built on GPT-5.6 Sol and gated behind approval in the Daybreak program.
+
+**Impact on selection:** this map wrote in July that "every major model vendor now ships a first-party coding CLI" and listed the field as Anthropic, OpenAI, Moonshot, Xiaomi, and xAI. Meta was the conspicuous absence, and now is not — but note *how* it arrived. Muse Code is a beta distributed through the Meta Model API with **no public repository**, so unlike Grok Build it does not even reach the source-available end of the governance split; it is not tracked on this map's boards for that reason. The vendor field closing shut in under a month, mostly with agents you cannot read, is the actual story. Meanwhile the Claude Code and GPT-5.6-Cyber releases point the same direction from a different angle: the differentiator vendors are now competing on is **deployment and access control** — whose infrastructure the loop runs on, and who is allowed to run it — not the loop. Muse Code's replay-exact event log is the one genuine capability idea in the batch, and it is the same durability problem the [observability layer](comparisons/observability-and-evals.md) attacks from outside. Pricing and index figures for Muse Spark 1.2 are not yet recorded here, so it does not appear in [cost & benchmarks](comparisons/cost-and-benchmarks.md).
+
+Sources: [Introducing Muse Code and Muse Spark 1.2](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2), [developer.meta.com/ai/models/muse-spark](https://developer.meta.com/ai/models/muse-spark/), [Self-hosted environments for Claude Code](https://claude.com/blog/run-claude-code-sessions-on-your-own-compute), [Claude Code self-hosted docs](https://code.claude.com/docs/en/self-hosted-environments), [GPT-5.6-Cyber](https://developers.openai.com/api/docs/models/gpt-5.6-cyber).
+
 ## July–August 2026 — The Meta-Harness Appears
 
 Two projects landed the same idea from opposite ends within weeks of each other. **[QM](agents/qm.md)** (`yc-software/qm`, MIT) — Y Combinator's *multiplayer* agent for Slack and the web — reached **~11.4k stars and 1.3k forks in its first seven days**, and **[Omnigent](agents/omnigent.md)** (`omnigent-ai/omnigent`, Apache-2.0) passed 8k. Neither ships an agent loop. Both are layers that run *other* harnesses — Pi, OpenCode, Codex, Claude Code, Cursor, Hermes — behind one interface, and add what a bare loop leaves out: identity, approval policy, spend caps, sandboxing, scheduling, and session continuity.
@@ -38,18 +52,20 @@ Sources: [Anthropic announcement](https://www.anthropic.com/news/claude-fable-5-
 
 ## May 2026 (ongoing) — The `.claude/skills` Wave
 
-The wave that broke into GitHub trending in mid-May keeps compounding: curated skill collections and skills frameworks have held roughly half of the weekly heat top 10 ever since. Star counts as of 2026-07-16:
+The wave that broke into GitHub trending in mid-May keeps compounding: curated skill collections and skills frameworks have held roughly half of the weekly heat top 10 ever since. Star counts as of 2026-08-12:
 
 | Repo | Stars | Shape |
 | --- | --- | --- |
-| [Superpowers](agents/superpowers.md) | 255.9k | Complete skills framework + methodology, plugging into Claude Code, Codex, Cursor, Copilot, and more |
-| [mattpocock/skills](https://github.com/mattpocock/skills) | 173.8k | Matt Pocock's curated personal `.claude/skills` directory |
-| [anthropics/skills](https://github.com/anthropics/skills) | 161.6k | Anthropic's canonical Agent Skills reference — the upstream source of the pattern |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 78.7k | Addy Osmani's production-grade engineering skill set for coding agents |
-| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 38.1k | Curated academic research pipeline for Claude Code |
-| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 31.0k | Ready-to-use skills for research, science, engineering, analysis, finance, writing |
+| [Superpowers](agents/superpowers.md) | 270.9k | Complete skills framework + methodology, plugging into Claude Code, Codex, Cursor, Copilot, and more |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | 214.3k | Matt Pocock's curated personal `.claude/skills` directory |
+| [anthropics/skills](https://github.com/anthropics/skills) | 168.4k | Anthropic's canonical Agent Skills reference — the upstream source of the pattern |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 86.4k | Addy Osmani's production-grade engineering skill set for coding agents |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 42.1k | Curated academic research pipeline for Claude Code |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 33.3k | Ready-to-use skills for research, science, engineering, analysis, finance, writing |
 
-**Impact on selection:** the `.claude/skills` pattern crossed from curiosity into shared infrastructure — engineers publish skill libraries the way they used to publish dotfiles, and for many tasks the skill layer matters as much as the underlying agent. This map profiles the framework end through [Superpowers](agents/superpowers.md) and tracks curated collections as watchlist entries (content assets, not agent surfaces); the wave has its own boards in [rankings/skill-verticals.md](rankings/skill-verticals.md).
+Through August the wave stopped growing in *breadth* and started rotating in place: it has held exactly four of the weekly top ten for two windows running while the membership churns, and the movement is increasingly concentrated in the two largest curated directories. In the 2026-08-05 → 08-12 window `mattpocock/skills` and `addyosmani/agent-skills` took the top two gain seats outright for the first time, the latter on a 4.9× jump (+945 → +4,657) after a window off the table entirely.
+
+**Impact on selection:** the `.claude/skills` pattern crossed from curiosity into shared infrastructure — engineers publish skill libraries the way they used to publish dotfiles, and for many tasks the skill layer matters as much as the underlying agent. The concentration is worth watching, though: a wave whose gain increasingly accrues to two personal directories is a wave with key-person risk, not a broadening ecosystem. This map profiles the framework end through [Superpowers](agents/superpowers.md) and tracks curated collections as watchlist entries (content assets, not agent surfaces); the wave has its own boards in [rankings/skill-verticals.md](rankings/skill-verticals.md).
 
 ## April 2026 — GPT-5.5 And "Codex For (Almost) Everything"
 

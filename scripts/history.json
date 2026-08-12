@@ -1020,61 +1020,61 @@
           "rank": 1,
           "slug": "mattpocock/skills",
           "stars": 214316,
-          "gain": 10285
+          "gain": 10291
         },
         {
           "rank": 2,
           "slug": "addyosmani/agent-skills",
           "stars": 86389,
-          "gain": 4657
+          "gain": 4664
         },
         {
           "rank": 3,
           "slug": "earendil-works/pi",
           "stars": 88090,
-          "gain": 4139
+          "gain": 4166
         },
         {
           "rank": 4,
           "slug": "obra/superpowers",
           "stars": 270940,
-          "gain": 4074
+          "gain": 4083
         },
         {
           "rank": 5,
           "slug": "nousresearch/hermes-agent",
           "stars": 229246,
-          "gain": 3492
+          "gain": 3496
         },
         {
           "rank": 6,
           "slug": "tauricresearch/tradingagents",
           "stars": 97717,
-          "gain": 2043
+          "gain": 2050
         },
         {
           "rank": 7,
           "slug": "anthropics/skills",
           "stars": 168368,
-          "gain": 1990
+          "gain": 1999
         },
         {
           "rank": 8,
           "slug": "yc-software/qm",
           "stars": 13162,
-          "gain": 1751
+          "gain": 1756
         },
         {
           "rank": 9,
           "slug": "openai/codex",
           "stars": 105447,
-          "gain": 1378
+          "gain": 1382
         },
         {
           "rank": 10,
           "slug": "colbymchenry/codegraph",
           "stars": 66003,
-          "gain": 1335
+          "gain": 1337
         }
       ]
     }

@@ -63,7 +63,7 @@ Anthropic 发布 **Claude Fable 5** 和 **Claude Mythos 5**——同一底层模
 | [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 42.1k | 面向 Claude Code 的学术研究管线 |
 | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 33.3k | 覆盖科研/科学/工程/分析/金融/写作的即用型技能 |
 
-进入 8 月，这个浪潮不再在*广度*上扩张，而是开始原地轮换：它已连续两个窗口稳定占据每周前 10 的四席，但成员一直在换，而且涨势越来越集中在两个体量最大的 curated 目录上。在 2026-08-05 → 08-12 窗口里，`mattpocock/skills` 和 `addyosmani/agent-skills` 第一次同时拿下增量榜前两席，后者是在整整缺席一个窗口之后以 4.9 倍跳增回来的（+945 → +4,657）。
+进入 8 月，这个浪潮不再在*广度*上扩张，而是开始原地轮换：它已连续两个窗口稳定占据每周前 10 的四席，但成员一直在换，而且涨势越来越集中在两个体量最大的 curated 目录上。在 2026-08-05 → 08-12 窗口里，`mattpocock/skills` 和 `addyosmani/agent-skills` 第一次同时拿下增量榜前两席，后者是在整整缺席一个窗口之后以 4.9 倍跳增回来的（+945 → +4,664）。
 
 **对选型的影响：** `.claude/skills` 模式已经从新鲜事物变成共享基础设施——工程师像当年发布 dotfiles 一样发布自己的技能库，很多任务里技能层和底层 agent 同样重要。但这种集中值得留意：如果一个浪潮的增量越来越归拢到两个个人目录上，那它带的是关键人风险，而不是一个正在扩张的生态。本地图通过 [Superpowers](agents/superpowers.md) 覆盖框架端，curated 合集作为候补跟踪（内容资产而非 agent 表面）；浪潮有自己的榜单，见 [rankings/skill-verticals.md](rankings/skill-verticals.md)。
 

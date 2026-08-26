@@ -6,6 +6,8 @@ The home-page [heat ranking](../README.md#recent-heat-ranking) sorts by **weekly
 
 > **Last updated:** 2026-08-27 · **Star counts:** from the most recent tracked fetch · **Sort:** current total stars, weekly gain shown for reference
 
+> **Note on this edition's "Weekly gain" column:** the 2026-08-19 and 2026-08-26 refreshes were missed, so the figures below cover **2026-08-12 → 2026-08-27 (15 days)**, not 7. They are roughly 2.1× a normal window and are not comparable to the previous edition.
+
 ## Ranking Trend
 
 How the weekly heat top 10 has shifted since tracking began — each line is one project, higher is a better rank, breaks mean the project fell off the board that week:
@@ -14,7 +16,7 @@ How the weekly heat top 10 has shifted since tracking began — each line is one
   <img src="../assets/heat-trend-en.svg" alt="Weekly heat ranking trend (bump chart)" width="100%" />
 </p>
 
-The through-line so far: Hermes Agent owned the early boards, the `.claude/skills` wave took over from late May, and since mid-June the top three ranks have rotated almost entirely among curated skills collections.
+The through-line so far: Hermes Agent owned the early boards, the `.claude/skills` wave took over from late May, and from mid-June the top three ranks rotated almost entirely among curated skills collections. The 2026-08-27 window is the first break in that pattern — [Codex CLI](../agents/codex.md) took #2 on the heat board off a vendor price cut, the first time a non-skills project has held a top-two gain seat since June.
 
 ## Agent Board
 

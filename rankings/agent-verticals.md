@@ -6,6 +6,8 @@ Agents grouped by the field they actually work in, each vertical ranked by curre
 
 > **Last updated:** 2026-08-27
 
+> **Note on this edition's "Weekly gain" column:** the 2026-08-19 and 2026-08-26 refreshes were missed, so the figures below cover **2026-08-12 → 2026-08-27 (15 days)**, not 7. They are roughly 2.1× a normal window and are not comparable to the previous edition.
+
 ## Coding & Software Engineering
 
 The deepest vertical by far — terminal CLIs, IDE-native agents, and SWE-bench-lineage harnesses. For a feature-by-feature comparison of the terminal CLIs specifically, see [Terminal Coding CLI Agents](../comparisons/coding-cli-agents.md).

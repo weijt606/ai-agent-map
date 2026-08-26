@@ -6,6 +6,8 @@ The `.claude/skills` wave, split by focus area — each vertical ranked by curre
 
 > **Last updated:** 2026-08-27
 
+> **Note on this edition's "Weekly gain" column:** the 2026-08-19 and 2026-08-26 refreshes were missed, so the figures below cover **2026-08-12 → 2026-08-27 (15 days)**, not 7. They are roughly 2.1× a normal window and are not comparable to the previous edition.
+
 ## Curated Collections
 
 General-purpose curated skill directories and the framework anchor. The collections are tracked as watchlist entries (content assets, not agent surfaces); [Superpowers](../agents/superpowers.md) is profiled as the framework end of the wave.

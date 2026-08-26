@@ -4,7 +4,7 @@
 
 主页的[热门榜](../README.md#近期热门榜)按 **周增量** 排序，看的是势头；这一页的榜单按 **当前 star 总量** 排序，看的是各类别的存量格局。两边对照读：总量高但没进热榜的项目是已站稳的老玩家，总量低但冲上热榜的项目是正在爆发的新势力。
 
-> **最后更新：** 2026-08-12 · **Star 总数：** 来自最近一次追踪抓取 · **排序：** 当前 star 总量，本周增量仅作参考
+> **最后更新：** 2026-08-27 · **Star 总数：** 来自最近一次追踪抓取 · **排序：** 当前 star 总量，本周增量仅作参考
 
 ## 排名趋势
 
@@ -23,32 +23,32 @@
 <!-- auto:board:agent -->
 | 排名 | 项目 | 垂类 | Stars | 本周增量 | 状态 |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [OpenClaw](https://github.com/openclaw/openclaw) | 通用助理 | 386.0k | +811 | 已收录 · [profile](../agents/openclaw.md) |
-| #2 | [Hermes Agent](https://github.com/nousresearch/hermes-agent) | 通用助理 | 229.2k | +3,496 | 已收录 · [profile](../agents/hermes-agent.md) |
-| #3 | [AutoGPT](https://github.com/significant-gravitas/autogpt) | 通用助理 | 186.5k | +724 | 已收录 · [profile](../agents/autogpt.md) |
-| #4 | [Claude Code](https://github.com/anthropics/claude-code) | 编程开发 | 141.1k | +830 | 已收录 · [profile](../agents/claude-code.md) |
-| #5 | [Codex CLI](https://github.com/openai/codex) | 编程开发 | 105.4k | +1,382 | 已收录 · [profile](../agents/codex.md) |
-| #6 | [TradingAgents](https://github.com/tauricresearch/tradingagents) | 金融 | 97.7k | +2,050 | 不收录 |
-| #7 | [Pi](https://github.com/earendil-works/pi) | 编程开发 | 88.1k | +4,166 | 已收录 · [profile](../agents/pi.md) |
-| #8 | [OpenHands](https://github.com/openhands/openhands) | 编程开发 | 83.8k | +612 | 已收录 · [profile](../agents/openhands.md) |
-| #9 | [Open Interpreter](https://github.com/openinterpreter/openinterpreter) | 通用助理 | 68.0k | +354 | 已收录 · [profile](../agents/open-interpreter.md) |
-| #10 | [Cline](https://github.com/cline/cline) | 编程开发 | 66.0k | +359 | 已收录 · [profile](../agents/cline.md) |
-| #11 | [Goose](https://github.com/aaif-goose/goose) | 通用助理 | 52.7k | +385 | 已收录 · [profile](../agents/goose.md) |
-| #12 | [Aider](https://github.com/aider-ai/aider) | 编程开发 | 48.1k | +188 | 已收录 · [profile](../agents/aider.md) |
-| #13 | [CodeWhale](https://github.com/hmbown/codewhale) | 编程开发 | 40.7k | +213 | 已收录 · [profile](../agents/codewhale.md) |
-| #14 | [OpenHuman](https://github.com/tinyhumansai/openhuman) | 通用助理 | 36.2k | +241 | 已收录 · [profile](../agents/openhuman.md) |
-| #15 | [Continue](https://github.com/continuedev/continue) | 编程开发 | 35.5k | +124 | 已收录 · [profile](../agents/continue.md) |
-| #16 | [Grok Build](https://github.com/xai-org/grok-build) | 编程开发 | 24.7k | +552 | 已收录 · [profile](../agents/grok-build.md) |
-| #17 | [Open Code Review](https://github.com/alibaba/open-code-review) | 编程开发 | 20.2k | +1,246 | 已收录 · [profile](../agents/open-code-review.md) |
-| #18 | [SWE-agent](https://github.com/swe-agent/swe-agent) | 编程开发 | 20.0k | +50 | 已收录 · [profile](../agents/swe-agent.md) |
-| #19 | [jcode](https://github.com/1jehuang/jcode) | 编程开发 | 17.2k | +1,284 | 已收录 · [profile](../agents/jcode.md) |
-| #20 | [OpenHarness](https://github.com/hkuds/openharness) | 编程开发 | 15.3k | +105 | 已收录 · [profile](../agents/openharness.md) |
-| #21 | [QM](https://github.com/yc-software/qm) | 通用助理 | 13.2k | +1,756 | 已收录 · [profile](../agents/qm.md) |
-| #22 | [MiMoCode](https://github.com/xiaomimimo/mimo-code) | 编程开发 | 12.7k | +67 | 已收录 · [profile](../agents/mimocode.md) |
-| #23 | [Omnigent](https://github.com/omnigent-ai/omnigent) | 编程开发 | 8.6k | +507 | 已收录 · [profile](../agents/omnigent.md) |
-| #24 | [Kimi Code](https://github.com/moonshotai/kimi-code) | 编程开发 | 6.4k | +354 | 已收录 · [profile](../agents/kimi-code.md) |
-| #25 | [mini-swe-agent](https://github.com/swe-agent/mini-swe-agent) | 编程开发 | 6.4k | +165 | 已收录 · [profile](../agents/mini-swe-agent.md) |
-| #26 | [CoStrict](https://github.com/zgsm-ai/costrict) | 编程开发 | 4.4k | +12 | 已收录 · [profile](../agents/costrict.md) |
+| #1 | [OpenClaw](https://github.com/openclaw/openclaw) | 通用助理 | 387.7k | +1,701 | 已收录 · [profile](../agents/openclaw.md) |
+| #2 | [Hermes Agent](https://github.com/nousresearch/hermes-agent) | 通用助理 | 236.9k | +7,632 | 已收录 · [profile](../agents/hermes-agent.md) |
+| #3 | [AutoGPT](https://github.com/significant-gravitas/autogpt) | 通用助理 | 186.9k | +357 | 已收录 · [profile](../agents/autogpt.md) |
+| #4 | [Claude Code](https://github.com/anthropics/claude-code) | 编程开发 | 143.1k | +1,952 | 已收录 · [profile](../agents/claude-code.md) |
+| #5 | [Codex CLI](https://github.com/openai/codex) | 编程开发 | 118.8k | +13,321 | 已收录 · [profile](../agents/codex.md) |
+| #6 | [TradingAgents](https://github.com/tauricresearch/tradingagents) | 金融 | 100.7k | +3,018 | 不收录 |
+| #7 | [Pi](https://github.com/earendil-works/pi) | 编程开发 | 97.8k | +9,677 | 已收录 · [profile](../agents/pi.md) |
+| #8 | [OpenHands](https://github.com/openhands/openhands) | 编程开发 | 85.2k | +1,423 | 已收录 · [profile](../agents/openhands.md) |
+| #9 | [Open Interpreter](https://github.com/openinterpreter/openinterpreter) | 通用助理 | 68.2k | +190 | 已收录 · [profile](../agents/open-interpreter.md) |
+| #10 | [Cline](https://github.com/cline/cline) | 编程开发 | 66.9k | +882 | 已收录 · [profile](../agents/cline.md) |
+| #11 | [Goose](https://github.com/aaif-goose/goose) | 通用助理 | 53.5k | +825 | 已收录 · [profile](../agents/goose.md) |
+| #12 | [Aider](https://github.com/aider-ai/aider) | 编程开发 | 48.5k | +376 | 已收录 · [profile](../agents/aider.md) |
+| #13 | [CodeWhale](https://github.com/hmbown/codewhale) | 编程开发 | 40.9k | +179 | 已收录 · [profile](../agents/codewhale.md) |
+| #14 | [OpenHuman](https://github.com/tinyhumansai/openhuman) | 通用助理 | 38.2k | +1,955 | 已收录 · [profile](../agents/openhuman.md) |
+| #15 | [Continue](https://github.com/continuedev/continue) | 编程开发 | 35.6k | +194 | 已收录 · [profile](../agents/continue.md) |
+| #16 | [Grok Build](https://github.com/xai-org/grok-build) | 编程开发 | 26.1k | +1,372 | 已收录 · [profile](../agents/grok-build.md) |
+| #17 | [Open Code Review](https://github.com/alibaba/open-code-review) | 编程开发 | 21.5k | +1,256 | 已收录 · [profile](../agents/open-code-review.md) |
+| #18 | [SWE-agent](https://github.com/swe-agent/swe-agent) | 编程开发 | 20.1k | +100 | 已收录 · [profile](../agents/swe-agent.md) |
+| #19 | [jcode](https://github.com/1jehuang/jcode) | 编程开发 | 18.6k | +1,384 | 已收录 · [profile](../agents/jcode.md) |
+| #20 | [OpenHarness](https://github.com/hkuds/openharness) | 编程开发 | 15.5k | +223 | 已收录 · [profile](../agents/openharness.md) |
+| #21 | [QM](https://github.com/yc-software/qm) | 通用助理 | 14.2k | +1,074 | 已收录 · [profile](../agents/qm.md) |
+| #22 | [MiMoCode](https://github.com/xiaomimimo/mimo-code) | 编程开发 | 12.9k | +169 | 已收录 · [profile](../agents/mimocode.md) |
+| #23 | [Omnigent](https://github.com/omnigent-ai/omnigent) | 编程开发 | 9.3k | +662 | 已收录 · [profile](../agents/omnigent.md) |
+| #24 | [Kimi Code](https://github.com/moonshotai/kimi-code) | 编程开发 | 7.1k | +678 | 已收录 · [profile](../agents/kimi-code.md) |
+| #25 | [mini-swe-agent](https://github.com/swe-agent/mini-swe-agent) | 编程开发 | 6.8k | +377 | 已收录 · [profile](../agents/mini-swe-agent.md) |
+| #26 | [CoStrict](https://github.com/zgsm-ai/costrict) | 编程开发 | 4.4k | +30 | 已收录 · [profile](../agents/costrict.md) |
 <!-- /auto:board:agent -->
 
 ## Agent 基础设施榜
@@ -58,19 +58,19 @@ agent 之下的那一层——框架、编排、记忆与上下文、网关和�
 <!-- auto:board:infra -->
 | 排名 | 项目 | 分组 | Stars | 本周增量 | 状态 |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [n8n](https://github.com/n8n-io/n8n) | 工作流 | 200.3k | +911 | 已收录 · [profile](../agents/n8n.md) |
-| #2 | [LangChain](https://github.com/langchain-ai/langchain) | 框架 | 144.1k | +578 | 已收录 · [profile](../agents/langchain.md) |
-| #3 | [Ruflo](https://github.com/ruvnet/ruflo) | 编排 | 67.7k | +623 | 已收录 · [profile](../agents/ruflo.md) |
-| #4 | [CodeGraph](https://github.com/colbymchenry/codegraph) | 记忆与上下文 | 66.0k | +1,337 | 已收录 · [profile](../agents/codegraph.md) |
-| #5 | [CrewAI](https://github.com/crewaiinc/crewai) | 框架 | 57.0k | +329 | 已收录 · [profile](../agents/crewai.md) |
-| #6 | [LiteLLM](https://github.com/berriai/litellm) | 网关与执行 | 56.2k | +559 | 已收录 · [profile](../agents/litellm.md) |
-| #7 | [Flowise](https://github.com/flowiseai/flowise) | 工作流 | 55.3k | +163 | 已收录 · [profile](../agents/flowise.md) |
-| #8 | [LlamaIndex](https://github.com/run-llama/llama_index) | 框架 | 51.6k | +188 | 已收录 · [profile](../agents/llamaindex.md) |
-| #9 | [CLI-Anything](https://github.com/hkuds/cli-anything) | 网关与执行 | 46.9k | +280 | 已收录 · [profile](../agents/cli-anything.md) |
-| #10 | [LangGraph](https://github.com/langchain-ai/langgraph) | 编排 | 39.5k | +570 | 已收录 · [profile](../agents/langgraph.md) |
-| #11 | [Langfuse](https://github.com/langfuse/langfuse) | 观测与评估 | 32.9k | +390 | 已收录 · [profile](../agents/langfuse.md) |
-| #12 | [agentmemory](https://github.com/rohitg00/agentmemory) | 记忆与上下文 | 26.9k | +329 | 候补 |
-| #13 | [Letta (MemGPT)](https://github.com/letta-ai/letta) | 记忆与上下文 | 24.2k | +109 | 已收录 · [profile](../agents/memgpt.md) |
+| #1 | [n8n](https://github.com/n8n-io/n8n) | 工作流 | 202.5k | +2,214 | 已收录 · [profile](../agents/n8n.md) |
+| #2 | [LangChain](https://github.com/langchain-ai/langchain) | 框架 | 145.1k | +1,024 | 已收录 · [profile](../agents/langchain.md) |
+| #3 | [Ruflo](https://github.com/ruvnet/ruflo) | 编排 | 69.5k | +1,788 | 已收录 · [profile](../agents/ruflo.md) |
+| #4 | [CodeGraph](https://github.com/colbymchenry/codegraph) | 记忆与上下文 | 68.2k | +2,247 | 已收录 · [profile](../agents/codegraph.md) |
+| #5 | [CrewAI](https://github.com/crewaiinc/crewai) | 框架 | 57.6k | +674 | 已收录 · [profile](../agents/crewai.md) |
+| #6 | [LiteLLM](https://github.com/berriai/litellm) | 网关与执行 | 57.3k | +1,179 | 已收录 · [profile](../agents/litellm.md) |
+| #7 | [Flowise](https://github.com/flowiseai/flowise) | 工作流 | 55.4k | +58 | 已收录 · [profile](../agents/flowise.md) |
+| #8 | [LlamaIndex](https://github.com/run-llama/llama_index) | 框架 | 51.9k | +302 | 已收录 · [profile](../agents/llamaindex.md) |
+| #9 | [CLI-Anything](https://github.com/hkuds/cli-anything) | 网关与执行 | 48.3k | +1,378 | 已收录 · [profile](../agents/cli-anything.md) |
+| #10 | [LangGraph](https://github.com/langchain-ai/langgraph) | 编排 | 40.5k | +993 | 已收录 · [profile](../agents/langgraph.md) |
+| #11 | [Langfuse](https://github.com/langfuse/langfuse) | 观测与评估 | 33.8k | +825 | 已收录 · [profile](../agents/langfuse.md) |
+| #12 | [agentmemory](https://github.com/rohitg00/agentmemory) | 记忆与上下文 | 27.5k | +627 | 候补 |
+| #13 | [Letta (MemGPT)](https://github.com/letta-ai/letta) | 记忆与上下文 | 24.5k | +244 | 已收录 · [profile](../agents/memgpt.md) |
 <!-- /auto:board:infra -->
 
 ## Skill 榜
@@ -80,14 +80,14 @@ skill 合集、skill 框架和 agent 方法论——内容资产而非 agent 表
 <!-- auto:board:skill -->
 | 排名 | 项目 | 方向 | Stars | 本周增量 | 状态 |
 | --- | --- | --- | --- | --- | --- |
-| #1 | [Superpowers](https://github.com/obra/superpowers) | 通用技能集 | 270.9k | +4,083 | 已收录 · [profile](../agents/superpowers.md) |
-| #2 | [mattpocock/skills](https://github.com/mattpocock/skills) | 通用技能集 | 214.3k | +10,291 | 候补 |
-| #3 | [anthropics/skills](https://github.com/anthropics/skills) | 通用技能集 | 168.4k | +1,999 | 候补 |
-| #4 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 通用技能集 | 86.4k | +4,664 | 候补 |
-| #5 | [academic-research-skills](https://github.com/imbad0202/academic-research-skills) | 学术科研 | 42.1k | +1,113 | 候补 |
-| #6 | [anthropics/financial-services](https://github.com/anthropics/financial-services) | 金融 | 34.2k | +177 | 不收录 |
-| #7 | [scientific-agent-skills](https://github.com/k-dense-ai/scientific-agent-skills) | 学术科研 | 33.3k | +572 | 候补 |
-| #8 | [12-factor-agents](https://github.com/humanlayer/12-factor-agents) | 方法论 | 25.2k | +164 | 不收录 |
+| #1 | [Superpowers](https://github.com/obra/superpowers) | 通用技能集 | 278.1k | +7,140 | 已收录 · [profile](../agents/superpowers.md) |
+| #2 | [mattpocock/skills](https://github.com/mattpocock/skills) | 通用技能集 | 237.9k | +23,585 | 候补 |
+| #3 | [anthropics/skills](https://github.com/anthropics/skills) | 通用技能集 | 171.8k | +3,449 | 候补 |
+| #4 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 通用技能集 | 90.0k | +3,638 | 候补 |
+| #5 | [academic-research-skills](https://github.com/imbad0202/academic-research-skills) | 学术科研 | 43.8k | +1,751 | 候补 |
+| #6 | [scientific-agent-skills](https://github.com/k-dense-ai/scientific-agent-skills) | 学术科研 | 34.7k | +1,436 | 候补 |
+| #7 | [anthropics/financial-services](https://github.com/anthropics/financial-services) | 金融 | 34.5k | +346 | 不收录 |
+| #8 | [12-factor-agents](https://github.com/humanlayer/12-factor-agents) | 方法论 | 25.5k | +260 | 不收录 |
 <!-- /auto:board:skill -->
 
 ## 垂类排行

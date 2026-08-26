@@ -4,6 +4,14 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
+## 2026-08-21 —— OpenAI 把 Sol 降价 20% 以上，价格挪动了整张榜
+
+OpenAI 于 **2026 年 8 月 21 日把 GPT-5.6 Sol 从每百万输入/输出 token 的 $5 / $30 降到 $4 / $20**，输入降 20%，**输出降 33%**。这是促销价，为期三个月——至少持续到 2026 年 11 月 21 日——且适用范围不止裸 API：按量付费 API、**Codex credits**、符合条件的 ChatGPT Work 计划都算。这是 GPT-5.6 家族一个月内的第二次降价。同一天，OpenAI 宣布 **Codex 活跃用户 2000 万**。
+
+**对选型的影响：** 这是热度榜第一次由降价而不是发布来解释榜首移动。[Codex CLI](agents/codex.md) 从 #9 到 #2，**周 star 率跳增 4.5 倍**，是本地图记录过最大的一次重新加速，而窗口内并没有可与之匹配的产品事件——这段时间的 release 都是常规增量（Bedrock Runtime 支持、带 MCP 工具的异步 hooks、会话 fork 与恢复、TUI 对话导出）。对选型有两点推论。第一，降得更狠的是输出侧，而这对 agent 负载的意义被低估了：agent 循环的 token 花在生成的 diff、工具调用和推理上，不是花在 prompt 文本上，所以 33% 的输出降价，实际折扣比"20% 以上"这个标题给人的印象大。第二，也更不舒服的一点：**"促销"这两个字是承重的**。三个月的价格不是预算基线；任何按 $4 / $20 做的测算都需要在 11 月复核一次，而按档位算成本的那张表——见[成本与基准](comparisons/cost-and-benchmarks.md)——从此是一份要维护的运营文档，不是一张参考表。本地图一直在跟的那条大趋势没有变：厂商在**访问方式和价格**上竞争，不在循环上。
+
+来源：[OpenAI 下调 GPT-5.6 Sol 价格](https://enterprisedna.co/resources/news/openai-gpt-56-sol-price-cut-20-percent-frontier-model-august-2026/)、[GPT-5.6](https://openai.com/index/gpt-5-6/)、[降价后的 GPT-5.6 定价](https://cellcog.ai/blog/gpt-5-6-pricing/)、[openai/codex releases](https://github.com/openai/codex/releases)。
+
 ## 2026-08-05 → 08-10 —— Meta 补上厂商 CLI 的最后一块；Claude Code 支持自托管
 
 一周之内落地了三件事，而它们共同推动的是厂商层，不是开源层。
@@ -41,6 +49,14 @@ OpenAI 把独立的 Codex 应用并入 ChatGPT 桌面应用（macOS/Windows）�
 **对选型的影响：** OpenAI 侧"选哪个 coding agent"的问题坍缩成"你怎么用 ChatGPT"——移动的是产品边界，不只是能力。GPT-5.6 Sol 以 GPT-5.5 的老价格领跑 Artificial Analysis 编码 agent 指数（80，vs Fable 5 77.2、GPT-5.5 76.4、Opus 4.8 72.5），GPT-5.5 就此成为过渡选择。详见 [Codex](agents/codex.md)、[GPT-5.5](agents/gpt-5.5.md)。
 
 来源：[OpenAI Codex changelog](https://learn.chatgpt.com/docs/changelog)、[GPT-5.6 公告](https://openai.com/index/gpt-5-6/)、[Axios](https://www.axios.com/2026/07/09/ai-openai-gpt-release)。
+
+## 2026-06-17 —— Vercel 发布 eve，"自建"路线长出了交付面
+
+Vercel 在伦敦的 Vercel Ship 上发布 **[eve](agents/eve.md)**（`vercel/eve`，Apache-2.0），归在它称为 **Agent Stack** 的一组产品里。它的说法是"agent 的 Next.js"：一个 agent 就是**一个目录**——`instructions.md`、`tools/`、`skills/`、`subagents/`、`channels/`、`schedules/`、`connections/`——而框架负责持久化执行（建立在开源 Workflow SDK 上的检查点会话，能扛住崩溃**和**重新部署）、每个 agent 一个沙箱、能让运行无限期暂停且不耗算力的 `needsApproval` 闸门、带独立上下文窗口的 subagent、`defineEval` 测试集，以及 Slack、Discord、Teams、GitHub、Linear、Telegram、Twilio、HTTP 的渠道适配器。头十周拿到 **4.8k star**。**本地图当时漏了它，现在作为补漏记录在此**，同时补上 profile。
+
+**对选型的影响：** eve 改变的是"自建"这条路线的形态，而不只是把它变长。这条路线上其他框架（[LangChain](agents/langchain.md)、[LangGraph](agents/langgraph.md)、[CrewAI](agents/crewai.md)、[LlamaIndex](agents/llamaindex.md)）在[能力矩阵](capabilities/matrix.md)里的"交付面"一列全是 **—**，因为它们是库，agent 最后**出现在哪里**是你自己的事。eve 是这条路线上第一个把渠道、调度、审批都做成框架原语的条目——这让它在"建"这一侧，最接近[元 harness](agents/qm.md) 在"运维"那一侧做的事。代价在最后一列：它是这条路线上唯一一个生产路径写死在某一家平台上的框架（`vercel deploy`，沙箱与模型访问经 AI Gateway），自托管没有写进文档。Apache-2.0 让代码可以搬走，但不让部署可以搬走。这是一个干净且摆在明面上的取舍——用平台换电池——而它就是全部的决策点。
+
+来源：[Introducing eve](https://vercel.com/blog/introducing-eve)、[vercel/eve](https://github.com/vercel/eve)、[eve.dev](https://eve.dev/)、[Vercel debuts eve](https://www.theregister.com/devops/2026/06/19/vercel-debuts-eve-open-source-agent-framework-tries-to-fix-shadow-ai-with-passport/5258726)。
 
 ## 2026-06-09 —— Claude 5 家族：Fable 5 与 Mythos 级
 

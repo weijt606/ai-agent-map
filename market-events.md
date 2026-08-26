@@ -4,6 +4,14 @@
 
 Structural events that reshaped agent selection — model releases, product mergers, and waves — newest first. The weekly play-by-play lives in the "Market events" timeline in [agents/README.md](agents/README.md); this page keeps the durable records.
 
+## August 21 2026 — OpenAI Cuts Sol By More Than 20%, And Price Moves The Board
+
+OpenAI **lowered GPT-5.6 Sol from $5 / $30 to $4 / $20 per million input / output tokens on August 21 2026**, a cut of 20% on input and **33% on output**. It is billed as promotional and runs for three months — through at least November 21 2026 — and it applies to the pay-as-you-go API, **Codex credits**, and eligible ChatGPT Work plans, not just raw API calls. It is the second reduction in the GPT-5.6 family in under a month. The same day, OpenAI reported **20M active Codex users**.
+
+**Impact on selection:** this is the first window in which the heat board's top mover is explained by a price change rather than a launch. [Codex CLI](agents/codex.md) went from #9 to #2 on a **4.5× jump in weekly star rate** — the largest re-acceleration this map has recorded — with no comparable product event inside the window; its releases over the period were ordinary increments (Bedrock Runtime support, async hooks with MCP tools, session forking and restore, TUI conversation export). Two things follow for selection. First, the output-side cut is the larger one, which matters disproportionately for agent workloads: an agent loop spends its tokens on generated diffs, tool calls, and reasoning, not on prompt text, so a 33% output cut is a bigger real discount than the headline "20%+" suggests. Second, and less comfortably, **the promotional framing is load-bearing**. A three-month rate is not a budget baseline; anything sized against $4 / $20 needs a November review, and a per-tier cost model — see [cost & benchmarks](comparisons/cost-and-benchmarks.md) — is now a live operational document rather than a reference table. The broader pattern the map has been tracking holds: vendors are competing on **access and price**, not on the loop.
+
+Sources: [OpenAI cuts GPT-5.6 Sol prices](https://enterprisedna.co/resources/news/openai-gpt-56-sol-price-cut-20-percent-frontier-model-august-2026/), [GPT-5.6](https://openai.com/index/gpt-5-6/), [GPT-5.6 pricing after the cuts](https://cellcog.ai/blog/gpt-5-6-pricing/), [openai/codex releases](https://github.com/openai/codex/releases).
+
 ## August 5–10 2026 — Meta Closes The Vendor-CLI Field; Claude Code Goes Self-Hosted
 
 Three things landed in one week, and together they move the vendor layer rather than the open-source one.
@@ -41,6 +49,14 @@ OpenAI merged the standalone Codex app into the ChatGPT desktop app (macOS/Windo
 **Impact on selection:** the "which coding agent" question on the OpenAI side collapsed into "how do you use ChatGPT" — the product boundary moved, not just the capability. GPT-5.6 Sol leads the Artificial Analysis Coding Agent Index (80, vs Fable 5 77.2, GPT-5.5 76.4, Opus 4.8 72.5) at GPT-5.5's old price, making GPT-5.5 a legacy choice. Details: [Codex](agents/codex.md), [GPT-5.5](agents/gpt-5.5.md).
 
 Sources: [OpenAI Codex changelog](https://learn.chatgpt.com/docs/changelog), [GPT-5.6 announcement](https://openai.com/index/gpt-5-6/), [Axios](https://www.axios.com/2026/07/09/ai-openai-gpt-release).
+
+## June 17 2026 — Vercel Ships eve, And The Build-Your-Own Route Grows A Delivery Surface
+
+Vercel released **[eve](agents/eve.md)** (`vercel/eve`, Apache-2.0) at Vercel Ship in London, as part of a set of products it groups under **Agent Stack**. The framing is "Next.js for agents": an agent is a *directory of files* — `instructions.md`, `tools/`, `skills/`, `subagents/`, `channels/`, `schedules/`, `connections/` — and the framework owns durable execution (checkpointed sessions on the open-source Workflow SDK that survive crashes *and* redeploys), a per-agent sandbox, `needsApproval` gates that pause a run indefinitely without consuming compute, subagents with isolated context windows, `defineEval` test suites, and channel adapters for Slack, Discord, Teams, GitHub, Linear, Telegram, Twilio, and HTTP. It reached **4.8k stars** in its first ten weeks. **This map missed it at the time and is recording it now as a backfill**, alongside the profile.
+
+**Impact on selection:** eve changes the shape of the build-your-own route rather than just lengthening it. Every other framework on that route ([LangChain](agents/langchain.md), [LangGraph](agents/langgraph.md), [CrewAI](agents/crewai.md), [LlamaIndex](agents/llamaindex.md)) scores **—** on delivery surfaces in the [capability matrix](capabilities/matrix.md), because they are libraries and where the agent *shows up* is your problem. eve is the first entry there with channels, scheduling, and approvals as framework primitives — which makes it the closest thing on the build side to what the [meta-harnesses](agents/qm.md) do on the operate side. The cost is on the last column: it is the only framework on that route whose documented production path runs through one vendor's platform (`vercel deploy`, sandboxes and model access via AI Gateway), with self-hosting undocumented. Apache-2.0 makes the code portable; it does not make the deployment portable. That is a clean, explicit trade — batteries in exchange for a platform — and it is the whole decision.
+
+Sources: [Introducing eve](https://vercel.com/blog/introducing-eve), [vercel/eve](https://github.com/vercel/eve), [eve.dev](https://eve.dev/), [Vercel debuts eve](https://www.theregister.com/devops/2026/06/19/vercel-debuts-eve-open-source-agent-framework-tries-to-fix-shadow-ai-with-passport/5258726).
 
 ## June 9 2026 — Claude 5 Family: Fable 5 And The Mythos Tier
 

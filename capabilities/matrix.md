@@ -102,8 +102,11 @@ Standouts: **orchestration** is the reason these exist — they add teams, skill
 | [LangGraph](../agents/langgraph.md) | ● | ◐ | ● | ● | ● | ◐ | ◐ | — | ● |
 | [CrewAI](../agents/crewai.md) | ● | ◐ | ◐ | ● | ● | ○ | ○ | — | ● |
 | [LlamaIndex](../agents/llamaindex.md) | ◐ | ○ | ◐ | ◐ | ◐ | ○ | ○ | — | ● |
+| [eve](../agents/eve.md) | ● | ● | ◐ | ● | ● | ● | ● | ● | ◐ |
 
-Standouts: no **delivery surface** — they are libraries you build on. LangGraph is the strongest on durable **memory** and **multi-agent** state; LlamaIndex's memory is data/retrieval, not conversation.
+Standouts: LangGraph is the strongest of the libraries on durable **memory** and **multi-agent** state; LlamaIndex's memory is data/retrieval, not conversation.
+
+[eve](../agents/eve.md) is the row that breaks this group's shape and is worth reading as a contrast. Everything above it scores **—** on delivery surfaces, because a library does not decide where the agent shows up; eve ships eight-plus channel adapters, so it is the only entry here with **delivery surfaces**, **scheduling**, and **human approval** all core (`needsApproval` pauses a run indefinitely without consuming compute). Its **code execution** ● is a per-agent sandbox rather than a helper tool, and its **memory** is deliberately ◐ — checkpointed durable sessions are state that survives a redeploy, not a memory system. The one column it gives up is the one every library above it owns: **deployment control** is ◐ because the documented production path is Vercel, Apache-2.0 license notwithstanding.
 
 ## Runtime, Gateways & Context Infrastructure
 

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="562" viewBox="0 0 920 562" font-family="system-ui, -apple-system, sans-serif">
 <rect width="920" height="562" rx="10" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)"/>
-<text x="26" y="28" font-size="17" font-weight="700" fill="#0b0b0b">The AI Agent Map — the first cut: 13 routes, 60 profiles</text>
+<text x="26" y="28" font-size="17" font-weight="700" fill="#0b0b0b">The AI Agent Map — the first cut: 13 routes, 61 profiles</text>
 <text x="26" y="46" font-size="11" fill="#52514e">Four decisions, thirteen routes. Full tables with links follow below.</text>
 <circle cx="31" cy="69" r="5" fill="#2a78d6"/>
 <text x="44" y="73" font-size="12.5" font-weight="700" fill="#0b0b0b">Use an agent on your code</text>
@@ -43,7 +43,7 @@
 <rect x="26.0" y="366.0" width="281.3" height="58" rx="7" fill="#ffffff" stroke="rgba(11,11,11,0.12)"/>
 <rect x="26.0" y="366.0" width="3.5" height="58" rx="1.75" fill="#1baf7a"/>
 <text x="39.0" y="388.0" font-size="12" font-weight="600" fill="#0b0b0b">Build-your-own system</text>
-<text x="39.0" y="407.0" font-size="10.5" fill="#52514e">LangChain, LangGraph, CrewAI · +5 more</text>
+<text x="39.0" y="407.0" font-size="10.5" fill="#52514e">LangChain, LangGraph, eve · +6 more</text>
 <rect x="319.3" y="366.0" width="281.3" height="58" rx="7" fill="#ffffff" stroke="rgba(11,11,11,0.12)"/>
 <rect x="319.3" y="366.0" width="3.5" height="58" rx="1.75" fill="#1baf7a"/>
 <text x="332.3" y="388.0" font-size="12" font-weight="600" fill="#0b0b0b">Runtime and tools</text>

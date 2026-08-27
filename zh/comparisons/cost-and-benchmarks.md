@@ -19,19 +19,20 @@
 
 | 模型 | AA 编码 agent 指数 | 其他 benchmark | 价格（输入 / 输出 每 1M） | 备注 |
 | --- | :-: | --- | --- | --- |
-| **GPT-5.6 Sol**（OpenAI） | **80** | — | $5 / $30 | 当前指数第一；另有多 agent "Ultra" 档 |
+| **GPT-5.6 Sol**（OpenAI） | **80** | — | **$4 / $20**（促销） | 当前指数第一；另有多 agent "Ultra" 档。**2026-08-21** 从 $5 / $30 下调，为期三个月——至少到 **2026-11-21**——覆盖 API、Codex credits 与符合条件的 ChatGPT Work 计划。促销未延长时，预算仍按 $5 / $30 算 |
 | **GPT-5.6 Terra**（OpenAI） | — | — | $2.5 / $15 | 7 月 9 日 GPT-5.6 发布的中档 |
 | **GPT-5.6 Luna**（OpenAI） | — | — | $1 / $6 | GPT-5.6 的经济档 |
 | **Claude Fable 5**（Anthropic） | **77.2** | — | $10 / $50 | Mythos 级；按量额度计费，不打包进订阅 |
 | **GPT-5.5**（OpenAI） | **76.4** | SWE-Bench Pro 58.6% | —（≈GPT-5.4 的 2×） | 2026 春季参照模型 |
 | **Claude Opus 4.8**（Anthropic） | **72.5** | — | $5 / $25 | 两侧都是 Fable 5 的一半（见 [Fable 5 profile](../agents/claude-fable-5.md)）；Claude Code 里可靠的默认 |
 
-> SWE-Bench Pro 参照点：Claude Opus 4.7 得 64.3%，高于 GPT-5.5 的 58.6%。破折号（—）表示本图未追踪该数字，不是零。数据截至 **2026 年 7 月**，取自厂商 profile（[Claude Fable 5](../agents/claude-fable-5.md)、[GPT-5.5](../agents/gpt-5.5.md)）；价格和指数位次会变——预算前务必以厂商为准。
+> SWE-Bench Pro 参照点：Claude Opus 4.7 得 64.3%，高于 GPT-5.5 的 58.6%。破折号（—）表示本图未追踪该数字，不是零。数据截至 **2026 年 8 月**，取自厂商 profile（[Claude Fable 5](../agents/claude-fable-5.md)、[GPT-5.5](../agents/gpt-5.5.md)）；价格和指数位次会变——预算前务必以厂商为准。
 
 能一周周站得住的结论：
 
 - **指数差距真实但不大**——当前前沿大致 72–80。而*价格*差距要大得多（Luna 的 $1/$6 vs Fable 5 的 $10/$50 输出，是输出 token 上约 8× 的差距）。多数编码工作里，便宜档才是理性默认；只有任务真需要时才够到指数顶端。
 - **分档现在是那根杠杆。** GPT-5.6 的 Sol/Terra/Luna、以及 Claude 的 Fable 5-对-Opus-4.8 之分，意味着同一个 agent 指向不同模型，成本会天差地别。这是逐任务决策，不是一次性设置。
+- **前沿模型的价格现在是促销价，这张表因此成了要维护的活文档。** 8 月 Sol 降价之后，指数第一的输出价反而低于 Opus 4.8（$20 对 $25）——一个月前不存在的倒挂，而且带着到期日。两个后果：agent 负载真正花钱的是输出侧，所以 33% 的输出降价，实际折扣比标题上的 20% 更大；以及任何按促销价做的模型选择，都需要在 **11 月复核**一次。详见 [market-events](../market-events.md)。
 
 ## 第二层——编码 agent 怎么收费
 

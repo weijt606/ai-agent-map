@@ -439,5 +439,14 @@
     "profile": "agents/ml-intern.md",
     "scope": "in",
     "tracked": false
+  },
+  "vercel/eve": {
+    "display": "eve",
+    "category": "infra",
+    "vertical": null,
+    "group": "framework",
+    "profile": "agents/eve.md",
+    "scope": "in",
+    "tracked": false
   }
 }

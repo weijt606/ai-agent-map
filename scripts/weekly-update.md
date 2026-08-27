@@ -82,8 +82,10 @@ changes actually touch them — see step 5.
    `mercury-agent`, `ml-intern`, and two out-of-scope ones) are permanent
    history-only records that are deliberately never polled. A pending pickup is
    only ever a profile written during the *previous* refresh, so carry it
-   forward by naming it here when you write it. **As of 2026-08-12: none
-   pending** (`langfuse/langfuse` was flipped on 2026-08-05).
+   forward by naming it here when you write it. **As of 2026-08-27: one
+   pending — `vercel/eve`** (profiled in the 08-27 catch-up refresh, carrying
+   `"tracked": false`; flip it and add the slug to `tracked-repos.txt` on the
+   next run).
 
    **Every slug added to `tracked-repos.txt` needs a matching entry in
    `scripts/catalog.json`** (display name, category agent/infra/skill, vertical,

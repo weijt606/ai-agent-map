@@ -46,7 +46,7 @@ GROUPS = [
         ("General-purpose autonomous agent", "通用自主 agent", ["AutoGPT", "Agent Zero", "BabyAGI"], 6),
     ]),
     ("Build your own", "自建与基础设施", "#1baf7a", [
-        ("Build-your-own system", "自建系统", ["LangChain", "LangGraph", "CrewAI"], 8),
+        ("Build-your-own system", "自建系统", ["LangChain", "LangGraph", "eve"], 9),
         ("Runtime and tools", "运行时 & 工具", ["n8n", "MemGPT", "CodeGraph"], 7),
         ("Observability and evals", "观测与评估", ["Langfuse"], 1),
     ]),

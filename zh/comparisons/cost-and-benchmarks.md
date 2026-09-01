@@ -25,13 +25,16 @@
 | **Claude Fable 5**（Anthropic） | **77.2** | — | $10 / $50 | Mythos 级；按量额度计费，不打包进订阅 |
 | **GPT-5.5**（OpenAI） | **76.4** | SWE-Bench Pro 58.6% | —（≈GPT-5.4 的 2×） | 2026 春季参照模型 |
 | **Claude Opus 4.8**（Anthropic） | **72.5** | — | $5 / $25 | 两侧都是 Fable 5 的一半（见 [Fable 5 profile](../agents/claude-fable-5.md)）；Claude Code 里可靠的默认 |
+| **Muse Spark 1.2**（Meta）——Standard | — | — | $1.25 / $4.25 | Muse Code 背后的编码向模型，Muse Code 于 **2026 年 8 月 31 日**转正。缓存输入 $0.15；每分钟 3,000 次请求、400 万 token。没有本图愿意照抄的指数分 |
+| **Muse Spark 1.2**（Meta）——Contributor | — | — | **$0.10 / $0.20** | 同一个模型，便宜约 12 倍 / 21 倍，**代价是授权 Meta 用你的 prompt 与 completion 训练未来模型**。每分钟只有 60 次请求上限。这要当治理决策读，不是预算决策 |
 
-> SWE-Bench Pro 参照点：Claude Opus 4.7 得 64.3%，高于 GPT-5.5 的 58.6%。破折号（—）表示本图未追踪该数字，不是零。数据截至 **2026 年 8 月**，取自厂商 profile（[Claude Fable 5](../agents/claude-fable-5.md)、[GPT-5.5](../agents/gpt-5.5.md)）；价格和指数位次会变——预算前务必以厂商为准。
+> SWE-Bench Pro 参照点：Claude Opus 4.7 得 64.3%，高于 GPT-5.5 的 58.6%。破折号（—）表示本图未追踪该数字，不是零。数据截至 **2026 年 9 月初**，取自厂商 profile（[Claude Fable 5](../agents/claude-fable-5.md)、[GPT-5.5](../agents/gpt-5.5.md)）与 [market-events](../market-events.md)；价格和指数位次会变——预算前务必以厂商为准。
 
 能一周周站得住的结论：
 
 - **指数差距真实但不大**——当前前沿大致 72–80。而*价格*差距要大得多（Luna 的 $1/$6 vs Fable 5 的 $10/$50 输出，是输出 token 上约 8× 的差距）。多数编码工作里，便宜档才是理性默认；只有任务真需要时才够到指数顶端。
 - **分档现在是那根杠杆。** GPT-5.6 的 Sol/Terra/Luna、以及 Claude 的 Fable 5-对-Opus-4.8 之分，意味着同一个 agent 指向不同模型，成本会天差地别。这是逐任务决策，不是一次性设置。
+- **这张表上最便宜的输出，不是用钱付的。** Muse Spark 1.2 的 Contributor 输出价（$0.20）比 Fable 5 低 **100 倍**、比促销中的 Sol 低 **25 倍**，而差价是用你 prompt 与 completion 的训练授权结的。对 agent 负载来说，这是在账单大头那一侧给的大折扣——同时也是一个开发者可以在一台 checkout 了公司仓库的机器上悄悄做掉的披露决策。它也**不叠加**：60 rpm 的上限对同一次发布正在宣传的并行 subagent 工作流是实打实的约束。可比的数字请用 Standard 价（$1.25 / $4.25）。另外注意 Muse Code **没有公开仓库**，因此不进本地图的榜单。
 - **前沿模型的价格现在是促销价，这张表因此成了要维护的活文档。** 8 月 Sol 降价之后，指数第一的输出价反而低于 Opus 4.8（$20 对 $25）——一个月前不存在的倒挂，而且带着到期日。两个后果：agent 负载真正花钱的是输出侧，所以 33% 的输出降价，实际折扣比标题上的 20% 更大；以及任何按促销价做的模型选择，都需要在 **11 月复核**一次。详见 [market-events](../market-events.md)。
 
 ## 第二层——编码 agent 怎么收费
@@ -48,6 +51,7 @@
 | [Aider](../agents/aider.md)、[Cline](../agents/cline.md)、[Continue](../agents/continue.md) | **开源，自带 key** | 直接付模型 provider | 低——你看到原始 token 成本，无加价 |
 | [Pi](../agents/pi.md)、[jcode](../agents/jcode.md)、[OpenHands](../agents/openhands.md) | **开源 harness，自带 provider** | 直接付模型 provider | 低——你拥有循环，也拥有账单 |
 | [Kimi Code](../agents/kimi-code.md)、[MiMoCode](../agents/mimocode.md)、[CodeWhale](../agents/codewhale.md) | 开源，厂商 / 低成本模型 | Moonshot / 小米 / DeepSeek API | 低——国产模型栈把每 token 成本压得低 |
+| Muse Code（Meta）——*不在本图跟踪范围；无公开仓库* | 订阅 **每月 $5–$50**（三档，2026-08-31 起） + API token | Meta | 中——按计划打包，Contributor 价只有在你授权训练时才拿得到 |
 
 ## 三种成本形态
 

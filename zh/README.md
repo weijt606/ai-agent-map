@@ -41,43 +41,45 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 
 这张表记录的是最近一周 GitHub 快照里特别热的 agent 项目。排名按 7 天增量。下面的总 star 数是这次更新仓库时重新核对过的当前值。
 
-> **最后更新：** 2026-08-27 · **快照窗口：** 2026-08-12 → 2026-08-27（自上次更新以来的增量，**15 天**——中间漏了两次周三例更，这是一次补更窗口；估算） · **Star 总数：** 更新时实时核对
+> **最后更新：** 2026-09-01 · **快照窗口：** 2026-08-27 → 2026-09-01（自上次更新以来的增量，**5 天**——上一次是 8 月 27 日补跑的补更，所以本窗口提前收；估算） · **Star 总数：** 更新时实时核对
 
 项目名链接指向上游 GitHub 仓库。本仓库已写入的 profile，在"在本仓库中的状态"列单独给出链接。
 
 | 排名 | 项目 | 当前 stars | 快照增量 | 在本仓库中的状态 | 应该怎么读 |
 | --- | --- | --- | --- | --- | --- |
-| #1&#8288;（=） | [mattpocock/skills](https://github.com/mattpocock/skills) | 237.9k | +23,585 | 候补（Skills 浪潮） | 连续第十个窗口守住 #1，越过 **237k**——按周率约 11.0k/周仍在加速（+7%），是 #2 的 1.8 倍 |
-| #2&#8288;（↑） | [Codex CLI](https://github.com/openai/codex) | 118.8k | +13,321 | 已收录 · [profile](agents/codex.md) | 升七位，**周率跳增 4.5 倍**——本榜记录以来最大的一次重新加速；背后是 OpenAI 8 月 21 日下调 Sol 价格与 2000 万用户公告；越过 118k |
-| #3&#8288;（=） | [Pi](https://github.com/earendil-works/pi) | 97.8k | +9,677 | 已收录 · [profile](agents/pi.md) | 守住 #3，周率涨 8%（约 4.5k/周）——一路没有一个响亮的周，却已逼近 **10 万** |
-| #4&#8288;（↑） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 236.9k | +7,632 | 已收录 · [profile](agents/hermes-agent.md) | 周率基本持平（+2%）而升一位——仍是已收录项目里绝对总数第一，越过 236k |
-| #5&#8288;（↓） | [Superpowers](https://github.com/obra/superpowers) | 278.1k | +7,140 | 已收录 · [profile](agents/superpowers.md) | 周率降温 18%，退一位——越过 278k，仍是浪潮的框架锚点 |
-| #6&#8288;（↓） | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 90.0k | +3,638 | 候补（Skills 浪潮） | 上窗口 4.9 倍的尖峰把 **64% 的周率还了回去**——越过 90k，但那个 #2 只坐了一个窗口 |
-| #7&#8288;（=） | [anthropics/skills](https://github.com/anthropics/skills) | 171.8k | +3,449 | 候补（Skills 浪潮源头） | 稳守 #7，周率降 19%——Anthropic 自家参考仓库越过 171k |
-| #8&#8288;（↓） | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 100.7k | +3,018 | 不收录（金融研究垂直） | **破 10 万**，周率降 31% 退两位——在跟踪，但仍不是收录范围内的 agent 表面 |
-| #9&#8288;（↑） | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 68.3k | +2,247 | 已收录 · [profile](agents/codegraph.md) | 周率降 22% 却升一位——预索引代码知识图谱越过 68k |
-| #10&#8288;（新） | [n8n](https://github.com/n8n-io/n8n) | 202.5k | +2,214 | 已收录 · [profile](agents/n8n.md) | 掉出榜单一个窗口后回来，周率涨 13%——越过 202k |
+| #1&#8288;（新） | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 41.5k | +6,750 | 候补（Skills 浪潮 · 科研垂直） | 从榜外直接进 #1，**周率跳增 14 倍**（约 9,450/周 对约 670）——本榜记录以来最大的一次重新加速，也是第一个不是通用集合的 #1 |
+| #2&#8288;（↓） | [mattpocock/skills](https://github.com/mattpocock/skills) | 243.9k | +5,954 | 候补（Skills 浪潮） | **连续十个窗口的 #1 到此结束。** 约 8,336/周仍超过 #4 以下所有项目之和，但它自己的周率降了 24%，而且是被明确超过而不是险些被挤下——越过 **243k** |
+| #3&#8288;（=） | [Pi](https://github.com/earendil-works/pi) | 100.5k | +2,707 | 已收录 · [profile](agents/pi.md) | **破 10 万**，正是前两个窗口一直说它在逼近的那个数——周率降温 16%（约 3,790/周），守住 #3 |
+| #4&#8288;（=） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 239.5k | +2,595 | 已收录 · [profile](agents/hermes-agent.md) | 连续第二个窗口基本持平（+2%）——已收录项目里绝对总数第一，离 **24 万**只差约 530 个 star |
+| #5&#8288;（=） | [Superpowers](https://github.com/obra/superpowers) | 280.4k | +2,308 | 已收录 · [profile](agents/superpowers.md) | **越过 280k**，周率基本持平（−3%）——本榜最稳的一条线，也是浪潮的框架锚点 |
+| #6&#8288;（↓） | [Codex CLI](https://github.com/openai/codex) | 120.7k | +1,915 | 已收录 · [profile](agents/codex.md) | 还回了 **57% 的周率**（约 6,216 → 约 2,681），退四位。上窗口那波降价拉升是尖峰，不是新基准——越过 120k |
+| #7&#8288;（↑） | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 102.2k | +1,455 | 不收录（金融研究垂直） | 周率涨 45%，升一位——连续第五个窗口纯靠增量待在表上，仍不是收录范围内的 agent 表面 |
+| #8&#8288;（↓） | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 91.4k | +1,418 | 候补（Skills 浪潮） | 名次退两位，但周率**涨了 17%**——8 月那次尖峰之后的地板，正稳在比尖峰起点更高的位置；越过 91k |
+| #9&#8288;（↓） | [anthropics/skills](https://github.com/anthropics/skills) | 173.0k | +1,173 | 候补（Skills 浪潮源头） | 连续第二个窗口持平（+2%）——Anthropic 自家参考 `.claude/skills` 仓库到 **173k** |
+| #10&#8288;（新） | [OpenHuman](https://github.com/tinyhumansai/openhuman) | 39.3k | +1,111 | 已收录 · [profile](agents/openhuman.md) | 拿下上窗口以 259 个 star 之差错过的那个位置，周率**热 70%**——写入 profile 以来连续两个强窗口 |
 
 - 热度适合拿来发现新项目，不适合直接当选型顺序。
-- **漏了两次例更，所以这里的每个数字都要按 15 天读，不是 7 天。** 2026-08-19 和 2026-08-26 两次周三更新没有跑，本窗口跨 2026-08-12 → 2026-08-27。原始增量因此大约是正常窗口的 2.1 倍，**不能**和上周那一列直接比。下面所有"加速""降温"的说法都是按**周率**（增量 ÷ 15 × 7）讲的，那个才可比；表里的数字仍是 15 天的原始增量。
-- **[Codex CLI](agents/codex.md) 是本窗口的主角，而且是一个厂商侧的故事。** 它从 #9 直接到 **#2**，+13,321，周率约 6.2k 对上窗口的约 1.4k，**4.5 倍重新加速**，是本榜记录以来最大的一次。它压在窗口内两个有确切日期的事件上：OpenAI 于 **8 月 21 日把 GPT-5.6 Sol 从 $5/$30 降到 $4/$20 每百万 token**，为期三个月，且同样适用于 Codex credits；同一天宣布 **Codex 活跃用户 2000 万**。这是这张热度榜第一次由降价而不是发布来解释榜首移动。
-- **[mattpocock/skills](https://github.com/mattpocock/skills) 拿下连续第十个 #1，而且重新加速**（237.9k，+23,585，约 11.0k/周对 10,291）。上窗口标出的那次减速没有延续。它的增量仍超过本表 #4 以下所有项目之和。
-- **上窗口对 [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 的判断，是把尖峰读成了重新加速。** 那个"本榜记录以来最猛的单窗口重新加速"把 **64% 的周率还了回去**（4,664 → 约 1,698/周），从 #2 掉到 #6。连续两个窗口，这张榜都把一次性跳增读过头了——8 月的 [jcode](agents/jcode.md)，和这次的 addyosmani。这条该写成规矩：单个 4–5 倍窗口在第二个窗口确认之前只算尖峰。
-- **[TradingAgents](https://github.com/TauricResearch/TradingAgents) 破了 10 万，仍然不收录**（100,735）。它已经连续四个窗口纯靠增量待在这张表上。本节开头那句话就是干这个用的：这张表排的是热度，不是适合度。
-- **榜单中段是一次普遍降温。** 前十里有六个周率低于上窗口；榜外更明显：[QM](agents/qm.md) 还回 71% 的周率（1,756 → 约 501/周，从 #8 掉出），[Open Code Review](agents/open-code-review.md) −53%，[jcode](agents/jcode.md) 再降 50%，[AutoGPT](agents/autogpt.md) −77%——上窗口那个"9 倍苏醒"是噪声。相反方向上，[Pi](agents/pi.md)、[n8n](agents/n8n.md)、[Claude Code](agents/claude-code.md)、[Grok Build](agents/grok-build.md) 都在变好。
-- **[n8n](agents/n8n.md) 掉出一个窗口后回来了**；[OpenHuman](agents/openhuman.md)（+1,955，38.2k）以 259 个 star 之差没进榜——这是它写入 profile 以来最好的一个窗口。
-- **新收录决策：新增一个 profile —— [eve](agents/eve.md)**（`vercel/eve`，Apache-2.0，4.8k）。这是补漏而不是黑马：Vercel 于 **2026 年 6 月 17 日**在 Ship London 把它作为 Agent Stack 的一部分发布，本地图漏掉了。它属于"自建"路线，而且改变了这条路线的形态——一个 agent 就是**一个目录**，持久化执行、每个 agent 独立沙箱、`needsApproval` 审批闸门、subagent、evals 和八个以上渠道适配器都在框架里。它是这条路线上第一个真正带交付面的条目，也是唯一一个生产路径写死在某一家平台上的条目。同时扫到但只进候补的：[truefoundry/trueforge](https://github.com/truefoundry/trueforge)（4.6k，MIT，"把 LLM 变成能干活 agent 的运行时层"）、[trailhq/Graft](https://github.com/trailhq/Graft)（4.9k，MIT，垫在 Claude Code / Cursor / Codex / Gemini 底下的共享代码图上下文层）、[fuxicodex/Fuxi](https://github.com/fuxicodex/Fuxi)（三周 2.1k，但没有明确 license——`NOASSERTION`，这在本地图是写 profile 的硬性阻断项）。延续观察且仍在涨：[Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)（6.4k）、[QwenLM/Qwen-MM-Plugins](https://github.com/QwenLM/Qwen-MM-Plugins)（2.8k）。
+- **本窗口是 5 天，不是 7 天。** 上一次例更是 2026-08-27 补跑的补更，所以本窗口跨 2026-08-27 → 2026-09-01。这里的原始增量因此约为正常窗口的 0.71 倍，**不能**和上一列 15 天的数字直接比。下面所有"涨""降温""×倍"的说法，都是用**周率**（增量 ÷ 5 × 7）对上窗口的周率（增量 ÷ 15 × 7）讲的；表里展示的仍是 5 天原始增量。
+- **本窗口的主角是科研垂直，而且是栈的两端同时动。** [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)——165 个经过验证的 skill、100+ 个覆盖生物、化学、医学与药物发现的科学数据库——从榜外直接冲到 **#1**，约 9,450/周对约 670，**14 倍**跳增。它不是一个人在动：[academic-research-skills](https://github.com/Imbad0202/academic-research-skills) 排在 **#11**，周率涨 67%。同一个窗口内，Anthropic 于 8 月 27 日预览了 **[Model Hardware Standard](market-events.md)**，一套让 agent 驱动显微镜、移液工作站、机械臂和激光器的开放接口，与 HHMI 共同开发，QuEra 已用它做量子计算机的激光协调。本地图只陈述这个时间上的重合，不断言因果：两个仓库都没有提到 MHS，而且 K-Dense 自己也在窗口前几天发布了免费的桌面版 co-scientist（**K-Dense BYOK**，MIT）。能确定的只是热度去了哪里。
+- **把本地图自己定的规矩用在自己的 #1 上：单个窗口在第二个窗口确认之前只是尖峰。** 这条规矩是上窗口在把 [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 和 [jcode](agents/jcode.md) 读过头之后写下的。14 倍是它遇到的最大一次考验。这里把它列在 #1，只是因为增量就在那里；这**不算**已确认的趋势。
+- **这条规矩当场就在 [Codex CLI](agents/codex.md) 上兑现了。** 上窗口那个"本榜记录以来最大的重新加速"——4.5 倍、#9 到 #2、由 OpenAI 8 月 21 日的 Sol 降价推动——本窗口还回了 **57% 的周率**，掉到 #6。降价买到了一个窗口的 star，没有买到新的基准线。这已经是连续三个窗口里第三个没能活过下一个窗口的尖峰（jcode、addyosmani、Codex）。
+- **[mattpocock/skills](https://github.com/mattpocock/skills) 连续十个窗口的 #1 结束了**（243.9k，+5,954，约 8,336/周对 11,006）。它是被明确超过而不是险些被挤下，而且自己的周率降了 24%——两半都重要，因为本地图一直在讲的"集中化"故事，依赖的正是后面这半继续成立。
+- **[Pi](agents/pi.md) 破了 10 万**（100,474），这是前两个窗口一直说它在逼近的里程碑，而且一路没有一个响亮的周。同一个窗口里 [Superpowers](agents/superpowers.md) 越过 **280k**、[Codex CLI](agents/codex.md) 越过 **120k**。
+- **`.claude/skills` 浪潮从前十的 4 个变成 5 个——而且这次是真的扩面了。** 之前三个窗口，浪潮一直是四个通用集合、成员零轮换。第五个位置是一个**垂直**集合（科研），而且 #11 还有第二个垂直集合。把它读成"浪潮开始找垂直"，这和上窗口标出的"向 `mattpocock/skills` 一个目录集中"是两件不同的事。现在这两件事同时成立。
+- **榜单整体重新加速**，逆转了上窗口的普遍降温：47 个跟踪项目里有 **27 个**周率变高。前十之外涨得最猛的：[agentmemory](https://github.com/rohitg00/agentmemory) +81%（27.9k）、[OpenHands](agents/openhands.md) +44%（85.9k）、[OpenClaw](agents/openclaw.md) +40%、[CrewAI](agents/crewai.md) +39%。跌得最狠的：[Flowise](agents/flowise.md) −74%、[CodeWhale](agents/codewhale.md) −60%、[Grok Build](agents/grok-build.md) −49%、[Kimi Code](agents/kimi-code.md) −49%、[QM](agents/qm.md) 连续第二个窗口 −47%。
+- **新收录决策：新增一个 profile —— [TrueForge](agents/trueforge.md)**（`truefoundry/trueforge`，MIT，TypeScript，5.0k star，348 fork）。它已经连续两个窗口在候补名单上稳定增长，这正是本地图自己说要用的门槛。它是 [harness 路线](comparisons/agent-harness-frameworks.md)上的第三种形态：既不是你 fork 下来自己拥有的循环，也不是驱动其他循环的 meta-harness，而是**一个你部署起来、然后用 HTTP 调用的 harness**——模型调用、MCP 工具、`SKILL.md` 技能包、沙箱、审批、subagent、会话状态全部跑在一个 server 里，对外暴露聊天 UI、带 TypeScript SDK 的 REST API，以及可嵌入的 UI SDK。仍在候补：[trailhq/Graft](https://github.com/trailhq/Graft)（5.4k，MIT，共享代码图上下文层——与 [CodeGraph](agents/codegraph.md) 重叠，因此按住）、[Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)（7.0k）、[fuxicodex/Fuxi](https://github.com/fuxicodex/Fuxi)（3.2k，仍是 `NOASSERTION`——硬性阻断）、[QwenLM/Qwen-MM-Plugins](https://github.com/QwenLM/Qwen-MM-Plugins)（2.8k），以及本窗口新增的 [Nanako0129/sepia](https://github.com/Nanako0129/sepia)（四天 1.4k，MIT）。
+- 榜外的厂商层动了两次：**[Meta 于 8 月 31 日把 Muse Code 转正](market-events.md)**，配三档订阅，外加一个用你的 prompt 与 completion 换约 21 倍便宜输出价的 contributor 档；以及**有勒索软件团伙被记录到用 Cursor Agent 在十家机构内部做实操入侵**（[Gambit Security，8 月 27 日](market-events.md)）。细节见 [market-events](market-events.md)。
 
 <details>
 <summary>更多窗口笔记：skills 浪潮占比、OpenClaw、以及榜外仍在涨的项目</summary>
 
-- `.claude/skills` 浪潮**连续第三个窗口维持在前 10 的 4 个**（`mattpocock/skills`、`addyosmani/agent-skills`、`Superpowers`、`anthropics/skills`），而且这次成员也没轮换。变的是内部结构：[mattpocock/skills](https://github.com/mattpocock/skills) 现在的增量**超过另外三个之和**，而一个月前它和它们大致持平。这个浪潮不是在扩面，是在向一个目录集中。策略不变：curated 集合作为 Skills 浪潮条目跟踪，框架那一端通过 [Superpowers](agents/superpowers.md) 覆盖。
-- 刚好卡在榜外：[OpenHuman](agents/openhuman.md) 38.2k（+1,955，写入 profile 以来最好的窗口，差 259 个 star 没进 #10）、[Claude Code](agents/claude-code.md) 143.1k（+1,952）、[Ruflo](agents/ruflo.md) 69.5k（+1,788）。
-- [OpenClaw](agents/openclaw.md) 仍是绝对总数第一，387.7k star（+1.7k）；它已有 profile，但因为这种体量的项目周环比增量噪声太大，不进按增量排名的表。
-- **上窗口那四个新收录现在都有了第二个增量，其中三个大幅减速**：[QM](agents/qm.md) 周率 −71%（14.2k）、[Open Code Review](agents/open-code-review.md) −53%（21.5k）、[Omnigent](agents/omnigent.md) −39%（9.3k），只有 [Langfuse](agents/langfuse.md) 基本持平（−1%，33.8k）。四个都没有在缩，但上窗口"新增四个 profile、四个都在涨"这个说法把发布期的抬升说得太满了——诚实的读法是：一次收录之后的第一个完整窗口，几乎总是峰值。
-- **[AutoGPT](agents/autogpt.md) 的"苏醒"是噪声。** 上窗口那个 9 倍跳增（+724）本窗口周率掉到约 167（15 天 +357，−77%），回到它原来的低基数。特意写在这里，是因为本地图当时说了"值得盯着"，而事实证明不值得。
-- **[Grok Build](agents/grok-build.md) 停止减速**：+1,372 到 26.1k，周率约 640 对上窗口的 552——发布尖峰后连续两个窗口衰减之后的第一次回升。
-- 本窗口仍在涨但没进前 10（按增量，15 天口径）：[Claude Code](agents/claude-code.md) 143.1k（+2.0k）、[OpenHuman](agents/openhuman.md) 38.2k（+2.0k）、[Ruflo](agents/ruflo.md) 69.5k（+1.8k）、[academic-research-skills](https://github.com/Imbad0202/academic-research-skills) 43.8k（+1.8k）、[scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) 34.7k（+1.4k）、[OpenHands](agents/openhands.md) 85.2k（+1.4k）、[jcode](agents/jcode.md) 18.6k（+1.4k）、[CLI-Anything](agents/cli-anything.md) 48.3k（+1.4k）、[Grok Build](agents/grok-build.md) 26.1k（+1.4k）、[Open Code Review](agents/open-code-review.md) 21.5k（+1.3k）、[LiteLLM](agents/litellm.md) 57.3k（+1.2k）、[QM](agents/qm.md) 14.2k（+1.1k）、[LangChain](agents/langchain.md) 145.1k（+1.0k）、[LangGraph](agents/langgraph.md) 40.5k（+1.0k）、[Cline](agents/cline.md) 66.9k（+0.9k）、[Langfuse](agents/langfuse.md) 33.8k（+0.8k）、[Goose](agents/goose.md) 53.5k（+0.8k）、[Kimi Code](agents/kimi-code.md) 7.1k（+0.7k）、[CrewAI](agents/crewai.md) 57.6k（+0.7k）、[Omnigent](agents/omnigent.md) 9.3k（+0.7k）、[agentmemory](https://github.com/rohitg00/agentmemory) 27.5k（+0.6k）、[mini-swe-agent](agents/mini-swe-agent.md) 6.8k（+0.4k）、[Aider](agents/aider.md) 48.5k（+0.4k）、[AutoGPT](agents/autogpt.md) 186.9k（+0.4k）、[LlamaIndex](agents/llamaindex.md) 51.9k（+0.3k）、[Letta (MemGPT)](agents/memgpt.md) 24.5k（+0.2k）、[OpenHarness](agents/openharness.md) 15.5k（+0.2k）、[Continue](agents/continue.md) 35.6k（+0.2k）、[Open Interpreter](agents/open-interpreter.md) 68.2k（+0.2k）、[CodeWhale](agents/codewhale.md) 40.9k（+0.2k）、[MiMoCode](agents/mimocode.md) 12.9k（+0.2k）、[SWE-agent](agents/swe-agent.md) 20.1k（+100）、[Flowise](agents/flowise.md) 55.4k（+58）、[CoStrict](agents/costrict.md) 4.4k（+30，近乎持平）。
+- `.claude/skills` 浪潮**占到前十的 5 个**，这是 6 月以来第一次从 4 个变成 5 个——而新进来的那个是 [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)，一个科研集合，紧随其后的 #11 是 [academic-research-skills](https://github.com/Imbad0202/academic-research-skills)。上窗口标出的集中化仍然成立——[mattpocock/skills](https://github.com/mattpocock/skills) 的增量仍超过其他通用集合之和——但这个浪潮不再只是在集中，它也在找垂直。策略不变：精选集合按 Skills 浪潮条目跟踪，框架那一端通过 [Superpowers](agents/superpowers.md) 覆盖。
+- 刚好卡在榜外：[academic-research-skills](https://github.com/Imbad0202/academic-research-skills) 44.8k（+975，周率涨 67%）、[CodeGraph](agents/codegraph.md) 69.1k（+814，周率涨 9%，从 #9 掉出）、[OpenClaw](agents/openclaw.md)（+792）。[n8n](agents/n8n.md) 又丢了位置，掉到 #17，周率降温 29%（203.1k，+527）——最近四个窗口里它只坐稳过一个。
+- [OpenClaw](agents/openclaw.md) 仍是绝对总数第一，388.5k star（+792，周率涨 40%）；它已有 profile，但因为这种体量的项目周环比增量噪声太大，不进按增量排名的表。
+- **上窗口"新收录后的第一个窗口通常就是峰值"这个判断，只对了一半。** [QM](agents/qm.md) 连续第二次减速（−47%，14.4k）、[Open Code Review](agents/open-code-review.md) 连续第二次减速（−25%，21.8k），但 [Omnigent](agents/omnigent.md) 反转向上（+25%，9.6k），[Langfuse](agents/langfuse.md) 又一次基本持平（+4%，34.1k）。四个里只有两个继续掉，比本地图当时给的说法要弱——记在这里当作一次部分落空，而不是一次验证。
+- **[eve](agents/eve.md) 第一次被 stamp 进快照，4,902**（`vercel/eve`），从本窗口起纳入跟踪；因为窗口开始时它还没被跟踪，所以暂时没有增量。本窗口新增的 [TrueForge](agents/trueforge.md)（5,038）已写入 profile 但还没开始抓取——按惯例新 profile 先带一个窗口的 `tracked: false`，下次刷新才进榜。
+- **[Grok Build](agents/grok-build.md) 重新开始减速**：+235 到 26.3k，周率约 329 对上窗口的 640——上窗口那次回升没有延续，发布后的衰减又回来了。
+- 本窗口仍在涨但没进前 10（按增量，5 天原始口径）：[Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) 44.8k（+975）、[CodeGraph](agents/codegraph.md) 69.1k（+814）、[OpenHands](agents/openhands.md) 85.9k（+681）、[Ruflo](agents/ruflo.md) 70.1k（+646）、[Claude Code](agents/claude-code.md) 143.7k（+593）、[n8n](agents/n8n.md) 203.1k（+527）、[CLI-Anything](agents/cli-anything.md) 48.8k（+502）、[LiteLLM](agents/litellm.md) 57.8k（+430）、[Cline](agents/cline.md) 67.3k（+381）、[rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) 27.9k（+378）、[LangChain](agents/langchain.md) 145.4k（+373）、[LangGraph](agents/langgraph.md) 40.9k（+368）、[jcode](agents/jcode.md) 19.0k（+322）、[Open Code Review](agents/open-code-review.md) 21.8k（+315）、[CrewAI](agents/crewai.md) 58.0k（+312）、[Langfuse](agents/langfuse.md) 34.1k（+285）、[Goose](agents/goose.md) 53.8k（+275）、[Omnigent](agents/omnigent.md) 9.6k（+275）、[Grok Build](agents/grok-build.md) 26.3k（+235）、[QM](agents/qm.md) 14.4k（+188）、[AutoGPT](agents/autogpt.md) 187.1k（+162）、[Aider](agents/aider.md) 48.7k（+139）、[humanlayer/12-factor-agents](https://github.com/humanlayer/12-factor-agents) 25.6k（+129）、[mini-swe-agent](agents/mini-swe-agent.md) 6.9k（+123）、[Kimi Code](agents/kimi-code.md) 7.2k（+115）、[anthropics/financial-services](https://github.com/anthropics/financial-services) 34.6k（+93）、[LlamaIndex](agents/llamaindex.md) 52.0k（+87）、[Letta（MemGPT)](agents/memgpt.md) 24.5k（+86）、[Continue](agents/continue.md) 35.7k（+81）、[OpenHarness](agents/openharness.md) 15.6k（+65）、[Open Interpreter](agents/open-interpreter.md) 68.2k（+60）、[MiMoCode](agents/mimocode.md) 12.9k（+42）、[SWE-agent](agents/swe-agent.md) 20.2k（+41）、[CodeWhale](agents/codewhale.md) 40.9k（+24）、[CoStrict](agents/costrict.md) 4.4k（+7）、[Flowise](agents/flowise.md) 55.4k（+5)）。
 
 </details>
 
@@ -123,7 +125,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 | 路线 | 代表项目 | 常见使用者 |
 | --- | --- | --- |
 | 直接执行型 | [Claude Code](agents/claude-code.md), [Aider](agents/aider.md), [Codex](agents/codex.md), [Kimi Code](agents/kimi-code.md), [MiMoCode](agents/mimocode.md), [CodeWhale](agents/codewhale.md), [Grok Build](agents/grok-build.md), [Devin](agents/devin.md), [Jules](agents/jules.md) | 想把明确 coding 任务交给 agent 的人（见[终端编码 CLI 对比](comparisons/coding-cli-agents.md)） |
-| Agent harness 框架 | [Pi](agents/pi.md), [jcode](agents/jcode.md), [OpenHands](agents/openhands.md), [SWE-agent](agents/swe-agent.md), [mini-swe-agent](agents/mini-swe-agent.md), [OpenHarness](agents/openharness.md), [QM](agents/qm.md), [Omnigent](agents/omnigent.md) | 想自己掌控 agent loop、工具表面和权限，而不是直接接受厂商成品的人——QM 和 Omnigent 把这条推到"在一层之下同时跑*多个* harness"（见 [harness 框架对比](comparisons/agent-harness-frameworks.md)） |
+| Agent harness 框架 | [Pi](agents/pi.md), [jcode](agents/jcode.md), [OpenHands](agents/openhands.md), [SWE-agent](agents/swe-agent.md), [mini-swe-agent](agents/mini-swe-agent.md), [OpenHarness](agents/openharness.md), [QM](agents/qm.md), [Omnigent](agents/omnigent.md), [TrueForge](agents/trueforge.md) | 想自己掌控 agent loop、工具表面和权限，而不是直接接受厂商成品的人——QM 和 Omnigent 把这条推到"在一层之下同时跑*多个* harness"（见 [harness 框架对比](comparisons/agent-harness-frameworks.md)） |
 | 前沿 agentic 模型 | [Claude Fable 5](agents/claude-fable-5.md), [GPT-5.5](agents/gpt-5.5.md) | 在选要接入自己 agent 系统的模型，或在评估 Anthropic / OpenAI 系 agent 能力上限的人 |
 | Agentic skills 框架 | [Superpowers](agents/superpowers.md) | 想要一套方法论 + 可组合 skills 层、能接到 Claude Code、Codex、Cursor 等 agent 之上的人 |
 | 工作流 / orchestration layer | [oh-my-claudecode](agents/oh-my-claudecode.md), [oh-my-codex](agents/oh-my-codex.md), [Ruflo](agents/ruflo.md) | 已经认可 Claude Code 或 Codex，只想在上面补强 orchestration 的人（Ruflo 把这条进一步推到跨机器联邦和 100+ 专用 agent） |
@@ -138,7 +140,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 
 ## 当前已覆盖的主流项目
 
-已收录 61 个项目，按形态分组。展开任意一组，或到 [agents/](agents/README.md) 浏览完整的路线表与覆盖表。
+已收录 62 个项目，按形态分组。展开任意一组，或到 [agents/](agents/README.md) 浏览完整的路线表与覆盖表。
 
 <details>
 <summary><strong>编码 agent、编辑器与编排</strong>（27 个）</summary>
@@ -176,7 +178,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 </details>
 
 <details>
-<summary><strong>自主与自托管 agent</strong>（14 个）</summary>
+<summary><strong>自主与自托管 agent</strong>（15 个）</summary>
 
 | 项目 | 路线 | 一句话定位 |
 | --- | --- | --- |
@@ -194,6 +196,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 | [OpenHuman](agents/openhuman.md) | 自托管 / 本地 runtime | 桌面生活集成 agent，118+ 连接器、本地 Memory Tree、支持 Ollama |
 | [Julep](agents/julep.md) | 工作流引擎 | Temporal 支撑的持久化有状态 AI agent 工作流引擎 |
 | [QM](agents/qm.md) | Agent harness 框架 | Y Combinator 的多人协作 agent，跑在 Slack 和 web——按人和按房间分作用域、自托管、harness 无关 |
+| [TrueForge](agents/trueforge.md) | Agent harness 框架 | harness 即服务端——一个循环挂在 HTTP API 后面，带聊天 UI、TypeScript SDK 与可嵌入 UI |
 
 </details>
 

@@ -51,3 +51,5 @@ langfuse/langfuse
 yc-software/qm
 alibaba/open-code-review
 omnigent-ai/omnigent
+# --- Pending pickup flipped 2026-09-01 ---
+vercel/eve

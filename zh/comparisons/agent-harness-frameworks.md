@@ -6,9 +6,9 @@
 
 "harness" 是把 LLM 变成 agent 的最小脚手架——循环、工具表面、权限模型、skills 挂载点。这些项目你可以 fork、审计、端到端拥有，而不是照单全收的厂商产品。
 
-八个项目的当前 star 总量见[分类排行](../rankings/README.md)；本页比的是形态，不是体量。
+九个项目的当前 star 总量见[分类排行](../rankings/README.md)；本页比的是形态，不是体量。
 
-这条路线下现在有两种形态。**单循环 harness** 本身*就是*那个循环——你 fork 一个然后完全拥有它。**元 harness** 把好几个这样的循环收拢到一层之下，是当"用哪个 harness"不再只有一个答案时你会去找的东西。
+这条路线下现在有三种形态。**单循环 harness** 本身*就是*那个循环——你 fork 一个然后完全拥有它。**元 harness** 把好几个这样的循环收拢到一层之下，是当"用哪个 harness"不再只有一个答案时你会去找的东西。**harness 即服务端**只跑一个循环，但把它放在一条 API 后面，是当这个 agent 属于你的产品而不是属于你的终端时你会去找的东西。
 
 ## 一览
 
@@ -32,6 +32,16 @@
 
 在这两个之间做选择时真正关键的区别：QM 假设的是**很多人共用一套部署**，它给每个人隔离；Omnigent 假设的是**一个人驱动很多 agent**，它给这些 agent 连续性和策略。两者不能互相替代。
 
+## harness 即服务端
+
+一个循环，当成服务来跑。你不 fork 它，也不用它去指挥别的 harness——你把它部署起来，一次性接好各个 provider，然后从自己的产品里用 HTTP 调它。
+
+| 项目 | 许可证 | 前门 | 它优化的"单位" | 注意 |
+| --- | --- | --- | --- | --- |
+| [TrueForge](../agents/trueforge.md) | MIT（TS） | 自带聊天 UI、HTTP API + TypeScript SDK、可嵌入 UI SDK | **你产品的后端。** 模型、MCP server、skill、沙箱都从目录一次性接好；agent 只能从运维批准过的东西里挑 | 公开六周，版本还是 0.x 的 release candidate；贡献者几乎全来自一家公司；沙箱目前只有 Daytona；没有定时，也没有渠道适配器 |
+
+它之所以是一种独立形态而不是单循环那张表的一个脚注：把循环放到 API 边界后面，会逼出可 fork 的那些 harness 根本不用做的选择。会话状态必须持久化而不能留在进程里，工具面必须集中声明而不能每次调用传进来，审批必须能渲染给正拿着客户端的那个人看——这也是为什么它的审批是 Generative UI 而不是终端提示。TrueForge 还是这条路线上唯一一个用**可复现的成本对比**立论的条目（14 个跨系统任务，对 [Claude Managed Agents](../agents/claude-managed-agents.md) 和 deepagents，同模型同 MCP server，脚手架在 `benchmark/` 里），而不是靠功能清单。把它当厂商自测来读——然后还是要读。
+
 ## 怎么选
 
 - 按体量选，不按 star 选。合适的 harness 是那个你愿意长期维护其表面积的。
@@ -41,3 +51,4 @@
 - 想要终端优先的日常 coding harness：[Pi](../agents/pi.md)；如果优先要速度、多会话下的低 RAM、以及内置被动记忆，选 [jcode](../agents/jcode.md)。
 - 想要更完整但仍开源的 SWE agent 产品：[OpenHands](../agents/openhands.md)。
 - 如果问题已经不是"选哪个 harness"，而是"好几个 harness 怎么在同一套策略下运行"：单个开发者跨设备用 [Omnigent](../agents/omnigent.md)，整个团队在 Slack 和 web 上用 [QM](../agents/qm.md)。两者都会在你的 agent 循环中间加一个依赖——真的同时在跑多个 harness 时再上，不要提前上。
+- 如果这个 agent 是**你产品的一个功能**而不是你机器上的一个工具——它需要 API、需要登录、需要一个你的用户看得见的审批界面：[TrueForge](../agents/trueforge.md)。代价是你从此要运维 Postgres、Redis 和一个沙箱 provider；换来的是循环这部分你不用再运维。

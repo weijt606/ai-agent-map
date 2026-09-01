@@ -25,13 +25,16 @@ The **Artificial Analysis Coding Agent Index** is the cross-model capability num
 | **Claude Fable 5** (Anthropic) | **77.2** | — | $10 / $50 | Mythos-class; runs on metered credits, not bundled in subscriptions |
 | **GPT-5.5** (OpenAI) | **76.4** | SWE-Bench Pro 58.6% | — (≈2× GPT-5.4) | Spring 2026 reference model |
 | **Claude Opus 4.8** (Anthropic) | **72.5** | — | $5 / $25 | Half of Fable 5 on both sides (per the [Fable 5 profile](../agents/claude-fable-5.md)); the dependable default inside Claude Code |
+| **Muse Spark 1.2** (Meta) — Standard | — | — | $1.25 / $4.25 | Coding-focused model behind Muse Code, which left beta **Aug 31 2026**. $0.15 cached input; 3,000 req/min and 4M tokens/min. No index figure this map will copy is published |
+| **Muse Spark 1.2** (Meta) — Contributor | — | — | **$0.10 / $0.20** | The same model at ~12× / ~21× off, **in exchange for permission to train future Meta models on your prompts and completions**. Capped at 60 req/min. Read this as a governance decision, not a budget one |
 
-> Reference point for SWE-Bench Pro: Claude Opus 4.7 scored 64.3%, ahead of GPT-5.5's 58.6%. A dash (—) means the figure is not tracked in this map, not that it is zero. Numbers are as of **August 2026** and sourced from the vendor profiles ([Claude Fable 5](../agents/claude-fable-5.md), [GPT-5.5](../agents/gpt-5.5.md)); prices and index positions move — always confirm against the vendor before budgeting.
+> Reference point for SWE-Bench Pro: Claude Opus 4.7 scored 64.3%, ahead of GPT-5.5's 58.6%. A dash (—) means the figure is not tracked in this map, not that it is zero. Numbers are as of **early September 2026** and sourced from the vendor profiles ([Claude Fable 5](../agents/claude-fable-5.md), [GPT-5.5](../agents/gpt-5.5.md)) and [market-events](../market-events.md); prices and index positions move — always confirm against the vendor before budgeting.
 
 The takeaways that survive week to week:
 
 - **The index spread is real but not enormous** — roughly 72–80 across the current frontier. The *price* spread is far larger (Luna at $1/$6 vs Fable 5 at $10/$50 output is a ~8× gap on output tokens). For most coding work the cheaper tier is the rational default; reach for the top of the index only when a task genuinely needs it.
 - **Tiering is now the lever.** GPT-5.6's Sol/Terra/Luna and Claude's Fable 5-vs-Opus-4.8 split mean the same agent can cost very differently depending on which model you point it at. This is a per-task decision, not a one-time setup.
+- **The cheapest output on this table is not paid in money.** Muse Spark 1.2's Contributor rate ($0.20 output) is **100× below Fable 5 and 25× below the promotional Sol rate**, and the difference is settled in training rights over your prompts and completions. For an agent workload that is a large discount on the side of the bill that dominates — and a disclosure decision an individual developer can make silently on a machine with the company repo checked out. It also does not compose: the 60 req/min cap is a real constraint on the parallel subagent workflows the same release advertises. Treat the Standard rate ($1.25 / $4.25) as the comparable number. Note also that Muse Code ships with **no public repository**, so it is not tracked on this map's boards.
 - **Frontier price is now promotional, which makes this table a live document.** Sol's August cut takes the index leader below Opus 4.8 on output ($20 vs $25) — an inversion that did not exist a month ago, and one with an expiry date on it. Two consequences: the output side is where agent workloads actually spend, so the 33% output cut is a bigger real discount than the headline 20%; and any model choice sized against the promotional rate needs a **November review**. See [market-events](../market-events.md).
 
 ## Layer 2 — How Coding Agents Bill
@@ -48,6 +51,7 @@ The wrapper's billing model decides who you pay and how predictable the bill is.
 | [Aider](../agents/aider.md), [Cline](../agents/cline.md), [Continue](../agents/continue.md) | **Open source, bring your own key** | The model provider directly | Low — you see raw token cost, no markup |
 | [Pi](../agents/pi.md), [jcode](../agents/jcode.md), [OpenHands](../agents/openhands.md) | **Open source harness, BYO provider** | The model provider directly | Low — you own the loop and the bill |
 | [Kimi Code](../agents/kimi-code.md), [MiMoCode](../agents/mimocode.md), [CodeWhale](../agents/codewhale.md) | Open source, vendor / low-cost models | Moonshot / Xiaomi / DeepSeek APIs | Low — Chinese-stack models keep per-token cost down |
+| Muse Code (Meta) — *not tracked on this map; no public repository* | Subscription **$5–$50/month** (three plans, from Aug 31 2026) + API tokens | Meta | Medium — plan-bundled, with the Contributor rate available only if you grant training rights |
 
 ## Three Cost Patterns
 

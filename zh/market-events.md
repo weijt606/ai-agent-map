@@ -28,7 +28,7 @@ API 价格现在有了确切记录，而且是两档不是一档。**Standard �
 
 ## 2026-08-27 —— 勒索软件团伙把一个商业编码 agent 开进了十家机构的内网
 
-**[Gambit Security 于 2026 年 8 月 27 日发布](https://gambit.security/blog-posts/aurora-ransomware-targets-esxi-abuses-cursor-agent-for-exploitation)**了一份关于 Aurora 勒索软件行动的报告，作者是其威胁情报总监 Eyal Sela，材料来自该团伙暴露的基础设施上恢复出的会话日志。结论是：一名操作者在 **2026 年 4 月 8 日至 5 月 21 日之间，把 Cursor Agent——一个底层跑 Claude Sonnet 的商业编码 agent——开进十家受害机构做实操入侵**，共恢复出 28 段对话会话。同日报道此事的路透社给出的已确认被入侵企业数是**至少七家**。这个 agent 是被交给凭据或一条现成的进入路径之后，再被指派去做常规的入侵后工作；另有一个独立集群用别的手法打了另外八家机构。
+**[Gambit Security 于 2026 年 8 月 27 日发布](https://gambit.security/blog-posts/aurora-ransomware-targets-esxi-abuses-cursor-agent-for-exploitation)**了一份关于 Aurora 勒索软件行动的报告，作者是其威胁情报总监 Eyal Sela，材料来自该团伙暴露的基础设施上恢复出的会话日志。结论是：一名操作者在 **2026 年 4 月 8 日至 5 月 21 日之间，把 Cursor Agent——一个底层跑 Claude Sonnet 的商业编码 agent——开进十家受害机构做实操入侵**。同日报道此事的路透社点名了**六家已确认被入侵的企业**；另据 CloudSEK 跟踪，该团伙在 4 月至 7 月间对九个国家的 20 多家机构有活动——那是整个行动的范围，不是由 agent 驱动的那部分。这个 agent 是被交给凭据或一条现成的进入路径之后，再被指派去做常规的入侵后工作；另有一个独立集群用别的手法打了另外八家机构。
 
 报告里有两个细节比标题更重要。**约束来自操作者，不来自产品**——日志显示他反复用俄语禁止某些具体动作以免触发检测，这是一个人在给工具划一条工具自己没有划的操作边界。以及这个 agent **干得并不好**：大多数命令第一次都失败，要来回纠正几轮才跑通，或者最终放弃。
 

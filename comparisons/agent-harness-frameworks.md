@@ -6,9 +6,9 @@
 
 A "harness" is the minimal scaffolding around an LLM that turns it into an agent — the loop, the tool surface, the permission model, the skills hook. These are projects you can fork, audit, and own end-to-end, rather than vendor products you adopt as-is.
 
-Current star totals for all eight live in the [rankings boards](../rankings/README.md); this page compares shape, not size.
+Current star totals for all nine live in the [rankings boards](../rankings/README.md); this page compares shape, not size.
 
-Two shapes now sit under this route. **Single-loop harnesses** *are* the loop — you fork one and own it. **Meta-harnesses** run several of those loops under one layer, and are what you reach for once "which harness" stops being a single answer.
+Three shapes now sit under this route. **Single-loop harnesses** *are* the loop — you fork one and own it. **Meta-harnesses** run several of those loops under one layer, and are what you reach for once "which harness" stops being a single answer. **Harness-as-a-server** runs one loop, but behind an API, and is what you reach for when the agent belongs to your product rather than to your terminal.
 
 ## At A Glance
 
@@ -32,6 +32,16 @@ These do not ship a loop of their own. They run the harnesses above (and vendor 
 
 The distinction that matters when choosing between them: QM assumes **many people share one deployment** and gives each of them isolation; Omnigent assumes **one person drives many agents** and gives them continuity and policy. Neither is a substitute for the other.
 
+## Harness-As-A-Server
+
+One loop, run as a service. You do not fork it and you do not point it at other harnesses — you deploy it, connect providers to it once, and call it over HTTP from your own product.
+
+| Project | License | Front doors | The unit it optimizes for | Watch out for |
+| --- | --- | --- | --- | --- |
+| [TrueForge](../agents/trueforge.md) | MIT (TS) | Bundled chat UI, HTTP API + TypeScript SDK, embeddable UI SDK | **Your product's backend.** Models, MCP servers, skills, and the sandbox are connected once from catalogs; agents pick from what an operator allowed | Six weeks public, still on 0.x release candidates; contributor base is almost entirely one company; sandboxing is Daytona-only today; no scheduling and no channel adapters |
+
+The reason this is a separate shape and not a footnote on the single-loop list: putting the loop behind an API boundary forces choices the forkable harnesses never have to make. Session state must be persisted rather than held in a process, the tool surface must be declared centrally rather than passed per call, and approvals must be renderable to whoever holds the client — which is why they arrive as Generative UI rather than a terminal prompt. TrueForge is also the only entry on this route that argues its case with a **reproducible cost comparison** (14 cross-system tasks against [Claude Managed Agents](../agents/claude-managed-agents.md) and deepagents, same model and MCP servers, harness in `benchmark/`) rather than a feature list. Treat that as a vendor benchmark and read it anyway.
+
 ## How To Choose
 
 - Pick by footprint, not by stars. The right harness is the one whose surface area you are willing to maintain.
@@ -41,3 +51,4 @@ The distinction that matters when choosing between them: QM assumes **many peopl
 - If you want a terminal-first day-to-day coding harness: [Pi](../agents/pi.md), or [jcode](../agents/jcode.md) if speed, low RAM across many sessions, and built-in passive memory are the priorities.
 - If you want a more complete SWE agent product that is still open source: [OpenHands](../agents/openhands.md).
 - If the question is no longer "which harness" but "how do several of them behave under one policy": [Omnigent](../agents/omnigent.md) for one developer across devices, [QM](../agents/qm.md) for a whole team in Slack and the web. Both add a dependency in the middle of your agent loop — take that on when you genuinely run more than one harness, not before.
+- If the agent is a **feature of your product** rather than a tool on your machine — it needs an API, a login, and an approval surface your users can see: [TrueForge](../agents/trueforge.md). The trade is that you now operate Postgres, Redis, and a sandbox provider; the loop is the part you stop operating.

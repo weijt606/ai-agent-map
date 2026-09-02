@@ -53,10 +53,13 @@ Standouts: Claude Code and Codex are the broadest **delivery surfaces**; Codex i
 | [OpenHarness](../agents/openharness.md) | ● | ● | ◐ | ● | ◐ | ◐ | ◐ | ◐ | ● |
 | [QM](../agents/qm.md) | ◐ | ● | ● | ● | ◐ | ● | ● | ● | ● |
 | [Omnigent](../agents/omnigent.md) | ● | ● | ○ | ● | ● | ● | ○ | ● | ● |
+| [TrueForge](../agents/trueforge.md) | ● | ● | ○ | ● | ◐ | ● | — | ◐ | ● |
 
 Standouts: the whole route is defined by **deployment control** (you own the loop). jcode is the only harness with **memory** as a headline (passive semantic graph — see [memory approaches](../comparisons/memory-approaches.md)); OpenHands and OpenHarness carry the most **orchestration**.
 
 The two meta-harnesses score wide because they add the layer the single-loop harnesses deliberately leave out — and they split cleanly. [QM](../agents/qm.md) is the only entry on this route with **memory**, **scheduling**, and **delivery surfaces** all as core, because each scope owns its own memory, crons, and Slack/web presence; its **tool use** is deliberately ◐ (a small fixed tool surface, extended through skills rather than breadth). [Omnigent](../agents/omnigent.md) instead leads on **multi-agent** — mixing several harnesses in one session, including having one review another — and both make **human approval** core through policy engines rather than per-edit prompts. Read both marks with their maturity in mind: QM is days old and Omnigent is self-declared alpha, so these reflect stated design centers, not field-proven behavior.
+
+[TrueForge](../agents/trueforge.md) is a third shape: one loop, but run as a server behind an HTTP API. It scores like a single-loop harness on **tool use** and **code execution**, like a meta-harness on **orchestration** and **human approval** (both are product surfaces here, not debug prompts), and takes the route's usual ● on **deployment control** — it is MIT and self-hosted by design. The two blanks are the shape: **no scheduling primitive at all**, and **delivery surfaces** stop at a chat UI, an API, and an embeddable widget rather than channel adapters. Its **memory** ○ is deliberate: persisted sessions and compaction are durability and context engineering, not learning across sessions. Same maturity caveat — six weeks public, still on 0.x release candidates.
 
 ## Editor-Centric & Review-First
 

@@ -1,193 +1,197 @@
 {
-  "updated": "2026-08-27",
+  "updated": "2026-09-01",
   "repos": {
     "nousresearch/hermes-agent": {
       "full_name": "NousResearch/hermes-agent",
-      "stars": 236878
+      "stars": 239473
     },
     "mattpocock/skills": {
       "full_name": "mattpocock/skills",
-      "stars": 237901
+      "stars": 243855
     },
     "colbymchenry/codegraph": {
       "full_name": "colbymchenry/codegraph",
-      "stars": 68250
+      "stars": 69064
     },
     "obra/superpowers": {
       "full_name": "obra/superpowers",
-      "stars": 278080
+      "stars": 280388
     },
     "addyosmani/agent-skills": {
       "full_name": "addyosmani/agent-skills",
-      "stars": 90027
+      "stars": 91445
     },
     "imbad0202/academic-research-skills": {
       "full_name": "Imbad0202/academic-research-skills",
-      "stars": 43837
+      "stars": 44812
     },
     "anthropics/skills": {
       "full_name": "anthropics/skills",
-      "stars": 171817
+      "stars": 172990
     },
     "tauricresearch/tradingagents": {
       "full_name": "TauricResearch/TradingAgents",
-      "stars": 100735
+      "stars": 102190
     },
     "earendil-works/pi": {
       "full_name": "earendil-works/pi",
-      "stars": 97767
+      "stars": 100474
     },
     "openai/codex": {
       "full_name": "openai/codex",
-      "stars": 118768
+      "stars": 120683
     },
     "rohitg00/agentmemory": {
       "full_name": "rohitg00/agentmemory",
-      "stars": 27524
+      "stars": 27902
     },
     "anthropics/financial-services": {
       "full_name": "anthropics/financial-services",
-      "stars": 34533
+      "stars": 34626
     },
     "hmbown/codewhale": {
       "full_name": "Hmbown/CodeWhale",
-      "stars": 40865
+      "stars": 40889
     },
     "tinyhumansai/openhuman": {
       "full_name": "tinyhumansai/openhuman",
-      "stars": 38181
+      "stars": 39292
     },
     "k-dense-ai/scientific-agent-skills": {
       "full_name": "K-Dense-AI/scientific-agent-skills",
-      "stars": 34707
+      "stars": 41457
     },
     "hkuds/cli-anything": {
       "full_name": "HKUDS/CLI-Anything",
-      "stars": 48303
+      "stars": 48805
     },
     "humanlayer/12-factor-agents": {
       "full_name": "humanlayer/12-factor-agents",
-      "stars": 25507
+      "stars": 25636
     },
     "1jehuang/jcode": {
       "full_name": "1jehuang/jcode",
-      "stars": 18631
+      "stars": 18953
     },
     "moonshotai/kimi-code": {
       "full_name": "MoonshotAI/kimi-code",
-      "stars": 7089
+      "stars": 7204
     },
     "xai-org/grok-build": {
       "full_name": "xai-org/grok-build",
-      "stars": 26098
+      "stars": 26333
     },
     "xiaomimimo/mimo-code": {
       "full_name": "XiaomiMiMo/MiMo-Code",
-      "stars": 12881
+      "stars": 12923
     },
     "zgsm-ai/costrict": {
       "full_name": "zgsm-ai/costrict",
-      "stars": 4391
+      "stars": 4398
     },
     "openclaw/openclaw": {
       "full_name": "openclaw/openclaw",
-      "stars": 387714
+      "stars": 388506
     },
     "ruvnet/ruflo": {
       "full_name": "ruvnet/ruflo",
-      "stars": 69485
+      "stars": 70131
     },
     "anthropics/claude-code": {
       "full_name": "anthropics/claude-code",
-      "stars": 143090
+      "stars": 143683
     },
     "aider-ai/aider": {
       "full_name": "Aider-AI/aider",
-      "stars": 48513
+      "stars": 48652
     },
     "cline/cline": {
       "full_name": "cline/cline",
-      "stars": 66915
+      "stars": 67296
     },
     "continuedev/continue": {
       "full_name": "continuedev/continue",
-      "stars": 35644
+      "stars": 35725
     },
     "openhands/openhands": {
       "full_name": "OpenHands/OpenHands",
-      "stars": 85195
+      "stars": 85876
     },
     "swe-agent/swe-agent": {
       "full_name": "SWE-agent/SWE-agent",
-      "stars": 20147
+      "stars": 20188
     },
     "swe-agent/mini-swe-agent": {
       "full_name": "SWE-agent/mini-swe-agent",
-      "stars": 6779
+      "stars": 6902
     },
     "hkuds/openharness": {
       "full_name": "HKUDS/OpenHarness",
-      "stars": 15547
+      "stars": 15612
     },
     "aaif-goose/goose": {
       "full_name": "aaif-goose/goose",
-      "stars": 53529
+      "stars": 53804
     },
     "significant-gravitas/autogpt": {
       "full_name": "Significant-Gravitas/AutoGPT",
-      "stars": 186901
+      "stars": 187063
     },
     "langchain-ai/langchain": {
       "full_name": "langchain-ai/langchain",
-      "stars": 145075
+      "stars": 145448
     },
     "langchain-ai/langgraph": {
       "full_name": "langchain-ai/langgraph",
-      "stars": 40501
+      "stars": 40869
     },
     "crewaiinc/crewai": {
       "full_name": "crewAIInc/crewAI",
-      "stars": 57648
+      "stars": 57960
     },
     "run-llama/llama_index": {
       "full_name": "run-llama/llama_index",
-      "stars": 51883
+      "stars": 51970
     },
     "n8n-io/n8n": {
       "full_name": "n8n-io/n8n",
-      "stars": 202525
+      "stars": 203052
     },
     "letta-ai/letta": {
       "full_name": "letta-ai/letta",
-      "stars": 24452
+      "stars": 24538
     },
     "openinterpreter/openinterpreter": {
       "full_name": "openinterpreter/openinterpreter",
-      "stars": 68160
+      "stars": 68220
     },
     "berriai/litellm": {
       "full_name": "BerriAI/litellm",
-      "stars": 57337
+      "stars": 57767
     },
     "flowiseai/flowise": {
       "full_name": "FlowiseAI/Flowise",
-      "stars": 55396
+      "stars": 55401
     },
     "langfuse/langfuse": {
       "full_name": "langfuse/langfuse",
-      "stars": 33767
+      "stars": 34052
     },
     "yc-software/qm": {
       "full_name": "yc-software/qm",
-      "stars": 14236
+      "stars": 14424
     },
     "alibaba/open-code-review": {
       "full_name": "alibaba/open-code-review",
-      "stars": 21466
+      "stars": 21781
     },
     "omnigent-ai/omnigent": {
       "full_name": "omnigent-ai/omnigent",
-      "stars": 9311
+      "stars": 9586
+    },
+    "vercel/eve": {
+      "full_name": "vercel/eve",
+      "stars": 4902
     }
   }
 }

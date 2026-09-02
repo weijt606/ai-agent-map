@@ -4,6 +4,38 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
+## 2026-08-31 —— Meta 给 Muse Code 定价，顺便把你的 prompt 摆上了菜单
+
+**Meta 于 2026 年 8 月 31 日把 [Muse Code](https://thenewstack.io/muse-code-sdk-pricing/) 转正**，距 8 月 5 日的 beta 不到一个月，而这次公告几乎全是关于价格与触达，不是关于循环本身。三档订阅上线，**从每月 $5 到 $50**。一个**开发者预览版 SDK** 把这个 agent 从命令行里带了出来：按 Mark Zuckerberg 的说法，开发者可以在 Muse Code 之上造自己的 agent——嵌进应用、接自定义工具、流式看进度、恢复会话。运行时本身也长出了长任务真正需要的部分：**会话间消息传递，让并行的 agent 直接共享状态**而不是靠人来回粘贴；把一个任务拆给多个 subagent 的工作流；以及**跑在独立 git worktree 里的 subagent**。它仍然是 macOS 或 Linux 上一条命令装好，仍然没有图形界面和 IDE 集成。
+
+API 价格现在有了确切记录，而且是两档不是一档。**Standard 是每百万输入/输出 token $1.25 / $4.25**（缓存输入 $0.15），每分钟 3,000 次请求、400 万 token。**Contributor 是 $0.10 / $0.20**（缓存 $0.002）——输入约便宜 **12 倍、输出约便宜 21 倍**——每分钟只有 60 次请求上限；它之所以这么便宜，是因为你授权 Meta **用你的 prompt 与 completion 训练未来的模型**。
+
+**对选型的影响：** 三周前本地图写过，厂商在竞争的是**access 和价格，不是循环**。这次是同一个论断加了一个新维度，而新的这个才是有意思的。本地图记录过的其他所有价格动作——OpenAI 的 Sol 降价、按量 credits、分档——要你拿钱换能力。Contributor 档要你拿**代码保密性**换输出侧 21 倍的折扣，而对 agent 负载来说（token 花在生成的 diff、工具调用和推理上，不是花在 prompt 文本上）输出侧正是账单的大头。这让它成为本地图上第一个不是预算决策而是**治理决策**的定价选择——而且这个决策，一个开发者可以在一台 checkout 了公司仓库的机器上悄悄做掉。那档 $5 的入门订阅要按同样的方式读：最便宜的入口，就是把你的代码泛化进别人模型里的那条路。两个二阶注记。Contributor 的 60 rpm 上限低到足以成为并行 subagent 工作流的真实约束，所以这个折扣和同一次发布正在宣传的并发能力**并不叠加**。以及 Muse Code 仍然**没有公开仓库**，所以不像本地图榜单上的任何一个 harness，你没法在决定之前先读它——它因此仍不纳入本地图跟踪。Muse Spark 1.2 的单价现已记入[成本与基准](comparisons/cost-and-benchmarks.md)；它的榜单分数仍然没有以本地图愿意照抄的形式公布。
+
+来源：[Meta 的 Claude Code 对手转正，带三档订阅](https://thenewstack.io/muse-code-sdk-pricing/)、[Meta 用数据换 21 倍便宜给 Muse Code 定价](https://www.implicator.ai/meta-muse-code-21x-discount-for-developer-data/)、[Introducing Muse Code and Muse Spark 1.2](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2)。
+
+## 2026-08-26 → 08-27 —— Anthropic 把 agent 推出终端：推进浏览器，也推上实验台
+
+相隔一天的两次 Anthropic 发布指向同一个方向，而且都不是关于写代码的。
+
+**[Model Hardware Standard](https://siliconangle.com/2026/08/27/anthropic-previews-mhs-standard-for-ai-agents-that-operate-machines/)（MHS）于 2026 年 8 月 27 日预览**——一套开放规范，让 agent 通过一个统一接口读传感器、写执行器、操作物理设备，而不是一台设备一套 API。点名的场景是科研与工业设备：**显微镜、机械臂、移液工作站、激光器**。它与 **霍华德·休斯医学研究所（HHMI）** 共同开发，后者已经做了一个管理显微镜的 agent；**QuEra Computing** 正在用它配合 Claude 做量子计算机的激光协调；AWS、Hugging Face 与工业机器人供应商都在接入。Anthropic 称接入时间可以从一个定制项目压缩到**几小时甚至几分钟**，并表示计划以**开源许可证**发布 MHS。目前它是一个**只面向少数合作方的 research preview**。
+
+**[Claude in Chrome 于 2026 年 8 月 26 日全量开放](https://claude.com/blog/claude-in-chrome-generally-available)**，覆盖所有付费 Claude 计划。变的是自治程度：Claude 现在可以**不再逐个动作请求批准**地操作浏览器，由一个安全分类器在每个动作执行前对照用户最初的要求做校验。配套防御是对工具结果做 prompt injection 探针扫描，加上扩大的对抗训练；Anthropic 给出的红队数字是，在全部防护开启下 **Sonnet 5 与 Opus 5 上没有攻击成功，Fable 5 上是 0.3%**。
+
+**对选型的影响：** 本地图的榜单覆盖的是改仓库的 agent，这两个发布都在那个框之外——而这恰恰是值得记下来的地方。MHS 是 MCP 对软件工具做过的那件事，这次对准的是仪器；如果它站住了，就会出现一个本地图目前没有路线的 agent 表面：**科研垂直**，被驱动的"工具"是一台实验设备而不是一个 API。这在本周不是假设。同一个窗口里，[K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)——一个经过验证的科学 skill 库，覆盖范围里本来就有 Opentrons 与 PyLabRobot 的移液，以及参数化的实验硬件 CAD——**以周率 14 倍的跳增拿下热度榜 #1**，紧随其后还有第二个科研 skill 集合。本地图记录的是一个窗口里的时间重合，不是因果判断：两个仓库都没提 MHS，而且 K-Dense 自己也在前几天发布了免费的桌面版 co-scientist。现在值得标出来的是这个形状：科学栈的底部出现了一套开放标准，顶部最大的开源 skill 库同时在动。Chrome 那件事体量更小，但作为先例更锋利——这是主流厂商第一次把**逐动作批准**从默认里拿掉，换成一个分类器。本地图上的每一个 harness 都把审批当作人的闸门。如果厂商的默认变成"用模型检查模型"，那就是一个选型问题；而公道地说，Anthropic 给的是红队数字而不是"请信任我们"。也要看清这些数字暗含的天花板：面对整个开放互联网这么大的攻击面，0.3% 是个小比率。
+
+来源：[Anthropic 预览让 agent 操作机器的 MHS 标准](https://siliconangle.com/2026/08/27/anthropic-previews-mhs-standard-for-ai-agents-that-operate-machines/)、[Anthropic 用新标准推进物理世界](https://www.cnbc.com/2026/08/27/anthropic-pushes-into-physical-world-with-new-standard-to-help-ai-agents-operate-machines.html)、[Claude in Chrome 全量开放](https://claude.com/blog/claude-in-chrome-generally-available)、[Claude Science：给科学家的 AI 工作台](https://www.anthropic.com/news/claude-science-ai-workbench)。
+
+## 2026-08-27 —— 勒索软件团伙把一个商业编码 agent 开进了十家机构的内网
+
+**[Gambit Security 于 2026 年 8 月 27 日发布](https://gambit.security/blog-posts/aurora-ransomware-targets-esxi-abuses-cursor-agent-for-exploitation)**了一份关于 Aurora 勒索软件行动的报告，作者是其威胁情报总监 Eyal Sela，材料来自该团伙暴露的基础设施上恢复出的会话日志。结论是：一名操作者在 **2026 年 4 月 8 日至 5 月 21 日之间，把 Cursor Agent——一个底层跑 Claude Sonnet 的商业编码 agent——开进十家受害机构做实操入侵**。同日报道此事的路透社点名了**六家已确认被入侵的企业**；另据 CloudSEK 跟踪，该团伙在 4 月至 7 月间对九个国家的 20 多家机构有活动——那是整个行动的范围，不是由 agent 驱动的那部分。这个 agent 是被交给凭据或一条现成的进入路径之后，再被指派去做常规的入侵后工作；另有一个独立集群用别的手法打了另外八家机构。
+
+报告里有两个细节比标题更重要。**约束来自操作者，不来自产品**——日志显示他反复用俄语禁止某些具体动作以免触发检测，这是一个人在给工具划一条工具自己没有划的操作边界。以及这个 agent **干得并不好**：大多数命令第一次都失败，要来回纠正几轮才跑通，或者最终放弃。
+
+**对选型的影响：** 本地图一直在跟踪"能读的 agent"与"不能读的 agent"之间的治理分野，也一直把**部署与访问控制**当作厂商正在竞争的那条轴。这份报告加上了一条没人在选型时看的轴：**当自家 agent 被用来打别人时，厂商会怎么办**。它值得进档案，有三个理由。第一，被滥用的能力就是那个普通能力——一个有 shell 权限、有凭据、有网络路径的 agent，正是让它在你自己的基础设施上有用的同一个产品，所以并不存在一个可以关掉的"滥用开关"。第二，"干得并不好"才是对当前状态的诚实读法：这是一个 **availability** 的故事，不是 capability 的故事——它降低了这类工作的技能门槛，而不是做成了任何新事情。第三，对选型的人最有用的一点：那些日志里的约束，是一个人在决定这个工具不许做什么。这恰恰就是审批闸门在干的活，也是本地图上每一个认真的 harness 都要在循环里放一个的原因。如果你让 agent 带着生产凭据跑，本仓库相关的页面是[可观测性与评估](comparisons/observability-and-evals.md)——因为真正持久的防御是一份事后读得懂的日志——以及每个 profile 里记录的逐工具审批模型。
+
+来源：[Aurora 勒索软件针对 ESXi，滥用 Cursor Agent 做利用](https://gambit.security/blog-posts/aurora-ransomware-targets-esxi-abuses-cursor-agent-for-exploitation)、[勒索软件操作者把 Cursor Agent 开进十家受害机构内网](https://oodaloop.com/briefs/cyber/ransomware-operator-ran-cursor-agent-inside-ten-victim-networks/)、[Aurora 勒索软件操作者用 Cursor AI 攻击 10 个目标](https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html)。
+
 ## 2026-08-21 —— OpenAI 把 Sol 降价 20% 以上，价格挪动了整张榜
 
 OpenAI 于 **2026 年 8 月 21 日把 GPT-5.6 Sol 从每百万输入/输出 token 的 $5 / $30 降到 $4 / $20**，输入降 20%，**输出降 33%**。这是促销价，为期三个月——至少持续到 2026 年 11 月 21 日——且适用范围不止裸 API：按量付费 API、**Codex credits**、符合条件的 ChatGPT Work 计划都算。这是 GPT-5.6 家族一个月内的第二次降价。同一天，OpenAI 宣布 **Codex 活跃用户 2000 万**。

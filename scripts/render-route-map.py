@@ -41,7 +41,7 @@ GROUPS = [
         ("Managed background path", "管理式后台路径", ["Claude Managed Agents"], 1),
     ]),
     ("Own the loop", "自己掌控循环", "#eb6834", [
-        ("Agent harness framework", "Agent harness 框架", ["Pi", "jcode", "QM"], 8),
+        ("Agent harness framework", "Agent harness 框架", ["Pi", "jcode", "TrueForge"], 9),
         ("Self-hosted / local runtime", "自托管 / 本地 runtime", ["Hermes Agent", "OpenClaw", "Goose"], 6),
         ("General-purpose autonomous agent", "通用自主 agent", ["AutoGPT", "Agent Zero", "BabyAGI"], 6),
     ]),

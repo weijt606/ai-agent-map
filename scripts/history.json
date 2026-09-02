@@ -1147,6 +1147,76 @@
           "gain": 2214
         }
       ]
+    },
+    {
+      "date": "2026-09-01",
+      "window_start": "2026-08-27",
+      "window_end": "2026-09-01",
+      "source_commit": "",
+      "depth": 10,
+      "note": "",
+      "entries": [
+        {
+          "rank": 1,
+          "slug": "k-dense-ai/scientific-agent-skills",
+          "stars": 41457,
+          "gain": 6750
+        },
+        {
+          "rank": 2,
+          "slug": "mattpocock/skills",
+          "stars": 243855,
+          "gain": 5954
+        },
+        {
+          "rank": 3,
+          "slug": "earendil-works/pi",
+          "stars": 100474,
+          "gain": 2707
+        },
+        {
+          "rank": 4,
+          "slug": "nousresearch/hermes-agent",
+          "stars": 239473,
+          "gain": 2595
+        },
+        {
+          "rank": 5,
+          "slug": "obra/superpowers",
+          "stars": 280388,
+          "gain": 2308
+        },
+        {
+          "rank": 6,
+          "slug": "openai/codex",
+          "stars": 120683,
+          "gain": 1915
+        },
+        {
+          "rank": 7,
+          "slug": "tauricresearch/tradingagents",
+          "stars": 102190,
+          "gain": 1455
+        },
+        {
+          "rank": 8,
+          "slug": "addyosmani/agent-skills",
+          "stars": 91445,
+          "gain": 1418
+        },
+        {
+          "rank": 9,
+          "slug": "anthropics/skills",
+          "stars": 172990,
+          "gain": 1173
+        },
+        {
+          "rank": 10,
+          "slug": "tinyhumansai/openhuman",
+          "stars": 39292,
+          "gain": 1111
+        }
+      ]
     }
   ],
   "raw": [
@@ -2250,6 +2320,203 @@
         "zgsm-ai/costrict": {
           "stars": 4391,
           "gain": 30
+        }
+      }
+    },
+    {
+      "date": "2026-09-01",
+      "stars": {
+        "k-dense-ai/scientific-agent-skills": {
+          "stars": 41457,
+          "gain": 6750
+        },
+        "mattpocock/skills": {
+          "stars": 243855,
+          "gain": 5954
+        },
+        "earendil-works/pi": {
+          "stars": 100474,
+          "gain": 2707
+        },
+        "nousresearch/hermes-agent": {
+          "stars": 239473,
+          "gain": 2595
+        },
+        "obra/superpowers": {
+          "stars": 280388,
+          "gain": 2308
+        },
+        "openai/codex": {
+          "stars": 120683,
+          "gain": 1915
+        },
+        "tauricresearch/tradingagents": {
+          "stars": 102190,
+          "gain": 1455
+        },
+        "addyosmani/agent-skills": {
+          "stars": 91445,
+          "gain": 1418
+        },
+        "anthropics/skills": {
+          "stars": 172990,
+          "gain": 1173
+        },
+        "tinyhumansai/openhuman": {
+          "stars": 39292,
+          "gain": 1111
+        },
+        "imbad0202/academic-research-skills": {
+          "stars": 44812,
+          "gain": 975
+        },
+        "colbymchenry/codegraph": {
+          "stars": 69064,
+          "gain": 814
+        },
+        "openclaw/openclaw": {
+          "stars": 388506,
+          "gain": 792
+        },
+        "openhands/openhands": {
+          "stars": 85876,
+          "gain": 681
+        },
+        "ruvnet/ruflo": {
+          "stars": 70131,
+          "gain": 646
+        },
+        "anthropics/claude-code": {
+          "stars": 143683,
+          "gain": 593
+        },
+        "n8n-io/n8n": {
+          "stars": 203052,
+          "gain": 527
+        },
+        "hkuds/cli-anything": {
+          "stars": 48805,
+          "gain": 502
+        },
+        "berriai/litellm": {
+          "stars": 57767,
+          "gain": 430
+        },
+        "cline/cline": {
+          "stars": 67296,
+          "gain": 381
+        },
+        "rohitg00/agentmemory": {
+          "stars": 27902,
+          "gain": 378
+        },
+        "langchain-ai/langchain": {
+          "stars": 145448,
+          "gain": 373
+        },
+        "langchain-ai/langgraph": {
+          "stars": 40869,
+          "gain": 368
+        },
+        "1jehuang/jcode": {
+          "stars": 18953,
+          "gain": 322
+        },
+        "alibaba/open-code-review": {
+          "stars": 21781,
+          "gain": 315
+        },
+        "crewaiinc/crewai": {
+          "stars": 57960,
+          "gain": 312
+        },
+        "langfuse/langfuse": {
+          "stars": 34052,
+          "gain": 285
+        },
+        "aaif-goose/goose": {
+          "stars": 53804,
+          "gain": 275
+        },
+        "omnigent-ai/omnigent": {
+          "stars": 9586,
+          "gain": 275
+        },
+        "xai-org/grok-build": {
+          "stars": 26333,
+          "gain": 235
+        },
+        "yc-software/qm": {
+          "stars": 14424,
+          "gain": 188
+        },
+        "significant-gravitas/autogpt": {
+          "stars": 187063,
+          "gain": 162
+        },
+        "aider-ai/aider": {
+          "stars": 48652,
+          "gain": 139
+        },
+        "humanlayer/12-factor-agents": {
+          "stars": 25636,
+          "gain": 129
+        },
+        "swe-agent/mini-swe-agent": {
+          "stars": 6902,
+          "gain": 123
+        },
+        "moonshotai/kimi-code": {
+          "stars": 7204,
+          "gain": 115
+        },
+        "anthropics/financial-services": {
+          "stars": 34626,
+          "gain": 93
+        },
+        "run-llama/llama_index": {
+          "stars": 51970,
+          "gain": 87
+        },
+        "letta-ai/letta": {
+          "stars": 24538,
+          "gain": 86
+        },
+        "continuedev/continue": {
+          "stars": 35725,
+          "gain": 81
+        },
+        "hkuds/openharness": {
+          "stars": 15612,
+          "gain": 65
+        },
+        "openinterpreter/openinterpreter": {
+          "stars": 68220,
+          "gain": 60
+        },
+        "xiaomimimo/mimo-code": {
+          "stars": 12923,
+          "gain": 42
+        },
+        "swe-agent/swe-agent": {
+          "stars": 20188,
+          "gain": 41
+        },
+        "hmbown/codewhale": {
+          "stars": 40889,
+          "gain": 24
+        },
+        "zgsm-ai/costrict": {
+          "stars": 4398,
+          "gain": 7
+        },
+        "flowiseai/flowise": {
+          "stars": 55401,
+          "gain": 5
+        },
+        "vercel/eve": {
+          "stars": 4902,
+          "gain": null
         }
       }
     }

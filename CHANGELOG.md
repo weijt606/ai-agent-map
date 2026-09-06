@@ -4,6 +4,31 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-09-06 — Audit pass: four findings, and a correction that had not been made at source
+
+A full review of everything changed on 2026-09-06 — 76 files — covering EN/zh structural parity, cross-file number consistency, and prose. Four findings, three of them introduced the same day.
+
+- **A corrected claim was never corrected at source.** The coverage-audit entry below said the August "Meta closes the first-party coding-CLI field" claim was wrong, but left the August entry asserting it, headline included. Now corrected in place: the headline reads "Meta **Enters** The Vendor-CLI Field", a dated note names the error, and the original paragraph stays under it rather than being silently rewritten. The July roll-call it came from had omitted [Gemini CLI](agents/gemini-cli.md) and [Qwen Code](agents/qwen-code.md), both already shipping.
+- **"Three weeks" was wrong in eight places, and always in the same direction** — flattering a growth rate and shortening a scanning failure. DeepSeek Harness published Aug 13; the audit ran Sept 6. That is 24 days. Same slip on the Sonnet 5 → Opus 5 gap. Corrected to "24 days" and "three and a half weeks" in both languages.
+- **A star count disagreed with the stamped snapshot** (213.8k in prose against 213,948 in `snapshot.json`, because the profile predated the refresh). Normalized.
+- **Quote-style mixing introduced by a tooling workaround** in seven zh files. Normalized; two pre-existing cases left alone.
+
+Verified clean: 32 EN/zh document pairs with identical heading counts, table rows and profile-link sets; all three profile counts at 77; prices and benchmark figures consistent wherever they repeat.
+
+The standing lesson, added to the weekly-update gotchas: **comparative superlatives and elapsed-time claims get recomputed from data every edition, not reasoned about** — and a correction published in a new entry is not a correction until the original text changes.
+
+## 2026-09-06 — The capability matrix closes: 67 scored, 10 deliberately not
+
+The matrix had drifted into describing a map that no longer existed — 49 rows against 77 profiles, with no statement of which absences were decisions.
+
+- **Nine rows for the day's new product profiles**: OpenCode, Gemini CLI, Qwen Code and ZCode on direct execution; DeepSeek Harness on the harness route; Microsoft Agent Framework on build-your-own; WorkBuddy and Kimi Work on self-hosted; and a **new Browser Agents section** for Browser Use.
+- **Nine more backfilled** from the pre-existing gap: Semantic Kernel, Haystack, Pydantic AI, DSPy, Agent Zero, Julep, GenericAgent, ml-intern, Froge Code.
+- **A new section, "What This Matrix Deliberately Does Not Score"**, covering the ten that stay out and why: the eight model profiles (every column here is an agent-product property a model does not have), [Superpowers](agents/superpowers.md) (a skills framework running inside other agents — a row would measure the host), and [BabyAGI](agents/babyagi.md) (a historical and educational entry whose own profile says it is not a production tool).
+
+The section closes the loop: *if a project is profiled and has none of those reasons, a missing row is a backlog item rather than a decision.* A script check confirms every profile without a row is named there.
+
+The "Terminal Coding CLIs" section is renamed **"Direct-Execution Agents (Terminal & Desktop)"** to hold ZCode, which is a desktop GUI; no anchor links pointed at the old heading. Scoring took reading the profile bodies rather than mapping their own "Capability Shape" tables — those use project-specific dimensions (Pydantic AI's are type safety and dependency injection; BabyAGI's are historical influence and educational value) that do not map onto these nine columns.
+
 ## 2026-09-06 — Coverage audit: five profiles the map was already relying on
 
 A full coverage scan rather than a weekly diff. Five new profiles (EN + zh) and a fifteenth route, taking the map to 77 — and the misses share a pattern worth naming.
@@ -38,13 +63,13 @@ One refusal worth recording. DeepSeek quotes SWE-bench Verified, Anthropic quote
 
 A coverage scan found gaps that were not judgment calls but misses. Four new profiles (EN + zh), taking the map to 68:
 
-- **New [DeepSeek Harness](agents/deepseek-harness.md)** (`deepseek-ai/deepseek-harness`, MIT, TypeScript) — published August 13 2026 and at **213.8k stars / 25.1k forks three weeks later**, which makes it the largest thing this map has ever failed to notice. It is a fourth shape on the [harness route](comparisons/agent-harness-frameworks.md): not a loop you fork, not a meta-harness, not a harness behind HTTP, but **a harness with no privileged core** — the model adapter, tool registry, session log and the agent loop itself are all plugins replaceable from configuration, on the Cordis kernel. Carries `tracked: false` for one window.
+- **New [DeepSeek Harness](agents/deepseek-harness.md)** (`deepseek-ai/deepseek-harness`, MIT, TypeScript) — published August 13 2026 and at **213.9k stars / 25.1k forks 24 days later**, which makes it the largest thing this map has ever failed to notice. It is a fourth shape on the [harness route](comparisons/agent-harness-frameworks.md): not a loop you fork, not a meta-harness, not a harness behind HTTP, but **a harness with no privileged core** — the model adapter, tool registry, session log and the agent loop itself are all plugins replaceable from configuration, on the Cordis kernel. Carries `tracked: false` for one window.
 - **New [ZCode](agents/zcode.md)** (Zhipu) — the tool a GLM-first developer actually opens. A desktop agentic development environment whose primary object is a task rather than a file, with long-horizon "Goal" runs and remote control from WeChat, Feishu, or Telegram. Placed on direct execution rather than the editor route for that reason.
 - **New [WorkBuddy](agents/workbuddy.md)** (Tencent) and **[Kimi Work](agents/kimi-work.md)** (Moonshot) — the same agent loop aimed at desktop knowledge work. Kimi Work is the sharpest case in this directory: the vendor states its core is [Kimi Code](agents/kimi-code.md), so a coding agent's loop, strengths, and failure modes now run over your mounted folders and the browser you are logged into.
 
 Structural consequences: [market-events](market-events.md) gains two backfilled entries (the DeepSeek release, and the March–June opening of China's desktop agent category); [agent harness frameworks](comparisons/agent-harness-frameworks.md) and [mainstream landscape](comparisons/mainstream-agent-landscape.md) carry the new rows; the route tables gain ZCode on direct execution, DeepSeek Harness on the harness route, and WorkBuddy and Kimi Work on general-purpose autonomous.
 
-Two things this entry states rather than hides. The DeepSeek repository sat off these boards for three weeks, which is a scanning failure and is recorded as one in the market-events entry. And three of the four new profiles are **closed source with authorized access to local files** — the desktop agent category is closed by default, which is the opposite of the norm on the open side of this map, and the profiles say so.
+Two things this entry states rather than hides. The DeepSeek repository sat off these boards for 24 days, which is a scanning failure and is recorded as one in the market-events entry. And three of the four new profiles are **closed source with authorized access to local files** — the desktop agent category is closed by default, which is the opposite of the norm on the open side of this map, and the profiles say so.
 
 ## 2026-09-06 — The frontier model route catches up, two generations at once
 

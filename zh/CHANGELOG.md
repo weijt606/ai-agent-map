@@ -4,6 +4,31 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-09-06 —— 审查：四处发现，以及一条"改了但没改到源头"的更正
+
+对 2026-09-06 当天所有改动做了一次完整复查——76 个文件——覆盖中英文结构对齐、跨文件数字自洽与文字质量。四处发现，其中三处就是当天引入的。
+
+- **一条已被指出的错误，从未在源头改掉。** 下面那条覆盖面审计说了 8 月"Meta 补上第一方编码 CLI 阵营最后一块"是错的，却把 8 月那条原封不动留着，标题也没动。现已就地更正：标题改为"Meta **进入**厂商 CLI 阵营"，加一条带日期的更正说明点出错在哪，原段落保留在下方而不是无声改写。它援引的那份 7 月名单，漏掉了当时早已在发的 [Gemini CLI](agents/gemini-cli.md) 与 [Qwen Code](agents/qwen-code.md)。
+- **"三周"在八处是错的，而且错的方向一致**——既美化了增长速度，也缩短了自己承认的扫描失职。DeepSeek Harness 于 8 月 13 日发布，审查发生在 9 月 6 日，实为 24 天。Sonnet 5 到 Opus 5 的间隔也犯了同样的错。双语统一改为"24 天"与"三周半"。
+- **一处 star 数与已 stamp 的快照不符**（正文写 213.8k，`snapshot.json` 是 213,948，因为 profile 写在刷新之前）。已统一。
+- **因绕开工具报错而引入的引号风格混用**，涉及七个 zh 文件。已统一；另两处是原有的，不动。
+
+复查通过项：32 对中英文文档的标题数、表格行数、profile 链接集合完全一致；三处 profile 计数均为 77；价格与 benchmark 数字在所有重复出现的位置一致。
+
+写进周更坑清单的长期教训：**比较型最高级与时长断言，每期都要从数据现算，不能靠推理**——以及，一条只写在新条目里的更正，在原文没改之前不算更正。
+
+## 2026-09-06 —— 能力矩阵收口：67 个打分、10 个明确不打
+
+矩阵已经漂移成在描述一张不存在的地图——77 个 profile 只有 49 行，而且没有任何地方说明哪些缺席是决定。
+
+- **为当天新增的产品类 profile 补 9 行**：OpenCode、Gemini CLI、Qwen Code、ZCode 进直接执行；DeepSeek Harness 进 harness 路线；Microsoft Agent Framework 进自建；WorkBuddy、Kimi Work 进自托管；并为 Browser Use **新开"浏览器 agent"一节**。
+- **再补 9 个历史遗留**：Semantic Kernel、Haystack、Pydantic AI、DSPy、Agent Zero、Julep、GenericAgent、ml-intern、Froge Code。
+- **新增一节「本矩阵刻意不打分的东西」**，写明 10 个不收的理由：8 个模型 profile（这里每一列都是模型不具备的 agent 产品属性）、[Superpowers](agents/superpowers.md)（跑在别的 agent 内部的 skills 框架——给它一行量的是宿主）、[BabyAGI](agents/babyagi.md)（历史与教学条目，它自己的 profile 就写着不是生产工具）。
+
+这一节把逻辑闭上了：*如果一个项目已有 profile 且不属于以上任何一类，那么缺一行就是待办，不是决定。* 脚本核对确认每一个没有行的 profile 都在那里被点名。
+
+"终端编码 CLI"一节改名为**"直接执行型 agent（终端与桌面）"**以容纳桌面 GUI 形态的 ZCode；没有锚点链接指向旧标题。打分是靠读 profile 正文完成的，而不是套用它们自带的"能力形状"表——那些表用的是各项目自己的维度（Pydantic AI 是类型安全与依赖注入，BabyAGI 是历史影响力与教育价值），与这九列并不对应。
+
 ## 2026-09-06 —— 覆盖面审计：五个本地图早就在依赖的 profile
 
 这次做的是完整覆盖扫描而不是周差异。新增五个 profile（EN + zh）与第十五条路线，收录数到 77——而这些遗漏共享一个值得点名的模式。
@@ -38,13 +63,13 @@
 
 一次覆盖面扫描找出的不是"判断结果"而是"漏掉了"的缺口。新增四个 profile（EN + zh），收录数到 68：
 
-- **新增 [DeepSeek Harness](agents/deepseek-harness.md)**（`deepseek-ai/deepseek-harness`，MIT，TypeScript）—— 2026-08-13 发布，三周后 **21.38 万 star / 2.51 万 fork**，是本地图迄今漏掉过的最大一个。它是 [harness 路线](comparisons/agent-harness-frameworks.md)上的第四种形态：不是你 fork 的循环，不是 meta-harness，也不是 HTTP 后面的 harness，而是**一个没有特权内核的 harness**——建在 Cordis 内核上，模型适配层、工具注册表、会话日志与 agent 循环本身全是可从配置替换的插件。按惯例带一个窗口的 `tracked: false`。
+- **新增 [DeepSeek Harness](agents/deepseek-harness.md)**（`deepseek-ai/deepseek-harness`，MIT，TypeScript）—— 2026-08-13 发布，24 天后 **21.4 万 star / 2.51 万 fork**，是本地图迄今漏掉过的最大一个。它是 [harness 路线](comparisons/agent-harness-frameworks.md)上的第四种形态：不是你 fork 的循环，不是 meta-harness，也不是 HTTP 后面的 harness，而是**一个没有特权内核的 harness**——建在 Cordis 内核上，模型适配层、工具注册表、会话日志与 agent 循环本身全是可从配置替换的插件。按惯例带一个窗口的 `tracked: false`。
 - **新增 [ZCode](agents/zcode.md)**（智谱）—— 一个 GLM 优先的开发者真正会打开的那个工具。桌面 agentic 开发环境，主对象是任务而不是文件，带长周期 "Goal" 运行，并可从微信、飞书、Telegram 远程操控。正因如此它进"直接执行"而不是编辑器路线。
 - **新增 [WorkBuddy](agents/workbuddy.md)**（腾讯）与 **[Kimi Work](agents/kimi-work.md)**（月之暗面）—— 同一套 agent 循环，指向桌面知识工作。Kimi Work 是本目录里最锋利的例子：厂商明说它的内核是 [Kimi Code](agents/kimi-code.md)，于是一个编码 agent 的循环、长处与失效模式，现在跑在你挂载的文件夹和你已登录的浏览器上。
 
 结构性后果：[market-events](market-events.md) 补两条（DeepSeek 那次发布，以及 3–6 月中国桌面 agent 品类的打开）；[agent harness 框架对比](comparisons/agent-harness-frameworks.md)与[主流格局](comparisons/mainstream-agent-landscape.md)加上新行；路线表里，ZCode 进直接执行，DeepSeek Harness 进 harness 路线，WorkBuddy 与 Kimi Work 进通用自主 agent。
 
-有两件事本条目选择写明而不是藏起来。DeepSeek 那个仓库在本榜外躺了三周，那是扫描环节的失职，在 market-events 里如实记了一笔。以及四个新 profile 里有三个是**带授权本地文件访问的闭源产品**——桌面 agent 这个品类默认闭源，与本地图开放那一侧的惯例正好相反，profile 里都写清楚了。
+有两件事本条目选择写明而不是藏起来。DeepSeek 那个仓库在本榜外躺了 24 天，那是扫描环节的失职，在 market-events 里如实记了一笔。以及四个新 profile 里有三个是**带授权本地文件访问的闭源产品**——桌面 agent 这个品类默认闭源，与本地图开放那一侧的惯例正好相反，profile 里都写清楚了。
 
 ## 2026-09-06 —— 前沿模型路线一次补齐两代
 

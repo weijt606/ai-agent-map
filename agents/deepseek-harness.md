@@ -4,7 +4,7 @@
 [![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](deepseek-harness.md)
 [![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-One-line take: DeepSeek Harness (`dsh`) is an agent harness with **no privileged core** — the model adapter, the tool registry, the session log, and the agent loop itself are all plugins you can replace from configuration — and it reached 213k stars in three weeks while still labelled a developer preview.
+One-line take: DeepSeek Harness (`dsh`) is an agent harness with **no privileged core** — the model adapter, the tool registry, the session log, and the agent loop itself are all plugins you can replace from configuration — and it reached 213.9k stars in 24 days while still labelled a developer preview.
 
 ## Quick Read
 
@@ -67,4 +67,4 @@ Against [Pi](pi.md) and [jcode](jcode.md), the difference is ownership model: th
 
 ## Bottom Line
 
-The plugin-kernel idea is not new; applying it to the *agent loop itself*, in a vendor-official MIT repository, is. The adoption curve (213k stars, 25k forks in three weeks) says the pitch landed. Weigh that against the label the project puts on itself: developer preview, contracts not frozen. Good fit if you are building something you expect to keep changing; bad fit if you need to pin an interface and walk away.
+The plugin-kernel idea is not new; applying it to the *agent loop itself*, in a vendor-official MIT repository, is. The adoption curve (213.9k stars, 25k forks in 24 days) says the pitch landed. Weigh that against the label the project puts on itself: developer preview, contracts not frozen. Good fit if you are building something you expect to keep changing; bad fit if you need to pin an interface and walk away.

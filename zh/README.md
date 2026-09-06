@@ -26,7 +26,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 | 你现在的问题更像什么 | 先看哪里 |
 | --- | --- |
 | 我要先得到一个候选 shortlist | [![进入 Agents](https://img.shields.io/badge/%E8%BF%9B%E5%85%A5-Agents-d97706?style=for-the-badge&labelColor=92400e)](agents/README.md) |
-| 我的问题是“代码自动化怎么选” | [![阅读 代码自动化](https://img.shields.io/badge/%E9%98%85%E8%AF%BB-%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E5%8C%96-2563eb?style=for-the-badge&labelColor=1d4ed8)](use-cases/coding-automation.md) |
+| 我的问题是"代码自动化怎么选" | [![阅读 代码自动化](https://img.shields.io/badge/%E9%98%85%E8%AF%BB-%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E5%8C%96-2563eb?style=for-the-badge&labelColor=1d4ed8)](use-cases/coding-automation.md) |
 | 我已经有候选，想做横向对比 | [![查看 主流矩阵](https://img.shields.io/badge/%E6%9F%A5%E7%9C%8B-%E4%B8%BB%E6%B5%81%E7%9F%A9%E9%98%B5-dc2626?style=for-the-badge&labelColor=991b1b)](comparisons/mainstream-agent-landscape.md) |
 | 我在意审批、记忆、调度、部署这类能力维度 | [![浏览 能力维度](https://img.shields.io/badge/%E6%B5%8F%E8%A7%88-%E8%83%BD%E5%8A%9B%E7%BB%B4%E5%BA%A6-16a34a?style=for-the-badge&labelColor=166534)](capabilities/README.md) |
 | 我想看每个项目在这些维度上并排打分 | [![查看 能力矩阵](https://img.shields.io/badge/%E6%9F%A5%E7%9C%8B-%E8%83%BD%E5%8A%9B%E7%9F%A9%E9%98%B5-059669?style=for-the-badge&labelColor=047857)](capabilities/matrix.md) |
@@ -62,7 +62,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 - **本窗口是 5 天——上一个窗口也是 5 天。** 这是一次计划外补刷（例行节奏周三恢复），跨 2026-09-01 → 2026-09-06。因为上一个窗口同样是 5 天，本表的原始增量是三个窗口以来第一次可以**直接和上一期对比**，不需要先换算成周率。
 - **尖峰规矩第四次兑现，而且兑现在本榜自己的 #1 上。** 上一期 [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) 以 14 倍跳增空降 #1，本榜当时明确拒绝把它读成趋势。这一期它**还回 73%**、掉到 #6。至此连续四个窗口，上一窗口的爆发都没能重复——[jcode](agents/jcode.md)、[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)、[Codex CLI](agents/codex.md)，现在是 K-Dense。这条规矩已经不只是提醒，而是本榜证据最扎实的一个结论。
 - **科研垂直是在轮换，不是塌了。** K-Dense 降 73% 的同时，[academic-research-skills](https://github.com/Imbad0202/academic-research-skills) 从 #11 升到 **#7**（+1,744），是它 2026-08-05 以来第一次上表，而且现在是两个科研集合里**更大**的那个（46.6k 对 43.3k）。把垂直当作真实的，把单个仓库当作波动的。
-- **[mattpocock/skills](https://github.com/mattpocock/skills) 只让出一个窗口就夺回 #1，而且是历史最快周率。** 约 14,600/周，此前最高约 11,900（2026-07-22），并**越过 25 万**。09-01 结束的那个九连窗只被打断了一期——这削弱了上一期“集中度故事可能正在破裂”的那个读法。
+- **[mattpocock/skills](https://github.com/mattpocock/skills) 只让出一个窗口就夺回 #1，而且是历史最快周率。** 约 14,600/周，此前最高约 11,900（2026-07-22），并**越过 25 万**。09-01 结束的那个九连窗只被打断了一期——这削弱了上一期"集中度故事可能正在破裂"的那个读法。
 - **skills 浪潮拿到 6/10，追平本榜纪录**：此前仅 2026-05-23 出现过一次，之后再没有。六个席位是 mattpocock、[Superpowers](agents/superpowers.md)、[anthropics/skills](https://github.com/anthropics/skills)、K-Dense、academic-research-skills、addyosmani。其中动得最猛的是 Anthropic 的官方仓库，在两个持平窗口之后回升 58%。
 - **[Hermes Agent](agents/hermes-agent.md) 越过 24 万**并升到 #2，是它 6 月以来最好的席位。它是 19 个记录窗口里唯一每期都在的项目，4 到 6 月间五次拿过 #1。
 - **[Ruflo](agents/ruflo.md) 19 个窗口以来第一次上榜**（+804，70.9k），在榜尾降温中拿下最后一席——[TradingAgents](https://github.com/TauricResearch/TradingAgents) 降 63%、[OpenHuman](agents/openhuman.md) 降 84%，两个都只上榜一期就掉了下去。
@@ -178,7 +178,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 | [Gemini CLI](agents/gemini-cli.md) | 直接执行型 | 谷歌的终端 agent；每天 1,000 次免费请求，内置搜索接地 |
 | [Qwen Code](agents/qwen-code.md) | 直接执行型 | 客户端与权重都开放，可在 OpenAI/Anthropic/Gemini/本地之间运行时切换 |
 | [DeepSeek Harness](agents/deepseek-harness.md) | Agent harness 框架 | 一切皆插件的 harness——连 agent 循环本身都能从配置里换掉 |
-| [ZCode](agents/zcode.md) | 直接执行型 | 智谱的桌面 agentic 开发环境：长周期 “Goal” 任务，可从微信/飞书/Telegram 远程操控 |
+| [ZCode](agents/zcode.md) | 直接执行型 | 智谱的桌面 agentic 开发环境：长周期 "Goal" 任务，可从微信/飞书/Telegram 远程操控 |
 | [Open Code Review](agents/open-code-review.md) | review-first 自动化 | 阿里的准确率优先代码评审 CLI——模型外面包确定性流水线，带 CI 与 agent 插件表面 |
 
 </details>

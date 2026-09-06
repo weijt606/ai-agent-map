@@ -33,7 +33,7 @@
 
 > 厂商官方 CLI（Claude Code、Codex、Kimi Code、MiMoCode、Grok Build）把模型和循环一起调优。第三方/社区 CLI（Aider、CodeWhale）用这点换取可移植性或特定的成本/模型目标。
 >
-> **这里的“开源”不是一回事。** Aider（Apache-2.0）、Kimi Code 和 MiMoCode（MIT）接受外部贡献。[Grok Build](../agents/grok-build.md) 发的是 Apache-2.0 源码，但它是 SpaceXAI monorepo 的周期性导出，而且**明确不接受外部贡献**——你可以读、可以 fork，但无法合回上游。
+> **这里的"开源"不是一回事。** Aider（Apache-2.0）、Kimi Code 和 MiMoCode（MIT）接受外部贡献。[Grok Build](../agents/grok-build.md) 发的是 Apache-2.0 源码，但它是 SpaceXAI monorepo 的周期性导出，而且**明确不接受外部贡献**——你可以读、可以 fork，但无法合回上游。
 
 ## 怎么选
 

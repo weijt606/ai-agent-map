@@ -26,6 +26,22 @@
 
 来源：[Anthropic 价格文档](https://platform.claude.com/docs/en/about-claude/pricing)、[Anthropic's Claude Fable 5.1 and Mythos 5.1 arrive with a 75% cost reduction for Fable cache reads](https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads)、[Anthropic Launches Claude Fable 5.1 With Lower Costs and Fewer False Positives](https://www.macrumors.com/2026/09/01/anthropic-claude-fable-5-1/)。
 
+## 2026-04 → 09 —— 开放权重这一档追到了前沿，并且交付了闭源那边设闸的东西（补录）
+
+四次发布，第一次在本地图上被放在一起读。**[DeepSeek V4](agents/deepseek-v4.md)** 4 月以 **MIT** 到来——1.6T 参数、激活 49B、100 万上下文、SWE-bench Verified 80.6——旁边还有一个 284B/13B 的 Flash 变体。**[Kimi K3](agents/kimi-k3.md)** 7 月跟上：2.8T 参数，首个开放的 3T 级模型，原生多模态（MoonViT-V2 编码器做进模型里），100 万上下文，许可是自定义的 *Kimi K3 License*。**[GLM-5.3](agents/glm-5.md)** 以 **Apache-2.0** 发布，被智谱定位为最强的开放权重编码模型。而 **[Qwen3-Coder-Next](agents/qwen3-coder.md)** 走了完全相反的方向——80B 里只激活约 3B，256K 上下文可扩到 100 万，目标是跑在开发者已经在的那台机器上。
+
+按月之暗面自己公布的对照，K3 的 **Terminal-Bench 2.1 是 88.3，对 GPT-5.6 Sol 的 88.8、Claude Fable 5 的 88.0**，并在 SWE-Marathon 与 ProgramBench 上领先两者，在 DeepSWE 上落后。这些是厂商数字。重点不在于它们定下了谁第一，而在于它们已经接近到值得争论——一年前还不是这样。
+
+**对选型的影响：** 两个后果，第二个才是重点。
+
+第一，**开放档真正的分界轴是许可，不是能力**。MIT、Apache-2.0、自定义模型许可、按 checkpoint 而异，在能力大体相当的情况下是四种实质不同的法律位置——所以在这条路线上，许可那一列比 benchmark 那一列决定得更多。其次才是部署级别：2.8T 与 1.6T 是集群，激活约 3B 是一台工作站。
+
+第二，之所以记在这里，是因为本地图在同一时间窗看到闭源那侧做了完全相反的事：**智谱声明 GLM-5.3 在 CyberGym 的漏洞发现上是 SOTA，而且增益最大处在利用链更上游，比 GLM-5.2 翻倍还多。** 就在同几周里，[GPT-6 Astra](agents/gpt-6-astra.md) 正式开放的版本**拒绝自己一部分网安能力**、更多能力在 Daybreak Blue 审批之后，而 Anthropic 的 Mythos 档仍通过 Project Glasswing 只对经审核机构开放。闭源厂商正在设闸的那种能力，在 Apache-2.0 下可以直接下载。
+
+本地图不对"这样是否应该"表态。选型上的后果是具体的，也应当写进这条路线上的每一次评估：**在开放档，闸门是你的政策而不是厂商的**，这把实打实的工作挪进了你 harness 的审批设计里——见[观测与评估](comparisons/observability-and-evals.md)与[能力矩阵](capabilities/matrix.md)里的审批列。同时它也意味着评估这些模型的防守方，拥有和攻击方完全一样的访问权限——这正是开放那一侧为自己辩护的论点。两件事同时为真；一张只报其中一件的选型地图，做的是宣传而不是记录。
+
+来源：[DeepSeek-V4-Pro 模型卡](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)、[DeepSeek V4 发布说明](https://api-docs.deepseek.com/news/news260424/)、[MoonshotAI/Kimi-K3](https://github.com/MoonshotAI/Kimi-K3)、[Kimi K3 技术博客](https://www.kimi.com/blog/kimi-k3)、[zai-org/GLM-5](https://github.com/zai-org/GLM-5)、[GLM-5.3 博客](https://z.ai/blog/glm-5.3)、[QwenLM/Qwen3-Coder](https://github.com/QwenLM/Qwen3-Coder)。
+
 ## 2026-08-31 —— Meta 给 Muse Code 定价，顺便把你的 prompt 摆上了菜单
 
 **Meta 于 2026 年 8 月 31 日把 [Muse Code](https://thenewstack.io/muse-code-sdk-pricing/) 转正**，距 8 月 5 日的 beta 不到一个月，而这次公告几乎全是关于价格与触达，不是关于循环本身。三档订阅上线，**从每月 $5 到 $50**。一个**开发者预览版 SDK** 把这个 agent 从命令行里带了出来：按 Mark Zuckerberg 的说法，开发者可以在 Muse Code 之上造自己的 agent——嵌进应用、接自定义工具、流式看进度、恢复会话。运行时本身也长出了长任务真正需要的部分：**会话间消息传递，让并行的 agent 直接共享状态**而不是靠人来回粘贴；把一个任务拆给多个 subagent 的工作流；以及**跑在独立 git worktree 里的 subagent**。它仍然是 macOS 或 Linux 上一条命令装好，仍然没有图形界面和 IDE 集成。

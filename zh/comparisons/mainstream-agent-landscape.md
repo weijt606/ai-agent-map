@@ -26,6 +26,10 @@
 | [GPT-6 Astra](../agents/gpt-6-astra.md) | 前沿 agentic 模型 | ChatGPT、Codex、API | OpenAI 当前天花板，2026-09-03 | 想要最强 OpenAI 模型、且能接受其边界的 agent builder | $10/$50，输入超 272k token 后翻倍；公开版本会拒绝一部分网安能力 |
 | [Claude Fable 5.1](../agents/claude-fable-5.md) | 前沿 agentic 模型 | Claude Code、Claude.ai、API | Anthropic 当前天花板，2026-09-01 | 最难任务值得按量花钱的团队 | $10/$50 按额度计费；缓存读 $0.25/M，本地图最便宜 |
 | [Claude Opus 5](../agents/claude-opus-5.md) | 前沿 agentic 模型（默认档） | Claude Code、Claude.ai、Claude Cowork、API | 你实际在跑的那一档 | 想用一个模型把 agent 跑一整天、不盯额度表的人 | $5/$25；网安上落后于 Mythos；完全闭源 |
+| [Kimi K3](../agents/kimi-k3.md) | 开放权重 agentic 模型 | 自托管，或月之暗面自家入口 | 在自己手里的权重上拿到前沿能力 | 需要上限但不想路径上有闭源厂商的团队 | 2.8T 参数是集群；自定义许可 |
+| [GLM-5.3](../agents/glm-5.md) | 开放权重 agentic 模型 | 自托管、Z.ai API、ZCode | 在标准宽松许可下跑编码 agent | 有 Apache-2.0 硬要求、做长周期编码 | 厂商自测 benchmark；不设闸的网安能力要你自己定政策 |
+| [DeepSeek V4](../agents/deepseek-v4.md) | 开放权重 agentic 模型 | 自托管、DeepSeek API | 前沿规模上的宽松许可 | 有 MIT 硬要求、需要可复现评测 | Pro 是 1.6T 参数；模型内无视觉 |
+| [Qwen3-Coder](../agents/qwen3-coder.md) | 开放权重 agentic 模型 | 自托管；Qwen Code、Cline、Claude Code | 塞进你已有的硬件 | 本地、隔离网、或有成本上限的部署 | 不是开放档的上限；许可按 checkpoint 而异 |
 | [GPT-5.5](../agents/gpt-5.5.md) | 前沿 agentic 模型（参照） | ChatGPT、Codex、API、GitHub Copilot | 2026 春季参照点 | 想理清 OpenAI 模型血统的读者 | 已被接棒两次；作血统参照保留，不建议用于新项目 |
 | [oh-my-claudecode](../agents/oh-my-claudecode.md) | 工作流 / orchestration layer | Claude Code 插件、终端、tmux | session 内驱动 + 编排侧流程 | 已经在用 Claude Code，想补上 skills、teams 和更强运行控制 | 前提是你本来就接受 Claude Code 这层基础表面 |
 | [oh-my-codex](../agents/oh-my-codex.md) | 工作流 / orchestration layer | Codex CLI、本地终端、tmux | 本地工作流标准化 | 已经在用 Codex，想补上 teams、hooks 和持久会话状态 | 流程会更厚，而且最好跑在 macOS / Linux + tmux |

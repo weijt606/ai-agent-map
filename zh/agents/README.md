@@ -15,6 +15,7 @@
 | 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Kimi Code](kimi-code.md), [MiMoCode](mimocode.md), [CodeWhale](codewhale.md), [ZCode](zcode.md), [Grok Build](grok-build.md), [Devin](devin.md), [Jules](jules.md) | 想直接把 coding 任务交给 agent（在[终端编码 CLI agent](../comparisons/coding-cli-agents.md) 里对比） |
 | Agent harness 框架 | [DeepSeek Harness](deepseek-harness.md), [Pi](pi.md), [jcode](jcode.md), [OpenHands](openhands.md), [SWE-agent](swe-agent.md), [mini-swe-agent](mini-swe-agent.md), [OpenHarness](openharness.md), [QM](qm.md), [Omnigent](omnigent.md), [TrueForge](trueforge.md) | 想自己掌控 loop、工具表面和权限，不直接接受厂商成品（QM 和 Omnigent 在一层之下同时跑多个 harness） |
 | 前沿 agentic 模型 | [Claude Fable 5.1](claude-fable-5.md)、[Claude Opus 5](claude-opus-5.md)、[GPT-6 Astra](gpt-6-astra.md)、[GPT-5.5](gpt-5.5.md) | 在选要接入自己 agent 系统的模型，或在评估 Anthropic / OpenAI 系 agent 能力上限——天花板与其下的默认档是两个独立决策 |
+| 开放权重 agentic 模型 | [Kimi K3](kimi-k3.md)、[GLM-5.3](glm-5.md)、[DeepSeek V4](deepseek-v4.md)、[Qwen3-Coder](qwen3-coder.md) | 想在自己托管、自己承担许可的权重上拿到前沿级能力的人；这几个之间，许可的差别比 benchmark 的差别更大 |
 | Agentic skills 框架 | [Superpowers](superpowers.md) | 想要一套方法论 + 可组合 skills 层、能接到 Claude Code、Codex、Cursor 等 agent 之上 |
 | 工作流 / orchestration layer | [oh-my-claudecode](oh-my-claudecode.md), [oh-my-codex](oh-my-codex.md), [Ruflo](ruflo.md) | 已经在用 Claude Code 或 Codex，只想补强 teams、skills 和持久工作流（Ruflo 进一步推到跨机器联邦） |
 | 编辑器中心工作流 | [Cursor](cursor.md), [Windsurf](windsurf.md), [Continue](continue.md) | 想让编辑器本身成为 agent 主表面 |
@@ -102,6 +103,10 @@
 | [Claude Opus 5](claude-opus-5.md) | model / agentic | 否 | 天花板一半价格的 Opus 档——大多数 Claude 系 agent 真正在跑的模型 | 已按发布公告与一手价格页核验 |
 | [GPT-6 Astra](gpt-6-astra.md) | model / agentic | 否 | OpenAI 当前的前沿模型；公开版本在网安上受限 | 已按一手价格页与 Codex release note 核验；官方发布页无法直接抓取 |
 | [GPT-5.5](gpt-5.5.md) | model / agentic | 否 | 驱动 Codex、ChatGPT 和 API 的前沿 agentic 模型（先由 GPT-5.6、再由 GPT-6 Astra 接棒） | 已按发布材料核验 |
+| [Kimi K3](kimi-k3.md) | model / 开放权重 | 权重开放，自定义许可 | 首个开放的 3T 级模型；原生多模态，100 万上下文 | 已按仓库 README 与模型卡核验 |
+| [GLM-5.3](glm-5.md) | model / 开放权重 | 是（Apache-2.0） | 按厂商数字最强的开放权重编码模型；网安能力不设闸 | 已按仓库 README 与 Z.ai 博客核验 |
+| [DeepSeek V4](deepseek-v4.md) | model / 开放权重 | 是（MIT） | 1.6T / 激活 49B，100 万上下文，SWE-bench Verified 80.6 | 已按 Hugging Face 模型卡与 DeepSeek API 公告核验 |
+| [Qwen3-Coder](qwen3-coder.md) | model / 开放权重 | 权重开放，许可按 checkpoint 而异 | 效率首选——Next 在 80B 里激活约 3B | 已按仓库 README 核验；许可不代为断言 |
 | [DeepSeek Harness](deepseek-harness.md) | harness | 是 | 一切皆插件的 agent harness；连 agent 循环本身都能从配置里替换 | 已按仓库 README 与架构文档核验 |
 | [ZCode](zcode.md) | execution | 否 | 智谱的桌面 agentic 开发环境，GLM 优先，带长周期 “Goal” 任务 | 已按官网核验；第三方后端支持标注为“据报” |
 | [WorkBuddy](workbuddy.md) | autonomous | 否 | 腾讯的桌面办公 agent，产出文档、幻灯片与表格 | 已按官方产品页核验；市场数字为二手 |

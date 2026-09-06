@@ -52,19 +52,20 @@ GROUPS = [
     ]),
     ("The model & skill layer", "模型与技能层", "#4a3aa7", [
         ("Frontier agentic model", "前沿 agentic 模型", ["Claude Fable 5.1", "Claude Opus 5", "GPT-6 Astra"], 4),
+        ("Open-weights agentic model", "开放权重 agentic 模型", ["Kimi K3", "GLM-5.3", "DeepSeek V4"], 4),
         ("Agentic skills framework", "Agentic skills 框架", ["Superpowers"], 1),
     ]),
 ]
 
 TEXT = {
     "en": {
-        "title": "The AI Agent Map — the first cut: 13 routes, {total} profiles",
-        "subtitle": "Four decisions, thirteen routes. Full tables with links follow below.",
+        "title": "The AI Agent Map — the first cut: {routes} routes, {total} profiles",
+        "subtitle": "Four decisions, {routes} routes. Full tables with links follow below.",
         "more": "+{n} more",
     },
     "zh": {
-        "title": "AI Agent 选型地图——先摊开：13 条路线、{total} 个 profile",
-        "subtitle": "四类决策、十三条路线。带链接的完整表格见下文。",
+        "title": "AI Agent 选型地图——先摊开：{routes} 条路线、{total} 个 profile",
+        "subtitle": "四类决策、{routes} 条路线。带链接的完整表格见下文。",
         "more": "等 {n} 个",
     },
 }
@@ -83,6 +84,10 @@ def total_profiles():
     return sum(r[3] for _, _, _, routes in GROUPS for r in routes)
 
 
+def total_routes():
+    return sum(len(routes) for _, _, _, routes in GROUPS)
+
+
 def render(lang):
     t = TEXT[lang]
     card_w = (WIDTH - 2 * MARGIN - (COLS - 1) * CARD_GAP) / COLS
@@ -98,8 +103,9 @@ def render(lang):
         f'viewBox="0 0 {WIDTH} {height:.0f}" font-family="system-ui, -apple-system, sans-serif">',
         f'<rect width="{WIDTH}" height="{height:.0f}" rx="10" fill="{SURFACE}" stroke="{BORDER}"/>',
         f'<text x="{MARGIN}" y="28" font-size="17" font-weight="700" fill="{INK}">'
-        f'{escape(t["title"].format(total=total_profiles()))}</text>',
-        f'<text x="{MARGIN}" y="46" font-size="11" fill="{INK_SOFT}">{escape(t["subtitle"])}</text>',
+        f'{escape(t["title"].format(total=total_profiles(), routes=total_routes()))}</text>',
+        f'<text x="{MARGIN}" y="46" font-size="11" fill="{INK_SOFT}">'
+        f'{escape(t["subtitle"].format(routes=total_routes()))}</text>',
     ]
 
     y = TITLE_H

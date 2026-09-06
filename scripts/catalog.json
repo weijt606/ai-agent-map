@@ -454,8 +454,7 @@
     "vertical": null,
     "group": "framework",
     "profile": "agents/trueforge.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   },
   "deepseek-ai/deepseek-harness": {
     "display": "DeepSeek Harness",
@@ -463,8 +462,7 @@
     "vertical": "coding",
     "group": null,
     "profile": "agents/deepseek-harness.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   },
   "anomalyco/opencode": {
     "display": "OpenCode",
@@ -472,8 +470,7 @@
     "vertical": "coding",
     "group": null,
     "profile": "agents/opencode.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   },
   "google-gemini/gemini-cli": {
     "display": "Gemini CLI",
@@ -481,8 +478,7 @@
     "vertical": "coding",
     "group": null,
     "profile": "agents/gemini-cli.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   },
   "qwenlm/qwen-code": {
     "display": "Qwen Code",
@@ -490,8 +486,7 @@
     "vertical": "coding",
     "group": null,
     "profile": "agents/qwen-code.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   },
   "browser-use/browser-use": {
     "display": "Browser Use",
@@ -499,8 +494,7 @@
     "vertical": "general",
     "group": null,
     "profile": "agents/browser-use.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   },
   "microsoft/agent-framework": {
     "display": "Microsoft Agent Framework",
@@ -508,7 +502,6 @@
     "vertical": null,
     "group": "framework",
     "profile": "agents/microsoft-agent-framework.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   }
 }

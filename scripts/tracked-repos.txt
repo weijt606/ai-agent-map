@@ -53,3 +53,11 @@ alibaba/open-code-review
 omnigent-ai/omnigent
 # --- Pending pickup flipped 2026-09-01 ---
 vercel/eve
+# --- Pending pickups flipped 2026-09-06 ---
+truefoundry/trueforge
+deepseek-ai/deepseek-harness
+anomalyco/opencode
+google-gemini/gemini-cli
+QwenLM/qwen-code
+browser-use/browser-use
+microsoft/agent-framework

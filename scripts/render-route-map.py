@@ -51,7 +51,7 @@ GROUPS = [
         ("Observability and evals", "观测与评估", ["Langfuse"], 1),
     ]),
     ("The model & skill layer", "模型与技能层", "#4a3aa7", [
-        ("Frontier agentic model", "前沿 agentic 模型", ["Claude Fable 5", "GPT-5.5"], 2),
+        ("Frontier agentic model", "前沿 agentic 模型", ["Claude Fable 5.1", "Claude Opus 5", "GPT-6 Astra"], 4),
         ("Agentic skills framework", "Agentic skills 框架", ["Superpowers"], 1),
     ]),
 ]

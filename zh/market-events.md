@@ -66,6 +66,16 @@ OpenAI 于 **2026 年 8 月 21 日把 GPT-5.6 Sol 从每百万输入/输出 toke
 
 来源：[OpenAI 下调 GPT-5.6 Sol 价格](https://enterprisedna.co/resources/news/openai-gpt-56-sol-price-cut-20-percent-frontier-model-august-2026/)、[GPT-5.6](https://openai.com/index/gpt-5-6/)、[降价后的 GPT-5.6 定价](https://cellcog.ai/blog/gpt-5-6-pricing/)、[openai/codex releases](https://github.com/openai/codex/releases)。
 
+## 2026-08-13 —— DeepSeek 开源了一个没有内核的 harness
+
+**DeepSeek 于 2026-08-13 以 MIT 发布 [`deepseek-ai/deepseek-harness`](https://github.com/deepseek-ai/deepseek-harness)**，形态是 developer preview。它的组织思想是**一切皆插件**——而且连循环也算在内。引自项目自己的架构文档：*"产品的每一部分都是插件，包括模型适配层、工具注册表、会话日志，以及 agent 循环本身，因此每一部分都可以从配置里替换。没有需要打补丁的特权内核。"* 底下的内核是 [Cordis](https://github.com/cordiverse/cordis)；组合方式是一叠 bundle 加上有序的 patch 文件，`dsh --profile web --dump-config` 会打印这台机器实际启动的那棵树。
+
+它交付的是完整产品而不是一个库：本地 Web UI（`npx @deepseek-ai/dsh web`，端口 3080）、headless 一次性运行器、带 TypeScript 与 Python 客户端的 JSON-RPC SDK，以及供自动化用的 ACP server。采纳速度极端——发布后**三周内 21.38 万 star、2.51 万 fork**。
+
+**对选型的影响：** 本地图的 [harness 路线](comparisons/agent-harness-frameworks.md)此前有三种形态——你 fork 的循环（[Pi](agents/pi.md)、[jcode](agents/jcode.md)）、驱动其他循环的 meta-harness（[QM](agents/qm.md)、[Omnigent](agents/omnigent.md)）、部署在 HTTP 后面的 harness（[TrueForge](agents/trueforge.md)）。`dsh` 是第四种：**一个没有内核可 fork 的 harness**——扩展意味着在旁边挂一个插件，而卸载能干净回滚，因为注册行为是可逆的 effect。诚实的反面是项目给自己贴的标签：developer preview、明说会破坏兼容、插件契约未冻结。所以选型问题是：你在建的东西是会持续变化的（合适），还是想钉住接口然后走人的（不合适）。另有一条本地图欠读者的流程说明：这么大一个仓库在本榜外躺了三周，那是扫描环节的失职，不是判断结果。详见 [DeepSeek Harness](agents/deepseek-harness.md)。
+
+来源：[deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)、[架构文档](https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/architecture.md)、[DeepSeek open sources an agent harness where everything is a plugin](https://thenewstack.io/deepseek-harness-open-source-plugins/)。
+
 ## 2026-08-05 → 08-10 —— Meta 补上厂商 CLI 的最后一块；Claude Code 支持自托管
 
 一周之内落地了三件事，而它们共同推动的是厂商层，不是开源层。
@@ -113,6 +123,16 @@ OpenAI 把独立的 Codex 应用并入 ChatGPT 桌面应用（macOS/Windows）�
 **对选型的影响：** OpenAI 侧"选哪个 coding agent"的问题坍缩成"你怎么用 ChatGPT"——移动的是产品边界，不只是能力。GPT-5.6 Sol 以 GPT-5.5 的老价格领跑 Artificial Analysis 编码 agent 指数（80，vs Fable 5 77.2、GPT-5.5 76.4、Opus 4.8 72.5），GPT-5.5 就此成为过渡选择。详见 [Codex](agents/codex.md)、[GPT-5.5](agents/gpt-5.5.md)。
 
 来源：[OpenAI Codex changelog](https://learn.chatgpt.com/docs/changelog)、[GPT-5.6 公告](https://openai.com/index/gpt-5-6/)、[Axios](https://www.axios.com/2026/07/09/ai-openai-gpt-release)。
+
+## 2026-03 → 06 —— 中国的桌面 agent 品类打开了（补录）
+
+三个产品，一种形态。**腾讯于 2026-03-09 发布 [WorkBuddy](agents/workbuddy.md)** —— 一个全场景 AI 办公工作台：拆解自然语言目标、在你授权的目录里干活、并行调度 100+ 个预置领域专家，并从企业微信、QQ、飞书或钉钉指挥。**月之暗面于 2026-06-03 至 06-04 让 [Kimi Work](agents/kimi-work.md) 开启公测** —— 面向知识工作的桌面 agent，按厂商自己的说法，它的内核就是 [Kimi Code](agents/kimi-code.md)：挂载文件夹、一个会在实时网页上导航的浏览器扩展、内置 cron 引擎，以及一个 agent 集群。而**智谱的 [ZCode](agents/zcode.md)** 从轻量编辑器长成了 agentic 开发环境，带长周期 "Goal" 任务，并可从微信、飞书或 Telegram 远程操控。
+
+到 2026 年 6 月，二手市场跟踪把 17 款中国桌面办公 agent 合计放在月访问 6,000 万以上，其中 WorkBuddy 2,097 万——超过第二三名之和。阿里在 7 月把三个 agent 产品整合成一个办公产品；字节把豆包推向同一战场。
+
+**对选型的影响：** 两件事，第二件更不舒服。第一，**编码 agent 的循环现在就是通用工作的循环**——Kimi Work 是最清楚的案例，因为厂商直说它的内核是一个编码 agent。本地图关于审批闸、沙箱、长周期跑偏所积累的一切，可以直接迁移到一个以你的文档而非仓库为对象的产品上。第二，**这个品类默认闭源**。本地图编码那一侧习以为常的开放 harness 惯例在这里不成立：它们是带授权文件系统访问的闭源客户端，而在 Kimi Work 的情形里，还握着一个你已经登录的浏览器。这是一个治理位置，不是一张功能表，应当作为治理问题来陈述。详见 [WorkBuddy](agents/workbuddy.md)、[Kimi Work](agents/kimi-work.md)、[ZCode](agents/zcode.md)。
+
+来源：[WorkBuddy 产品页](https://copilot.tencent.com/work/)、[腾讯云上的 WorkBuddy](https://cloud.tencent.com/product/workbuddy)、[Kimi Work 产品页](https://www.kimi.ai/products/kimi-work)、[月之暗面宣布 Kimi Work 开启公测](https://cloud.tencent.com/developer/news/4025026)、[ZCode 官网](https://zcode.z.ai)。
 
 ## 2026-06-17 —— Vercel 发布 eve，"自建"路线长出了交付面
 

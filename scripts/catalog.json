@@ -456,5 +456,14 @@
     "profile": "agents/trueforge.md",
     "scope": "in",
     "tracked": false
+  },
+  "deepseek-ai/deepseek-harness": {
+    "display": "DeepSeek Harness",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/deepseek-harness.md",
+    "scope": "in",
+    "tracked": false
   }
 }

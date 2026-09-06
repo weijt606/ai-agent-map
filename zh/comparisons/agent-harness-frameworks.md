@@ -15,6 +15,7 @@
 | 项目 | 许可证 | 甜点区 | 体量 |
 | --- | --- | --- | --- |
 | [Pi](../agents/pi.md) | MIT（TS） | 终端优先的 coding harness，LLM 提供商覆盖面广 | 小核心 + 按需 skills/扩展 |
+| [DeepSeek Harness](../agents/deepseek-harness.md) | MIT（TS） | 建在 Cordis 内核上的"一切皆插件" harness——模型适配层、工具注册表、会话日志与 agent 循环都能从配置替换 | 项目自标 **developer preview**；插件契约未冻结 |
 | [jcode](../agents/jcode.md) | MIT（Rust） | 快、占用小、面向多会话工作流的终端 harness，带被动语义记忆 | 精简 Rust 二进制——同类中启动最快、RAM 最低 |
 | [OpenHands](../agents/openhands.md) | 开源 | 完整的开源 SWE agent（CLI + GUI + 云选项） | 最重——更接近产品 |
 | [SWE-agent](../agents/swe-agent.md) | MIT（Py） | SWE-bench 背后的研究参考实现，单 YAML 配置 | 中等；上游重心转向 mini-swe-agent |

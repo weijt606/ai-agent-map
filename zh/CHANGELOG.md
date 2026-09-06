@@ -4,6 +4,18 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-09-06 —— 四个补漏：没有内核的 harness，以及中国的桌面 agent 品类
+
+一次覆盖面扫描找出的不是"判断结果"而是"漏掉了"的缺口。新增四个 profile（EN + zh），收录数到 68：
+
+- **新增 [DeepSeek Harness](agents/deepseek-harness.md)**（`deepseek-ai/deepseek-harness`，MIT，TypeScript）—— 2026-08-13 发布，三周后 **21.38 万 star / 2.51 万 fork**，是本地图迄今漏掉过的最大一个。它是 [harness 路线](comparisons/agent-harness-frameworks.md)上的第四种形态：不是你 fork 的循环，不是 meta-harness，也不是 HTTP 后面的 harness，而是**一个没有特权内核的 harness**——建在 Cordis 内核上，模型适配层、工具注册表、会话日志与 agent 循环本身全是可从配置替换的插件。按惯例带一个窗口的 `tracked: false`。
+- **新增 [ZCode](agents/zcode.md)**（智谱）—— 一个 GLM 优先的开发者真正会打开的那个工具。桌面 agentic 开发环境，主对象是任务而不是文件，带长周期 "Goal" 运行，并可从微信、飞书、Telegram 远程操控。正因如此它进"直接执行"而不是编辑器路线。
+- **新增 [WorkBuddy](agents/workbuddy.md)**（腾讯）与 **[Kimi Work](agents/kimi-work.md)**（月之暗面）—— 同一套 agent 循环，指向桌面知识工作。Kimi Work 是本目录里最锋利的例子：厂商明说它的内核是 [Kimi Code](agents/kimi-code.md)，于是一个编码 agent 的循环、长处与失效模式，现在跑在你挂载的文件夹和你已登录的浏览器上。
+
+结构性后果：[market-events](market-events.md) 补两条（DeepSeek 那次发布，以及 3–6 月中国桌面 agent 品类的打开）；[agent harness 框架对比](comparisons/agent-harness-frameworks.md)与[主流格局](comparisons/mainstream-agent-landscape.md)加上新行；路线表里，ZCode 进直接执行，DeepSeek Harness 进 harness 路线，WorkBuddy 与 Kimi Work 进通用自主 agent。
+
+有两件事本条目选择写明而不是藏起来。DeepSeek 那个仓库在本榜外躺了三周，那是扫描环节的失职，在 market-events 里如实记了一笔。以及四个新 profile 里有三个是**带授权本地文件访问的闭源产品**——桌面 agent 这个品类默认闭源，与本地图开放那一侧的惯例正好相反，profile 里都写清楚了。
+
 ## 2026-09-06 —— 前沿模型路线一次补齐两代
 
 自本地图上次写下模型层以来，两侧各自又动了两次，而路线表还指着已经被接棒的条目。新增两个 profile（EN + zh），收录数到 64：

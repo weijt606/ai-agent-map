@@ -15,6 +15,7 @@ Three shapes now sit under this route. **Single-loop harnesses** *are* the loop 
 | Project | License | Sweet spot | Footprint |
 | --- | --- | --- | --- |
 | [Pi](../agents/pi.md) | MIT (TS) | Terminal-first coding harness with broad LLM provider coverage | Small core + opt-in skills/extensions |
+| [DeepSeek Harness](../agents/deepseek-harness.md) | MIT (TS) | Everything-is-a-plugin harness on the Cordis kernel — model adapter, tool registry, session log and the agent loop are all replaceable from config | **Developer preview** by the project's own label; plugin contracts not frozen |
 | [jcode](../agents/jcode.md) | MIT (Rust) | Fast, low-footprint terminal harness for multi-session workflows, with passive semantic memory | Lean Rust binary — fastest boot / lowest RAM in class |
 | [OpenHands](../agents/openhands.md) | Open source | Full open-source SWE agent (CLI + GUI + cloud option) | Heaviest — closer to a product |
 | [SWE-agent](../agents/swe-agent.md) | MIT (Py) | Research reference behind SWE-bench, single-YAML config | Medium; upstream moving focus to mini-swe-agent |

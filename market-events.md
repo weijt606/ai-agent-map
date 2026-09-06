@@ -66,6 +66,16 @@ OpenAI **lowered GPT-5.6 Sol from $5 / $30 to $4 / $20 per million input / outpu
 
 Sources: [OpenAI cuts GPT-5.6 Sol prices](https://enterprisedna.co/resources/news/openai-gpt-56-sol-price-cut-20-percent-frontier-model-august-2026/), [GPT-5.6](https://openai.com/index/gpt-5-6/), [GPT-5.6 pricing after the cuts](https://cellcog.ai/blog/gpt-5-6-pricing/), [openai/codex releases](https://github.com/openai/codex/releases).
 
+## August 13 2026 — DeepSeek Open-Sources A Harness With No Core
+
+**DeepSeek published [`deepseek-ai/deepseek-harness`](https://github.com/deepseek-ai/deepseek-harness) on August 13 2026** under MIT, as a developer preview. Its organising idea is that **everything is a plugin** — and it means the loop too. From the project's own architecture doc: *"Every part of the product is a plugin, including the model adapter, the tool registry, the session log, and the agent loop itself, so each is replaceable from configuration. There is no privileged core to patch."* The kernel underneath is [Cordis](https://github.com/cordiverse/cordis); composition is a stack of bundles plus ordered patch files, and `dsh --profile web --dump-config` prints the exact tree a machine boots.
+
+It ships as a complete product rather than a library: a local web UI (`npx @deepseek-ai/dsh web`, port 3080), a headless one-shot runner, a JSON-RPC SDK with TypeScript and Python clients, and an ACP server for automation. Adoption was immediate and extreme — **213.8k stars and 25.1k forks within three weeks** of publication.
+
+**Impact on selection:** this map's [harness route](comparisons/agent-harness-frameworks.md) had three shapes — a loop you fork ([Pi](agents/pi.md), [jcode](agents/jcode.md)), a meta-harness that drives other loops ([QM](agents/qm.md), [Omnigent](agents/omnigent.md)), and a harness you deploy behind HTTP ([TrueForge](agents/trueforge.md)). `dsh` is a fourth: **a harness with no core to fork**, where extending means mounting a plugin beside the others and removal unwinds cleanly because registrations are reversible effects. The honest counterweight is the label the project puts on itself — developer preview, compatibility-breaking changes promised, plugin contracts not frozen — so the selection question is whether you are building something that will keep changing (good fit) or something you want to pin and leave (bad fit). One process note this map owes its readers: a repository this size was missing from these boards for three weeks, which is a scanning failure, not a judgment call. Details: [DeepSeek Harness](agents/deepseek-harness.md).
+
+Sources: [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness), [architecture documentation](https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/architecture.md), [DeepSeek open sources an agent harness where everything is a plugin](https://thenewstack.io/deepseek-harness-open-source-plugins/).
+
 ## August 5–10 2026 — Meta Closes The Vendor-CLI Field; Claude Code Goes Self-Hosted
 
 Three things landed in one week, and together they move the vendor layer rather than the open-source one.
@@ -113,6 +123,16 @@ OpenAI merged the standalone Codex app into the ChatGPT desktop app (macOS/Windo
 **Impact on selection:** the "which coding agent" question on the OpenAI side collapsed into "how do you use ChatGPT" — the product boundary moved, not just the capability. GPT-5.6 Sol leads the Artificial Analysis Coding Agent Index (80, vs Fable 5 77.2, GPT-5.5 76.4, Opus 4.8 72.5) at GPT-5.5's old price, making GPT-5.5 a legacy choice. Details: [Codex](agents/codex.md), [GPT-5.5](agents/gpt-5.5.md).
 
 Sources: [OpenAI Codex changelog](https://learn.chatgpt.com/docs/changelog), [GPT-5.6 announcement](https://openai.com/index/gpt-5-6/), [Axios](https://www.axios.com/2026/07/09/ai-openai-gpt-release).
+
+## March – June 2026 — The Desktop Agent Category Opens In China (backfilled)
+
+Three products, one shape. **Tencent launched [WorkBuddy](agents/workbuddy.md) on March 9 2026** — an all-scenario AI office workstation that decomposes a natural-language goal, works inside directories you authorize, runs 100+ prebuilt domain specialists in parallel, and is driven from WeCom, QQ, Feishu, or DingTalk. **Moonshot opened [Kimi Work](agents/kimi-work.md) to public beta on June 3–4 2026** — a desktop agent for knowledge work whose core, by the vendor's own description, is [Kimi Code](agents/kimi-code.md): mounted folders, a browser extension that navigates the live web, a built-in cron engine, and an agent swarm. And **Zhipu's [ZCode](agents/zcode.md)** grew from a lightweight editor into an agentic development environment with long-horizon "Goal" tasks and remote control from WeChat, Feishu, or Telegram.
+
+By June 2026, secondary market tracking put 17 Chinese desktop office agents at over 60M combined monthly visits, with WorkBuddy at 20.97M — more than second and third place together. Alibaba consolidated three of its agent products into one office offering in July; ByteDance pushed Doubao at the same space.
+
+**Impact on selection:** two things, and the second is the uncomfortable one. First, **the coding-agent loop is now the general-work loop** — Kimi Work is the clearest case, because the vendor says outright that its core is a coding agent. Everything this map has learned about approval gates, sandboxing, and long-horizon drift transfers directly to a product whose object is your documents rather than your repository. Second, **this category is closed by default**. The open-harness norm that the coding side of this map takes for granted does not hold here: these are proprietary clients with authorized filesystem access, and in Kimi Work's case with control of a browser you are already logged into. That is a governance position, not a feature list, and it deserves to be stated as one. Details: [WorkBuddy](agents/workbuddy.md), [Kimi Work](agents/kimi-work.md), [ZCode](agents/zcode.md).
+
+Sources: [WorkBuddy product page](https://copilot.tencent.com/work/), [WorkBuddy on Tencent Cloud](https://cloud.tencent.com/product/workbuddy), [Kimi Work product page](https://www.kimi.ai/products/kimi-work), [Moonshot opens Kimi Work public beta](https://cloud.tencent.com/developer/news/4025026), [ZCode official site](https://zcode.z.ai).
 
 ## June 17 2026 — Vercel Ships eve, And The Build-Your-Own Route Grows A Delivery Surface
 

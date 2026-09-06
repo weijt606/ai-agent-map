@@ -4,6 +4,18 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-09-06 — Four backfills: the harness with no core, and China's desktop agent category
+
+A coverage scan found gaps that were not judgment calls but misses. Four new profiles (EN + zh), taking the map to 68:
+
+- **New [DeepSeek Harness](agents/deepseek-harness.md)** (`deepseek-ai/deepseek-harness`, MIT, TypeScript) — published August 13 2026 and at **213.8k stars / 25.1k forks three weeks later**, which makes it the largest thing this map has ever failed to notice. It is a fourth shape on the [harness route](comparisons/agent-harness-frameworks.md): not a loop you fork, not a meta-harness, not a harness behind HTTP, but **a harness with no privileged core** — the model adapter, tool registry, session log and the agent loop itself are all plugins replaceable from configuration, on the Cordis kernel. Carries `tracked: false` for one window.
+- **New [ZCode](agents/zcode.md)** (Zhipu) — the tool a GLM-first developer actually opens. A desktop agentic development environment whose primary object is a task rather than a file, with long-horizon "Goal" runs and remote control from WeChat, Feishu, or Telegram. Placed on direct execution rather than the editor route for that reason.
+- **New [WorkBuddy](agents/workbuddy.md)** (Tencent) and **[Kimi Work](agents/kimi-work.md)** (Moonshot) — the same agent loop aimed at desktop knowledge work. Kimi Work is the sharpest case in this directory: the vendor states its core is [Kimi Code](agents/kimi-code.md), so a coding agent's loop, strengths, and failure modes now run over your mounted folders and the browser you are logged into.
+
+Structural consequences: [market-events](market-events.md) gains two backfilled entries (the DeepSeek release, and the March–June opening of China's desktop agent category); [agent harness frameworks](comparisons/agent-harness-frameworks.md) and [mainstream landscape](comparisons/mainstream-agent-landscape.md) carry the new rows; the route tables gain ZCode on direct execution, DeepSeek Harness on the harness route, and WorkBuddy and Kimi Work on general-purpose autonomous.
+
+Two things this entry states rather than hides. The DeepSeek repository sat off these boards for three weeks, which is a scanning failure and is recorded as one in the market-events entry. And three of the four new profiles are **closed source with authorized access to local files** — the desktop agent category is closed by default, which is the opposite of the norm on the open side of this map, and the profiles say so.
+
 ## 2026-09-06 — The frontier model route catches up, two generations at once
 
 The model layer had moved twice on each side since this map last wrote it down, and the route was pointing at superseded entries. Two new profiles (EN + zh), taking the map to 64:

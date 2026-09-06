@@ -27,7 +27,7 @@ A bare mark can't be verified or disputed — six months on, nobody remembers wh
 
 This is rolling out in phases; [jcode](../agents/jcode.md)'s memory cell is worked end-to-end as the template — its `Mem` mark below links to its record. See **[evidence records](evidence-records.md)** for the schema, the memory sub-schema, and the phase plan. Schema credit: [u/teugent](https://www.reddit.com/r/AI_Agents/comments/1v56023/).
 
-## Terminal Coding CLIs
+## Direct-Execution Agents (Terminal & Desktop)
 
 | Project | Tool | Exec | Mem | Orch | Multi | Appr | Sched | Surf | Deploy |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -38,8 +38,14 @@ This is rolling out in phases; [jcode](../agents/jcode.md)'s memory cell is work
 | [MiMoCode](../agents/mimocode.md) | ● | ● | ● | ○ | — | ◐ | — | ○ | ◐ |
 | [CodeWhale](../agents/codewhale.md) | ● | ● | ○ | ○ | — | ◐ | — | ○ | ◐ |
 | [Grok Build](../agents/grok-build.md) | ● | ● | ○ | ◐ | — | ◐ | ○ | ◐ | ◐ |
+| [OpenCode](../agents/opencode.md) | ● | ● | ○ | ◐ | ○ | ◐ | — | ◐ | ● |
+| [Gemini CLI](../agents/gemini-cli.md) | ● | ● | ○ | ○ | — | ◐ | — | ◐ | ◐ |
+| [Qwen Code](../agents/qwen-code.md) | ● | ● | ◐ | ◐ | ◐ | ◐ | — | ● | ● |
+| [ZCode](../agents/zcode.md) | ● | ● | ◐ | ◐ | ◐ | ◐ | ○ | ● | ○ |
 
-Standouts: Claude Code and Codex are the broadest **delivery surfaces**; Codex is alone here on **multi-agent** (parallel cloud agents); MiMoCode is the only CLI treating **memory** as a headline feature; Aider leads on explicit-diff **human approval**. Grok Build is the newest entry and the strongest **tool use** + **code execution** pairing among the vendor CLIs (MCP, skills, plugins, hooks, sandboxing, workspace checkpoints), but note its **deployment control** score reflects a source-available tree that does not accept contributions.
+Standouts: Claude Code and Codex are the broadest **delivery surfaces**; MiMoCode and Qwen Code are the entries treating **memory** as a headline feature; Aider leads on explicit-diff **human approval**. Grok Build is the strongest **tool use** + **code execution** pairing among the vendor CLIs (MCP, skills, plugins, hooks, sandboxing, workspace checkpoints), but note its **deployment control** score reflects a source-available tree that does not accept contributions.
+
+Four entries were added on 2026-09-06 and they split the route along **deployment control**, which is the column that actually separates them. [OpenCode](../agents/opencode.md) takes ● because it is MIT and belongs to no model vendor — the reason other harnesses build on it. [Qwen Code](../agents/qwen-code.md) also takes ●, and is the widest row here on **delivery surfaces** (terminal, IDE plugins, desktop, daemon mode, SDKs, and four IM platforms) because the client *and* the weights are open and it switches providers at runtime. [Gemini CLI](../agents/gemini-cli.md) is ◐: an Apache-2.0 client bound to one vendor's models, with a rate-limited free tier that is a genuine constraint on unattended runs. [ZCode](../agents/zcode.md) is ○ — a closed desktop client — and is the one entry in this group that is **not a terminal CLI**: its primary object is a long-running "Goal" you check on from WeChat, Feishu, or Telegram, which is why it scores ○ on **scheduling** where the terminal loops score — at all.
 
 ## Own-The-Loop Harness Frameworks
 
@@ -54,12 +60,15 @@ Standouts: Claude Code and Codex are the broadest **delivery surfaces**; Codex i
 | [QM](../agents/qm.md) | ◐ | ● | ● | ● | ◐ | ● | ● | ● | ● |
 | [Omnigent](../agents/omnigent.md) | ● | ● | ○ | ● | ● | ● | ○ | ● | ● |
 | [TrueForge](../agents/trueforge.md) | ● | ● | ○ | ● | ◐ | ● | — | ◐ | ● |
+| [DeepSeek Harness](../agents/deepseek-harness.md) | ● | ● | ○ | ● | ◐ | ● | — | ● | ● |
 
 Standouts: the whole route is defined by **deployment control** (you own the loop). jcode is the only harness with **memory** as a headline (passive semantic graph — see [memory approaches](../comparisons/memory-approaches.md)); OpenHands and OpenHarness carry the most **orchestration**.
 
 The two meta-harnesses score wide because they add the layer the single-loop harnesses deliberately leave out — and they split cleanly. [QM](../agents/qm.md) is the only entry on this route with **memory**, **scheduling**, and **delivery surfaces** all as core, because each scope owns its own memory, crons, and Slack/web presence; its **tool use** is deliberately ◐ (a small fixed tool surface, extended through skills rather than breadth). [Omnigent](../agents/omnigent.md) instead leads on **multi-agent** — mixing several harnesses in one session, including having one review another — and both make **human approval** core through policy engines rather than per-edit prompts. Read both marks with their maturity in mind: QM is days old and Omnigent is self-declared alpha, so these reflect stated design centers, not field-proven behavior.
 
 [TrueForge](../agents/trueforge.md) is a third shape: one loop, but run as a server behind an HTTP API. It scores like a single-loop harness on **tool use** and **code execution**, like a meta-harness on **orchestration** and **human approval** (both are product surfaces here, not debug prompts), and takes the route's usual ● on **deployment control** — it is MIT and self-hosted by design. The two blanks are the shape: **no scheduling primitive at all**, and **delivery surfaces** stop at a chat UI, an API, and an embeddable widget rather than channel adapters. Its **memory** ○ is deliberate: persisted sessions and compaction are durability and context engineering, not learning across sessions. Same maturity caveat — six weeks public, still on 0.x release candidates.
+
+[DeepSeek Harness](../agents/deepseek-harness.md) is a fourth shape again, and its row reads oddly until you know why: it scores ● on **orchestration**, **human approval**, and **delivery surfaces** not because it ships more features than the loops above it, but because all three are *plugins in the base layer* rather than product decisions — the agent loop itself is replaceable from configuration, approval and sandbox policy live in the shared `dsh-base` bundle, and one codebase emits a web UI, a headless runner, a JSON-RPC SDK, and an ACP server. Its **memory** ○ is the same call made for TrueForge: an append-only session log is durability, not learning. **Scheduling** is blank because there is no scheduling primitive. Read every mark against the project's own label — developer preview, with compatibility-breaking changes promised.
 
 ## Editor-Centric & Review-First
 
@@ -106,10 +115,13 @@ Standouts: **orchestration** is the reason these exist — they add teams, skill
 | [CrewAI](../agents/crewai.md) | ● | ◐ | ◐ | ● | ● | ○ | ○ | — | ● |
 | [LlamaIndex](../agents/llamaindex.md) | ◐ | ○ | ◐ | ◐ | ◐ | ○ | ○ | — | ● |
 | [eve](../agents/eve.md) | ● | ● | ◐ | ● | ● | ● | ● | ● | ◐ |
+| [Microsoft Agent Framework](../agents/microsoft-agent-framework.md) | ● | ◐ | ◐ | ● | ● | ◐ | ○ | — | ● |
 
 Standouts: LangGraph is the strongest of the libraries on durable **memory** and **multi-agent** state; LlamaIndex's memory is data/retrieval, not conversation.
 
 [eve](../agents/eve.md) is the row that breaks this group's shape and is worth reading as a contrast. Everything above it scores **—** on delivery surfaces, because a library does not decide where the agent shows up; eve ships eight-plus channel adapters, so it is the only entry here with **delivery surfaces**, **scheduling**, and **human approval** all core (`needsApproval` pauses a run indefinitely without consuming compute). Its **code execution** ● is a per-agent sandbox rather than a helper tool, and its **memory** is deliberately ◐ — checkpointed durable sessions are state that survives a redeploy, not a memory system. The one column it gives up is the one every library above it owns: **deployment control** is ◐ because the documented production path is Vercel, Apache-2.0 license notwithstanding.
+
+[Microsoft Agent Framework](../agents/microsoft-agent-framework.md) sits with the libraries rather than with eve: **delivery surfaces** is blank for the same reason LangChain's is — it hands you SDKs, not channels. What separates it inside the group is **orchestration** and **multi-agent** as named graph patterns (sequential, concurrent, handoff, group collaboration) across Python, .NET, and Go, plus **human approval** as a first-class production concern rather than an afterthought. Its **scheduling** ○ reflects durability and restartability, which is not the same as a scheduler. Note the succession: this row replaces the AutoGen row this matrix never had, because AutoGen is in maintenance mode.
 
 ## Runtime, Gateways & Context Infrastructure
 
@@ -137,8 +149,20 @@ Standouts: this group is glue, so the shape is lopsided. n8n leads on **scheduli
 | [OpenHuman](../agents/openhuman.md) | ● | ○ | ● | ◐ | — | ◐ | ● | ◐ | ● |
 | [AutoGPT](../agents/autogpt.md) | ● | ◐ | ◐ | ● | ◐ | ○ | ◐ | ◐ | ● |
 | [AI Edge Gallery](../agents/ai-edge-gallery.md) | ◐ | ○ | ○ | — | — | ◐ | — | ◐ | ● |
+| [WorkBuddy](../agents/workbuddy.md) | ● | ◐ | ○ | ● | ● | ○ | ● | ● | ○ |
+| [Kimi Work](../agents/kimi-work.md) | ● | ◐ | ◐ | ● | ● | ○ | ● | ◐ | ○ |
 
 Standouts: Hermes is the broadest single profile on this map — strong on nearly every dimension. Mercury pairs headline **human approval** with **scheduling** (permission-hardened, always-on); OpenHuman turns **memory** + **scheduling** into a life-integration loop.
+
+[WorkBuddy](../agents/workbuddy.md) and [Kimi Work](../agents/kimi-work.md) are the first desktop knowledge-work agents in this matrix, and they score almost identically for a reason: they are the same loop pointed at documents instead of repositories. Both take ● on **orchestration**, **multi-agent**, and **scheduling** — parallel specialists on one goal, running on a cron or in the vendor's cloud around the clock — and both take ○ on **human approval** and **deployment control**, which is the honest cost. These are closed clients holding authorized access to your filesystem, and in Kimi Work's case a browser you are already logged into, with no documented per-action gate. Every other ● on those two rows should be read through that ○.
+
+## Browser Agents
+
+| Project | Tool | Exec | Mem | Orch | Multi | Appr | Sched | Surf | Deploy |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| [Browser Use](../agents/browser-use.md) | ● | ○ | ○ | ○ | — | ○ | — | ◐ | ● |
+
+Standouts: this row is deliberately narrow, because Browser Use is a **capability you give an agent**, not an agent that replaces one. **Tool use** is ● — driving a real browser is the entire product — and **deployment control** is ● (MIT, self-hostable, model-agnostic, with a hosted cloud as an option rather than a requirement). Everything else is thin on purpose: it does not orchestrate, schedule, or remember across runs; you bring the harness that does. The mark worth arguing about is **human approval** at ○. The library can be scoped, but the default posture is an autonomous loop acting inside your live sessions, and this map scores stated defaults rather than what a careful operator could configure. Compare Stagehand (MIT, TypeScript, SDK-shaped) and Skyvern (AGPL-3.0, workflow-shaped), both on the watchlist.
 
 ## Using This For Selection
 

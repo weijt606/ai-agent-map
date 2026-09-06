@@ -27,7 +27,7 @@
 
 这一套正分阶段推进；[jcode](../agents/jcode.md) 的记忆格子已跑通全流程作为模板——下表它的 `Mem` 符号链到它的记录。schema、记忆子 schema 和分阶段计划见 **[证据记录](evidence-records.md)**。schema 出自 [u/teugent](https://www.reddit.com/r/AI_Agents/comments/1v56023/)。
 
-## 终端编码 CLI
+## 直接执行型 agent（终端与桌面）
 
 | 项目 | Tool | Exec | Mem | Orch | Multi | Appr | Sched | Surf | Deploy |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -38,8 +38,14 @@
 | [MiMoCode](../agents/mimocode.md) | ● | ● | ● | ○ | — | ◐ | — | ○ | ◐ |
 | [CodeWhale](../agents/codewhale.md) | ● | ● | ○ | ○ | — | ◐ | — | ○ | ◐ |
 | [Grok Build](../agents/grok-build.md) | ● | ● | ○ | ◐ | — | ◐ | ○ | ◐ | ◐ |
+| [OpenCode](../agents/opencode.md) | ● | ● | ○ | ◐ | ○ | ◐ | — | ◐ | ● |
+| [Gemini CLI](../agents/gemini-cli.md) | ● | ● | ○ | ○ | — | ◐ | — | ◐ | ◐ |
+| [Qwen Code](../agents/qwen-code.md) | ● | ● | ◐ | ◐ | ◐ | ◐ | — | ● | ● |
+| [ZCode](../agents/zcode.md) | ● | ● | ◐ | ◐ | ◐ | ◐ | ○ | ● | ○ |
 
-看点：Claude Code 和 Codex 的**交互面**最广；Codex 在这组里唯一强在**多 agent**（并行云端 agent）；MiMoCode 是唯一把**记忆**当招牌的 CLI；Aider 在显式 diff 的**人工审批**上领先。Grok Build 是最新加入的一个，在厂商 CLI 里**工具调用** + **代码执行**这对组合最强（MCP、skills、插件、hooks、沙箱、工作区 checkpoint），但注意它的**部署控制**分数对应的是一棵源码可见、却不接受贡献的树。
+看点：Claude Code 和 Codex 的**交互面**最广；Codex 在这组里唯一强在**多 agent**（并行云端 agent）；MiMoCode 和 Qwen Code 是把**记忆**当招牌的两个；Aider 在显式 diff 的**人工审批**上领先。Grok Build 是最新加入的一个，在厂商 CLI 里**工具调用** + **代码执行**这对组合最强（MCP、skills、插件、hooks、沙箱、工作区 checkpoint），但注意它的**部署控制**分数对应的是一棵源码可见、却不接受贡献的树。
+
+2026-09-06 新增四行，而真正把它们分开的那一列是**部署控制**。[OpenCode](../agents/opencode.md) 拿 ●，因为它是 MIT、且不属于任何模型厂商——这也正是别的 harness 愿意架在它上面的原因。[Qwen Code](../agents/qwen-code.md) 同样是 ●，并且是这一组里**交互面**最宽的一行（终端、IDE 插件、桌面、daemon 模式、SDK，以及四个 IM 平台），因为它的客户端*和*权重都开放，还能在运行时换厂商。[Gemini CLI](../agents/gemini-cli.md) 是 ◐：Apache-2.0 的客户端，但绑死一家的模型，而且限流的免费档对无人值守运行是实打实的约束。[ZCode](../agents/zcode.md) 是 ○——闭源桌面客户端——它也是这一组里**唯一不是终端 CLI** 的条目：它的主对象是一个长跑的 “Goal”，你从微信、飞书或 Telegram 上去看它，这也是为什么在**调度**上它是 ○，而那些终端循环干脆是 —。
 
 ## 自己掌控循环的 harness 框架
 
@@ -54,12 +60,15 @@
 | [QM](../agents/qm.md) | ◐ | ● | ● | ● | ◐ | ● | ● | ● | ● |
 | [Omnigent](../agents/omnigent.md) | ● | ● | ○ | ● | ● | ● | ○ | ● | ● |
 | [TrueForge](../agents/trueforge.md) | ● | ● | ○ | ● | ◐ | ● | — | ◐ | ● |
+| [DeepSeek Harness](../agents/deepseek-harness.md) | ● | ● | ○ | ● | ◐ | ● | — | ● | ● |
 
 看点：整条路线由**部署控制**定义（你拥有循环）。jcode 是唯一把**记忆**当招牌的 harness（被动语义图谱——见[记忆方案](../comparisons/memory-approaches.md)）；OpenHands 和 OpenHarness 的**编排**最重。
 
 两个元 harness 打分面很宽，因为它们补的正是单循环 harness 刻意不做的那一层——而且两者分得很干净。[QM](../agents/qm.md) 是这条路线上唯一把**记忆**、**调度**和**交付表面**同时做成核心的，因为每个作用域自带记忆、cron 以及 Slack/web 的存在感；它的**工具使用**故意只给 ◐（工具面小而固定，靠 skill 扩展而不是靠铺广度）。[Omnigent](../agents/omnigent.md) 则在**多 agent** 上领先——在一个会话里混用多个 harness，包括让一个去评审另一个——而两者都靠策略引擎（而不是逐次编辑弹窗）把**人工审批**做成核心。读这两行时请带上成熟度：QM 才几天大，Omnigent 自标 alpha，所以这些分反映的是它们声明的设计重心，不是实战验证过的行为。
 
 [TrueForge](../agents/trueforge.md) 是第三种形态：只有一个循环，但把它当成挂在 HTTP API 后面的服务端来跑。它在**工具使用**和**代码执行**上打分像单循环 harness，在**编排**和**人工审批**上打分像元 harness（这两项在它这里是产品界面，不是调试提示），并且拿到这条路线惯常的**部署控制** ●——它是 MIT、设计上就自托管。两个空格正是它的形状：**完全没有定时原语**，以及**交付面**止步于聊天 UI、API 和一个可嵌入组件，而不是渠道适配器。它的**记忆** ○ 是有意的：持久化会话与压缩属于持久性和上下文工程，不是跨会话学习。成熟度提醒同上——公开六周，版本还是 0.x 的 release candidate。
+
+[DeepSeek Harness](../agents/deepseek-harness.md) 又是第四种形态，它这一行在你知道原因之前会显得奇怪：它在**编排**、**人工审批**、**交互面**上都是 ●，不是因为它比上面那些循环功能更多，而是因为这三样都是*基础层里的插件*而非产品决策——agent 循环本身可以从配置替换，审批与沙箱策略住在共享的 `dsh-base` bundle 里，而同一套代码能产出 Web UI、headless 运行器、JSON-RPC SDK 和 ACP server。它的**记忆** ○ 和 TrueForge 是同一个判断：append-only 的会话日志是持久性，不是学习。**调度**空着是因为它根本没有调度原语。每一个格子都要对着项目自己贴的标签读——developer preview，且明说会有破坏兼容性的变更。
 
 ## 编辑器中心 & 评审优先
 
@@ -72,10 +81,13 @@
 | [GitHub Copilot](../agents/github-copilot.md) | ● | ◐ | ○ | ◐ | ◐ | ◐ | ◐ | ● | ○ |
 | [CoStrict](../agents/costrict.md) | ● | ● | ○ | ● | ◐ | ● | ○ | ◐ | ● |
 | [Open Code Review](../agents/open-code-review.md) | ● | — | — | ● | ◐ | ◐ | ○ | ● | ● |
+| [Froge Code](../agents/froge-code.md) | ● | ● | ○ | ● | ◐ | ● | — | ○ | ◐ |
 
 看点：Cline 和 CoStrict 把**人工审批**当作全部重点；CoStrict 是这组里唯一在**部署控制**（私有化、本地部署）和**编排**（需求→评审的标准化流程）上都强的。
 
 [Open Code Review](../agents/open-code-review.md) 在这一组里形状特别，值得仔细读：它在代码执行和记忆上是 **—**，因为它从不运行你的代码，除了可续跑的会话之外也不保留状态；人工审批只给 **◐**，不是因为把人晾在一边，而是因为它根本没有"审批闸口"可给——它只留评论然后停下。它的**编排** ● 对一个评审工具来说很反常，而这恰恰就是产品本身：确定性的文件选择、打包成并发子 agent、以及包在模型外面的规则匹配。它的**交付表面** ● 覆盖一个 CLI、四套 CI 系统，以及 Claude Code、Codex、Cursor、OpenCode 的插件。
+
+[Froge Code](../agents/froge-code.md) 归进这一组，靠的是**人工审批**——在多个并行尝试之间做挑选就是产品本身，不是一层安全外壳——它的**代码执行** ● 背后是 worktree 隔离。读它这一行要带上它自己 profile 里的保留：该页是照着 **Automagik Genie 的映射**写的，而本地图已经把那个映射标为待定，所以这些格子描述的是那个映射，不是一个已经稳定的产品边界。
 
 ## 托管 & 云端委派
 
@@ -106,10 +118,19 @@
 | [CrewAI](../agents/crewai.md) | ● | ◐ | ◐ | ● | ● | ○ | ○ | — | ● |
 | [LlamaIndex](../agents/llamaindex.md) | ◐ | ○ | ◐ | ◐ | ◐ | ○ | ○ | — | ● |
 | [eve](../agents/eve.md) | ● | ● | ◐ | ● | ● | ● | ● | ● | ◐ |
+| [Microsoft Agent Framework](../agents/microsoft-agent-framework.md) | ● | ◐ | ◐ | ● | ● | ◐ | ○ | — | ● |
+| [Semantic Kernel](../agents/semantic-kernel.md) | ● | ◐ | ◐ | ● | ● | ○ | ○ | — | ● |
+| [Haystack](../agents/haystack.md) | ● | ○ | ◐ | ● | ◐ | ○ | — | ◐ | ● |
+| [Pydantic AI](../agents/pydantic-ai.md) | ● | ○ | ○ | ◐ | ○ | ○ | ○ | — | ● |
+| [DSPy](../agents/dspy.md) | ◐ | ○ | ○ | ● | ○ | ○ | — | — | ● |
 
 看点：库这一批里，LangGraph 在持久**记忆**和**多 agent**状态上最强；LlamaIndex 的记忆是数据/检索，不是对话。
 
 [eve](../agents/eve.md) 是打破这一组形态的那一行，值得当作对照来读。它上面的每一个在**交互面**上都是 **—**，因为库不决定 agent 最后出现在哪里；eve 自带八个以上渠道适配器，所以它是这里唯一一个**交互面**、**定时**、**人工审批**同时为核心的条目（`needsApproval` 能让一次运行无限期暂停且不耗算力）。它的**代码执行** ● 指的是每个 agent 一个沙箱，不是一个辅助工具；**记忆**故意只给 ◐——能扛过重新部署的检查点会话是状态，不是记忆系统。它让出的那一列，恰好是上面每个库都握着的：**部署控制**只有 ◐，因为文档里的生产路径是 Vercel，哪怕 license 是 Apache-2.0。
+
+[Microsoft Agent Framework](../agents/microsoft-agent-framework.md) 归在库这一边而不是 eve 那一边：**交互面**空着的理由和 LangChain 一样——它给你的是 SDK，不是渠道。在组内把它区分开的是**编排**与**多 agent**：跨 Python、.NET、Go 的具名图模式（顺序、并发、交接、群体协作），外加把**人工审批**当作一等生产关切而不是事后补丁。它的**调度** ○ 反映的是持久性与可重启，那和一个调度器不是一回事。注意这里的继承关系：这一行替代的是本矩阵从来没有过的 AutoGen 行——因为 AutoGen 已进入维护模式。
+
+2026-09-06 补进来的四个库，把这一组**交互面**那一列为什么空着说得更清楚了。[Semantic Kernel](../agents/semantic-kernel.md) 在**编排**与**多 agent**上打得像 LangGraph（planner 加一等的 agent 框架），也是这组里唯一一个"跨 C#、Python、Java"本身就是选它理由的条目。[Haystack](../agents/haystack.md) 是**交互面**上的例外——Hayhooks 把 pipeline 暴露成 HTTP 与 MCP 端点，这是其他库都没有的——而它的**代码执行**仍是 ○，因为它做的是检索与路由，不是运行。[Pydantic AI](../agents/pydantic-ai.md) 这一行窄得有道理：它的差异点（类型安全、结构化输出、依赖注入）根本不是本矩阵的列，而它自己的 profile 就把多 agent 编排写成非目标。[DSPy](../agents/dspy.md) 是这组里最不像 agent 的一行——**编排** ● 是因为模块可组合，**工具使用** ◐，再往下都空着，因为它是你对着 pipeline 用的一个提示词编译器，不是一个运行时。
 
 ## 运行时、网关 & 上下文基础设施
 
@@ -137,8 +158,36 @@
 | [OpenHuman](../agents/openhuman.md) | ● | ○ | ● | ◐ | — | ◐ | ● | ◐ | ● |
 | [AutoGPT](../agents/autogpt.md) | ● | ◐ | ◐ | ● | ◐ | ○ | ◐ | ◐ | ● |
 | [AI Edge Gallery](../agents/ai-edge-gallery.md) | ◐ | ○ | ○ | — | — | ◐ | — | ◐ | ● |
+| [WorkBuddy](../agents/workbuddy.md) | ● | ◐ | ○ | ● | ● | ○ | ● | ● | ○ |
+| [Kimi Work](../agents/kimi-work.md) | ● | ◐ | ◐ | ● | ● | ○ | ● | ◐ | ○ |
+| [Agent Zero](../agents/agent-zero.md) | ● | ● | ● | ◐ | ● | ○ | — | ○ | ● |
+| [Julep](../agents/julep.md) | ● | ◐ | ● | ● | ◐ | ○ | ● | ○ | ● |
+| [GenericAgent](../agents/generic-agent.md) | ● | ● | ● | ○ | — | ○ | — | ○ | ● |
+| [ml-intern](../agents/ml-intern.md) | ● | ● | ○ | ◐ | — | ○ | — | ○ | ● |
 
 看点：Hermes 是全图覆盖面最广的单个 profile——几乎每个维度都强。Mercury 把招牌级**人工审批**和**调度**配在一起（权限硬化、常驻）；OpenHuman 把**记忆** + **调度**做成了生活集成的闭环。
+
+[WorkBuddy](../agents/workbuddy.md) 与 [Kimi Work](../agents/kimi-work.md) 是本矩阵里第一批桌面知识工作 agent，两行打分几乎一致，是有原因的：它们就是同一套循环，只不过指向文档而不是代码仓库。两者在**编排**、**多 agent**、**调度**上都是 ●——多个专职 agent 并行处理同一个目标，按 cron 或在厂商云里全天候跑——而两者在**人工审批**与**部署控制**上都是 ○，这才是诚实的代价。它们是闭源客户端，握着对你文件系统的授权访问，在 Kimi Work 的情形里还握着一个你已经登录的浏览器，而且没有任何有文档的逐动作闸门。这两行上其他每一个 ●，都要透过那两个 ○ 来读。
+
+2026-09-06 补进来的四个分成两种形态。[Agent Zero](../agents/agent-zero.md) 与 [GenericAgent](../agents/generic-agent.md) 的**记忆**都是 ●，理由不常见——它们是真的在*学*：Agent Zero 跨会话记住，GenericAgent 把每个解决过的任务结晶成一个可复用的 skill，这比一份会话日志更接近这一列的本意。[ml-intern](../agents/ml-intern.md) 打得像一个窄口径的自主编码 agent（工具与执行 ●，多 agent —），读它要连着它自己的定位读：整个设计是为 ML 工程，不是通用工作。[Julep](../agents/julep.md) 是最奇怪也最有用的一行——它是 Temporal 支撑的工作流引擎，所以**调度**与**记忆**核心到这一组里没有第二个能做到，代价是交互面 ○，以及一个**已经不存在的托管选项**。
+
+## 浏览器 agent
+
+| 项目 | 工具 | 执行 | 记忆 | 编排 | 多 agent | 审批 | 调度 | 交互面 | 部署 |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| [Browser Use](../agents/browser-use.md) | ● | ○ | ○ | ○ | — | ○ | — | ◐ | ● |
+
+看点：这一行窄得是故意的，因为 Browser Use 是**你交给 agent 的一项能力**，不是替代 agent 的东西。**工具使用**是 ●——驱动一个真浏览器就是它的全部产品——**部署控制**是 ●（MIT、可自托管、与模型无关，托管云是选项而不是前提）。其余都薄，也是刻意的：它不编排、不调度、不跨运行记忆；那些得由你带来的 harness 负责。真正值得争论的格子是 ○ 的**人工审批**。这个库是可以被划范围的，但它的默认姿态是一个自主循环在你的活跃会话里行动，而本地图打分打的是声明的默认值，不是一个谨慎的操作者能配出什么。可比的还有 Stagehand（MIT，TypeScript，SDK 形态）与 Skyvern（AGPL-3.0，工作流形态），两者都在候补名单上。
+
+## 本矩阵刻意不打分的东西
+
+这里的覆盖是判断，不是疏漏；把缺口写出来，是为了不让"少一行"被读成"少一个项目"。
+
+- **模型** —— [Fable 5.1](../agents/claude-fable-5.md)、[Opus 5](../agents/claude-opus-5.md)、[GPT-6 Astra](../agents/gpt-6-astra.md)、[GPT-5.5](../agents/gpt-5.5.md)、[Kimi K3](../agents/kimi-k3.md)、[GLM-5.3](../agents/glm-5.md)、[DeepSeek V4](../agents/deepseek-v4.md)、[Qwen3-Coder](../agents/qwen3-coder.md)。这里的每一列都是 agent *产品*的属性——审批闸、调度、交互面、部署控制。模型一个都不具备。比较模型请去[成本与基准](../comparisons/cost-and-benchmarks.md)。
+- **[Superpowers](../agents/superpowers.md)** —— 一个跑在*别的* agent 内部的 skills 框架，自己没有循环。它的能力取决于你把它挂在哪个 agent 上，所以给它一行，量的是宿主而不是它本身。
+- **[BabyAGI](../agents/babyagi.md)** —— 它留在本地图里是作为历史与教学条目；它自己的 profile 就写着它不是生产工具，而它的能力表打的是"历史影响力"和"教育价值"而不是能力。在本矩阵里给它一行，会暗示它是一个活的候选项——那是错误信号。
+
+如果一个项目已有 profile 且不属于以上任何一类，那么缺一行就是待办，不是决定。
 
 ## 用它做选型
 

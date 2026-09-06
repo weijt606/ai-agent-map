@@ -4,6 +4,19 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-09-06 — The frontier model route catches up, two generations at once
+
+The model layer had moved twice on each side since this map last wrote it down, and the route was pointing at superseded entries. Two new profiles (EN + zh), taking the map to 64:
+
+- **New [Claude Opus 5](agents/claude-opus-5.md)** (July 24 2026) — the entry this route was missing: not the ceiling, but the model Claude-based agents actually run on. Holds the Opus price ($5/$25) while landing within 0.5% of Fable 5 on CursorBench 3.2, with 1M context as both default *and* maximum. It replaced Opus 4.8 as Claude Code's dependable default, which several pages here still described incorrectly.
+- **New [GPT-6 Astra](agents/gpt-6-astra.md)** (September 3 2026) — OpenAI's current ceiling, and the first frontier model this map has recorded whose *public* version is deliberately restricted (it refuses part of its own cybersecurity capability, with advanced access behind Daybreak Blue). Codex CLI `rust-v0.153.4` made it the bundled default the next day, so the restriction now sits under a product default.
+- **[Claude Fable 5](agents/claude-fable-5.md) updated to Fable 5.1 / Mythos 5.1** (September 1 2026) — same $10/$50 sticker, cache reads cut 75% to $0.25/M. The profile keeps its original path so existing links hold.
+- **[GPT-5.5](agents/gpt-5.5.md) reframed as the lineage reference** — its post-launch table now runs GPT-5.5 → GPT-5.6 → Astra alongside Opus 4.8 → Fable 5 → Sonnet 5 → Opus 5 → Fable 5.1.
+
+Structural consequences: [cost & benchmarks](comparisons/cost-and-benchmarks.md) is rebuilt on first-party price pages and gains a **cache-read column**, because with both ceilings at an identical $10/$50 the sticker stopped being the differentiator; [market-events](market-events.md) records three new entries (Opus 5, Fable 5.1, Astra); the route tables in [README](README.md) and [agents/](agents/README.md) now separate the ceiling from the default tier under it, since those are two different decisions.
+
+Two sourcing notes the map is deliberately holding: the Artificial Analysis Coding Agent Index has no figure this map will copy for Astra, Fable 5.1, or Opus 5, so those cells stay dashed rather than filled from third-party leaderboards; and the "95% SWE-bench Verified" figure circulating for Fable 5.1 is a third-party number — Anthropic published SWE-bench Pro 81.2, which is what is recorded here.
+
 ## 2026-08-12 — The weekly refresh stops drifting
 
 Tooling only; no content surfaces changed. The weekly flow ran two independent GitHub fetches — one in `check` (whose numbers get hand-written into the heat tables) and another in `publish` (which stamps the snapshot that drives `rankings/` and the SVGs). Stars moved between them, so every refresh ended with the tables and the generated boards disagreeing by a few stars, and a manual reconciliation pass afterwards.

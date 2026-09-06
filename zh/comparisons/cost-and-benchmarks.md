@@ -6,7 +6,7 @@
 
 [热度榜](../README.md#recent-heat-ranking)追踪流行度，[能力矩阵](../capabilities/matrix.md)追踪形态。本页追踪它俩都不显示的两件事：**一个编码 agent 到底多能打，以及跑起来多少钱。**
 
-到 2026 年年中，这两个问题合成了一个。模型层转向分档和按量计费——Anthropic 的 Fable 5 按额度、OpenAI 的 GPT-5.6 三档定价——"这个任务用哪个模型、哪一档"就成了核心选型决策。时间线见[市场脉搏](../README.md#market-pulse)和[市场事件](../market-events.md)。
+到 2026 年年中，这两个问题合成了一个。模型层转向分档和按量计费——Anthropic 的 Fable 线按额度、OpenAI 的 GPT-5.6 三档定价——"这个任务用哪个模型、哪一档"就成了核心选型决策。随后两家的天花板又在 2026 年 9 月头几天各动一次（[Fable 5.1](../agents/claude-fable-5.md) 在 1 日，[GPT-6 Astra](../agents/gpt-6-astra.md) 在 3 日），并落到同一个标价。时间线见[市场脉搏](../README.md#market-pulse)和[市场事件](../market-events.md)。
 
 ## 成本有两层
 
@@ -15,27 +15,33 @@
 
 ## 第一层——前沿编码模型：能力 vs 价格
 
-**Artificial Analysis 编码 agent 指数**是本图追踪的跨模型能力数字。价格按每 **100 万 token（输入 / 输出）**计。
+**Artificial Analysis 编码 agent 指数**是本地图追踪的跨模型能力数字。价格按**每百万 token（输入 / 输出）**，取自各厂商自己的价格页。
 
-| 模型 | AA 编码 agent 指数 | 其他 benchmark | 价格（输入 / 输出 每 1M） | 备注 |
-| --- | :-: | --- | --- | --- |
-| **GPT-5.6 Sol**（OpenAI） | **80** | — | **$4 / $20**（促销） | 当前指数第一；另有多 agent "Ultra" 档。**2026-08-21** 从 $5 / $30 下调，为期三个月——至少到 **2026-11-21**——覆盖 API、Codex credits 与符合条件的 ChatGPT Work 计划。促销未延长时，预算仍按 $5 / $30 算 |
-| **GPT-5.6 Terra**（OpenAI） | — | — | $2.5 / $15 | 7 月 9 日 GPT-5.6 发布的中档 |
-| **GPT-5.6 Luna**（OpenAI） | — | — | $1 / $6 | GPT-5.6 的经济档 |
-| **Claude Fable 5**（Anthropic） | **77.2** | — | $10 / $50 | Mythos 级；按量额度计费，不打包进订阅 |
-| **GPT-5.5**（OpenAI） | **76.4** | SWE-Bench Pro 58.6% | —（≈GPT-5.4 的 2×） | 2026 春季参照模型 |
-| **Claude Opus 4.8**（Anthropic） | **72.5** | — | $5 / $25 | 两侧都是 Fable 5 的一半（见 [Fable 5 profile](../agents/claude-fable-5.md)）；Claude Code 里可靠的默认 |
-| **Muse Spark 1.2**（Meta）——Standard | — | — | $1.25 / $4.25 | Muse Code 背后的编码向模型，Muse Code 于 **2026 年 8 月 31 日**转正。缓存输入 $0.15；每分钟 3,000 次请求、400 万 token。没有本图愿意照抄的指数分 |
-| **Muse Spark 1.2**（Meta）——Contributor | — | — | **$0.10 / $0.20** | 同一个模型，便宜约 12 倍 / 21 倍，**代价是授权 Meta 用你的 prompt 与 completion 训练未来模型**。每分钟只有 60 次请求上限。这要当治理决策读，不是预算决策 |
+| 模型 | AA 编码 agent 指数 | 其他 benchmark | 价格（输入 / 输出，每百万） | 缓存读 | 备注 |
+| --- | :-: | --- | --- | :-: | --- |
+| **GPT-6 Astra**（OpenAI） | — | DeepSWE v1.1 74.1% | **$10 / $50** | $1 | OpenAI 当前天花板，**2026-09-03**。输入超 **272k token 后换价到 $20 / $75**；Fast 模式 2 倍价；正式开放的版本**会拒绝自己一部分网安能力** |
+| **Claude Fable 5.1**（Anthropic） | — | **SWE-bench Pro 81.2** | **$10 / $50** | **$0.25** | Anthropic 当前天花板，**2026-09-01**。标价与 Fable 5 相同，缓存读砍 75%。1M 上下文整窗按标准价。按额度计费，不含在订阅内 |
+| **GPT-5.6 Sol**（OpenAI） | **80** | — | **$4 / $20**（促销） | — | 最近一次测得的指数第一。**2026-08-21** 从 $5 / $30 下调，为期三个月，至少到 **2026-11-21**。长上下文档 $8 / $30 |
+| **Claude Fable 5**（Anthropic） | **77.2** | — | $10 / $50 | $1 | 9 月 1 日被 5.1 接棒；作为指数参照点保留 |
+| **GPT-5.5**（OpenAI） | **76.4** | SWE-Bench Pro 58.6% | —（≈GPT-5.4 的 2×） | — | 2026 春季参照模型，已隔两代 |
+| **Claude Opus 5**（Anthropic） | — | SWE-bench Pro 略低于 Fable 5.1 的 81.2 | $5 / $25 | $0.50 | **你实际会跑的那一档**——两端都是 Fable 的一半，1M 上下文既是默认也是上限。Fast 模式 $10 / $50 |
+| **Claude Opus 4.8**（Anthropic） | **72.5** | — | $5 / $25 | $0.50 | 7 月 24 日被 Opus 5 接棒；仍是请求触发安全分类器时的自动回退 |
+| **Claude Sonnet 5**（Anthropic） | — | — | **$2 / $10** | $0.20 | 走量档；首发价已转正，原定 9 月 1 日涨到 $3 / $15 的计划取消 |
+| **GPT-5.6 Terra**（OpenAI） | — | — | $2 / $12 | — | 中档。7 月 9 日发布时标 $2.5 / $15，一手价格页现在显示 $2 / $12 |
+| **GPT-5.6 Luna**（OpenAI） | — | — | $0.20 / $1.20 | — | 经济档。发布时标 $1 / $6，现在一手页面是 $0.20 / $1.20 |
+| **Muse Spark 1.2**（Meta）—— Standard | — | — | $1.25 / $4.25 | $0.15 | Muse Code 背后的编码模型，**2026-08-31** 转正。3,000 请求/分、4M token/分。没有本地图愿意照抄的指数数字 |
+| **Muse Spark 1.2**（Meta）—— Contributor | — | — | **$0.10 / $0.20** | $0.002 | 同一个模型，输入约便宜 12 倍、输出约便宜 21 倍，**代价是允许 Meta 用你的 prompt 与 completion 训练未来模型**。限 60 请求/分。这是治理决策，不是预算决策 |
 
-> SWE-Bench Pro 参照点：Claude Opus 4.7 得 64.3%，高于 GPT-5.5 的 58.6%。破折号（—）表示本图未追踪该数字，不是零。数据截至 **2026 年 9 月初**，取自厂商 profile（[Claude Fable 5](../agents/claude-fable-5.md)、[GPT-5.5](../agents/gpt-5.5.md)）与 [market-events](../market-events.md)；价格和指数位次会变——预算前务必以厂商为准。
+> SWE-Bench Pro 参照点：Claude Opus 4.7 得 64.3%，高于 GPT-5.5 的 58.6%。破折号（—）表示本图未追踪该数字，不是零——**Astra、Fable 5.1、Opus 5 目前没有本地图愿意照抄的指数数字**，本地图也不用第三方榜单去填这个空。价格截至 **2026-09-06**，取自 [platform.claude.com/docs/en/about-claude/pricing](https://platform.claude.com/docs/en/about-claude/pricing) 与 [developers.openai.com/api/docs/pricing](https://developers.openai.com/api/docs/pricing)；benchmark 取自各 profile（[Fable 5.1](../agents/claude-fable-5.md)、[Opus 5](../agents/claude-opus-5.md)、[GPT-6 Astra](../agents/gpt-6-astra.md)、[GPT-5.5](../agents/gpt-5.5.md)）与 [market-events](../market-events.md)。价格和指数位次会变——预算前务必以厂商为准。
 
-能一周周站得住的结论：
+能扛过每周变化的几条判断：
 
-- **指数差距真实但不大**——当前前沿大致 72–80。而*价格*差距要大得多（Luna 的 $1/$6 vs Fable 5 的 $10/$50 输出，是输出 token 上约 8× 的差距）。多数编码工作里，便宜档才是理性默认；只有任务真需要时才够到指数顶端。
-- **分档现在是那根杠杆。** GPT-5.6 的 Sol/Terra/Luna、以及 Claude 的 Fable 5-对-Opus-4.8 之分，意味着同一个 agent 指向不同模型，成本会天差地别。这是逐任务决策，不是一次性设置。
-- **这张表上最便宜的输出，不是用钱付的。** Muse Spark 1.2 的 Contributor 输出价（$0.20）比 Fable 5 低 **100 倍**、比促销中的 Sol 低 **25 倍**，而差价是用你 prompt 与 completion 的训练授权结的。对 agent 负载来说，这是在账单大头那一侧给的大折扣——同时也是一个开发者可以在一台 checkout 了公司仓库的机器上悄悄做掉的披露决策。它也**不叠加**：60 rpm 的上限对同一次发布正在宣传的并行 subagent 工作流是实打实的约束。可比的数字请用 Standard 价（$1.25 / $4.25）。另外注意 Muse Code **没有公开仓库**，因此不进本地图的榜单。
-- **前沿模型的价格现在是促销价，这张表因此成了要维护的活文档。** 8 月 Sol 降价之后，指数第一的输出价反而低于 Opus 4.8（$20 对 $25）——一个月前不存在的倒挂，而且带着到期日。两个后果：agent 负载真正花钱的是输出侧，所以 33% 的输出降价，实际折扣比标题上的 20% 更大；以及任何按促销价做的模型选择，都需要在 **11 月复核**一次。详见 [market-events](../market-events.md)。
+- **两家的天花板现在标价一样。** GPT-6 Astra 和 Claude Fable 5.1 都是 $10 / $50。这是本地图第一次记录到两家的前沿档落在完全相同的标价上，于是比较完全离开了标价，转到**缓存读**（$0.25 对 $1，4 倍差）和**长上下文的计价形状**上。
+- **长上下文两家计价方式不同，而这已经成了设计约束。** Anthropic 的 1M 窗口整窗按标准价。OpenAI 在输入超过 **272k token** 后对整个请求换价——$20 / $75 而不是 $10 / $50。一个会在长会话里不断堆积上下文的 agent，可能在没人拍板的情况下越线；Claude 这边没有这条线可越。
+- **账单真正堆积的地方是缓存，不是输入。** 长跑 agent 每一轮都重放一大块 prompt。$0.25/M 对 $1/M，正是 Fable 5.1 那个"典型省约 25%、重 agent 最多省 45%"的来源，而每 token 标价一分没动。只按标价比前沿模型，比的是错的那一列。
+- **分档仍然是杠杆，而且两条阶梯都变深了。** Astra 之下是 GPT-5.6 的 Sol/Terra/Luna；Fable 5.1 之下是 Opus 5 和 Sonnet 5。现在单一厂商内部的价差已经大于厂商之间的价差——Sonnet 5 的 $2/$10 对 Fable 5.1 的 $10/$50，两端都是 5 倍。多数编码工作理性的默认是更便宜的那一档，只在任务确实需要时才够天花板。
+- **这张表上最便宜的输出不是用钱付的。** Muse Spark 1.2 的 Contributor 档（输出 $0.20）比两家前沿天花板低 **250 倍**，差价用你 prompt 与 completion 的训练权来结算。对 agent 负载来说，这是账单里占大头那一侧的大幅折扣——也是一个开发者可以在挂着公司仓库的机器上悄悄做掉的披露决策。它还不叠加：60 请求/分的上限对同一次发布主推的并行 subagent 工作流是实打实的限制。可比的数字请用 Standard 档（$1.25 / $4.25）。另外 Muse Code **没有公开仓库**，所以不进本地图的榜单。
+- **前沿价格有一部分是促销价，这让本表成为一份活文档。** Sol 的 8 月降价至少延续到 **2026-11-21**，并让它的输出价低于 Opus 5（$20 对 $25）。任何按促销价做的模型选择，都需要在 **11 月复核**一次。详见 [market-events](../market-events.md)。
 
 ## 第二层——编码 agent 怎么收费
 

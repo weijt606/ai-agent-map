@@ -41,7 +41,7 @@ One-line take: Codex is the "delegate and review" coding agent that, since July 
 | Review evidence | Strong | Well aligned with review-heavy teams |
 | Background delegation | Very strong | Multiple agents can now run on the same machine in parallel after the April 16 update |
 | GitHub / PR handoff | Strong | Well suited to review-oriented workflows |
-| Computer use | Strong | Background cursor and keyboard control across any macOS app; noticeably faster since the July 9 2026 GPT-5.6 upgrade |
+| Computer use | Strong | Background cursor and keyboard control across any macOS app; noticeably faster since the July 9 2026 GPT-5.6 upgrade, and computer use is a headline axis of the September [GPT-6 Astra](gpt-6-astra.md) upgrade |
 | PR review in-app | Strong (new July 9 2026) | Side-panel pull-request review and inline diff editing in the ChatGPT desktop app |
 | Local companion surfaces | Strong (was Medium) | Codex CLI is now a first-class surface, with persisted /goal workflows and MultiAgentV2 in v0.128 |
 
@@ -73,7 +73,7 @@ Complexity is Medium. It reduces local ops burden, but it also pushes the team i
 
 ## Model Layer
 
-As of July 9 2026, Codex is powered by **GPT-5.6** (Sol / Terra / Luna tiers), which succeeded [GPT-5.5](gpt-5.5.md) the same day the product merged into ChatGPT. The upgrade shows up most in Computer Use speed and agentic coding benchmarks. See the [GPT-5.5 profile](gpt-5.5.md) for the model-lineage breakdown and the post-launch landscape (including Anthropic's Mythos-class [Claude Fable 5](claude-fable-5.md)).
+From July 9 2026 Codex ran on **GPT-5.6** (Sol / Terra / Luna tiers), which succeeded [GPT-5.5](gpt-5.5.md) the same day the product merged into ChatGPT. Since **September 2026 the default is [GPT-6 Astra](gpt-6-astra.md)**: Codex CLI `rust-v0.153.1` (Sept 3) added first-class support for configuring it, and `rust-v0.153.4` (Sept 4) made it "the bundled default when no model is explicitly configured" per the release notes. Two practical consequences: the generally available Astra **refuses part of its cybersecurity capability**, so security-adjacent work through Codex now inherits that boundary; and Astra reprices past 272k input tokens, which a long Codex session can reach. See the [GPT-6 Astra profile](gpt-6-astra.md) for the pricing shape and the [GPT-5.5 profile](gpt-5.5.md) for the full model lineage.
 
 ## Bottom Line
 

@@ -4,14 +4,14 @@
 [![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](gpt-5.5.md)
 [![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-One-line take: GPT-5.5 was OpenAI's frontier agentic model of spring 2026 — designed to carry multi-step tasks through to completion with tool use and self-checking — and was succeeded by GPT-5.6 on July 9 2026 (see Post-Launch Landscape below).
+One-line take: GPT-5.5 was OpenAI's frontier agentic model of spring 2026 — designed to carry multi-step tasks through to completion with tool use and self-checking — and has since been succeeded twice, by GPT-5.6 on July 9 2026 and by [GPT-6 Astra](gpt-6-astra.md) on September 3 2026. This profile is kept as the lineage reference (see Post-Launch Landscape below).
 
 ## Quick Read
 
 | Item | Conclusion |
 | --- | --- |
 | Vendor | OpenAI |
-| Route | Frontier agentic model powering Codex, ChatGPT, and API surfaces (succeeded by GPT-5.6, July 2026) |
+| Route | Frontier agentic model powering Codex, ChatGPT, and API surfaces (legacy — succeeded by GPT-5.6 in July and [GPT-6 Astra](gpt-6-astra.md) in September 2026) |
 | Open source | No |
 | Best for | High-autonomy coding, research, multi-step agent workflows, and long-context tasks |
 | Main cost | 2x the API price of GPT-5.4, and the model boundary blurs with the Codex product boundary |
@@ -36,7 +36,7 @@ When a model release changes what agents built on top of it can do, the model it
 
 - You want an open-source or self-hosted model. GPT-5.5 is fully proprietary.
 - You are cost-sensitive — input is $5/M tokens, output is $30/M tokens (2x GPT-5.4).
-- You need the current frontier — the landscape has moved past spring 2026 on both sides (GPT-5.6, Claude Fable 5, Opus 4.8); see Post-Launch Landscape below.
+- You need the current frontier — the landscape has moved twice on both sides since spring 2026 ([GPT-6 Astra](gpt-6-astra.md), [Claude Fable 5.1](claude-fable-5.md), [Opus 5](claude-opus-5.md)); see Post-Launch Landscape below.
 - You want a finished agent product, not a model. In that case, look at [Codex](codex.md) (the product) instead.
 - You want local execution without cloud dependency.
 
@@ -70,18 +70,22 @@ Complexity is Medium to High. The model itself is straightforward to use through
 
 This profile covers GPT-5.5 as a model. The [Codex](codex.md) profile covers the product — the cloud execution environment, isolation model, and review workflow. GPT-5.5 powers Codex but is not the same thing. If you are choosing between agent products, start with Codex. If you are choosing which model to wire into your own agent system, this profile is the right one.
 
-## Post-Launch Landscape (as of July 2026)
+## Post-Launch Landscape (as of September 2026)
 
-The frontier moved fast after GPT-5.5's April launch. Three releases changed the model-layer selection picture:
+The frontier moved fast after GPT-5.5's April launch, and has now moved through two more generations on each side:
 
 | Release | Date | What it changed |
 | --- | --- | --- |
 | **Claude Opus 4.8** (Anthropic) | May 28 2026 | Fixed Opus 4.7's verbosity and tool-calling issues; added Dynamic workflows (hundreds of parallel subagents in Claude Code); $5/$25 per M tokens |
 | **[Claude Fable 5](claude-fable-5.md)** (Anthropic) | June 9 2026 | First Mythos-class model — a tier above Opus; $10/$50 per M tokens, metered credits in Claude subscriptions since July 7 |
-| **GPT-5.6** (OpenAI) | July 9 2026 | Succeeds GPT-5.5 across ChatGPT/Codex/API in three tiers — Sol ($5/$30), Terra ($2.5/$15), Luna ($1/$6) — with an Ultra multi-agent setting; leads the Artificial Analysis Coding Agent Index (Sol 80 vs Fable 5 77.2, GPT-5.5 76.4, Opus 4.8 72.5) |
+| **Claude Sonnet 5** (Anthropic) | June 30 2026 | Mid tier at $2/$10 per M tokens, positioned close to Opus 4.8; the introductory price was made permanent in August |
+| **GPT-5.6** (OpenAI) | July 9 2026 | Succeeded GPT-5.5 across ChatGPT/Codex/API in three tiers — Sol, Terra, Luna — with an Ultra multi-agent setting; led the Artificial Analysis Coding Agent Index at launch (Sol 80 vs Fable 5 77.2, GPT-5.5 76.4, Opus 4.8 72.5) |
+| **[Claude Opus 5](claude-opus-5.md)** (Anthropic) | July 24 2026 | Held the Opus price ($5/$25) while closing most of the gap to Fable 5; 1M context as default *and* maximum; became the default model on Claude Max |
+| **[Claude Fable 5.1](claude-fable-5.md)** (Anthropic) | September 1 2026 | Same $10/$50 sticker, cache reads cut 75% to $0.25/M; SWE-bench Pro 81.2; ~60% fewer cybersecurity false positives in Claude Code |
+| **[GPT-6 Astra](gpt-6-astra.md)** (OpenAI) | September 3 2026 | Current OpenAI ceiling; $10/$50, doubling past 272k input tokens; public version restricted on cybersecurity prompts |
 
-Practical read: GPT-5.6 Sol costs the same as GPT-5.5 and outperforms it, so for new work GPT-5.5 is effectively a legacy choice; the real July 2026 model-layer decision is GPT-5.6 tier selection versus Fable 5 credits versus Opus 4.8 as the dependable default.
+Practical read: GPT-5.5 is a legacy choice for new work. The September 2026 model-layer decision is **[GPT-6 Astra](gpt-6-astra.md) versus [Fable 5.1](claude-fable-5.md) at an identical $10/$50 headline** — separated by cache-read cost and long-context pricing shape rather than by sticker — with the cost-controlled path being GPT-5.6's tiers on one side and [Opus 5](claude-opus-5.md) / Sonnet 5 on the other.
 
 ## Bottom Line
 
-GPT-5.5 was a genuine capability jump for OpenAI's agent ecosystem — strongest agentic coding benchmarks at its April launch, 1M context, and better token efficiency. As of July 2026 it has been superseded by GPT-5.6 at the same flagship price; this profile stays in the map as the reference point for how the spring 2026 model race reshaped agent selection.
+GPT-5.5 was a genuine capability jump for OpenAI's agent ecosystem — strongest agentic coding benchmarks at its April launch, 1M context, and better token efficiency. Two generations later it is a legacy choice; this profile stays in the map as the reference point for how the spring 2026 model race reshaped agent selection, and as the place the OpenAI model lineage is written down.

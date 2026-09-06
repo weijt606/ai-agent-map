@@ -4,6 +4,28 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
+## 2026-09-03 → 09-04 —— GPT-6 Astra 发布，Codex 的默认在你脚下换了
+
+**OpenAI 于 2026-09-03 发布 [GPT-6 Astra](https://openai.com/index/gpt-6-astra/)**，先是面向受信任伙伴的限定预览，次日面向付费 ChatGPT 用户公开——公开的是一个**会直接拒绝网络安全等领域部分 prompt 的受限版本**，进阶能力走 Daybreak Blue 审批，也就是 2026 年 8 月 GPT-5.6-Cyber 落地时用的那道闸。OpenAI 的说法是在编码、数学、以及驱动计算机和网页浏览器上达到 SOTA，而具体主张集中在*保持专注、守住任务边界、把多步流程做完*，不是刷分。公布的软件工程数字是 **DeepSWE v1.1 74.1%**——不是 SWE-bench Verified，所以发布时不存在与 Claude 的同口径对比。
+
+一手 API 价格：Astra **$10 / $50 每百万 token，另有 $20 / $75 的长上下文档**，缓存输入 $1，batch 半价，Fast 模式 2 倍价（EU 数据驻留下不可用）。那条换价线据报是 **272k 输入 token**，窗口据报约 105 万 token、最大输出 128k——这两个数字是二手的，因为 `openai.com` 当时无法直接抓取；价格与“两档”结构则出自 OpenAI 自己的价格页。
+
+紧接着产品在使用者脚下动了：**Codex CLI `rust-v0.153.1`（9 月 3 日）加入对 `gpt-6-astra` 的一等配置支持，`rust-v0.153.4`（9 月 4 日）"把它变成未显式配置模型时打包的默认"**——引自该项目自己的 release note。
+
+**对选型的影响：** 两点要带走。第一，前沿现在是一次**同标价对比**——Astra 与 [Fable 5.1](agents/claude-fable-5.md) 相隔两天，都标 $10 / $50，于是决策转到缓存读（$1 对 $0.25）和长上下文的*形状*上：OpenAI 在 272k token 之后把输入价翻倍，Anthropic 的 1M 窗口整窗按标准价。一个在会话中不断堆积上下文的 agent，可能没人拍板就越过了 OpenAI 那条线。第二，对任何在跑 [Codex](agents/codex.md) 的人更要紧：**默认模型是在一个补丁版本里换掉的，而新的默认会拒绝自己一部分网安能力**。这是本地图第一次记录到厂商把一个*刻意受限*的模型作为编码产品的静默默认。如果你的活是安全相邻的，"你有权用哪个版本"现在是选型输入，不是脚注。详见 [GPT-6 Astra](agents/gpt-6-astra.md)、[Codex](agents/codex.md)、[成本与基准](comparisons/cost-and-benchmarks.md)。
+
+来源：[GPT-6 Astra: A new generation of intelligence](https://openai.com/index/gpt-6-astra/)、[OpenAI API 价格页](https://developers.openai.com/api/docs/pricing)、[openai/codex rust-v0.153.4 release](https://github.com/openai/codex/releases/tag/rust-v0.153.4)、[GPT-6 Astra（Wikipedia）](https://en.wikipedia.org/wiki/GPT-6_Astra)。
+
+## 2026-09-01 —— Fable 5.1 砍掉的正是 agent 真正产生的那部分账单
+
+**Anthropic 于 2026-09-01 发布 Claude Fable 5.1 与 Claude Mythos 5.1**——仍是同一底层模型、不同安全访问，Mythos 通过 Project Glasswing 仅向经审核的网络安全与生命科学组织开放。标价没动：**$10 / $50 每百万 token，与 Fable 5 相同**。动的是缓存：**缓存读降了 75%，从 $1/M 到 $0.25/M**——是输入价的 2.5%，而其他所有 Claude 模型都是 10%。Anthropic 给的效果是**典型负载成本低约 25%，重 agent 负载最多低 45%**。
+
+能力上，Anthropic 报的是 **SWE-bench Pro 81.2**（对 Fable 5 与 Opus 5 都是小幅领先）、**Terminal-Bench 4.0 从 42.0% 升到 55.8%**、**Terminal-Bench-Science 翻倍有余，24.7% → 52.6%**。Claude Code 用户的网安类误报应减少约 **60%**。这次还加入了对 Claude 生成文本的**隐形水印**，并按欧盟法规要求向符合条件的组织私有预览检测 API。
+
+**对选型的影响：** 这是一次精准打在本地图所覆盖负载上的降价。长跑 agent 每一轮都重放一大块上下文，所以账单堆积的地方是缓存读而不是新输入；在标价不动的前提下把它砍掉 75%，意味着比较前沿模型时，标价已经是*错的*那一列。9 月 1 日之前算过 Fable 预算的人应该重算一遍。另有两点值得记录。外面广为流传的 **5.1"SWE-bench Verified 95%"是第三方榜单数字——Anthropic 对两个 Fable 版本都没有公布 SWE-bench Verified 分数**，本地图记的是 SWE-bench Pro 81.2。以及水印：这是本地图模型层第一次出现内容溯源机制，今天它是合规特性，但这类东西后来往往会变成采购问题。详见 [Claude Fable 5.1](agents/claude-fable-5.md)、[成本与基准](comparisons/cost-and-benchmarks.md)。
+
+来源：[Anthropic 价格文档](https://platform.claude.com/docs/en/about-claude/pricing)、[Anthropic's Claude Fable 5.1 and Mythos 5.1 arrive with a 75% cost reduction for Fable cache reads](https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads)、[Anthropic Launches Claude Fable 5.1 With Lower Costs and Fewer False Positives](https://www.macrumors.com/2026/09/01/anthropic-claude-fable-5-1/)。
+
 ## 2026-08-31 —— Meta 给 Muse Code 定价，顺便把你的 prompt 摆上了菜单
 
 **Meta 于 2026 年 8 月 31 日把 [Muse Code](https://thenewstack.io/muse-code-sdk-pricing/) 转正**，距 8 月 5 日的 beta 不到一个月，而这次公告几乎全是关于价格与触达，不是关于循环本身。三档订阅上线，**从每月 $5 到 $50**。一个**开发者预览版 SDK** 把这个 agent 从命令行里带了出来：按 Mark Zuckerberg 的说法，开发者可以在 Muse Code 之上造自己的 agent——嵌进应用、接自定义工具、流式看进度、恢复会话。运行时本身也长出了长任务真正需要的部分：**会话间消息传递，让并行的 agent 直接共享状态**而不是靠人来回粘贴；把一个任务拆给多个 subagent 的工作流；以及**跑在独立 git worktree 里的 subagent**。它仍然是 macOS 或 Linux 上一条命令装好，仍然没有图形界面和 IDE 集成。
@@ -66,6 +88,16 @@ OpenAI 于 **2026 年 8 月 21 日把 GPT-5.6 Sol 从每百万输入/输出 toke
 
 来源：[yc-software/qm](https://github.com/yc-software/qm)、[qm.ycombinator.com](https://qm.ycombinator.com)、[omnigent-ai/omnigent](https://github.com/omnigent-ai/omnigent)、[omnigent.ai](https://omnigent.ai)。
 
+## 2026-07-24 —— Opus 5 让前沿档重新变成可选项
+
+**Anthropic 于 2026-07-24 发布 [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5)**，距 Fable 5 退出订阅内含十七天。它守住 Opus 档的价格——**$5 / $25 每百万 token，与 Opus 4.8 相同**——而 Anthropic 的定位是以一半成本接近 Fable 5 的前沿智力。具体主张：**CursorBench 3.2 距 Fable 5 峰值 0.5% 以内**、**OSWorld 2.0 在任意价位上都优于所有模型**（且以约三分之一成本超过 Fable 5）、**ARC-AGI 3 约为次优模型的 3 倍**、Frontier-Bench v0.1 达到 Opus 4.8 的两倍以上。它带 **1M token 上下文窗口，既是默认也是上限**，最大输出 128k，默认开启思考，并有五档 effort 设置。它成为 **Claude Max 的默认模型**、Pro 上最强的模型；被安全分类器拦下的请求回退到 Opus 4.8。网安轴上它刻意落后于 Mythos 5。
+
+三周前的 **6 月 30 日**，**Claude Sonnet 5** 已以 **$2 / $10** 落地——定位接近 Opus 4.8——其首发价在 8 月被确认转正，原定 9 月 1 日涨到 $3 / $15 的计划取消。
+
+**对选型的影响：** 7 月 7 日把 Anthropic 的天花板变成了按量花销，于是真正的问题往下沉了一档：*不花额度的时候你跑什么？* Opus 5 就是答案，而且强到让前沿档对多数工作真的变成可选项，而不是默认。再加上 $2/$10 的 Sonnet 5，Anthropic 侧现在是三级阶梯，其内部价差（Sonnet 5 到 Fable，两端 5 倍）比厂商之间的差距还大。本地图的路线表把天花板和默认档当作两个独立的选型决策，原因就在这里。详见 [Claude Opus 5](agents/claude-opus-5.md)、[Claude Code](agents/claude-code.md)。
+
+来源：[Introducing Claude Opus 5](https://www.anthropic.com/news/claude-opus-5)、[Introducing Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5)、[Anthropic 价格文档](https://platform.claude.com/docs/en/about-claude/pricing)。
+
 ## 2026-07-14 —— xAI 发布 Grok Build，"开源"就此分成两种
 
 SpaceXAI（xAI）发布了 **[Grok Build](agents/grok-build.md)**（`grok`），一个 Claude Code 形态的 Rust 终端 coding agent——全屏 TUI、CI 用的 headless 模式、以及让编辑器驱动它的 Agent Client Protocol server，外加 MCP server、skills、插件、hooks 和沙箱。它**在 15 天内拿到 23.2k star、4.4k fork**，是本地图记录过的最快首秀。至此每家主要模型厂商都有了自己的第一方 coding CLI。
@@ -94,7 +126,7 @@ Vercel 在伦敦的 Vercel Ship 上发布 **[eve](agents/eve.md)**（`vercel/eve
 
 Anthropic 发布 **Claude Fable 5** 和 **Claude Mythos 5**——同一底层模型，Fable 5 面向所有人（附加安全措施），Mythos 5 仅限获批组织。Mythos 是位于 Opus 之上的新等级。Fable 5 成为 Claude Code 中 Pro/Max 的默认模型，6 月 12 日因短暂的美国出口管制全球下架，7 月 1 日在更严格的安全分类器后面恢复（被拦截的请求回退 Opus 4.8），7 月 7 日起改为按量计费的 usage credits。两周前（5 月 28 日），**Opus 4.8** 已修复 Opus 4.7 的 tool-calling 问题并推出 Dynamic workflows。
 
-**对选型的影响：** Anthropic 侧的模型层变成两档预算决策——最难的活花 Fable 5 额度，Opus 4.8 作为可靠默认档。详见 [Claude Fable 5](agents/claude-fable-5.md)、[Claude Code](agents/claude-code.md)。
+**对选型的影响：** Anthropic 侧的模型层变成两档预算决策——最难的活花 Fable 5 额度，Opus 4.8 作为可靠默认档。这个家族在本条之后继续补齐：6 月 30 日的 **Sonnet 5**（$2/$10）、7 月 24 日的 **[Opus 5](agents/claude-opus-5.md)** 接替 Opus 4.8 成为你实际会跑的那一档，再到 9 月 1 日的 **Fable 5.1**。详见 [Claude Fable 5.1](agents/claude-fable-5.md)、[Claude Opus 5](agents/claude-opus-5.md)、[Claude Code](agents/claude-code.md)。
 
 来源：[Anthropic 公告](https://www.anthropic.com/news/claude-fable-5-mythos-5)、[Redeploying Fable 5](https://www.anthropic.com/news/redeploying-fable-5)、[Opus 4.8](https://www.anthropic.com/news/claude-opus-4-8)。
 

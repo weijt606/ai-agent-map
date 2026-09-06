@@ -8,7 +8,7 @@
 
 **OpenAI 于 2026-09-03 发布 [GPT-6 Astra](https://openai.com/index/gpt-6-astra/)**，先是面向受信任伙伴的限定预览，次日面向付费 ChatGPT 用户公开——公开的是一个**会直接拒绝网络安全等领域部分 prompt 的受限版本**，进阶能力走 Daybreak Blue 审批，也就是 2026 年 8 月 GPT-5.6-Cyber 落地时用的那道闸。OpenAI 的说法是在编码、数学、以及驱动计算机和网页浏览器上达到 SOTA，而具体主张集中在*保持专注、守住任务边界、把多步流程做完*，不是刷分。公布的软件工程数字是 **DeepSWE v1.1 74.1%**——不是 SWE-bench Verified，所以发布时不存在与 Claude 的同口径对比。
 
-一手 API 价格：Astra **$10 / $50 每百万 token，另有 $20 / $75 的长上下文档**，缓存输入 $1，batch 半价，Fast 模式 2 倍价（EU 数据驻留下不可用）。那条换价线据报是 **272k 输入 token**，窗口据报约 105 万 token、最大输出 128k——这两个数字是二手的，因为 `openai.com` 当时无法直接抓取；价格与“两档”结构则出自 OpenAI 自己的价格页。
+一手 API 价格：Astra **$10 / $50 每百万 token，另有 $20 / $75 的长上下文档**，缓存输入 $1，batch 半价，Fast 模式 2 倍价（EU 数据驻留下不可用）。那条换价线据报是 **272k 输入 token**，窗口据报约 105 万 token、最大输出 128k——这两个数字是二手的，因为 `openai.com` 当时无法直接抓取；价格与"两档"结构则出自 OpenAI 自己的价格页。
 
 紧接着产品在使用者脚下动了：**Codex CLI `rust-v0.153.1`（9 月 3 日）加入对 `gpt-6-astra` 的一等配置支持，`rust-v0.153.4`（9 月 4 日）"把它变成未显式配置模型时打包的默认"**——引自该项目自己的 release note。
 
@@ -100,13 +100,13 @@ OpenAI 于 **2026 年 8 月 21 日把 GPT-5.6 Sol 从每百万输入/输出 toke
 
 **DeepSeek 于 2026-08-13 以 MIT 发布 [`deepseek-ai/deepseek-harness`](https://github.com/deepseek-ai/deepseek-harness)**，形态是 developer preview。它的组织思想是**一切皆插件**——而且连循环也算在内。引自项目自己的架构文档：*"产品的每一部分都是插件，包括模型适配层、工具注册表、会话日志，以及 agent 循环本身，因此每一部分都可以从配置里替换。没有需要打补丁的特权内核。"* 底下的内核是 [Cordis](https://github.com/cordiverse/cordis)；组合方式是一叠 bundle 加上有序的 patch 文件，`dsh --profile web --dump-config` 会打印这台机器实际启动的那棵树。
 
-它交付的是完整产品而不是一个库：本地 Web UI（`npx @deepseek-ai/dsh web`，端口 3080）、headless 一次性运行器、带 TypeScript 与 Python 客户端的 JSON-RPC SDK，以及供自动化用的 ACP server。采纳速度极端——发布后**三周内 21.38 万 star、2.51 万 fork**。
+它交付的是完整产品而不是一个库：本地 Web UI（`npx @deepseek-ai/dsh web`，端口 3080）、headless 一次性运行器、带 TypeScript 与 Python 客户端的 JSON-RPC SDK，以及供自动化用的 ACP server。采纳速度极端——发布后**24 天内 21.4 万 star、2.51 万 fork**。
 
-**对选型的影响：** 本地图的 [harness 路线](comparisons/agent-harness-frameworks.md)此前有三种形态——你 fork 的循环（[Pi](agents/pi.md)、[jcode](agents/jcode.md)）、驱动其他循环的 meta-harness（[QM](agents/qm.md)、[Omnigent](agents/omnigent.md)）、部署在 HTTP 后面的 harness（[TrueForge](agents/trueforge.md)）。`dsh` 是第四种：**一个没有内核可 fork 的 harness**——扩展意味着在旁边挂一个插件，而卸载能干净回滚，因为注册行为是可逆的 effect。诚实的反面是项目给自己贴的标签：developer preview、明说会破坏兼容、插件契约未冻结。所以选型问题是：你在建的东西是会持续变化的（合适），还是想钉住接口然后走人的（不合适）。另有一条本地图欠读者的流程说明：这么大一个仓库在本榜外躺了三周，那是扫描环节的失职，不是判断结果。详见 [DeepSeek Harness](agents/deepseek-harness.md)。
+**对选型的影响：** 本地图的 [harness 路线](comparisons/agent-harness-frameworks.md)此前有三种形态——你 fork 的循环（[Pi](agents/pi.md)、[jcode](agents/jcode.md)）、驱动其他循环的 meta-harness（[QM](agents/qm.md)、[Omnigent](agents/omnigent.md)）、部署在 HTTP 后面的 harness（[TrueForge](agents/trueforge.md)）。`dsh` 是第四种：**一个没有内核可 fork 的 harness**——扩展意味着在旁边挂一个插件，而卸载能干净回滚，因为注册行为是可逆的 effect。诚实的反面是项目给自己贴的标签：developer preview、明说会破坏兼容、插件契约未冻结。所以选型问题是：你在建的东西是会持续变化的（合适），还是想钉住接口然后走人的（不合适）。另有一条本地图欠读者的流程说明：这么大一个仓库在本榜外躺了 24 天，那是扫描环节的失职，不是判断结果。详见 [DeepSeek Harness](agents/deepseek-harness.md)。
 
 来源：[deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)、[架构文档](https://github.com/deepseek-ai/deepseek-harness/blob/main/docs/architecture.md)、[DeepSeek open sources an agent harness where everything is a plugin](https://thenewstack.io/deepseek-harness-open-source-plugins/)。
 
-## 2026-08-05 → 08-10 —— Meta 补上厂商 CLI 的最后一块；Claude Code 支持自托管
+## 2026-08-05 → 08-10 —— Meta 进入厂商 CLI 阵营；Claude Code 支持自托管
 
 一周之内落地了三件事，而它们共同推动的是厂商层，不是开源层。
 
@@ -116,7 +116,9 @@ OpenAI 于 **2026 年 8 月 21 日把 GPT-5.6 Sol 从每百万输入/输出 toke
 
 **OpenAI 在 8 月 10 日发布 [GPT-5.6-Cyber](https://developers.openai.com/api/docs/models/gpt-5.6-cyber)**，基于 GPT-5.6 Sol 的安全专用模型，需通过 Daybreak 计划审批才能使用。
 
-**对选型的影响：** 本地图 7 月写过"每一家主要模型厂商现在都有自己的一方 coding CLI"，并把这个阵营列为 Anthropic、OpenAI、Moonshot、小米、xAI。Meta 是当时显眼的缺席者，现在不是了——但要注意它是*怎么*来的。Muse Code 是通过 Meta Model API 分发的 beta，**没有公开仓库**，所以它连 Grok Build 那种 source-available 的一端都没够到；本地图的榜单也因此不跟踪它。厂商阵营在不到一个月里合拢，而且合拢时用的多半是你读不到源码的 agent——这才是真正的故事。同时，Claude Code 和 GPT-5.6-Cyber 从另一个角度指向同一件事：厂商现在竞争的差异点是**部署方式与访问控制**——这个 loop 跑在谁的基础设施上、谁被允许跑它——而不是 loop 本身。Muse Code 那个可精确重放的事件日志，是这批发布里唯一一个真正的能力想法，而它对付的正是[观测层](comparisons/observability-and-evals.md)从外部切入的同一个持久性问题。Muse Spark 1.2 的价格与指数位次尚未在本地图记录，因此不会出现在[成本与基准](comparisons/cost-and-benchmarks.md)页。
+**对选型的影响：** 本地图 7 月写过"每一家主要模型厂商现在都有自己的一方 coding CLI"，并把这个阵营列为 Anthropic、OpenAI、Moonshot、小米、xAI。Meta 是当时显眼的缺席者，现在不是了——但要注意它是*怎么*来的。
+
+> **更正（2026-09-06）。** 那份名单是错的，本条原标题「Meta 补上厂商 CLI 的最后一块」也是错的。**谷歌的 [Gemini CLI](agents/gemini-cli.md)（Apache-2.0，10.7 万 star）与阿里的 [Qwen Code](agents/qwen-code.md)（Apache-2.0，2.77 万）当时都早已在发**，而两者既不在 7 月那次点名里，也直到 9 月 6 日那次覆盖面审计之前根本不在本地图里。Meta 没有补上最后一块；它加入的是一个本地图数错了的阵营。下面这段保持原样，只加这条更正，不做无声改写。Muse Code 是通过 Meta Model API 分发的 beta，**没有公开仓库**，所以它连 Grok Build 那种 source-available 的一端都没够到；本地图的榜单也因此不跟踪它。厂商阵营在不到一个月里迅速填满，而且填进来的多半是你读不到源码的 agent——这才是真正的故事；而按上面那条更正，它当时其实比本条以为的还要满。同时，Claude Code 和 GPT-5.6-Cyber 从另一个角度指向同一件事：厂商现在竞争的差异点是**部署方式与访问控制**——这个 loop 跑在谁的基础设施上、谁被允许跑它——而不是 loop 本身。Muse Code 那个可精确重放的事件日志，是这批发布里唯一一个真正的能力想法，而它对付的正是[观测层](comparisons/observability-and-evals.md)从外部切入的同一个持久性问题。Muse Spark 1.2 的价格与指数位次尚未在本地图记录，因此不会出现在[成本与基准](comparisons/cost-and-benchmarks.md)页。
 
 来源：[Introducing Muse Code and Muse Spark 1.2](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2)、[developer.meta.com/ai/models/muse-spark](https://developer.meta.com/ai/models/muse-spark/)、[Self-hosted environments for Claude Code](https://claude.com/blog/run-claude-code-sessions-on-your-own-compute)、[Claude Code 自托管文档](https://code.claude.com/docs/en/self-hosted-environments)、[GPT-5.6-Cyber](https://developers.openai.com/api/docs/models/gpt-5.6-cyber)。
 
@@ -132,7 +134,7 @@ OpenAI 于 **2026 年 8 月 21 日把 GPT-5.6 Sol 从每百万输入/输出 toke
 
 **Anthropic 于 2026-07-24 发布 [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5)**，距 Fable 5 退出订阅内含十七天。它守住 Opus 档的价格——**$5 / $25 每百万 token，与 Opus 4.8 相同**——而 Anthropic 的定位是以一半成本接近 Fable 5 的前沿智力。具体主张：**CursorBench 3.2 距 Fable 5 峰值 0.5% 以内**、**OSWorld 2.0 在任意价位上都优于所有模型**（且以约三分之一成本超过 Fable 5）、**ARC-AGI 3 约为次优模型的 3 倍**、Frontier-Bench v0.1 达到 Opus 4.8 的两倍以上。它带 **1M token 上下文窗口，既是默认也是上限**，最大输出 128k，默认开启思考，并有五档 effort 设置。它成为 **Claude Max 的默认模型**、Pro 上最强的模型；被安全分类器拦下的请求回退到 Opus 4.8。网安轴上它刻意落后于 Mythos 5。
 
-三周前的 **6 月 30 日**，**Claude Sonnet 5** 已以 **$2 / $10** 落地——定位接近 Opus 4.8——其首发价在 8 月被确认转正，原定 9 月 1 日涨到 $3 / $15 的计划取消。
+三周半前的 **6 月 30 日**，**Claude Sonnet 5** 已以 **$2 / $10** 落地——定位接近 Opus 4.8——其首发价在 8 月被确认转正，原定 9 月 1 日涨到 $3 / $15 的计划取消。
 
 **对选型的影响：** 7 月 7 日把 Anthropic 的天花板变成了按量花销，于是真正的问题往下沉了一档：*不花额度的时候你跑什么？* Opus 5 就是答案，而且强到让前沿档对多数工作真的变成可选项，而不是默认。再加上 $2/$10 的 Sonnet 5，Anthropic 侧现在是三级阶梯，其内部价差（Sonnet 5 到 Fable，两端 5 倍）比厂商之间的差距还大。本地图的路线表把天花板和默认档当作两个独立的选型决策，原因就在这里。详见 [Claude Opus 5](agents/claude-opus-5.md)、[Claude Code](agents/claude-code.md)。
 

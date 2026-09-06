@@ -69,7 +69,7 @@ Codex CLI（开源终端伴侣，github.com/openai/codex）也走得很快：202
 
 ## 使用代价
 
-复杂度是 Medium。它帮你减轻本地运维负担，但也会把团队带进“远程委派 + 回来看结果”的异步节奏。当前更准确的理解方式是：主产品是闭源云端 agent，Codex CLI 是相关但独立的本地 companion surface。
+复杂度是 Medium。它帮你减轻本地运维负担，但也会把团队带进"远程委派 + 回来看结果"的异步节奏。当前更准确的理解方式是：主产品是闭源云端 agent，Codex CLI 是相关但独立的本地 companion surface。
 
 ## 模型层
 

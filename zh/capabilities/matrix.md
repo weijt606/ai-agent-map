@@ -45,7 +45,7 @@
 
 看点：Claude Code 和 Codex 的**交互面**最广；Codex 在这组里唯一强在**多 agent**（并行云端 agent）；MiMoCode 和 Qwen Code 是把**记忆**当招牌的两个；Aider 在显式 diff 的**人工审批**上领先。Grok Build 是最新加入的一个，在厂商 CLI 里**工具调用** + **代码执行**这对组合最强（MCP、skills、插件、hooks、沙箱、工作区 checkpoint），但注意它的**部署控制**分数对应的是一棵源码可见、却不接受贡献的树。
 
-2026-09-06 新增四行，而真正把它们分开的那一列是**部署控制**。[OpenCode](../agents/opencode.md) 拿 ●，因为它是 MIT、且不属于任何模型厂商——这也正是别的 harness 愿意架在它上面的原因。[Qwen Code](../agents/qwen-code.md) 同样是 ●，并且是这一组里**交互面**最宽的一行（终端、IDE 插件、桌面、daemon 模式、SDK，以及四个 IM 平台），因为它的客户端*和*权重都开放，还能在运行时换厂商。[Gemini CLI](../agents/gemini-cli.md) 是 ◐：Apache-2.0 的客户端，但绑死一家的模型，而且限流的免费档对无人值守运行是实打实的约束。[ZCode](../agents/zcode.md) 是 ○——闭源桌面客户端——它也是这一组里**唯一不是终端 CLI** 的条目：它的主对象是一个长跑的 “Goal”，你从微信、飞书或 Telegram 上去看它，这也是为什么在**调度**上它是 ○，而那些终端循环干脆是 —。
+2026-09-06 新增四行，而真正把它们分开的那一列是**部署控制**。[OpenCode](../agents/opencode.md) 拿 ●，因为它是 MIT、且不属于任何模型厂商——这也正是别的 harness 愿意架在它上面的原因。[Qwen Code](../agents/qwen-code.md) 同样是 ●，并且是这一组里**交互面**最宽的一行（终端、IDE 插件、桌面、daemon 模式、SDK，以及四个 IM 平台），因为它的客户端*和*权重都开放，还能在运行时换厂商。[Gemini CLI](../agents/gemini-cli.md) 是 ◐：Apache-2.0 的客户端，但绑死一家的模型，而且限流的免费档对无人值守运行是实打实的约束。[ZCode](../agents/zcode.md) 是 ○——闭源桌面客户端——它也是这一组里**唯一不是终端 CLI** 的条目：它的主对象是一个长跑的 "Goal"，你从微信、飞书或 Telegram 上去看它，这也是为什么在**调度**上它是 ○，而那些终端循环干脆是 —。
 
 ## 自己掌控循环的 harness 框架
 

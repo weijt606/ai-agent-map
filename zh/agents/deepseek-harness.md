@@ -4,7 +4,7 @@
 [![EN](https://img.shields.io/badge/EN-English-2563eb?style=for-the-badge&labelColor=1d4ed8)](../../agents/deepseek-harness.md)
 [![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-一句话：DeepSeek Harness（`dsh`）是一个**没有特权内核**的 agent harness——模型适配层、工具注册表、会话日志，乃至 agent 循环本身，全都是可以从配置里替换掉的插件——它在三周内拿到 21.3 万 star，而项目自己仍标着 developer preview。
+一句话：DeepSeek Harness（`dsh`）是一个**没有特权内核**的 agent harness——模型适配层、工具注册表、会话日志，乃至 agent 循环本身，全都是可以从配置里替换掉的插件——它在24 天内拿到 21.4 万 star，而项目自己仍标着 developer preview。
 
 ## 一眼判断
 
@@ -67,4 +67,4 @@
 
 ## 结论
 
-插件内核不是新想法；把它用到 **agent 循环本身**上、并且放在一个厂商官方的 MIT 仓库里，是新的。采纳曲线（三周 21.3 万 star、2.5 万 fork）说明这个卖点立住了。把它和项目给自己贴的标签放在一起权衡：developer preview，契约未冻结。如果你在建的东西本来就会不断改，它很合适；如果你需要钉住一个接口然后走人，它不合适。
+插件内核不是新想法；把它用到 **agent 循环本身**上、并且放在一个厂商官方的 MIT 仓库里，是新的。采纳曲线（24 天 21.4 万 star、2.5 万 fork）说明这个卖点立住了。把它和项目给自己贴的标签放在一起权衡：developer preview，契约未冻结。如果你在建的东西本来就会不断改，它很合适；如果你需要钉住一个接口然后走人，它不合适。

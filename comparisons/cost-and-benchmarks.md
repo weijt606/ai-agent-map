@@ -43,6 +43,25 @@ The takeaways that survive week to week:
 - **The cheapest output on this table is not paid in money.** Muse Spark 1.2's Contributor rate ($0.20 output) is **250× below the two frontier ceilings**, and the difference is settled in training rights over your prompts and completions. For an agent workload that is a large discount on the side of the bill that dominates — and a disclosure decision an individual developer can make silently on a machine with the company repo checked out. It also does not compose: the 60 req/min cap is a real constraint on the parallel subagent workflows the same release advertises. Treat the Standard rate ($1.25 / $4.25) as the comparable number. Note also that Muse Code ships with **no public repository**, so it is not tracked on this map's boards.
 - **Frontier price is partly promotional, which makes this table a live document.** Sol's August cut runs to at least **Nov 21 2026** and takes it below Opus 5 on output ($20 vs $25). Any model choice sized against a promotional rate needs a **November review**. See [market-events](../market-events.md).
 
+### The Open-Weights Tier
+
+The table above prices tokens. This tier prices **hardware and licences instead**, which is a different bill with a different failure mode — you stop paying per token and start paying whether or not anyone is using it.
+
+| Model | Licence | Total / activated params | Context | Vendor-reported headline |
+| --- | --- | --- | --- | --- |
+| [Kimi K3](../agents/kimi-k3.md) | **Kimi K3 License** (custom) | 2.8T / 16 of 896 experts | 1M | Terminal-Bench 2.1 **88.3**, against GPT-5.6 Sol 88.8 and Fable 5 88.0 |
+| [GLM-5.3](../agents/glm-5.md) | **Apache-2.0** | not published per-variant | 1M (solid, from 5.2) | Open-source SOTA on Terminal Bench 3.0; GLM-5.2 at Terminal-Bench 2.1 **81.0**, SWE-bench Pro **62.1** |
+| [DeepSeek V4-Pro](../agents/deepseek-v4.md) | **MIT** | 1.6T / 49B | 1M | SWE-bench Verified **80.6**, Terminal-Bench 2.0 67.9 |
+| DeepSeek V4-Flash | **MIT** | 284B / 13B | 1M | Reasoning approaching Pro with a larger thinking budget |
+| [Qwen3-Coder-Next](../agents/qwen3-coder.md) | Varies by checkpoint | 80B / ~3B | 256K → 1M (Yarn) | Comparable to Claude Sonnet among open models on agentic coding |
+
+Four things this tier changes about a budget:
+
+1. **The gap at the top is now small enough to argue about.** Moonshot's own comparison puts K3 at 88.3 on Terminal-Bench 2.1 against Sol's 88.8 and Fable 5's 88.0. Treat vendor self-reports as claims — but the claim being *plausible* is itself new.
+2. **Licence is the real axis, not capability.** MIT (DeepSeek), Apache-2.0 (GLM), bespoke (Kimi), and per-checkpoint (Qwen) are four genuinely different legal positions at broadly similar capability. Check the licence before the benchmark.
+3. **Parameter count is a deployment class, not a spec-sheet number.** 2.8T and 1.6T are clusters; Qwen3-Coder-Next's ~3B activated of 80B is a workstation. That difference decides more real deployments than any row above it.
+4. **There is no like-for-like benchmark row, and this page will not fake one.** DeepSeek quotes SWE-bench Verified, Anthropic quotes SWE-bench Pro, OpenAI quotes DeepSWE, Zhipu quotes an in-house bench. They are different measurements; putting them in one sorted column would be the single most misleading thing this page could do.
+
 ## Layer 2 — How Coding Agents Bill
 
 The wrapper's billing model decides who you pay and how predictable the bill is.

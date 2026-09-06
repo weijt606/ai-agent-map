@@ -43,6 +43,25 @@
 - **这张表上最便宜的输出不是用钱付的。** Muse Spark 1.2 的 Contributor 档（输出 $0.20）比两家前沿天花板低 **250 倍**，差价用你 prompt 与 completion 的训练权来结算。对 agent 负载来说，这是账单里占大头那一侧的大幅折扣——也是一个开发者可以在挂着公司仓库的机器上悄悄做掉的披露决策。它还不叠加：60 请求/分的上限对同一次发布主推的并行 subagent 工作流是实打实的限制。可比的数字请用 Standard 档（$1.25 / $4.25）。另外 Muse Code **没有公开仓库**，所以不进本地图的榜单。
 - **前沿价格有一部分是促销价，这让本表成为一份活文档。** Sol 的 8 月降价至少延续到 **2026-11-21**，并让它的输出价低于 Opus 5（$20 对 $25）。任何按促销价做的模型选择，都需要在 **11 月复核**一次。详见 [market-events](../market-events.md)。
 
+### 开放权重这一档
+
+上面那张表算的是 token 的钱。这一档算的是**硬件和许可**，账单形状不同，失效方式也不同——你不再按 token 付费，而是不管有没有人用都要付。
+
+| 模型 | 许可 | 总参数 / 激活 | 上下文 | 厂商自报的头条数字 |
+| --- | --- | --- | --- | --- |
+| [Kimi K3](../agents/kimi-k3.md) | **Kimi K3 License**（自定义） | 2.8T / 896 选 16 | 100 万 | Terminal-Bench 2.1 **88.3**，对比 GPT-5.6 Sol 88.8、Fable 5 88.0 |
+| [GLM-5.3](../agents/glm-5.md) | **Apache-2.0** | 未按变体公布 | 100 万（自 5.2 起"扎实"） | Terminal Bench 3.0 开源 SOTA；GLM-5.2 的 Terminal-Bench 2.1 **81.0**、SWE-bench Pro **62.1** |
+| [DeepSeek V4-Pro](../agents/deepseek-v4.md) | **MIT** | 1.6T / 49B | 100 万 | SWE-bench Verified **80.6**、Terminal-Bench 2.0 67.9 |
+| DeepSeek V4-Flash | **MIT** | 284B / 13B | 100 万 | 给更大思考预算时推理接近 Pro |
+| [Qwen3-Coder-Next](../agents/qwen3-coder.md) | 按 checkpoint 而异 | 80B / 约 3B | 256K → 100 万（Yarn） | 在开源模型的 agentic 编码上与 Claude Sonnet 相当 |
+
+这一档改变预算的四件事：
+
+1. **顶端的差距已经小到可以争论了。** 月之暗面自己的对照把 K3 的 Terminal-Bench 2.1 放在 88.3，对 Sol 的 88.8、Fable 5 的 88.0。厂商自测当作主张看待——但这个主张*站得住*本身就是新情况。
+2. **真正的分界轴是许可，不是能力。** MIT（DeepSeek）、Apache-2.0（GLM）、自定义（Kimi）、按 checkpoint 而异（Qwen），在能力大体相当的情况下是四种实质不同的法律位置。先看许可，再看 benchmark。
+3. **参数量是部署级别，不是规格表上的数字。** 2.8T 和 1.6T 是集群；Qwen3-Coder-Next 的"80B 里激活约 3B"是一台工作站。这个差别决定的真实部署，比它上面任何一行都多。
+4. **不存在同口径的 benchmark 行，本页也不会伪造一个。** DeepSeek 报 SWE-bench Verified，Anthropic 报 SWE-bench Pro，OpenAI 报 DeepSWE，智谱报自家 bench。它们是不同的测量；把它们排进同一列排序，是本页能做的最误导的一件事。
+
 ## 第二层——编码 agent 怎么收费
 
 封装层的计费模型决定了你付钱给谁、账单多可预测。

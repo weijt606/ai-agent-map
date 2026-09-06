@@ -4,6 +4,22 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-09-06 — A fourteenth route: the open-weights model tier
+
+The map's model layer had two closed vendors and nothing else, which left it unable to answer the question underneath half its own entries — [CodeWhale](agents/codewhale.md) runs on DeepSeek and MiMo, [ZCode](agents/zcode.md) runs on GLM, [Kimi Work](agents/kimi-work.md) runs on Kimi. Four new profiles (EN + zh) and a new route, taking the map to 72.
+
+- **New route: Open-weights agentic model.** Separate from *Frontier agentic model* on purpose — "which closed ceiling" and "what can I host and licence myself" are different decisions, and the second one is decided by the licence far more often than by the benchmark.
+- **New [Kimi K3](agents/kimi-k3.md)** — 2.8T parameters, the first open 3T-class model, natively multimodal, 1M context, under a bespoke licence. On Moonshot's own comparison it scores 88.3 on Terminal-Bench 2.1 against GPT-5.6 Sol's 88.8 and Fable 5's 88.0.
+- **New [GLM-5.3](agents/glm-5.md)** (Apache-2.0) — the strongest open-weights coding model on vendor numbers, and the profile that had to state the map's first ungated-dual-use finding: Zhipu reports state-of-the-art vulnerability discovery on CyberGym, with exploitation-chain gains more than double GLM-5.2, under a permissive licence and a download link.
+- **New [DeepSeek V4](agents/deepseek-v4.md)** (MIT) — 1.6T/49B, 1M context, SWE-bench Verified 80.6, plus a 284B/13B Flash variant.
+- **New [Qwen3-Coder](agents/qwen3-coder.md)** — the entry that answers "what fits": ~3B activated of 80B on Next, 256K to 1M context, first-class support in Qwen Code, Cline, and Claude Code.
+
+Structural consequences: [cost & benchmarks](comparisons/cost-and-benchmarks.md) gains an open-weights section that prices **hardware and licences rather than tokens**; [market-events](market-events.md) records the tier reaching the frontier alongside the cyber-capability asymmetry against [GPT-6 Astra](agents/gpt-6-astra.md) and Mythos; the [mainstream landscape](comparisons/mainstream-agent-landscape.md) carries the four rows.
+
+Tooling: `render-route-map.py` now **derives the route count** instead of hardcoding "13 routes" in four strings, so adding a route can no longer leave the SVG title stale.
+
+One refusal worth recording. DeepSeek quotes SWE-bench Verified, Anthropic quotes SWE-bench Pro, OpenAI quotes DeepSWE, Zhipu quotes an in-house benchmark. This release does **not** build the single sorted column those four numbers would make, because they are not the same measurement — each vendor's figure is recorded against that vendor's benchmark and left there.
+
 ## 2026-09-06 — Four backfills: the harness with no core, and China's desktop agent category
 
 A coverage scan found gaps that were not judgment calls but misses. Four new profiles (EN + zh), taking the map to 68:

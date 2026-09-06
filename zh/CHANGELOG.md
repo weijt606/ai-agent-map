@@ -4,6 +4,22 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-09-06 —— 第十四条路线：开放权重模型档
+
+本地图的模型层此前只有两家闭源厂商，于是它回答不了自己一半条目底下的那个问题——[CodeWhale](agents/codewhale.md) 跑 DeepSeek 与 MiMo，[ZCode](agents/zcode.md) 跑 GLM，[Kimi Work](agents/kimi-work.md) 跑 Kimi。新增四个 profile（EN + zh）与一条新路线，收录数到 72。
+
+- **新路线：开放权重 agentic 模型。** 有意与"前沿 agentic 模型"分开——"选哪个闭源天花板"和"我能自己托管、自己承担许可的是什么"是两个决策，而后者由许可决定的次数远多于由 benchmark 决定。
+- **新增 [Kimi K3](agents/kimi-k3.md)** —— 2.8T 参数，首个开放的 3T 级模型，原生多模态，100 万上下文，自定义许可。按月之暗面自己的对照，其 Terminal-Bench 2.1 为 88.3，对 GPT-5.6 Sol 的 88.8 与 Fable 5 的 88.0。
+- **新增 [GLM-5.3](agents/glm-5.md)**（Apache-2.0）—— 按厂商数字最强的开放权重编码模型，也是本地图第一次不得不写下"双用途能力不设闸"这个发现的 profile：智谱称其在 CyberGym 上的漏洞发现是 SOTA，利用链上的增益比 GLM-5.2 翻倍还多，而它带着宽松许可和一个下载链接。
+- **新增 [DeepSeek V4](agents/deepseek-v4.md)**（MIT）—— 1.6T/49B，100 万上下文，SWE-bench Verified 80.6，另有 284B/13B 的 Flash 变体。
+- **新增 [Qwen3-Coder](agents/qwen3-coder.md)** —— 回答"塞得进什么"的那个条目：Next 在 80B 里激活约 3B，256K 到 100 万上下文，在 Qwen Code、Cline、Claude Code 里都有一等支持。
+
+结构性后果：[成本与基准](comparisons/cost-and-benchmarks.md)新增开放权重一节，算的是**硬件与许可而不是 token**；[market-events](market-events.md) 记录这一档追到前沿，以及它与 [GPT-6 Astra](agents/gpt-6-astra.md)、Mythos 之间在网安能力上的不对称；[主流格局](comparisons/mainstream-agent-landscape.md)加上四行。
+
+工具改动：`render-route-map.py` 现在**自动算出路线数**，不再把"13 条路线"写死在四处字符串里，以后加路线不会再让 SVG 标题过期。
+
+有一处"拒绝做"值得记下来。DeepSeek 报 SWE-bench Verified，Anthropic 报 SWE-bench Pro，OpenAI 报 DeepSWE，智谱报自家 benchmark。本次发布**没有**把这四个数字排进同一列——因为它们不是同一种测量；每家的数字都记在它自己的 benchmark 名下，就停在那里。
+
 ## 2026-09-06 —— 四个补漏：没有内核的 harness，以及中国的桌面 agent 品类
 
 一次覆盖面扫描找出的不是"判断结果"而是"漏掉了"的缺口。新增四个 profile（EN + zh），收录数到 68：

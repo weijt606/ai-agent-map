@@ -4,6 +4,20 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-09-06 —— 覆盖面审计：五个本地图早就在依赖的 profile
+
+这次做的是完整覆盖扫描而不是周差异。新增五个 profile（EN + zh）与第十五条路线，收录数到 77——而这些遗漏共享一个值得点名的模式。
+
+- **新增 [OpenCode](agents/opencode.md)**（`anomalyco/opencode`，MIT，**20.5 万 star**）—— 在五个既有 profile 里被点名为集成对象，却从来没有自己的页面。它是现存体量最大的厂商中立编码 agent，也是 [QM](agents/qm.md) 与 [Omnigent](agents/omnigent.md) 和 Claude Code、Codex 并列驱动的那个。
+- **新增 [Gemini CLI](agents/gemini-cli.md)**（Apache-2.0，10.7 万）—— 顺带纠正一个事实错误：[market-events](market-events.md) 在 8 月写了 Meta"补上第一方编码 CLI 阵营的最后一块"，而谷歌那一个从来就没进过这个阵营。它也是这里唯一一个免费档真能干活的 CLI——每天 1,000 次请求——并把谷歌搜索接地做成内置工具。
+- **新增 [Browser Use](agents/browser-use.md)**（MIT，11.3 万）—— 开出**新路线：浏览器 agent**。本地图此前已经把浏览器自动化记为 [Kimi Work](agents/kimi-work.md) 的头条功能、把 Claude in Chrome 取消逐动作审批记在案，却没有一条覆盖这项能力本身的路线。
+- **新增 [Microsoft Agent Framework](agents/microsoft-agent-framework.md)**（MIT）—— 按微软自己的声明，AutoGen 处于**维护模式**，所以 profile 给继任者，AutoGen 记在它里面。[命名说明](agents/README.md)里写下新政策：维护模式的项目不单独收录，因为一个 profile 会被读成当前推荐。
+- **新增 [Qwen Code](agents/qwen-code.md)**（Apache-2.0）—— 与 [Qwen3-Coder](agents/qwen3-coder.md) 配成一对；它是这里唯一一个客户端与权重两层都开放的第一方 CLI。
+
+作为流程记录写进 [market-events](market-events.md) 的那个发现：**一个项目可以在本地图自己的正文里变成承重结构，却从未走过它的收录流程。** 交叉引用不等于覆盖。
+
+另外：[编码 CLI 对比](comparisons/coding-cli-agents.md)加三行并重写了"从你想跑的模型出发"那一步；[命名说明](agents/README.md)现在记下了 `sst/opencode` → `anomalyco/opencode` 的迁移、AutoGen 的继承关系、GLM 一仓多版本的形态，以及 `claude-fable-5.md` 为什么保留原路径。两张路线图 SVG 重生成为 15 条路线 / 77 个 profile，三处计数全部对齐。
+
 ## 2026-09-06 —— 第十四条路线：开放权重模型档
 
 本地图的模型层此前只有两家闭源厂商，于是它回答不了自己一半条目底下的那个问题——[CodeWhale](agents/codewhale.md) 跑 DeepSeek 与 MiMo，[ZCode](agents/zcode.md) 跑 GLM，[Kimi Work](agents/kimi-work.md) 跑 Kimi。新增四个 profile（EN + zh）与一条新路线，收录数到 72。

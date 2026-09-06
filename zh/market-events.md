@@ -42,6 +42,20 @@
 
 来源：[DeepSeek-V4-Pro 模型卡](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)、[DeepSeek V4 发布说明](https://api-docs.deepseek.com/news/news260424/)、[MoonshotAI/Kimi-K3](https://github.com/MoonshotAI/Kimi-K3)、[Kimi K3 技术博客](https://www.kimi.com/blog/kimi-k3)、[zai-org/GLM-5](https://github.com/zai-org/GLM-5)、[GLM-5.3 博客](https://z.ai/blog/glm-5.3)、[QwenLM/Qwen3-Coder](https://github.com/QwenLM/Qwen3-Coder)。
 
+## 2026-09-06 —— 一次覆盖面审计，以及它查出来的缺口（流程记录）
+
+本地图这次跑的不是例行周差异，而是一次完整覆盖扫描；结果值得作为事件发布，因为这些遗漏共享同一个模式。
+
+**其中三个在本地图自己的正文里是承重结构。** [OpenCode](agents/opencode.md)（20.5 万 star，MIT）在五个 profile 里被点名为集成对象——[QM](agents/qm.md)、[Omnigent](agents/omnigent.md)、[Superpowers](agents/superpowers.md)、[CodeGraph](agents/codegraph.md)、[Open Code Review](agents/open-code-review.md)——却没有自己的页面。[Gemini CLI](agents/gemini-cli.md)（10.7 万，Apache-2.0）一直缺着，而本页 8 月还写着 Meta"补上第一方编码 CLI 阵营的最后一块"；那个阵营从来就没补齐过，因为谷歌那一个压根没进去过。[Browser Use](agents/browser-use.md)（11.3 万，MIT）连路线都没有——而本地图此前已经记录过浏览器自动化是 [Kimi Work](agents/kimi-work.md) 的头条功能、以及 Claude in Chrome 取消了逐动作审批。
+
+**其中一个是过期推荐。** 按微软自己 README 里的声明，`microsoft/autogen`（6.08 万）处于**维护模式**——不再有新功能、由社区管理、新用户被指向 [Microsoft Agent Framework](agents/microsoft-agent-framework.md) 并附迁移指南。一个 profile 意味着一次当前推荐，所以条目给继任者，AutoGen 记在它里面。
+
+**还有一个是补上一对。** [Qwen Code](agents/qwen-code.md)（2.77 万，Apache-2.0）是本地图同一周收录的那批开放权重的配套循环，也是这里唯一一个两层都开放的第一方 CLI。
+
+**对选型的影响：** 有用的发现是那个失效模式，不是这份清单。**一个项目可以在一张选型地图自己的正文里变成承重结构，却从未走过它的收录流程**——在一个又一个 profile 里被当作基础设施引用，却从未被当作候选评估过。交叉引用不等于覆盖。由此有两个结构性后果。新增一条**浏览器 agent** 路线，因为"允许一个 agent 以你的身份、在你已登录的浏览器里、在开放互联网上做什么"和"agent 怎么改文件"是两个问题——它后面的候补是 Stagehand（MIT）与 Skyvern（AGPL-3.0）。以及，本地图从现在起把*维护模式*视为不可收录，因为另一种做法是发布厂商自己已经撤回的推荐。
+
+来源：[anomalyco/opencode](https://github.com/anomalyco/opencode)、[google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)、[browser-use/browser-use](https://github.com/browser-use/browser-use)、[microsoft/agent-framework](https://github.com/microsoft/agent-framework)、[AutoGen 维护模式声明](https://github.com/microsoft/autogen)、[QwenLM/qwen-code](https://github.com/QwenLM/qwen-code)。
+
 ## 2026-08-31 —— Meta 给 Muse Code 定价，顺便把你的 prompt 摆上了菜单
 
 **Meta 于 2026 年 8 月 31 日把 [Muse Code](https://thenewstack.io/muse-code-sdk-pricing/) 转正**，距 8 月 5 日的 beta 不到一个月，而这次公告几乎全是关于价格与触达，不是关于循环本身。三档订阅上线，**从每月 $5 到 $50**。一个**开发者预览版 SDK** 把这个 agent 从命令行里带了出来：按 Mark Zuckerberg 的说法，开发者可以在 Muse Code 之上造自己的 agent——嵌进应用、接自定义工具、流式看进度、恢复会话。运行时本身也长出了长任务真正需要的部分：**会话间消息传递，让并行的 agent 直接共享状态**而不是靠人来回粘贴；把一个任务拆给多个 subagent 的工作流；以及**跑在独立 git worktree 里的 subagent**。它仍然是 macOS 或 Linux 上一条命令装好，仍然没有图形界面和 IDE 集成。

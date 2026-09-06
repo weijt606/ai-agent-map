@@ -12,7 +12,7 @@
 
 | 路线 | 代表项目 | 适合谁 |
 | --- | --- | --- |
-| 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Kimi Code](kimi-code.md), [MiMoCode](mimocode.md), [CodeWhale](codewhale.md), [ZCode](zcode.md), [Grok Build](grok-build.md), [Devin](devin.md), [Jules](jules.md) | 想直接把 coding 任务交给 agent（在[终端编码 CLI agent](../comparisons/coding-cli-agents.md) 里对比） |
+| 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Kimi Code](kimi-code.md), [MiMoCode](mimocode.md), [CodeWhale](codewhale.md), [ZCode](zcode.md), [OpenCode](opencode.md), [Gemini CLI](gemini-cli.md), [Qwen Code](qwen-code.md), [Grok Build](grok-build.md), [Devin](devin.md), [Jules](jules.md) | 想直接把 coding 任务交给 agent（在[终端编码 CLI agent](../comparisons/coding-cli-agents.md) 里对比） |
 | Agent harness 框架 | [DeepSeek Harness](deepseek-harness.md), [Pi](pi.md), [jcode](jcode.md), [OpenHands](openhands.md), [SWE-agent](swe-agent.md), [mini-swe-agent](mini-swe-agent.md), [OpenHarness](openharness.md), [QM](qm.md), [Omnigent](omnigent.md), [TrueForge](trueforge.md) | 想自己掌控 loop、工具表面和权限，不直接接受厂商成品（QM 和 Omnigent 在一层之下同时跑多个 harness） |
 | 前沿 agentic 模型 | [Claude Fable 5.1](claude-fable-5.md)、[Claude Opus 5](claude-opus-5.md)、[GPT-6 Astra](gpt-6-astra.md)、[GPT-5.5](gpt-5.5.md) | 在选要接入自己 agent 系统的模型，或在评估 Anthropic / OpenAI 系 agent 能力上限——天花板与其下的默认档是两个独立决策 |
 | 开放权重 agentic 模型 | [Kimi K3](kimi-k3.md)、[GLM-5.3](glm-5.md)、[DeepSeek V4](deepseek-v4.md)、[Qwen3-Coder](qwen3-coder.md) | 想在自己托管、自己承担许可的权重上拿到前沿级能力的人；这几个之间，许可的差别比 benchmark 的差别更大 |
@@ -21,8 +21,9 @@
 | 编辑器中心工作流 | [Cursor](cursor.md), [Windsurf](windsurf.md), [Continue](continue.md) | 想让编辑器本身成为 agent 主表面 |
 | review-first 自动化 | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md), [CoStrict](costrict.md), [Open Code Review](open-code-review.md) | 想把 review 和人工节奏留在核心（CoStrict 瞄准企业严格流程 + 私有化部署；Open Code Review 只做评审，为 CI 里的准确率调优） |
 | 通用自主 agent | [AutoGPT](autogpt.md), [Agent Zero](agent-zero.md), [BabyAGI](babyagi.md), [Julep](julep.md), [GenericAgent](generic-agent.md), [ml-intern](ml-intern.md), [WorkBuddy](workbuddy.md), [Kimi Work](kimi-work.md) | 想要通用自主任务执行（ml-intern 是 ML 工程取向的特化版） |
-| 自建平台 | [LangChain](langchain.md), [LangGraph](langgraph.md), [CrewAI](crewai.md), [LlamaIndex](llamaindex.md), [Haystack](haystack.md), [Semantic Kernel](semantic-kernel.md), [DSPy](dspy.md), [Pydantic AI](pydantic-ai.md), [eve](eve.md) | 想自己搭 agent system（eve 是其中唯一自带渠道、定时、沙箱与审批闸门的） |
+| 自建平台 | [LangChain](langchain.md), [LangGraph](langgraph.md), [CrewAI](crewai.md), [LlamaIndex](llamaindex.md), [Haystack](haystack.md), [Semantic Kernel](semantic-kernel.md), [DSPy](dspy.md), [Pydantic AI](pydantic-ai.md), [eve](eve.md), [Microsoft Agent Framework](microsoft-agent-framework.md) | 想自己搭 agent system（eve 是其中唯一自带渠道、定时、沙箱与审批闸门的） |
 | 运行时 & 工具 | [n8n](n8n.md), [MemGPT](memgpt.md), [Open Interpreter](open-interpreter.md), [LiteLLM](litellm.md), [Flowise](flowise.md), [CodeGraph](codegraph.md), [CLI-Anything](cli-anything.md) | 需要工作流自动化、代码执行、LLM 网关、agent 上下文基础设施、agent 驱动 CLI 或可视化构建器 |
+| 浏览器 agent | [Browser Use](browser-use.md) | 任务活在没有 API 的网站上的人；选型问题是"允许一个 agent 以你的身份在开放互联网上做什么" |
 | 自托管 / 本地 runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md), [Mercury Agent](mercury-agent.md), [OpenHuman](openhuman.md) | 需要端侧隐私、本地控制、扩展、渠道、runtime ownership 或个人数据生活集成 |
 | 管理式后台路径 | [Claude Managed Agents](claude-managed-agents.md) | 需要云端、定时、后台执行 |
 
@@ -107,6 +108,11 @@
 | [GLM-5.3](glm-5.md) | model / 开放权重 | 是（Apache-2.0） | 按厂商数字最强的开放权重编码模型；网安能力不设闸 | 已按仓库 README 与 Z.ai 博客核验 |
 | [DeepSeek V4](deepseek-v4.md) | model / 开放权重 | 是（MIT） | 1.6T / 激活 49B，100 万上下文，SWE-bench Verified 80.6 | 已按 Hugging Face 模型卡与 DeepSeek API 公告核验 |
 | [Qwen3-Coder](qwen3-coder.md) | model / 开放权重 | 权重开放，许可按 checkpoint 而异 | 效率首选——Next 在 80B 里激活约 3B | 已按仓库 README 核验；许可不代为断言 |
+| [OpenCode](opencode.md) | execution | 是 | 厂商中立的开源编码 agent，20.5 万 star | 已按仓库核验；注意 sst → anomalyco 的迁移 |
+| [Gemini CLI](gemini-cli.md) | execution | 是 | 谷歌终端 agent，每天 1,000 次免费额度，内置搜索接地 | 已按仓库 README 核验 |
+| [Qwen Code](qwen-code.md) | execution | 是 | 客户端与权重都开放；多协议且可运行时切换 | 已按仓库 README 核验 |
+| [Browser Use](browser-use.md) | browser | 是 | 把真浏览器交给 agent——浏览器 agent 路线的第一个条目 | 已按仓库 README 核验 |
+| [Microsoft Agent Framework](microsoft-agent-framework.md) | platform | 是 | AutoGen 的继任者；Python / .NET / Go 上的生产级多 agent 工作流 | 已按仓库 README 与 AutoGen 维护模式声明核验 |
 | [DeepSeek Harness](deepseek-harness.md) | harness | 是 | 一切皆插件的 agent harness；连 agent 循环本身都能从配置里替换 | 已按仓库 README 与架构文档核验 |
 | [ZCode](zcode.md) | execution | 否 | 智谱的桌面 agentic 开发环境，GLM 优先，带长周期 “Goal” 任务 | 已按官网核验；第三方后端支持标注为“据报” |
 | [WorkBuddy](workbuddy.md) | autonomous | 否 | 腾讯的桌面办公 agent，产出文档、幻灯片与表格 | 已按官方产品页核验；市场数字为二手 |
@@ -151,3 +157,8 @@
 ## 命名说明
 
 如果项目名称、定位或官方公开边界本身就有歧义，这个目录会直接把歧义写出来，而不是假装已经核验清楚。
+
+- **[OpenCode](opencode.md)** —— 仓库已从 `sst/opencode` 迁到 **`anomalyco/opencode`**。旧路径仍会重定向，star 历史连续；Homebrew tap 与 Nix flake 都指向新组织。同一个项目。
+- **[Microsoft Agent Framework](microsoft-agent-framework.md) 与 AutoGen** —— 按微软自己的声明，`microsoft/autogen` 处于**维护模式**，并把新用户指向 Agent Framework。本目录收录继任者，把 AutoGen 记在那一页里，而不是给一个维护模式的项目一个会被读成"当前推荐"的条目。
+- **[GLM-5.3](glm-5.md)** —— 一个仓库（`zai-org/GLM-5`）发布整条 GLM-5 线（5、5.1、5.2、5.3、5.3-Flash），所以 profile 覆盖整个系列，标题用当前版本。
+- **[Claude Fable 5.1](claude-fable-5.md)** —— 文件沿用 2026 年 6 月首次收录时的 `claude-fable-5.md` 路径以免既有链接失效，而页面内容覆盖当前的 5.1。

@@ -22,6 +22,9 @@
 | --- | --- | --- | --- | --- |
 | [Claude Code](../agents/claude-code.md) | Anthropic | Claude（Opus / Sonnet） | 闭源 | 参考实现——最深的 IDE/桌面/web 触达，最丰富的 skills + 插件生态 |
 | [Codex](../agents/codex.md) | OpenAI | GPT-5.x | CLI 开源 | 在同一产品表面把终端循环和隔离云端委派、并行 agent 结合 |
+| [OpenCode](../agents/opencode.md) | Anomaly Co（社区） | 自带 | TypeScript / MIT | 体量最大的厂商中立循环——20.5 万 star，也是别的 harness 架在上面的那个 |
+| [Gemini CLI](../agents/gemini-cli.md) | 谷歌 | Gemini 3 | TypeScript / Apache-2.0 | 够干活的免费档——每天 1,000 次请求——且内置谷歌搜索接地 |
+| [Qwen Code](../agents/qwen-code.md) | 阿里 / Qwen | Qwen（可运行时切换） | TypeScript / Apache-2.0 | 客户端与权重*都*开放，能说 OpenAI/Anthropic/Gemini/本地协议 |
 | [Aider](../agents/aider.md) | 开源 | 自带模型 | Python / Apache-2.0 | 以 git 为中心、显式 diff、完全的模型自由 |
 | [Kimi Code](../agents/kimi-code.md) | Moonshot AI | Kimi（K2） | TypeScript / MIT | 第一方 Kimi 循环，通过 ACP + VS Code 插件有强 IDE 触达 |
 | [MiMoCode](../agents/mimocode.md) | 小米 | MiMo（MiMo Auto） | TypeScript / MIT | 内置持久跨会话记忆——跨多次运行保留项目理解 |
@@ -34,7 +37,7 @@
 
 ## 怎么选
 
-1. **从你想跑的模型出发。** 如果你绑定某厂商的模型，它的第一方 CLI 通常是调得最好的路径：Claude → [Claude Code](../agents/claude-code.md)，GPT-5.x → [Codex](../agents/codex.md)，Kimi → [Kimi Code](../agents/kimi-code.md)，MiMo → [MiMoCode](../agents/mimocode.md)，Grok → [Grok Build](../agents/grok-build.md)，想省钱跑 DeepSeek/MiMo → [CodeWhale](../agents/codewhale.md)。
+1. **从你想跑的模型出发。** 如果你绑定某厂商的模型，它的第一方 CLI 通常是调得最好的路径：Claude → [Claude Code](../agents/claude-code.md)，GPT-5.x → [Codex](../agents/codex.md)，Gemini → [Gemini CLI](../agents/gemini-cli.md)，Kimi → [Kimi Code](../agents/kimi-code.md)，Qwen → [Qwen Code](../agents/qwen-code.md)，MiMo → [MiMoCode](../agents/mimocode.md)，Grok → [Grok Build](../agents/grok-build.md)，想省钱跑 DeepSeek/MiMo → [CodeWhale](../agents/codewhale.md)。如果你**没有**绑定，[OpenCode](../agents/opencode.md) 是厂商中立的默认，[Gemini CLI](../agents/gemini-cli.md) 是那个免费档真能干活的。
 2. **如果模型自由比调优更重要，** 选 provider 中立的底座：要成品 CLI 就用 [Aider](../agents/aider.md)，想拥有循环就上 [Pi](../agents/pi.md) harness。
 3. **如果单仓库长程记忆是痛点，** [MiMoCode](../agents/mimocode.md) 内置的跨会话记忆是最清晰的差异点；否则给任意 CLI 配上 [CodeGraph](../agents/codegraph.md) 做代码上下文索引。
 4. **如果你需要云端委派或后台运行，** 这些前台循环都不合适——去 [Codex](../agents/codex.md)（云端那侧）、[Jules](../agents/jules.md) 或 [Devin](../agents/devin.md)。

@@ -465,5 +465,50 @@
     "profile": "agents/deepseek-harness.md",
     "scope": "in",
     "tracked": false
+  },
+  "anomalyco/opencode": {
+    "display": "OpenCode",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/opencode.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "google-gemini/gemini-cli": {
+    "display": "Gemini CLI",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/gemini-cli.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "qwenlm/qwen-code": {
+    "display": "Qwen Code",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/qwen-code.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "browser-use/browser-use": {
+    "display": "Browser Use",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/browser-use.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "microsoft/agent-framework": {
+    "display": "Microsoft Agent Framework",
+    "category": "infra",
+    "vertical": null,
+    "group": "framework",
+    "profile": "agents/microsoft-agent-framework.md",
+    "scope": "in",
+    "tracked": false
   }
 }

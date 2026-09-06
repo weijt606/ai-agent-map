@@ -4,6 +4,20 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-09-06 — Coverage audit: five profiles the map was already relying on
+
+A full coverage scan rather than a weekly diff. Five new profiles (EN + zh) and a fifteenth route, taking the map to 77 — and the misses share a pattern worth naming.
+
+- **New [OpenCode](agents/opencode.md)** (`anomalyco/opencode`, MIT, **205k stars**) — named as an integration target in five existing profiles without ever having a page. The largest vendor-neutral coding agent in existence, and the one [QM](agents/qm.md) and [Omnigent](agents/omnigent.md) drive alongside Claude Code and Codex.
+- **New [Gemini CLI](agents/gemini-cli.md)** (Apache-2.0, 107k) — corrects a factual error: [market-events](market-events.md) claimed in August that Meta had "closed the first-party coding-CLI field" while Google's entry had never been in it. Also the only CLI here with a free tier you can work on — 1,000 requests/day — and Google Search grounding as a built-in tool.
+- **New [Browser Use](agents/browser-use.md)** (MIT, 113k) — opens a **new route, Browser agent**. The map had recorded browser automation as a headline feature of [Kimi Work](agents/kimi-work.md) and per-action approval disappearing in Claude in Chrome, while having no route for the capability itself.
+- **New [Microsoft Agent Framework](agents/microsoft-agent-framework.md)** (MIT) — AutoGen is in **maintenance mode** by Microsoft's own notice, so the profile goes to the successor and AutoGen is recorded inside it. New policy stated in [Naming Notes](agents/README.md): maintenance mode disqualifies a project from its own entry, because a profile reads as a current recommendation.
+- **New [Qwen Code](agents/qwen-code.md)** (Apache-2.0) — completes the pair with [Qwen3-Coder](agents/qwen3-coder.md); the only first-party CLI here that is open at both the client and the weights.
+
+The finding, recorded in [market-events](market-events.md) as a process note: **a project can become load-bearing in this map's own text without ever clearing its inclusion process.** Cross-references are not coverage.
+
+Also: [coding CLI agents](comparisons/coding-cli-agents.md) gains three rows and a rewritten "start from your model" step; [Naming Notes](agents/README.md) now records the `sst/opencode` → `anomalyco/opencode` move, the AutoGen succession, the GLM series-in-one-repo shape, and why `claude-fable-5.md` keeps its path. Both route-map SVGs regenerate at 15 routes / 77 profiles, and all three count locations reconcile.
+
 ## 2026-09-06 — A fourteenth route: the open-weights model tier
 
 The map's model layer had two closed vendors and nothing else, which left it unable to answer the question underneath half its own entries — [CodeWhale](agents/codewhale.md) runs on DeepSeek and MiMo, [ZCode](agents/zcode.md) runs on GLM, [Kimi Work](agents/kimi-work.md) runs on Kimi. Four new profiles (EN + zh) and a new route, taking the map to 72.

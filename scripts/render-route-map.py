@@ -34,7 +34,7 @@ CARD_BORDER = "rgba(11,11,11,0.12)"
 # route: (name_en, name_zh, [shown projects], total_profiles)
 GROUPS = [
     ("Use an agent on your code", "让 agent 直接上手你的代码", "#2a78d6", [
-        ("Direct execution", "直接执行", ["Claude Code", "Codex", "Grok Build", "ZCode"], 10),
+        ("Direct execution", "直接执行", ["Claude Code", "Codex", "OpenCode", "Gemini CLI"], 13),
         ("Editor-centric AI workflow", "编辑器中心", ["Cursor", "Windsurf", "Continue"], 3),
         ("Review-first automation", "评审优先自动化", ["Cline", "GitHub Copilot"], 5),
         ("Workflow / orchestration layer", "工作流编排层", ["oh-my-claudecode", "oh-my-codex", "Ruflo"], 3),
@@ -46,9 +46,10 @@ GROUPS = [
         ("General-purpose autonomous agent", "通用自主 agent", ["AutoGPT", "WorkBuddy", "Kimi Work"], 8),
     ]),
     ("Build your own", "自建与基础设施", "#1baf7a", [
-        ("Build-your-own system", "自建系统", ["LangChain", "LangGraph", "eve"], 9),
+        ("Build-your-own system", "自建系统", ["LangChain", "LangGraph", "Agent Framework"], 10),
         ("Runtime and tools", "运行时 & 工具", ["n8n", "MemGPT", "CodeGraph"], 7),
         ("Observability and evals", "观测与评估", ["Langfuse"], 1),
+        ("Browser agent", "浏览器 agent", ["Browser Use"], 1),
     ]),
     ("The model & skill layer", "模型与技能层", "#4a3aa7", [
         ("Frontier agentic model", "前沿 agentic 模型", ["Claude Fable 5.1", "Claude Opus 5", "GPT-6 Astra"], 4),

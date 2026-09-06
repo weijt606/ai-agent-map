@@ -22,6 +22,9 @@ In scope: foreground, single-developer terminal loops whose primary job is writi
 | --- | --- | --- | --- | --- |
 | [Claude Code](../agents/claude-code.md) | Anthropic | Claude (Opus / Sonnet) | Proprietary | The reference implementation — deepest IDE/desktop/web reach and the richest skills + plugin ecosystem |
 | [Codex](../agents/codex.md) | OpenAI | GPT-5.x | Open source CLI | Pairs a terminal loop with isolated cloud delegation and parallel agents on the same product surface |
+| [OpenCode](../agents/opencode.md) | Anomaly Co (community) | Bring your own | TypeScript / MIT | The largest vendor-neutral loop — 205k stars, and the one other harnesses build on |
+| [Gemini CLI](../agents/gemini-cli.md) | Google | Gemini 3 | TypeScript / Apache-2.0 | A free tier you can work on — 1,000 requests/day — with Google Search grounding built in |
+| [Qwen Code](../agents/qwen-code.md) | Alibaba / Qwen | Qwen (switchable at runtime) | TypeScript / Apache-2.0 | Open client *and* open weights, speaking OpenAI/Anthropic/Gemini/local protocols |
 | [Aider](../agents/aider.md) | Open source | Bring your own | Python / Apache-2.0 | Git-centered loop with explicit diffs and total model freedom |
 | [Kimi Code](../agents/kimi-code.md) | Moonshot AI | Kimi (K2) | TypeScript / MIT | First-party Kimi loop with strong IDE reach via ACP + a VS Code extension |
 | [MiMoCode](../agents/mimocode.md) | Xiaomi | MiMo (MiMo Auto) | TypeScript / MIT | Persistent cross-session memory built in — keeps project understanding across runs |
@@ -34,7 +37,7 @@ In scope: foreground, single-developer terminal loops whose primary job is writi
 
 ## How To Choose
 
-1. **Start from the model you want to run.** If you are committed to a vendor's models, its first-party CLI is usually the best-tuned path: Claude → [Claude Code](../agents/claude-code.md), GPT-5.x → [Codex](../agents/codex.md), Kimi → [Kimi Code](../agents/kimi-code.md), MiMo → [MiMoCode](../agents/mimocode.md), Grok → [Grok Build](../agents/grok-build.md), DeepSeek/MiMo on a budget → [CodeWhale](../agents/codewhale.md).
+1. **Start from the model you want to run.** If you are committed to a vendor's models, its first-party CLI is usually the best-tuned path: Claude → [Claude Code](../agents/claude-code.md), GPT-5.x → [Codex](../agents/codex.md), Gemini → [Gemini CLI](../agents/gemini-cli.md), Kimi → [Kimi Code](../agents/kimi-code.md), Qwen → [Qwen Code](../agents/qwen-code.md), MiMo → [MiMoCode](../agents/mimocode.md), Grok → [Grok Build](../agents/grok-build.md), DeepSeek/MiMo on a budget → [CodeWhale](../agents/codewhale.md). If you are *not* committed, [OpenCode](../agents/opencode.md) is the vendor-neutral default and [Gemini CLI](../agents/gemini-cli.md) is the one with a free tier you can actually work on.
 2. **If model freedom matters more than tuning,** pick a provider-neutral base: [Aider](../agents/aider.md) for a finished CLI, or step up to the [Pi](../agents/pi.md) harness if you want to own the loop.
 3. **If long-horizon memory on one repo is the pain point,** [MiMoCode](../agents/mimocode.md)'s built-in cross-session memory is the clearest differentiator; otherwise pair any CLI with [CodeGraph](../agents/codegraph.md) for code-context indexing.
 4. **If you need cloud delegation or background runs,** none of these foreground loops fit — go to [Codex](../agents/codex.md) (cloud side), [Jules](../agents/jules.md), or [Devin](../agents/devin.md).

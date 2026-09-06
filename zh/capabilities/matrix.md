@@ -27,7 +27,7 @@
 
 这一套正分阶段推进；[jcode](../agents/jcode.md) 的记忆格子已跑通全流程作为模板——下表它的 `Mem` 符号链到它的记录。schema、记忆子 schema 和分阶段计划见 **[证据记录](evidence-records.md)**。schema 出自 [u/teugent](https://www.reddit.com/r/AI_Agents/comments/1v56023/)。
 
-## 终端编码 CLI
+## 直接执行型 agent（终端与桌面）
 
 | 项目 | Tool | Exec | Mem | Orch | Multi | Appr | Sched | Surf | Deploy |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -38,8 +38,14 @@
 | [MiMoCode](../agents/mimocode.md) | ● | ● | ● | ○ | — | ◐ | — | ○ | ◐ |
 | [CodeWhale](../agents/codewhale.md) | ● | ● | ○ | ○ | — | ◐ | — | ○ | ◐ |
 | [Grok Build](../agents/grok-build.md) | ● | ● | ○ | ◐ | — | ◐ | ○ | ◐ | ◐ |
+| [OpenCode](../agents/opencode.md) | ● | ● | ○ | ◐ | ○ | ◐ | — | ◐ | ● |
+| [Gemini CLI](../agents/gemini-cli.md) | ● | ● | ○ | ○ | — | ◐ | — | ◐ | ◐ |
+| [Qwen Code](../agents/qwen-code.md) | ● | ● | ◐ | ◐ | ◐ | ◐ | — | ● | ● |
+| [ZCode](../agents/zcode.md) | ● | ● | ◐ | ◐ | ◐ | ◐ | ○ | ● | ○ |
 
-看点：Claude Code 和 Codex 的**交互面**最广；Codex 在这组里唯一强在**多 agent**（并行云端 agent）；MiMoCode 是唯一把**记忆**当招牌的 CLI；Aider 在显式 diff 的**人工审批**上领先。Grok Build 是最新加入的一个，在厂商 CLI 里**工具调用** + **代码执行**这对组合最强（MCP、skills、插件、hooks、沙箱、工作区 checkpoint），但注意它的**部署控制**分数对应的是一棵源码可见、却不接受贡献的树。
+看点：Claude Code 和 Codex 的**交互面**最广；Codex 在这组里唯一强在**多 agent**（并行云端 agent）；MiMoCode 和 Qwen Code 是把**记忆**当招牌的两个；Aider 在显式 diff 的**人工审批**上领先。Grok Build 是最新加入的一个，在厂商 CLI 里**工具调用** + **代码执行**这对组合最强（MCP、skills、插件、hooks、沙箱、工作区 checkpoint），但注意它的**部署控制**分数对应的是一棵源码可见、却不接受贡献的树。
+
+2026-09-06 新增四行，而真正把它们分开的那一列是**部署控制**。[OpenCode](../agents/opencode.md) 拿 ●，因为它是 MIT、且不属于任何模型厂商——这也正是别的 harness 愿意架在它上面的原因。[Qwen Code](../agents/qwen-code.md) 同样是 ●，并且是这一组里**交互面**最宽的一行（终端、IDE 插件、桌面、daemon 模式、SDK，以及四个 IM 平台），因为它的客户端*和*权重都开放，还能在运行时换厂商。[Gemini CLI](../agents/gemini-cli.md) 是 ◐：Apache-2.0 的客户端，但绑死一家的模型，而且限流的免费档对无人值守运行是实打实的约束。[ZCode](../agents/zcode.md) 是 ○——闭源桌面客户端——它也是这一组里**唯一不是终端 CLI** 的条目：它的主对象是一个长跑的 “Goal”，你从微信、飞书或 Telegram 上去看它，这也是为什么在**调度**上它是 ○，而那些终端循环干脆是 —。
 
 ## 自己掌控循环的 harness 框架
 
@@ -54,12 +60,15 @@
 | [QM](../agents/qm.md) | ◐ | ● | ● | ● | ◐ | ● | ● | ● | ● |
 | [Omnigent](../agents/omnigent.md) | ● | ● | ○ | ● | ● | ● | ○ | ● | ● |
 | [TrueForge](../agents/trueforge.md) | ● | ● | ○ | ● | ◐ | ● | — | ◐ | ● |
+| [DeepSeek Harness](../agents/deepseek-harness.md) | ● | ● | ○ | ● | ◐ | ● | — | ● | ● |
 
 看点：整条路线由**部署控制**定义（你拥有循环）。jcode 是唯一把**记忆**当招牌的 harness（被动语义图谱——见[记忆方案](../comparisons/memory-approaches.md)）；OpenHands 和 OpenHarness 的**编排**最重。
 
 两个元 harness 打分面很宽，因为它们补的正是单循环 harness 刻意不做的那一层——而且两者分得很干净。[QM](../agents/qm.md) 是这条路线上唯一把**记忆**、**调度**和**交付表面**同时做成核心的，因为每个作用域自带记忆、cron 以及 Slack/web 的存在感；它的**工具使用**故意只给 ◐（工具面小而固定，靠 skill 扩展而不是靠铺广度）。[Omnigent](../agents/omnigent.md) 则在**多 agent** 上领先——在一个会话里混用多个 harness，包括让一个去评审另一个——而两者都靠策略引擎（而不是逐次编辑弹窗）把**人工审批**做成核心。读这两行时请带上成熟度：QM 才几天大，Omnigent 自标 alpha，所以这些分反映的是它们声明的设计重心，不是实战验证过的行为。
 
 [TrueForge](../agents/trueforge.md) 是第三种形态：只有一个循环，但把它当成挂在 HTTP API 后面的服务端来跑。它在**工具使用**和**代码执行**上打分像单循环 harness，在**编排**和**人工审批**上打分像元 harness（这两项在它这里是产品界面，不是调试提示），并且拿到这条路线惯常的**部署控制** ●——它是 MIT、设计上就自托管。两个空格正是它的形状：**完全没有定时原语**，以及**交付面**止步于聊天 UI、API 和一个可嵌入组件，而不是渠道适配器。它的**记忆** ○ 是有意的：持久化会话与压缩属于持久性和上下文工程，不是跨会话学习。成熟度提醒同上——公开六周，版本还是 0.x 的 release candidate。
+
+[DeepSeek Harness](../agents/deepseek-harness.md) 又是第四种形态，它这一行在你知道原因之前会显得奇怪：它在**编排**、**人工审批**、**交互面**上都是 ●，不是因为它比上面那些循环功能更多，而是因为这三样都是*基础层里的插件*而非产品决策——agent 循环本身可以从配置替换，审批与沙箱策略住在共享的 `dsh-base` bundle 里，而同一套代码能产出 Web UI、headless 运行器、JSON-RPC SDK 和 ACP server。它的**记忆** ○ 和 TrueForge 是同一个判断：append-only 的会话日志是持久性，不是学习。**调度**空着是因为它根本没有调度原语。每一个格子都要对着项目自己贴的标签读——developer preview，且明说会有破坏兼容性的变更。
 
 ## 编辑器中心 & 评审优先
 
@@ -106,10 +115,13 @@
 | [CrewAI](../agents/crewai.md) | ● | ◐ | ◐ | ● | ● | ○ | ○ | — | ● |
 | [LlamaIndex](../agents/llamaindex.md) | ◐ | ○ | ◐ | ◐ | ◐ | ○ | ○ | — | ● |
 | [eve](../agents/eve.md) | ● | ● | ◐ | ● | ● | ● | ● | ● | ◐ |
+| [Microsoft Agent Framework](../agents/microsoft-agent-framework.md) | ● | ◐ | ◐ | ● | ● | ◐ | ○ | — | ● |
 
 看点：库这一批里，LangGraph 在持久**记忆**和**多 agent**状态上最强；LlamaIndex 的记忆是数据/检索，不是对话。
 
 [eve](../agents/eve.md) 是打破这一组形态的那一行，值得当作对照来读。它上面的每一个在**交互面**上都是 **—**，因为库不决定 agent 最后出现在哪里；eve 自带八个以上渠道适配器，所以它是这里唯一一个**交互面**、**定时**、**人工审批**同时为核心的条目（`needsApproval` 能让一次运行无限期暂停且不耗算力）。它的**代码执行** ● 指的是每个 agent 一个沙箱，不是一个辅助工具；**记忆**故意只给 ◐——能扛过重新部署的检查点会话是状态，不是记忆系统。它让出的那一列，恰好是上面每个库都握着的：**部署控制**只有 ◐，因为文档里的生产路径是 Vercel，哪怕 license 是 Apache-2.0。
+
+[Microsoft Agent Framework](../agents/microsoft-agent-framework.md) 归在库这一边而不是 eve 那一边：**交互面**空着的理由和 LangChain 一样——它给你的是 SDK，不是渠道。在组内把它区分开的是**编排**与**多 agent**：跨 Python、.NET、Go 的具名图模式（顺序、并发、交接、群体协作），外加把**人工审批**当作一等生产关切而不是事后补丁。它的**调度** ○ 反映的是持久性与可重启，那和一个调度器不是一回事。注意这里的继承关系：这一行替代的是本矩阵从来没有过的 AutoGen 行——因为 AutoGen 已进入维护模式。
 
 ## 运行时、网关 & 上下文基础设施
 
@@ -137,8 +149,20 @@
 | [OpenHuman](../agents/openhuman.md) | ● | ○ | ● | ◐ | — | ◐ | ● | ◐ | ● |
 | [AutoGPT](../agents/autogpt.md) | ● | ◐ | ◐ | ● | ◐ | ○ | ◐ | ◐ | ● |
 | [AI Edge Gallery](../agents/ai-edge-gallery.md) | ◐ | ○ | ○ | — | — | ◐ | — | ◐ | ● |
+| [WorkBuddy](../agents/workbuddy.md) | ● | ◐ | ○ | ● | ● | ○ | ● | ● | ○ |
+| [Kimi Work](../agents/kimi-work.md) | ● | ◐ | ◐ | ● | ● | ○ | ● | ◐ | ○ |
 
 看点：Hermes 是全图覆盖面最广的单个 profile——几乎每个维度都强。Mercury 把招牌级**人工审批**和**调度**配在一起（权限硬化、常驻）；OpenHuman 把**记忆** + **调度**做成了生活集成的闭环。
+
+[WorkBuddy](../agents/workbuddy.md) 与 [Kimi Work](../agents/kimi-work.md) 是本矩阵里第一批桌面知识工作 agent，两行打分几乎一致，是有原因的：它们就是同一套循环，只不过指向文档而不是代码仓库。两者在**编排**、**多 agent**、**调度**上都是 ●——多个专职 agent 并行处理同一个目标，按 cron 或在厂商云里全天候跑——而两者在**人工审批**与**部署控制**上都是 ○，这才是诚实的代价。它们是闭源客户端，握着对你文件系统的授权访问，在 Kimi Work 的情形里还握着一个你已经登录的浏览器，而且没有任何有文档的逐动作闸门。这两行上其他每一个 ●，都要透过那两个 ○ 来读。
+
+## 浏览器 agent
+
+| 项目 | 工具 | 执行 | 记忆 | 编排 | 多 agent | 审批 | 调度 | 交互面 | 部署 |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| [Browser Use](../agents/browser-use.md) | ● | ○ | ○ | ○ | — | ○ | — | ◐ | ● |
+
+看点：这一行窄得是故意的，因为 Browser Use 是**你交给 agent 的一项能力**，不是替代 agent 的东西。**工具使用**是 ●——驱动一个真浏览器就是它的全部产品——**部署控制**是 ●（MIT、可自托管、与模型无关，托管云是选项而不是前提）。其余都薄，也是刻意的：它不编排、不调度、不跨运行记忆；那些得由你带来的 harness 负责。真正值得争论的格子是 ○ 的**人工审批**。这个库是可以被划范围的，但它的默认姿态是一个自主循环在你的活跃会话里行动，而本地图打分打的是声明的默认值，不是一个谨慎的操作者能配出什么。可比的还有 Stagehand（MIT，TypeScript，SDK 形态）与 Skyvern（AGPL-3.0，工作流形态），两者都在候补名单上。
 
 ## 用它做选型
 

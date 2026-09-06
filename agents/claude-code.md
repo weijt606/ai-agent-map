@@ -46,13 +46,15 @@ The model layer under Claude Code moved a lot in mid-2026; the product's selecti
 - **May 28 2026 — Opus 4.8**: fixed the comment-verbosity and tool-calling issues seen with Opus 4.7, and shipped **Dynamic workflows** (research preview) — Claude plans the work, then runs hundreds of parallel subagents in a single Claude Code session.
 - **June 9 2026 — [Claude Fable 5](claude-fable-5.md)**: Anthropic's first Mythos-class model (a tier above Opus) became the default model in Claude Code for Pro and Max subscribers.
 - **June 12 → July 1 2026**: Fable 5 was pulled globally under short-lived US export controls, then returned behind stricter safety classifiers — a blocked request falls back to Opus 4.8 automatically.
-- **From July 7 2026**: Fable 5 is no longer bundled in subscriptions; it runs on metered usage credits, so the effective model ceiling in Claude Code now depends on your credit budget, with Opus 4.8 as the dependable default.
+- **From July 7 2026**: Fable 5 is no longer bundled in subscriptions; it runs on metered usage credits, so the effective model ceiling in Claude Code now depends on your credit budget.
+- **July 24 2026 — [Claude Opus 5](claude-opus-5.md)**: replaced Opus 4.8 as the dependable default under the metered ceiling — same $5/$25 price, 1M context as both default and maximum, and the default model on Claude Max. A request blocked by the safety classifier still falls back to Opus 4.8.
+- **September 1 2026 — [Fable 5.1](claude-fable-5.md)**: cache reads cut 75% to $0.25/M, which is where a long Claude Code session's bill actually accumulates, plus roughly 60% fewer cybersecurity false positives.
 - **August 6 2026 — self-hosted environments (public beta)**: sessions can run on your own infrastructure, inside your network and next to internal services and toolchains, instead of Anthropic-hosted compute. Team and Enterprise plans only, **off by default**, and unavailable to organizations on zero-data-retention. This narrows — but does not close — the gap flagged under "When Not To Pick It": execution can now be yours, the model and the client still are not.
 
 ## Operating Cost
 
-Complexity is Medium. Starting is straightforward, but good long-term use depends on clean project instructions, permission design, and disciplined tool setup. Since July 2026, budgeting Fable 5 credits versus staying on Opus 4.8 is part of the operating decision.
+Complexity is Medium. Starting is straightforward, but good long-term use depends on clean project instructions, permission design, and disciplined tool setup. Since July 2026, budgeting [Fable 5.1](claude-fable-5.md) credits versus staying on [Opus 5](claude-opus-5.md) is part of the operating decision.
 
 ## Bottom Line
 
-Claude Code behaves more like a durable development augmentation layer than a one-shot task inbox — and since mid-2026, one whose capability ceiling is a per-task model choice (Fable 5 on credits, Opus 4.8 as the default) rather than a fixed property.
+Claude Code behaves more like a durable development augmentation layer than a one-shot task inbox — and since mid-2026, one whose capability ceiling is a per-task model choice ([Fable 5.1](claude-fable-5.md) on credits, [Opus 5](claude-opus-5.md) as the default) rather than a fixed property.

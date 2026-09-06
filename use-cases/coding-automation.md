@@ -21,7 +21,9 @@ That question is no longer the useful one. The better question is: which operati
 | Comparing vendor terminal coding CLIs side by side | [terminal coding CLI agents](../comparisons/coding-cli-agents.md) |
 | Comparing own-the-loop harness frameworks | [agent harness frameworks](../comparisons/agent-harness-frameworks.md) |
 | Async delegation into cloud execution | [Codex](../agents/codex.md) |
-| Strongest OpenAI model for agentic coding with 1M context | [GPT-5.5](../agents/gpt-5.5.md) |
+| Strongest OpenAI model for agentic coding | [GPT-6 Astra](../agents/gpt-6-astra.md) |
+| Strongest Claude model, for the tasks that justify metered credits | [Claude Fable 5.1](../agents/claude-fable-5.md) |
+| One Claude model to run an agent all day without watching a credit meter | [Claude Opus 5](../agents/claude-opus-5.md) |
 | I already use Claude Code and want teams, skills, and stronger orchestration | [oh-my-claudecode](../agents/oh-my-claudecode.md) |
 | I already use Codex CLI and want teams, hooks, and persistent workflow state | [oh-my-codex](../agents/oh-my-codex.md) |
 | Google-managed GitHub-connected cloud delegation | [Jules](../agents/jules.md) |
@@ -71,7 +73,10 @@ That question is no longer the useful one. The better question is: which operati
 | Aider | Terminal-first pair programming stays close to git | You still own model setup and terminal ergonomics |
 | Claude Managed Agents | Better fit for scheduled and background Anthropic workflows | Product boundary is not represented by one simple public page |
 | Codex | Strong isolation and review evidence | Less immediate than editor-native pair programming |
-| GPT-5.5 | Highest agentic coding benchmarks and 1M context window | 2x API cost, fully proprietary, trails Claude on SWE-Bench Pro |
+| GPT-6 Astra | OpenAI's current ceiling; agentic execution, computer and browser use | $10/$50 and doubles past 272k input tokens; the public version refuses part of its cybersecurity capability |
+| Claude Fable 5.1 | SWE-bench Pro 81.2 and the cheapest cache read on the map ($0.25/M) | $10/$50 on metered credits rather than bundled |
+| Claude Opus 5 | Half the ceiling's price, 1M context as default and maximum, Claude Code's default | Behind Mythos on cybersecurity; fully proprietary |
+| GPT-5.5 | Highest agentic coding benchmarks at its April 2026 launch, 1M context | Two generations back; kept as the lineage reference |
 | oh-my-claudecode | Claude Code gains teams, reusable skills, and richer runtime control | You add another workflow layer and still depend on Claude Code |
 | oh-my-codex | Codex gets a clearer clarify-plan-execute operating model | More setup, more ceremony, and the best path usually involves tmux |
 | Cursor | One polished surface for editor, delegation, and integrations | Broad product surface and a clearly closed-source boundary |

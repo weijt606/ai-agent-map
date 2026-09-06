@@ -41,7 +41,7 @@
 | Review evidence | 强 | 很适合 review-first 团队 |
 | Background delegation | 很强 | 4 月 16 日更新后多 agent 可并行在同一台机器跑 |
 | GitHub / PR handoff | 强 | 适合把结果带回 review 流程 |
-| Computer use | 强 | 在任意 macOS app 内后台鼠键操作；7 月 9 日换用 GPT-5.6 后明显更快 |
+| Computer use | 强 | 在任意 macOS app 内后台鼠键操作；7 月 9 日换用 GPT-5.6 后明显更快，而计算机操作正是 9 月 [GPT-6 Astra](gpt-6-astra.md) 升级的主打轴之一 |
 | PR review in-app | 强（2026-07-09 新增） | ChatGPT 桌面应用内的侧栏 PR review 和 diff 内联编辑 |
 | Local companion surfaces | 强（原"中"） | Codex CLI 已成为一线表面，v0.128 加入持久化 /goal workflow 和 MultiAgentV2 |
 
@@ -73,7 +73,7 @@ Codex CLI（开源终端伴侣，github.com/openai/codex）也走得很快：202
 
 ## 模型层
 
-截至 2026 年 7 月 9 日，Codex 底层已换成 **GPT-5.6**（Sol / Terra / Luna 三档）——与产品并入 ChatGPT 同日接棒 [GPT-5.5](gpt-5.5.md)。升级最直观的体现是 Computer Use 速度和 agentic 编码 benchmark。模型谱系与发布后格局（包括 Anthropic 的 Mythos 级 [Claude Fable 5](claude-fable-5.md)）详见 [GPT-5.5 profile](gpt-5.5.md)。
+2026-07-09 起 Codex 底层是 **GPT-5.6**（Sol / Terra / Luna 三档）——与产品并入 ChatGPT 同日接棒 [GPT-5.5](gpt-5.5.md)。**2026 年 9 月起默认已是 [GPT-6 Astra](gpt-6-astra.md)**：Codex CLI `rust-v0.153.1`（9 月 3 日）加入对它的一等配置支持，`rust-v0.153.4`（9 月 4 日）按其 release note 的原话，把它变成"未显式配置模型时打包的默认"。两个实际后果：正式开放的 Astra **会拒绝一部分网安能力**，所以经由 Codex 做安全相邻的工作现在继承了这条边界；以及 Astra 在输入超过 272k token 后换价，而一个长 Codex 会话是够得着这条线的。价格形状见 [GPT-6 Astra profile](gpt-6-astra.md)，完整模型谱系见 [GPT-5.5 profile](gpt-5.5.md)。
 
 ## 最后一句
 

@@ -19,7 +19,10 @@
 | [Kimi Code](../agents/kimi-code.md) | 厂商官方终端 coding CLI | 本地终端、ACP 编辑器、VS Code | 高交互 | Kimi 原生的编码循环，IDE/ACP 触达强 | 正从旧版 kimi-cli 迁移中 |
 | [MiMoCode](../agents/mimocode.md) | 记忆优先的终端 coding CLI | 本地终端 | 高交互、长程 | 跨会话记忆重要的单仓库工作 | 上线才几天，表面还在快速变 |
 | [CodeWhale](../agents/codewhale.md) | DeepSeek/MiMo 原生终端 coding agent | 本地终端（Rust TUI） | 高交互 | 在低成本国产模型上跑 Claude Code 循环 | 设计上绑定较窄的模型集 |
-| [GPT-5.5](../agents/gpt-5.5.md) | 前沿 agentic 模型 | ChatGPT、Codex、API、GitHub Copilot | 模型升级覆盖多个表面 | 在选最强 OpenAI 模型的 agent builder，或在评估新能力天花板的团队 | API 价格是 GPT-5.4 的 2 倍，完全闭源 |
+| [GPT-6 Astra](../agents/gpt-6-astra.md) | 前沿 agentic 模型 | ChatGPT、Codex、API | OpenAI 当前天花板，2026-09-03 | 想要最强 OpenAI 模型、且能接受其边界的 agent builder | $10/$50，输入超 272k token 后翻倍；公开版本会拒绝一部分网安能力 |
+| [Claude Fable 5.1](../agents/claude-fable-5.md) | 前沿 agentic 模型 | Claude Code、Claude.ai、API | Anthropic 当前天花板，2026-09-01 | 最难任务值得按量花钱的团队 | $10/$50 按额度计费；缓存读 $0.25/M，本地图最便宜 |
+| [Claude Opus 5](../agents/claude-opus-5.md) | 前沿 agentic 模型（默认档） | Claude Code、Claude.ai、Claude Cowork、API | 你实际在跑的那一档 | 想用一个模型把 agent 跑一整天、不盯额度表的人 | $5/$25；网安上落后于 Mythos；完全闭源 |
+| [GPT-5.5](../agents/gpt-5.5.md) | 前沿 agentic 模型（参照） | ChatGPT、Codex、API、GitHub Copilot | 2026 春季参照点 | 想理清 OpenAI 模型血统的读者 | 已被接棒两次；作血统参照保留，不建议用于新项目 |
 | [oh-my-claudecode](../agents/oh-my-claudecode.md) | 工作流 / orchestration layer | Claude Code 插件、终端、tmux | session 内驱动 + 编排侧流程 | 已经在用 Claude Code，想补上 skills、teams 和更强运行控制 | 前提是你本来就接受 Claude Code 这层基础表面 |
 | [oh-my-codex](../agents/oh-my-codex.md) | 工作流 / orchestration layer | Codex CLI、本地终端、tmux | 本地工作流标准化 | 已经在用 Codex，想补上 teams、hooks 和持久会话状态 | 流程会更厚，而且最好跑在 macOS / Linux + tmux |
 | [Cursor](../agents/cursor.md) | AI 编辑器 / agent 平台 | 编辑器、CLI、cloud、web、mobile | 编辑器中心，可延伸后台委派 | 想把编码和委派收进一个打磨完整的表面 | 产品边界很宽，可能超过一些团队真实需要 |

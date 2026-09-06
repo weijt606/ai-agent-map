@@ -21,7 +21,9 @@
 | 我要把各厂商终端编码 CLI 摆一起对比 | [终端编码 CLI agent](../comparisons/coding-cli-agents.md) |
 | 我要对比自己掌控循环的 harness 框架 | [agent harness 框架](../comparisons/agent-harness-frameworks.md) |
 | 我要把明确任务异步丢到云端跑 | [Codex](../agents/codex.md) |
-| 我要当前最强的 OpenAI agentic coding 模型，百万 token 上下文 | [GPT-5.5](../agents/gpt-5.5.md) |
+| 我要当前最强的 OpenAI agentic coding 模型 | [GPT-6 Astra](../agents/gpt-6-astra.md) |
+| 我要最强的 Claude 模型，做那些值得按量花钱的任务 | [Claude Fable 5.1](../agents/claude-fable-5.md) |
+| 我要一个 Claude 模型把 agent 跑一整天、不用盯额度 | [Claude Opus 5](../agents/claude-opus-5.md) |
 | 我已经在用 Claude Code，只是想补强 teams、skills 和 orchestration | [oh-my-claudecode](../agents/oh-my-claudecode.md) |
 | 我已经在用 Codex CLI，只是想补上 teams、hooks 和持久 workflow state | [oh-my-codex](../agents/oh-my-codex.md) |
 | 我要 Google 托管、GitHub 连接的云端委派 | [Jules](../agents/jules.md) |
@@ -71,7 +73,10 @@
 | Aider | 终端里的 AI 结对编程依然贴着 git 走 | 模型配置和终端 ergonomics 还是要自己扛 |
 | Claude Managed Agents | 更适合后台、定时和程序化运行 | 官方公开边界不是单一产品页 |
 | Codex | 云端隔离、日志和测试证据很清楚 | 更偏异步，不如编辑器内 agent 即时 |
-| GPT-5.5 | 发布时 agentic coding benchmark 最高、百万 token 上下文 | API 成本是 GPT-5.4 的 2 倍，完全闭源，SWE-Bench Pro 落后于 Claude |
+| GPT-6 Astra | OpenAI 当前天花板；agentic 执行、计算机与浏览器操作 | $10/$50 且输入超 272k token 后翻倍；公开版本会拒绝一部分网安能力 |
+| Claude Fable 5.1 | SWE-bench Pro 81.2，且缓存读 $0.25/M 为本地图最低 | $10/$50，按额度计费而非订阅内含 |
+| Claude Opus 5 | 天花板一半的价格，1M 上下文既是默认也是上限，Claude Code 的默认 | 网安上落后于 Mythos；完全闭源 |
+| GPT-5.5 | 2026 年 4 月发布时 agentic coding benchmark 最高、百万 token 上下文 | 已隔两代；作血统参照保留 |
 | oh-my-claudecode | 给 Claude Code 补上 teams、可复用 skills 和更强运行控制 | 你会多背一层工作流，而且仍然依赖 Claude Code |
 | oh-my-codex | 给 Codex 带来更清晰的 clarify-plan-execute operating model | 配置更多、流程更重，而且最佳路径通常离不开 tmux |
 | Cursor | 一个打磨完整的表面把编辑、委派、集成都串起来 | 产品边界更宽，而且闭源属性很明确 |

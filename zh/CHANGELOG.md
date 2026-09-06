@@ -4,6 +4,19 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-09-06 —— 前沿模型路线一次补齐两代
+
+自本地图上次写下模型层以来，两侧各自又动了两次，而路线表还指着已经被接棒的条目。新增两个 profile（EN + zh），收录数到 64：
+
+- **新增 [Claude Opus 5](agents/claude-opus-5.md)**（2026-07-24）—— 这条路线一直缺的那个条目：不是天花板，而是 Claude 系 agent 真正在跑的模型。价格守在 Opus 档的 $5/$25，CursorBench 3.2 距 Fable 5 峰值 0.5% 以内，1M 上下文既是默认也是上限。它在 Claude Code 里接替 Opus 4.8 成为可靠默认档——而本仓库好几页此前还写着旧的说法。
+- **新增 [GPT-6 Astra](agents/gpt-6-astra.md)**（2026-09-03）—— OpenAI 当前的天花板，也是本地图记录到的第一个**公开版本本身就是受限版本**的前沿模型（它会拒绝自己一部分网安能力，进阶访问走 Daybreak Blue）。次日 Codex CLI `rust-v0.153.4` 把它设为打包默认，于是这条限制落到了产品默认之下。
+- **[Claude Fable 5](agents/claude-fable-5.md) 更新到 Fable 5.1 / Mythos 5.1**（2026-09-01）—— 标价仍是 $10/$50，缓存读砍 75% 到 $0.25/M。profile 沿用原路径，既有链接不断。
+- **[GPT-5.5](agents/gpt-5.5.md) 重新定位为血统参照** —— 其"发布后格局"表现在是 GPT-5.5 → GPT-5.6 → Astra，与 Opus 4.8 → Fable 5 → Sonnet 5 → Opus 5 → Fable 5.1 并列。
+
+结构性后果：[成本与基准](comparisons/cost-and-benchmarks.md) 按一手价格页重建，并新增**缓存读一列**——两家天花板都落在 $10/$50 之后，标价已经不再是区分点；[market-events](market-events.md) 新增三条（Opus 5、Fable 5.1、Astra）；[README](README.md) 与 [agents/](agents/README.md) 的路线表现在把天花板和其下的默认档分开列，因为那是两个不同的决策。
+
+两处刻意保留的来源纪律：Artificial Analysis 编码 agent 指数目前没有本地图愿意照抄的 Astra / Fable 5.1 / Opus 5 数字，因此那些格子留破折号，不用第三方榜单去填；外面流传的 Fable 5.1"SWE-bench Verified 95%"是第三方数字，Anthropic 公布的是 SWE-bench Pro 81.2，本地图记的是后者。
+
 ## 2026-08-12 —— 周更不再漂了
 
 只动工具链，没有改任何内容页。此前周更会打两次独立的 GitHub 请求——一次在 `check`（它的数字被手写进热度表），另一次在 `publish`（它 stamp 出的 snapshot 驱动 `rankings/` 和几张 SVG）。两次之间 star 会涨，于是每周结束时热度表和生成的榜单都会差几个 star，必须再做一轮人工对账。

@@ -4,14 +4,14 @@
 [![EN](https://img.shields.io/badge/EN-English-2563eb?style=for-the-badge&labelColor=1d4ed8)](../../agents/gpt-5.5.md)
 [![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-一句话：GPT-5.5 是 OpenAI 2026 年春季的前沿 agentic 模型——为多步任务执行、工具调用和自我检查而设计——2026 年 7 月 9 日已被 GPT-5.6 接棒（见下方"发布后格局"）。
+一句话：GPT-5.5 是 OpenAI 2026 年春季的前沿 agentic 模型——为多步任务执行、工具调用和自我检查而设计——此后已被接棒两次：2026-07-09 的 GPT-5.6，以及 2026-09-03 的 [GPT-6 Astra](gpt-6-astra.md)。本页作为血统参照保留（见下方"发布后格局"）。
 
 ## 一眼判断
 
 | 项目 | 结论 |
 | --- | --- |
 | 厂商 | OpenAI |
-| 路线 | 驱动 Codex、ChatGPT 和 API 的前沿 agentic 模型（2026 年 7 月已由 GPT-5.6 接棒） |
+| 路线 | 驱动 Codex、ChatGPT 和 API 的前沿 agentic 模型（已退居参照——7 月由 GPT-5.6、9 月由 [GPT-6 Astra](gpt-6-astra.md) 接棒） |
 | 是否开源 | 否 |
 | 最适合 | 高自主度编码、科研、多步 agent 工作流、长上下文任务 |
 | 主要代价 | API 价格是 GPT-5.4 的 2 倍，模型边界与 Codex 产品边界容易混淆 |
@@ -70,18 +70,22 @@ GPT-5.5 不是独立的 runtime，它通过以下表面提供：
 
 本页讲的是 GPT-5.5 这个模型。[Codex](codex.md) 页面讲的是产品——云端执行环境、隔离模型和 review 工作流。GPT-5.5 驱动 Codex，但不等于 Codex。如果你在选 agent 产品，先看 Codex；如果你在选要接入自己 agent 系统的模型，看这一页。
 
-## 发布后格局（截至 2026 年 7 月）
+## 发布后格局（截至 2026 年 9 月）
 
-GPT-5.5 4 月发布后，前沿迭代得很快。三次发布改变了模型层的选型判断：
+GPT-5.5 4 月发布后前沿迭代得很快，如今两侧各自又走了两代：
 
 | 发布 | 日期 | 改变了什么 |
 | --- | --- | --- |
 | **Claude Opus 4.8**（Anthropic） | 2026-05-28 | 修复 Opus 4.7 的啰嗦与 tool-calling 问题；新增 Dynamic workflows（Claude Code 内数百个并行 subagent）；$5/$25 每百万 token |
 | **[Claude Fable 5](claude-fable-5.md)**（Anthropic） | 2026-06-09 | 首个 Mythos 级模型——位于 Opus 之上的新等级；$10/$50 每百万 token，7 月 7 日起在 Claude 订阅内按额度计费 |
-| **GPT-5.6**（OpenAI） | 2026-07-09 | 在 ChatGPT / Codex / API 全面接棒 GPT-5.5，分三档——Sol（$5/$30）、Terra（$2.5/$15）、Luna（$1/$6），另有 Ultra 多 agent 模式；Artificial Analysis 编码 agent 指数领先（Sol 80 vs Fable 5 77.2、GPT-5.5 76.4、Opus 4.8 72.5） |
+| **Claude Sonnet 5**（Anthropic） | 2026-06-30 | 中间档 $2/$10，定位接近 Opus 4.8；8 月确认首发价转正为长期价 |
+| **GPT-5.6**（OpenAI） | 2026-07-09 | 在 ChatGPT / Codex / API 全面接棒 GPT-5.5，分三档 Sol / Terra / Luna，另有 Ultra 多 agent 模式；发布时领先 Artificial Analysis 编码 agent 指数（Sol 80 vs Fable 5 77.2、GPT-5.5 76.4、Opus 4.8 72.5） |
+| **[Claude Opus 5](claude-opus-5.md)**（Anthropic） | 2026-07-24 | 守住 Opus 价格（$5/$25）的同时补上了通往 Fable 5 的大部分差距；1M 上下文既是默认也是上限；成为 Claude Max 的默认模型 |
+| **[Claude Fable 5.1](claude-fable-5.md)**（Anthropic） | 2026-09-01 | 标价仍是 $10/$50，缓存读砍 75% 到 $0.25/M；SWE-bench Pro 81.2；Claude Code 网安误报少约 60% |
+| **[GPT-6 Astra](gpt-6-astra.md)**（OpenAI） | 2026-09-03 | OpenAI 当前的天花板；$10/$50，输入超 272k token 后翻倍；公开版本在网安类 prompt 上受限 |
 
-务实的读法：GPT-5.6 Sol 与 GPT-5.5 同价且更强，新项目里 GPT-5.5 实际上已是过渡选择；2026 年 7 月真正的模型层决策是 GPT-5.6 档位选择 vs Fable 5 额度 vs 以 Opus 4.8 为可靠默认。
+务实的读法：新项目里 GPT-5.5 已是过渡选择。2026 年 9 月真正的模型层决策是 **[GPT-6 Astra](gpt-6-astra.md) 对 [Fable 5.1](claude-fable-5.md)，两者标价同为 $10/$50**——分开它们的是缓存读价和长上下文的计价形状，而不是标价；控成本那条路则是一侧 GPT-5.6 的三档，另一侧 [Opus 5](claude-opus-5.md) 与 Sonnet 5。
 
 ## 最后一句
 
-GPT-5.5 是 OpenAI agent 生态的一次真实能力跃升——4 月发布时 agentic coding benchmark 最强、百万 token 上下文、更高 token 效率。截至 2026 年 7 月它已被同价的 GPT-5.6 接棒；本页保留在地图里，作为"2026 春季模型竞赛如何重塑 agent 选型"的参照点。
+GPT-5.5 是 OpenAI agent 生态的一次真实能力跃升——4 月发布时 agentic coding benchmark 最强、百万 token 上下文、更高 token 效率。两代之后它已是过渡选择；本页保留在地图里，作为"2026 春季模型竞赛如何重塑 agent 选型"的参照点，也是 OpenAI 模型血统被写下来的地方。

@@ -41,33 +41,32 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 
 这张表记录的是最近一周 GitHub 快照里特别热的 agent 项目。排名按 7 天增量。下面的总 star 数是这次更新仓库时重新核对过的当前值。
 
-> **最后更新：** 2026-09-06 · **快照窗口：** 2026-09-01 → 2026-09-06（自上次更新以来的增量，**5 天**——本次是计划外的一次补刷，例行节奏周三恢复；上一个窗口同样是 5 天，所以这是三个窗口以来第一次，表里的原始增量可以**直接和上一期对比**，不需要换算成周率） · **star 数：** 更新时点抓取
+> **最后更新：** 2026-09-09 · **快照窗口：** 2026-09-06 → 2026-09-09（自上次更新以来的增量，**3 天**——周日那次是计划外补刷，周三的例行节奏从这里恢复，所以窗口偏短、噪声偏大；原始增量约为正常窗口的 0.43 倍，下面所有判断一律按**周率**讲） · **star 数：** 更新时点抓取
 
 项目名链接指向上游 GitHub 仓库。本仓库已写入的 profile，在"在本仓库中的状态"列单独给出链接。
 
 | 排名 | 项目 | 当前 stars | 快照增量 | 在本仓库中的状态 | 应该怎么读 |
 | --- | --- | --- | --- | --- | --- |
-| #1&#8288;（↑） | [mattpocock/skills](https://github.com/mattpocock/skills) | 254.3k | +10,461 | 候补（Skills 浪潮） | **只让出一个窗口就把 #1 夺回来**，而且是 19 个记录窗口以来最快的周率（约 14,600/周，此前最高约 11,900，2026-07-22），比上一期同口径的 +5,954 高 76%，并**越过 25 万** |
-| #2&#8288;（↑） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 242.5k | +2,999 | 已收录 · [profile](agents/hermes-agent.md) | 升两位，增量高 16%，并**越过 24 万**。它是 19 个记录窗口里唯一每期都在的项目，4 到 6 月间拿过五次 #1 |
-| #3&#8288;（↑） | [Superpowers](https://github.com/obra/superpowers) | 282.4k | +1,976 | 已收录 · [profile](agents/superpowers.md) | 增量其实降了 14%，却升了两位——是榜单绕着它动。仍是这张表上最稳的一条线，也是这波浪潮的框架锚点 |
-| #4&#8288;（↓） | [Pi](https://github.com/earendil-works/pi) | 102.4k | +1,900 | 已收录 · [profile](agents/pi.md) | 破 10 万之后的第一个窗口降温 30%——这张榜见过的里程碑后回吐，不是反转 |
-| #5&#8288;（↑） | [anthropics/skills](https://github.com/anthropics/skills) | 174.8k | +1,848 | 候补（Skills 浪潮 · 官方基准） | **升四位，增量高 58%**，结束连续两个持平窗口。Anthropic 的官方 `.claude/skills` 仓库回到了 7 月的水平 |
-| #6&#8288;（↓） | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 43.3k | +1,800 | 候补（Skills 浪潮 · 科研垂直） | **还回 73%，从 #1 掉五位。** 上一期本榜明确拒绝把那次 14 倍读成趋势，这个判断对了；这是连续第四个没能扛过第二个窗口的尖峰 |
-| #7&#8288;（新） | [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 46.6k | +1,744 | 候补（Skills 浪潮 · 科研垂直） | 从 #11 进榜，**2026-08-05 以来第一次上表**。科研垂直没有跟着 K-Dense 一起塌——它是在轮换，而且这个集合现在是两者中更大的那个 |
-| #8&#8288;（↓） | [Codex CLI](https://github.com/openai/codex) | 122.0k | +1,269 | 已收录 · [profile](agents/codex.md) | 降 34%、退两位——8 月降价尖峰之后连续第二次下滑；越过 12.1 万 |
-| #9&#8288;（↓） | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 92.6k | +1,115 | 候补（Skills 浪潮） | 降 21%，但席位已连坐四个窗口；越过 9.2 万 |
-| #10&#8288;（新） | [Ruflo](https://github.com/ruvnet/ruflo) | 70.9k | +804 | 已收录 · [profile](agents/ruflo.md) | **19 个记录窗口以来第一次上榜。** 榜尾整体降温，编排层拿下最后一席 |
+| #1&#8288;（=） | [mattpocock/skills](https://github.com/mattpocock/skills) | 257.6k | +3,237 | 候补（Skills 浪潮） | **靠 11 个 star 守住 #1**，而它自己的周率降了 48%（约 14,600/周 到约 7,550）。越过 **25.7 万**，但这是本榜记录到的最窄领先 |
+| #2&#8288;（新） | [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 217.2k | +3,226 | 已收录 · [profile](agents/deepseek-harness.md) | **第一个可测增量就落在 #2**，约 7,530/周，与第一名差不到 1%。上窗口才纳入跟踪，这是它第一次能进榜 |
+| #3&#8288;（=） | [Superpowers](https://github.com/obra/superpowers) | 283.8k | +1,414 | 已收录 · [profile](agents/superpowers.md) | 周率涨 19%，是本窗口唯一加速的 skills 条目。连坐两个窗口的 #3 |
+| #4&#8288;（↓） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 243.7k | +1,232 | 已收录 · [profile](agents/hermes-agent.md) | 破 24 万之后的第一个窗口降 32%、退两位。仍是 20 个记录窗口里每期都在的那个 |
+| #5&#8288;（新） | [Browser Use](https://github.com/browser-use/browser-use) | 113.9k | +1,228 | 已收录 · [profile](agents/browser-use.md) | **第一个可测增量**，直接到 #5，约 2,870/周。浏览器 agent 路线上目前唯一的条目，三天前才写进 profile |
+| #6&#8288;（↓） | [Pi](https://github.com/earendil-works/pi) | 103.4k | +1,028 | 已收录 · [profile](agents/pi.md) | 再降 10%，越过 **10.3 万**。破 10 万之后连续两个窗口温和下滑 |
+| #7&#8288;（新） | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 103.6k | +924 | 不收录（金融研究垂直） | 周率涨 **189%**，掉榜一期后回来，越过 **10.3 万**。单个短窗口，本榜不把它读成趋势 |
+| #8&#8288;（新） | [OpenCode](https://github.com/anomalyco/opencode) | 206.1k | +916 | 已收录 · [profile](agents/opencode.md) | **第一个可测增量**约 2,140/周，越过 **20.6 万**。上窗口三个新纳入里第三个立刻拿到前十席位的 |
+| #9&#8288;（↑） | [Ruflo](https://github.com/ruvnet/ruflo) | 71.8k | +824 | 已收录 · [profile](agents/ruflo.md) | 上榜后的第二个窗口周率涨 **71%**，是确认而不是反转 |
+| #10&#8288;（↓） | [Codex CLI](https://github.com/openai/codex) | 122.8k | +814 | 已收录 · [profile](agents/codex.md) | 周率涨 7% 却退两位，因为上面挤进来三个新仓库 |
 
 - 热度适合拿来发现新项目，不适合直接当选型顺序。
-- **本窗口是 5 天——上一个窗口也是 5 天。** 这是一次计划外补刷（例行节奏周三恢复），跨 2026-09-01 → 2026-09-06。因为上一个窗口同样是 5 天，本表的原始增量是三个窗口以来第一次可以**直接和上一期对比**，不需要先换算成周率。
-- **尖峰规矩第四次兑现，而且兑现在本榜自己的 #1 上。** 上一期 [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) 以 14 倍跳增空降 #1，本榜当时明确拒绝把它读成趋势。这一期它**还回 73%**、掉到 #6。至此连续四个窗口，上一窗口的爆发都没能重复——[jcode](agents/jcode.md)、[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)、[Codex CLI](agents/codex.md)，现在是 K-Dense。这条规矩已经不只是提醒，而是本榜证据最扎实的一个结论。
-- **科研垂直是在轮换，不是塌了。** K-Dense 降 73% 的同时，[academic-research-skills](https://github.com/Imbad0202/academic-research-skills) 从 #11 升到 **#7**（+1,744），是它 2026-08-05 以来第一次上表，而且现在是两个科研集合里**更大**的那个（46.6k 对 43.3k）。把垂直当作真实的，把单个仓库当作波动的。
-- **[mattpocock/skills](https://github.com/mattpocock/skills) 只让出一个窗口就夺回 #1，而且是历史最快周率。** 约 14,600/周，此前最高约 11,900（2026-07-22），并**越过 25 万**。09-01 结束的那个九连窗只被打断了一期——这削弱了上一期"集中度故事可能正在破裂"的那个读法。
-- **skills 浪潮拿到 6/10，追平本榜纪录**：此前仅 2026-05-23 出现过一次，之后再没有。六个席位是 mattpocock、[Superpowers](agents/superpowers.md)、[anthropics/skills](https://github.com/anthropics/skills)、K-Dense、academic-research-skills、addyosmani。其中动得最猛的是 Anthropic 的官方仓库，在两个持平窗口之后回升 58%。
-- **[Hermes Agent](agents/hermes-agent.md) 越过 24 万**并升到 #2，是它 6 月以来最好的席位。它是 19 个记录窗口里唯一每期都在的项目，4 到 6 月间五次拿过 #1。
-- **[Ruflo](agents/ruflo.md) 19 个窗口以来第一次上榜**（+804，70.9k），在榜尾降温中拿下最后一席——[TradingAgents](https://github.com/TauricResearch/TradingAgents) 降 63%、[OpenHuman](agents/openhuman.md) 降 84%，两个都只上榜一期就掉了下去。
-- **本窗口有七个 profile 进入跟踪，其中两个是本地图迄今最大的新增。** [DeepSeek Harness](agents/deepseek-harness.md)（**213.9k**）与 [OpenCode](agents/opencode.md)（**205.2k**）已被 stamp，同批还有 [Browser Use](agents/browser-use.md)（112.7k）、[Gemini CLI](agents/gemini-cli.md)（106.8k）、[Qwen Code](agents/qwen-code.md)（27.7k）、[Microsoft Agent Framework](agents/microsoft-agent-framework.md)（13.4k）与 [TrueForge](agents/trueforge.md)（5.3k）。它们本期**没有增量**，因为窗口开始时还没被跟踪；下次刷新才进增量榜。但在总量上它们立刻就位——DeepSeek Harness 以**第三大 agent 仓库**入榜，仅次于 [OpenClaw](agents/openclaw.md) 与 [Hermes Agent](agents/hermes-agent.md)，OpenCode 紧随第四；如果把 skills 集合也算进来，两者分别是全库第五和第六。
-- [OpenClaw](agents/openclaw.md) 仍是绝对总数第一，389.0k star（+533）；它已有 profile，但因为这种体量的项目周环比增量噪声太大，不进按增量排名的表。
+- **本窗口是 3 天。** 周日那次是计划外补刷，周三的例行节奏从这里恢复，所以跨度短，原始增量约为正常一周的 0.43 倍。下面每一条判断都按**周率**讲（增量 ÷ 3 × 7），对上一期的周率（增量 ÷ 5 × 7）。三天是本榜发布过的最短窗口，看方向就好，别抠小数。
+- **上窗口才纳入跟踪的三个仓库，第一个可测增量就拿走了前十里的三席。** [DeepSeek Harness](agents/deepseek-harness.md) 到 #2、[Browser Use](agents/browser-use.md) 到 #5、[OpenCode](agents/opencode.md) 到 #8。它们此前根本没法进榜，因为上一个窗口开始时还没被跟踪。这与其说是三个同时爆发，不如说是那次扫描失职终于落到了榜面上：三个都体量巨大、活跃了好几周，而本榜一直没有它们的行。
+- **#1 是靠 11 个 star 定下来的。** [mattpocock/skills](https://github.com/mattpocock/skills) 拿 +3,237，DeepSeek Harness +3,226。而且第一名自己的周率比上期的历史高点降了 48%，它守住席位靠的是减速比别人慢一点，不是拉开距离。
+- **skills 浪潮掉到 2/10，是这波浪潮开始以来的最低。** 上一期还是追平纪录的 6/10。掉下来有两个原因，两个都成立：三个非 skills 仓库挤到了它们上面，而这些集合本身也确实在降温——[anthropics/skills](https://github.com/anthropics/skills) 周率 −52%、[academic-research-skills](https://github.com/Imbad0202/academic-research-skills) −37%、[K-Dense](https://github.com/K-Dense-AI/scientific-agent-skills) −27%、[addyosmani](https://github.com/addyosmani/agent-skills) −12%。唯一的例外是 [Superpowers](agents/superpowers.md)，涨 19%。2026-05-23 以来，这波浪潮的地板一直是 3/10，只在 2026-07-29 出现过一次。
+- **[Ruflo](agents/ruflo.md) 是唯一一个确认而不是反转的。** 它上期首次上榜，本可能只是一次尖峰；结果第二个窗口周率涨了 71%。按本榜自己的规矩，这是五个窗口以来第一个扛过下一期的爆发。
+- **两处加速，本榜明确暂不称之为趋势**：[TradingAgents](https://github.com/TauricResearch/TradingAgents) 涨 189% 回到榜上，[OpenHands](agents/openhands.md) 涨 129% 排在 #12。单个短窗口在第二个窗口确认前只是尖峰，而最近五个里有四个没通过这项检验。
+- 本窗口的里程碑：[OpenCode](agents/opencode.md) 越过 **20.6 万**，[DeepSeek Harness](agents/deepseek-harness.md) **21.7 万**，[Pi](agents/pi.md) 与 [TradingAgents](https://github.com/TauricResearch/TradingAgents) 双双越过 **10.3 万**，mattpocock/skills 越过 **25.7 万**。
+- [OpenClaw](agents/openclaw.md) 仍是绝对总数第一，389.3k star（+241）；它已有 profile，但因为这种体量的项目周环比增量噪声太大，不进按增量排名的表。
 
 <details>
 <summary>更多窗口笔记：skills 浪潮占比、OpenClaw、以及榜外仍在涨的项目</summary>

@@ -165,3 +165,5 @@ First weekly heat snapshot: hot-agent coverage table ranked by star gain.
 ## 2026-04-09 — Bootstrap
 
 Bilingual (EN + zh) agent map bootstrapped: route taxonomy, first coding-agent profiles, comparisons and use-case scaffolding.
+
+<!-- protection smoke test -->

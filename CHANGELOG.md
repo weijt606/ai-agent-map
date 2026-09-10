@@ -167,3 +167,5 @@ First weekly heat snapshot: hot-agent coverage table ranked by star gain.
 Bilingual (EN + zh) agent map bootstrapped: route taxonomy, first coding-agent profiles, comparisons and use-case scaffolding.
 
 <!-- protection smoke test -->
+
+[故意的坏链接](agents/this-file-does-not-exist.md)

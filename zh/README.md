@@ -53,7 +53,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 | #4&#8288;（↓） | [Superpowers](https://github.com/obra/superpowers) | 287.8k | +4,018 | 已收录 · [profile](agents/superpowers.md) | 涨 7%、越过 **28.5 万**，但因为上面挤进两个更大的涨幅而退一位 |
 | #5&#8288;（↑） | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 107.2k | +3,541 | 不收录（金融研究垂直） | **连续第二次加速**（+189% 之后再 +44%），这正是本榜上期说要等的那个确认。越过 **10.5 万**；仍不是收录范围内的 agent 形态 |
 | #6&#8288;（=） | [Pi](https://github.com/earendil-works/pi) | 106.5k | +3,075 | 已收录 · [profile](agents/pi.md) | 涨 12%，逆转了连续两个窗口的下滑，越过 **10.5 万** |
-| #7&#8288;（↓） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 246.3k | +2,616 | 已收录 · [profile](agents/hermes-agent.md) | 降 20%、退三位；越过 **24.5 万**。21 个记录窗口里每期都在 |
+| #7&#8288;（↓） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 246.3k | +2,616 | 已收录 · [profile](agents/hermes-agent.md) | 降 20%、退三位；越过 **24.5 万**。22 个记录窗口里每期都在 |
 | #8&#8288;（新） | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 95.7k | +2,529 | 候补（Skills 浪潮） | 周率涨 **61%**，掉榜一期后回来；越过 **9.5 万** |
 | #9&#8288;（↑） | [Codex CLI](https://github.com/openai/codex) | 124.9k | +2,097 | 已收录 · [profile](agents/codex.md) | 基本持平（−3%）却升一位——榜单在它周围重排时，一条稳定的线就是这个样子 |
 | #10&#8288;（↓） | [OpenCode](https://github.com/anomalyco/opencode) | 208.0k | +1,920 | 已收录 · [profile](agents/opencode.md) | 第二个窗口降 21%，越过 **20.8 万**。现在回看，它的第一个可测增量是两者中更高的那个 |

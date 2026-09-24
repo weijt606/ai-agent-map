@@ -6,7 +6,7 @@ The home-page [heat ranking](../README.md#recent-heat-ranking) sorts by **weekly
 
 > **Last updated:** 2026-09-24 · **Star counts:** from the most recent tracked fetch · **Sort:** current total stars, weekly gain shown for reference
 
-> **Note on this edition's "Weekly gain" column:** the previous refresh was a late catch-up run on 2026-08-27, so the figures below cover **2026-08-27 → 2026-09-01 (5 days)**, not 7. They are roughly 0.71× a normal window, and the previous edition's column was a 15-day catch-up — so neither this column nor the last one is directly comparable to the other. Compare on the weekly rate (gain ÷ days × 7).
+> **Note on this edition's "Weekly gain" column:** the figures below cover **2026-09-17 → 2026-09-24 (7 days)**, a normal window. The previous edition's column covered 8 days, so the two are close but not identical — compare on the weekly rate (gain ÷ days × 7) rather than on the raw numbers. (This note was stale for three editions, still describing the 5-day window of 2026-09-01; corrected here rather than silently dropped.)
 
 ## Ranking Trend
 
@@ -16,7 +16,7 @@ How the weekly heat top 10 has shifted since tracking began — each line is one
   <img src="../assets/heat-trend-en.svg" alt="Weekly heat ranking trend (bump chart)" width="100%" />
 </p>
 
-The through-line so far: Hermes Agent owned the early boards, the `.claude/skills` wave took over from late May, and from mid-June the top three ranks rotated almost entirely among curated skills collections. Two windows have now bent that line in different directions. On 2026-08-27 [Codex CLI](../agents/codex.md) took #2 off a vendor price cut — the first non-skills project in a top-two gain seat since June — and on **2026-09-01 it gave 57% of that back and fell to #6**, while `mattpocock/skills` lost the #1 seat it had held for nine straight windows (2026-06-24 → 2026-08-27). The project that took it, [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills), is still a skills collection — but a **domain** one, which is new. Read the current shape as the wave finding verticals rather than as the wave ending; and read both windows as a caution about single-window jumps, since three in a row (jcode, addyosmani, Codex) failed to survive the next refresh.
+The through-line so far: Hermes Agent owned the early boards, the `.claude/skills` wave took over from late May, and from mid-June the top three ranks rotated almost entirely among curated skills collections. **That line has now bent.** For two consecutive windows (2026-09-17 and 2026-09-24) both top-two seats have been held by coding agents — [Open Code Review](../agents/open-code-review.md) and [DeepSeek Harness](../agents/deepseek-harness.md) — which is the first all-agent top two since **2026-05-08**, before the wave began. The wave still holds four of ten seats, but it no longer holds the head of the board. Read the wave as broadening into verticals and vendor collections rather than as ending; and read single-window jumps with care, because the board's own record on them is poor — jcode, addyosmani, Codex CLI, K-Dense and, most recently, TradingAgents all failed the window after the one that made them look like a trend.
 
 ## Agent Board
 

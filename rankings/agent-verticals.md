@@ -6,7 +6,7 @@ Agents grouped by the field they actually work in, each vertical ranked by curre
 
 > **Last updated:** 2026-09-24
 
-> **Note on this edition's "Weekly gain" column:** the previous refresh was a late catch-up run on 2026-08-27, so the figures below cover **2026-08-27 → 2026-09-01 (5 days)**, not 7. They are roughly 0.71× a normal window, and the previous edition's column was a 15-day catch-up — so neither this column nor the last one is directly comparable to the other. Compare on the weekly rate (gain ÷ days × 7).
+> **Note on this edition's "Weekly gain" column:** the figures below cover **2026-09-17 → 2026-09-24 (7 days)**, a normal window. The previous edition's column covered 8 days, so the two are close but not identical — compare on the weekly rate (gain ÷ days × 7) rather than on the raw numbers. (This note was stale for three editions, still describing the 5-day window of 2026-09-01; corrected here rather than silently dropped.)
 
 ## Coding & Software Engineering
 

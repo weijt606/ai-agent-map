@@ -24,6 +24,15 @@
     "profile": "agents/codegraph.md",
     "scope": "in"
   },
+  "trailhq/graft": {
+    "display": "Graft",
+    "category": "infra",
+    "vertical": null,
+    "group": "memory-context",
+    "profile": "agents/graft.md",
+    "scope": "in",
+    "tracked": false
+  },
   "obra/superpowers": {
     "display": "Superpowers",
     "category": "skill",

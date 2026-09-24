@@ -4,6 +4,28 @@
 
 Structural events that reshaped agent selection — model releases, product mergers, and waves — newest first. The weekly play-by-play lives in the "Market events" timeline in [agents/README.md](agents/README.md); this page keeps the durable records.
 
+## September 22 2026 — Both Vendors Moved The Price Of The Ceiling On The Same Day
+
+**Anthropic released Claude Opus 5.5 (`claude-opus-5-5`) on September 22 2026** at **$4 / $20 per M tokens**, with **cache reads at $0.20/M**, cache writes at $5/M, a Fast mode at $8 / $40, and a 1M context window. Anthropic's own framing is that it "performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5", with output generated about 30% faster. Against Opus 5's $5 / $25 and $0.50 cache reads, that is a 20% cut on the sticker and a 60% cut on the column an agent workload actually spends in.
+
+The published benchmark table has Opus 5.5 ahead of Opus 5 on **all nine** benchmarks, and ahead of both Fable 5.1 and [GPT-6 Astra](agents/gpt-6-astra.md) on agentic coding and knowledge work: **Terminal-Bench 4.0 66.4%** (Fable 5.1 55.8, Opus 5 52.3, Astra 57.9), **CursorBench 4.0 57.8%**, **FrontierCode v1.1 54.4%**, **GDPval-AA v2.1 1846 Elo** (Astra 1542), **Humanity's Last Exam 67.7%** with tools, **OSWorld 2.0 81.8%**. It trails Astra on two: **AutomationBench 40.0% against 41.4%**, and **Terminal-Bench-Science 0.1 58.7% against 64.6%**. Anthropic says Sonnet 5.5 and Haiku 5.5 follow "in the coming weeks".
+
+The agent layer moved the same day rather than the next release: **[Claude Code](agents/claude-code.md) `v2.1.280` added Opus 5.5 as the default Opus model**, stating the 1M context and the $4 / $20 / $0.20 pricing in its own changelog entry. That is the second time in a month this map has recorded a coding agent's default model changing inside a patch release — [Codex CLI did the same with Astra on September 4](#september-34-2026--gpt-6-astra-ships-and-codex-changes-its-default-under-you).
+
+**Hours later OpenAI released GPT-6 Sol and GPT-6 Luna.** First-party pricing puts **Sol at $2 / $10** with cached input at $0.20, and **Luna at $0.10 / $0.50** with cached input at $0.01 — each roughly half the GPT-5.6 tier it shares a name with, and permanent rather than promotional. With Astra at $10 / $50, OpenAI now fields a three-tier GPT-6 family spanning two orders of magnitude.
+
+**Impact on selection:** three things to carry.
+
+First, **the ceiling row stopped being the interesting row.** Astra and Fable 5.1 are still both $10 / $50, but the newest and best-value model at each vendor now sits *below* that line. If you are choosing on price, compare Opus 5.5 ($4 / $20) against GPT-6 Sol ($2 / $10), not the two ceilings against each other.
+
+Second, **the two vendors have converged on cache reads.** Opus 5.5 is $0.20/M and GPT-6 Sol is $0.20/M — identical. Cache read is where a long-running agent's bill accumulates, so the column this map has been pointing at all quarter no longer separates them. What remains structurally different is **long-context pricing shape**: OpenAI reprices the whole request past a threshold, Anthropic bills its 1M window at standard rates across the window.
+
+Third, **the naming collision is a real operational hazard.** `GPT-6 Sol` and `GPT-5.6 Sol` are different models at different prices ($2 / $10 against $4 / $20 promotional), and the same is true of Luna ($0.10 / $0.50 against $0.20 / $1.20). A config file that says "sol" says nothing. Pin the full model id.
+
+This map does not yet carry profiles for the 5.5 family or the GPT-6 lower tiers; the [cost & benchmarks](comparisons/cost-and-benchmarks.md) table lists both generations separately in the meantime.
+
+Sources: [Introducing Claude Opus 5.5](https://www.anthropic.com/news/claude-opus-5-5), [Claude Code CHANGELOG `2.1.280`](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md), [OpenAI API pricing](https://developers.openai.com/api/docs/pricing).
+
 ## September 3–4 2026 — GPT-6 Astra Ships, And Codex Changes Its Default Under You
 
 **OpenAI released [GPT-6 Astra](https://openai.com/index/gpt-6-astra/) on September 3 2026** as a limited preview for trusted partners, and publicly to paid ChatGPT users the following day — as a **restricted version that rejects certain prompts in areas such as cybersecurity**, with advanced capability gated behind Daybreak Blue approval, the same gate GPT-5.6-Cyber landed behind in August. OpenAI's framing is state of the art in coding, math, and driving computers and web browsers, with the specific claims about *staying focused, holding task boundaries, and finishing multi-step workflows* rather than about raw scores. The published software-engineering figure is **74.1% on DeepSWE v1.1** — not SWE-bench Verified, so there is no like-for-like comparison against Claude at launch.

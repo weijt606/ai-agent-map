@@ -143,9 +143,10 @@
 | [LiteLLM](../agents/litellm.md) | — | — | — | ○ | — | — | — | — | ● |
 | [Langfuse](../agents/langfuse.md) | — | ○ | ○ | — | — | ◐ | ○ | ◐ | ● |
 | [CodeGraph](../agents/codegraph.md) | ◐ | — | ● | — | — | — | — | ◐ | ● |
+| [Graft](../agents/graft.md) | ◐ | — | ● | — | ○ | — | — | ◐ | ● |
 | [CLI-Anything](../agents/cli-anything.md) | ● | ◐ | — | — | — | — | — | ◐ | ● |
 
-看点：这组是黏合层，所以形状很偏。n8n 在**调度**（事件/cron 触发）上领先；Letta 是自编辑**记忆**的参照；CodeGraph 的"记忆"是代码知识图谱（上下文，不是对话）；LiteLLM 是纯网关——唯一真正的列是**部署控制**。[Langfuse](../agents/langfuse.md) 在这里几乎什么都不得分，而这是设计使然：它*观察* agent 而不行动，所以它真正的列是**部署控制**（自托管免费不限量）和**人工审批**（标注队列、LLM-as-a-judge 评审）——见[观测与评估](../comparisons/observability-and-evals.md)。
+看点：这组是黏合层，所以形状很偏。n8n 在**调度**（事件/cron 触发）上领先；Letta 是自编辑**记忆**的参照；CodeGraph 与 Graft 的"记忆"都是代码知识图谱（上下文，不是对话）——两者差在存储形态而不是记什么：CodeGraph 用 MCP 供一份 SQLite 索引，Graft 写成 agent 当文件读的互链 markdown；LiteLLM 是纯网关——唯一真正的列是**部署控制**。[Langfuse](../agents/langfuse.md) 在这里几乎什么都不得分，而这是设计使然：它*观察* agent 而不行动，所以它真正的列是**部署控制**（自托管免费不限量）和**人工审批**（标注队列、LLM-as-a-judge 评审）——见[观测与评估](../comparisons/observability-and-evals.md)。
 
 ## 自托管、多渠道 & 自主
 

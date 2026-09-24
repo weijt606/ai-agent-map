@@ -39,7 +39,7 @@ In scope: foreground, single-developer terminal loops whose primary job is writi
 
 1. **Start from the model you want to run.** If you are committed to a vendor's models, its first-party CLI is usually the best-tuned path: Claude → [Claude Code](../agents/claude-code.md), GPT-5.x → [Codex](../agents/codex.md), Gemini → [Gemini CLI](../agents/gemini-cli.md), Kimi → [Kimi Code](../agents/kimi-code.md), Qwen → [Qwen Code](../agents/qwen-code.md), MiMo → [MiMoCode](../agents/mimocode.md), Grok → [Grok Build](../agents/grok-build.md), DeepSeek/MiMo on a budget → [CodeWhale](../agents/codewhale.md). If you are *not* committed, [OpenCode](../agents/opencode.md) is the vendor-neutral default and [Gemini CLI](../agents/gemini-cli.md) is the one with a free tier you can actually work on.
 2. **If model freedom matters more than tuning,** pick a provider-neutral base: [Aider](../agents/aider.md) for a finished CLI, or step up to the [Pi](../agents/pi.md) harness if you want to own the loop.
-3. **If long-horizon memory on one repo is the pain point,** [MiMoCode](../agents/mimocode.md)'s built-in cross-session memory is the clearest differentiator; otherwise pair any CLI with [CodeGraph](../agents/codegraph.md) for code-context indexing.
+3. **If long-horizon memory on one repo is the pain point,** [MiMoCode](../agents/mimocode.md)'s built-in cross-session memory is the clearest differentiator; otherwise pair any CLI with [CodeGraph](../agents/codegraph.md) or [Graft](../agents/graft.md) for code-context indexing.
 4. **If you need cloud delegation or background runs,** none of these foreground loops fit — go to [Codex](../agents/codex.md) (cloud side), [Jules](../agents/jules.md), or [Devin](../agents/devin.md).
 
 ## Three Things Not To Mix Up

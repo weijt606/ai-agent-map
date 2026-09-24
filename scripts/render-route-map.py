@@ -47,7 +47,7 @@ GROUPS = [
     ]),
     ("Build your own", "自建与基础设施", "#1baf7a", [
         ("Build-your-own system", "自建系统", ["LangChain", "LangGraph", "Agent Framework"], 10),
-        ("Runtime and tools", "运行时 & 工具", ["n8n", "MemGPT", "CodeGraph"], 7),
+        ("Runtime and tools", "运行时 & 工具", ["n8n", "MemGPT", "CodeGraph", "Graft"], 8),
         ("Observability and evals", "观测与评估", ["Langfuse"], 1),
         ("Browser agent", "浏览器 agent", ["Browser Use"], 1),
     ]),

@@ -4,6 +4,16 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-09-24 — Graft joins the map, and the model layer's cheapest tier moves
+
+Three structural changes landed with this week's refresh, alongside the routine heat-table update.
+
+- **A 78th profile: [Graft](agents/graft.md)** (`trailhq/Graft`, MIT, TypeScript, 9.1k). It was held on 2026-08-27 for overlap with [CodeGraph](agents/codegraph.md); four weeks and +69% later the overlap resolved into a real distinction worth a page — CodeGraph serves a SQLite index over MCP, Graft writes the code graph as linked markdown the agent reads with its ordinary file tools. Wired into the route tables, the coverage tables, the capability matrix, [memory approaches](comparisons/memory-approaches.md) (now seven approaches, not six) and the route map.
+- **Both vendors cut below their own ceiling on the same day.** [Claude Opus 5.5](market-events.md#september-22-2026--both-vendors-moved-the-price-of-the-ceiling-on-the-same-day) at $4 / $20 and GPT-6 Sol / Luna at $2 / $10 and $0.10 / $0.50, all on September 22. [Cost & benchmarks](comparisons/cost-and-benchmarks.md) now carries three new rows and a rewritten set of takeaways: the ceiling row stopped being the interesting one, both vendors converged on $0.20/M cache reads, and `GPT-6 Sol` is not `GPT-5.6 Sol`. Model profiles for the 5.5 family and the GPT-6 lower tiers remain a follow-up.
+- **A maintenance finding, fixed and stated rather than silently corrected.** The "More window notes" block on both home pages was last rewritten on 2026-09-01 and survived the 09-09 and 09-17 refreshes unchanged, still publishing that window's 5-day figures and a skills-wave count the main bullets above it already contradicted. It is regenerated from this window's fetch, and the off-board growth list is now produced from the snapshot rather than typed by hand. The market-events timeline was also out of chronological order at the top and has been resequenced.
+
+The heat-ranking read for the window is in [agents/README.md](agents/README.md): [Open Code Review](agents/open-code-review.md) confirmed its Trending spike, [Claude Code](agents/claude-code.md) took its first top-ten seat in 23 recorded windows, and last window's confirmation of TradingAgents failed — the second failed confirmation in two windows, which is recorded as a weakness in the board's own two-window rule rather than as a one-off.
+
 ## 2026-09-06 — Audit pass: four findings, and a correction that had not been made at source
 
 A full review of everything changed on 2026-09-06 — 76 files — covering EN/zh structural parity, cross-file number consistency, and prose. Four findings, three of them introduced the same day.

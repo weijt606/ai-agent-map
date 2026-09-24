@@ -8,7 +8,7 @@ Memory is the axis that separates a stateless tool from an agent that actually k
 
 But "has memory" hides more than it reveals. These projects mean very different things by the word. This page sorts them by *how* they remember, so you can match the mechanism to what you actually need to persist.
 
-## The Six Approaches At A Glance
+## The Seven Approaches At A Glance
 
 | Approach | How it remembers | Representative | Best when you need to persist |
 | --- | --- | --- | --- |
@@ -16,6 +16,7 @@ But "has memory" hides more than it reveals. These projects mean very different 
 | Passive semantic recall | Every turn embedded as a vector; a memory graph auto-injects relevant history | [jcode](../agents/jcode.md) | Cross-session continuity without calling memory tools by hand |
 | File / keyword project memory | Human-readable files (`MEMORY.md`, checkpoints) retrieved by keyword search | [MiMoCode](../agents/mimocode.md), Claude Code (`CLAUDE.md`) | Project understanding that survives runs and stays inspectable |
 | Pre-indexed code knowledge graph | Codebase parsed into a queryable graph/DB, queried on demand | [CodeGraph](../agents/codegraph.md) | Architecture-level code context, not conversation |
+| Code graph written as files | Codebase parsed into linked markdown the agent reads with plain file tools | [Graft](../agents/graft.md) | The same code context, as an artifact a person can read and review |
 | Personal-data memory tree | Connectors sync your tools into a hierarchical summary store | [OpenHuman](../agents/openhuman.md) | What the agent knows about *you* — mail, notes, calendar |
 | Long-lived runtime memory | Memory as one subsystem of an always-on self-hosted environment | [Hermes Agent](../agents/hermes-agent.md), [Mercury Agent](../agents/mercury-agent.md) | Durable state across channels, devices, and time |
 
@@ -35,6 +36,12 @@ The pragmatic, transparent end. [MiMoCode](../agents/mimocode.md) keeps a projec
 
 A different kind of memory: not the conversation, the **codebase**. CodeGraph parses a repo (Tree-sitter + SQLite + FTS5) into a local, queryable knowledge graph and serves it over MCP, so agents like Claude Code, Cursor, and Codex answer architecture questions with far fewer tool calls and tokens. It is context infrastructure you attach to another agent, and it pays off on medium-to-large repos where scanning from scratch is expensive.
 
+## Code Graph Written As Files — [Graft](../agents/graft.md)
+
+Same target as CodeGraph, opposite storage decision. [Graft](../agents/graft.md) writes the codebase into `graft/*.md` — one node per subsystem, each with a plain-English summary, the few lines that carry the logic, content-hashed source references, and typed `[[wikilinks]]` — and the agent reads them with the file tools it already has. MCP is offered, but it is not the only door, which removes the failure mode every query-only context layer shares: an agent that cannot see the index unless it remembers to call it. The structural pass is deterministic tree-sitter (no model, no key), so every query can afford to re-check the working tree before answering. The trade is that `graft/` is gitignored by design — each teammate regenerates their own copy, so this is per-developer memory with a shared convention, not a shared artifact.
+
+**CodeGraph or Graft?** Pick CodeGraph when something other than an agent needs to query the index, or when one shared database is the point. Pick Graft when you want the memory to be reviewable, want the free tier to need no API key, and are happy for each developer to rebuild it.
+
 ## Personal-Data Memory Tree — [OpenHuman](../agents/openhuman.md)
 
 Memory pointed at your life, not your code. [OpenHuman](../agents/openhuman.md) auto-syncs Gmail, Notion, GitHub, Slack, and 118+ tools into a local **Memory Tree** — hierarchical summaries in SQLite, mirrored to an Obsidian-compatible wiki you can browse and edit. The value is that the assistant never starts a session cold about *you*; the cost is that it takes weeks of the auto-fetch loop to build up, and you accept GPL-3.0 and the data-residency question that comes with syncing everything locally.
@@ -45,7 +52,7 @@ Here memory is one subsystem inside an always-on, self-hosted environment rather
 
 ## How To Choose
 
-1. **Name what must survive.** Conversation state → [Letta](../agents/memgpt.md) or [jcode](../agents/jcode.md). Project understanding → [MiMoCode](../agents/mimocode.md) or the `CLAUDE.md` convention. Code architecture → [CodeGraph](../agents/codegraph.md). Personal data → [OpenHuman](../agents/openhuman.md). Long-lived multi-channel state → [Hermes](../agents/hermes-agent.md) / [Mercury](../agents/mercury-agent.md).
+1. **Name what must survive.** Conversation state → [Letta](../agents/memgpt.md) or [jcode](../agents/jcode.md). Project understanding → [MiMoCode](../agents/mimocode.md) or the `CLAUDE.md` convention. Code architecture → [CodeGraph](../agents/codegraph.md) or [Graft](../agents/graft.md). Personal data → [OpenHuman](../agents/openhuman.md). Long-lived multi-channel state → [Hermes](../agents/hermes-agent.md) / [Mercury](../agents/mercury-agent.md).
 2. **Decide passive vs explicit.** Passive recall ([jcode](../agents/jcode.md), self-editing [Letta](../agents/memgpt.md)) is lower-effort but harder to audit; file-based memory ([MiMoCode](../agents/mimocode.md)) is fully inspectable but only as good as its keyword search.
 3. **Watch the hidden cost.** Every memory system trades tokens, LLM calls, or ops burden for continuity. Read the profile's "Operating Cost" section, and weigh it against [cost & benchmarks](cost-and-benchmarks.md).
 

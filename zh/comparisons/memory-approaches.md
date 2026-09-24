@@ -8,7 +8,7 @@
 
 但"有记忆"这句话，藏起来的比它说出来的多。这些项目说的"记忆"根本不是一回事。本页按它们*怎么*记来分类，好让你把机制对上你真正需要持久化的东西。
 
-## 六种方案一览
+## 七种方案一览
 
 | 方案 | 怎么记 | 代表 | 你需要持久化什么时选它 |
 | --- | --- | --- | --- |
@@ -16,6 +16,7 @@
 | 被动语义召回 | 每一轮嵌入成向量；记忆图谱自动注入相关历史 | [jcode](../agents/jcode.md) | 不用手动调记忆工具的跨会话连续性 |
 | 文件 / 关键词项目记忆 | 人类可读文件（`MEMORY.md`、checkpoint），关键词检索取回 | [MiMoCode](../agents/mimocode.md)、Claude Code（`CLAUDE.md`） | 跨运行留存、且可查看的项目理解 |
 | 预索引代码知识图谱 | 代码库解析成可查询的图/库，按需查询 | [CodeGraph](../agents/codegraph.md) | 架构级代码上下文，不是对话 |
+| 写成文件的代码图谱 | 代码库解析成互相链接的 markdown，agent 用普通文件工具就能读 | [Graft](../agents/graft.md) | 同一种代码上下文，但产物是人能读、能审的 |
 | 个人数据记忆树 | 连接器把你的工具同步进分层摘要存储 | [OpenHuman](../agents/openhuman.md) | agent 关于*你*知道什么——邮件、笔记、日历 |
 | 长驻运行时记忆 | 记忆是常驻自托管环境里的一个子系统 | [Hermes Agent](../agents/hermes-agent.md)、[Mercury Agent](../agents/mercury-agent.md) | 跨渠道、跨设备、跨时间的持久状态 |
 
@@ -35,6 +36,12 @@ jcode 把每一轮嵌入成语义向量，用余弦相似度查一张**记忆图
 
 另一种记忆：不是对话，是**代码库**。CodeGraph 把仓库（Tree-sitter + SQLite + FTS5）解析成本地可查询的知识图谱，通过 MCP 提供，让 Claude Code、Cursor、Codex 这类 agent 用少得多的工具调用和 token 回答架构问题。它是你挂到别的 agent 上的上下文基础设施，在从头扫描代价很高的中大型仓库上回本。
 
+## 写成文件的代码图谱 —— [Graft](../agents/graft.md)
+
+目标和 CodeGraph 一样，存储决定恰好相反。[Graft](../agents/graft.md) 把代码库写成 `graft/*.md`——每个子系统一个节点，各自带一段大白话摘要、真正承载逻辑的那几行、带内容哈希的源引用，以及带类型的 `[[wikilink]]`——agent 用它本来就有的文件工具去读。MCP 也提供，但不是唯一一道门，这就消掉了所有“只能查询”型上下文层共有的失败形态：agent 不主动调就看不见索引。结构那一遍是确定性的 tree-sitter（不调模型、不要 key），所以每次查询都能负担得起先重新核一遍工作区再回答。代价是 `graft/` 被有意 gitignore——每个同事重新生成自己那份，所以这是带共享约定的“每人一份”记忆，不是共享产物。
+
+**选 CodeGraph 还是 Graft？** 如果提问的不只是 agent、或者你要的就是一份共享数据库，选 CodeGraph。如果你希望这份记忆可审、希望免费那一档连 API key 都不需要，且接受每个开发者各自重建，选 Graft。
+
 ## 个人数据记忆树 —— [OpenHuman](../agents/openhuman.md)
 
 指向你生活、而不是你代码的记忆。[OpenHuman](../agents/openhuman.md) 自动把 Gmail、Notion、GitHub、Slack 和 118+ 工具同步进本地**记忆树**——SQLite 里的分层摘要，镜像到一个可浏览可编辑的 Obsidian 兼容 wiki。价值是助手对*你*从不冷启动；代价是它要几周的自动抓取循环才攒得起来，而且你要接受 GPL-3.0 以及把所有东西本地同步带来的数据驻留问题。
@@ -45,7 +52,7 @@ jcode 把每一轮嵌入成语义向量，用余弦相似度查一张**记忆图
 
 ## 怎么选
 
-1. **说清什么必须留存。** 对话状态 → [Letta](../agents/memgpt.md) 或 [jcode](../agents/jcode.md)。项目理解 → [MiMoCode](../agents/mimocode.md) 或 `CLAUDE.md` 惯例。代码架构 → [CodeGraph](../agents/codegraph.md)。个人数据 → [OpenHuman](../agents/openhuman.md)。长驻多渠道状态 → [Hermes](../agents/hermes-agent.md) / [Mercury](../agents/mercury-agent.md)。
+1. **说清什么必须留存。** 对话状态 → [Letta](../agents/memgpt.md) 或 [jcode](../agents/jcode.md)。项目理解 → [MiMoCode](../agents/mimocode.md) 或 `CLAUDE.md` 惯例。代码架构 → [CodeGraph](../agents/codegraph.md) 或 [Graft](../agents/graft.md)。个人数据 → [OpenHuman](../agents/openhuman.md)。长驻多渠道状态 → [Hermes](../agents/hermes-agent.md) / [Mercury](../agents/mercury-agent.md)。
 2. **定被动还是显式。** 被动召回（[jcode](../agents/jcode.md)、自编辑的 [Letta](../agents/memgpt.md)）省事但更难审计；文件式记忆（[MiMoCode](../agents/mimocode.md)）完全可查看，但只和它的关键词检索一样好。
 3. **盯住隐藏成本。** 每套记忆系统都拿 token、LLM 调用或运维负担换连续性。读 profile 的"使用成本"一节，和[成本 & benchmark](cost-and-benchmarks.md) 一起权衡。
 

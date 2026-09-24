@@ -62,10 +62,10 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 - **本窗口 7 天，上一个窗口 8 天。** 两列接近但不完全可比，所以下面每条判断都按**周率**讲（本期就是表里的增量；上期为增量 ÷ 8 × 7）。
 - **全榜普遍降温：55 个跟踪仓库里 19 个加速、36 个放缓。** 前两名各自还回约四分之一的周率，却仍比 #3 多出 2,500 以上。这该读成一个极热窗口在回落，而不是有新的领跑者出现。
 - **[Open Code Review](agents/open-code-review.md) 确认了。** 上期本榜把它 26 倍的跳增判为尖峰，因为原因——**9 月 16 日 GitHub Trending 日榜第一**——是最容易蒸发的那一种。结果它在一个完全没有 Trending 位次的窗口里守住 #1，周率是上期的 74%，并连过 **3.5 万**与 **4 万**。按本榜自己的两窗口规矩，这是趋势。
-- **[Claude Code](agents/claude-code.md) 第一次拿到前十席位。** 此前 22 个窗口一次都没有，而且这不是小仓库空降——它是本榜跟踪的第七大仓库，把一条平了两个月的线直接翻倍。窗口里正好有 `v2.1.280`（9 月 22 日），在 Anthropic 宣布 **[Opus 5.5](comparisons/cost-and-benchmarks.md)** 的同一天把它设成默认的 Opus 模型。
+- **[Claude Code](agents/claude-code.md) 第一次拿到前十席位。** 此前 22 个窗口一次都没有，而且这不是小仓库空降——它按 star 总量是本榜跟踪的第十大仓库，把一条平了两个月的线直接翻倍。窗口里正好有 `v2.1.280`（9 月 22 日），在 Anthropic 宣布 **[Opus 5.5](comparisons/cost-and-benchmarks.md)** 的同一天把它设成默认的 Opus 模型。
 - **两个 `anthropics/*` 仓库第一次在同一个窗口占席**，而且都不是 [anthropics/skills](https://github.com/anthropics/skills)——后者已经连续三个窗口掉在榜外。[anthropics/financial-services](https://github.com/anthropics/financial-services) 从约 105/周跳到 2,048，19 倍，仅次于 Open Code Review 的 26 倍。和那一次不同的是它**查不到原因**：没有发版、没有本榜能指出来的 Trending 位次，窗口内两次提交一次是删目录、一次是安全修复。在第二个窗口说话之前，它只是尖峰。
 - **更正上期对 [TradingAgents](https://github.com/TauricResearch/TradingAgents) 的判断。** 本榜上期写它连续第二次加速"正是本榜此前要等的确认"，并把它记成已确认的趋势。结果这期它降 **63%**、掉出榜单。这是两个窗口里第二次"确认"落空（第一次是 Ruflo），值得直说：**"连涨两个窗口"这个信号，比本榜一直以来的用法要弱**，尤其当其中任一窗口偏短时。
-- **[Codex CLI](agents/codex.md) 在连坐 13 个窗口之后掉榜**（2026-06-24 → 2026-09-17），是仅次于 Hermes Agent 那条不断的 23 连之后、榜上最长的在榜连胜。它不是崩了——周率降 28%、按增量排第 11——但一条这么长的连胜结束，是更耐久的那个事实。
+- **[Codex CLI](agents/codex.md) 在连坐 13 个窗口之后掉榜**（2026-06-24 → 2026-09-17）。它结束时榜上还有四条更长的连胜在跑——Hermes Agent 22、Superpowers 17、mattpocock/skills 17、Pi 16——所以它是这五条长连胜里最短的一条，但也是唯一断掉的一条。它不是崩了——周率降 28%、按增量排第 11——但一条这么长的连胜结束，是更耐久的那个事实。
 - skills 浪潮从 3/10 回到 **4/10**，而且 #3、#4、#5 连成一块。浪潮内部的分化又一次是重点：[addyosmani](https://github.com/addyosmani/agent-skills) 涨 37%、[mattpocock](https://github.com/mattpocock/skills) 降 17%、[Superpowers](agents/superpowers.md) 降 18%，而新增的那一席是**厂商**集合而不是社区集合。
 - 本窗口的里程碑（按原始整数核过，不看四舍五入那一列）：Open Code Review 越过 **3.5 万**与 **4 万**，DeepSeek Harness **23 万**，mattpocock/skills **26.5 万**，Superpowers **29 万**，financial-services **3.5 万**，[Browser Use](agents/browser-use.md) **11.5 万**，[n8n](agents/n8n.md) **20.5 万**，[OpenClaw](agents/openclaw.md) **39 万**。
 - [OpenClaw](agents/openclaw.md) 仍是绝对总数第一，390.3k star（+416，周率降 27%）；它已有 profile，但因为这种体量的项目周环比增量噪声太大，不进按增量排名的表。
@@ -76,7 +76,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 - **先说一件维护上的事：这一块此前连续两次刷新都没更新。** 这里的笔记最后一次重写是 2026-09-01，之后 09-09 与 09-17 两次刷新都让它带着那一期的 5 天数字留在页面上，其中"前十里五席"的 skills 浪潮计数，和上方主 bullet 早就写的数字互相矛盾。本期按这一窗口的抓取整体重写，榜外清单也改成从快照生成，不再手写。
 - `.claude/skills` 浪潮**拿下前十里的四席**，比上期的三席多一席，而且 #3、#4、#5 连坐，加上 #9 的新面孔。"集中"这个判断仍然成立，但已经软化：[mattpocock/skills](https://github.com/mattpocock/skills) 的 +4,613 已经不再超过其他通用集合之和（addyosmani +3,033、Superpowers +2,882、anthropics/skills +1,051，合计 6,966）。这个比较上期就翻了，这期翻得更彻底，所以"一个目录就是整波浪潮"应当当作 2026 上半年的事实，而不是当下的事实。政策不变：策展型集合按 Skills 浪潮条目跟踪，框架那一端通过 [Superpowers](agents/superpowers.md) 覆盖。
 - 刚好卡在榜外：[Codex CLI](agents/codex.md) 126.2k（+1,316）第 11，[Browser Use](agents/browser-use.md) 116.1k（+1,207）第 12、周率涨 40%，[TradingAgents](https://github.com/TauricResearch/TradingAgents) 108.3k（+1,134）第 13，[n8n](agents/n8n.md) 205.8k（+1,073）第 14、周率涨 36%。OpenClaw 不参与本榜，所以这几个榜外名次也按同一口径数。
-- **科研类集合连续第四个窗口降温。** [K-Dense](https://github.com/K-Dense-AI/scientific-agent-skills)（−6%，46.3k）与 [academic-research-skills](https://github.com/Imbad0202/academic-research-skills)（−16%，49.3k）都低于各自 09-01 的峰值；三周前领跑本榜的科研垂直，现在一个席位都没有。
+- **科研类集合继续降温。** [K-Dense](https://github.com/K-Dense-AI/scientific-agent-skills)（−6%，46.3k）自 09-01 的峰值以来已经**连续四个窗口**放缓，[academic-research-skills](https://github.com/Imbad0202/academic-research-skills)（−16%，49.3k）自它自己 09-06 的峰值以来**连续三个窗口**放缓。三周前领跑本榜的科研垂直，现在一个席位都没有。
 - **[Browser Use](agents/browser-use.md) 反弹 40%**，此前一期跌 70%，并越过 **11.5 万**。跌一期涨一期，两个方向都不算趋势；记在这里是为了给下一期留一个基线。
 - **[eve](agents/eve.md) 几乎停了**：+18 到 5.3k，周率 18 对 265，降 93%，是全榜最陡的一次。[TrueForge](agents/trueforge.md)（+220，5.9k）在第一个完整可测窗口里降 36%。两个都还太年轻，这个幅度算噪声，但它们现在确实比所有已收录的 harness 都慢。
 - **[Graft](agents/graft.md) 是本窗口新增的 profile**（`trailhq/Graft`，9.1k）。按惯例它带 `tracked: false` 一个窗口，所以在下次刷新之前不占任何榜单席位。

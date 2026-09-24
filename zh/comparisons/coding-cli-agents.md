@@ -39,7 +39,7 @@
 
 1. **从你想跑的模型出发。** 如果你绑定某厂商的模型，它的第一方 CLI 通常是调得最好的路径：Claude → [Claude Code](../agents/claude-code.md)，GPT-5.x → [Codex](../agents/codex.md)，Gemini → [Gemini CLI](../agents/gemini-cli.md)，Kimi → [Kimi Code](../agents/kimi-code.md)，Qwen → [Qwen Code](../agents/qwen-code.md)，MiMo → [MiMoCode](../agents/mimocode.md)，Grok → [Grok Build](../agents/grok-build.md)，想省钱跑 DeepSeek/MiMo → [CodeWhale](../agents/codewhale.md)。如果你**没有**绑定，[OpenCode](../agents/opencode.md) 是厂商中立的默认，[Gemini CLI](../agents/gemini-cli.md) 是那个免费档真能干活的。
 2. **如果模型自由比调优更重要，** 选 provider 中立的底座：要成品 CLI 就用 [Aider](../agents/aider.md)，想拥有循环就上 [Pi](../agents/pi.md) harness。
-3. **如果单仓库长程记忆是痛点，** [MiMoCode](../agents/mimocode.md) 内置的跨会话记忆是最清晰的差异点；否则给任意 CLI 配上 [CodeGraph](../agents/codegraph.md) 做代码上下文索引。
+3. **如果单仓库长程记忆是痛点，** [MiMoCode](../agents/mimocode.md) 内置的跨会话记忆是最清晰的差异点；否则给任意 CLI 配上 [CodeGraph](../agents/codegraph.md) 或 [Graft](../agents/graft.md) 做代码上下文索引。
 4. **如果你需要云端委派或后台运行，** 这些前台循环都不合适——去 [Codex](../agents/codex.md)（云端那侧）、[Jules](../agents/jules.md) 或 [Devin](../agents/devin.md)。
 
 ## 三个别搞混的点

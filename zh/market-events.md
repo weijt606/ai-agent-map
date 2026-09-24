@@ -4,6 +4,28 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
+## 2026-09-22 —— 两家在同一天动了天花板的价格
+
+**Anthropic 于 2026-09-22 发布 Claude Opus 5.5（`claude-opus-5-5`）**，**每百万 token $4 / $20**，**缓存读 $0.20/M**、缓存写 $5/M，Fast 模式 $8 / $40，1M 上下文窗口。Anthropic 自己的说法是它"在多数工作上达到 Claude Fable 5.1 的水平，运行成本比 Opus 5 低 40%"，输出速度快约 30%。对照 Opus 5 的 $5 / $25 与 $0.50 缓存读，这是标价砍 20%、而 agent 负载真正花钱的那一列砍 60%。
+
+公布的基准表里，Opus 5.5 在**全部九项**上都高于 Opus 5，在 agentic coding 与知识工作上同时高于 Fable 5.1 与 [GPT-6 Astra](agents/gpt-6-astra.md)：**Terminal-Bench 4.0 66.4%**（Fable 5.1 55.8、Opus 5 52.3、Astra 57.9）、**CursorBench 4.0 57.8%**、**FrontierCode v1.1 54.4%**、**GDPval-AA v2.1 1846 Elo**（Astra 1542）、**Humanity's Last Exam 67.7%**（带工具）、**OSWorld 2.0 81.8%**。落后 Astra 的有两项：**AutomationBench 40.0% 对 41.4%**、**Terminal-Bench-Science 0.1 58.7% 对 64.6%**。Anthropic 说 Sonnet 5.5 与 Haiku 5.5 会在"未来几周"跟上。
+
+agent 层这次不是等下一个版本，而是当天就动了：**[Claude Code](agents/claude-code.md) `v2.1.280` 把 Opus 5.5 设成默认的 Opus 模型**，并在自己的 changelog 条目里写明 1M 上下文与 $4 / $20 / $0.20 的价格。这是本地图一个月内第二次记录到 coding agent 的默认模型在一个补丁版本里换掉——[9 月 4 日 Codex CLI 对 Astra 做过同样的事](#2026-09-03--09-04--gpt-6-astra-发布codex-的默认在你脚下换了)。
+
+**几小时后 OpenAI 发布 GPT-6 Sol 与 GPT-6 Luna。** 一手价格是 **Sol $2 / $10**、缓存输入 $0.20，**Luna $0.10 / $0.50**、缓存输入 $0.01——各自约为同名 GPT-5.6 档的一半，而且是常规价不是促销价。加上 $10 / $50 的 Astra，OpenAI 现在有一套跨两个数量级的 GPT-6 三档。
+
+**对选型的影响：** 三点要带走。
+
+第一，**天花板那一行不再是有意思的那一行。** Astra 与 Fable 5.1 仍然都是 $10 / $50，但两家最新、性价比最好的模型现在都落在那条线**之下**。按价格选型，该比的是 Opus 5.5（$4 / $20）对 GPT-6 Sol（$2 / $10），不是两个天花板互比。
+
+第二，**两家在缓存读上收敛了。** Opus 5.5 是 $0.20/M，GPT-6 Sol 也是 $0.20/M，完全相同。缓存读是长跑 agent 账单堆积的地方，所以本地图这一季一直指着的那一列，现在已经区分不了它们。仍然存在结构性差异的是**长上下文的计价形状**：OpenAI 过线之后对整个请求换价，Anthropic 的 1M 窗口整窗按标准价。
+
+第三，**撞名是实打实的运维风险。** `GPT-6 Sol` 与 `GPT-5.6 Sol` 是两个不同的模型、两个不同的价（$2 / $10 对促销的 $4 / $20），Luna 同理（$0.10 / $0.50 对 $0.20 / $1.20）。配置文件里写 "sol" 等于什么都没说。请写完整的 model id。
+
+本地图目前还没有 5.5 家族与 GPT-6 低档的 profile；在补上之前，[成本 & benchmark](comparisons/cost-and-benchmarks.md) 表已把两代分开列。
+
+来源：[Introducing Claude Opus 5.5](https://www.anthropic.com/news/claude-opus-5-5)、[Claude Code CHANGELOG `2.1.280`](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md)、[OpenAI API 价格页](https://developers.openai.com/api/docs/pricing)。
+
 ## 2026-09-03 → 09-04 —— GPT-6 Astra 发布，Codex 的默认在你脚下换了
 
 **OpenAI 于 2026-09-03 发布 [GPT-6 Astra](https://openai.com/index/gpt-6-astra/)**，先是面向受信任伙伴的限定预览，次日面向付费 ChatGPT 用户公开——公开的是一个**会直接拒绝网络安全等领域部分 prompt 的受限版本**，进阶能力走 Daybreak Blue 审批，也就是 2026 年 8 月 GPT-5.6-Cyber 落地时用的那道闸。OpenAI 的说法是在编码、数学、以及驱动计算机和网页浏览器上达到 SOTA，而具体主张集中在*保持专注、守住任务边界、把多步流程做完*，不是刷分。公布的软件工程数字是 **DeepSWE v1.1 74.1%**——不是 SWE-bench Verified，所以发布时不存在与 Claude 的同口径对比。

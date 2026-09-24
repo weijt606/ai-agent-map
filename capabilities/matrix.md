@@ -143,9 +143,10 @@ The four libraries backfilled on 2026-09-06 sharpen what this group's blank **de
 | [LiteLLM](../agents/litellm.md) | — | — | — | ○ | — | — | — | — | ● |
 | [Langfuse](../agents/langfuse.md) | — | ○ | ○ | — | — | ◐ | ○ | ◐ | ● |
 | [CodeGraph](../agents/codegraph.md) | ◐ | — | ● | — | — | — | — | ◐ | ● |
+| [Graft](../agents/graft.md) | ◐ | — | ● | — | ○ | — | — | ◐ | ● |
 | [CLI-Anything](../agents/cli-anything.md) | ● | ◐ | — | — | — | — | — | ◐ | ● |
 
-Standouts: this group is glue, so the shape is lopsided. n8n leads on **scheduling** (event/cron triggers); Letta is the reference for self-editing **memory**; CodeGraph's "memory" is a code knowledge graph (context, not conversation); LiteLLM is a pure gateway — its only real column is **deployment control**. [Langfuse](../agents/langfuse.md) scores almost nothing here by design: it *watches* agents rather than acting, so its real columns are **deployment control** (free unlimited self-host) and **human approval** (annotation queues, LLM-as-a-judge review) — see [observability & evals](../comparisons/observability-and-evals.md).
+Standouts: this group is glue, so the shape is lopsided. n8n leads on **scheduling** (event/cron triggers); Letta is the reference for self-editing **memory**; CodeGraph's and Graft's "memory" is a code knowledge graph (context, not conversation) — they differ on storage, not on what they remember: CodeGraph serves a SQLite index over MCP, Graft writes linked markdown the agent reads as files; LiteLLM is a pure gateway — its only real column is **deployment control**. [Langfuse](../agents/langfuse.md) scores almost nothing here by design: it *watches* agents rather than acting, so its real columns are **deployment control** (free unlimited self-host) and **human approval** (annotation queues, LLM-as-a-judge review) — see [observability & evals](../comparisons/observability-and-evals.md).
 
 ## Self-Hosted, Multi-Channel & Autonomous
 

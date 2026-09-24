@@ -4,6 +4,15 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-09-24 —— Graft 进入地图，模型层最便宜的那一档往下挪了
+
+本周刷新除常规热度表之外，还落了三项结构性改动。
+
+- **第 78 个 profile：[Graft](agents/graft.md)**（`trailhq/Graft`，MIT，TypeScript，9.1k）。它在 2026-08-27 因与 [CodeGraph](agents/codegraph.md) 重叠被按住；四周、+69% 之后，那个"重叠"已经清楚地分成两种值得各占一页的形态——CodeGraph 用 MCP 供一份 SQLite 索引，Graft 把代码图谱写成 agent 用普通文件工具就能读的互链 markdown。已接入路线表、覆盖表、能力矩阵、[记忆方案对比](comparisons/memory-approaches.md)（现在是七种而不是六种）与路线图。
+- **两家在同一天把价格砍到自家天花板之下。** [Claude Opus 5.5](market-events.md#2026-09-22--两家在同一天动了天花板的价格) $4 / $20，GPT-6 Sol / Luna $2 / $10 与 $0.10 / $0.50，都在 9 月 22 日。[成本 & benchmark](comparisons/cost-and-benchmarks.md) 新增三行并重写了要点：天花板那一行不再是有意思的那一行、两家的缓存读都收敛到 $0.20/M、以及 `GPT-6 Sol` 不是 `GPT-5.6 Sol`。5.5 家族与 GPT-6 低档的模型 profile 留作后续。
+- **一处维护问题：修掉并写出来，而不是静默改掉。** 两个主页上的"更多窗口笔记"块最后一次重写是 2026-09-01，之后原封不动地熬过了 09-09 与 09-17 两次刷新，一直在对外显示那一期的 5 天数字，以及一个和它上方主 bullet 早已矛盾的 skills 浪潮计数。本期按这一窗口的抓取整体重写，榜外增长清单也改成从快照生成。market-events 时间线顶部此前也不是严格倒序，已重排。
+- 本窗口的热度解读见 [agents/README.md](agents/README.md)：[Open Code Review](agents/open-code-review.md) 的 Trending 尖峰得到确认，[Claude Code](agents/claude-code.md) 在 23 个记录窗口里第一次拿到前十席位，而上期对 TradingAgents 的确认落空——这是两个窗口里第二次确认失败，被记为本榜"两窗口规矩"本身的弱点，而不是一次偶发。
+
 ## 2026-09-06 —— 审查：四处发现，以及一条"改了但没改到源头"的更正
 
 对 2026-09-06 当天所有改动做了一次完整复查——76 个文件——覆盖中英文结构对齐、跨文件数字自洽与文字质量。四处发现，其中三处就是当天引入的。

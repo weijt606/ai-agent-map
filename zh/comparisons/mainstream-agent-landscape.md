@@ -67,6 +67,7 @@
 | [Froge Code](../agents/froge-code.md) | review-first 自动化平台 | 自托管平台 | 多尝试 + 人工挑选 | 想把 coding automation 做成任务板流程 | 名称仍待进一步确认 |
 | [OpenHuman](../agents/openhuman.md) | 自托管桌面生活集成 agent | 本地桌面（Tauri） | 常驻 + 20 分钟自动拉取 | 想要一个已经认识你的 Gmail、Notion、GitHub、日历的个人 AI 助手 | GPL-3.0；价值随你接入的 118+ 连接器数量放大 |
 | [CodeGraph](../agents/codegraph.md) | Agent 上下文基础设施 | 本地 MCP server + SQLite | 一次索引 + 文件实时 watch | 让 Claude Code、Cursor、Codex CLI、opencode、Hermes Agent 的代码问答更便宜 | 多了一层索引；只在中到大仓库回本 |
+| [Graft](../agents/graft.md) | Agent 上下文基础设施 | 仓库里互链的 markdown + 可选 MCP | 每次查询先重建，没动过约 3ms | 跨 Claude Code、Codex、Cursor、Gemini CLI 等八家一条命令接入的可读代码上下文 | 0.x 且换名换到一半；图谱被 gitignore，每个同事各自重建 |
 | [CLI-Anything](../agents/cli-anything.md) | Agent-native 软件桥接 | 生成 Click PyPI CLI 的 pipeline | 一次生成、持续维护 | 让 agent 驱动那些没有 API 的软件（Blender、GIMP、LibreOffice 等） | 上游应用演进后生成的 CLI 需要重新验证 |
 | [jcode](../agents/jcode.md) | 性能优先的 coding harness | 本地终端（Rust） | 多会话、自己掌控循环 | 想要快、低 RAM、provider 中立、跨多会话带被动语义记忆的 harness | 项目较年轻；配置和功能仍在移动 |
 | [SWE-agent](../agents/swe-agent.md) | 研究级 SWE harness | 本地 Python | single-YAML 实验循环 | 复现 SWE-bench 数字、做攻击型安全 CTF 研究 | 上游开发精力已经大部分转移到 mini-swe-agent |

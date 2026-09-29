@@ -12,11 +12,13 @@ One-line take: ZCode is Zhipu's desktop agentic development environment — a GU
 | --- | --- |
 | Vendor | Zhipu / Z.ai |
 | Route | Direct execution (desktop GUI, not a terminal CLI and not an editor plugin) |
-| Open source | No — the client is proprietary; the GLM model line is separately open-weighted |
+| Open source | **Yes, since 2026-09-20** — client, backend and agent CLI published as [`zai-org/ZCode`](https://github.com/zai-org/ZCode) under Apache-2.0; the GLM model line is separately open-weighted |
 | Best for | GLM-first teams who want long-running coding tasks with a visible task surface and remote check-ins |
 | Main cost | Paid subscription tiers; the strongest capabilities are tied to Zhipu's own models |
-| Current version | 3.11.2 |
+| Current version | 3.14.3 (2026-09-23) |
 | Official site | https://zcode.z.ai |
+
+> **Correction (2026-09-30).** Until this date the profile said the client was proprietary. Zhipu published the full source on 2026-09-20 under Apache-2.0; this map found it ten days later in its weekly repo scan. The table, the "when not to pick it" list, the capability shape and the bottom line below are corrected in place. See [market-events](../market-events.md#september-20-2026--zhipu-open-sources-zcode-and-this-map-had-it-as-closed-found-2026-09-30).
 
 ## Why This Entry Exists
 
@@ -34,10 +36,10 @@ That distinction is why it sits on the direct-execution route rather than with [
 
 ## When Not To Pick It
 
-- **You want to read the code.** The client is closed. If open source is the requirement on this route, [Kimi Code](kimi-code.md) and [CodeWhale](codewhale.md) are the comparable Chinese-vendor options.
+- **You want an open project you can contribute to.** The source is open (Apache-2.0, since 2026-09-20), but the public repo is a three-commit source drop with no contribution guide, and the product still authenticates against Z.ai's service. If a community-run project is the requirement on this route, [Kimi Code](kimi-code.md) and [CodeWhale](codewhale.md) are the comparable Chinese-vendor options.
 - You are a terminal-first developer. This is a desktop app; a CLI loop is a different ergonomic bet — see the [terminal coding CLI comparison](../comparisons/coding-cli-agents.md).
 - You do not run GLM. The tool accepts other backends (see below), but the tuning, the pricing, and the vendor's attention are on their own model line.
-- You need an established governance story. This is a young product on a fast release cadence — 3.11.2 at the time of writing.
+- You need an established governance story. This is a young product on a fast release cadence — 3.11.2 when first profiled, 3.14.3 by 2026-09-23.
 
 ## Capability Shape
 
@@ -49,7 +51,7 @@ That distinction is why it sits on the direct-execution route rather than with [
 | Multi-agent | Strong | Positioned around several agents collaborating on one objective |
 | Platform coverage | Strong | macOS (both architectures), Windows (x64/ARM64), Linux (beta) |
 | Model freedom | Medium | GLM-first by design; other providers reported to work through your own key |
-| Open source | None | Proprietary client |
+| Open source | Source-available, licensed | Apache-2.0 since 2026-09-20; source drop, no contribution path yet |
 
 **Sourcing note.** The official site documents GLM-5.3 and GLM-5.3-Flash. Third-party walkthroughs report that ZCode also accepts your own key for Anthropic, OpenRouter, and OpenAI-compatible endpoints (including pointing it at DeepSeek's Anthropic-compatible URL), and earlier coverage of the 3.0 release described it as a visual front end for Claude Code, Codex, and Gemini. That capability is **not** stated on the current official page, so this map records it as reported rather than confirmed — verify against the version you install before building a multi-vendor plan on it.
 
@@ -59,4 +61,4 @@ ZCode is the product; GLM is the model. This map does not yet profile the open-w
 
 ## Bottom Line
 
-ZCode is the most complete answer to "what does a GLM-first developer actually run", and its remote-invocation and long-horizon-goal design are genuinely different from the terminal loops this map is mostly made of. The trade is the usual one for this shape: you get an integrated product and you give up reading the source, and the deepest capability is tied to one vendor's models.
+ZCode is the most complete answer to "what does a GLM-first developer actually run", and its remote-invocation and long-horizon-goal design are genuinely different from the terminal loops this map is mostly made of. The trade is the usual one for this shape: you get an integrated product and the deepest capability is tied to one vendor's models. Since 2026-09-20 you no longer give up reading the source — but you do still depend on the vendor's service and release process.

@@ -4,9 +4,9 @@
 
 按实际工作领域给 agent 分组，每个垂类按当前 star 总量排序，本周增量仅作参考。
 
-> **最后更新：** 2026-09-24
+> **最后更新：** 2026-09-30
 
-> **本期"周增量"列的说明：** 下面的数字覆盖 **2026-09-17 → 2026-09-24（7 天）**，是一个正常窗口。上一期那一列是 8 天，所以两列接近但不完全相同——要比就比周率（增量 ÷ 天数 × 7），不要直接比原始数字。（这条说明此前连续三期没更新，一直在描述 2026-09-01 那个 5 天窗口；这里就地更正，而不是静默删掉。）
+> **本期"周增量"列的说明：** 下面的数字覆盖 **2026-09-24 → 2026-09-30（6 天）**，比正常窗口少一天。上一期那一列是 7 天，所以两列原始数字不能直接比——要比就比周率（增量 ÷ 天数 × 7）。
 
 ## 编程开发
 
@@ -15,28 +15,28 @@
 <!-- auto:vertical:agent:coding -->
 | 排名 | 项目 | Stars | 本周增量 | 状态 |
 | --- | --- | --- | --- | --- |
-| #1 | [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 234.3k | +7,096 | 已收录 · [profile](../agents/deepseek-harness.md) |
-| #2 | [OpenCode](https://github.com/anomalyco/opencode) | 209.7k | +1,667 | 已收录 · [profile](../agents/opencode.md) |
-| #3 | [Claude Code](https://github.com/anthropics/claude-code) | 147.8k | +2,108 | 已收录 · [profile](../agents/claude-code.md) |
-| #4 | [Codex CLI](https://github.com/openai/codex) | 126.2k | +1,316 | 已收录 · [profile](../agents/codex.md) |
-| #5 | [Pi](https://github.com/earendil-works/pi) | 108.9k | +2,439 | 已收录 · [profile](../agents/pi.md) |
-| #6 | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | 107.1k | +111 | 已收录 · [profile](../agents/gemini-cli.md) |
-| #7 | [OpenHands](https://github.com/openhands/openhands) | 89.0k | +761 | 已收录 · [profile](../agents/openhands.md) |
-| #8 | [Cline](https://github.com/cline/cline) | 69.2k | +685 | 已收录 · [profile](../agents/cline.md) |
-| #9 | [Aider](https://github.com/aider-ai/aider) | 49.1k | +123 | 已收录 · [profile](../agents/aider.md) |
-| #10 | [CodeWhale](https://github.com/hmbown/codewhale) | 41.0k | +43 | 已收录 · [profile](../agents/codewhale.md) |
-| #11 | [Open Code Review](https://github.com/alibaba/open-code-review) | 40.2k | +7,112 | 已收录 · [profile](../agents/open-code-review.md) |
-| #12 | [Continue](https://github.com/continuedev/continue) | 36.0k | +68 | 已收录 · [profile](../agents/continue.md) |
-| #13 | [Qwen Code](https://github.com/qwenlm/qwen-code) | 28.1k | +188 | 已收录 · [profile](../agents/qwen-code.md) |
-| #14 | [Grok Build](https://github.com/xai-org/grok-build) | 27.1k | +241 | 已收录 · [profile](../agents/grok-build.md) |
-| #15 | [SWE-agent](https://github.com/swe-agent/swe-agent) | 20.4k | +47 | 已收录 · [profile](../agents/swe-agent.md) |
-| #16 | [jcode](https://github.com/1jehuang/jcode) | 20.1k | +267 | 已收录 · [profile](../agents/jcode.md) |
-| #17 | [OpenHarness](https://github.com/hkuds/openharness) | 15.8k | +74 | 已收录 · [profile](../agents/openharness.md) |
-| #18 | [MiMoCode](https://github.com/xiaomimimo/mimo-code) | 13.4k | +287 | 已收录 · [profile](../agents/mimocode.md) |
-| #19 | [Omnigent](https://github.com/omnigent-ai/omnigent) | 10.2k | +163 | 已收录 · [profile](../agents/omnigent.md) |
-| #20 | [mini-swe-agent](https://github.com/swe-agent/mini-swe-agent) | 7.9k | +223 | 已收录 · [profile](../agents/mini-swe-agent.md) |
-| #21 | [Kimi Code](https://github.com/moonshotai/kimi-code) | 7.6k | +214 | 已收录 · [profile](../agents/kimi-code.md) |
-| #22 | [CoStrict](https://github.com/zgsm-ai/costrict) | 4.4k | +8 | 已收录 · [profile](../agents/costrict.md) |
+| #1 | [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 240.0k | +5,633 | 已收录 · [profile](../agents/deepseek-harness.md) |
+| #2 | [OpenCode](https://github.com/anomalyco/opencode) | 210.9k | +1,243 | 已收录 · [profile](../agents/opencode.md) |
+| #3 | [Claude Code](https://github.com/anthropics/claude-code) | 148.6k | +781 | 已收录 · [profile](../agents/claude-code.md) |
+| #4 | [Codex CLI](https://github.com/openai/codex) | 127.2k | +1,009 | 已收录 · [profile](../agents/codex.md) |
+| #5 | [Pi](https://github.com/earendil-works/pi) | 110.4k | +1,467 | 已收录 · [profile](../agents/pi.md) |
+| #6 | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | 107.2k | +56 | 已收录 · [profile](../agents/gemini-cli.md) |
+| #7 | [OpenHands](https://github.com/openhands/openhands) | 89.5k | +543 | 已收录 · [profile](../agents/openhands.md) |
+| #8 | [Cline](https://github.com/cline/cline) | 69.6k | +392 | 已收录 · [profile](../agents/cline.md) |
+| #9 | [Aider](https://github.com/aider-ai/aider) | 49.3k | +144 | 已收录 · [profile](../agents/aider.md) |
+| #10 | [Open Code Review](https://github.com/alibaba/open-code-review) | 42.6k | +2,387 | 已收录 · [profile](../agents/open-code-review.md) |
+| #11 | [CodeWhale](https://github.com/hmbown/codewhale) | 41.0k | +9 | 已收录 · [profile](../agents/codewhale.md) |
+| #12 | [Continue](https://github.com/continuedev/continue) | 36.1k | +60 | 已收录 · [profile](../agents/continue.md) |
+| #13 | [Qwen Code](https://github.com/qwenlm/qwen-code) | 28.2k | +123 | 已收录 · [profile](../agents/qwen-code.md) |
+| #14 | [Grok Build](https://github.com/xai-org/grok-build) | 27.2k | +101 | 已收录 · [profile](../agents/grok-build.md) |
+| #15 | [SWE-agent](https://github.com/swe-agent/swe-agent) | 20.4k | +57 | 已收录 · [profile](../agents/swe-agent.md) |
+| #16 | [jcode](https://github.com/1jehuang/jcode) | 20.2k | +156 | 已收录 · [profile](../agents/jcode.md) |
+| #17 | [OpenHarness](https://github.com/hkuds/openharness) | 15.9k | +41 | 已收录 · [profile](../agents/openharness.md) |
+| #18 | [MiMoCode](https://github.com/xiaomimimo/mimo-code) | 13.6k | +116 | 已收录 · [profile](../agents/mimocode.md) |
+| #19 | [Omnigent](https://github.com/omnigent-ai/omnigent) | 10.3k | +159 | 已收录 · [profile](../agents/omnigent.md) |
+| #20 | [mini-swe-agent](https://github.com/swe-agent/mini-swe-agent) | 8.1k | +170 | 已收录 · [profile](../agents/mini-swe-agent.md) |
+| #21 | [Kimi Code](https://github.com/moonshotai/kimi-code) | 7.7k | +100 | 已收录 · [profile](../agents/kimi-code.md) |
+| #22 | [CoStrict](https://github.com/zgsm-ai/costrict) | 4.4k | +1 | 已收录 · [profile](../agents/costrict.md) |
 <!-- /auto:vertical:agent:coding -->
 
 ## 通用助理
@@ -46,14 +46,14 @@
 <!-- auto:vertical:agent:general -->
 | 排名 | 项目 | Stars | 本周增量 | 状态 |
 | --- | --- | --- | --- | --- |
-| #1 | [OpenClaw](https://github.com/openclaw/openclaw) | 390.3k | +416 | 已收录 · [profile](../agents/openclaw.md) |
-| #2 | [Hermes Agent](https://github.com/nousresearch/hermes-agent) | 248.4k | +2,081 | 已收录 · [profile](../agents/hermes-agent.md) |
-| #3 | [AutoGPT](https://github.com/significant-gravitas/autogpt) | 187.5k | +116 | 已收录 · [profile](../agents/autogpt.md) |
-| #4 | [Browser Use](https://github.com/browser-use/browser-use) | 116.1k | +1,207 | 已收录 · [profile](../agents/browser-use.md) |
-| #5 | [Open Interpreter](https://github.com/openinterpreter/openinterpreter) | 68.4k | +61 | 已收录 · [profile](../agents/open-interpreter.md) |
-| #6 | [Goose](https://github.com/aaif-goose/goose) | 54.6k | +222 | 已收录 · [profile](../agents/goose.md) |
-| #7 | [OpenHuman](https://github.com/tinyhumansai/openhuman) | 40.1k | +249 | 已收录 · [profile](../agents/openhuman.md) |
-| #8 | [QM](https://github.com/yc-software/qm) | 15.2k | +101 | 已收录 · [profile](../agents/qm.md) |
+| #1 | [OpenClaw](https://github.com/openclaw/openclaw) | 390.8k | +450 | 已收录 · [profile](../agents/openclaw.md) |
+| #2 | [Hermes Agent](https://github.com/nousresearch/hermes-agent) | 250.1k | +1,652 | 已收录 · [profile](../agents/hermes-agent.md) |
+| #3 | [AutoGPT](https://github.com/significant-gravitas/autogpt) | 187.6k | +102 | 已收录 · [profile](../agents/autogpt.md) |
+| #4 | [Browser Use](https://github.com/browser-use/browser-use) | 116.7k | +656 | 已收录 · [profile](../agents/browser-use.md) |
+| #5 | [Open Interpreter](https://github.com/openinterpreter/openinterpreter) | 68.5k | +60 | 已收录 · [profile](../agents/open-interpreter.md) |
+| #6 | [Goose](https://github.com/aaif-goose/goose) | 54.8k | +185 | 已收录 · [profile](../agents/goose.md) |
+| #7 | [OpenHuman](https://github.com/tinyhumansai/openhuman) | 40.2k | +96 | 已收录 · [profile](../agents/openhuman.md) |
+| #8 | [QM](https://github.com/yc-software/qm) | 15.3k | +64 | 已收录 · [profile](../agents/qm.md) |
 <!-- /auto:vertical:agent:general -->
 
 ## 金融
@@ -63,5 +63,5 @@
 <!-- auto:vertical:agent:finance -->
 | 排名 | 项目 | Stars | 本周增量 | 状态 |
 | --- | --- | --- | --- | --- |
-| #1 | [TradingAgents](https://github.com/tauricresearch/tradingagents) | 108.3k | +1,134 | 不收录 |
+| #1 | [TradingAgents](https://github.com/tauricresearch/tradingagents) | 109.3k | +937 | 不收录 |
 <!-- /auto:vertical:agent:finance -->

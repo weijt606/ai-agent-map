@@ -4,9 +4,9 @@
 [![EN](https://img.shields.io/badge/EN-English-2563eb?style=for-the-badge&labelColor=1d4ed8)](../../comparisons/cost-and-benchmarks.md)
 [![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-[热度榜](../README.md#recent-heat-ranking)追踪流行度，[能力矩阵](../capabilities/matrix.md)追踪形态。本页追踪它俩都不显示的两件事：**一个编码 agent 到底多能打，以及跑起来多少钱。**
+[热度榜](../README.md#近期热门榜)追踪流行度，[能力矩阵](../capabilities/matrix.md)追踪形态。本页追踪它俩都不显示的两件事：**一个编码 agent 到底多能打，以及跑起来多少钱。**
 
-到 2026 年年中，这两个问题合成了一个。模型层转向分档和按量计费——Anthropic 的 Fable 线按额度、OpenAI 的 GPT-5.6 三档定价——"这个任务用哪个模型、哪一档"就成了核心选型决策。随后两家的天花板又在 2026 年 9 月头几天各动一次（[Fable 5.1](../agents/claude-fable-5.md) 在 1 日，[GPT-6 Astra](../agents/gpt-6-astra.md) 在 3 日），并落到同一个标价。三周后的 **9 月 22 日**，两家又在同一天动了一次——Anthropic 出 **Opus 5.5**（$4 / $20），OpenAI 出 **GPT-6 Sol 与 Luna**（$2 / $10 与 $0.10 / $0.50）——而这一次是往下走，动的是天花板之下的那几档。再过一周，两家的中间档又各换了一次——9 月 28 日的 **Sonnet 5.5** 与 9 月 29 日的 **GPT-6.1 Sol**，都是 $2 / $10——并且各自成了自家编码 agent 的默认。时间线见[市场脉搏](../README.md#market-pulse)和[市场事件](../market-events.md)。
+到 2026 年年中，这两个问题合成了一个。模型层转向分档和按量计费——Anthropic 的 Fable 线按额度、OpenAI 的 GPT-5.6 三档定价——"这个任务用哪个模型、哪一档"就成了核心选型决策。随后两家的天花板又在 2026 年 9 月头几天各动一次（[Fable 5.1](../agents/claude-fable-5.md) 在 1 日，[GPT-6 Astra](../agents/gpt-6-astra.md) 在 3 日），并落到同一个标价。三周后的 **9 月 22 日**，两家又在同一天动了一次——Anthropic 出 **Opus 5.5**（$4 / $20），OpenAI 出 **GPT-6 Sol 与 Luna**（$2 / $10 与 $0.10 / $0.50）——而这一次是往下走，动的是天花板之下的那几档。再过一周，两家的中间档又各换了一次——9 月 28 日的 **Sonnet 5.5** 与 9 月 29 日的 **GPT-6.1 Sol**，都是 $2 / $10——并且各自成了自家编码 agent 的默认。时间线见[市场脉搏](../README.md#市场脉搏)和[市场事件](../market-events.md)。
 
 ## 成本有两层
 

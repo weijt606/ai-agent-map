@@ -2,7 +2,7 @@
 
 [返回分类排行](README.md) | [English](../../rankings/skill-verticals.md)
 
-`.claude/skills` 浪潮按方向细分——每个垂类按当前 star 总量排序，本周增量仅作参考。浪潮本身的背景见[主页](../README.md#市场事件claudeskills-浪潮2026-年-5-月仍在扩散)。
+`.claude/skills` 浪潮按方向细分——每个垂类按当前 star 总量排序，本周增量仅作参考。浪潮本身的背景见[主页](../market-events.md#2026-05持续中-claudeskills-浪潮)。
 
 > **最后更新：** 2026-09-30
 

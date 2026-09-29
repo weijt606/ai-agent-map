@@ -2,7 +2,7 @@
 
 [Back to category rankings](README.md) | [中文](../zh/rankings/skill-verticals.md)
 
-The `.claude/skills` wave, split by focus area — each vertical ranked by current total stars with the weekly gain for reference. Background on the wave itself is on the [home page](../README.md#market-event-the-claudeskills-wave-may-2026-expanding).
+The `.claude/skills` wave, split by focus area — each vertical ranked by current total stars with the weekly gain for reference. Background on the wave itself is on the [home page](../market-events.md#may-2026-ongoing--the-claudeskills-wave).
 
 > **Last updated:** 2026-09-30
 

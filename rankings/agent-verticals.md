@@ -4,9 +4,9 @@
 
 Agents grouped by the field they actually work in, each vertical ranked by current total stars with the weekly gain for reference.
 
-> **Last updated:** 2026-09-24
+> **Last updated:** 2026-09-30
 
-> **Note on this edition's "Weekly gain" column:** the figures below cover **2026-09-17 → 2026-09-24 (7 days)**, a normal window. The previous edition's column covered 8 days, so the two are close but not identical — compare on the weekly rate (gain ÷ days × 7) rather than on the raw numbers. (This note was stale for three editions, still describing the 5-day window of 2026-09-01; corrected here rather than silently dropped.)
+> **Note on this edition's "Weekly gain" column:** the figures below cover **2026-09-24 → 2026-09-30 (6 days)**, one day short of a normal window. The previous edition's column covered 7 days, so the raw numbers are not directly comparable — compare on the weekly rate (gain ÷ days × 7).
 
 ## Coding & Software Engineering
 
@@ -15,28 +15,28 @@ The deepest vertical by far — terminal CLIs, IDE-native agents, and SWE-bench-
 <!-- auto:vertical:agent:coding -->
 | Rank | Project | Stars | Weekly gain | Map status |
 | --- | --- | --- | --- | --- |
-| #1 | [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 234.3k | +7,096 | In scope · [profile](../agents/deepseek-harness.md) |
-| #2 | [OpenCode](https://github.com/anomalyco/opencode) | 209.7k | +1,667 | In scope · [profile](../agents/opencode.md) |
-| #3 | [Claude Code](https://github.com/anthropics/claude-code) | 147.8k | +2,108 | In scope · [profile](../agents/claude-code.md) |
-| #4 | [Codex CLI](https://github.com/openai/codex) | 126.2k | +1,316 | In scope · [profile](../agents/codex.md) |
-| #5 | [Pi](https://github.com/earendil-works/pi) | 108.9k | +2,439 | In scope · [profile](../agents/pi.md) |
-| #6 | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | 107.1k | +111 | In scope · [profile](../agents/gemini-cli.md) |
-| #7 | [OpenHands](https://github.com/openhands/openhands) | 89.0k | +761 | In scope · [profile](../agents/openhands.md) |
-| #8 | [Cline](https://github.com/cline/cline) | 69.2k | +685 | In scope · [profile](../agents/cline.md) |
-| #9 | [Aider](https://github.com/aider-ai/aider) | 49.1k | +123 | In scope · [profile](../agents/aider.md) |
-| #10 | [CodeWhale](https://github.com/hmbown/codewhale) | 41.0k | +43 | In scope · [profile](../agents/codewhale.md) |
-| #11 | [Open Code Review](https://github.com/alibaba/open-code-review) | 40.2k | +7,112 | In scope · [profile](../agents/open-code-review.md) |
-| #12 | [Continue](https://github.com/continuedev/continue) | 36.0k | +68 | In scope · [profile](../agents/continue.md) |
-| #13 | [Qwen Code](https://github.com/qwenlm/qwen-code) | 28.1k | +188 | In scope · [profile](../agents/qwen-code.md) |
-| #14 | [Grok Build](https://github.com/xai-org/grok-build) | 27.1k | +241 | In scope · [profile](../agents/grok-build.md) |
-| #15 | [SWE-agent](https://github.com/swe-agent/swe-agent) | 20.4k | +47 | In scope · [profile](../agents/swe-agent.md) |
-| #16 | [jcode](https://github.com/1jehuang/jcode) | 20.1k | +267 | In scope · [profile](../agents/jcode.md) |
-| #17 | [OpenHarness](https://github.com/hkuds/openharness) | 15.8k | +74 | In scope · [profile](../agents/openharness.md) |
-| #18 | [MiMoCode](https://github.com/xiaomimimo/mimo-code) | 13.4k | +287 | In scope · [profile](../agents/mimocode.md) |
-| #19 | [Omnigent](https://github.com/omnigent-ai/omnigent) | 10.2k | +163 | In scope · [profile](../agents/omnigent.md) |
-| #20 | [mini-swe-agent](https://github.com/swe-agent/mini-swe-agent) | 7.9k | +223 | In scope · [profile](../agents/mini-swe-agent.md) |
-| #21 | [Kimi Code](https://github.com/moonshotai/kimi-code) | 7.6k | +214 | In scope · [profile](../agents/kimi-code.md) |
-| #22 | [CoStrict](https://github.com/zgsm-ai/costrict) | 4.4k | +8 | In scope · [profile](../agents/costrict.md) |
+| #1 | [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 240.0k | +5,633 | In scope · [profile](../agents/deepseek-harness.md) |
+| #2 | [OpenCode](https://github.com/anomalyco/opencode) | 210.9k | +1,243 | In scope · [profile](../agents/opencode.md) |
+| #3 | [Claude Code](https://github.com/anthropics/claude-code) | 148.6k | +781 | In scope · [profile](../agents/claude-code.md) |
+| #4 | [Codex CLI](https://github.com/openai/codex) | 127.2k | +1,009 | In scope · [profile](../agents/codex.md) |
+| #5 | [Pi](https://github.com/earendil-works/pi) | 110.4k | +1,467 | In scope · [profile](../agents/pi.md) |
+| #6 | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | 107.2k | +56 | In scope · [profile](../agents/gemini-cli.md) |
+| #7 | [OpenHands](https://github.com/openhands/openhands) | 89.5k | +543 | In scope · [profile](../agents/openhands.md) |
+| #8 | [Cline](https://github.com/cline/cline) | 69.6k | +392 | In scope · [profile](../agents/cline.md) |
+| #9 | [Aider](https://github.com/aider-ai/aider) | 49.3k | +144 | In scope · [profile](../agents/aider.md) |
+| #10 | [Open Code Review](https://github.com/alibaba/open-code-review) | 42.6k | +2,387 | In scope · [profile](../agents/open-code-review.md) |
+| #11 | [CodeWhale](https://github.com/hmbown/codewhale) | 41.0k | +9 | In scope · [profile](../agents/codewhale.md) |
+| #12 | [Continue](https://github.com/continuedev/continue) | 36.1k | +60 | In scope · [profile](../agents/continue.md) |
+| #13 | [Qwen Code](https://github.com/qwenlm/qwen-code) | 28.2k | +123 | In scope · [profile](../agents/qwen-code.md) |
+| #14 | [Grok Build](https://github.com/xai-org/grok-build) | 27.2k | +101 | In scope · [profile](../agents/grok-build.md) |
+| #15 | [SWE-agent](https://github.com/swe-agent/swe-agent) | 20.4k | +57 | In scope · [profile](../agents/swe-agent.md) |
+| #16 | [jcode](https://github.com/1jehuang/jcode) | 20.2k | +156 | In scope · [profile](../agents/jcode.md) |
+| #17 | [OpenHarness](https://github.com/hkuds/openharness) | 15.9k | +41 | In scope · [profile](../agents/openharness.md) |
+| #18 | [MiMoCode](https://github.com/xiaomimimo/mimo-code) | 13.6k | +116 | In scope · [profile](../agents/mimocode.md) |
+| #19 | [Omnigent](https://github.com/omnigent-ai/omnigent) | 10.3k | +159 | In scope · [profile](../agents/omnigent.md) |
+| #20 | [mini-swe-agent](https://github.com/swe-agent/mini-swe-agent) | 8.1k | +170 | In scope · [profile](../agents/mini-swe-agent.md) |
+| #21 | [Kimi Code](https://github.com/moonshotai/kimi-code) | 7.7k | +100 | In scope · [profile](../agents/kimi-code.md) |
+| #22 | [CoStrict](https://github.com/zgsm-ai/costrict) | 4.4k | +1 | In scope · [profile](../agents/costrict.md) |
 <!-- /auto:vertical:agent:coding -->
 
 ## General Assistant
@@ -46,14 +46,14 @@ Personal and general-purpose agents — self-hosted runtimes, autonomous loops, 
 <!-- auto:vertical:agent:general -->
 | Rank | Project | Stars | Weekly gain | Map status |
 | --- | --- | --- | --- | --- |
-| #1 | [OpenClaw](https://github.com/openclaw/openclaw) | 390.3k | +416 | In scope · [profile](../agents/openclaw.md) |
-| #2 | [Hermes Agent](https://github.com/nousresearch/hermes-agent) | 248.4k | +2,081 | In scope · [profile](../agents/hermes-agent.md) |
-| #3 | [AutoGPT](https://github.com/significant-gravitas/autogpt) | 187.5k | +116 | In scope · [profile](../agents/autogpt.md) |
-| #4 | [Browser Use](https://github.com/browser-use/browser-use) | 116.1k | +1,207 | In scope · [profile](../agents/browser-use.md) |
-| #5 | [Open Interpreter](https://github.com/openinterpreter/openinterpreter) | 68.4k | +61 | In scope · [profile](../agents/open-interpreter.md) |
-| #6 | [Goose](https://github.com/aaif-goose/goose) | 54.6k | +222 | In scope · [profile](../agents/goose.md) |
-| #7 | [OpenHuman](https://github.com/tinyhumansai/openhuman) | 40.1k | +249 | In scope · [profile](../agents/openhuman.md) |
-| #8 | [QM](https://github.com/yc-software/qm) | 15.2k | +101 | In scope · [profile](../agents/qm.md) |
+| #1 | [OpenClaw](https://github.com/openclaw/openclaw) | 390.8k | +450 | In scope · [profile](../agents/openclaw.md) |
+| #2 | [Hermes Agent](https://github.com/nousresearch/hermes-agent) | 250.1k | +1,652 | In scope · [profile](../agents/hermes-agent.md) |
+| #3 | [AutoGPT](https://github.com/significant-gravitas/autogpt) | 187.6k | +102 | In scope · [profile](../agents/autogpt.md) |
+| #4 | [Browser Use](https://github.com/browser-use/browser-use) | 116.7k | +656 | In scope · [profile](../agents/browser-use.md) |
+| #5 | [Open Interpreter](https://github.com/openinterpreter/openinterpreter) | 68.5k | +60 | In scope · [profile](../agents/open-interpreter.md) |
+| #6 | [Goose](https://github.com/aaif-goose/goose) | 54.8k | +185 | In scope · [profile](../agents/goose.md) |
+| #7 | [OpenHuman](https://github.com/tinyhumansai/openhuman) | 40.2k | +96 | In scope · [profile](../agents/openhuman.md) |
+| #8 | [QM](https://github.com/yc-software/qm) | 15.3k | +64 | In scope · [profile](../agents/qm.md) |
 <!-- /auto:vertical:agent:general -->
 
 ## Finance
@@ -63,5 +63,5 @@ Domain-vertical finance agents. Tracked for heat context but out of scope for pr
 <!-- auto:vertical:agent:finance -->
 | Rank | Project | Stars | Weekly gain | Map status |
 | --- | --- | --- | --- | --- |
-| #1 | [TradingAgents](https://github.com/tauricresearch/tradingagents) | 108.3k | +1,134 | Out of scope |
+| #1 | [TradingAgents](https://github.com/tauricresearch/tradingagents) | 109.3k | +937 | Out of scope |
 <!-- /auto:vertical:agent:finance -->

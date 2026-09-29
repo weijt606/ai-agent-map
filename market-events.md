@@ -4,6 +4,24 @@
 
 Structural events that reshaped agent selection — model releases, product mergers, and waves — newest first. The weekly play-by-play lives in the "Market events" timeline in [agents/README.md](agents/README.md); this page keeps the durable records.
 
+## September 28–29 2026 — Sonnet 5.5 And GPT-6.1 Sol Become The Defaults In One Week
+
+**Anthropic released Claude Sonnet 5.5 (`claude-sonnet-5-5`) on September 28 2026** at an unchanged **$2 / $10 per M tokens**, with **cache reads at $0.20/M** and cache writes at $2.50/M. Anthropic's framing is a faster, cheaper Sonnet rather than a stronger one: 30%+ faster than Sonnet 5 and up to 30% lower cost per task, matching Sonnet 5 on coding "while using significantly fewer steps, tokens, and tool calls". Its published table has one number that stands out against the rest of the family: **Terminal-Bench 4.0 70.6%**, above the **66.4%** published for [Opus 5.5](#september-22-2026--both-vendors-moved-the-price-of-the-ceiling-on-the-same-day) six days earlier. On every other benchmark the two share, Sonnet 5.5 trails Opus 5.5 (CursorBench 4.0 55.5% against 57.8%, FrontierCode v1.1 46.2% against 54.4%, Humanity's Last Exam with tools 64.5% against 67.7%, GDPval-AA v2.1 1844 against 1846 Elo). Anthropic says **Haiku 5.5** "will join the Claude 5.5 family in the coming weeks".
+
+**[Claude Code](agents/claude-code.md) `2.1.284` made Sonnet 5.5 the default Sonnet model the same day**, stating the 1M context and the $2 / $10 / $0.20 pricing in its changelog; Anthropic sets the default effort to Medium in Claude Code and its apps.
+
+**The next day, at OpenAI's DevDay, GPT-6.1 Sol arrived.** First-party pricing lists it at **$2 / $10** — the same sticker as GPT-6 Sol — with cached input at **$0.10/M**, half of GPT-6 Sol's $0.20. **[Codex CLI](agents/codex.md) `rust-v0.159.1` (Sept 29) made GPT-6.1 Sol the default in its bundled catalog** and in the Amazon Bedrock catalogs, replacing the [GPT-6 Astra](agents/gpt-6-astra.md) default it had set on September 4. DevDay also brought reusable Codex cloud environments, a refreshed Codex CLI, a new code-review experience and computer use in the Agents API; those are product-surface changes this map will pick up in the [Codex](agents/codex.md) profile rather than here.
+
+**Impact on selection:** three things.
+
+First, **both vendors now point their own coding agent at the middle tier.** In September the map recorded four default-model changes inside a coding agent's patch release — Codex to Astra (Sept 4), Claude Code to Opus 5.5 (Sept 22), Claude Code to Sonnet 5.5 (Sept 28), Codex to GPT-6.1 Sol (Sept 29). The last two move *down* the ladder. If you run either agent on its defaults, what you are running changed this week without a major version.
+
+Second, **on the sticker the two mid tiers are now identical ($2 / $10), and cache reads are the only column that separates them** — $0.10/M for GPT-6.1 Sol against $0.20/M for Sonnet 5.5. For a long-running agent that replays a large prompt every turn, that column is most of the bill. Last week the vendors had converged on $0.20; OpenAI broke the tie within seven days.
+
+Third, **a Sonnet out-scoring an Opus on the agentic-terminal benchmark is a reason to test the cheaper tier first**, not a reason to believe it is the stronger model overall — on every other shared benchmark it trails. It does strengthen the case this map has been making since July: for most coding work, start at the tier below the one you think you need.
+
+Sources: [Introducing Claude Sonnet 5.5](https://www.anthropic.com/claude-sonnet-5-5), [Claude Code CHANGELOG `2.1.284`](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md), [OpenAI API pricing](https://developers.openai.com/api/docs/pricing), [Codex `rust-v0.159.1`](https://github.com/openai/codex/releases/tag/rust-v0.159.1), [TechCrunch on the Codex DevDay changes](https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/).
+
 ## September 22 2026 — Both Vendors Moved The Price Of The Ceiling On The Same Day
 
 **Anthropic released Claude Opus 5.5 (`claude-opus-5-5`) on September 22 2026** at **$4 / $20 per M tokens**, with **cache reads at $0.20/M**, cache writes at $5/M, a Fast mode at $8 / $40, and a 1M context window. Anthropic's own framing is that it "performs at the level of Claude Fable 5.1 on most work and costs 40% less to run than Opus 5", with output generated about 30% faster. Against Opus 5's $5 / $25 and $0.50 cache reads, that is a 20% cut on the sticker and a 60% cut on the column an agent workload actually spends in.
@@ -25,6 +43,16 @@ Third, **the naming collision is a real operational hazard.** `GPT-6 Sol` and `G
 This map does not yet carry profiles for the 5.5 family or the GPT-6 lower tiers; the [cost & benchmarks](comparisons/cost-and-benchmarks.md) table lists both generations separately in the meantime.
 
 Sources: [Introducing Claude Opus 5.5](https://www.anthropic.com/news/claude-opus-5-5), [Claude Code CHANGELOG `2.1.280`](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md), [OpenAI API pricing](https://developers.openai.com/api/docs/pricing).
+
+## September 20 2026 — Zhipu Open-Sources ZCode, And This Map Had It As Closed (found 2026-09-30)
+
+**Zhipu published `zai-org/ZCode` under Apache-2.0 on September 20 2026.** The repository holds the desktop client, the backend service, the shared UI, and the agent CLI and runtime (`apps/zcode-cli/`) — the whole product, not an SDK beside it. It was updated to v3.14.3 on September 23 and had **7.2k stars** by this map's 2026-09-30 refresh.
+
+This map found it ten days late, through the weekly new-repo scan, and its own records were wrong in the meantime: the [ZCode](agents/zcode.md) profile said "the client is proprietary", and the [capability matrix](capabilities/matrix.md) and [landscape table](comparisons/mainstream-agent-landscape.md) repeated "closed". All three are corrected in place with a dated note rather than rewritten silently.
+
+**Impact on selection:** the ZCode profile's first "when not to pick it" reason — *you want to read the code* — no longer applies. Two caveats keep it from being a clean reversal. The public history is **three commits**, a source drop rather than a development repo, and there is no contribution guide, so the governance shape is closer to [Grok Build](agents/grok-build.md)'s export model than to an open project that takes patches. And the product still authenticates against Z.ai's service, so open source here buys you auditability and a self-build path, not independence from the vendor. It enters this map's tracking next refresh under the one-window house rule.
+
+Sources: [zai-org/ZCode](https://github.com/zai-org/ZCode), [release v3.14.3](https://github.com/zai-org/ZCode/releases/tag/v3.14.3).
 
 ## September 3–4 2026 — GPT-6 Astra Ships, And Codex Changes Its Default Under You
 

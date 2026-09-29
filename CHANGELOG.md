@@ -4,6 +4,15 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-09-30 — ZCode was open-sourced ten days before this map noticed, and both mid tiers turn over
+
+Two structural changes landed with this week's refresh, alongside the routine heat-table update.
+
+- **A correction made at source: [ZCode](agents/zcode.md) is open source.** Zhipu published the client, backend and agent CLI as `zai-org/ZCode` under Apache-2.0 on September 20; this map's profile, [capability matrix](capabilities/matrix.md) row note and [landscape table](comparisons/mainstream-agent-landscape.md) all still said "closed". All three are corrected in place with dated notes, the matrix score is kept (a source drop that authenticates against the vendor's service is not a self-hosted deployment), and the repo is catalogued with `tracked: false` to enter the boards next refresh. [Codex](agents/codex.md)'s model paragraph is also updated: its bundled default is no longer Astra.
+- **Two new rows in [cost & benchmarks](comparisons/cost-and-benchmarks.md):** Claude Sonnet 5.5 (Sept 28) and GPT-6.1 Sol (Sept 29), both $2 / $10, both made their vendor's coding-agent default within a day. The "vendors converged on cache reads" takeaway written last week is rewritten — it lasted seven days: GPT-6.1 Sol's $0.10/M cache read is now the column that separates the two mid tiers. Model profiles for the 5.5 family and the GPT-6 tiers remain a follow-up.
+
+Housekeeping: [Graft](agents/graft.md) entered tracking (56 tracked slugs), and the pending-pickup line in the weekly playbook, stale since 2026-08-27, now names the current pending entry. The heat-ranking read for the window is in [agents/README.md](agents/README.md).
+
 ## 2026-09-24 — Graft joins the map, and the model layer's cheapest tier moves
 
 Three structural changes landed with this week's refresh, alongside the routine heat-table update.

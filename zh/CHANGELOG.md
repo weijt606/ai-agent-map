@@ -4,6 +4,15 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-09-30 —— ZCode 开源十天后本地图才发现，两家的中间档同时换代
+
+本周刷新除常规热度表之外，还落了两项结构性改动。
+
+- **一处在源头改掉的更正：[ZCode](agents/zcode.md) 已经开源。** 智谱于 9 月 20 日以 Apache-2.0 发布 `zai-org/ZCode`，含客户端、后端与 Agent CLI；而本地图的 profile、[能力矩阵](capabilities/matrix.md)行说明与[全景表](comparisons/mainstream-agent-landscape.md)三处都还写着"闭源"。三处都已就地改正并附日期说明；矩阵分数保持不变（一次需要对厂商服务认证的源码发布，并不等于一套可自托管的部署）；该仓库已以 `tracked: false` 登记进 catalog，下次刷新进入榜单。[Codex](agents/codex.md) 的模型段落也已更新：它的打包默认已经不是 Astra。
+- **[成本 & benchmark](comparisons/cost-and-benchmarks.md) 新增两行：** Claude Sonnet 5.5（9 月 28 日）与 GPT-6.1 Sol（9 月 29 日），都是 $2 / $10，都在一天之内成了自家编码 agent 的默认。上周写下的"两家在缓存读上已经收敛"这条要点已重写——它只成立了七天：GPT-6.1 Sol 的 $0.10/M 缓存读现在是区分两个中间档的那一列。5.5 家族与 GPT-6 各档的模型 profile 仍是后续待办。
+
+日常维护：[Graft](agents/graft.md) 进入跟踪（tracked slug 56 个）；周更手册里自 2026-08-27 起就过期的"待翻正条目"那一行，现在写的是当前的待翻正条目。本窗口的热度榜解读见 [agents/README.md](agents/README.md)。
+
 ## 2026-09-24 —— Graft 进入地图，模型层最便宜的那一档往下挪了
 
 本周刷新除常规热度表之外，还落了三项结构性改动。

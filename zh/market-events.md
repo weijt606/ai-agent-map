@@ -4,6 +4,24 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
+## 2026-09-28 → 09-29 —— Sonnet 5.5 与 GPT-6.1 Sol 在同一周成为默认
+
+**Anthropic 于 2026-09-28 发布 Claude Sonnet 5.5（`claude-sonnet-5-5`）**，价格不变，仍是**每百万 token $2 / $10**，**缓存读 $0.20/M**、缓存写 $2.50/M。Anthropic 的定位是更快更便宜的 Sonnet，而不是更强的 Sonnet：比 Sonnet 5 快 30% 以上，单任务成本最多低 30%，在编码上与 Sonnet 5 持平"但步数、token 与工具调用显著更少"。它公布的表里有一个数字和全家族其他数字格格不入：**Terminal-Bench 4.0 70.6%**，高于六天前 [Opus 5.5](#2026-09-22--两家在同一天动了天花板的价格) 公布的 **66.4%**。在两者共有的其他基准上，Sonnet 5.5 全部落后于 Opus 5.5（CursorBench 4.0 55.5% 对 57.8%，FrontierCode v1.1 46.2% 对 54.4%，带工具的 Humanity's Last Exam 64.5% 对 67.7%，GDPval-AA v2.1 1844 对 1846 Elo）。Anthropic 说 **Haiku 5.5**"将在未来几周加入 Claude 5.5 家族"。
+
+**[Claude Code](agents/claude-code.md) `2.1.284` 当天把 Sonnet 5.5 设为默认的 Sonnet 模型**，并在 changelog 里写明 1M 上下文与 $2 / $10 / $0.20 的价格；Anthropic 在 Claude Code 和自家应用里把默认 effort 设为 Medium。
+
+**第二天，OpenAI DevDay，GPT-6.1 Sol 到来。** 一手价格页列出它为 **$2 / $10**——与 GPT-6 Sol 同一个标价——缓存输入 **$0.10/M**，是 GPT-6 Sol 那 $0.20 的一半。**[Codex CLI](agents/codex.md) `rust-v0.159.1`（9 月 29 日）把 GPT-6.1 Sol 设为打包目录里的默认模型**，Amazon Bedrock 目录同样如此，替掉了它 9 月 4 日设的 [GPT-6 Astra](agents/gpt-6-astra.md)。DevDay 还带来了可复用的 Codex 云端环境、刷新后的 Codex CLI、新的代码评审体验，以及 Agents API 里的 computer use；这些是产品面的变化，本地图会在 [Codex](agents/codex.md) profile 里跟进，不在这里展开。
+
+**对选型的影响：** 三件事。
+
+第一，**两家现在都把自家编码 agent 指向中间档。** 9 月里本地图记下了四次编码 agent 在补丁版本里换默认模型——Codex 换到 Astra（9 月 4 日）、Claude Code 换到 Opus 5.5（9 月 22 日）、Claude Code 换到 Sonnet 5.5（9 月 28 日）、Codex 换到 GPT-6.1 Sol（9 月 29 日）。后两次是*往下*走。如果你用默认值跑其中任何一个，你跑的东西这周已经变了，而且没有经过大版本。
+
+第二，**按标价两家的中间档已完全相同（$2 / $10），唯一能把它们分开的是缓存读这一列**——GPT-6.1 Sol $0.10/M，Sonnet 5.5 $0.20/M。对一个每轮都重放大段 prompt 的长跑 agent，这一列就是账单的大头。上周两家刚在 $0.20 上汇合，七天之内 OpenAI 就打破了平局。
+
+第三，**一个 Sonnet 在 agentic 终端基准上超过 Opus，是先试便宜档的理由**，不是相信它整体更强的理由——在其他共有基准上它都落后。它确实加强了本地图从 7 月起一直在讲的那条：多数编码工作，从你以为需要的那一档往下一档开始。
+
+来源：[Introducing Claude Sonnet 5.5](https://www.anthropic.com/claude-sonnet-5-5)、[Claude Code CHANGELOG `2.1.284`](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md)、[OpenAI API 价格](https://developers.openai.com/api/docs/pricing)、[Codex `rust-v0.159.1`](https://github.com/openai/codex/releases/tag/rust-v0.159.1)、[TechCrunch 关于 DevDay 上 Codex 变化的报道](https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/)。
+
 ## 2026-09-22 —— 两家在同一天动了天花板的价格
 
 **Anthropic 于 2026-09-22 发布 Claude Opus 5.5（`claude-opus-5-5`）**，**每百万 token $4 / $20**，**缓存读 $0.20/M**、缓存写 $5/M，Fast 模式 $8 / $40，1M 上下文窗口。Anthropic 自己的说法是它"在多数工作上达到 Claude Fable 5.1 的水平，运行成本比 Opus 5 低 40%"，输出速度快约 30%。对照 Opus 5 的 $5 / $25 与 $0.50 缓存读，这是标价砍 20%、而 agent 负载真正花钱的那一列砍 60%。
@@ -25,6 +43,16 @@ agent 层这次不是等下一个版本，而是当天就动了：**[Claude Code
 本地图目前还没有 5.5 家族与 GPT-6 低档的 profile；在补上之前，[成本 & benchmark](comparisons/cost-and-benchmarks.md) 表已把两代分开列。
 
 来源：[Introducing Claude Opus 5.5](https://www.anthropic.com/news/claude-opus-5-5)、[Claude Code CHANGELOG `2.1.280`](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md)、[OpenAI API 价格页](https://developers.openai.com/api/docs/pricing)。
+
+## 2026-09-20 —— 智谱开源 ZCode，而本地图一直把它记成闭源（2026-09-30 发现）
+
+**智谱于 2026-09-20 以 Apache-2.0 发布 `zai-org/ZCode`。** 仓库里是桌面客户端、后端服务、共享 UI，以及 Agent CLI 与运行时（`apps/zcode-cli/`）——是整个产品，不是挂在旁边的一个 SDK。它在 9 月 23 日更新到 v3.14.3，到本地图 2026-09-30 刷新时已有 **7.2k star**。
+
+本地图是通过每周的新仓库扫描晚了十天才发现的，而这期间自己的记录是错的：[ZCode](agents/zcode.md) profile 写着"客户端闭源"，[能力矩阵](capabilities/matrix.md)与[全景表](comparisons/mainstream-agent-landscape.md)也照写了"闭源"。三处都已就地改正并附带日期说明，没有无声改写。
+
+**对选型的影响：** ZCode profile 里"什么时候不该选它"的第一条——*你想读代码*——不再成立。但有两点让它算不上干净的反转。公开历史只有**三次提交**，是一次源码发布而不是开发仓库，也没有贡献指南，所以治理形态更接近 [Grok Build](agents/grok-build.md) 的导出模式，而不是一个接受补丁的开放项目。另外产品仍然要对 Z.ai 的服务做认证，所以这里的开源给你的是可审计性和自行构建的路径，而不是脱离厂商的独立性。按一个窗口的惯例，它下次刷新进入本地图的跟踪。
+
+来源：[zai-org/ZCode](https://github.com/zai-org/ZCode)、[v3.14.3 发布](https://github.com/zai-org/ZCode/releases/tag/v3.14.3)。
 
 ## 2026-09-03 → 09-04 —— GPT-6 Astra 发布，Codex 的默认在你脚下换了
 

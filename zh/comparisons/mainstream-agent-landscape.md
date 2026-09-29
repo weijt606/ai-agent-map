@@ -20,7 +20,7 @@
 | [MiMoCode](../agents/mimocode.md) | 记忆优先的终端 coding CLI | 本地终端 | 高交互、长程 | 跨会话记忆重要的单仓库工作 | 上线才几天，表面还在快速变 |
 | [CodeWhale](../agents/codewhale.md) | DeepSeek/MiMo 原生终端 coding agent | 本地终端（Rust TUI） | 高交互 | 在低成本国产模型上跑 Claude Code 循环 | 设计上绑定较窄的模型集 |
 | [DeepSeek Harness](../agents/deepseek-harness.md) | 插件组合式 agent harness | Web UI、headless、JSON-RPC SDK、ACP server | 组合并打补丁，而不是 fork | 想替换循环里某一个零件、又不想拥有全部的团队 | developer preview；明说会有破坏兼容性的变更 |
-| [ZCode](../agents/zcode.md) | 桌面 agentic 开发环境 | macOS / Windows / Linux 桌面 + IM 远程操控 | 长周期目标，远程查看进度 | GLM 优先、想要任务面而非编辑器的团队 | 闭源；最深的能力绑在智谱自家模型上 |
+| [ZCode](../agents/zcode.md) | 桌面 agentic 开发环境 | macOS / Windows / Linux 桌面 + IM 远程操控 | 长周期目标，远程查看进度 | GLM 优先、想要任务面而非编辑器的团队 | 自 2026-09-20 起源码以 Apache-2.0 开放（本表此前写作闭源）；最深的能力绑在智谱自家模型上 |
 | [WorkBuddy](../agents/workbuddy.md) | 桌面办公 agent | 桌面、网页、微信小程序、企业入口 | 交付一份可验收的办公成品 | 中国企业协作栈里的非工程工作 | 闭源，且带授权访问本地文件 |
 | [Kimi Work](../agents/kimi-work.md) | 桌面知识工作 agent | macOS / Windows 桌面 + 浏览器扩展 | 落在本地文件与实时网页上的常驻自动化 | 重复发生的"调研到交付物"工作 | 驱动你已登录的浏览器；闭源 |
 | [GPT-6 Astra](../agents/gpt-6-astra.md) | 前沿 agentic 模型 | ChatGPT、Codex、API | OpenAI 当前天花板，2026-09-03 | 想要最强 OpenAI 模型、且能接受其边界的 agent builder | $10/$50，输入超 272k token 后翻倍；公开版本会拒绝一部分网安能力 |

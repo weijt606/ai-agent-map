@@ -30,8 +30,7 @@
     "vertical": null,
     "group": "memory-context",
     "profile": "agents/graft.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   },
   "obra/superpowers": {
     "display": "Superpowers",
@@ -496,6 +495,15 @@
     "group": null,
     "profile": "agents/qwen-code.md",
     "scope": "in"
+  },
+  "zai-org/zcode": {
+    "display": "ZCode",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/zcode.md",
+    "scope": "in",
+    "tracked": false
   },
   "browser-use/browser-use": {
     "display": "Browser Use",

@@ -502,8 +502,7 @@
     "vertical": "coding",
     "group": null,
     "profile": "agents/zcode.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   },
   "browser-use/browser-use": {
     "display": "Browser Use",

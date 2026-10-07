@@ -62,3 +62,4 @@ QwenLM/qwen-code
 browser-use/browser-use
 microsoft/agent-framework
 trailhq/Graft
+zai-org/ZCode

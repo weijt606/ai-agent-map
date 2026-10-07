@@ -4,6 +4,20 @@
 
 Structural events that reshaped agent selection — model releases, product mergers, and waves — newest first. The weekly play-by-play lives in the "Market events" timeline in [agents/README.md](agents/README.md); this page keeps the durable records.
 
+## September 30 – October 1 2026 — Gemini 4 Argon Ships Behind A Gate, And Pi Reaches 1.0
+
+**Google announced Gemini 4 Argon on September 30 2026.** Its introductory price is **$2 / $10 per M tokens**, moving to **$4 / $20** after the introductory period, with cached input at 95% off the input price. The output limit is **1M tokens**, up from 64K. Google's own table reports **DeepSWE v1.1 77.9%** and **AutomationBench 51.3%** — the latter above the 41.4% this map recorded for [GPT-6 Astra](agents/gpt-6-astra.md) and the 40.0% for Opus 5.5, though the two vendors' tables were not run side by side. The catch is access: it is rolling out "to a set of trusted cyber defenders through our Fairwind Program", with paid API customers and Google AI Ultra subscribers next, and no public API model id yet.
+
+**On October 1, [Pi](agents/pi.md) shipped v1.0.0.** The release makes the fullscreen TUI the default and, per its notes, cuts codemode prompt tokens by about 40%; it documents one breaking change for scripts that probe tools with `typeof`. It makes no explicit API-stability promise. Pi's weekly star rate rose 56% in the same window.
+
+**Impact on selection:** two things.
+
+First, **a frontier model you cannot yet buy is not a selection option.** Argon's introductory sticker matches the $2 / $10 mid tier both other vendors now default their coding agents to, and its regular price matches Opus 5.5 — but until paid API access opens it stays out of the [cost & benchmarks](comparisons/cost-and-benchmarks.md) table. Watch for the API id and whether [Gemini CLI](agents/gemini-cli.md) picks it up.
+
+Second, **no coding agent this map tracks changed its default model this window**, after four such changes in September — Claude Code `2.1.285`–`2.1.292`, Codex `rust-v0.160.x`, Gemini CLI `v0.63.0` and OpenCode `v1.18.35` all kept their defaults. Haiku 5.5 has not shipped.
+
+Sources: [Gemini 4 Argon (Google blog)](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/), [Pi v1.0.0 release](https://github.com/earendil-works/pi/releases/tag/v1.0.0), [Claude Code CHANGELOG](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md), [Codex releases](https://github.com/openai/codex/releases).
+
 ## September 28–29 2026 — Sonnet 5.5 And GPT-6.1 Sol Become The Defaults In One Week
 
 **Anthropic released Claude Sonnet 5.5 (`claude-sonnet-5-5`) on September 28 2026** at an unchanged **$2 / $10 per M tokens**, with **cache reads at $0.20/M** and cache writes at $2.50/M. Anthropic's framing is a faster, cheaper Sonnet rather than a stronger one: 30%+ faster than Sonnet 5 and up to 30% lower cost per task, matching Sonnet 5 on coding "while using significantly fewer steps, tokens, and tool calls". Its published table has one number that stands out against the rest of the family: **Terminal-Bench 4.0 70.6%**, above the **66.4%** published for [Opus 5.5](#september-22-2026--both-vendors-moved-the-price-of-the-ceiling-on-the-same-day) six days earlier. On every other benchmark the two share, Sonnet 5.5 trails Opus 5.5 (CursorBench 4.0 55.5% against 57.8%, FrontierCode v1.1 46.2% against 54.4%, Humanity's Last Exam with tools 64.5% against 67.7%, GDPval-AA v2.1 1844 against 1846 Elo). Anthropic says **Haiku 5.5** "will join the Claude 5.5 family in the coming weeks".

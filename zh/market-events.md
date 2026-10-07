@@ -4,6 +4,20 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
+## 2026-09-30 → 10-01 —— Gemini 4 Argon 带着闸门发布，Pi 到了 1.0
+
+**Google 于 2026-09-30 发布 Gemini 4 Argon。** 首发价为**每百万 token $2 / $10**，首发期结束后改为 **$4 / $20**，缓存输入比输入价便宜 95%。输出上限 **1M token**，此前是 64K。Google 自己的表里是 **DeepSWE v1.1 77.9%**、**AutomationBench 51.3%**——后者高于本地图记下的 [GPT-6 Astra](agents/gpt-6-astra.md) 41.4% 和 Opus 5.5 的 40.0%，但两家的表不是同场跑的。问题在于能不能用：它目前"通过 Fairwind 计划向一批受信任的网安防御者"推出，接下来才是付费 API 客户与 Google AI Ultra 订阅用户，暂时没有公开的 API 模型 id。
+
+**10 月 1 日，[Pi](agents/pi.md) 发布 v1.0.0。** 这个版本把全屏 TUI 设为默认，按发布说明 codemode 的 prompt token 少了约 40%；它写明了一处破坏性变更（用 `typeof` 探测工具的脚本要改写）。它没有明确承诺 API 稳定。Pi 的 star 周率在同一窗口涨了 56%。
+
+**对选型的影响：** 两点。
+
+第一，**买不到的前沿模型不是选型选项。** Argon 的首发标价与另外两家现在给自家编码 agent 设的 $2 / $10 中间档相同，常规价与 Opus 5.5 相同——但在付费 API 开放之前，它不进[成本与基准](comparisons/cost-and-benchmarks.md)表。要盯的是 API id 何时出现、[Gemini CLI](agents/gemini-cli.md) 会不会接上。
+
+第二，**继 9 月的四次之后，本窗口没有任何被跟踪的编码 agent 换默认模型**——Claude Code `2.1.285`–`2.1.292`、Codex `rust-v0.160.x`、Gemini CLI `v0.63.0`、OpenCode `v1.18.35` 都没动默认。Haiku 5.5 仍未发布。
+
+来源：[Gemini 4 Argon（Google 博客）](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/)、[Pi v1.0.0 发布](https://github.com/badlogic/pi-mono/releases/tag/v1.0.0)、[Claude Code CHANGELOG](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md)、[Codex releases](https://github.com/openai/codex/releases)。
+
 ## 2026-09-28 → 09-29 —— Sonnet 5.5 与 GPT-6.1 Sol 在同一周成为默认
 
 **Anthropic 于 2026-09-28 发布 Claude Sonnet 5.5（`claude-sonnet-5-5`）**，价格不变，仍是**每百万 token $2 / $10**，**缓存读 $0.20/M**、缓存写 $2.50/M。Anthropic 的定位是更快更便宜的 Sonnet，而不是更强的 Sonnet：比 Sonnet 5 快 30% 以上，单任务成本最多低 30%，在编码上与 Sonnet 5 持平"但步数、token 与工具调用显著更少"。它公布的表里有一个数字和全家族其他数字格格不入：**Terminal-Bench 4.0 70.6%**，高于六天前 [Opus 5.5](#2026-09-22--两家在同一天动了天花板的价格) 公布的 **66.4%**。在两者共有的其他基准上，Sonnet 5.5 全部落后于 Opus 5.5（CursorBench 4.0 55.5% 对 57.8%，FrontierCode v1.1 46.2% 对 54.4%，带工具的 Humanity's Last Exam 64.5% 对 67.7%，GDPval-AA v2.1 1844 对 1846 Elo）。Anthropic 说 **Haiku 5.5**"将在未来几周加入 Claude 5.5 家族"。

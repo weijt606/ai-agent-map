@@ -16,7 +16,7 @@
 
 第二，**继 9 月的四次之后，本窗口没有任何被跟踪的编码 agent 换默认模型**——Claude Code `2.1.285`–`2.1.292`、Codex `rust-v0.160.x`、Gemini CLI `v0.63.0`、OpenCode `v1.18.35` 都没动默认。Haiku 5.5 仍未发布。
 
-来源：[Gemini 4 Argon（Google 博客）](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/)、[Pi v1.0.0 发布](https://github.com/badlogic/pi-mono/releases/tag/v1.0.0)、[Claude Code CHANGELOG](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md)、[Codex releases](https://github.com/openai/codex/releases)。
+来源：[Gemini 4 Argon（Google 博客）](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/)、[Pi v1.0.0 发布](https://github.com/earendil-works/pi/releases/tag/v1.0.0)、[Claude Code CHANGELOG](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md)、[Codex releases](https://github.com/openai/codex/releases)。
 
 ## 2026-09-28 → 09-29 —— Sonnet 5.5 与 GPT-6.1 Sol 在同一周成为默认
 

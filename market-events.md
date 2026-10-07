@@ -16,7 +16,7 @@ First, **a frontier model you cannot yet buy is not a selection option.** Argon'
 
 Second, **no coding agent this map tracks changed its default model this window**, after four such changes in September — Claude Code `2.1.285`–`2.1.292`, Codex `rust-v0.160.x`, Gemini CLI `v0.63.0` and OpenCode `v1.18.35` all kept their defaults. Haiku 5.5 has not shipped.
 
-Sources: [Gemini 4 Argon (Google blog)](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/), [Pi v1.0.0 release](https://github.com/badlogic/pi-mono/releases/tag/v1.0.0), [Claude Code CHANGELOG](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md), [Codex releases](https://github.com/openai/codex/releases).
+Sources: [Gemini 4 Argon (Google blog)](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/), [Pi v1.0.0 release](https://github.com/earendil-works/pi/releases/tag/v1.0.0), [Claude Code CHANGELOG](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md), [Codex releases](https://github.com/openai/codex/releases).
 
 ## September 28–29 2026 — Sonnet 5.5 And GPT-6.1 Sol Become The Defaults In One Week
 

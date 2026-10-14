@@ -6,6 +6,8 @@
 
 一句话判断：Graft 是一层代码上下文，它把代码库的结构写成**一组互相链接的 markdown 文件，agent 用读普通文件的方式就能读**——没有 embedding、没有数据库、没有常驻索引进程——并且一条 `init` 就把自己接进 Claude Code、Codex、Cursor、Gemini CLI 等八个以上的 agent。
 
+> **改名（2026 年 10 月，2026-10-14 记录）：** 仓库从 `trailhq/Graft` 搬到了 [`trailhq/Trail-Code`](https://github.com/trailhq/Trail-Code)，横幅现在写着"Trail-code（原 graft），by Trail"。开源 CLI 与 npm 包仍叫 `graft`，下面关于代码图谱的内容全部仍然成立。变的是摆在它前面的东西：一层 **Trail 的"learnings"**——`trail init` 接好 agent 并建图，每次会话把决定了什么、排除了什么写进仓库里的 `.trail/learnings/`，`trail check` 在提 PR 前拿改动对照这些记录，登录后可以开一个跨仓库的团队工作区。写这段时 `@trailhq/trail` 包还没发到 npm（README 让你从分支自己构建），2026-10-14 的一次提交删掉了早先的 `graft trail push/pull` 和"brain"客户端。旧的 `trailhq/Graft` 链接会重定向；本地图保留文件名，只把跟踪 slug 重新编了 key。
+
 > **真正的分野在存储形态，不在检索。** [CodeGraph](codegraph.md) 把仓库索引进一个可查询的 SQLite 数据库，通过 MCP 交给 agent；agent 必须**主动调工具**才看得见任何东西。Graft 写的是 `graft/*.md`——每个子系统一个节点，节点之间用 `[[wikilink]]` 相连——agent 用它本来就有的文件工具去打开、grep、跟着链接走。MCP 也提供，但那是第二道门，不是唯一一道。
 
 > **它给出了第三方评分的基准，这在这条路线上很少见。** 多数上下文层只报自家 harness 的数字。Graft 既报了自家的，也报了 **SWE-bench Verified 的 50 个实例**，由官方 `swebench` 4.1.0 评分——真实仓库、维护者自己的测试。请把它当作厂商自己跑的一个 50 实例子集来读，但要读：它记录的失败形态（基线只补一个文件、漏掉同属那几个）是一个具体可核的断言，而不是一个省 token 的百分比。
@@ -14,7 +16,7 @@
 
 | 项目 | 结论 |
 | --- | --- |
-| 厂商 | Trail（`trailhq/Graft`，trailhq.com）——`trailhq` 组织建于 2026-08-24；仓库徽章与 npm scope 仍留着此前 NanoNets 的名字 |
+| 厂商 | Trail（`trailhq/Trail-Code`，原 `trailhq/Graft`，trailhq.com）——`trailhq` 组织建于 2026-08-24；npm scope 与若干徽章仍留着此前 NanoNets 的名字 |
 | 路线 | 运行时 & 工具——给别的 agent 用的代码上下文层 |
 | 开源 | MIT；npm `@nanonets/graft`，CLI 为 `graft` |
 | 实现 | Node 上的 TypeScript；结构层用 tree-sitter |
@@ -41,7 +43,7 @@
 - **你要的是一个别的工具也能 join 的可查询存储。** 如果提问的不止是 agent，[CodeGraph](codegraph.md) 的 SQLite 是更合适的形态。
 - **你需要一份提交进仓库、大家共享的产物。** `graft build` 会特意把 `graft/` 加进 `.gitignore`——你提交的是接线，每个同事各自重新生成自己的图谱（也各自付自己的富化成本）才能拿到同一张图。
 - **机器级写入对你是问题。** 选了 Codex 这个宿主，它同时会改 `~/.codex/config.toml`、`~/.codex/hooks.json` 并放一个 hook shim——这些是用户级的，对你用 Codex 打开的**每一个**仓库都生效。选择器里有标注、`--no-global` 可以跳过，但默认并不是只作用于本仓库。
-- **你需要稳定的接口。** npm 停在 `0.19.0`，GitHub 上一个 release tag 都没有；而且项目中途换过东家：组织是 `trailhq`，npm scope 还是 `@nanonets`，README 自己的徽章两边都指。
+- **你需要稳定的接口。** npm 停在 `0.19.0`，GitHub 上一个 release tag 都没有；而且项目中途已经改过两次名：NanoNets → Trail（组织），再 Graft → Trail-Code（仓库，2026 年 10 月）；npm scope 还是 `@nanonets`，CLI 还是 `graft`，README 自己的徽章指向所有这些名字。
 - **你要厂商中立的治理。** 绝大多数提交来自两个账号，README 反复把人引向托管产品（Trail Brain）。MIT 且可 fork，不等于社区治理——本地图对 [TrueForge](trueforge.md) 画的是同一条线。
 - **默认开启的遥测是硬阻断。** 默认会发一条批量的匿名使用统计。它有文档、能用 `graft telemetry debug` 查看、在 CI 和源码构建里默认关闭、`DO_NOT_TRACK=1` 也能关——但它是 opt-out，不是 opt-in。
 

@@ -18,7 +18,7 @@
 | [Codex](../agents/codex.md) | 云端委派型 coding agent | 云端隔离环境 + CLI / IDE | 异步委派 | 想丢任务、等结果、看日志和测试证据 | 本地即时协作感弱一些 |
 | [Kimi Code](../agents/kimi-code.md) | 厂商官方终端 coding CLI | 本地终端、ACP 编辑器、VS Code | 高交互 | Kimi 原生的编码循环，IDE/ACP 触达强 | 正从旧版 kimi-cli 迁移中 |
 | [MiMoCode](../agents/mimocode.md) | 记忆优先的终端 coding CLI | 本地终端 | 高交互、长程 | 跨会话记忆重要的单仓库工作 | 上线才几天，表面还在快速变 |
-| [CodeWhale](../agents/codewhale.md) | DeepSeek/MiMo 原生终端 coding agent | 本地终端（Rust TUI） | 高交互 | 在低成本国产模型上跑 Claude Code 循环 | 设计上绑定较窄的模型集 |
+| [CodeWhale](../agents/codewhale.md) | provider 中立的终端 coding agent（起步时只支持 DeepSeek） | 本地终端（Rust TUI） | 高交互 | 在 40 多条 provider 路线或本地模型上跑 Claude Code 循环，默认 DeepSeek | 社区项目；循环质量跟着你接进去的模型走 |
 | [DeepSeek Harness](../agents/deepseek-harness.md) | 插件组合式 agent harness | Web UI、headless、JSON-RPC SDK、ACP server | 组合并打补丁，而不是 fork | 想替换循环里某一个零件、又不想拥有全部的团队 | developer preview；明说会有破坏兼容性的变更 |
 | [ZCode](../agents/zcode.md) | 桌面 agentic 开发环境 | macOS / Windows / Linux 桌面 + IM 远程操控 | 长周期目标，远程查看进度 | GLM 优先、想要任务面而非编辑器的团队 | 自 2026-09-20 起源码以 Apache-2.0 开放（本表此前写作闭源）；最深的能力绑在智谱自家模型上 |
 | [WorkBuddy](../agents/workbuddy.md) | 桌面办公 agent | 桌面、网页、微信小程序、企业入口 | 交付一份可验收的办公成品 | 中国企业协作栈里的非工程工作 | 闭源，且带授权访问本地文件 |

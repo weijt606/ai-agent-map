@@ -4,6 +4,24 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
+## 2026-10-07 → 10-13 —— Haiku 5.5 发布，Gemini 4 Argon 开放付费 API，Sonnet 5.5 的缓存读原来只有本地图记下的一半
+
+**Anthropic 于 2026-10-07 发布 Claude Haiku 5.5（`claude-haiku-5-5`）**，就是随 Sonnet 5.5 一起承诺"未来几周"推出的那个模型。它按 prompt 长度分价：**prompt 不超过 10 万 token 时每百万 token $0.10 / $0.50，超过则 $0.50 / $2.50**，缓存读 $0.01 / $0.05，5 分钟缓存写 $0.125 / $0.625。上下文 1M，输出 128K，知识截止 2026 年 6 月；Anthropic 的文档注明它的 tokenizer 对同一段文本比 Haiku 4.5 多算约 30% token。它是 API 以及 Bedrock、Vertex、Foundry 上默认的 Haiku 模型；[Claude Code](agents/claude-code.md) `v2.1.293` 同日加入，但没有换自己的 Opus 或 Sonnet 默认。
+
+**Google 于 2026-10-13 把 Gemini 4 Argon 开放到付费 API。** 本地图 9 月 30 日记下的那道闸门，对带防护的版本已经撤掉：`gemini-4-argon` 可通过 Gemini API 在 AI Studio 付费层使用，也进了 Gemini for business、面向 AI Ultra 订户的 Antigravity，以及 Pro 与 Ultra 订户的 Gemini 应用——但**不对免费层和 AI Pro 套餐开放**。价格是首发的 **$2 / $10，至 2026-11-30，之后 $4 / $20**；隐式缓存把缓存输入便宜 95%（$0.10，12 月 1 日起 $0.20），不支持显式缓存，采样参数会被忽略。无网安防护的版本仍留在 Fairwind 计划里，滚动放行。
+
+**本地图 9 月 28 日记下的一个数字已经在它底下变了。** Anthropic 的价格页现在把 Sonnet 5.5 的缓存读标为 **$0.10/M**——输入价的 5%，与 Opus 5.5 同一个倍数——不是本地图引用的 Claude Code `2.1.284` changelog 里的 $0.20/M。Claude Code `v2.1.296`（10 月 9 日）把自己的 `/cost`、状态栏和 SDK 数字改为"按每百万 token $0.10 计 Sonnet 5.5 缓存读（原为 $0.20）"。是 Anthropic 降了价还是改正了标价，本地图找不到任何地方有说明；确定的只是现在的数字。[成本表](comparisons/cost-and-benchmarks.md)那一行和下面 9 月 28 日的条目都已加带日期的更正。
+
+**对选型的影响：** 三件事。
+
+第一，**两家的阶梯现在都够到了地板。** Haiku 5.5 在短 prompt 上与 GPT-6 Luna 的 $0.10 / $0.50 标价和 $0.01 缓存读相同——但它是[成本表](comparisons/cost-and-benchmarks.md)上唯一一个按 prompt 长度分价的模型，agent 会话一旦堆过 10 万 token，从那一个请求起两端都付 5 倍。做路由、抽取和 subagent 之间的碎话，它是 Anthropic 最便宜的一级；跑一个长 agent 循环，它并不自动比 Sonnet 5.5 便宜。
+
+第二，**两个中间档现在标价和缓存都完全相同**（$2 / $10 / $0.10）。本地图挂了两周的那个判断——GPT-6.1 Sol 的缓存价是把它和 Sonnet 5.5 分开的唯一一列——撤回。能分开它们的是长上下文的计价形状（OpenAI 输入超 272K token 后对整个请求换价，Anthropic 不这样）和基准那几列。
+
+第三，**Gemini 4 Argon 现在是一个可选项，而且带着日期。** 它的首发标价是中间档的价格；12 月 1 日起的常规价是 Opus 5.5 的。谁按 $2 / $10 做了规划，就自带一次 11 月 30 日的复核，和 GPT-5.6 Sol 的 11 月 21 日并排。窗口内没有被跟踪的编码 agent 把它设为默认——[Gemini CLI](agents/gemini-cli.md) `v0.64.0`（10 月 13 日）没有换模型——而且连续第二个窗口没有任何被跟踪的编码 agent 换默认（[Codex CLI](agents/codex.md) `rust-v0.161.0` 于 10 月 7 日把 GPT-6.1 Sol 默认带到主发布线，和 `rust-v0.159.1` 在 9 月 29 日回移的是同一处改动）。
+
+来源：[Claude Haiku 5.5（Anthropic）](https://www.anthropic.com/claude-haiku-5-5)、[Haiku 5.5 模型概览](https://platform.claude.com/docs/en/models/haiku-5-5/overview)、[Anthropic 价格页](https://platform.claude.com/docs/en/about-claude/pricing)、[Claude Code v2.1.293](https://github.com/anthropics/claude-code/releases/tag/v2.1.293) 与 [v2.1.296](https://github.com/anthropics/claude-code/releases/tag/v2.1.296)、[Introducing Gemini 4 Argon（Google 博客）](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/)、[Gemini 4 Argon 开发者文档](https://ai.google.dev/gemini-api/docs/latest-model)、[Codex rust-v0.161.0](https://github.com/openai/codex/releases/tag/rust-v0.161.0)。
+
 ## 2026-09-30 → 10-01 —— Gemini 4 Argon 带着闸门发布，Pi 到了 1.0
 
 **Google 于 2026-09-30 发布 Gemini 4 Argon。** 首发价为**每百万 token $2 / $10**，首发期结束后改为 **$4 / $20**，缓存输入比输入价便宜 95%。输出上限 **1M token**，此前是 64K。Google 自己的表里是 **DeepSWE v1.1 77.9%**、**AutomationBench 51.3%**——后者高于本地图记下的 [GPT-6 Astra](agents/gpt-6-astra.md) 41.4% 和 Opus 5.5 的 40.0%，但两家的表不是同场跑的。问题在于能不能用：它目前"通过 Fairwind 计划向一批受信任的网安防御者"推出，接下来才是付费 API 客户与 Google AI Ultra 订阅用户，暂时没有公开的 API 模型 id。
@@ -20,7 +38,7 @@
 
 ## 2026-09-28 → 09-29 —— Sonnet 5.5 与 GPT-6.1 Sol 在同一周成为默认
 
-**Anthropic 于 2026-09-28 发布 Claude Sonnet 5.5（`claude-sonnet-5-5`）**，价格不变，仍是**每百万 token $2 / $10**，**缓存读 $0.20/M**、缓存写 $2.50/M。Anthropic 的定位是更快更便宜的 Sonnet，而不是更强的 Sonnet：比 Sonnet 5 快 30% 以上，单任务成本最多低 30%，在编码上与 Sonnet 5 持平"但步数、token 与工具调用显著更少"。它公布的表里有一个数字和全家族其他数字格格不入：**Terminal-Bench 4.0 70.6%**，高于六天前 [Opus 5.5](#2026-09-22--两家在同一天动了天花板的价格) 公布的 **66.4%**。在两者共有的其他基准上，Sonnet 5.5 全部落后于 Opus 5.5（CursorBench 4.0 55.5% 对 57.8%，FrontierCode v1.1 46.2% 对 54.4%，带工具的 Humanity's Last Exam 64.5% 对 67.7%，GDPval-AA v2.1 1844 对 1846 Elo）。Anthropic 说 **Haiku 5.5**"将在未来几周加入 Claude 5.5 家族"。
+**Anthropic 于 2026-09-28 发布 Claude Sonnet 5.5（`claude-sonnet-5-5`）**，价格不变，仍是**每百万 token $2 / $10**，**缓存读 $0.20/M**、缓存写 $2.50/M*（2026-10-14 更正：Anthropic 的价格页现在把 Sonnet 5.5 的缓存读标为 **$0.10/M**，Claude Code `v2.1.296` 也于 10 月 9 日把自己的数字从 $0.20 改正——见 10-07 → 10-13 条目）*。Anthropic 的定位是更快更便宜的 Sonnet，而不是更强的 Sonnet：比 Sonnet 5 快 30% 以上，单任务成本最多低 30%，在编码上与 Sonnet 5 持平"但步数、token 与工具调用显著更少"。它公布的表里有一个数字和全家族其他数字格格不入：**Terminal-Bench 4.0 70.6%**，高于六天前 [Opus 5.5](#2026-09-22--两家在同一天动了天花板的价格) 公布的 **66.4%**。在两者共有的其他基准上，Sonnet 5.5 全部落后于 Opus 5.5（CursorBench 4.0 55.5% 对 57.8%，FrontierCode v1.1 46.2% 对 54.4%，带工具的 Humanity's Last Exam 64.5% 对 67.7%，GDPval-AA v2.1 1844 对 1846 Elo）。Anthropic 说 **Haiku 5.5**"将在未来几周加入 Claude 5.5 家族"。
 
 **[Claude Code](agents/claude-code.md) `2.1.284` 当天把 Sonnet 5.5 设为默认的 Sonnet 模型**，并在 changelog 里写明 1M 上下文与 $2 / $10 / $0.20 的价格；Anthropic 在 Claude Code 和自家应用里把默认 effort 设为 Medium。
 
@@ -30,7 +48,7 @@
 
 第一，**两家现在都把自家编码 agent 指向中间档。** 9 月里本地图记下了四次编码 agent 在补丁版本里换默认模型——Codex 换到 Astra（9 月 4 日）、Claude Code 换到 Opus 5.5（9 月 22 日）、Claude Code 换到 Sonnet 5.5（9 月 28 日）、Codex 换到 GPT-6.1 Sol（9 月 29 日）。后两次是*往下*走。如果你用默认值跑其中任何一个，你跑的东西这周已经变了，而且没有经过大版本。
 
-第二，**按标价两家的中间档已完全相同（$2 / $10），唯一能把它们分开的是缓存读这一列**——GPT-6.1 Sol $0.10/M，Sonnet 5.5 $0.20/M。对一个每轮都重放大段 prompt 的长跑 agent，这一列就是账单的大头。上周两家刚在 $0.20 上汇合，七天之内 OpenAI 就打破了平局。
+第二，**按标价两家的中间档已完全相同（$2 / $10），唯一能把它们分开的是缓存读这一列**——GPT-6.1 Sol $0.10/M，Sonnet 5.5 $0.20/M。对一个每轮都重放大段 prompt 的长跑 agent，这一列就是账单的大头。上周两家刚在 $0.20 上汇合，七天之内 OpenAI 就打破了平局。*（2026-10-14 撤回：Anthropic 价格页上 Sonnet 5.5 的缓存读是 $0.10/M，所以两个中间档在这一列上也完全相同——见 10-07 → 10-13 条目。）*
 
 第三，**一个 Sonnet 在 agentic 终端基准上超过 Opus，是先试便宜档的理由**，不是相信它整体更强的理由——在其他共有基准上它都落后。它确实加强了本地图从 7 月起一直在讲的那条：多数编码工作，从你以为需要的那一档往下一档开始。
 

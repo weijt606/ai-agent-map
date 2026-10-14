@@ -24,8 +24,8 @@
     "profile": "agents/codegraph.md",
     "scope": "in"
   },
-  "trailhq/graft": {
-    "display": "Graft",
+  "trailhq/trail-code": {
+    "display": "Trail Code (Graft)",
     "category": "infra",
     "vertical": null,
     "group": "memory-context",
@@ -105,7 +105,7 @@
     "profile": null,
     "scope": "out"
   },
-  "hmbown/codewhale": {
+  "codewhale-hq/codewhale": {
     "display": "CodeWhale",
     "category": "agent",
     "vertical": "coding",

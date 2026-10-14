@@ -28,7 +28,7 @@ In scope: foreground, single-developer terminal loops whose primary job is writi
 | [Aider](../agents/aider.md) | Open source | Bring your own | Python / Apache-2.0 | Git-centered loop with explicit diffs and total model freedom |
 | [Kimi Code](../agents/kimi-code.md) | Moonshot AI | Kimi (K2) | TypeScript / MIT | First-party Kimi loop with strong IDE reach via ACP + a VS Code extension |
 | [MiMoCode](../agents/mimocode.md) | Xiaomi | MiMo (MiMo Auto) | TypeScript / MIT | Persistent cross-session memory built in — keeps project understanding across runs |
-| [CodeWhale](../agents/codewhale.md) | Hmbown (community) | DeepSeek + MiMo | Rust / open source | Claude-Code shape refit around low-cost Chinese-stack models as first-class citizens |
+| [CodeWhale](../agents/codewhale.md) | codewhale-hq (community) | Any — 40+ provider routes, DeepSeek default | Rust / open source | Claude-Code shape, provider-neutral since its Hmbown → codewhale-hq move; began DeepSeek-only |
 | [Grok Build](../agents/grok-build.md) | SpaceXAI / xAI | Grok | Rust / Apache-2.0 (source-available) | One binary covering three modes — full-screen TUI, headless CI, and an ACP server editors can drive |
 
 > Vendor-official CLIs (Claude Code, Codex, Kimi Code, MiMoCode, Grok Build) tune the model and the loop together. Third-party/community CLIs (Aider, CodeWhale) trade that for portability or a specific cost/model target.

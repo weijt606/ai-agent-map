@@ -28,7 +28,7 @@
 | [Aider](../agents/aider.md) | 开源 | 自带模型 | Python / Apache-2.0 | 以 git 为中心、显式 diff、完全的模型自由 |
 | [Kimi Code](../agents/kimi-code.md) | Moonshot AI | Kimi（K2） | TypeScript / MIT | 第一方 Kimi 循环，通过 ACP + VS Code 插件有强 IDE 触达 |
 | [MiMoCode](../agents/mimocode.md) | 小米 | MiMo（MiMo Auto） | TypeScript / MIT | 内置持久跨会话记忆——跨多次运行保留项目理解 |
-| [CodeWhale](../agents/codewhale.md) | Hmbown（社区） | DeepSeek + MiMo | Rust / 开源 | Claude Code 形态重新围绕低成本国产模型搭建，国产模型当一等公民 |
+| [CodeWhale](../agents/codewhale.md) | codewhale-hq（社区） | 任意——40 多条 provider 路线，默认 DeepSeek | Rust / 开源 | Claude Code 形态，自 Hmbown → codewhale-hq 搬家后 provider 中立；起步时只支持 DeepSeek |
 | [Grok Build](../agents/grok-build.md) | SpaceXAI / xAI | Grok | Rust / Apache-2.0（源码可见） | 一个二进制覆盖三种模式——全屏 TUI、headless CI、以及编辑器可驱动的 ACP server |
 
 > 厂商官方 CLI（Claude Code、Codex、Kimi Code、MiMoCode、Grok Build）把模型和循环一起调优。第三方/社区 CLI（Aider、CodeWhale）用这点换取可移植性或特定的成本/模型目标。

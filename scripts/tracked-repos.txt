@@ -12,7 +12,7 @@ earendil-works/pi
 openai/codex
 rohitg00/agentmemory
 anthropics/financial-services
-Hmbown/CodeWhale
+codewhale-hq/Codewhale
 tinyhumansai/openhuman
 K-Dense-AI/scientific-agent-skills
 HKUDS/CLI-Anything
@@ -61,5 +61,5 @@ google-gemini/gemini-cli
 QwenLM/qwen-code
 browser-use/browser-use
 microsoft/agent-framework
-trailhq/Graft
+trailhq/Trail-Code
 zai-org/ZCode

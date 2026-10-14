@@ -84,8 +84,12 @@ changes actually touch them — see step 5.
    only ever a profile written during the *previous* refresh, so carry it
    forward by naming it here when you write it. **Rewrite this line every
    refresh** — it went stale for two months once (it named `vercel/eve`, long
-   since flipped). **As of 2026-10-07: no pending pickups.** `zai-org/ZCode` was flipped on
-   2026-10-07 and no new profile was written this refresh.
+   since flipped). **As of 2026-10-14: no pending pickups.** No new profile was written this
+   refresh; two tracked slugs were re-keyed after upstream moves
+   (`trailhq/Graft` → `trailhq/Trail-Code`, `Hmbown/CodeWhale` →
+   `codewhale-hq/Codewhale`) in tracked-repos.txt, catalog.json, snapshot.json
+   and history.json raw — when a repo moves, migrate all four together so the
+   gain history stays continuous.
 
    **Every slug added to `tracked-repos.txt` needs a matching entry in
    `scripts/catalog.json`** (display name, category agent/infra/skill, vertical,

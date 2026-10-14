@@ -4,6 +4,16 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-10-14 — A price this map recorded had changed under it, two tracked repos moved, and the model ladder reached the floor
+
+Three structural changes landed with this week's refresh, alongside the routine heat-table update.
+
+- **A correction made at source: Sonnet 5.5 cache reads are $0.10/M, not $0.20.** This map recorded $0.20 from the Claude Code `2.1.284` changelog on September 28 and built a takeaway on it — that GPT-6.1 Sol's $0.10 was the one column separating the two mid tiers. Anthropic's pricing page lists $0.10 (5% of input), and Claude Code `v2.1.296` corrected its own cost accounting on October 9. The [cost table](comparisons/cost-and-benchmarks.md) row, its takeaway bullet, the September 28 [market-events](market-events.md) entry and the home-page Market Pulse all carry dated corrections; the takeaway is withdrawn rather than softened.
+- **Two new rows in [cost & benchmarks](comparisons/cost-and-benchmarks.md):** Claude Haiku 5.5 (October 7, $0.10 / $0.50 up to 100K-token prompts, $0.50 / $2.50 above — the only row priced by prompt length) and Gemini 4 Argon (opened to the paid API October 13, $2 / $10 through November 30, then $4 / $20 — the first Google row). Both are recorded in [market-events](market-events.md). The 5.5-family and GPT-6 model profiles remain the open backlog item.
+- **Two upstream moves, migrated rather than papered over.** `trailhq/Graft` is now `trailhq/Trail-Code` ("Trail-code, previously graft"), with a Trail learnings layer in front of the unchanged `graft` CLI; the [profile](agents/graft.md) keeps its file name and carries a dated note. `Hmbown/CodeWhale` had moved to `codewhale-hq/Codewhale` before the October 7 fetch — this map missed it for a window — and its README is now provider-neutral with 40+ routes, so the [CodeWhale](agents/codewhale.md) profile, the [CLI comparison](comparisons/coding-cli-agents.md) row and the [landscape](comparisons/mainstream-agent-landscape.md) row are corrected in place; the old "DeepSeek + MiMo native, narrow model set" framing was out of date. Both slugs are re-keyed across `tracked-repos.txt`, `catalog.json`, `snapshot.json` and `history.json` so the gain history stays continuous.
+
+Housekeeping: `browser-use/jev-ultrafast` (22.9k, no push since September 30) is recorded inside the [Browser Use](agents/browser-use.md) profile as a sibling repository rather than profiled. The heat-ranking read for the window is in [agents/README.md](agents/README.md): mattpocock/skills posted its largest 7-day gain on record, the skills wave rose to four seats, and the spike rule paid out on OpenHuman.
+
 ## 2026-09-30 — ZCode was open-sourced ten days before this map noticed, and both mid tiers turn over
 
 Two structural changes landed with this week's refresh, alongside the routine heat-table update.

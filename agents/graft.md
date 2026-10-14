@@ -6,6 +6,8 @@
 
 One-line take: Graft is a code context layer that writes your codebase's structure into **linked markdown files your agent reads like any other file** — no embeddings, no database, no index daemon — and wires itself into Claude Code, Codex, Cursor, Gemini CLI and five other agents with one `init`.
 
+> **Rename (October 2026, noted 2026-10-14):** the repository moved from `trailhq/Graft` to [`trailhq/Trail-Code`](https://github.com/trailhq/Trail-Code); its banner now reads "Trail-code (previously graft), by Trail". The open-source CLI and npm package are still called `graft`, and everything below about the code graph still holds. What changed is what sits in front of it: a **Trail "learnings" layer** — `trail init` wires the agents and builds the map, sessions write what they decided and ruled out into `.trail/learnings/` in the repo, `trail check` compares a change against them before a PR, and a sign-in opens a team workspace across repos. The `@trailhq/trail` package was not yet published on npm when this was written (the README says to build it from a branch), and a 2026-10-14 commit removed the earlier `graft trail push/pull` and "brain" client. Old `trailhq/Graft` links redirect; this map keeps the file name and re-keyed the tracking slug.
+
 > **The distinguishing choice is the storage format, not the retrieval.** [CodeGraph](codegraph.md) indexes a repo into a queryable SQLite database and hands it to agents over MCP; an agent has to *call a tool* to see anything. Graft writes `graft/*.md` — one node per subsystem, with `[[wikilinks]]` between them — and the agent opens, greps and follows them with the file tools it already has. MCP is offered too, but it is the second door, not the only one.
 
 > **It publishes a third-party-graded benchmark, which is rare on this route.** Most context layers report their own harness. Graft reports one of those *and* 50 instances of SWE-bench Verified graded by the official `swebench` 4.1.0 harness — real repos, maintainers' own tests. Read it as a vendor's own run on a 50-instance subset, but read it: the failure mode it documents (baseline patches one file and misses its siblings) is a specific, checkable claim rather than a token-savings percentage.
@@ -14,7 +16,7 @@ One-line take: Graft is a code context layer that writes your codebase's structu
 
 | Item | Conclusion |
 | --- | --- |
-| Vendor | Trail (`trailhq/Graft`, trailhq.com) — the `trailhq` org was created 2026-08-24; the repo, badges and npm scope still carry the previous NanoNets name |
+| Vendor | Trail (`trailhq/Trail-Code`, formerly `trailhq/Graft`, trailhq.com) — the `trailhq` org was created 2026-08-24; the npm scope and several badges still carry the previous NanoNets name |
 | Route | Runtime and tools — code context layer for other agents |
 | Open source | MIT; npm `@nanonets/graft`, CLI `graft` |
 | Implementation | TypeScript on Node; tree-sitter for the structural layer |
@@ -41,7 +43,7 @@ One-line take: Graft is a code context layer that writes your codebase's structu
 - **You want one queryable store your tooling can join against.** [CodeGraph](codegraph.md)'s SQLite database is the better shape if something other than an agent needs to ask questions of the index.
 - **You need a committed, shared artifact.** `graft build` adds `graft/` to `.gitignore` on purpose — what you commit is the wiring, and every teammate regenerates their own graph (and pays their own enrichment cost) to get the same picture.
 - **Machine-wide writes are a problem.** Selecting the Codex host also edits `~/.codex/config.toml`, `~/.codex/hooks.json` and drops a hook shim — user-level, so it applies to every repo you open with Codex. It is labelled in the picker and skippable with `--no-global`, but it is not repo-scoped by default.
-- **You need a stable surface.** npm is at `0.19.0` with no tagged GitHub releases, and the project shipped a vendor rename mid-life: the org is `trailhq`, the npm scope is still `@nanonets`, and the README's own badges point at both.
+- **You need a stable surface.** npm is at `0.19.0` with no tagged GitHub releases, and the project has now renamed twice mid-life: NanoNets → Trail (org), then Graft → Trail-Code (repo, October 2026); the npm scope is still `@nanonets`, the CLI is still `graft`, and the README's own badges point at all of them.
 - **You want vendor-neutral governance.** Two accounts carry the overwhelming majority of commits, and the README routes repeatedly to a hosted product (Trail Brain). MIT and forkable is not the same as community-run — the same distinction this map draws for [TrueForge](trueforge.md).
 - **Default-on telemetry is a blocker.** One batched anonymous usage ping ships by default. It is documented, inspectable with `graft telemetry debug`, off in CI and in source builds, and disabled by `DO_NOT_TRACK=1` — but it is opt-out, not opt-in.
 

@@ -4,6 +4,16 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-10-14 —— 本地图记下的一个价格已在底下变了，两个被跟踪的仓库搬了家，模型阶梯够到了地板
+
+本周刷新除常规热度表之外，还落了三项结构性改动。
+
+- **一处在源头改掉的更正：Sonnet 5.5 的缓存读是 $0.10/M，不是 $0.20。** 本地图 9 月 28 日从 Claude Code `2.1.284` 的 changelog 记下 $0.20，并在它上面搭了一条要点——GPT-6.1 Sol 的 $0.10 是把两个中间档分开的唯一一列。Anthropic 的价格页标的是 $0.10（输入价的 5%），Claude Code `v2.1.296` 也于 10 月 9 日改正了自己的成本统计。[成本表](comparisons/cost-and-benchmarks.md)那一行与对应要点、9 月 28 日的[市场事件](market-events.md)条目、主页的市场脉搏都已加带日期的更正；那条要点是撤回，不是软化。
+- **[成本 & benchmark](comparisons/cost-and-benchmarks.md) 新增两行：** Claude Haiku 5.5（10 月 7 日，prompt 不超过 10 万 token 时 $0.10 / $0.50，超过则 $0.50 / $2.50——表上唯一一行按 prompt 长度分价）与 Gemini 4 Argon（10 月 13 日开放付费 API，11 月 30 日前 $2 / $10，之后 $4 / $20——表上第一行 Google）。两者都已记进[市场事件](market-events.md)。5.5 家族与 GPT-6 各档的模型 profile 仍是待办。
+- **两次上游搬家，做的是迁移而不是糊过去。** `trailhq/Graft` 现在是 `trailhq/Trail-Code`（"Trail-code，原 graft"），在没变的 `graft` CLI 前面多了一层 Trail 的 learnings；[profile](agents/graft.md) 保留文件名并加了带日期的说明。`Hmbown/CodeWhale` 在 10 月 7 日抓取之前就已搬到 `codewhale-hq/Codewhale`——本地图漏看了一个窗口——它的 README 现在是 provider 中立、40 多条路线，所以 [CodeWhale](agents/codewhale.md) profile、[CLI 对比](comparisons/coding-cli-agents.md)那一行与[全景表](comparisons/mainstream-agent-landscape.md)那一行都已就地改正；原来"DeepSeek + MiMo 原生、模型集窄"的定位已经过时。两个 slug 在 `tracked-repos.txt`、`catalog.json`、`snapshot.json` 与 `history.json` 里一起重新编了 key，增量历史保持连续。
+
+日常维护：`browser-use/jev-ultrafast`（22.9k，9 月 30 日起没有推送）作为兄弟仓库记在 [Browser Use](agents/browser-use.md) 的 profile 里，不单独收录。本窗口的热度榜解读见 [agents/README.md](agents/README.md)：mattpocock/skills 创下有记录以来最大的 7 天增量，skills 浪潮升到四席，尖峰规矩在 OpenHuman 身上兑现。
+
 ## 2026-09-30 —— ZCode 开源十天后本地图才发现，两家的中间档同时换代
 
 本周刷新除常规热度表之外，还落了两项结构性改动。

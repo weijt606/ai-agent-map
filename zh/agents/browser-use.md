@@ -25,6 +25,8 @@
 
 当本地图记录到 [Kimi Work](kimi-work.md) 把浏览器自动化作为头条功能、以及 [Claude in Chrome](../market-events.md) 在取消逐动作审批后正式开放时，这个缺口就撑不住了。Browser Use 是这个品类里开放、可自托管的那一个，也是别人被拿来对比的那一个。
 
+> **兄弟仓库（2026-10-14 记录）：** 同一组织于 2026 年 9 月 16 日发布了 [`browser-use/jev-ultrafast`](https://github.com/browser-use/jev-ultrafast)——MIT，自述"最快最便宜的 web agent"——四周内到 22.9k star。它自 9 月 30 日起没有再推送，所以本地图把它记在这里，不单独立 profile；若恢复开发再重新评估。
+
 ## 什么时候选它
 
 - **任务在网站上，而且没有 API。** 填申请、从页面抽结构化数据、跨表单的多步流程——都是项目自己的例子。

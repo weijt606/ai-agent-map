@@ -4,48 +4,50 @@
 [![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](codewhale.md)
 [![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-One-line take: CodeWhale (formerly DeepSeek-TUI) is a Rust terminal coding agent built around the DeepSeek and MiMo model families — same shape as Claude Code or Codex CLI, but with low-cost Chinese-stack reasoning models as first-class citizens rather than fallback providers.
+One-line take: CodeWhale (formerly DeepSeek-TUI) is an open-source Rust terminal coding agent — the same shape as Claude Code or Codex CLI — that began as a DeepSeek-only client and now describes itself as provider-neutral, with 40+ built-in provider routes, any OpenAI-compatible endpoint, and local models through Ollama, vLLM or SGLang. DeepSeek is still the default provider; it is no longer the point.
 
-> **Rebrand (late May 2026):** The project renamed from `Hmbown/DeepSeek-TUI` to [`Hmbown/CodeWhale`](https://github.com/Hmbown/CodeWhale) and broadened from DeepSeek-only to **DeepSeek + MiMo** (Xiaomi's open model). It now ships a product site at [codewhale.net](https://codewhale.net/). Older links to `DeepSeek-TUI` redirect.
+> **Rebrand (late May 2026):** The project renamed from `Hmbown/DeepSeek-TUI` to `Hmbown/CodeWhale` and broadened from DeepSeek-only to **DeepSeek + MiMo** (Xiaomi's open model). It ships a product site at [codewhale.net](https://codewhale.net/). Older links to `DeepSeek-TUI` redirect.
+
+> **Moved and repositioned (October 2026, corrected 2026-10-14):** the repository now lives at [`codewhale-hq/Codewhale`](https://github.com/codewhale-hq/Codewhale) (the move pre-dates the 2026-10-07 fetch; this map noticed it one window late), spells itself "Codewhale", and its README states it is "provider-neutral and independently maintained, and is not affiliated with any model provider". This profile had described it as a DeepSeek/MiMo-native agent whose main cost was a narrow model set; that framing is corrected in place below. The engine is now split from the terminal client ("agent engine and terminal client"), a `codewhale login` account can hold provider keys centrally, and v0.10.1 shipped on October 8. Old `Hmbown/*` links redirect.
 
 ## Quick Read
 
 | Item | Conclusion |
 | --- | --- |
-| Vendor | Hmbown (open source community) |
+| Vendor | codewhale-hq (open source community, "independently maintained"; formerly under Hmbown) |
 | Route | Direct execution — terminal coding agent |
-| Open source | Yes |
-| Implementation | Rust |
-| Models | DeepSeek + MiMo (Xiaomi) |
-| Best for | Developers who want a Claude-Code-style loop on top of DeepSeek / MiMo price-performance |
-| Main cost | Tied to a narrow model set by design — if those roadmaps stall, the agent stalls with them |
-| GitHub repo | https://github.com/Hmbown/CodeWhale |
+| Open source | Yes — MIT |
+| Implementation | Rust (engine + terminal client); npm and crates.io installs |
+| Models | Any — 40+ provider routes (Anthropic, DeepSeek, Google, Mistral, Moonshot, OpenAI, OpenRouter, xAI …), OpenAI-compatible endpoints, local runtimes. **DeepSeek remains the default provider** |
+| Best for | Developers who want a Claude-Code-style loop they can point at whichever model is cheapest or available to them — including Chinese-stack and local models — without a vendor's own CLI |
+| Main cost | A community project with a fast-moving surface and an optional account layer; provider breadth means the quality of the loop varies with the model you plug in |
+| GitHub repo | https://github.com/codewhale-hq/Codewhale |
 
 ## When To Pick It
 
-- You want to run a terminal coding agent against DeepSeek or MiMo models specifically (cost, capability, regional availability) instead of going through a general-purpose harness.
-- You prefer a minimal terminal surface over a desktop or IDE-based experience.
-- You want the same single-process, single-developer loop that Claude Code and Aider popularized, but anchored on low-cost Chinese-stack reasoning models.
+- You want a terminal coding agent that is not tied to one vendor's model line, and you switch providers (or run local models) often enough that `/provider` and `/model` inside the session matter.
+- You want DeepSeek, Moonshot or MiMo models in a Claude-Code-shaped loop with first-class support, but want the option to swap to Anthropic or OpenAI routes without changing tools.
+- You prefer a minimal terminal surface over a desktop or IDE-based experience, with explicit modes (Plan explores, Work and Operate change things), approval postures, `/undo` and `/restore`, and per-session receipts.
 
 ## When Not To Pick It
 
-- You need broad provider portability — a more general harness like [Pi](pi.md) or [Aider](aider.md) is a safer base.
-- You want a polished managed product; this is community-driven and the surface area is intentionally narrow.
+- You want a vendor-maintained client with a stability promise — [Claude Code](claude-code.md), [Codex](codex.md) or [Gemini CLI](gemini-cli.md) are maintained by the model's own vendor.
+- You want a harness to build on rather than a finished agent — [Pi](pi.md) or [Aider](aider.md) expose more of the loop.
 - You need cloud delegation, parallel agents, or background runs — that is [Codex](codex.md) or [Devin](devin.md) territory.
 
 ## Capability Shape
 
 | Dimension | Assessment | Notes |
 | --- | --- | --- |
-| Terminal workflow | Strong | TUI-native, single-process loop |
-| DeepSeek / MiMo tuning | Very strong | Built around these models' tool-use and reasoning patterns |
-| Multi-provider support | Light | The point is the DeepSeek + MiMo stack; broad portability is not the goal |
+| Terminal workflow | Strong | TUI-native loop; Plan / Work / Operate modes; receipts for every file, command and approval |
+| Multi-provider support | Strong | 40+ routes plus OpenAI-compatible and local; was "light" in this profile until 2026-10-14, which was out of date |
+| DeepSeek / MiMo tuning | Strong | Where the project started; DeepSeek is still the default provider and reads `deepseek-tui` configuration and sessions |
 | Background execution | Not the goal | Foreground, single-developer loop |
 
 ## Operating Cost
 
-Complexity is Low–Medium. Installing it is straightforward; the real cost is committing to a narrow model set. If DeepSeek or MiMo pricing or availability changes in your region, that affects the agent directly.
+Complexity is Low–Medium. Installing it is straightforward (npm or crates.io); the model bill is whatever provider you route to, with no markup. The optional Codewhale account stores provider keys for your signed-in devices; local use works without it. Pricing exposure follows the provider you choose, not the agent.
 
 ## Bottom Line
 
-CodeWhale is the DeepSeek/MiMo-native terminal coding agent that first showed up in this map's heat snapshot as DeepSeek-TUI. It does not try to be a general harness — it is the same Claude-Code-shaped loop, refit around low-cost Chinese-stack models. If your selection is partly driven by cost or by access to DeepSeek / MiMo reasoning models, this is the most direct path to a Claude-Code-style experience on that stack. If portability matters more than price/performance, [Pi](pi.md) or [Aider](aider.md) is a better base.
+CodeWhale first appeared in this map's heat snapshot as DeepSeek-TUI, a DeepSeek-native terminal agent. It is now the opposite bet: a provider-neutral Claude-Code-shaped loop that keeps DeepSeek as its default but treats every route — including local runtimes — as first-class. If you want one terminal agent across several model vendors, or want Chinese-stack models without giving up the option of the others, it is the most direct path. If you want the vendor's own client, pick the vendor's own client.

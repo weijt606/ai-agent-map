@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="322" viewBox="0 0 920 322" font-family="system-ui, -apple-system, sans-serif">
 <rect width="920" height="322" rx="10" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)"/>
 <text x="46" y="26" font-size="16" font-weight="700" fill="#0b0b0b">每周 Top 10 由谁占据——按层分席位</text>
-<text x="46" y="44" font-size="11" fill="#52514e">最后更新 2026-10-14 · 每根柱是一个每周窗口 · 琥珀色 = skills 浪潮</text>
+<text x="46" y="44" font-size="11" fill="#52514e">最后更新 2026-10-21 · 每根柱是一个每周窗口 · 琥珀色 = skills 浪潮</text>
 <line x1="46" y1="266.0" x2="670" y2="266.0" stroke="#e1e0d9" stroke-width="1"/>
 <text x="38" y="269.5" font-size="10" fill="#52514e" text-anchor="end">0</text>
 <line x1="46" y1="226.0" x2="670" y2="226.0" stroke="#e1e0d9" stroke-width="1"/>
@@ -14,86 +14,90 @@
 <text x="38" y="109.5" font-size="10" fill="#52514e" text-anchor="end">8</text>
 <line x1="46" y1="66.0" x2="670" y2="66.0" stroke="#e1e0d9" stroke-width="1"/>
 <text x="38" y="69.5" font-size="10" fill="#52514e" text-anchor="end">10</text>
-<rect x="46.0" y="206.0" width="14.4" height="60.0" fill="#2a78d6" rx="1.5"/>
-<rect x="46.0" y="166.0" width="14.4" height="40.0" fill="#898781" rx="1.5"/>
-<rect x="70.4" y="206.0" width="14.4" height="60.0" fill="#2a78d6" rx="1.5"/>
-<rect x="70.4" y="166.0" width="14.4" height="40.0" fill="#898781" rx="1.5"/>
-<text x="77.6" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">04-23</text>
-<rect x="94.8" y="186.0" width="14.4" height="80.0" fill="#2a78d6" rx="1.5"/>
-<rect x="94.8" y="146.0" width="14.4" height="40.0" fill="#898781" rx="1.5"/>
-<rect x="119.2" y="166.0" width="14.4" height="100.0" fill="#2a78d6" rx="1.5"/>
-<rect x="119.2" y="126.0" width="14.4" height="40.0" fill="#898781" rx="1.5"/>
-<text x="126.3" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">05-02</text>
-<rect x="143.5" y="126.0" width="14.4" height="140.0" fill="#2a78d6" rx="1.5"/>
-<rect x="143.5" y="106.0" width="14.4" height="20.0" fill="#898781" rx="1.5"/>
-<rect x="167.9" y="226.0" width="14.4" height="40.0" fill="#2a78d6" rx="1.5"/>
-<rect x="167.9" y="186.0" width="14.4" height="40.0" fill="#898781" rx="1.5"/>
-<rect x="167.9" y="66.0" width="14.4" height="120.0" fill="#eda100" rx="1.5"/>
-<text x="175.1" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">05-23</text>
-<rect x="192.3" y="186.0" width="14.4" height="80.0" fill="#2a78d6" rx="1.5"/>
-<rect x="192.3" y="146.0" width="14.4" height="40.0" fill="#898781" rx="1.5"/>
-<rect x="192.3" y="66.0" width="14.4" height="80.0" fill="#eda100" rx="1.5"/>
-<rect x="216.7" y="186.0" width="14.4" height="80.0" fill="#2a78d6" rx="1.5"/>
-<rect x="216.7" y="166.0" width="14.4" height="20.0" fill="#898781" rx="1.5"/>
-<rect x="216.7" y="66.0" width="14.4" height="100.0" fill="#eda100" rx="1.5"/>
-<text x="223.9" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">06-11</text>
-<rect x="241.1" y="186.0" width="14.4" height="80.0" fill="#2a78d6" rx="1.5"/>
-<rect x="241.1" y="166.0" width="14.4" height="20.0" fill="#898781" rx="1.5"/>
-<rect x="241.1" y="66.0" width="14.4" height="100.0" fill="#eda100" rx="1.5"/>
-<rect x="265.5" y="186.0" width="14.4" height="80.0" fill="#2a78d6" rx="1.5"/>
-<rect x="265.5" y="166.0" width="14.4" height="20.0" fill="#898781" rx="1.5"/>
-<rect x="265.5" y="66.0" width="14.4" height="100.0" fill="#eda100" rx="1.5"/>
-<text x="272.7" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">06-24</text>
-<rect x="289.8" y="186.0" width="14.4" height="80.0" fill="#2a78d6" rx="1.5"/>
-<rect x="289.8" y="166.0" width="14.4" height="20.0" fill="#898781" rx="1.5"/>
-<rect x="289.8" y="66.0" width="14.4" height="100.0" fill="#eda100" rx="1.5"/>
-<rect x="314.2" y="186.0" width="14.4" height="80.0" fill="#2a78d6" rx="1.5"/>
-<rect x="314.2" y="166.0" width="14.4" height="20.0" fill="#898781" rx="1.5"/>
-<rect x="314.2" y="66.0" width="14.4" height="100.0" fill="#eda100" rx="1.5"/>
-<text x="321.4" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">07-08</text>
-<rect x="338.6" y="186.0" width="14.4" height="80.0" fill="#2a78d6" rx="1.5"/>
-<rect x="338.6" y="166.0" width="14.4" height="20.0" fill="#898781" rx="1.5"/>
-<rect x="338.6" y="66.0" width="14.4" height="100.0" fill="#eda100" rx="1.5"/>
-<rect x="363.0" y="166.0" width="14.4" height="100.0" fill="#2a78d6" rx="1.5"/>
-<rect x="363.0" y="146.0" width="14.4" height="20.0" fill="#898781" rx="1.5"/>
-<rect x="363.0" y="66.0" width="14.4" height="80.0" fill="#eda100" rx="1.5"/>
-<text x="370.2" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">07-22</text>
-<rect x="387.4" y="166.0" width="14.4" height="100.0" fill="#2a78d6" rx="1.5"/>
-<rect x="387.4" y="126.0" width="14.4" height="40.0" fill="#898781" rx="1.5"/>
-<rect x="387.4" y="66.0" width="14.4" height="60.0" fill="#eda100" rx="1.5"/>
-<rect x="411.8" y="186.0" width="14.4" height="80.0" fill="#2a78d6" rx="1.5"/>
-<rect x="411.8" y="146.0" width="14.4" height="40.0" fill="#898781" rx="1.5"/>
-<rect x="411.8" y="66.0" width="14.4" height="80.0" fill="#eda100" rx="1.5"/>
-<text x="419.0" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">08-05</text>
-<rect x="436.2" y="166.0" width="14.4" height="100.0" fill="#2a78d6" rx="1.5"/>
-<rect x="436.2" y="146.0" width="14.4" height="20.0" fill="#898781" rx="1.5"/>
-<rect x="436.2" y="66.0" width="14.4" height="80.0" fill="#eda100" rx="1.5"/>
-<rect x="460.5" y="186.0" width="14.4" height="80.0" fill="#2a78d6" rx="1.5"/>
-<rect x="460.5" y="146.0" width="14.4" height="40.0" fill="#898781" rx="1.5"/>
-<rect x="460.5" y="66.0" width="14.4" height="80.0" fill="#eda100" rx="1.5"/>
-<text x="467.7" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">08-27</text>
-<rect x="484.9" y="166.0" width="14.4" height="100.0" fill="#2a78d6" rx="1.5"/>
-<rect x="484.9" y="66.0" width="14.4" height="100.0" fill="#eda100" rx="1.5"/>
-<rect x="509.3" y="206.0" width="14.4" height="60.0" fill="#2a78d6" rx="1.5"/>
-<rect x="509.3" y="186.0" width="14.4" height="20.0" fill="#898781" rx="1.5"/>
-<rect x="509.3" y="66.0" width="14.4" height="120.0" fill="#eda100" rx="1.5"/>
-<text x="516.5" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">09-06</text>
-<rect x="533.7" y="126.0" width="14.4" height="140.0" fill="#2a78d6" rx="1.5"/>
-<rect x="533.7" y="106.0" width="14.4" height="20.0" fill="#898781" rx="1.5"/>
-<rect x="533.7" y="66.0" width="14.4" height="40.0" fill="#eda100" rx="1.5"/>
-<rect x="558.1" y="126.0" width="14.4" height="140.0" fill="#2a78d6" rx="1.5"/>
-<rect x="558.1" y="66.0" width="14.4" height="60.0" fill="#eda100" rx="1.5"/>
-<text x="565.3" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">09-17</text>
-<rect x="582.5" y="146.0" width="14.4" height="120.0" fill="#2a78d6" rx="1.5"/>
-<rect x="582.5" y="66.0" width="14.4" height="80.0" fill="#eda100" rx="1.5"/>
-<rect x="606.8" y="166.0" width="14.4" height="100.0" fill="#2a78d6" rx="1.5"/>
-<rect x="606.8" y="66.0" width="14.4" height="100.0" fill="#eda100" rx="1.5"/>
-<text x="614.0" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">09-30</text>
-<rect x="631.2" y="126.0" width="14.4" height="140.0" fill="#2a78d6" rx="1.5"/>
-<rect x="631.2" y="66.0" width="14.4" height="60.0" fill="#eda100" rx="1.5"/>
-<rect x="655.6" y="146.0" width="14.4" height="120.0" fill="#2a78d6" rx="1.5"/>
-<rect x="655.6" y="66.0" width="14.4" height="80.0" fill="#eda100" rx="1.5"/>
-<text x="662.8" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">10-14</text>
+<rect x="46.0" y="206.0" width="13.5" height="60.0" fill="#2a78d6" rx="1.5"/>
+<rect x="46.0" y="166.0" width="13.5" height="40.0" fill="#898781" rx="1.5"/>
+<text x="52.7" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">04-11</text>
+<rect x="69.5" y="206.0" width="13.5" height="60.0" fill="#2a78d6" rx="1.5"/>
+<rect x="69.5" y="166.0" width="13.5" height="40.0" fill="#898781" rx="1.5"/>
+<rect x="93.0" y="186.0" width="13.5" height="80.0" fill="#2a78d6" rx="1.5"/>
+<rect x="93.0" y="146.0" width="13.5" height="40.0" fill="#898781" rx="1.5"/>
+<text x="99.7" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">04-26</text>
+<rect x="116.4" y="166.0" width="13.5" height="100.0" fill="#2a78d6" rx="1.5"/>
+<rect x="116.4" y="126.0" width="13.5" height="40.0" fill="#898781" rx="1.5"/>
+<rect x="139.9" y="126.0" width="13.5" height="140.0" fill="#2a78d6" rx="1.5"/>
+<rect x="139.9" y="106.0" width="13.5" height="20.0" fill="#898781" rx="1.5"/>
+<text x="146.7" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">05-08</text>
+<rect x="163.4" y="226.0" width="13.5" height="40.0" fill="#2a78d6" rx="1.5"/>
+<rect x="163.4" y="186.0" width="13.5" height="40.0" fill="#898781" rx="1.5"/>
+<rect x="163.4" y="66.0" width="13.5" height="120.0" fill="#eda100" rx="1.5"/>
+<rect x="186.9" y="186.0" width="13.5" height="80.0" fill="#2a78d6" rx="1.5"/>
+<rect x="186.9" y="146.0" width="13.5" height="40.0" fill="#898781" rx="1.5"/>
+<rect x="186.9" y="66.0" width="13.5" height="80.0" fill="#eda100" rx="1.5"/>
+<text x="193.6" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">06-02</text>
+<rect x="210.4" y="186.0" width="13.5" height="80.0" fill="#2a78d6" rx="1.5"/>
+<rect x="210.4" y="166.0" width="13.5" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="210.4" y="66.0" width="13.5" height="100.0" fill="#eda100" rx="1.5"/>
+<rect x="233.9" y="186.0" width="13.5" height="80.0" fill="#2a78d6" rx="1.5"/>
+<rect x="233.9" y="166.0" width="13.5" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="233.9" y="66.0" width="13.5" height="100.0" fill="#eda100" rx="1.5"/>
+<text x="240.6" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">06-17</text>
+<rect x="257.3" y="186.0" width="13.5" height="80.0" fill="#2a78d6" rx="1.5"/>
+<rect x="257.3" y="166.0" width="13.5" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="257.3" y="66.0" width="13.5" height="100.0" fill="#eda100" rx="1.5"/>
+<rect x="280.8" y="186.0" width="13.5" height="80.0" fill="#2a78d6" rx="1.5"/>
+<rect x="280.8" y="166.0" width="13.5" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="280.8" y="66.0" width="13.5" height="100.0" fill="#eda100" rx="1.5"/>
+<text x="287.6" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">07-02</text>
+<rect x="304.3" y="186.0" width="13.5" height="80.0" fill="#2a78d6" rx="1.5"/>
+<rect x="304.3" y="166.0" width="13.5" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="304.3" y="66.0" width="13.5" height="100.0" fill="#eda100" rx="1.5"/>
+<rect x="327.8" y="186.0" width="13.5" height="80.0" fill="#2a78d6" rx="1.5"/>
+<rect x="327.8" y="166.0" width="13.5" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="327.8" y="66.0" width="13.5" height="100.0" fill="#eda100" rx="1.5"/>
+<text x="334.5" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">07-14</text>
+<rect x="351.3" y="166.0" width="13.5" height="100.0" fill="#2a78d6" rx="1.5"/>
+<rect x="351.3" y="146.0" width="13.5" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="351.3" y="66.0" width="13.5" height="80.0" fill="#eda100" rx="1.5"/>
+<rect x="374.7" y="166.0" width="13.5" height="100.0" fill="#2a78d6" rx="1.5"/>
+<rect x="374.7" y="126.0" width="13.5" height="40.0" fill="#898781" rx="1.5"/>
+<rect x="374.7" y="66.0" width="13.5" height="60.0" fill="#eda100" rx="1.5"/>
+<text x="381.5" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">07-29</text>
+<rect x="398.2" y="186.0" width="13.5" height="80.0" fill="#2a78d6" rx="1.5"/>
+<rect x="398.2" y="146.0" width="13.5" height="40.0" fill="#898781" rx="1.5"/>
+<rect x="398.2" y="66.0" width="13.5" height="80.0" fill="#eda100" rx="1.5"/>
+<rect x="421.7" y="166.0" width="13.5" height="100.0" fill="#2a78d6" rx="1.5"/>
+<rect x="421.7" y="146.0" width="13.5" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="421.7" y="66.0" width="13.5" height="80.0" fill="#eda100" rx="1.5"/>
+<text x="428.4" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">08-12</text>
+<rect x="445.2" y="186.0" width="13.5" height="80.0" fill="#2a78d6" rx="1.5"/>
+<rect x="445.2" y="146.0" width="13.5" height="40.0" fill="#898781" rx="1.5"/>
+<rect x="445.2" y="66.0" width="13.5" height="80.0" fill="#eda100" rx="1.5"/>
+<rect x="468.7" y="166.0" width="13.5" height="100.0" fill="#2a78d6" rx="1.5"/>
+<rect x="468.7" y="66.0" width="13.5" height="100.0" fill="#eda100" rx="1.5"/>
+<text x="475.4" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">09-01</text>
+<rect x="492.1" y="206.0" width="13.5" height="60.0" fill="#2a78d6" rx="1.5"/>
+<rect x="492.1" y="186.0" width="13.5" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="492.1" y="66.0" width="13.5" height="120.0" fill="#eda100" rx="1.5"/>
+<rect x="515.6" y="126.0" width="13.5" height="140.0" fill="#2a78d6" rx="1.5"/>
+<rect x="515.6" y="106.0" width="13.5" height="20.0" fill="#898781" rx="1.5"/>
+<rect x="515.6" y="66.0" width="13.5" height="40.0" fill="#eda100" rx="1.5"/>
+<text x="522.4" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">09-09</text>
+<rect x="539.1" y="126.0" width="13.5" height="140.0" fill="#2a78d6" rx="1.5"/>
+<rect x="539.1" y="66.0" width="13.5" height="60.0" fill="#eda100" rx="1.5"/>
+<rect x="562.6" y="146.0" width="13.5" height="120.0" fill="#2a78d6" rx="1.5"/>
+<rect x="562.6" y="66.0" width="13.5" height="80.0" fill="#eda100" rx="1.5"/>
+<text x="569.3" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">09-24</text>
+<rect x="586.1" y="166.0" width="13.5" height="100.0" fill="#2a78d6" rx="1.5"/>
+<rect x="586.1" y="66.0" width="13.5" height="100.0" fill="#eda100" rx="1.5"/>
+<rect x="609.6" y="126.0" width="13.5" height="140.0" fill="#2a78d6" rx="1.5"/>
+<rect x="609.6" y="66.0" width="13.5" height="60.0" fill="#eda100" rx="1.5"/>
+<text x="616.3" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">10-07</text>
+<rect x="633.0" y="146.0" width="13.5" height="120.0" fill="#2a78d6" rx="1.5"/>
+<rect x="633.0" y="66.0" width="13.5" height="80.0" fill="#eda100" rx="1.5"/>
+<rect x="656.5" y="186.0" width="13.5" height="80.0" fill="#2a78d6" rx="1.5"/>
+<rect x="656.5" y="146.0" width="13.5" height="40.0" fill="#898781" rx="1.5"/>
+<rect x="656.5" y="66.0" width="13.5" height="80.0" fill="#eda100" rx="1.5"/>
+<text x="663.3" y="282" font-size="9.5" fill="#52514e" text-anchor="middle">10-21</text>
 <rect x="694" y="65" width="12" height="12" rx="2" fill="#eda100"/>
 <text x="712" y="75.5" font-size="11.5" fill="#0b0b0b">skill</text>
 <rect x="694" y="87" width="12" height="12" rx="2" fill="#898781"/>
@@ -101,6 +105,6 @@
 <rect x="694" y="109" width="12" height="12" rx="2" fill="#2a78d6"/>
 <text x="712" y="119.5" font-size="11.5" fill="#0b0b0b">agent</text>
 <text x="694" y="150" font-size="10.5" fill="#52514e">最新窗口：</text>
-<text x="694" y="166" font-size="10.5" font-weight="600" fill="#0b0b0b">skill 4 席 · agent 6 · infra 0</text>
+<text x="694" y="166" font-size="10.5" font-weight="600" fill="#0b0b0b">skill 4 席 · agent 4 · infra 2</text>
 <text x="46" y="308" font-size="10" fill="#52514e">榜单深度随时间加深：2026-05-23 之前是 top 5–8，此后是 top 10——早期柱子矮是这个原因，不是项目变少。</text>
 </svg>

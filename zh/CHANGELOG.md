@@ -4,6 +4,16 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-10-21 —— $4 / $20 成了三家共用的价位，成本表的空格补上了，一处更正改到了它漏掉的地方
+
+本周刷新附带三项结构性变化，此外是例行的热度表更新。
+
+- **[成本 & benchmark](comparisons/cost-and-benchmarks.md) 新增两行 Meta。** 有标价那张表加了 Muse Wonder（10 月 12 日，$4 / $20，缓存读 $0.20——与 Opus 5.5 完全相同；晚一个窗口才记下），开放权重档加了 Muse Spark Open（10 月 15 日，816B / 激活 42B，Muse Model License）。Muse Spark 两行从 1.2 改名为 1.3，Meta 价格表现在按同样价格列的就是它。
+- **空格按一手页面补上，不再用估算。** GPT-5.5 原来的"≈GPT-5.4 的 2×"换成 OpenAI 标的 $5 / $30（缓存 $0.50），GPT-5.6 Sol / Terra / Luna 的缓存读也补上了（$0.40 / $0.20 / $0.02）。[GPT-5.5 profile](agents/gpt-5.5.md) 记下了它 10 月 14 日从 Codex 与 ChatGPT 下线（限 ChatGPT 账号登录）。全部记录在 [market-events](market-events.md)。
+- **一处更正改到了本该改的地方。** 上周对 CodeWhale 的更正只改了 profile，没改主页目录和 [agents 索引](agents/README.md)里的一句话定位；这四行（中英）现在都写成 provider 中立。OpenCode 目录行里过时的"20.5 万 star"也更新为 21.9 万。
+
+本窗口的热度解读见 [agents/README.md](agents/README.md)：OpenCode 2.0 爆发到 #3，DeepSeek Harness 总 star 反超 Hermes Agent，Superpowers 越过 30 万，Pi 连续 20 个窗口在榜——本榜有史以来结束的最长一条——就此结束。
+
 ## 2026-10-14 —— 本地图记下的一个价格已在底下变了，两个被跟踪的仓库搬了家，模型阶梯够到了地板
 
 本周刷新除常规热度表之外，还落了三项结构性改动。

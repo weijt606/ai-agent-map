@@ -26,6 +26,7 @@
 | 浏览器 agent | [Browser Use](browser-use.md) | 任务活在没有 API 的网站上的人；选型问题是"允许一个 agent 以你的身份在开放互联网上做什么" |
 | 自托管 / 本地 runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md), [Mercury Agent](mercury-agent.md), [OpenHuman](openhuman.md) | 需要端侧隐私、本地控制、扩展、渠道、runtime ownership 或个人数据生活集成 |
 | 管理式后台路径 | [Claude Managed Agents](claude-managed-agents.md) | 需要云端、定时、后台执行 |
+| 消费级个人 agent | [ChatGPT dots](chatgpt-dots.md), [Gemini Task](gemini-task.md), [Claude（Cowork）](claude-cowork.md), [Muse（Meta）](meta-muse.md), [Grok Bot](grok-bot.md), [Cue（Manus）](manus-cue.md), [豆包](doubao.md), [千问 App](qwen-app.md), [AutoGLM](autoglm.md), [元宝](yuanbao.md) | 想把跑腿、收件箱或手机交给闭源消费级产品的人；对比见[个人 agent](../comparisons/personal-agents.md) |
 
 ## 近期热门快照
 
@@ -161,6 +162,16 @@
 | [jcode](jcode.md) | harness 框架 / 编码 | 是 | Rust 多会话 coding harness——启动最快、provider 中立 OAuth、被动语义记忆 | 2026-07 核验（10.6k，从候补转正） |
 | [TrueForge](trueforge.md) | harness 框架 / 服务端 | 是 | harness 即服务端：一个循环挂在 HTTP API 后面，带目录化配置、沙箱即工具、审批、subagent，以及公开的成本 benchmark | 对照上游 README 与文档核验（2026-09 收录） |
 | [eve](eve.md) | 平台 / agent 框架 | 是 | Vercel 的文件系统优先 agent 框架——持久化执行、每 agent 沙箱、审批、subagent、evals、渠道适配 | 对照上游 README 与发布博文核验（2026-08 补漏收录） |
+| [ChatGPT dots](chatgpt-dots.md) | 个人 agent | 否 | OpenAI 放在 ChatGPT 里的常驻 agent——GPT-6 Astra、自己的云电脑，可在 Slack、Teams 和电话里找到；仅限 Pro，欧洲不可用 | 2026-10-21 按一手页面核验 |
+| [Gemini Task](gemini-task.md) | 个人 agent | 否 | Gemini 应用的 agent 模式（原 Spark）——在 Google Workspace 与 Chrome 里定时干活，公开列出确认清单 | 2026-10-21 按一手页面核验 |
+| [Claude（Cowork）](claude-cowork.md) | 个人 agent | 否 | Cowork 已并入 Claude 应用——任务可定时、在隔离的云端会话里持续运行，三种命名清楚的审批模式 | 2026-10-21 按一手页面核验 |
+| [Muse（Meta）](meta-muse.md) | 个人 agent | 否 | Meta 在自家应用和 WhatsApp 里的跑腿 agent——专属云端虚拟机、一次性卡号付款，美国小范围测试 | 2026-10-21 按一手页面核验 |
+| [Grok Bot](grok-bot.md) | 个人 agent | 否 | xAI 的一组常驻 Bot，共用 Cursor 云上的一台电脑，可按计划重跑保存的技能 | 2026-10-21 按一手页面核验 |
+| [Cue（Manus）](manus-cue.md) | 个人 agent | 否 | Manus 的个人 agent 应用，每个 agent 都有自己的邮箱、电话、钱包和电脑；邀请制抢先体验 | 2026-10-21 按一手页面核验 |
+| [豆包](doubao.md) | 个人 agent | 否 | 字节跳动的助手，带工作任务模式，以及在合作手机上操作其他应用的系统级手机助手（Beta） | 2026-10-21 按一手页面核验 |
+| [千问 App](qwen-app.md) | 个人 agent | 否 | 阿里的消费级应用变成了跑腿 agent——成品交付、定时任务、外卖、酒店和政务 | 2026-10-21 按一手页面核验 |
+| [AutoGLM](autoglm.md) | 个人 agent | 部分（框架） | 智谱的手机操作 agent：一个在云手机上干活的免费应用，加上能操作你自己手机的 Apache-2.0 框架 Open-AutoGLM | 2026-10-21 按一手页面核验 |
+| [元宝](yuanbao.md) | 个人 agent | 否 | 腾讯的免费助手，Hy3 Agent 功能交付办公文件——WorkBuddy 同一模型家族的消费级那一端 | 2026-10-21 按一手页面核验 |
 
 ## 写法标准
 

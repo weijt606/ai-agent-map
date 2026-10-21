@@ -23,5 +23,6 @@ No leaderboard, no total score, no “ultimate best agent” framing.
 - [Agent memory approaches](memory-approaches.md) — how projects differ on *how* they remember
 - [Cost & benchmarks](cost-and-benchmarks.md) — coding capability vs price, and how agents bill
 - [Agent observability & evaluation](observability-and-evals.md) — how you know a shipped agent still works
+- [Consumer personal agents](personal-agents.md) — closed agents you hand your day to, compared on facts and control; no popularity ranking
 
 See also the [capability matrix](../capabilities/matrix.md) — every project scored across the shared capability dimensions.

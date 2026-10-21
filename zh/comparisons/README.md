@@ -22,6 +22,7 @@
 - [Agent Harness 框架对比](agent-harness-frameworks.md)
 - [Agent 记忆方案对比](memory-approaches.md) —— 项目在*怎么*记这件事上的差异
 - [Agent 观测与评估](observability-and-evals.md) —— 上线之后你怎么知道 agent 还正常
+- [消费级个人 agent](personal-agents.md) —— 你把日常交出去的闭源 agent，按事实和控制力比较；不做热度排名
 - [成本 & benchmark](cost-and-benchmarks.md) —— 编码能力 vs 价格，以及 agent 怎么收费
 
 另见[能力矩阵](../capabilities/matrix.md) —— 每个项目在统一能力维度上的打分。

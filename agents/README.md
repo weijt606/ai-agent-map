@@ -48,7 +48,7 @@ Project names link to the upstream GitHub repo. When a profile exists in this di
 | #7&nbsp;(new) | [Ruflo](https://github.com/ruvnet/ruflo) | 78.1k | +3,445 | [Profile](ruflo.md) | Up **480%**, largest in the raw record; first seat since 09-09; past **75k** |
 | #8&nbsp;(↓) | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 109.1k | +2,704 | Watchlist (Skills Wave) | Down 35%; 872 short of 110k |
 | #9&nbsp;(↓) | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 255.7k | +2,105 | [Profile](hermes-agent.md) | Up 13%; **present in all 27 recorded windows**; past **255k** |
-| #10&nbsp;(new) | [Claude Code](https://github.com/anthropics/claude-code) | 152.7k | +1,920 | [Profile](claude-code.md) | Up **80%**, third seat; eight releases, no default-model change |
+| #10&nbsp;(new) | [Claude Code](https://github.com/anthropics/claude-code) | 152.7k | +1,920 | [Profile](claude-code.md) | Up **80%**, third seat; seven releases, no default-model change |
 
 Rank history over time is charted in [rankings/](../rankings/README.md), alongside category and vertical boards sorted by total stars.
 

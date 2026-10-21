@@ -20,7 +20,7 @@
 
 第二，**agent 产品里的模型下线是配置风险，不只是血统备注。** 在用 ChatGPT 登录的 Codex 工作区里钉死了 `gpt-5.5` 的人——本地图一直建议钉死模型——现在钉的是一个解析不到的名字。照样要钉，但把模型下线和促销价到期放进同一份复查日程。
 
-第三，**开放权重档迎来第一个用自定义许可的美国模型。** Muse Spark Open 和 Kimi K3 一起进了[开放权重表](comparisons/cost-and-benchmarks.md#开放权重这一档)的自定义许可那一栏；先读"有限商用条款"，再看参数量。本窗口没有任何被跟踪的编码 agent 换默认模型，已连续第三个窗口（[Claude Code](agents/claude-code.md) `v2.1.299`–`v2.1.306`、Codex `rust-v0.163.0`、[Gemini CLI](agents/gemini-cli.md) `v0.65.0`、[OpenCode](agents/opencode.md) `v1.19.1`–`v1.19.3`）；Gemini CLI 的默认模型常量没变，也没有指向 Argon。
+第三，**开放权重档迎来第一个用自定义许可的美国模型。** Muse Spark Open 和 Kimi K3 一起进了[开放权重表](comparisons/cost-and-benchmarks.md#开放权重这一档)的自定义许可那一栏；先读"有限商用条款"，再看参数量。本窗口没有任何被跟踪的编码 agent 换默认模型，已连续第三个窗口（[Claude Code](agents/claude-code.md) `v2.1.300`–`v2.1.306`、Codex `rust-v0.163.0`、[Gemini CLI](agents/gemini-cli.md) `v0.65.0`、[OpenCode](agents/opencode.md) `v1.19.1`–`v1.19.3`）；Gemini CLI 的默认模型常量没变，也没有指向 Argon。
 
 来源：[Muse Wonder（Meta AI Research）](https://research.meta.ai/blog/muse-wonder)、[Muse Wonder 价格](https://dev.meta.ai/models/muse-wonder)、[Muse Spark 1.3 价格](https://dev.meta.ai/models/muse-spark)、[Codex changelog：GPT-5.5 下线](https://learn.chatgpt.com/docs/changelog)、[Introducing Muse Spark Open](https://research.meta.ai/blog/muse-spark-open)、[DeepSeek-V4.1-Flash-1017 发布](https://api-docs.deepseek.com/news/news261017/)、[DeepSeek Harness `dsh-v0.2.1-rc.2`](https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-rc.2)、[Code Review 正式开放（Anthropic）](https://claude.com/resources/articles/code-review-is-now-generally-available)、[OpenAI API 价格](https://developers.openai.com/api/docs/pricing)。
 

@@ -48,7 +48,7 @@
 | #7&#8288;（新） | [Ruflo](https://github.com/ruvnet/ruflo) | 78.1k | +3,445 | [profile](ruflo.md) | 涨 **480%**，原始记录里最大；09-09 以来第一次上榜；越过 **7.5 万** |
 | #8&#8288;（↓） | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 109.1k | +2,704 | 候补（Skills 浪潮） | 降 35%；距 11 万差 872 |
 | #9&#8288;（↓） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 255.7k | +2,105 | [profile](hermes-agent.md) | 涨 13%；**27 个记录窗口全部在榜**；越过 **25.5 万** |
-| #10&#8288;（新） | [Claude Code](https://github.com/anthropics/claude-code) | 152.7k | +1,920 | [profile](claude-code.md) | 涨 **80%**，第三次上榜；八个版本，没换默认模型 |
+| #10&#8288;（新） | [Claude Code](https://github.com/anthropics/claude-code) | 152.7k | +1,920 | [profile](claude-code.md) | 涨 **80%**，第三次上榜；七个版本，没换默认模型 |
 
 历史名次变化的趋势图见 [rankings/](../rankings/README.md)，那里还有按 star 总量排序的分类榜与垂类榜。
 

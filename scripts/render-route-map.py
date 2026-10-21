@@ -56,17 +56,20 @@ GROUPS = [
         ("Open-weights agentic model", "开放权重 agentic 模型", ["Kimi K3", "GLM-5.3", "DeepSeek V4"], 4),
         ("Agentic skills framework", "Agentic skills 框架", ["Superpowers"], 1),
     ]),
+    ("Hand off your day", "把日常交给 agent", "#c0367a", [
+        ("Consumer personal agent", "消费级个人 agent", ["ChatGPT dots", "Gemini Task", "Claude", "Muse"], 10),
+    ]),
 ]
 
 TEXT = {
     "en": {
         "title": "The AI Agent Map — the first cut: {routes} routes, {total} profiles",
-        "subtitle": "Four decisions, {routes} routes. Full tables with links follow below.",
+        "subtitle": "Five decisions, {routes} routes. Full tables with links follow below.",
         "more": "+{n} more",
     },
     "zh": {
         "title": "AI Agent 选型地图——先摊开：{routes} 条路线、{total} 个 profile",
-        "subtitle": "四类决策、{routes} 条路线。带链接的完整表格见下文。",
+        "subtitle": "五类决策、{routes} 条路线。带链接的完整表格见下文。",
         "more": "等 {n} 个",
     },
 }

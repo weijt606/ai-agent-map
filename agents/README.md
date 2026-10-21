@@ -26,6 +26,7 @@ Think of it as a shortlist directory: understand the route first, then decide wh
 | Browser agent | [Browser Use](browser-use.md) | People whose task lives on a website with no API; the selection question is what an agent may do as you on the open web |
 | Self-hosted / local runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md), [Mercury Agent](mercury-agent.md), [OpenHuman](openhuman.md) | Users who need local control, on-device privacy, extensions, channels, runtime ownership, or personal-data life integration |
 | Managed background path | [Claude Managed Agents](claude-managed-agents.md) | Users who need scheduled, cloud, or detached execution |
+| Consumer personal agent | [ChatGPT dots](chatgpt-dots.md), [Gemini Task](gemini-task.md), [Claude (Cowork)](claude-cowork.md), [Muse (Meta)](meta-muse.md), [Grok Bot](grok-bot.md), [Cue (Manus)](manus-cue.md), [Doubao](doubao.md), [Qwen app](qwen-app.md), [AutoGLM](autoglm.md), [Yuanbao](yuanbao.md) | People who want to hand errands, inboxes or their phone to a closed consumer product; compared in [personal agents](../comparisons/personal-agents.md) |
 
 ## Recent Heat Snapshot
 
@@ -162,6 +163,16 @@ Rank history over time is charted in [rankings/](../rankings/README.md), alongsi
 | [jcode](jcode.md) | harness framework / coding | Yes | Rust multi-session coding harness — fastest boot, provider-neutral OAuth, passive semantic memory | Verified July 2026 (10.6k, promoted from watchlist) |
 | [TrueForge](trueforge.md) | harness framework / server | Yes | Harness-as-a-server: one loop behind an HTTP API, with catalogs, sandbox-as-a-tool, approvals, subagents, and a published cost benchmark | Verified against upstream README + docs (added 2026-09) |
 | [eve](eve.md) | platform / agent framework | Yes | Vercel's filesystem-first agent framework — durable execution, per-agent sandboxes, approvals, subagents, evals, channels | Verified against upstream README + launch post (backfill, August 2026) |
+| [ChatGPT dots](chatgpt-dots.md) | personal agent | No | OpenAI's always-on agent in ChatGPT — GPT-6 Astra, its own cloud computer, reachable in Slack, Teams and by call; Pro only, not in Europe | Verified against first-party pages, 2026-10-21 |
+| [Gemini Task](gemini-task.md) | personal agent | No | The Gemini app's agent mode (formerly Spark) — scheduled work across Google Workspace and Chrome, with a published confirmation list | Verified against first-party pages, 2026-10-21 |
+| [Claude (Cowork)](claude-cowork.md) | personal agent | No | Cowork merged into the Claude app — tasks that schedule and keep running in an isolated cloud session, three named approval modes | Verified against first-party pages, 2026-10-21 |
+| [Muse (Meta)](meta-muse.md) | personal agent | No | Meta's errand agent in its own app and WhatsApp — a dedicated cloud VM, one-time card payments, US limited testing | Verified against first-party pages, 2026-10-21 |
+| [Grok Bot](grok-bot.md) | personal agent | No | xAI's team of always-on Bots sharing one cloud computer in Cursor's cloud, with saved skills on a schedule | Verified against first-party pages, 2026-10-21 |
+| [Cue (Manus)](manus-cue.md) | personal agent | No | Manus's personal-agent app where each agent has its own email, phone number, wallet and computer; invite-only early access | Verified against first-party pages, 2026-10-21 |
+| [Doubao](doubao.md) | personal agent | No | ByteDance's assistant with a work-task mode and a phone-OS assistant that operates other apps on partner phones (Beta) | Verified against first-party pages, 2026-10-21 |
+| [Qwen app](qwen-app.md) | personal agent | No | Alibaba's consumer app turned errand agent — deliverables, scheduled tasks, food, hotels and government services | Verified against first-party pages, 2026-10-21 |
+| [AutoGLM](autoglm.md) | personal agent | Partly (framework) | Zhipu's phone-use agent: a free app on cloud phones, plus the Apache-2.0 Open-AutoGLM framework for your own phone | Verified against first-party pages, 2026-10-21 |
+| [Yuanbao](yuanbao.md) | personal agent | No | Tencent's free assistant with a Hy3 Agent feature that delivers office files — the consumer end of WorkBuddy's model family | Verified against first-party pages, 2026-10-21 |
 
 ## Writing Standard
 

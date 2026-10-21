@@ -4,6 +4,14 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-10-21（稍后）—— 第五类决策：消费级个人 agent，收录与比较，而不是排名
+
+本地图新增**第五个路线组"把日常交给 agent"**，下设一条路线——**消费级个人 agent**——和十个 profile：[ChatGPT dots](agents/chatgpt-dots.md)、[Gemini Task](agents/gemini-task.md)、[Claude（Cowork）](agents/claude-cowork.md)、[Muse](agents/meta-muse.md)、[Grok Bot](agents/grok-bot.md)、[Cue](agents/manus-cue.md)、[豆包](agents/doubao.md)、[千问 App](agents/qwen-app.md)、[AutoGLM](agents/autoglm.md)、[元宝](agents/yuanbao.md)。本地图现有 **88 个 profile、16 条路线**。
+
+- **新增对比页[消费级个人 agent](comparisons/personal-agents.md)**：一张事实表（形态、状态、在哪里干活、模型、入门价格、地区），一张按消费级产品维度打分的能力格，三个选型问题，以及随每周更新刷新、带日期的"最近变化"记录。
+- **刻意不做热度排名。** 这些产品是闭源的，没有可以和 GitHub star 相比的公开数字；下载量和活跃用户数是二手的，口径也不统一。拿它们排名会违背本地图"只用一手来源"的规矩。厂商没有写明的格子一律标 **?**，不去猜。
+- 这些产品都不开源；AutoGLM 部分例外，它有 Apache-2.0 的 Open-AutoGLM 框架。它们不进热度榜。[能力矩阵](capabilities/matrix.md)改为指向新的能力格，而不是在闭源产品从不公开的列上给它们打分。
+
 ## 2026-10-21 —— $4 / $20 成了三家共用的价位，成本表的空格补上了，一处更正改到了它漏掉的地方
 
 本周刷新附带三项结构性变化，此外是例行的热度表更新。

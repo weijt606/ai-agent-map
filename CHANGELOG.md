@@ -4,6 +4,14 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-10-21 (later) — A fifth decision: consumer personal agents, listed and compared rather than ranked
+
+The map gains a **fifth route group, "Hand off your day"**, with one route — **consumer personal agent** — and ten profiles: [ChatGPT dots](agents/chatgpt-dots.md), [Gemini Task](agents/gemini-task.md), [Claude (Cowork)](agents/claude-cowork.md), [Muse](agents/meta-muse.md), [Grok Bot](agents/grok-bot.md), [Cue](agents/manus-cue.md), [Doubao](agents/doubao.md), [Qwen app](agents/qwen-app.md), [AutoGLM](agents/autoglm.md) and [Yuanbao](agents/yuanbao.md). The map now holds **88 profiles in 16 routes**.
+
+- **A new comparison page, [consumer personal agents](comparisons/personal-agents.md)**, with a fact table (form, status, where it works, model, entry price, regions), a capability grid on consumer-fit dimensions, three selection questions, and a dated "Recent changes" log refreshed with the weekly update.
+- **No popularity ranking, on purpose.** These products are closed and have no public number comparable to GitHub stars; downloads and active-user figures are second-hand and inconsistently defined. Ranking on them would contradict this map's first-party-source rule. Cells the vendor does not document are marked **?** rather than guessed.
+- None of these products is open source; AutoGLM is the exception in part, through its Apache-2.0 Open-AutoGLM framework. They are not tracked in the heat ranking. The [capability matrix](capabilities/matrix.md) points to the new grid instead of scoring them on columns closed products never disclose.
+
 ## 2026-10-21 — $4 / $20 becomes a three-vendor price point, the cost table's gaps are filled, and a correction reaches the rows it missed
 
 Three structural changes landed with this week's refresh, alongside the routine heat-table update.

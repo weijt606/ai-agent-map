@@ -4,6 +4,16 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-10-21 — $4 / $20 becomes a three-vendor price point, the cost table's gaps are filled, and a correction reaches the rows it missed
+
+Three structural changes landed with this week's refresh, alongside the routine heat-table update.
+
+- **Two new Meta rows in [cost & benchmarks](comparisons/cost-and-benchmarks.md).** Muse Wonder (October 12, $4 / $20, $0.20 cache reads — Opus 5.5's numbers exactly; recorded one window late) in the priced table, and Muse Spark Open (October 15, 816B / 42B active, Muse Model License) in the open-weights tier. The Muse Spark rows are relabelled from 1.2 to 1.3, the model Meta's price list now names at the same prices.
+- **Gaps filled from first-party pages rather than estimates.** GPT-5.5's "≈2× GPT-5.4" is replaced with OpenAI's listed $5 / $30 ($0.50 cached), and the GPT-5.6 Sol / Terra / Luna cache-read cells are filled ($0.40 / $0.20 / $0.02). The [GPT-5.5 profile](agents/gpt-5.5.md) records its October 14 retirement from Codex and ChatGPT for ChatGPT sign-in. All of it is in [market-events](market-events.md).
+- **A correction finished where it should have been made.** Last week's CodeWhale correction changed the profile but not the one-line descriptions in the home-page catalog and the [agents index](agents/README.md); those four rows (EN and zh) now say provider-neutral. The stale "205k stars" in OpenCode's catalog rows is updated to 219k.
+
+The heat-ranking read for the window is in [agents/README.md](agents/README.md): OpenCode 2.0 broke out to #3, DeepSeek Harness passed Hermes Agent in total stars, Superpowers crossed 300k, and Pi's 20-window run — the longest on the board ever to end — is over.
+
 ## 2026-10-14 — A price this map recorded had changed under it, two tracked repos moved, and the model ladder reached the floor
 
 Three structural changes landed with this week's refresh, alongside the routine heat-table update.

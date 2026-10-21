@@ -6,6 +6,8 @@
 
 One-line take: GPT-5.5 was OpenAI's frontier agentic model of spring 2026 — designed to carry multi-step tasks through to completion with tool use and self-checking — and has since been succeeded twice, by GPT-5.6 on July 9 2026 and by [GPT-6 Astra](gpt-6-astra.md) on September 3 2026. This profile is kept as the lineage reference (see Post-Launch Landscape below).
 
+> **Retired from Codex and ChatGPT (2026-10-14):** effective October 14 2026 at 19:00 UTC, GPT-5.5 is no longer available in Codex or ChatGPT for users signed in with a ChatGPT account; OpenAI points them to GPT-6.1 Sol (`gpt-6.1-sol`) and asks that workspace defaults, saved settings, custom agents and scripts that still select `gpt-5.5` be updated. The OpenAI API and Codex sessions authenticated with an API key are unaffected, and the API still lists it at $5 / $30 per M tokens ($0.50 cached). Source: [Codex changelog](https://learn.chatgpt.com/docs/changelog).
+
 ## Quick Read
 
 | Item | Conclusion |

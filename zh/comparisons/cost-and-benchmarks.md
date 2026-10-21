@@ -21,25 +21,26 @@
 | --- | :-: | --- | --- | :-: | --- |
 | **GPT-6 Astra**（OpenAI） | — | DeepSWE v1.1 74.1% | **$10 / $50** | $1 | OpenAI 当前天花板，**2026-09-03**。输入超 **272k token 后换价到 $20 / $75**；Fast 模式 2 倍价；正式开放的版本**会拒绝自己一部分网安能力** |
 | **Claude Opus 5.5**（Anthropic） | — | **Terminal-Bench 4.0 66.4%** | **$4 / $20** | **$0.20** | **2026-09-22。**Anthropic 的说法是它在多数工作上达到 Fable 5.1 的水平，运行成本比 Opus 5 低 **40%**，输出快 30%。1M 上下文。Fast 模式 $8 / $40；缓存写 $5。公布的九项基准全高于 Opus 5；在 AutomationBench（40.0 对 41.4）与 Terminal-Bench-Science（58.7 对 64.6）上落后 [GPT-6 Astra](../agents/gpt-6-astra.md)。当天就成为 [Claude Code](../agents/claude-code.md) `v2.1.280` 里默认的 Opus 模型 |
+| **Muse Wonder**（Meta） | — | — | **$4 / $20** | **$0.20** | **2026-10-12**——本表晚一个窗口才记下。Meta 新的 API 顶档模型，主打"前沿编码、长时运行 agent 与高级电脑操作"，100 万上下文；**标价与缓存读都和 Opus 5.5 一样**。更大的 Muse Wonder Full 根本不上 API，只在 Muse Code 的 Power 与 Maximum 订阅档里提供 |
 | **Claude Fable 5.1**（Anthropic） | — | **SWE-bench Pro 81.2** | **$10 / $50** | **$0.25** | Anthropic 当前天花板，**2026-09-01**。标价与 Fable 5 相同，缓存读砍 75%。1M 上下文整窗按标准价。按额度计费，不含在订阅内 |
 | **GPT-6.1 Sol**（OpenAI） | — | — | **$2 / $10** | **$0.10** | **2026-09-29。**与 GPT-6 Sol 同一个标价，**缓存读价格减半**。同日起成为 [Codex CLI](../agents/codex.md) `rust-v0.159.1` 的打包默认，替掉 Astra |
 | **Claude Sonnet 5.5**（Anthropic） | — | **Terminal-Bench 4.0 70.6%** | **$2 / $10** | **$0.10** | **2026-09-28。***缓存读于 2026-10-14 更正：Anthropic 价格页标 $0.10/M（输入价的 5%），Claude Code `v2.1.296`（10 月 9 日）也把自己的成本统计从 $0.20 改为 $0.10；本表此前沿用的是 9 月 28 日 changelog 里的 $0.20。*价格不变，比 Sonnet 5 快 30% 以上，单任务成本最多低 30%。它的 Terminal-Bench 4.0 **高于 Opus 5.5 的 66.4%**；在其他共有基准上都落后于 Opus 5.5。同日成为 [Claude Code](../agents/claude-code.md) `2.1.284` 的默认 Sonnet 模型，1M 上下文 |
 | **Gemini 4 Argon**（Google） | — | DeepSWE v1.1 77.9%；AutomationBench 51.3% | **$2 / $10** 首发价，**2026-12-01 起 $4 / $20** | $0.10（12 月 1 日起 $0.20） | **2026-10-13 开放付费 API**（`gemini-4-argon`），9 月 30 日发布时还在网安防御者闸门之后；无防护版本仍留在 Google 的 Fairwind 计划里。只有隐式缓存（便宜 95%），不支持显式缓存；不对免费层与 AI Pro 套餐开放；输出上限 1M。Google 的基准表不是和其他厂商同场跑的 |
 | **GPT-6 Sol**（OpenAI） | — | — | **$2 / $10** | $0.20 | **2026-09-22。**GPT-6 的中档，约为同名的 GPT-5.6 档一半。**它不是 GPT-5.6 Sol** —— 两代同名，写在配置文件里是实打实的坑 |
-| **GPT-5.6 Sol**（OpenAI） | **80** | — | **$4 / $20**（促销） | — | 最近一次测得的指数第一。**2026-08-21** 从 $5 / $30 下调，为期三个月，至少到 **2026-11-21**。长上下文档 $8 / $30 |
+| **GPT-5.6 Sol**（OpenAI） | **80** | — | **$4 / $20**（促销） | $0.40 | 最近一次测得的指数第一。**2026-08-21** 从 $5 / $30 下调，为期三个月，至少到 **2026-11-21**。长上下文档 $8 / $30 |
 | **Claude Fable 5**（Anthropic） | **77.2** | — | $10 / $50 | $1 | 9 月 1 日被 5.1 接棒；作为指数参照点保留 |
-| **GPT-5.5**（OpenAI） | **76.4** | SWE-Bench Pro 58.6% | —（≈GPT-5.4 的 2×） | — | 2026 春季参照模型，已隔两代 |
+| **GPT-5.5**（OpenAI） | **76.4** | SWE-Bench Pro 58.6% | $5 / $30 | $0.50 | 2026 春季参照模型，已隔两代。*价格于 2026-10-21 按 OpenAI 价格页补上，取代原来"≈GPT-5.4 的 2×"的估算。* **2026-10-14 起从 Codex 与 ChatGPT 下线（限 ChatGPT 账号登录）**；API 与用 API key 登录的 Codex 会话不受影响 |
 | **Claude Opus 5**（Anthropic） | — | SWE-bench Pro 略低于 Fable 5.1 的 81.2 | $5 / $25 | $0.50 | **你实际会跑的那一档**——两端都是 Fable 的一半，1M 上下文既是默认也是上限。Fast 模式 $10 / $50 |
 | **Claude Opus 4.8**（Anthropic） | **72.5** | — | $5 / $25 | $0.50 | 7 月 24 日被 Opus 5 接棒；仍是请求触发安全分类器时的自动回退 |
 | **Claude Sonnet 5**（Anthropic） | — | — | **$2 / $10** | $0.20 | 走量档；首发价已转正，原定 9 月 1 日涨到 $3 / $15 的计划取消。9 月 28 日起 Claude Code 的默认 Sonnet 换成了 Sonnet 5.5 |
-| **GPT-5.6 Terra**（OpenAI） | — | — | $2 / $12 | — | 中档。7 月 9 日发布时标 $2.5 / $15，一手价格页现在显示 $2 / $12 |
+| **GPT-5.6 Terra**（OpenAI） | — | — | $2 / $12 | $0.20 | 中档。7 月 9 日发布时标 $2.5 / $15，一手价格页现在显示 $2 / $12 |
 | **Claude Haiku 5.5**（Anthropic） | — | — | prompt ≤ 10 万 token 时 **$0.10 / $0.50**；超过则 **$0.50 / $2.50** | $0.01 / $0.05 | **2026-10-07**（`claude-haiku-5-5`）。Anthropic 的地板，短 prompt 时与 GPT-6 Luna 同价；1M 上下文，但**按 prompt 长度分价**——长 agent 会话一过 10 万 token 线，两端都贵 5 倍。它的 tokenizer 对同一段文本比 Haiku 4.5 多算约 30% token。API 侧默认的 Haiku 模型；Claude Code `v2.1.293` 同日加入，但没有换自己的默认 |
 | **GPT-6 Luna**（OpenAI） | — | — | **$0.10 / $0.50** | $0.01 | **2026-09-22。**在 10 月 7 日被 Haiku 5.5 追平之前，两家里最便宜的一档；是同名 GPT-5.6 档的一半。和 Sol 一样存在跨代撞名 |
-| **GPT-5.6 Luna**（OpenAI） | — | — | $0.20 / $1.20 | — | 经济档。发布时标 $1 / $6，现在一手页面是 $0.20 / $1.20 |
-| **Muse Spark 1.2**（Meta）—— Standard | — | — | $1.25 / $4.25 | $0.15 | Muse Code 背后的编码模型，**2026-08-31** 转正。3,000 请求/分、4M token/分。没有本地图愿意照抄的指数数字 |
-| **Muse Spark 1.2**（Meta）—— Contributor | — | — | **$0.10 / $0.20** | $0.002 | 同一个模型，输入约便宜 12 倍、输出约便宜 21 倍，**代价是允许 Meta 用你的 prompt 与 completion 训练未来模型**。限 60 请求/分。这是治理决策，不是预算决策 |
+| **GPT-5.6 Luna**（OpenAI） | — | — | $0.20 / $1.20 | $0.02 | 经济档。发布时标 $1 / $6，现在一手页面是 $0.20 / $1.20 |
+| **Muse Spark 1.3**（Meta）—— Standard | — | — | $1.25 / $4.25 | $0.15 | Muse Code 背后的编码模型，**2026-08-31** 转正。*2026-10-21 更名：本行原写 1.2，但 Muse Spark 1.3 已于 9 月 2 日以同样价格发布，Meta 价格表现在列的就是它。*3,000 请求/分、4M token/分。没有本地图愿意照抄的指数数字 |
+| **Muse Spark 1.3**（Meta）—— Contributor | — | — | **$0.10 / $0.20** | $0.002 | 同一个模型，输入约便宜 12 倍、输出约便宜 21 倍，**代价是允许 Meta 用你的 prompt 与 completion 训练未来模型**。限 60 请求/分。这是治理决策，不是预算决策 |
 
-> SWE-Bench Pro 参照点：Claude Opus 4.7 得 64.3%，高于 GPT-5.5 的 58.6%。破折号（—）表示本图未追踪该数字，不是零——**Astra、Fable 5.1、Opus 5 目前没有本地图愿意照抄的指数数字**，本地图也不用第三方榜单去填这个空。价格截至 **2026-10-14**，取自 [platform.claude.com/docs/en/about-claude/pricing](https://platform.claude.com/docs/en/about-claude/pricing)、[developers.openai.com/api/docs/pricing](https://developers.openai.com/api/docs/pricing) 与 [ai.google.dev/gemini-api/docs/latest-model](https://ai.google.dev/gemini-api/docs/latest-model)；benchmark 取自各 profile（[Fable 5.1](../agents/claude-fable-5.md)、[Opus 5](../agents/claude-opus-5.md)、[GPT-6 Astra](../agents/gpt-6-astra.md)、[GPT-5.5](../agents/gpt-5.5.md)）与 [market-events](../market-events.md)。价格和指数位次会变——预算前务必以厂商为准。
+> SWE-Bench Pro 参照点：Claude Opus 4.7 得 64.3%，高于 GPT-5.5 的 58.6%。破折号（—）表示本图未追踪该数字，不是零——**Astra、Fable 5.1、Opus 5 目前没有本地图愿意照抄的指数数字**，本地图也不用第三方榜单去填这个空。价格截至 **2026-10-21**，取自 [platform.claude.com/docs/en/about-claude/pricing](https://platform.claude.com/docs/en/about-claude/pricing)、[developers.openai.com/api/docs/pricing](https://developers.openai.com/api/docs/pricing) 与 [ai.google.dev/gemini-api/docs/latest-model](https://ai.google.dev/gemini-api/docs/latest-model) 与 [dev.meta.ai/models](https://dev.meta.ai/models/muse-wonder)；benchmark 取自各 profile（[Fable 5.1](../agents/claude-fable-5.md)、[Opus 5](../agents/claude-opus-5.md)、[GPT-6 Astra](../agents/gpt-6-astra.md)、[GPT-5.5](../agents/gpt-5.5.md)）与 [market-events](../market-events.md)。价格和指数位次会变——预算前务必以厂商为准。
 
 能扛过每周变化的几条判断：
 
@@ -48,7 +49,7 @@
 - **长上下文两家计价方式不同，而这已经成了设计约束。** Anthropic 的 1M 窗口整窗按标准价。OpenAI 在输入超过 **272k token** 后对整个请求换价——$20 / $75 而不是 $10 / $50。一个会在长会话里不断堆积上下文的 agent，可能在没人拍板的情况下越线；Claude 这边没有这条线可越。
 - **账单真正堆积的地方是缓存，不是输入。** 长跑 agent 每一轮都重放一大块 prompt。$0.25/M 对 $1/M，正是 Fable 5.1 那个"典型省约 25%、重 agent 最多省 45%"的来源，而每 token 标价一分没动。只按标价比前沿模型，比的是错的那一列。
 - **分档仍然是杠杆，而且 9 月 22 日两条阶梯又各深了一层。** Astra 之下现在是 GPT-6 的 Sol/Luna，并排着旧的 GPT-5.6 三档；Fable 5.1 之下是 Opus 5.5、Opus 5、Sonnet 5.5、Sonnet 5，现在还有 **Haiku 5.5**（10 月 7 日）——Anthropic 的阶梯第一次有了 $0.10 / $0.50 这一级，与 GPT-6 Luna 同价，不过 Haiku 5.5 按 prompt 长度分价，长 agent 会话过了 10 万 token 要付 5 倍。Google 现在也有了一级有标价的：**Gemini 4 Argon**，11 月 30 日前 $2 / $10，之后 $4 / $20——和 Opus 5.5 同一个标价，缓存折扣更小，也没有显式缓存。现在单一厂商内部的价差已经大于厂商之间的价差——Sonnet 5 的 $2/$10 对 Fable 5.1 的 $10/$50，两端都是 5 倍。多数编码工作理性的默认是更便宜的那一档，只在任务确实需要时才够天花板。两家自己现在也是这么做的：9 月最后一周，Claude Code 和 Codex CLI 都把一个默认模型往下换到了 $2 / $10 那一档。
-- **这张表上最便宜的输出不是用钱付的。** Muse Spark 1.2 的 Contributor 档（输出 $0.20）比两家前沿天花板低 **250 倍**，差价用你 prompt 与 completion 的训练权来结算。对 agent 负载来说，这是账单里占大头那一侧的大幅折扣——也是一个开发者可以在挂着公司仓库的机器上悄悄做掉的披露决策。它还不叠加：60 请求/分的上限对同一次发布主推的并行 subagent 工作流是实打实的限制。可比的数字请用 Standard 档（$1.25 / $4.25）。另外 Muse Code **没有公开仓库**，所以不进本地图的榜单。
+- **这张表上最便宜的输出不是用钱付的。** Muse Spark 1.3 的 Contributor 档（输出 $0.20）比两家前沿天花板低 **250 倍**，差价用你 prompt 与 completion 的训练权来结算。对 agent 负载来说，这是账单里占大头那一侧的大幅折扣——也是一个开发者可以在挂着公司仓库的机器上悄悄做掉的披露决策。它还不叠加：60 请求/分的上限对同一次发布主推的并行 subagent 工作流是实打实的限制。可比的数字请用 Standard 档（$1.25 / $4.25）。另外 Muse Code **没有公开仓库**，所以不进本地图的榜单。
 - **前沿价格有一部分是促销价，这让本表成为一份活文档。** GPT-5.6 Sol 的 8 月降价至少延续到 **2026-11-21**，Gemini 4 Argon 的 $2 / $10 到 **11 月 30 日**为止（之后 $4 / $20，缓存 $0.20），任何按促销价做的模型选择都需要在 **11 月复核**一次。但要注意：它那个 $4 / $20 的促销价，现在和 Opus 5.5 的常规价一样，而 **GPT-6 Sol 用 $2 / $10 把它拆了**——促销价已经不再是拿到这一档最便宜的路径。详见 [market-events](../market-events.md)。
 
 ### 开放权重这一档
@@ -60,13 +61,14 @@
 | [Kimi K3](../agents/kimi-k3.md) | **Kimi K3 License**（自定义） | 2.8T / 896 选 16 | 100 万 | Terminal-Bench 2.1 **88.3**，对比 GPT-5.6 Sol 88.8、Fable 5 88.0 |
 | [GLM-5.3](../agents/glm-5.md) | **Apache-2.0** | 未按变体公布 | 100 万（自 5.2 起"扎实"） | Terminal Bench 3.0 开源 SOTA；GLM-5.2 的 Terminal-Bench 2.1 **81.0**、SWE-bench Pro **62.1** |
 | [DeepSeek V4-Pro](../agents/deepseek-v4.md) | **MIT** | 1.6T / 49B | 100 万 | SWE-bench Verified **80.6**、Terminal-Bench 2.0 67.9 |
-| DeepSeek V4-Flash | **MIT** | 284B / 13B | 100 万 | 给更大思考预算时推理接近 Pro |
+| DeepSeek V4-Flash | **MIT** | 284B / 13B | 100 万 | 给更大思考预算时推理接近 Pro。小版本更新 **V4.1-Flash-1017**（2026-10-17）：按 DeepSeek 的说法，比 V4.1-Flash 输出更短、benchmark 更好 |
+| Muse Spark Open（Meta） | **Muse Model License**（自定义，"有限商用条款"） | 816B / 42B | 100 万 | 2026-10-15。Meta 称其为"迄今最强的美国开放权重模型"；针对 Mac Studio M5 Ultra 上的 MLX 做了优化 |
 | [Qwen3-Coder-Next](../agents/qwen3-coder.md) | 按 checkpoint 而异 | 80B / 约 3B | 256K → 100 万（Yarn） | 在开源模型的 agentic 编码上与 Claude Sonnet 相当 |
 
 这一档改变预算的四件事：
 
 1. **顶端的差距已经小到可以争论了。** 月之暗面自己的对照把 K3 的 Terminal-Bench 2.1 放在 88.3，对 Sol 的 88.8、Fable 5 的 88.0。厂商自测当作主张看待——但这个主张*站得住*本身就是新情况。
-2. **真正的分界轴是许可，不是能力。** MIT（DeepSeek）、Apache-2.0（GLM）、自定义（Kimi）、按 checkpoint 而异（Qwen），在能力大体相当的情况下是四种实质不同的法律位置。先看许可，再看 benchmark。
+2. **真正的分界轴是许可，不是能力。** MIT（DeepSeek）、Apache-2.0（GLM）、自定义（Kimi，以及 10 月 15 日起 Meta 的 Muse Model License）、按 checkpoint 而异（Qwen），在能力大体相当的情况下是四种实质不同的法律位置。先看许可，再看 benchmark。
 3. **参数量是部署级别，不是规格表上的数字。** 2.8T 和 1.6T 是集群；Qwen3-Coder-Next 的"80B 里激活约 3B"是一台工作站。这个差别决定的真实部署，比它上面任何一行都多。
 4. **不存在同口径的 benchmark 行，本页也不会伪造一个。** DeepSeek 报 SWE-bench Verified，Anthropic 报 SWE-bench Pro，OpenAI 报 DeepSWE，智谱报自家 bench。它们是不同的测量；把它们排进同一列排序，是本页能做的最误导的一件事。
 

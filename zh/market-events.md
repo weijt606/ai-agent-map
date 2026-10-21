@@ -4,6 +4,26 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
+## 2026-10-12 → 10-17 —— Meta 把 Muse Wonder 定在 Opus 5.5 的价位，GPT-5.5 退出 Codex，两个开放权重发布
+
+**Meta 于 2026 年 10 月 12 日发布 Muse Wonder**——这一天落在上一个窗口里，本地图当时漏了，在此补记。Meta 的定位是"前沿编码、长时运行 agent 与高级电脑操作"。在 Meta Model API 上它的价格是**每百万 token $4 / $20，缓存输入 $0.20，100 万上下文**——和 Claude Opus 5.5 的标价、缓存读完全一样。更大的 **Muse Wonder Full** 不上 API，只在 Muse Code 订阅的 Power 与 Maximum 用量档里提供。Meta 的价格表现在列的也已经是 **Muse Spark 1.3**（9 月 2 日发布），价格与本地图之前记的 1.2 相同，所以[成本表](comparisons/cost-and-benchmarks.md)里那两行已就地改名。
+
+**OpenAI 于 2026 年 10 月 14 日（19:00 UTC）让 GPT-5.5 从 Codex 与 ChatGPT 下线**，针对用 ChatGPT 账号登录的用户。它让这些用户改用 GPT-6.1 Sol，并提醒更新仍在选 `gpt-5.5` 的工作区默认、已存模型设置、托管配置、自定义 agent、定时任务与脚本。API 和用 API key 登录的 Codex 会话不受影响。这不算换默认：[Codex CLI](agents/codex.md) 的打包默认自 9 月 29 日 `rust-v0.159.1` 起就是 GPT-6.1 Sol，`rust-v0.163.0`（10 月 15 日）没有动它。
+
+**Meta 于 2026 年 10 月 15 日开放 Muse Spark Open 的权重**：总参数 816B、激活 42B、100 万 token 上下文、原生多模态，许可是 **Muse Model License，"有限商用条款"**。Meta 称它是"迄今最强的美国开放权重模型"，并针对 Mac Studio M5 Ultra 上的 MLX 做了优化。**DeepSeek 于 10 月 17 日发布 DeepSeek-V4.1-Flash-1017**，一次小版本更新，官方说法是比 V4.1-Flash benchmark 更强、完成更快、输出更短，"性能与成本的帕累托改进"，权重同步公开；它点名推荐用 [DeepSeek Harness](agents/deepseek-harness.md) `v0.2.1-rc.1` 及以上版本来用，harness 当天发的 `rc.2` 也加上了对它的支持。
+
+**Anthropic 于 10 月 15 日让 Code Review 结束研究预览、正式开放**给 Claude Team 与 Enterprise 组织，分 Quick、Standard（默认）、Deep 三档。它和 [Open Code Review](agents/open-code-review.md)、[Cline](agents/cline.md) 属于同一条 review-first 路线，只不过是托管产品而不是 CLI。
+
+**对选型的影响：** 三点。
+
+第一，**$4 / $20 现在是三家厂商共用的价位。** Opus 5.5（长期价）、Muse Wonder（长期价）、GPT-5.6 Sol（促销价，至少到 11 月 21 日）都在这里，Gemini 4 Argon 也会在 12 月 1 日涨到这里。在同一标价上，决策看的是缓存列和 benchmark 列，不是标价——而 Muse Wonder 连缓存读都和 Opus 5.5 一样。
+
+第二，**agent 产品里的模型下线是配置风险，不只是血统备注。** 在用 ChatGPT 登录的 Codex 工作区里钉死了 `gpt-5.5` 的人——本地图一直建议钉死模型——现在钉的是一个解析不到的名字。照样要钉，但把模型下线和促销价到期放进同一份复查日程。
+
+第三，**开放权重档迎来第一个用自定义许可的美国模型。** Muse Spark Open 和 Kimi K3 一起进了[开放权重表](comparisons/cost-and-benchmarks.md#开放权重这一档)的自定义许可那一栏；先读"有限商用条款"，再看参数量。本窗口没有任何被跟踪的编码 agent 换默认模型，已连续第三个窗口（[Claude Code](agents/claude-code.md) `v2.1.300`–`v2.1.306`、Codex `rust-v0.163.0`、[Gemini CLI](agents/gemini-cli.md) `v0.65.0`、[OpenCode](agents/opencode.md) `v1.19.1`–`v1.19.3`）；Gemini CLI 的默认模型常量没变，也没有指向 Argon。
+
+来源：[Muse Wonder（Meta AI Research）](https://research.meta.ai/blog/muse-wonder)、[Muse Wonder 价格](https://dev.meta.ai/models/muse-wonder)、[Muse Spark 1.3 价格](https://dev.meta.ai/models/muse-spark)、[Codex changelog：GPT-5.5 下线](https://learn.chatgpt.com/docs/changelog)、[Introducing Muse Spark Open](https://research.meta.ai/blog/muse-spark-open)、[DeepSeek-V4.1-Flash-1017 发布](https://api-docs.deepseek.com/news/news261017/)、[DeepSeek Harness `dsh-v0.2.1-rc.2`](https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-rc.2)、[Code Review 正式开放（Anthropic）](https://claude.com/resources/articles/code-review-is-now-generally-available)、[OpenAI API 价格](https://developers.openai.com/api/docs/pricing)。
+
 ## 2026-10-07 → 10-13 —— Haiku 5.5 发布，Gemini 4 Argon 开放付费 API，Sonnet 5.5 的缓存读原来只有本地图记下的一半
 
 **Anthropic 于 2026-10-07 发布 Claude Haiku 5.5（`claude-haiku-5-5`）**，就是随 Sonnet 5.5 一起承诺"未来几周"推出的那个模型。它按 prompt 长度分价：**prompt 不超过 10 万 token 时每百万 token $0.10 / $0.50，超过则 $0.50 / $2.50**，缓存读 $0.01 / $0.05，5 分钟缓存写 $0.125 / $0.625。上下文 1M，输出 128K，知识截止 2026 年 6 月；Anthropic 的文档注明它的 tokenizer 对同一段文本比 Haiku 4.5 多算约 30% token。它是 API 以及 Bedrock、Vertex、Foundry 上默认的 Haiku 模型；[Claude Code](agents/claude-code.md) `v2.1.293` 同日加入，但没有换自己的 Opus 或 Sonnet 默认。

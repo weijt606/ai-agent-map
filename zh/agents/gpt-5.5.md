@@ -6,6 +6,8 @@
 
 一句话：GPT-5.5 是 OpenAI 2026 年春季的前沿 agentic 模型——为多步任务执行、工具调用和自我检查而设计——此后已被接棒两次：2026-07-09 的 GPT-5.6，以及 2026-09-03 的 [GPT-6 Astra](gpt-6-astra.md)。本页作为血统参照保留（见下方"发布后格局"）。
 
+> **从 Codex 与 ChatGPT 下线（2026-10-14）：** 自 2026 年 10 月 14 日 19:00 UTC 起，用 ChatGPT 账号登录的用户在 Codex 和 ChatGPT 里不能再用 GPT-5.5；OpenAI 让他们改用 GPT-6.1 Sol（`gpt-6.1-sol`），并提醒更新仍在选 `gpt-5.5` 的工作区默认、已存设置、自定义 agent 与脚本。OpenAI API 和用 API key 登录的 Codex 会话不受影响，API 价格表仍列着它：每百万 token $5 / $30（缓存 $0.50）。来源：[Codex changelog](https://learn.chatgpt.com/docs/changelog)。
+
 ## 一眼判断
 
 | 项目 | 结论 |

@@ -48,12 +48,12 @@ Same legend as the [capability matrix](../capabilities/matrix.md): ● core stre
 | [AutoGLM](../agents/autoglm.md) | ● | ○ | ? | ● | ? | ? | ? | ● |
 | [Yuanbao](../agents/yuanbao.md) | ○ | ● | ? | — | ? | ? | ? | — |
 
-How the hard cells were scored: **Your device** is ● only where the agent operates apps on a phone you hold (Doubao's system service; AutoGLM's open framework), ◐ where it can use your computer or browser, ○ where it works only on a vendor machine. **Approval controls** is ● where the vendor documents per-action confirmation rules or scoped grants (dots' automatic review and custom rules, Gemini's confirmation list, Claude's three modes, Muse's Sentinel), ◐ where control exists but is partial or coarse (Grok Bot's Auto Review does not cover every side effect; Cue's budget; Doubao's app-level SAEP declarations).
+How the hard cells were scored: **Your device** is ● only where the agent operates apps on a phone you hold (Doubao's system service; AutoGLM's open framework), ◐ where it can use your computer or browser, ○ where it works only on a vendor machine. **Approval controls** is ● where the vendor documents per-action confirmation rules or scoped grants (dots' automatic review and custom rules, Gemini's confirmation list, Claude's three modes, Duet's send/pay/sign/delete approval and off-limits list, Muse's Sentinel), ◐ where control exists but is partial or coarse (Grok Bot's Auto Review does not cover every side effect; Cue's budget and per-payment confirmation; Doubao's app-level SAEP declarations).
 
 ## Three Questions That Decide Most Choices
 
 1. **Whose identity does it act under?** Almost every agent here signs in as you. [Cue](../agents/manus-cue.md) gives each agent its own email, phone number and wallet — less exposure for your accounts, more for the people it contacts.
-2. **Whose machine does it work on?** A vendor cloud computer (dots, Muse, Grok Bot, Cue, AutoGLM's app), your browser or computer (Gemini, Claude, dots' connected PC), or your phone's operating system (Doubao). The closer to your device, the larger the permission you are granting.
+2. **Whose machine does it work on?** A vendor cloud computer (dots, Duet, Muse, Grok Bot, Cue, AutoGLM's app), your browser or computer (Gemini, Claude, dots' connected PC), or your phone's operating system (Doubao). The closer to your device, the larger the permission you are granting.
 3. **Can the vendor see it, and does it train on it?** Muse's operator can still reach your data until its announced Confidential VM ships; Claude's training is an opt-in choice with 5-year vs 30-day retention; Grok Bot excludes training only under Privacy Mode; Gemini Task requires Keep Activity on. Several products do not state this at all — treat that as an answer.
 
 ## Recent Changes

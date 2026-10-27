@@ -106,8 +106,10 @@ Standouts: the trade of this route is on the last column — you give up **deplo
 | [oh-my-claudecode](../agents/oh-my-claudecode.md) | ◐ | ◐ | ◐ | ● | ◐ | ◐ | ◐ | ◐ | ◐ |
 | [oh-my-codex](../agents/oh-my-codex.md) | ◐ | ◐ | ◐ | ● | ◐ | ◐ | ◐ | ◐ | ◐ |
 | [Ruflo](../agents/ruflo.md) | ◐ | ◐ | ◐ | ● | ● | ○ | ◐ | ◐ | ◐ |
+| [Orca](../agents/orca.md) | ◐ | ● | ○ | ● | ● | ◐ | ◐ | ● | ● |
+| [Paperclip](../agents/paperclip.md) | ◐ | ◐ | ○ | ● | ● | ◐ | ● | ◐ | ● |
 
-Standouts: **orchestration** is the reason these exist — they add teams, skills, and durable workflow to a base agent. Ruflo pushes furthest on **multi-agent** (multi-machine federation, 100+ specialized agents).
+Standouts: **orchestration** is the reason these exist. oh-my-claudecode, oh-my-codex and Ruflo add teams, skills and durable workflow to a base agent, and Ruflo goes furthest on multi-machine federation. Orca and Paperclip sit across many different agents instead: Orca as a parallel-worktree workbench, Paperclip as a governed org with tickets, budgets and routines (● on **scheduling**; its approval is ◐ because the harnesses it drives default to full auto).
 
 ## Build-Your-Own Frameworks
 
@@ -144,9 +146,11 @@ The four libraries backfilled on 2026-09-06 sharpen what this group's blank **de
 | [Langfuse](../agents/langfuse.md) | — | ○ | ○ | — | — | ◐ | ○ | ◐ | ● |
 | [CodeGraph](../agents/codegraph.md) | ◐ | — | ● | — | — | — | — | ◐ | ● |
 | [Graft](../agents/graft.md) | ◐ | — | ● | — | ○ | — | — | ◐ | ● |
+| [claude-mem](../agents/claude-mem.md) | ◐ | — | ● | — | — | — | — | ◐ | ◐ |
+| [Graphify](../agents/graphify.md) | ◐ | — | ● | — | ○ | — | — | ◐ | ● |
 | [CLI-Anything](../agents/cli-anything.md) | ● | ◐ | — | — | — | — | — | ◐ | ● |
 
-Standouts: this group is glue, so the shape is lopsided. n8n leads on **scheduling** (event/cron triggers); Letta is the reference for self-editing **memory**; CodeGraph's and Graft's "memory" is a code knowledge graph (context, not conversation) — they differ on storage, not on what they remember: CodeGraph serves a SQLite index over MCP, Graft writes linked markdown the agent reads as files; LiteLLM is a pure gateway — its only real column is **deployment control**. [Langfuse](../agents/langfuse.md) scores almost nothing here by design: it *watches* agents rather than acting, so its real columns are **deployment control** (free unlimited self-host) and **human approval** (annotation queues, LLM-as-a-judge review) — see [observability & evals](../comparisons/observability-and-evals.md).
+Standouts: this group is glue, so the shape is lopsided. n8n leads on **scheduling** (event/cron triggers); Letta is the reference for self-editing **memory**; CodeGraph's and Graft's "memory" is a code knowledge graph (context, not conversation) — they differ on storage, not on what they remember: CodeGraph serves a SQLite index over MCP, Graft writes linked markdown the agent reads as files, and Graphify writes one `graph.json` a team can commit with a union merge driver, reaching docs and media through an optional semantic pass; claude-mem remembers session history rather than code, and scores ◐ on deployment because its installer offers the hosted observer first; LiteLLM is a pure gateway — its only real column is **deployment control**. [Langfuse](../agents/langfuse.md) scores almost nothing here by design: it *watches* agents rather than acting, so its real columns are **deployment control** (free unlimited self-host) and **human approval** (annotation queues, LLM-as-a-judge review) — see [observability & evals](../comparisons/observability-and-evals.md).
 
 ## Self-Hosted, Multi-Channel & Autonomous
 
@@ -187,6 +191,7 @@ Coverage here is a judgment, not an oversight, and the gaps are worth stating so
 - **Consumer personal agents** — [ChatGPT dots](../agents/chatgpt-dots.md), [Gemini Task](../agents/gemini-task.md), [Claude (Cowork)](../agents/claude-cowork.md), [Claude Duet](../agents/claude-duet.md), [Muse](../agents/meta-muse.md), [Grok Bot](../agents/grok-bot.md), [Cue](../agents/manus-cue.md), [Doubao](../agents/doubao.md), [Qwen app](../agents/qwen-app.md), [AutoGLM](../agents/autoglm.md), [Yuanbao](../agents/yuanbao.md) — scored on their own grid in [personal agents](../comparisons/personal-agents.md), on dimensions that fit a consumer product (errands, deliverables, your device, approval controls) and with a **?** for anything the vendor does not document. Forcing them onto this grid would mean guessing at deployment and orchestration columns a closed product never discloses.
 - **Models** — [Fable 5.1](../agents/claude-fable-5.md), [Opus 5](../agents/claude-opus-5.md), [GPT-6 Astra](../agents/gpt-6-astra.md), [GPT-5.5](../agents/gpt-5.5.md), [Kimi K3](../agents/kimi-k3.md), [GLM-5.3](../agents/glm-5.md), [DeepSeek V4](../agents/deepseek-v4.md), [Qwen3-Coder](../agents/qwen3-coder.md). Every column here is a property of an agent *product* — approval gates, scheduling, delivery surfaces, deployment control. A model has none of them. Compare models in [cost & benchmarks](../comparisons/cost-and-benchmarks.md) instead.
 - **[Superpowers](../agents/superpowers.md)** — a skills framework that runs *inside* other agents rather than having a loop of its own. Its capabilities are whichever agent you attach it to, so a row would measure the host, not the tool.
+- **[ECC](../agents/ecc.md)** — like Superpowers, a plugin that runs *inside* a host agent (Claude Code first; Codex and Qoder native; others beta or experimental). Its hooks, memory vault and subagents are real, but their reach is set by the host harness and differs per harness by its own support table, so a row would score the host, not ECC.
 - **[BabyAGI](../agents/babyagi.md)** — kept in this map as a historical and educational entry; its own profile says it is not a production tool, and its capability table is scored on influence and educational value rather than on capability. A row in this matrix would imply it is a live candidate, which would be the wrong signal.
 
 If a project is profiled and has none of the above reasons, a missing row is a backlog item rather than a decision.

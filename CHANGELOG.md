@@ -4,6 +4,17 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-10-28 (later) — A coverage-gap audit: five large projects this map had never named
+
+The weekly new-repo scan surfaced established repositories, each over 100k stars, that appeared nowhere in the map: not in a profile, the catalog, the watchlist or any table. They had been missed because the scan looks at *recently created* repos. Five are now profiled, 89 → 94:
+
+- **[Orca](agents/orca.md)** (`stablyai/orca`, MIT) and **[Paperclip](agents/paperclip.md)** (`paperclipai/paperclip`, MIT) join the **workflow / orchestration layer**: Orca runs any CLI coding agent side by side in its own worktree; Paperclip is a self-hosted control plane that runs a team of agents with tickets, budgets, approvals and routines. Both get scored rows in the [capability matrix](capabilities/matrix.md).
+- **[ECC](agents/ecc.md)** (`affaan-m/ECC`, MIT) joins **[Superpowers](agents/superpowers.md)** as an **agentic skills framework**, and like it is listed in the matrix's "does not score" section, because it runs inside a host agent.
+- **[claude-mem](agents/claude-mem.md)** (`thedotmack/claude-mem`, Apache-2.0) and **[Graphify](agents/graphify.md)** (`Graphify-Labs/graphify`, Apache-2.0) join **runtime and tools**. Both get matrix rows and a place on the [memory approaches](comparisons/memory-approaches.md) page: claude-mem as bolt-on passive recall, Graphify as a third storage decision for code graphs, after CodeGraph and Graft.
+- All five enter the catalog with `tracked: false` and start polling stars at the next weekly refresh. Their absence also means every "N-th largest tracked repo" statement before this date was made over a narrower set.
+
+**Looked at and deliberately not added:** `morluto/rea` (an MCP bridge to reverse-engineering tools, about 396k stars, of which about 376k arrived in the 20 days since its own README marked 20k on Oct 8). It is a domain tool rather than an agent, its star curve has no precedent on this map and its stargazers cannot be audited, so it stays off the heat board until it has a few windows of rate data. Despite its `dsh-plugin` topic, it is not a DeepSeek Harness plugin. `Leonxlnx/taste-skill` and `tt-a1i/archify` (over 90k each) are single skills, and the map tracks curated collections, not individual skills.
+
 ## 2026-10-28 — GPT-6.1 Terra joins the cost table, and Claude Duet and Cue's new documentation reach the personal-agents page
 
 - **[Cost & benchmarks](comparisons/cost-and-benchmarks.md)** adds **GPT-6.1 Terra** ($1 / $5, cache read $0.05, Oct 26); every other row was re-checked against the four vendors' pricing pages and is unchanged, and the "as of" date moves to Oct 28.

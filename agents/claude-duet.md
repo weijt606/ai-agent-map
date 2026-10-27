@@ -4,7 +4,7 @@
 [![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](claude-duet.md)
 [![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-One-line take: Anthropic's second consumer agent, and the one that comes to you first. A separate app built around Opus 5.5 that briefs you each morning, checks your connected accounts every few hours, works on its own virtual machine while your devices are off, and waits for your okay before it sends, pays, signs or deletes anything. It is aimed at professionals and small business owners, not personal errands.
+One-line take: Anthropic's standalone proactive agent, separate from [Claude (Cowork)](claude-cowork.md), and built to come to you first. A separate app built around Opus 5.5 that briefs you each morning, checks your connected accounts every few hours, works on its own virtual machine while your devices are off, and waits for your okay before it sends, pays, signs or deletes anything. It is aimed at professionals and small business owners, not personal errands.
 
 ## Quick Read
 
@@ -43,7 +43,7 @@ Duet "reads, drafts, and prepares work on its own", but before it sends a messag
 
 ## Bottom Line
 
-An agent designed to interrupt you selectively, with a written list of actions it will not take even when you approve them. It is a preview: waitlisted, US only, and still tuning its judgment about when to interrupt you. For a US small-business owner already paying for Claude, it is worth joining the waitlist. Everyone else should wait for it to merge with, or graduate from, the main app.
+An agent designed to interrupt you selectively, with a written list of actions it will not take even when you approve them. It is a preview: waitlisted, opening to the US first, and still tuning its judgment about when to interrupt you. For a US small-business owner already paying for Claude, it is worth joining the waitlist. Everyone else should wait for it to merge with, or graduate from, the main app.
 
 ## Sources
 

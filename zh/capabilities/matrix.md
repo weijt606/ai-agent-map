@@ -107,9 +107,9 @@
 | [oh-my-codex](../agents/oh-my-codex.md) | ◐ | ◐ | ◐ | ● | ◐ | ◐ | ◐ | ◐ | ◐ |
 | [Ruflo](../agents/ruflo.md) | ◐ | ◐ | ◐ | ● | ● | ○ | ◐ | ◐ | ◐ |
 | [Orca](../agents/orca.md) | ◐ | ● | ○ | ● | ● | ◐ | ◐ | ● | ● |
-| [Paperclip](../agents/paperclip.md) | ◐ | ◐ | ○ | ● | ● | ● | ● | ◐ | ● |
+| [Paperclip](../agents/paperclip.md) | ◐ | ◐ | ○ | ● | ● | ◐ | ● | ◐ | ● |
 
-看点：**编排**就是它们存在的理由——给基座 agent 加上 teams、skills 和持久工作流。Ruflo 在**多 agent**上走得最远（多机联邦、100+ 专用 agent）。
+看点：**编排**就是它们存在的理由。oh-my-claudecode、oh-my-codex 和 Ruflo 给基座 agent 加上 teams、skills 和持久工作流，其中 Ruflo 在多机联邦上走得最远。Orca 和 Paperclip 则横跨许多不同的 agent：Orca 是并行 worktree 的工作台，Paperclip 是带工单、预算和 routine 的受治理组织（**调度** ●；审批给 ◐，因为它驱动的 harness 默认全自动）。
 
 ## 自建框架
 
@@ -146,11 +146,11 @@
 | [Langfuse](../agents/langfuse.md) | — | ○ | ○ | — | — | ◐ | ○ | ◐ | ● |
 | [CodeGraph](../agents/codegraph.md) | ◐ | — | ● | — | — | — | — | ◐ | ● |
 | [Graft](../agents/graft.md) | ◐ | — | ● | — | ○ | — | — | ◐ | ● |
-| [claude-mem](../agents/claude-mem.md) | ◐ | — | ● | — | ○ | — | — | ◐ | ◐ |
+| [claude-mem](../agents/claude-mem.md) | ◐ | — | ● | — | — | — | — | ◐ | ◐ |
 | [Graphify](../agents/graphify.md) | ◐ | — | ● | — | ○ | — | — | ◐ | ● |
 | [CLI-Anything](../agents/cli-anything.md) | ● | ◐ | — | — | — | — | — | ◐ | ● |
 
-看点：这组是黏合层，所以形状很偏。n8n 在**调度**（事件/cron 触发）上领先；Letta 是自编辑**记忆**的参照；CodeGraph 与 Graft 的"记忆"都是代码知识图谱（上下文，不是对话）——两者差在存储形态而不是记什么：CodeGraph 用 MCP 供一份 SQLite 索引，Graft 写成 agent 当文件读的互链 markdown；LiteLLM 是纯网关——唯一真正的列是**部署控制**。[Langfuse](../agents/langfuse.md) 在这里几乎什么都不得分，而这是设计使然：它*观察* agent 而不行动，所以它真正的列是**部署控制**（自托管免费不限量）和**人工审批**（标注队列、LLM-as-a-judge 评审）——见[观测与评估](../comparisons/observability-and-evals.md)。
+看点：这组是黏合层，所以形状很偏。n8n 在**调度**（事件/cron 触发）上领先；Letta 是自编辑**记忆**的参照；CodeGraph 与 Graft 的"记忆"都是代码知识图谱（上下文，不是对话）——两者差在存储形态而不是记什么：CodeGraph 用 MCP 供一份 SQLite 索引，Graft 写成 agent 当文件读的互链 markdown，Graphify 写出一份团队可带 union 合并驱动提交的 `graph.json`，并经可选的语义那一遍覆盖文档与媒体；claude-mem 记的是会话历史而不是代码，部署给 ◐ 是因为它的安装器优先推荐托管 observer；LiteLLM 是纯网关——唯一真正的列是**部署控制**。[Langfuse](../agents/langfuse.md) 在这里几乎什么都不得分，而这是设计使然：它*观察* agent 而不行动，所以它真正的列是**部署控制**（自托管免费不限量）和**人工审批**（标注队列、LLM-as-a-judge 评审）——见[观测与评估](../comparisons/observability-and-evals.md)。
 
 ## 自托管、多渠道 & 自主
 

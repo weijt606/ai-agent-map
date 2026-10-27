@@ -13,10 +13,10 @@ One-line take: ECC is a plugin you install into an existing coding agent that br
 | Vendor | Affaan Mustafa (single maintainer, per the README) and contributors |
 | Route | Agentic skills framework — a skills, hooks, and memory layer that runs inside a host agent |
 | Repository | [`affaan-m/ECC`](https://github.com/affaan-m/ECC) — MIT, JavaScript; 290.6k stars as of 2026-10-28 |
-| Open source | Yes (MIT). A hosted **ECC Pro** GitHub App is paid: free for public repos, $19/seat/month for private repos, Enterprise on request |
+| Open source | Yes (MIT). The hosted ECC Tools GitHub App has a Free tier for public repos (10 analyses a month); **ECC Pro** is $19/seat/month and covers private repos; Enterprise via sales |
 | Works with | [Claude Code](claude-code.md) (stable, primary); [Codex](codex.md) and Qoder (native plugins); [Cursor](cursor.md), [OpenCode](opencode.md), GitHub Copilot CLI (beta); Gemini, Zed, Antigravity, Qwen, [Hermes](hermes-agent.md), [OpenClaw](openclaw.md), Kimi and others (experimental adapters); [GitHub Copilot](github-copilot.md) Chat (instructions only) |
 | Best for | Claude Code users who want planning, TDD, fresh-context review, hook-enforced checks, and agent-config security scanning in one install |
-| Main cost | A large surface to install and keep in context; the README itself warns against stacking install methods and recommends a minimal profile when context footprint matters |
+| Main cost | A large surface to install and keep in context; the README itself warns against stacking install methods and recommends a selective or minimal profile when context footprint matters |
 | Current release | 2.2.3 (2026-10-01); install with `npx ecc-universal@2.2.3 setup` |
 | Website | https://ecc.tools |
 
@@ -26,7 +26,7 @@ ECC splits its work across five kinds of component, each with a different contex
 
 Two pieces sit beside that core. The **Memory Vault** (`ecc memory`, added in the 2.2 line) stores durable context and cross-harness handoffs as local Markdown under `.ecc/memory/`; the README states that memory is unreviewed context, not executable policy. **AgentShield**, also shipped as the `ecc-agentshield` npm package, scans `CLAUDE.md`, settings, MCP configs, hooks, agent definitions, and skills for secrets, permission problems, hook injection, and risky MCP servers.
 
-**How it differs from [Superpowers](superpowers.md).** Both sit inside a host agent and ship a stage-based development cycle. Superpowers' loop is brainstorm → design → plan → implement → review → complete, and its README uses hooks only to bootstrap the skills at session start. ECC adds runtime pieces that Superpowers' README does not describe: hooks used for enforcement, the Memory Vault and instincts for memory, a security scanner, and a paid hosted GitHub App. The trade is coverage against footprint. ECC's own install docs spend a section on keeping it from crowding the context window.
+**How it differs from [Superpowers](superpowers.md).** Both sit inside a host agent and ship a stage-based development cycle. Superpowers' Basic Workflow runs brainstorming → git worktree → plan → subagent execution with TDD → code review → finish the branch, and its README uses hooks only to bootstrap the skills at session start. ECC adds runtime pieces that Superpowers' README does not describe: hooks used for enforcement, the Memory Vault and instincts for memory, a security scanner, and a paid hosted GitHub App. The trade is coverage against footprint. ECC's README has a whole section on context-window management.
 
 ## When To Pick It
 
@@ -40,7 +40,7 @@ Two pieces sit beside that core. The **Memory Vault** (`ecc memory`, added in th
 - You want a standalone agent. ECC does not run a loop of its own; it changes how an installed harness behaves.
 - You rely on Cursor, OpenCode, Gemini, or the other non-Claude adapters for parity. The README labels those beta, experimental, or instruction-only and says full Claude feature parity is not claimed.
 - You want a small skill set. The default install is large; use `--profile minimal` or a selective install if context footprint matters.
-- You are on native Windows and need continuous learning or Memory Vault writes. The README lists open native-Windows defects for both and recommends WSL.
+- You are on native Windows and need continuous learning or Memory Vault writes. The README lists open native-Windows defects for both (#2489, #2626) and says shell-backed features need Git Bash or WSL.
 
 ## Capability Shape
 
@@ -48,7 +48,7 @@ Two pieces sit beside that core. The **Memory Vault** (`ecc memory`, added in th
 | --- | --- | --- |
 | Skill and agent catalog | Very strong | 71 agents, 311 skills, 97 command shims; skills load on demand |
 | Enforcement via hooks | Strong | GateGuard gates destructive shell commands; hooks run outside the model context |
-| Memory | Solid | Memory Vault (local Markdown, optional MCP server) plus learned instincts; recall is treated as unreviewed context |
+| Memory | Medium | Memory Vault (local Markdown, optional MCP server) plus learned instincts; recall is treated as unreviewed context |
 | Agent-config security | Strong | AgentShield scans prompts, hooks, MCP config, permissions, secrets, and agent files |
 | Cross-harness parity | Uneven | Stable on Claude Code, native on Codex and Qoder, beta or experimental elsewhere |
 | Standalone runtime | Not the goal | Runs inside a host agent |

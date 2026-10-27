@@ -10,7 +10,7 @@
 
 | 项目 | 结论 |
 | --- | --- |
-| 厂商 | Paperclip Labs, Inc.（`paperclipai/paperclip`，paperclip.ing） |
+| 厂商 | 据 README 的许可证落款为 Paperclip Labs, Inc.；LICENSE 文件里写的是"Paperclip AI"（`paperclipai/paperclip`，paperclip.ing） |
 | 路线 | 工作流 / orchestration layer，围绕工单和组织架构组织，而不是围绕单个 agent 的会话 |
 | 仓库 | [`paperclipai/paperclip`](https://github.com/paperclipai/paperclip)：MIT，TypeScript，截至 2026-10-28 共 107.9k star |
 | 开源 | 是（MIT）。"Open source. Self-hosted. No Paperclip account required." |
@@ -35,14 +35,14 @@ README 对自己不是什么也说得很直白："Not an agent framework. We don
 - **治理**：董事会式审批流程、任务上的评审和审批阶段、新"员工"入职审批，以及对任何 agent 的暂停、恢复或终止。配置变更有版本记录，可以回滚。
 - **成本控制**：按公司、agent、项目、目标、供应商和模型统计 token 和花费，可设预警阈值和硬性上限。README 也写明，执行依据的是已记录的花费，所以"usage reporting and in-flight work can delay a stop"。
 - **连接与工具**：GitHub、Notion、Railway 或你自己的 MCP 服务器，都挂在一个工具网关后面，每个动作可设为 Allowed、Ask first 或 Off。
-- **工作区**：项目仓库，可选隔离的 git worktree，以及把 agent 跑到本机之外的沙箱供应商（路线图点名了 e2b、Cloudflare、Daytona、Modal、Novita 和自托管 Kubernetes）。
+- **工作区**：项目仓库，可选隔离的 git worktree，以及把 agent 跑到本机之外的沙箱供应商（路线图上 e2b、Cloudflare、Daytona、Modal、Novita 和自托管 Kubernetes 已标为完成；README 补充说可用性取决于所配置的环境和适配器）。
 - **多组织**：一个部署可以承载多家公司，各自的任务、agent、权限和历史互相隔离；一个组织可以打包导出、再导入。
 
 ## 什么时候选它
 
 - 你有很多 agent 在跑周期性或长期的工作，已经理不清了。README 自己举的例子是"20 simultaneous Claude Code terminals open"。
 - 你想要能让 agent 停下来的花费上限，而不是月底才看到账单。
-- 你希望人只在定好的节点介入（计划审批、任务评审、有风险的工具调用），而不是每一步都盯着。
+- 你希望人只在定好的节点介入（计划审批、任务评审、设为 Ask first 的网关工具），而不是每一步都盯着。
 - 你的 agent 不只写代码：客服、报表、调研或社媒发帖按计划跑，有负责人、有可查的历史。
 - 你想在一个团队里混用不同 harness 和模型，同时不管是哪个 agent 干的活，任务、skill、权限和历史都放在同一处。
 
@@ -59,7 +59,7 @@ README 对自己不是什么也说得很直白："Not an agent framework. We don
 | 维度 | 评估 | 说明 |
 | --- | --- | --- |
 | 工作编排 | 非常强 | 挂在目标下的工单、原子领取、阻塞依赖、沿组织架构委派 |
-| 治理与审批 | 非常强 | 审批阶段、入职审批、Ask first 工具网关、带版本可回滚的配置 |
+| 治理与审批 | 强 | 审批阶段、入职审批、Ask first 工具网关、带版本可回滚的配置。但从 `v2026.1001.0` 起 agent harness 本身默认全自动（Claude `approve-all`、OpenCode `allow`、Codex 跳过审批与沙箱） |
 | 调度 | 非常强 | 支持 cron、webhook、API 触发的 routine；定时心跳 |
 | 多 agent | 非常强 | 人和 agent 混编的组织架构，多 harness、多模型团队 |
 | 成本控制 | 强 | 分范围的预算，带预警和硬上限，依据已记录的花费 |
@@ -69,11 +69,11 @@ README 对自己不是什么也说得很直白："Not an agent framework. We don
 
 ## 使用成本
 
-中。本地起步只要一条命令加一个内嵌 Postgres，默认是受信任的本机回环模式。生产环境意味着自己的 Postgres、认证模式，再加私有网络绑定（README 建议 Tailscale）或 Docker。需要 Node.js 24.11+；用 Claude 和 Codex 订阅登录，还需要主机上有 Python 3 和对应供应商的 CLI。版本按日期命名、发得很勤，最近几版开头都是破坏性变更：`v2026.1012.0` 要求升级前停掉所有旧进程，`v2026.1023.0` 扩大了 Operator 角色的权限。每次升级前都要读发布说明。匿名使用遥测**默认开启**；设 `PAPERCLIP_TELEMETRY_DISABLED=1` 或 `DO_NOT_TRACK=1` 可以关掉。
+中。本地起步只要一条命令加一个内嵌 Postgres，默认是受信任的本机回环模式。生产环境意味着自己的 Postgres、认证模式，再加私有网络绑定（README 建议 Tailscale）或 Docker。需要 Node.js 24.11+；用 Claude 和 Codex 订阅登录，还需要主机上有 Python 3 和对应供应商的 CLI。版本按日期命名、发得很勤，最近几版开头都是破坏性变更：`v2026.1012.0` 要求升级前停掉所有旧进程，`v2026.1023.0` 扩大了 Operator 角色的权限。每次升级前都要读发布说明。匿名使用遥测**默认开启**；设 `PAPERCLIP_TELEMETRY_DISABLED=1` 或 `DO_NOT_TRACK=1` 可以关掉。从 `v2026.1001.0` 起，执行 harness 默认全自动；Ask first 只管工具网关里的工具，需要 agent 层面把关就得给每个 agent 显式设权限模式。
 
 ## 结论
 
-Paperclip 把一群 agent 当成管理问题来处理：谁负责哪个任务、为什么要做、能花多少、谁来签字。如果你手上的 agent 已经能干活，卡住你的是协调、成本和问责，它给你的是一个自托管的 MIT 服务端，不需要厂商账号。如果你的问题是让一个 agent 写代码更强，它就是放错了层。长期记忆还在路线图上，托管版也还在候补名单阶段。
+Paperclip 把一群 agent 当成管理问题来处理：谁负责哪个任务、为什么要做、能花多少、谁来签字。如果你手上的 agent 已经能干活，卡住你的是协调、成本和问责，它给你的是一个自托管的 MIT 服务端，不需要厂商账号（只有托管的 GitHub 连接需要 Paperclip Cloud 做一次性批准）。如果你的问题是让一个 agent 写代码更强，它就是放错了层。长期记忆还在路线图上，托管版也还在候补名单阶段。
 
 ## 来源
 

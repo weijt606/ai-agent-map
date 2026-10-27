@@ -13,7 +13,7 @@ But "has memory" hides more than it reveals. These projects mean very different 
 | Approach | How it remembers | Representative | Best when you need to persist |
 | --- | --- | --- | --- |
 | Self-editing managed memory | Agent edits its own core / archival / recall stores within the context window | [Letta (MemGPT)](../agents/memgpt.md) | Long-running conversational state that the agent curates itself |
-| Passive semantic recall | Every turn embedded as a vector; a memory graph auto-injects relevant history | [jcode](../agents/jcode.md), [claude-mem](../agents/claude-mem.md) | Cross-session continuity without calling memory tools by hand |
+| Passive semantic recall | Activity captured automatically (per-turn embeddings in jcode; hook-captured, model-compressed observations in claude-mem) and relevant history auto-injected | [jcode](../agents/jcode.md), [claude-mem](../agents/claude-mem.md) | Cross-session continuity without calling memory tools by hand |
 | File / keyword project memory | Human-readable files (`MEMORY.md`, checkpoints) retrieved by keyword search | [MiMoCode](../agents/mimocode.md), Claude Code (`CLAUDE.md`) | Project understanding that survives runs and stays inspectable |
 | Pre-indexed code knowledge graph | Codebase parsed into a queryable graph/DB, queried on demand | [CodeGraph](../agents/codegraph.md), [Graphify](../agents/graphify.md) | Architecture-level code context, not conversation |
 | Code graph written as files | Codebase parsed into linked markdown the agent reads with plain file tools | [Graft](../agents/graft.md) | The same code context, as an artifact a person can read and review |

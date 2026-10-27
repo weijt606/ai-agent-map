@@ -13,10 +13,10 @@
 | 厂商 | Affaan Mustafa（README 自述为单人维护）和贡献者 |
 | 路线 | Agentic skills 框架——跑在宿主 agent 里的 skills、hooks 与记忆层 |
 | 仓库 | [`affaan-m/ECC`](https://github.com/affaan-m/ECC)——MIT，JavaScript；截至 2026-10-28 有 29.06 万 star |
-| 开源 | 是（MIT）。托管的 **ECC Pro** GitHub App 收费：公开仓库免费，私有仓库 $19/席位/月，Enterprise 需联系销售 |
+| 开源 | 是（MIT）。托管的 ECC Tools GitHub App：免费档仅限公开仓库（每月 10 次分析）；**ECC Pro** $19/席位/月，覆盖私有仓库；Enterprise 联系销售 |
 | 适配哪些 agent | [Claude Code](claude-code.md)（稳定、首要）；[Codex](codex.md) 和 Qoder（原生插件）；[Cursor](cursor.md)、[OpenCode](opencode.md)、GitHub Copilot CLI（beta）；Gemini、Zed、Antigravity、Qwen、[Hermes](hermes-agent.md)、[OpenClaw](openclaw.md)、Kimi 等（实验性适配）；[GitHub Copilot](github-copilot.md) Chat（仅指令文件） |
 | 适合谁 | 想一次装好规划、TDD、新上下文评审、hook 强制检查和 agent 配置安全扫描的 Claude Code 用户 |
-| 主要代价 | 要安装、要占上下文的面很大；README 自己就提醒不要叠装多种安装方式，并建议在意上下文占用时用 minimal profile |
+| 主要代价 | 要安装、要占上下文的面很大；README 自己就提醒不要叠装多种安装方式，并建议在意上下文占用时用选择性或 minimal profile |
 | 当前版本 | 2.2.3（2026-10-01）；安装命令 `npx ecc-universal@2.2.3 setup` |
 | 官网 | https://ecc.tools |
 
@@ -26,7 +26,7 @@ ECC 把工作拆给五类组件，每类的上下文成本不同。**Skills**（
 
 核心之外还有两块。**Memory Vault**（`ecc memory`，2.2 系列加入）把长期上下文和跨 harness 的交接以本地 Markdown 存在 `.ecc/memory/` 下；README 明确说记忆是未经审核的上下文，不是可执行的策略。**AgentShield** 也以 `ecc-agentshield` npm 包单独发布，扫描 `CLAUDE.md`、settings、MCP 配置、hooks、agent 定义和 skills，查密钥泄露、权限问题、hook 注入和有风险的 MCP server。
 
-**和 [Superpowers](superpowers.md) 的区别。** 两者都跑在宿主 agent 里，都带一套分阶段的开发流程。Superpowers 的循环是 brainstorm → design → plan → implement → review → complete，它的 README 里 hooks 只用来在会话开始时引导加载 skills。ECC 多出了 Superpowers README 没有描述的运行时部件：用于强制检查的 hooks、Memory Vault 与 instincts 构成的记忆、安全扫描器，以及一个收费的托管 GitHub App。代价是覆盖面换占用：ECC 自己的安装文档专门花了一节讲怎么防止它把上下文窗口挤满。
+**和 [Superpowers](superpowers.md) 的区别。** 两者都跑在宿主 agent 里，都带一套分阶段的开发流程。Superpowers 的基本工作流是 brainstorming → git worktree → 写计划 → 由 subagent 按 TDD 执行 → 代码评审 → 收尾分支，它的 README 里 hooks 只用来在会话开始时引导加载 skills。ECC 多出了 Superpowers README 没有描述的运行时部件：用于强制检查的 hooks、Memory Vault 与 instincts 构成的记忆、安全扫描器，以及一个收费的托管 GitHub App。代价是覆盖面换占用：ECC 的 README 专门有一节讲上下文窗口管理。
 
 ## 什么时候选它
 
@@ -40,7 +40,7 @@ ECC 把工作拆给五类组件，每类的上下文成本不同。**Skills**（
 - 你想要一个独立 agent。ECC 自己不跑循环，它改变的是已装 harness 的行为。
 - 你依赖 Cursor、OpenCode、Gemini 等非 Claude 适配并期待功能对齐。README 把它们标为 beta、实验性或仅指令，并说明不承诺与 Claude 功能完全对齐。
 - 你想要一个精简的 skill 集。默认安装很大；在意上下文占用就用 `--profile minimal` 或选择性安装。
-- 你在原生 Windows 上且需要持续学习或 Memory Vault 写入。README 列出这两项在原生 Windows 上都有未修复缺陷，建议用 WSL。
+- 你在原生 Windows 上且需要持续学习或 Memory Vault 写入。README 列出这两项在原生 Windows 上都有未修复缺陷（#2489、#2626），并说依赖 shell 的功能需要 Git Bash 或 WSL。
 
 ## 能力轮廓
 

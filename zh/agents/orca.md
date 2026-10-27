@@ -17,7 +17,7 @@
 | 形态 | macOS、Windows、Linux 桌面应用；iOS 和 Android 配套应用（beta）；无界面的 `orca serve` 运行时；`orca` CLI |
 | 支持的 agent | "Works with any CLI agent"：README 列了三十多个，包括 Claude Code、Codex、Grok、Cursor、GitHub Copilot、Antigravity、OpenCode、Pi、Hermes Agent、Goose、Kimi、Qwen Code 和 DeepSeek Harness |
 | 模型与计费 | 用你自己的 agent 订阅或 key："Plug in the subscriptions you already have and run them side by side." 内置账号切换和 Claude / Codex 用量追踪 |
-| 价格 | 官网写"Free and open source"。Enterprise 页面提供落地支持，价格要联系销售；没有描述托管方案，文档明确说 Orca "does **not** sell managed VPS hosting" |
+| 价格 | 官网写"Free and open source"。Enterprise 页面提供落地指导，只有"Get in touch"联系入口，没写价格；没有描述托管方案，文档明确说 Orca "does **not** sell managed VPS hosting" |
 | 适合谁 | 已经在跑两个以上 coding agent、想把它们放进并行 worktree，并在一个地方完成评审、浏览器调试和手机提醒的开发者 |
 | 主要代价 | 你和 agent 之间又多一个应用，而且几乎每天发版；编排、Cloud VM 和远程服务器都标着 experimental 或 beta |
 
@@ -45,9 +45,9 @@ Orca 的 README 把自己叫作"The AI Orchestrator for 100x builders"，官网�
 有两项功能让它从窗口管理器变成了编排层：
 
 - **Orchestration**（experimental，默认关闭，要在 Settings → Experimental 打开）：一个协调者 agent 开一个持久的"Run"，定义带依赖关系的任务，把任务派给各自 worktree 里的 worker agent，再通过收件箱接收 `worker_done`、心跳和提问消息。"Decision gate"会把任务卡住，直到有人做出决定。
-- **定时自动化**：用 `orca` CLI 创建自动化，触发方式可以是预设（`hourly`、`daily`、`weekdays`、`weekly`）、cron 表达式或 RRULE 字符串，在指定的仓库或 worktree 里运行，存放在本机或已连接的 Orca 主机上。
+- **定时自动化**：用 `orca` CLI 创建自动化，触发方式可以是预设（`hourly`、`daily`、`weekdays`、`weekly`）、cron 表达式或 RRULE 字符串，在指定的仓库或 worktree 里运行，可以跑在本机，也可以跑在已连接的 Orca 主机上。
 
-**手机配套应用**是遥控器，不是编辑器：能看所有已连接主机上的每个 worktree 和 agent 状态，回复正在等你的 agent、附上文件、在源码管理里提交、切换 agent 账号，并在 agent 做完时收到推送。手机通过中继连到桌面；中继的源码在仓库的 `cloud/` 目录里，而它的部署"is owned by the private `stablyai/orca-cloud` repository"。
+**手机配套应用**是遥控器，不是编辑器：能看所有已连接主机上的每个 worktree 和 agent 状态，回复正在等你的 agent、附上文件、在源码管理里提交、切换 agent 账号，并在 agent 做完时收到推送。手机可以走局域网直连，也可以通过中继连到桌面；中继的源码在仓库的 `cloud/` 目录里，而生产部署配置和流程"live in the private `stablyai/orca-cloud` repository"。
 
 ## 什么时候选它
 
@@ -62,7 +62,7 @@ Orca 的 README 把自己叫作"The AI Orchestrator for 100x builders"，官网�
 - 你需要一层策略，在所有 agent 前面统一执行审批和花费上限。Orca 把权限交给每个 agent 自己的设置；[Omnigent](omnigent.md) 才是在每个 harness 前面加审批和花费策略的那种。
 - 你想按团队来管 agent，有目标、预算和组织架构，而不是按 worktree 管。那是 [Paperclip](paperclip.md)。
 - 你需要稳定的接口。它几乎每天发版（`v1.4.239` 到 `v1.4.242` 在 2026 年 10 月 24 日到 27 日之间发布），多 agent 编排、Cloud VM 和 Remote Orca Server 都标着 experimental 或 beta。
-- 你想留在现有的编辑器里。Orca 是独立的桌面应用；想在常用编辑器里直接用 agent，看 [Cursor](cursor.md) 或 [Cline](cline.md)。
+- 你想留在现有的编辑器里。Orca 是独立的桌面应用；想在编辑器里直接用 agent，看 [Cline](cline.md)（装在 VS Code 里）或 [Cursor](cursor.md)（AI 优先的编辑器）。
 
 ## 能力形态
 
@@ -75,7 +75,7 @@ Orca 的 README 把自己叫作"The AI Orchestrator for 100x builders"，官网�
 | 多 agent 协同 | 中 | 有协调者 / worker 协议，但还是 experimental，默认关闭 |
 | 调度 | 中 | CLI 里的 cron / RRULE 自动化 |
 | 记忆 | 弱 | `CLAUDE.md` 和 `AGENTS.md` 交给 agent 自己管；它提供的是会话恢复和历史，不是记忆 |
-| 治理 | 弱 | 没有跨 agent 的审批或预算策略；每个 agent 沿用自己的权限模式 |
+| 治理 | 弱 | 有评审节点（把 diff 批注发回给 agent、"等你处理"的通知），但没有跨 agent 的审批或预算策略；每个 agent 沿用自己的权限模式 |
 
 ## 使用成本
 

@@ -17,13 +17,13 @@ One-line take: Orca is an open-source desktop app for running several coding age
 | Form factor | Desktop app for macOS, Windows and Linux; iOS and Android companion app (beta); a headless `orca serve` runtime; an `orca` CLI |
 | Agents | "Works with any CLI agent": the README lists over thirty, including Claude Code, Codex, Grok, Cursor, GitHub Copilot, Antigravity, OpenCode, Pi, Hermes Agent, Goose, Kimi, Qwen Code and DeepSeek Harness |
 | Models and billing | Your own agent subscriptions or keys: "Plug in the subscriptions you already have and run them side by side." Account switching and Claude/Codex usage tracking are built in |
-| Price | The site says "Free and open source". An Enterprise page offers rollout support with "contact us" pricing; no hosted plan is described, and the docs say Orca "does **not** sell managed VPS hosting" |
+| Price | The site says "Free and open source". An Enterprise page offers rollout guidance via "Get in touch" and lists no price; no hosted plan is described, and the docs say Orca "does **not** sell managed VPS hosting" |
 | Best for | A developer who already runs two or more coding agents and wants them in parallel worktrees, with review, a browser and phone alerts in one place |
 | Main cost | One more app between you and your agents, shipping a release almost every day; orchestration, Cloud VM and remote servers are labelled experimental or beta |
 
 ## What It Is
 
-Orca's README calls it "The AI Orchestrator for 100x builders" and the site calls it "The agent development environment". In practice it is an editor-shaped desktop app whose basic unit is the git worktree. You "fan one prompt across five agents, each in its own isolated git worktree", compare the results and merge the winner. Around that it puts the pieces you would otherwise keep in other windows:
+Orca's README calls it "The AI Orchestrator for 100x builders" and the site calls it "The agent development environment". In practice it is an editor-shaped desktop app whose basic unit is the git worktree. You "Fan one prompt across five agents, each in its own isolated git worktree", compare the results and merge the winner. Around that it puts the pieces you would otherwise keep in other windows:
 
 - **Terminals** with WebGL rendering, splits, and scrollback that survives restarts.
 - **Review**: a diff viewer where you can "drop comments on any diff line and ship them back to the agent", plus in-app GitHub PRs and issues and Linear and Jira items.
@@ -47,7 +47,7 @@ Two features turn this from a window manager into an orchestration layer:
 - **Orchestration** (experimental, off by default under Settings → Experimental): a coordinator agent opens a durable "Run", defines tasks with dependencies, dispatches them to worker agents in their own worktrees, and receives `worker_done`, heartbeat and question messages through an inbox. "Decision gates" hold a task until someone resolves it.
 - **Scheduled automations**: the `orca` CLI creates automations with presets (`hourly`, `daily`, `weekdays`, `weekly`), cron expressions or RRULE strings, run in a chosen repo or worktree on this computer or a connected Orca host.
 
-The **mobile companion** is a remote control, not an editor: it shows every worktree and agent status across connected hosts, lets you reply to an agent that is waiting, attach files, commit from source control, switch agent accounts, and get a push notification when an agent finishes. Phones reach the desktop through a relay; its source is in the repo's `cloud/` directory, while its deployment "is owned by the private `stablyai/orca-cloud` repository".
+The **mobile companion** is a remote control, not an editor: it shows every worktree and agent status across connected hosts, lets you reply to an agent that is waiting, attach files, commit from source control, switch agent accounts, and get a push notification when an agent finishes. Phones pair with the desktop over the LAN or through a relay; the relay's source is in the repo's `cloud/` directory, while its production deployment configuration and workflows "live in the private `stablyai/orca-cloud` repository".
 
 ## When To Pick It
 
@@ -62,7 +62,7 @@ The **mobile companion** is a remote control, not an editor: it shows every work
 - You want a policy layer that enforces approvals and spend limits across agents. Orca leaves permissions to each agent's own settings; [Omnigent](omnigent.md) puts approval and spend policies in front of every harness.
 - You want to manage agents as a team with goals, budgets and an org chart rather than as worktrees. That is [Paperclip](paperclip.md).
 - You need stable interfaces. Releases land most days (`v1.4.239` to `v1.4.242` shipped Oct 24 to Oct 27, 2026), and the multi-agent orchestration, Cloud VM and Remote Orca Server features carry experimental or beta labels.
-- You want to stay inside your existing editor. Orca is a separate desktop app; for an agent inside the editor you already use, see [Cursor](cursor.md) or [Cline](cline.md).
+- You want to stay inside your existing editor. Orca is a separate desktop app; see [Cline](cline.md) (inside VS Code) or [Cursor](cursor.md) (an AI-first editor).
 
 ## Capability Shape
 
@@ -75,7 +75,7 @@ The **mobile companion** is a remote control, not an editor: it shows every work
 | Coordinated multi-agent | Medium | A coordinator/worker protocol exists but is experimental and off by default |
 | Scheduling | Medium | Cron/RRULE automations from the CLI |
 | Memory | Weak | Leaves `CLAUDE.md` and `AGENTS.md` to the agents; adds session restore and history, not memory |
-| Governance | Weak | No cross-agent approval or budget policy; each agent keeps its own permission mode |
+| Governance | Weak | Review points exist (diff annotations sent back to the agent, "waiting on you" notifications), but no cross-agent approval or budget policy; each agent keeps its own permission mode |
 
 ## Operating Cost
 

@@ -107,9 +107,9 @@ Standouts: the trade of this route is on the last column — you give up **deplo
 | [oh-my-codex](../agents/oh-my-codex.md) | ◐ | ◐ | ◐ | ● | ◐ | ◐ | ◐ | ◐ | ◐ |
 | [Ruflo](../agents/ruflo.md) | ◐ | ◐ | ◐ | ● | ● | ○ | ◐ | ◐ | ◐ |
 | [Orca](../agents/orca.md) | ◐ | ● | ○ | ● | ● | ◐ | ◐ | ● | ● |
-| [Paperclip](../agents/paperclip.md) | ◐ | ◐ | ○ | ● | ● | ● | ● | ◐ | ● |
+| [Paperclip](../agents/paperclip.md) | ◐ | ◐ | ○ | ● | ● | ◐ | ● | ◐ | ● |
 
-Standouts: **orchestration** is the reason these exist — they add teams, skills, and durable workflow to a base agent. Ruflo pushes furthest on **multi-agent** (multi-machine federation, 100+ specialized agents).
+Standouts: **orchestration** is the reason these exist. oh-my-claudecode, oh-my-codex and Ruflo add teams, skills and durable workflow to a base agent, and Ruflo goes furthest on multi-machine federation. Orca and Paperclip sit across many different agents instead: Orca as a parallel-worktree workbench, Paperclip as a governed org with tickets, budgets and routines (● on **scheduling**; its approval is ◐ because the harnesses it drives default to full auto).
 
 ## Build-Your-Own Frameworks
 
@@ -146,11 +146,11 @@ The four libraries backfilled on 2026-09-06 sharpen what this group's blank **de
 | [Langfuse](../agents/langfuse.md) | — | ○ | ○ | — | — | ◐ | ○ | ◐ | ● |
 | [CodeGraph](../agents/codegraph.md) | ◐ | — | ● | — | — | — | — | ◐ | ● |
 | [Graft](../agents/graft.md) | ◐ | — | ● | — | ○ | — | — | ◐ | ● |
-| [claude-mem](../agents/claude-mem.md) | ◐ | — | ● | — | ○ | — | — | ◐ | ◐ |
+| [claude-mem](../agents/claude-mem.md) | ◐ | — | ● | — | — | — | — | ◐ | ◐ |
 | [Graphify](../agents/graphify.md) | ◐ | — | ● | — | ○ | — | — | ◐ | ● |
 | [CLI-Anything](../agents/cli-anything.md) | ● | ◐ | — | — | — | — | — | ◐ | ● |
 
-Standouts: this group is glue, so the shape is lopsided. n8n leads on **scheduling** (event/cron triggers); Letta is the reference for self-editing **memory**; CodeGraph's and Graft's "memory" is a code knowledge graph (context, not conversation) — they differ on storage, not on what they remember: CodeGraph serves a SQLite index over MCP, Graft writes linked markdown the agent reads as files; LiteLLM is a pure gateway — its only real column is **deployment control**. [Langfuse](../agents/langfuse.md) scores almost nothing here by design: it *watches* agents rather than acting, so its real columns are **deployment control** (free unlimited self-host) and **human approval** (annotation queues, LLM-as-a-judge review) — see [observability & evals](../comparisons/observability-and-evals.md).
+Standouts: this group is glue, so the shape is lopsided. n8n leads on **scheduling** (event/cron triggers); Letta is the reference for self-editing **memory**; CodeGraph's and Graft's "memory" is a code knowledge graph (context, not conversation) — they differ on storage, not on what they remember: CodeGraph serves a SQLite index over MCP, Graft writes linked markdown the agent reads as files, and Graphify writes one `graph.json` a team can commit with a union merge driver, reaching docs and media through an optional semantic pass; claude-mem remembers session history rather than code, and scores ◐ on deployment because its installer offers the hosted observer first; LiteLLM is a pure gateway — its only real column is **deployment control**. [Langfuse](../agents/langfuse.md) scores almost nothing here by design: it *watches* agents rather than acting, so its real columns are **deployment control** (free unlimited self-host) and **human approval** (annotation queues, LLM-as-a-judge review) — see [observability & evals](../comparisons/observability-and-evals.md).
 
 ## Self-Hosted, Multi-Channel & Autonomous
 

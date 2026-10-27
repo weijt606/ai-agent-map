@@ -13,7 +13,7 @@
 | 方案 | 怎么记 | 代表 | 你需要持久化什么时选它 |
 | --- | --- | --- | --- |
 | 自编辑托管记忆 | agent 在上下文窗口内编辑自己的 core / archival / recall 存储 | [Letta (MemGPT)](../agents/memgpt.md) | 由 agent 自己策展的长期对话状态 |
-| 被动语义召回 | 每一轮嵌入成向量；记忆图谱自动注入相关历史 | [jcode](../agents/jcode.md), [claude-mem](../agents/claude-mem.md) | 不用手动调记忆工具的跨会话连续性 |
+| 被动语义召回 | 自动采集活动（jcode 每轮嵌入成向量；claude-mem 由 hooks 采集、模型压缩成观察记录），相关历史自动注入 | [jcode](../agents/jcode.md), [claude-mem](../agents/claude-mem.md) | 不用手动调记忆工具的跨会话连续性 |
 | 文件 / 关键词项目记忆 | 人类可读文件（`MEMORY.md`、checkpoint），关键词检索取回 | [MiMoCode](../agents/mimocode.md)、Claude Code（`CLAUDE.md`） | 跨运行留存、且可查看的项目理解 |
 | 预索引代码知识图谱 | 代码库解析成可查询的图/库，按需查询 | [CodeGraph](../agents/codegraph.md), [Graphify](../agents/graphify.md) | 架构级代码上下文，不是对话 |
 | 写成文件的代码图谱 | 代码库解析成互相链接的 markdown，agent 用普通文件工具就能读 | [Graft](../agents/graft.md) | 同一种代码上下文，但产物是人能读、能审的 |

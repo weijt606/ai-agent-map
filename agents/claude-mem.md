@@ -13,7 +13,7 @@ One-line take: claude-mem is a memory layer you add to an existing agent. Lifecy
 | Vendor | Alex Newman ([@thedotmack](https://github.com/thedotmack)) and contributors |
 | Route | Runtime and tools — cross-session memory layer for other agents |
 | Repository | [`thedotmack/claude-mem`](https://github.com/thedotmack/claude-mem) — Apache-2.0, TypeScript; 103.6k stars as of 2026-10-28 |
-| Open source | Open core. The engine, worker, CLI, SDKs, adapters, and MCP tools are Apache-2.0; hosted cloud, team/org sync, SSO, and other enterprise features are reserved as commercial |
+| Open source | Open core. The engine, Claude-Mem Server, CLI, SDKs, adapters, and MCP tools are Apache-2.0; hosted cloud, team/org sync, SSO, and other enterprise features are reserved as commercial |
 | Paid tier | **CMEM Pro** (hosted observer, cloud sync, private MCP link): 30-day trial, then $30/month; Heavy $70/month, Max $100/month with billed overage |
 | Works with | [Claude Code](claude-code.md) (plugin marketplace), [Codex](codex.md), [OpenCode](opencode.md) (1.3.4+, including 2.x), [OpenClaw](openclaw.md) gateways, [Pi](pi.md), [DeepSeek Harness](deepseek-harness.md), [Grok Bot](grok-bot.md), T3 Code, Antigravity CLI, Oh My Pi; the repo description also lists Gemini, [Hermes](hermes-agent.md), and Copilot |
 | Best for | Developers who want project continuity across sessions without writing memory files by hand |
@@ -27,7 +27,7 @@ Six lifecycle hooks (`SessionStart`, `UserPromptSubmit`, `PreToolUse`, `PostTool
 
 For deeper recall, the agent uses MCP tools in three steps the project calls progressive disclosure: `search` returns a compact index (about 50–100 tokens per result), `timeline` shows what happened around a hit, and `get_observations` fetches full details only for the chosen IDs. The README estimates this at roughly 10x token savings compared with fetching everything. Content wrapped in `<private>` tags is excluded from storage.
 
-**Who runs the observer.** On a first install, the installer asks you to sign in at cmem.ai and then pick a provider: the hosted claude-mem observer (CMEM Pro, which the vendor pitches as moving memory generation off your agent's subscription), your own OpenRouter or Gemini key, or your Anthropic plan. Passing `--provider`, setting `CLAUDE_MEM_ONLINE_OPTIN=false`, or running in CI skips the sign-in. The Grok Bot integration defaults to the hosted service. The README says sign-in needs no card, but the pricing page says the trial requires a credit or debit card.
+**Who runs the observer.** On a first install, the installer asks you to sign in to claude-mem in the browser (email magic link) and then pick a provider: the hosted claude-mem observer (CMEM Pro, which the vendor pitches as moving memory generation off your agent's subscription), your own OpenRouter or Gemini key, or your Anthropic plan. Passing `--provider`, setting `CLAUDE_MEM_ONLINE_OPTIN=false`, or running in CI skips the sign-in. The Grok Bot integration defaults to the hosted service. The README says sign-in needs no card, but the pricing page says the trial requires a credit or debit card.
 
 ## When To Pick It
 
@@ -50,8 +50,8 @@ For deeper recall, the agent uses MCP tools in three steps the project calls pro
 | Cross-session memory | Very strong | Automatic capture through hooks, compressed observations, injection at session start |
 | Retrieval | Strong | SQLite FTS5 plus Chroma hybrid search; three-step MCP recall |
 | Cross-agent integration | Strong | Adapters and installers for a dozen harnesses, at different depths (Grok Bot, for instance, works by watching chat log files) |
-| Privacy controls | Solid | `<private>` tags, credential redaction, an opt-out from the online sign-in |
-| Local-only operation | Solid | Supported, but you supply the observer model and opt out of the hosted default |
+| Privacy controls | Medium | `<private>` tags, credential redaction, an opt-out from the online sign-in |
+| Local-only operation | Medium | Supported, but you supply the observer model and opt out of the hosted default |
 | Standalone runtime | Not the goal | It remembers for an agent; it does not act |
 
 ## Operating Cost

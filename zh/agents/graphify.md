@@ -35,7 +35,7 @@
 
 查询是在保存好的图上用三个动词：`query`（针对一句大白话问题返回一张限定范围的子图，带 token 预算）、`path A B`（两个概念之间的最短路径）和 `explain`（一个节点及其连接）。一个名字匹配到多个节点时，它会拒绝作答并列出候选，而不是去猜。同一张图也由一个**本地 MCP server**（`graphify-mcp`，十个工具，如 `query_graph`、`get_neighbors`、`shortest_path`、`god_nodes`）对外提供，走 stdio，或者走 Streamable HTTP 并用 API key 做成共享端点。
 
-要让 assistant 默认就用这张图，`graphify <platform> install` 会写入该平台自己的机制：在 Claude Code 和 Gemini CLI 上是搜索类与读文件类工具之前的 hook，在其他平台上是指令文件（`AGENTS.md`、`.cursor/rules/` 等），在 Pi 上是一个原生扩展。另有一层可选的工作记忆，记录查询结果（`graphify save-result`，标为 `useful`、`dead_end` 或 `corrected`），`graphify reflect` 再把它们整理成一份 `LESSONS.md`，供之后的查询提示。
+要让 assistant 默认就用这张图，`graphify <platform> install` 会写入该平台自己的机制：在 Claude Code 和 Gemini CLI 上是搜索类工具之前的 hook（Claude Code 上读文件前也会触发），在其他平台上是指令文件（`AGENTS.md`、`.cursor/rules/` 等），在 Pi 上是一个原生扩展。另有一层可选的工作记忆，记录查询结果（`graphify save-result`，标为 `useful`、`dead_end` 或 `corrected`），`graphify reflect` 再把它们整理成一份 `LESSONS.md`，供之后的查询提示。
 
 保持最新是你自己的事：`graphify hook install` 在提交和切分支后于后台重建，`graphify watch` 在文件变动时重建，文档要求在 pull 或 merge 之后手动跑 `graphify update .`。
 
@@ -60,7 +60,7 @@
 
 - **你的仓库很小。** 项目自己的 token 表显示，6 个文件的语料上几乎没有缩减；它所声称的价值随语料规模增长。
 - **你希望这张图就是 agent 直接读的一组文件。** 那是 [Graft](graft.md) 的设计；Graphify 的图是查询接口后面的 JSON。
-- **你想要别人跑出来的基准。** 公开的数字（LOCOMO recall@10 0.497、LongMemEval-S 76%、在六道题的 ERPNext 套件上 82.0% 的关键事实覆盖率）出自 Graphify 自己的 harness，最后更新于 2026-07-05。三个套件里有两个测的是对话记忆，不是代码导航。
+- **你想要别人跑出来的基准。** 公开的数字（LOCOMO recall@10 0.497、LongMemEval-S 76%、在六道题的 ERPNext 套件上 82.0% 的关键事实覆盖率）出自 Graphify 自己的 harness（文件标注"Last updated: 2026-07-05"，但 2026-10-05 又改过）。三个套件里有两个测的是对话记忆，不是代码导航。
 - **你的数据不能到达模型供应商。** 文档、PDF 和图片会发给 assistant 的模型或配置的后端；自动检测按设了哪个 API key 来选供应商（会打印出是哪一个），README 也注明 Kimi 后端会路由到 Moonshot 在中国的服务器。请固定 `--backend`，或用 `GRAPHIFY_BACKEND=none`。
 - **本地查询日志是个问题。** 没有遥测，但默认会把每次 `query`、`path`、`explain` 和 MCP `query_graph` 调用记到 `~/.cache/graphify-queries.log`（问题、语料、返回的节点、耗时）；设 `GRAPHIFY_QUERY_LOG_DISABLE=1` 可以关掉。
 - **你要厂商中立的治理。** 一个账号有 1,217 次提交，第二名是 158 次，README 也反复把人引向付费的 Cloud 产品。

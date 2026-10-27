@@ -10,7 +10,7 @@ One-line take: Paperclip is an open-source, self-hosted control plane that runs 
 
 | Item | Conclusion |
 | --- | --- |
-| Vendor | Paperclip Labs, Inc. (`paperclipai/paperclip`, paperclip.ing) |
+| Vendor | Paperclip Labs, Inc. per the README's licence footer; the LICENSE file names "Paperclip AI" (`paperclipai/paperclip`, paperclip.ing) |
 | Route | Workflow / orchestration layer, organized around tickets and an org chart rather than a single agent's session |
 | Repository | [`paperclipai/paperclip`](https://github.com/paperclipai/paperclip): MIT, TypeScript, 107.9k stars as of 2026-10-28 |
 | Open source | Yes (MIT). "Open source. Self-hosted. No Paperclip account required." |
@@ -35,14 +35,14 @@ The README is direct about what it is not: "Not an agent framework. We don't tel
 - **Governance.** Board approval workflows, review and approval stages on tasks, approval of new "hires", and pause, resume or terminate for any agent. Config changes are revisioned and can be rolled back.
 - **Cost control.** Token and cost tracking by company, agent, project, goal, provider and model, with warning thresholds and hard stops. The README notes that enforcement uses recorded spend, so "usage reporting and in-flight work can delay a stop".
 - **Connections and tools.** GitHub, Notion, Railway or your own MCP server, behind a tool gateway where each action is set to Allowed, Ask first, or Off.
-- **Workspaces.** Project repositories with optional isolated git worktrees, plus sandbox providers for running agents off the host (the roadmap names e2b, Cloudflare, Daytona, Modal, Novita and self-hosted Kubernetes).
+- **Workspaces.** Project repositories with optional isolated git worktrees, plus sandbox providers for running agents off the host (the roadmap marks e2b, Cloudflare, Daytona, Modal, Novita and self-hosted Kubernetes as shipped; the README adds that availability depends on the configured environment and adapter).
 - **Multi-organization.** One deployment can host several companies, each with separate tasks, agents, permissions and history, and an organization can be exported and imported as a package.
 
 ## When To Pick It
 
 - You have many agents running on recurring or long-lived work and are losing track of them. The README's own example is "20 simultaneous Claude Code terminals open".
 - You want spend limits that pause an agent, not just a bill at the end of the month.
-- You want humans in the loop at defined points (plan approval, task review, a risky tool call) rather than on every step.
+- You want humans in the loop at defined points (plan approval, task review, a gateway tool set to Ask first) rather than on every step.
 - Your agents do more than code: support, reporting, research or social posts on a schedule, assigned to an owner with history you can inspect.
 - You want to mix harnesses and models in one team and keep tasks, skills, permissions and history in one place regardless of which agent did the work.
 
@@ -59,7 +59,7 @@ The README is direct about what it is not: "Not an agent framework. We don't tel
 | Dimension | Assessment | Notes |
 | --- | --- | --- |
 | Work orchestration | Very strong | Goal-linked tickets, atomic checkout, blockers, delegation along the org chart |
-| Governance and approval | Very strong | Approval stages, hire approval, Ask-first tool gateway, revisioned config with rollback |
+| Governance and approval | Strong | Approval stages, hire approval, Ask-first tool gateway, revisioned config with rollback. But since `v2026.1001.0` the agent harnesses themselves default to full auto (Claude `approve-all`, OpenCode `allow`, Codex approval-and-sandbox bypass) |
 | Scheduling | Very strong | Routines with cron, webhook and API triggers; timer heartbeats |
 | Multi-agent | Very strong | Mixed human and agent org chart, multi-harness and multi-model teams |
 | Cost control | Strong | Scoped budgets with warnings and hard stops, based on recorded spend |
@@ -69,11 +69,11 @@ The README is direct about what it is not: "Not an agent framework. We don't tel
 
 ## Operating Cost
 
-Medium. The local path is one command and an embedded Postgres, and it defaults to trusted loopback mode. Production means your own Postgres, authenticated mode, and a private-network bind (the README suggests Tailscale) or Docker. Node.js 24.11+ is required; subscription sign-in for Claude and Codex also needs Python 3 and the provider CLIs on the host. Releases are date-versioned and frequent, and recent ones open with breaking changes: `v2026.1012.0` required stopping every old process before upgrading, and `v2026.1023.0` widened what the Operator role can do. Read the release notes before every upgrade. Anonymous usage telemetry is **on by default**; `PAPERCLIP_TELEMETRY_DISABLED=1` or `DO_NOT_TRACK=1` turns it off.
+Medium. The local path is one command and an embedded Postgres, and it defaults to trusted loopback mode. Production means your own Postgres, authenticated mode, and a private-network bind (the README suggests Tailscale) or Docker. Node.js 24.11+ is required; subscription sign-in for Claude and Codex also needs Python 3 and the provider CLIs on the host. Releases are date-versioned and frequent, and recent ones open with breaking changes: `v2026.1012.0` required stopping every old process before upgrading, and `v2026.1023.0` widened what the Operator role can do. Read the release notes before every upgrade. Anonymous usage telemetry is **on by default**; `PAPERCLIP_TELEMETRY_DISABLED=1` or `DO_NOT_TRACK=1` turns it off. Since `v2026.1001.0`, execution harnesses default to full auto; Ask first applies to gateway tools, so set an explicit permission mode on each agent if you need agent-level gates.
 
 ## Bottom Line
 
-Paperclip treats a fleet of agents as a management problem: who owns which task, why it matters, what it may spend, and who signs off. If you already have agents that work and your problem is coordination, cost and accountability, it gives you that as a self-hosted MIT server, without a vendor account. If your problem is making one agent better at coding, it is the wrong layer. Long-term memory is still on the roadmap, and the hosted version is still a waitlist.
+Paperclip treats a fleet of agents as a management problem: who owns which task, why it matters, what it may spend, and who signs off. If you already have agents that work and your problem is coordination, cost and accountability, it gives you that as a self-hosted MIT server, without a vendor account (only the managed GitHub connection needs a one-time Paperclip Cloud approval). If your problem is making one agent better at coding, it is the wrong layer. Long-term memory is still on the roadmap, and the hosted version is still a waitlist.
 
 ## Sources
 

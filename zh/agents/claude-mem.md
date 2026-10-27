@@ -13,7 +13,7 @@
 | 厂商 | Alex Newman（[@thedotmack](https://github.com/thedotmack)）和贡献者 |
 | 路线 | Runtime & tools——给其他 agent 用的跨会话记忆层 |
 | 仓库 | [`thedotmack/claude-mem`](https://github.com/thedotmack/claude-mem)——Apache-2.0，TypeScript；截至 2026-10-28 有 10.36 万 star |
-| 开源 | open core。引擎、worker、CLI、SDK、适配器和 MCP 工具是 Apache-2.0；托管云、团队/组织同步、SSO 等企业功能保留为商业部分 |
+| 开源 | open core。引擎、Claude-Mem Server、CLI、SDK、适配器和 MCP 工具是 Apache-2.0；托管云、团队/组织同步、SSO 等企业功能保留为商业部分 |
 | 付费档 | **CMEM Pro**（托管 observer、云同步、私有 MCP 链接）：30 天试用，之后 $30/月；Heavy $70/月，Max $100/月（超额另计费） |
 | 适配哪些 agent | [Claude Code](claude-code.md)（插件 marketplace）、[Codex](codex.md)、[OpenCode](opencode.md)（1.3.4+，含 2.x）、[OpenClaw](openclaw.md) gateway、[Pi](pi.md)、[DeepSeek Harness](deepseek-harness.md)、[Grok Bot](grok-bot.md)、T3 Code、Antigravity CLI、Oh My Pi；仓库简介里还列了 Gemini、[Hermes](hermes-agent.md) 和 Copilot |
 | 适合谁 | 想让项目上下文跨会话延续、又不想手写记忆文件的开发者 |
@@ -27,7 +27,7 @@
 
 需要深挖时，agent 走项目称为"渐进披露"的三步 MCP 工具：`search` 返回紧凑索引（每条约 50–100 token），`timeline` 看某条结果前后发生了什么，`get_observations` 只拉选中 ID 的完整内容。README 估计这比一次全取省约 10 倍 token。用 `<private>` 标签包住的内容不会被存储。
 
-**observer 跑在哪。** 首次安装时，安装器会让你登录 cmem.ai，再选 provider：托管的 claude-mem observer（CMEM Pro，厂商的卖点是把记忆生成从你 agent 的订阅额度里挪出去）、你自己的 OpenRouter 或 Gemini key，或者你的 Anthropic 套餐。传 `--provider`、设 `CLAUDE_MEM_ONLINE_OPTIN=false` 或在 CI 里运行，都会跳过登录。Grok Bot 集成默认用托管服务。README 说登录不需要绑卡，但定价页写的是试用需要信用卡或借记卡。
+**observer 跑在哪。** 首次安装时，安装器会让你在浏览器里登录 claude-mem（邮件魔法链接），再选 provider：托管的 claude-mem observer（CMEM Pro，厂商的卖点是把记忆生成从你 agent 的订阅额度里挪出去）、你自己的 OpenRouter 或 Gemini key，或者你的 Anthropic 套餐。传 `--provider`、设 `CLAUDE_MEM_ONLINE_OPTIN=false` 或在 CI 里运行，都会跳过登录。Grok Bot 集成默认用托管服务。README 说登录不需要绑卡，但定价页写的是试用需要信用卡或借记卡。
 
 ## 什么时候选它
 

@@ -184,7 +184,7 @@
 
 这里的覆盖是判断，不是疏漏；把缺口写出来，是为了不让"少一行"被读成"少一个项目"。
 
-- **消费级个人 agent** —— [ChatGPT dots](../agents/chatgpt-dots.md)、[Gemini Task](../agents/gemini-task.md)、[Claude（Cowork）](../agents/claude-cowork.md)、[Muse](../agents/meta-muse.md)、[Grok Bot](../agents/grok-bot.md)、[Cue](../agents/manus-cue.md)、[豆包](../agents/doubao.md)、[千问 App](../agents/qwen-app.md)、[AutoGLM](../agents/autoglm.md)、[元宝](../agents/yuanbao.md) —— 在[个人 agent](../comparisons/personal-agents.md)里用它们自己的格子打分，维度适合消费级产品（跑腿、成品、你的设备、审批控制），厂商没写的一律打 **?**。硬塞进这张表，就得去猜闭源产品从不公开的部署和编排两列。
+- **消费级个人 agent** —— [ChatGPT dots](../agents/chatgpt-dots.md)、[Gemini Task](../agents/gemini-task.md)、[Claude（Cowork）](../agents/claude-cowork.md)、[Claude Duet](../agents/claude-duet.md)、[Muse](../agents/meta-muse.md)、[Grok Bot](../agents/grok-bot.md)、[Cue](../agents/manus-cue.md)、[豆包](../agents/doubao.md)、[千问 App](../agents/qwen-app.md)、[AutoGLM](../agents/autoglm.md)、[元宝](../agents/yuanbao.md) —— 在[个人 agent](../comparisons/personal-agents.md)里用它们自己的格子打分，维度适合消费级产品（跑腿、成品、你的设备、审批控制），厂商没写的一律打 **?**。硬塞进这张表，就得去猜闭源产品从不公开的部署和编排两列。
 - **模型** —— [Fable 5.1](../agents/claude-fable-5.md)、[Opus 5](../agents/claude-opus-5.md)、[GPT-6 Astra](../agents/gpt-6-astra.md)、[GPT-5.5](../agents/gpt-5.5.md)、[Kimi K3](../agents/kimi-k3.md)、[GLM-5.3](../agents/glm-5.md)、[DeepSeek V4](../agents/deepseek-v4.md)、[Qwen3-Coder](../agents/qwen3-coder.md)。这里的每一列都是 agent *产品*的属性——审批闸、调度、交互面、部署控制。模型一个都不具备。比较模型请去[成本与基准](../comparisons/cost-and-benchmarks.md)。
 - **[Superpowers](../agents/superpowers.md)** —— 一个跑在*别的* agent 内部的 skills 框架，自己没有循环。它的能力取决于你把它挂在哪个 agent 上，所以给它一行，量的是宿主而不是它本身。
 - **[BabyAGI](../agents/babyagi.md)** —— 它留在本地图里是作为历史与教学条目；它自己的 profile 就写着它不是生产工具，而它的能力表打的是"历史影响力"和"教育价值"而不是能力。在本矩阵里给它一行，会暗示它是一个活的候选项——那是错误信号。

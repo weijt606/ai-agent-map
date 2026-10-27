@@ -10,7 +10,7 @@
 
 **月之暗面发布 Kimi K3.1 Pro**，它自己的研究索引页记为 10 月 24 日（OpenCode 10 月 23 日宣布可用）。官方称它是"我们迄今最强的 3T 级开放权重模型"，是 Kimi K3 的后训练版本，100 万上下文，并说"完整权重将于 11 月 4 日前发布"。月之暗面 API 上价格为 **$2 / $10，缓存输入 $0.20**；速度快 2–3 倍的 Highspeed 版为 $4 / $20。它的快速上手文档里基准数字**仍是没填的占位符**（Terminal-Bench 4.0 写着 `[xx.x%]`），所以本地图不记分数，在权重和数字公布之前也不放进开放权重表。月之暗面价格页还写明，K2 系列 **10 月 31 日**起不再对新注册用户开放，2026 年 12 月底前全部下线。
 
-**Anthropic 于 10 月 22 日把 Agent Skills 捐给了 Agentic AI Foundation**，称自 2025 年 12 月发布以来，已有 70 多个 agent 平台（包括 ChatGPT、Cursor、GitHub Copilot、VS Code）接入这个标准，已发布 100 万个 skill（均为厂商自述）。**10 月 26 日它向 SEC 提交了 S-1**，拟以"ANT"为代码在纳斯达克全球精选市场公开发行 A 类普通股；发行数量与价格区间尚未确定。它还以候补名单方式开放了 **Claude Duet** 的研究预览（10 月 21 日），一个独立的个人 agent 应用——记在[消费级个人 agent](comparisons/personal-agents.md#最近变化) 页。
+**Anthropic 于 10 月 22 日把 Agent Skills 捐给了 Agentic AI Foundation**，称自 2025 年 12 月发布以来，已有 70 多个 agent 平台（包括 ChatGPT、Cursor、GitHub Copilot、VS Code）接入这个标准，已发布 100 万个 skill（均为厂商自述）。**10 月 26 日它向 SEC 提交了 S-1**，拟以"ANT"为代码在纳斯达克全球精选市场公开发行 A 类普通股；发行数量与价格区间尚未确定。它还以候补名单方式开放了 **[Claude Duet](agents/claude-duet.md)** 的研究预览（10 月 21 日），一个独立的个人 agent 应用，本期已收录，并记在[消费级个人 agent](comparisons/personal-agents.md#最近变化) 页。
 
 **OpenCode 10 月 17 日的事件，上期记录时没有厂商声明，现在有了。** 厂商的 X 帖说，这次入侵"与一次大规模蒸馏攻击有关，影响了 1.4% 的 OpenCode Console 用户"，即"关联了外部 provider"的那部分，均已邮件通知，并正与 Anthropic、OpenAI、Google 合作处置。没有发布 GitHub 安全公告，状态页也没有对应事件。有用户在 issue 里说 OpenCode 自己的 key 也被吊销了；厂商没有确认。
 

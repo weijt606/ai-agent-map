@@ -6,7 +6,7 @@
 
 一句话定位：Anthropic 的个人 agent 已经不是一个单独的产品——**Cowork 在 2026-09-16 并入了 Claude 应用**，所以同一个会聊天的 Claude 现在也能接任务、定时执行、在你合上电脑后继续在隔离的云端会话里干活，并通过 Claude in Chrome 操作浏览器——它有三种命名清楚的审批模式，按任务选择。
 
-> **2026-10-28 更新：** Cowork 已不是 Anthropic *唯一*的消费级 agent。10 月 21 日 Anthropic 以候补名单方式开放了 **[Claude Duet](https://claude.com/resources/articles/claude-duet)** 的研究预览——一个独立应用（先面向美国 Pro 与 Max 用户），Claude 在自己带浏览器的虚拟机上作为主动型 agent 工作，围绕 Opus 5.5 设计，发消息、付款、签字或删除之前要你批准。Anthropic 说它"目前"与主 Claude 应用分开。见[消费级个人 agent](../comparisons/personal-agents.md#最近变化) 的变化记录。
+> **2026-10-28 更新：** Cowork 已不是 Anthropic *唯一*的消费级 agent。10 月 21 日 Anthropic 以候补名单方式开放了 **[Claude Duet](claude-duet.md)** 的研究预览——一个独立应用（先面向美国 Pro 与 Max 用户），Claude 在自己带浏览器的虚拟机上作为主动型 agent 工作，围绕 Opus 5.5 设计，发消息、付款、签字或删除之前要你批准。Anthropic 说它"目前"与主 Claude 应用分开。见[消费级个人 agent](../comparisons/personal-agents.md#最近变化) 的变化记录。
 
 ## 快速看点
 

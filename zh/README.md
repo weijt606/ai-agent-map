@@ -66,7 +66,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 - **上期三个原因查不到的尖峰，尖峰规则全部兑现。** [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) 还回 **68%** 掉出榜单（第 11，距 5.5 万差 78）；[CLI-Anything](agents/cli-anything.md) 还回 **56%**、[Ruflo](agents/ruflo.md) 还回 **52%**，但因为门槛也降了，两者都保住了席位（#9、#8）。唯一有据可查的爆发 [OpenCode](agents/opencode.md) 也还回 **53%**（+2,841，#5），保住席位；10 月 27 日发了 `v2.2.0`。
 - **本窗口自己的尖峰是 [TradingAgents](https://github.com/TauricResearch/TradingAgents)：+4,677，涨 250%**，从第 14 升到 #3——是它在本榜第一个窗口 05-08 拿 #1 以来最好的名次和最大的增量。窗口内唯一的版本 `v0.7.1`（10 月 27 日）是修 bug 的版本（申报日期、跨长假结算、SEC 报表期间），没有一手材料把它和增量挂上钩。按本榜规矩，第二个窗口确认之前它算尖峰。
 - **skills 浪潮连续第三个窗口占十席中的四席**（#2、#4、#7、#10），第四席又换了人：K-Dense 离榜，[anthropics/skills](https://github.com/anthropics/skills) 在 #10 回来（09-30 以来第一席）。其余六席是四个 agent（#1、#3、#5、#6）和两个 infra 项目（#8、#9）。还在跑的长连续在榜：Hermes Agent（28 个窗口全勤）、Superpowers 与 mattpocock/skills（各 23）；其后是 DeepSeek Harness 与 OpenCode，各 8。
-- **模型层动的是 OpenAI 的新一档、Kimi 的小版本和 Anthropic 的公司层面消息，不是默认模型。** (1) **OpenAI 的 GPT-6.1 Terra**（10 月 26 日）标价 **$1 / $5，缓存输入 $0.05**，105 万上下文，超过 272k 输入 token 整个请求重新计价；当天以可选模型而非默认模型进入 Plus 及以上档的 Codex 与 ChatGPT Work。(2) **月之暗面的 Kimi K3.1 Pro**（月之暗面自己的索引页记为 10 月 24 日）上了 API，**$2 / $10，缓存读 $0.20**（Highspeed 版 $4 / $20）；官方说权重 11 月 4 日前放出，而快速上手文档里的基准数字还是没填的 `[xx.x%]` 占位符，所以本地图不记分数。K2 系列 10 月 31 日起不再对新注册用户开放，12 月底前全部下线。(3) **Anthropic 把 Agent Skills 捐给了 Agentic AI Foundation**（10 月 22 日），称已有 70 多个 agent 平台接入这个标准；并**提交了 S-1**，拟在纳斯达克以"ANT"代码上市（10 月 26 日）。(4) Anthropic 还以候补名单方式开放了 **Claude Duet** 预览（10 月 21 日），一个独立的个人 agent 应用——见[消费级个人 agent](comparisons/personal-agents.md#最近变化)。**被跟踪的编码 agent 连续第四个窗口没有换默认模型**：[Claude Code](agents/claude-code.md) `v2.1.307`–`v2.1.311`、[Codex CLI](agents/codex.md) `rust-v0.164.0`（打包排第一的仍是 GPT-6.1 Sol）、[OpenCode](agents/opencode.md) `v2.2.0`、[Qwen Code](agents/qwen-code.md) 与 [Kimi Code](agents/kimi-code.md)；[Gemini CLI](agents/gemini-cli.md) 没有发正式版。**OpenCode 10 月 17 日的事件现在有了厂商声明：**它的 X 帖说，一次"与大规模蒸馏攻击有关"的入侵影响了 **1.4% 的 OpenCode Console 用户**，即关联了外部 provider 的那部分，均已邮件通知。上期本地图没能读到这条声明；[时间线](agents/README.md)里那条带日期的记录已就地更新。[成本表](comparisons/cost-and-benchmarks.md)新增 GPT-6.1 Terra；其余各行已对照 Anthropic、OpenAI、Google、Meta 价格页逐行复核，没有变化，两项促销（GPT-5.6 Sol 到 11 月 21 日、Gemini 4 Argon 到 11 月 30 日）仍有效。详见[市场事件](market-events.md)。
+- **模型层动的是 OpenAI 的新一档、Kimi 的小版本和 Anthropic 的公司层面消息，不是默认模型。** (1) **OpenAI 的 GPT-6.1 Terra**（10 月 26 日）标价 **$1 / $5，缓存输入 $0.05**，105 万上下文，超过 272k 输入 token 整个请求重新计价；当天以可选模型而非默认模型进入 Plus 及以上档的 Codex 与 ChatGPT Work。(2) **月之暗面的 Kimi K3.1 Pro**（月之暗面自己的索引页记为 10 月 24 日）上了 API，**$2 / $10，缓存读 $0.20**（Highspeed 版 $4 / $20）；官方说权重 11 月 4 日前放出，而快速上手文档里的基准数字还是没填的 `[xx.x%]` 占位符，所以本地图不记分数。K2 系列 10 月 31 日起不再对新注册用户开放，12 月底前全部下线。(3) **Anthropic 把 Agent Skills 捐给了 Agentic AI Foundation**（10 月 22 日），称已有 70 多个 agent 平台接入这个标准；并**提交了 S-1**，拟在纳斯达克以"ANT"代码上市（10 月 26 日）。(4) Anthropic 还以候补名单方式开放了 **[Claude Duet](agents/claude-duet.md)** 预览（10 月 21 日），一个独立的个人 agent 应用，本期已收录——见[消费级个人 agent](comparisons/personal-agents.md#最近变化)。**被跟踪的编码 agent 连续第四个窗口没有换默认模型**：[Claude Code](agents/claude-code.md) `v2.1.307`–`v2.1.311`、[Codex CLI](agents/codex.md) `rust-v0.164.0`（打包排第一的仍是 GPT-6.1 Sol）、[OpenCode](agents/opencode.md) `v2.2.0`、[Qwen Code](agents/qwen-code.md) 与 [Kimi Code](agents/kimi-code.md)；[Gemini CLI](agents/gemini-cli.md) 没有发正式版。**OpenCode 10 月 17 日的事件现在有了厂商声明：**它的 X 帖说，一次"与大规模蒸馏攻击有关"的入侵影响了 **1.4% 的 OpenCode Console 用户**，即关联了外部 provider 的那部分，均已邮件通知。上期本地图没能读到这条声明；[时间线](agents/README.md)里那条带日期的记录已就地更新。[成本表](comparisons/cost-and-benchmarks.md)新增 GPT-6.1 Terra；其余各行已对照 Anthropic、OpenAI、Google、Meta 价格页逐行复核，没有变化，两项促销（GPT-5.6 Sol 到 11 月 21 日、Gemini 4 Argon 到 11 月 30 日）仍有效。详见[市场事件](market-events.md)。
 - 里程碑按原始数字核对，不看四舍五入那一列：**mattpocock/skills 30 万**、Superpowers **30.5 万**、DeepSeek Harness **26 万**、OpenCode **22 万**、TradingAgents **11.5 万**、addyosmani/agent-skills **11 万**、[CodeGraph](agents/codegraph.md) **7.5 万**、[CrewAI](agents/crewai.md) **6 万**、[Omnigent](agents/omnigent.md) **1.1 万**、[Kimi Code](agents/kimi-code.md) **8 千**。差一点的：[agentmemory](https://github.com/rohitg00/agentmemory) **距 3 万差 58**、scientific-agent-skills 距 5.5 万差 78、[Aider](agents/aider.md) 距 5 万差 228、Ruflo 距 8 万差 285、mattpocock/skills 距 30.5 万差 313。
 - [OpenClaw](agents/openclaw.md) 仍以 393.2k star 稳居绝对第一（+557，降 21%）；它有 profile，但不进增量榜，因为这么大的项目逐周增量噪声太大。
 
@@ -131,7 +131,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 | 编辑器中心工作流 | [Cursor](agents/cursor.md), [Windsurf](agents/windsurf.md), [Continue](agents/continue.md) | 想让编辑器本身保持在工作流核心的人 |
 | review-first 自动化 | [Cline](agents/cline.md), [GitHub Copilot](agents/github-copilot.md), [Froge Code](agents/froge-code.md), [CoStrict](agents/costrict.md), [Open Code Review](agents/open-code-review.md) | 想把 review 和人工控制留在核心的人（CoStrict 加了企业严格流程 + 私有化部署；Open Code Review 只做评审，为 CI 里的准确率调优） |
 | 管理式后台路径 | [Claude Managed Agents](agents/claude-managed-agents.md) | 需要 Anthropic 的定时、云端或后台工作流的人 |
-| 消费级个人 agent | [ChatGPT dots](agents/chatgpt-dots.md), [Gemini Task](agents/gemini-task.md), [Claude（Cowork）](agents/claude-cowork.md), [Muse（Meta）](agents/meta-muse.md), [Grok Bot](agents/grok-bot.md), [Cue（Manus）](agents/manus-cue.md), [豆包](agents/doubao.md), [千问 App](agents/qwen-app.md), [AutoGLM](agents/autoglm.md), [元宝](agents/yuanbao.md) | 想把跑腿、收件箱、预订或手机交给一个以产品形式出售、而不是自己运行的 agent 的人（见[个人 agent 对比](comparisons/personal-agents.md)） |
+| 消费级个人 agent | [ChatGPT dots](agents/chatgpt-dots.md), [Gemini Task](agents/gemini-task.md), [Claude（Cowork）](agents/claude-cowork.md), [Claude Duet](agents/claude-duet.md), [Muse（Meta）](agents/meta-muse.md), [Grok Bot](agents/grok-bot.md), [Cue（Manus）](agents/manus-cue.md), [豆包](agents/doubao.md), [千问 App](agents/qwen-app.md), [AutoGLM](agents/autoglm.md), [元宝](agents/yuanbao.md) | 想把跑腿、收件箱、预订或手机交给一个以产品形式出售、而不是自己运行的 agent 的人（见[个人 agent 对比](comparisons/personal-agents.md)） |
 | 通用自主 agent | [AutoGPT](agents/autogpt.md), [Agent Zero](agents/agent-zero.md), [BabyAGI](agents/babyagi.md), [Julep](agents/julep.md), [GenericAgent](agents/generic-agent.md), [ml-intern](agents/ml-intern.md), [WorkBuddy](agents/workbuddy.md), [Kimi Work](agents/kimi-work.md) | 想要通用自主任务执行的人（ml-intern 是 ML 工程取向的特化版本） |
 | 自建系统 | [LangChain](agents/langchain.md), [LangGraph](agents/langgraph.md), [CrewAI](agents/crewai.md), [LlamaIndex](agents/llamaindex.md), [Haystack](agents/haystack.md), [Semantic Kernel](agents/semantic-kernel.md), [DSPy](agents/dspy.md), [Pydantic AI](agents/pydantic-ai.md), [Microsoft Agent Framework](agents/microsoft-agent-framework.md) | 想自己搭 agent 平台的团队 |
 | 运行时 & 工具 | [n8n](agents/n8n.md), [MemGPT](agents/memgpt.md), [Open Interpreter](agents/open-interpreter.md), [LiteLLM](agents/litellm.md), [Flowise](agents/flowise.md), [CodeGraph](agents/codegraph.md), [Trail Code (Graft)](agents/graft.md), [CLI-Anything](agents/cli-anything.md) | 需要工作流自动化、代码执行、LLM 网关、agent 上下文基础设施、agent 驱动 CLI 或可视化构建器的团队 |
@@ -141,7 +141,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 
 ## 当前已覆盖的主流项目
 
-已收录 88 个项目，按形态分组。展开任意一组，或到 [agents/](agents/README.md) 浏览完整的路线表与覆盖表。
+已收录 89 个项目，按形态分组。展开任意一组，或到 [agents/](agents/README.md) 浏览完整的路线表与覆盖表。
 
 <details>
 <summary><strong>编码 agent、编辑器与编排</strong>（32 个）</summary>
@@ -253,13 +253,14 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 
 </details>
 <details>
-<summary><strong>消费级个人 agent</strong>（10 个）</summary>
+<summary><strong>消费级个人 agent</strong>（11 个）</summary>
 
 | 项目 | 路线 | 一句话定位 |
 | --- | --- | --- |
 | [ChatGPT dots](agents/chatgpt-dots.md) | 消费级个人 agent | OpenAI 放在 ChatGPT 里的常驻 agent——GPT-6 Astra、自己的云电脑，可在 Slack、Teams 和电话里找到；仅限 Pro，欧洲不可用 |
 | [Gemini Task](agents/gemini-task.md) | 消费级个人 agent | Gemini 应用的 agent 模式（原 Spark）——在 Google Workspace 与 Chrome 里定时干活，公开列出确认清单 |
 | [Claude（Cowork）](agents/claude-cowork.md) | 消费级个人 agent | Cowork 已并入 Claude 应用——任务可定时、在隔离的云端会话里持续运行，三种命名清楚的审批模式 |
+| [Claude Duet](agents/claude-duet.md) | 消费级个人 agent | Anthropic 独立的主动型 agent 应用：早间简报、每隔几小时查一次你的账号、自己的虚拟机，发送、付款、签字、删除前都要你批准；美国候补名单 |
 | [Muse（Meta）](agents/meta-muse.md) | 消费级个人 agent | Meta 在自家应用和 WhatsApp 里的跑腿 agent——专属云端虚拟机、一次性卡号付款，美国小范围测试 |
 | [Grok Bot](agents/grok-bot.md) | 消费级个人 agent | xAI 的一组常驻 Bot，共用 Cursor 云上的一台电脑，可按计划重跑保存的技能 |
 | [Cue（Manus）](agents/manus-cue.md) | 消费级个人 agent | Manus 的个人 agent 应用，每个 agent 都有自己的邮箱、电话、钱包和电脑；邀请制抢先体验 |

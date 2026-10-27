@@ -7,7 +7,7 @@ Structural milestones of the map, newest first. The heat tables are refreshed ev
 ## 2026-10-28 — GPT-6.1 Terra joins the cost table, and Claude Duet and Cue's new documentation reach the personal-agents page
 
 - **[Cost & benchmarks](comparisons/cost-and-benchmarks.md)** adds **GPT-6.1 Terra** ($1 / $5, cache read $0.05, Oct 26); every other row was re-checked against the four vendors' pricing pages and is unchanged, and the "as of" date moves to Oct 28.
-- **[Consumer personal agents](comparisons/personal-agents.md)**: first weekly "Recent changes" entry — Anthropic's separate **Claude Duet** app (Oct 21, now a profile candidate), Cue's Scheduling and Memory cells moved from **?** to ◐ on its App Store description, and Doubao's listed price tiers. Dated notes added to the [Claude (Cowork)](agents/claude-cowork.md), [Cue](agents/manus-cue.md) and [Doubao](agents/doubao.md) profiles.
+- **[Consumer personal agents](comparisons/personal-agents.md)**: first weekly "Recent changes" entry — Anthropic's separate **Claude Duet** app (Oct 21), **profiled as the eleventh personal agent** ([Claude Duet](agents/claude-duet.md); 88 → 89 profiles), Cue's Scheduling and Memory cells moved from **?** to ◐ on its App Store description, and Doubao's listed price tiers. Dated notes added to the [Claude (Cowork)](agents/claude-cowork.md), [Cue](agents/manus-cue.md) and [Doubao](agents/doubao.md) profiles.
 - **An update to last week:** OpenCode's Oct 17 incident now has a vendor statement on record; the dated line in the [agents timeline](agents/README.md) is updated in place.
 
 ## 2026-10-21 (later) — A fifth decision: consumer personal agents, listed and compared rather than ranked

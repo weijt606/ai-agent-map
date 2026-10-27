@@ -6,7 +6,7 @@
 
 这一页收的是你把日常交出去的那类 agent——跑腿、收件箱、预订、文档、你的手机——它们以消费级产品的形式出售，而不是你自己运行的软件。它们都不开源（其中一个有开源的兄弟项目）。本页做收录，按事实和控制力而不是热度来比较，并记录它们的变化。
 
-> **最近复核：** 2026-10-21 · 下面每条事实都来自厂商自己的页面、帮助中心或应用商店页面，标注 *媒体* 的除外。格子里写 **?** 表示厂商没有一手文档说明——不代表产品没有这个能力。
+> **最近复核：** 2026-10-28 · 下面每条事实都来自厂商自己的页面、帮助中心或应用商店页面，标注 *媒体* 的除外。格子里写 **?** 表示厂商没有一手文档说明——不代表产品没有这个能力。
 
 ## 为什么这里没有热度排名
 
@@ -23,8 +23,8 @@
 | [Claude（Cowork）](../agents/claude-cowork.md) | Anthropic | Claude 应用；Claude in Chrome | 已并入 Claude（2026-09-16） | 隔离的云端会话；你的电脑；Chrome | Anthropic 当前模型 | Pro，$20/月 | ? |
 | [Muse](../agents/meta-muse.md) | Meta | 应用、网页、WhatsApp | 美国小范围测试（2026-09-08） | 带浏览器的专属云端虚拟机 | Muse Spark | 免费；Power $20/月 | 美国 |
 | [Grok Bot](../agents/grok-bot.md) | xAI | 桌面 + 移动应用；X 上 `@bot` | Beta（2026-08-11） | Cursor 云上一台共享云电脑，位于美国 | 由 Cursor 选择 | X Premium，$30/月 | 算力在美国 |
-| [Cue](../agents/manus-cue.md) | Manus | 网页、桌面、移动应用 | 抢先体验，仅限邀请 | 每个 agent 一台电脑 | ? | 抢先体验期免费 | ? |
-| [豆包](../agents/doubao.md) | 字节跳动 | 应用；合作手机上的系统服务 | 已上线；手机操作为 Beta（2026-09-14，*媒体*） | 字节跳动服务；**你手机的系统层** | 豆包模型 | 免费 + 订阅 | 中国 |
+| [Cue](../agents/manus-cue.md) | Manus | 网页、桌面、移动应用 | 抢先体验，仅限邀请 | 每个 agent 一台电脑 | ? | 抢先体验期免费（含 Plus） | ? |
+| [豆包](../agents/doubao.md) | 字节跳动 | 应用；合作手机上的系统服务 | 已上线；手机操作为 Beta（2026-09-14，*媒体*） | 字节跳动服务；**你手机的系统层** | 豆包模型 | 免费；付费档每月 68 元起 | 中国 |
 | [千问 App](../agents/qwen-app.md) | 阿里巴巴 | 应用 | 已上线 | 阿里服务及合作服务 | 千问 | 免费 + 订阅 | 中国 |
 | [AutoGLM](../agents/autoglm.md) | 智谱 | 应用；开源框架 | 应用最近更新 2026-07-09 | 云手机 + 云电脑；或经 ADB/HDC 操作你的手机 | AutoGLM-Phone-9B | 免费 | 中国（应用） |
 | [元宝](../agents/yuanbao.md) | 腾讯 | 应用 | Agent 功能自 2026-07-06 | 腾讯服务 | Hy3 | 免费 | 中国 |
@@ -40,7 +40,7 @@
 | [Claude（Cowork）](../agents/claude-cowork.md) | ◐ | ● | ● | ◐ | ● | ? | ● | — |
 | [Muse](../agents/meta-muse.md) | ● | ? | ? | ○ | ● | ? | ● | — |
 | [Grok Bot](../agents/grok-bot.md) | ● | ◐ | ● | ○ | ● | ● | ◐ | — |
-| [Cue](../agents/manus-cue.md) | ● | ? | ? | ○ | ? | ● | ◐ | — |
+| [Cue](../agents/manus-cue.md) | ● | ? | ◐ | ○ | ◐ | ● | ◐ | — |
 | [豆包](../agents/doubao.md) | ◐ | ● | ● | ● | ? | ? | ◐ | — |
 | [千问 App](../agents/qwen-app.md) | ● | ● | ● | ○ | ? | ? | ? | — |
 | [AutoGLM](../agents/autoglm.md) | ● | ○ | ? | ● | ? | ? | ? | ● |
@@ -58,8 +58,9 @@
 
 新的在前。本记录随每周更新刷新；已注明日期的条目不改写。
 
+- **2026-10-28** —— **Anthropic 于 10 月 21 日发布 Claude Duet**，一个独立应用，Claude 在里面"作为主动型 agent 工作"：研究预览，凭候补名单开放，先面向美国的 Pro 与 Max 订阅用户；围绕 Claude Opus 5.5 设计；运行在"一台带自己浏览器的虚拟机"上，不需要你的电脑或手机开着；在发消息、付款、签文件或删除任何东西之前会等你批准，交易证券和在账户间转钱即使批准也不允许。Anthropic 说它"目前"与主 Claude 应用分开，这修正了 [Claude（Cowork）](../agents/claude-cowork.md) 那一行的说法：Anthropic 现在有两个消费级 agent 入口。它 10 月 26 日上了美区 App Store，列为 profile 候选（见候补）。**Cue** 的 App Store 介绍现在写明了定时与事件触发的自动化、记忆功能（"Memory and Dream"）、由你确认的付款，以及获得资格期间免费附带 Plus 会员；调度与记忆两格由 **?** 改为 ◐。**豆包**的 App Store 页面写明了档位（基础版免费；每月 68、200、500 元）；v15.5.0（10 月 26 日）的更新说明与 v15.4.0 相同。**Muse** v13.1（10 月 24 日）让聊天内购物更方便。dots、Gemini Task、Grok Bot、AutoGLM、元宝没有一手变化，千问Go! 仍只有媒体报道。
 - **2026-10-21** —— 建页，收录十个 agent。顺带记下：Grok Bot 于 10 月 12 日并入 X Subscription（Premium $30、Super $100、Ultra $200）；千问Go! 于 10 月 13 日被媒体报道为千问应用内的预约排队功能（尚无一手确认）；Muse Wonder（10 月 12 日）宣布将"很快"为 Muse 提供能力，订阅用户优先；豆包 v15.4.0（10 月 19 日）上线工作任务模式和购物助手。
 
 ## 候补
 
-尚未收录的候选：**Kimi 应用**的 Agent 集群（[Kimi Work](../agents/kimi-work.md) 的消费级前端）；**百度文心**的任务托管模式；**阶跃星辰**的 Step Agent；**MiniMax Agent**。手机厂商的系统级 agent（荣耀、vivo、华为）目前只出现在媒体盘点里。
+尚未收录的候选：**Kimi 应用**的 Agent 集群（[Kimi Work](../agents/kimi-work.md) 的消费级前端）；**百度文心**的任务托管模式；**阶跃星辰**的 Step Agent；**MiniMax Agent**（v4.22.2 应用于 10 月 22 日推出新的"M Plan"订阅）；**Claude Duet**（Anthropic，10 月 21 日，见上）；蚂蚁集团的**灵光**（v1.3.80，10 月 26 日，"灵光2.0"，定位"能管事的个人助理"）。手机厂商的系统级 agent（荣耀、vivo、华为）目前只出现在媒体盘点里。

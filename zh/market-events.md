@@ -4,6 +4,26 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
+## 2026-10-21 → 10-26 —— GPT-6.1 Terra 开出 $1 / $5 一档，Kimi K3.1 Pro 发布却没有分数，Anthropic 捐出 Agent Skills 并递交上市申请
+
+**OpenAI 于 2026 年 10 月 26 日发布 GPT-6.1 Terra**，"一个快速、高效的模型，用于视觉推理、精确的电脑操作，以及清晰自然的写作"。标价 **每百万 token $1 / $5，缓存输入 $0.05**（输入价的 5%），缓存写入 $1.25；上下文 105 万（最多输入 92.2 万、输出 12.8 万）。输入超过 **272K token** 的请求整单按输入与缓存 2 倍、输出 1.5 倍计价——和 GPT-6 Astra 是同一道坎。当天进入 Plus、Pro、Business、Enterprise、Edu 档的 Codex 与 ChatGPT Work，也进了 GitHub Copilot。它**不是默认模型**：Codex `rust-v0.164.0`（10 月 23 日）打包排第一的仍是 GPT-6.1 Sol，Codex changelog 那条只是让 Terra 可选。本地图读不到 OpenAI 的发布文章，因此不记基准数字。
+
+**月之暗面发布 Kimi K3.1 Pro**，它自己的研究索引页记为 10 月 24 日（OpenCode 10 月 23 日宣布可用）。官方称它是"我们迄今最强的 3T 级开放权重模型"，是 Kimi K3 的后训练版本，100 万上下文，并说"完整权重将于 11 月 4 日前发布"。月之暗面 API 上价格为 **$2 / $10，缓存输入 $0.20**；速度快 2–3 倍的 Highspeed 版为 $4 / $20。它的快速上手文档里基准数字**仍是没填的占位符**（Terminal-Bench 4.0 写着 `[xx.x%]`），所以本地图不记分数，在权重和数字公布之前也不放进开放权重表。月之暗面价格页还写明，K2 系列 **10 月 31 日**起不再对新注册用户开放，2026 年 12 月底前全部下线。
+
+**Anthropic 于 10 月 22 日把 Agent Skills 捐给了 Agentic AI Foundation**，称自 2025 年 12 月发布以来，已有 70 多个 agent 平台（包括 ChatGPT、Cursor、GitHub Copilot、VS Code）接入这个标准，已发布 100 万个 skill（均为厂商自述）。**10 月 26 日它向 SEC 提交了 S-1**，拟以"ANT"为代码在纳斯达克全球精选市场公开发行 A 类普通股；发行数量与价格区间尚未确定。它还以候补名单方式开放了 **Claude Duet** 的研究预览（10 月 21 日），一个独立的个人 agent 应用——记在[消费级个人 agent](comparisons/personal-agents.md#最近变化) 页。
+
+**OpenCode 10 月 17 日的事件，上期记录时没有厂商声明，现在有了。** 厂商的 X 帖说，这次入侵"与一次大规模蒸馏攻击有关，影响了 1.4% 的 OpenCode Console 用户"，即"关联了外部 provider"的那部分，均已邮件通知，并正与 Anthropic、OpenAI、Google 合作处置。没有发布 GitHub 安全公告，状态页也没有对应事件。有用户在 issue 里说 OpenCode 自己的 key 也被吊销了；厂商没有确认。
+
+**对选型的影响：**三点。
+
+第一，**OpenAI 的阶梯上多了 $1 / $5 这一级。** GPT-6.1 Sol（$2 / $10）和 GPT-6 Luna（$0.10 / $0.50）之间原本是空的；Terra 填上了，缓存比例与 6.1 代一样是 5%。272K 那道坎在这个价位比在 Astra 那里更要紧：便宜的模型恰恰是你最可能拿来跑长会话的那个。
+
+第二，**没有数字的模型还不算一个选项。** Kimi K3.1 Pro 有价格、有上下文、有权重日期，而它自己的文档说分数还没写。11 月 4 日之前把它当观察项。
+
+第三，**Agent Skills 交给基金会，变的是 skills 浪潮所依赖的格式归谁管**，不是它今天怎么用。本地图跟踪的集合（[Superpowers](agents/superpowers.md)、[mattpocock/skills](https://github.com/mattpocock/skills)、[anthropics/skills](https://github.com/anthropics/skills)）本来就按这个标准发布。窗口内被跟踪的编码 agent 没有换默认模型——连续第四个窗口（[Claude Code](agents/claude-code.md) `v2.1.307`–`v2.1.311`、[Codex CLI](agents/codex.md) `rust-v0.164.0`、[OpenCode](agents/opencode.md) `v2.2.0`、[Qwen Code](agents/qwen-code.md)、[Kimi Code](agents/kimi-code.md)；[Gemini CLI](agents/gemini-cli.md) 没有发正式版）。
+
+来源：[OpenAI API changelog](https://developers.openai.com/api/docs/changelog)、[GPT-6.1 Terra 模型页](https://developers.openai.com/api/docs/models/gpt-6.1-terra)、[Codex changelog](https://learn.chatgpt.com/docs/changelog)、[GPT-6.1 Terra in GitHub Copilot](https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot)、[Kimi K3.1 Pro 快速上手](https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart)、[Kimi 价格](https://platform.kimi.ai/docs/pricing/chat)、[Donating Agent Skills to the Agentic AI Foundation](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation)、[Anthropic files S-1](https://www.anthropic.com/news/s1-sec)、[Introducing Claude Duet](https://claude.com/resources/articles/claude-duet)、[OpenCode 的 X 帖，10 月 17 日](https://x.com/opencode/status/2111519637049319818)。
+
 ## 2026-10-12 → 10-17 —— Meta 把 Muse Wonder 定在 Opus 5.5 的价位，GPT-5.5 退出 Codex，两个开放权重发布
 
 **Meta 于 2026 年 10 月 12 日发布 Muse Wonder**——这一天落在上一个窗口里，本地图当时漏了，在此补记。Meta 的定位是"前沿编码、长时运行 agent 与高级电脑操作"。在 Meta Model API 上它的价格是**每百万 token $4 / $20，缓存输入 $0.20，100 万上下文**——和 Claude Opus 5.5 的标价、缓存读完全一样。更大的 **Muse Wonder Full** 不上 API，只在 Muse Code 订阅的 Power 与 Maximum 用量档里提供。Meta 的价格表现在列的也已经是 **Muse Spark 1.3**（9 月 2 日发布），价格与本地图之前记的 1.2 相同，所以[成本表](comparisons/cost-and-benchmarks.md)里那两行已就地改名。

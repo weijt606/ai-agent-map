@@ -17,7 +17,7 @@ One-line take: Cue is Manus's standalone app for personal agents in which **each
 | Status | **Early access, invite code required**; launched alongside Manus 2.0 |
 | Where it runs | Each agent has its own computer; built "on the same infrastructure as Manus" |
 | Model | Not stated |
-| Price | **Free during early access** with an invite code; pricing after early access not announced |
+| Price | **Free during early access** with an invite code; the App Store listing (checked Oct 28 2026) adds that "Plus membership is included at no charge" once you have access. Pricing after early access not announced |
 | Official page | https://cue.im/ |
 
 ## Why This Entry Exists
@@ -38,7 +38,7 @@ Every other agent here borrows *your* identity: it signs in as you, sends from y
 
 ## Permissions And Data
 
-Manus's launch post says you set the budget and the direction; it does not document an approval model, retention or training terms for Cue. The App Store listing links to Manus's general privacy policy. Treat this as an early-access product whose governance is not yet written down.
+Manus's launch post says you set the budget and the direction; it does not document an approval model, retention or training terms for Cue. The App Store listing links to Manus's general privacy policy. Treat this as an early-access product whose governance is not yet written down. (Update, Oct 28 2026: the App Store description now says Cue completes "purchases and payments with your approval" — "You confirm the payment" — that automations "can run on a schedule or respond to supported events and conditions", and that "Memory and Dream" keep preferences; retention and training terms are still not stated.)
 
 ## Bottom Line
 

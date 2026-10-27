@@ -4,6 +4,12 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-10-28 — GPT-6.1 Terra joins the cost table, and Claude Duet and Cue's new documentation reach the personal-agents page
+
+- **[Cost & benchmarks](comparisons/cost-and-benchmarks.md)** adds **GPT-6.1 Terra** ($1 / $5, cache read $0.05, Oct 26); every other row was re-checked against the four vendors' pricing pages and is unchanged, and the "as of" date moves to Oct 28.
+- **[Consumer personal agents](comparisons/personal-agents.md)**: first weekly "Recent changes" entry — Anthropic's separate **Claude Duet** app (Oct 21, now a profile candidate), Cue's Scheduling and Memory cells moved from **?** to ◐ on its App Store description, and Doubao's listed price tiers. Dated notes added to the [Claude (Cowork)](agents/claude-cowork.md), [Cue](agents/manus-cue.md) and [Doubao](agents/doubao.md) profiles.
+- **An update to last week:** OpenCode's Oct 17 incident now has a vendor statement on record; the dated line in the [agents timeline](agents/README.md) is updated in place.
+
 ## 2026-10-21 (later) — A fifth decision: consumer personal agents, listed and compared rather than ranked
 
 The map gains a **fifth route group, "Hand off your day"**, with one route — **consumer personal agent** — and ten profiles: [ChatGPT dots](agents/chatgpt-dots.md), [Gemini Task](agents/gemini-task.md), [Claude (Cowork)](agents/claude-cowork.md), [Muse](agents/meta-muse.md), [Grok Bot](agents/grok-bot.md), [Cue](agents/manus-cue.md), [Doubao](agents/doubao.md), [Qwen app](agents/qwen-app.md), [AutoGLM](agents/autoglm.md) and [Yuanbao](agents/yuanbao.md). The map now holds **88 profiles in 16 routes**.

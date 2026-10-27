@@ -84,7 +84,7 @@ changes actually touch them — see step 5.
    only ever a profile written during the *previous* refresh, so carry it
    forward by naming it here when you write it. **Rewrite this line every
    refresh** — it went stale for two months once (it named `vercel/eve`, long
-   since flipped). **As of 2026-10-21: no pending pickups.** No new profile was written this
+   since flipped). **As of 2026-10-28: no pending pickups.** No new profile was written this
    refresh and no tracked repo moved (the `.fetch-cache.json` and
    `snapshot.json` `full_name` values all matched). When a repo does move,
    migrate tracked-repos.txt, catalog.json, snapshot.json and history.json raw

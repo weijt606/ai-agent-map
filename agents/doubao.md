@@ -17,7 +17,7 @@ One-line take: Doubao is ByteDance's consumer assistant, now in two agent forms 
 | Status | Work-task mode and the "Ask Doubao before you buy" (买前问豆包) shopping assistant shipped in app v15.4.0 (**Oct 19 2026**). The phone assistant is listed in Doubao's own account terms as a system service on partner devices |
 | Where it runs | App: ByteDance's service. Phone assistant: on the partner phone, operating its apps |
 | Model | ByteDance's Doubao models; the listing names Seedance for video and no version for the agent |
-| Price | Free basic use, with paid auto-renewing subscriptions (see the app's paid-service terms) |
+| Price | Free basic use, with paid auto-renewing subscriptions: the App Store listing (checked Oct 28 2026) names three paid tiers (标准版, 加强版, 专业版) at ¥68, ¥200 and ¥500 a month, or ¥688, ¥2,048 and ¥5,088 a year |
 | Regions | China |
 | Official pages | https://apps.apple.com/cn/app/id6459478672 · https://o.doubao.com |
 

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="736" viewBox="0 0 920 736" font-family="system-ui, -apple-system, sans-serif">
 <rect width="920" height="736" rx="10" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)"/>
-<text x="26" y="28" font-size="17" font-weight="700" fill="#0b0b0b">The AI Agent Map — the first cut: 16 routes, 89 profiles</text>
+<text x="26" y="28" font-size="17" font-weight="700" fill="#0b0b0b">The AI Agent Map — the first cut: 16 routes, 94 profiles</text>
 <text x="26" y="46" font-size="11" fill="#52514e">Five decisions, 16 routes. Full tables with links follow below.</text>
 <circle cx="31" cy="69" r="5" fill="#2a78d6"/>
 <text x="44" y="73" font-size="12.5" font-weight="700" fill="#0b0b0b">Use an agent on your code</text>
@@ -19,7 +19,7 @@
 <rect x="26.0" y="158.0" width="281.3" height="58" rx="7" fill="#ffffff" stroke="rgba(11,11,11,0.12)"/>
 <rect x="26.0" y="158.0" width="3.5" height="58" rx="1.75" fill="#2a78d6"/>
 <text x="39.0" y="180.0" font-size="12" font-weight="600" fill="#0b0b0b">Workflow / orchestration layer</text>
-<text x="39.0" y="199.0" font-size="10.5" fill="#52514e">oh-my-claudecode, oh-my-codex, Ruflo</text>
+<text x="39.0" y="199.0" font-size="10.5" fill="#52514e">oh-my-claudecode, oh-my-codex, Ruflo · +2 more</text>
 <rect x="319.3" y="158.0" width="281.3" height="58" rx="7" fill="#ffffff" stroke="rgba(11,11,11,0.12)"/>
 <rect x="319.3" y="158.0" width="3.5" height="58" rx="1.75" fill="#2a78d6"/>
 <text x="332.3" y="180.0" font-size="12" font-weight="600" fill="#0b0b0b">Managed background path</text>
@@ -47,7 +47,7 @@
 <rect x="319.3" y="366.0" width="281.3" height="58" rx="7" fill="#ffffff" stroke="rgba(11,11,11,0.12)"/>
 <rect x="319.3" y="366.0" width="3.5" height="58" rx="1.75" fill="#1baf7a"/>
 <text x="332.3" y="388.0" font-size="12" font-weight="600" fill="#0b0b0b">Runtime and tools</text>
-<text x="332.3" y="407.0" font-size="10.5" fill="#52514e">n8n, MemGPT, CodeGraph, Graft · +4 more</text>
+<text x="332.3" y="407.0" font-size="10.5" fill="#52514e">n8n, MemGPT, CodeGraph, Graft · +6 more</text>
 <rect x="612.7" y="366.0" width="281.3" height="58" rx="7" fill="#ffffff" stroke="rgba(11,11,11,0.12)"/>
 <rect x="612.7" y="366.0" width="3.5" height="58" rx="1.75" fill="#1baf7a"/>
 <text x="625.7" y="388.0" font-size="12" font-weight="600" fill="#0b0b0b">Observability and evals</text>
@@ -69,7 +69,7 @@
 <rect x="612.7" y="540.0" width="281.3" height="58" rx="7" fill="#ffffff" stroke="rgba(11,11,11,0.12)"/>
 <rect x="612.7" y="540.0" width="3.5" height="58" rx="1.75" fill="#4a3aa7"/>
 <text x="625.7" y="562.0" font-size="12" font-weight="600" fill="#0b0b0b">Agentic skills framework</text>
-<text x="625.7" y="581.0" font-size="10.5" fill="#52514e">Superpowers</text>
+<text x="625.7" y="581.0" font-size="10.5" fill="#52514e">Superpowers, ECC</text>
 <circle cx="31" cy="625" r="5" fill="#c0367a"/>
 <text x="44" y="629" font-size="12.5" font-weight="700" fill="#0b0b0b">Hand off your day</text>
 <rect x="26.0" y="644.0" width="281.3" height="58" rx="7" fill="#ffffff" stroke="rgba(11,11,11,0.12)"/>

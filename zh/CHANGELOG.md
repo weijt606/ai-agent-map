@@ -4,6 +4,12 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-10-28 —— GPT-6.1 Terra 进入成本表，Claude Duet 与 Cue 的新文档写进个人 agent 页
+
+- **[成本与基准](comparisons/cost-and-benchmarks.md)**新增 **GPT-6.1 Terra**（$1 / $5，缓存读 $0.05，10 月 26 日）；其余各行已对照四家价格页复核，没有变化，"截至"日期改为 10 月 28 日。
+- **[消费级个人 agent](comparisons/personal-agents.md)**：第一条每周"最近变化"——Anthropic 的独立应用 **Claude Duet**（10 月 21 日），**收录为第十一个个人 agent**（[Claude Duet](agents/claude-duet.md)；88 → 89 个 profile）；Cue 的调度与记忆两格依据其 App Store 介绍由 **?** 改为 ◐；豆包写明的价格档位。[Claude（Cowork）](agents/claude-cowork.md)、[Cue](agents/manus-cue.md)、[豆包](agents/doubao.md)三个 profile 加了带日期的说明。
+- **对上周的更新：**OpenCode 10 月 17 日的事件现在有了厂商声明；[agents 时间线](agents/README.md)里那条带日期的记录已就地更新。
+
 ## 2026-10-21（稍后）—— 第五类决策：消费级个人 agent，收录与比较，而不是排名
 
 本地图新增**第五个路线组"把日常交给 agent"**，下设一条路线——**消费级个人 agent**——和十个 profile：[ChatGPT dots](agents/chatgpt-dots.md)、[Gemini Task](agents/gemini-task.md)、[Claude（Cowork）](agents/claude-cowork.md)、[Muse](agents/meta-muse.md)、[Grok Bot](agents/grok-bot.md)、[Cue](agents/manus-cue.md)、[豆包](agents/doubao.md)、[千问 App](agents/qwen-app.md)、[AutoGLM](agents/autoglm.md)、[元宝](agents/yuanbao.md)。本地图现有 **88 个 profile、16 条路线**。

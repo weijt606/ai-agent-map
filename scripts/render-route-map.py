@@ -57,7 +57,7 @@ GROUPS = [
         ("Agentic skills framework", "Agentic skills 框架", ["Superpowers"], 1),
     ]),
     ("Hand off your day", "把日常交给 agent", "#c0367a", [
-        ("Consumer personal agent", "消费级个人 agent", ["ChatGPT dots", "Gemini Task", "Claude", "Muse"], 10),
+        ("Consumer personal agent", "消费级个人 agent", ["ChatGPT dots", "Gemini Task", "Claude", "Muse"], 11),
     ]),
 ]
 

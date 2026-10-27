@@ -6,6 +6,8 @@
 
 One-line take: Anthropic's personal agent is no longer a separate product — **Cowork merged into the Claude app on Sept 16 2026**, so the same Claude that chats now takes a task, schedules it, keeps working in an isolated cloud session after you close your laptop, and drives Chrome through Claude in Chrome — with three named approval modes you pick per task.
 
+> **Update, Oct 28 2026:** Cowork is no longer Anthropic's *only* consumer agent. On Oct 21 Anthropic opened a waitlisted research preview of **[Claude Duet](claude-duet.md)**, a separate app (US Pro and Max first) in which Claude works as a proactive agent on its own virtual machine with a browser, built around Opus 5.5, asking approval before it sends, pays, signs or deletes. Anthropic says it lives apart from the main Claude app "for now". See the [personal agents](../comparisons/personal-agents.md#recent-changes) log.
+
 ## Quick Read
 
 | Item | Conclusion |

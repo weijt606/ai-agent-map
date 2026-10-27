@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="736" viewBox="0 0 920 736" font-family="system-ui, -apple-system, sans-serif">
 <rect width="920" height="736" rx="10" fill="#fcfcfb" stroke="rgba(11,11,11,0.10)"/>
-<text x="26" y="28" font-size="17" font-weight="700" fill="#0b0b0b">The AI Agent Map — the first cut: 16 routes, 88 profiles</text>
+<text x="26" y="28" font-size="17" font-weight="700" fill="#0b0b0b">The AI Agent Map — the first cut: 16 routes, 89 profiles</text>
 <text x="26" y="46" font-size="11" fill="#52514e">Five decisions, 16 routes. Full tables with links follow below.</text>
 <circle cx="31" cy="69" r="5" fill="#2a78d6"/>
 <text x="44" y="73" font-size="12.5" font-weight="700" fill="#0b0b0b">Use an agent on your code</text>
@@ -75,5 +75,5 @@
 <rect x="26.0" y="644.0" width="281.3" height="58" rx="7" fill="#ffffff" stroke="rgba(11,11,11,0.12)"/>
 <rect x="26.0" y="644.0" width="3.5" height="58" rx="1.75" fill="#c0367a"/>
 <text x="39.0" y="666.0" font-size="12" font-weight="600" fill="#0b0b0b">Consumer personal agent</text>
-<text x="39.0" y="685.0" font-size="10.5" fill="#52514e">ChatGPT dots, Gemini Task, Claude, Muse · +6 more</text>
+<text x="39.0" y="685.0" font-size="10.5" fill="#52514e">ChatGPT dots, Gemini Task, Claude, Muse · +7 more</text>
 </svg>

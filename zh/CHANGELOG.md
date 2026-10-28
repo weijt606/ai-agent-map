@@ -4,6 +4,17 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-10-28（稍后）—— 覆盖面缺口审计：五个本地图从没提过的大项目
+
+每周的新仓库扫描翻出了一批早已成形、各自超过 10 万 star 的仓库，它们在本地图里一处都没有出现：没有 profile，不在 catalog、候补名单或任何表格里。漏掉的原因是扫描只看*新近创建*的仓库。现收录其中五个，89 → 94：
+
+- **[Orca](agents/orca.md)**（`stablyai/orca`，MIT）与 **[Paperclip](agents/paperclip.md)**（`paperclipai/paperclip`，MIT）进入**工作流 / 编排层**：Orca 把任意 CLI coding agent 放进各自的 worktree 并排跑；Paperclip 是自托管的控制平面，用工单、预算、审批和 routine 管一整个 agent 团队。两者都在[能力矩阵](capabilities/matrix.md)里打分。
+- **[ECC](agents/ecc.md)**（`affaan-m/ECC`，MIT）和 **[Superpowers](agents/superpowers.md)** 一起归入 **Agentic skills 框架**；和 Superpowers 一样列入矩阵的"不打分"一节，因为它跑在宿主 agent 内部。
+- **[claude-mem](agents/claude-mem.md)**（`thedotmack/claude-mem`，Apache-2.0）与 **[Graphify](agents/graphify.md)**（`Graphify-Labs/graphify`，Apache-2.0）进入**运行时 & 工具**。两者都进矩阵，也都写进了[记忆方式](comparisons/memory-approaches.md)页：claude-mem 是外挂式被动召回，Graphify 是代码图谱在 CodeGraph、Graft 之后的第三种存储决定。
+- 五个都以 `tracked: false` 进入 catalog，下一次周更开始抓 star。它们此前缺席，也意味着在此之前所有"跟踪仓库里第 N 大"的说法，都是在一个更窄的集合上算的。
+
+**看过但刻意不收：**`morluto/rea`（逆向工程工具的 MCP 桥，约 39.6 万 star，其中约 37.6 万是它自己的 README 10 月 8 日标出 2 万之后的 20 天里涨的）。它是领域工具而非 agent，star 曲线在本地图没有先例，star 账号也无法审计，所以在积累几个窗口的速率数据之前不进热度榜。它虽然带 `dsh-plugin` 话题，但不是 DeepSeek Harness 插件。`Leonxlnx/taste-skill` 与 `tt-a1i/archify`（各超过 9 万）是单个 skill，而本地图跟踪的是精选集合，不是单个 skill。
+
 ## 2026-10-28 —— GPT-6.1 Terra 进入成本表，Claude Duet 与 Cue 的新文档写进个人 agent 页
 
 - **[成本与基准](comparisons/cost-and-benchmarks.md)**新增 **GPT-6.1 Terra**（$1 / $5，缓存读 $0.05，10 月 26 日）；其余各行已对照四家价格页复核，没有变化，"截至"日期改为 10 月 28 日。

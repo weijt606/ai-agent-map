@@ -519,5 +519,50 @@
     "group": "framework",
     "profile": "agents/microsoft-agent-framework.md",
     "scope": "in"
+  },
+  "stablyai/orca": {
+    "display": "Orca",
+    "category": "infra",
+    "vertical": null,
+    "group": "orchestration",
+    "profile": "agents/orca.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "paperclipai/paperclip": {
+    "display": "Paperclip",
+    "category": "infra",
+    "vertical": null,
+    "group": "orchestration",
+    "profile": "agents/paperclip.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "affaan-m/ecc": {
+    "display": "ECC",
+    "category": "skill",
+    "vertical": "collections",
+    "group": null,
+    "profile": "agents/ecc.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "thedotmack/claude-mem": {
+    "display": "claude-mem",
+    "category": "infra",
+    "vertical": null,
+    "group": "memory-context",
+    "profile": "agents/claude-mem.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "graphify-labs/graphify": {
+    "display": "Graphify",
+    "category": "infra",
+    "vertical": null,
+    "group": "memory-context",
+    "profile": "agents/graphify.md",
+    "scope": "in",
+    "tracked": false
   }
 }

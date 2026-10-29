@@ -12,7 +12,7 @@ This category exploded in 2026. Every major model vendor now ships its own CLI i
 
 In scope: foreground, single-developer terminal loops whose primary job is writing code. Out of scope and covered elsewhere:
 
-- **Editor-centric surfaces** — [Cursor](../agents/cursor.md), [Windsurf](../agents/windsurf.md), [Continue](../agents/continue.md) (the editor is the agent, not the terminal).
+- **Editor-centric surfaces** — [Cursor](../agents/cursor.md), [Windsurf](../agents/windsurf.md), [Continue](../agents/continue.md), [TRAE](../agents/trae.md) (the editor is the agent, not the terminal; TRAE CLI 2.0 exists only on the China enterprise flagship plan).
 - **Cloud delegation / managed execution** — [Devin](../agents/devin.md), [Jules](../agents/jules.md), [Claude Managed Agents](../agents/claude-managed-agents.md) (you hand off and check back, not a foreground loop).
 - **Desktop task surfaces** — [ZCode](../agents/zcode.md) (direct execution, but a GUI, not a terminal loop).
 - **Harness frameworks you fork and own** — [Pi](../agents/pi.md), [jcode](../agents/jcode.md), [OpenHands](../agents/openhands.md), [SWE-agent](../agents/swe-agent.md), [mini-swe-agent](../agents/mini-swe-agent.md), [OpenHarness](../agents/openharness.md), [DeepSeek Harness](../agents/deepseek-harness.md) (compared in [agent harness frameworks](agent-harness-frameworks.md)). Pi and jcode are terminal-first and coding-capable, but their value is owning the loop, not adopting a vendor product.

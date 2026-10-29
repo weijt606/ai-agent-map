@@ -4,6 +4,10 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-10-30（稍后）—— 收录 TRAE
+
+字节跳动的 AI IDE **[TRAE](agents/trae.md)** 进**编辑器中心**路线，和 Cursor、Windsurf、Google Antigravity 放在一起，96 → 97。它分国际版和国内版，模型列表和价格各不相同。它自己的文档写着，对话内容（包括相关代码片段和 AI 输出）"may be used for analytics, product improvement, and model training"，除非每个登录用户自己打开隐私模式；profile 把这一条放进了一眼判断。个人用户没有公开的 CLI（TRAE CLI 2.0 只开放给国内版企业旗舰版）；MIT 许可的 `bytedance/trae-agent` 研究型 CLI 在 profile 里有记录，但没有纳入跟踪，因为 TRAE 的文档从没说过 IDE 用的是它。TRAE 在能力矩阵里打了分，也在终端编码 CLI 对比的"编辑器中心"排除项里列出。
+
 ## 2026-10-30 —— 收录 Google Antigravity 与腾讯 CodeBuddy，并对全图做了一次准确性审查
 
 两个此前只被顺带提到的编码产品有了自己的 profile，94 → 96：

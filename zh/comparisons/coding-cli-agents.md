@@ -12,7 +12,7 @@
 
 收录范围：前台、单开发者、主要工作是写代码的终端循环。不在此范围、在别处覆盖的：
 
-- **编辑器中心表面** —— [Cursor](../agents/cursor.md)、[Windsurf](../agents/windsurf.md)、[Continue](../agents/continue.md)（编辑器本身是 agent，而不是终端）。
+- **编辑器中心表面** —— [Cursor](../agents/cursor.md)、[Windsurf](../agents/windsurf.md)、[Continue](../agents/continue.md)、[TRAE](../agents/trae.md)（编辑器本身是 agent，而不是终端；TRAE CLI 2.0 只开放给国内版企业旗舰版）。
 - **云端委派 / 托管执行** —— [Devin](../agents/devin.md)、[Jules](../agents/jules.md)、[Claude Managed Agents](../agents/claude-managed-agents.md)（你交出去再回来查，不是前台循环）。
 - **桌面任务表面** —— [ZCode](../agents/zcode.md)（属于直接执行型，但它是图形界面，不是终端循环）。
 - **可 fork 自有的 harness 框架** —— [Pi](../agents/pi.md)、[jcode](../agents/jcode.md)、[OpenHands](../agents/openhands.md)、[SWE-agent](../agents/swe-agent.md)、[mini-swe-agent](../agents/mini-swe-agent.md)、[OpenHarness](../agents/openharness.md)、[DeepSeek Harness](../agents/deepseek-harness.md)（见 [agent harness 框架对比](agent-harness-frameworks.md)）。Pi 和 jcode 都是终端优先、能写代码，但它们的价值是拥有循环，而不是采用一个厂商产品。

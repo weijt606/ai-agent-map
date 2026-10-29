@@ -4,6 +4,10 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-10-30 (later) — TRAE profiled
+
+**[TRAE](agents/trae.md)**, ByteDance's AI IDE, joins the **editor-centric** route next to Cursor, Windsurf and Google Antigravity, 96 → 97. It ships as separate international and China editions with different model lists and prices. Its own docs say chat interactions, including code snippets and AI outputs, "may be used for analytics, product improvement, and model training" unless each signed-in user turns on Privacy Mode; the profile puts that in the Quick Read. There is no public CLI for individuals (TRAE CLI 2.0 is only on the China enterprise flagship plan); the MIT `bytedance/trae-agent` research CLI is noted in the profile but not tracked, because TRAE's docs never say the IDE uses it. TRAE gets a scored matrix row and a mention among the editor-centric exclusions on the terminal CLI comparison.
+
 ## 2026-10-30 — Google Antigravity and Tencent CodeBuddy profiled, and an accuracy audit across the map
 
 Two coding products the map had only mentioned in passing are now profiled, 94 → 96:

@@ -15,7 +15,7 @@ One-line take: ZCode is Zhipu's desktop agentic development environment — a GU
 | Open source | **Yes, since 2026-09-20** — client, backend and agent CLI published as [`zai-org/ZCode`](https://github.com/zai-org/ZCode) under Apache-2.0; the GLM model line is separately open-weighted |
 | Best for | GLM-first teams who want long-running coding tasks with a visible task surface and remote check-ins |
 | Main cost | Paid subscription tiers; the strongest capabilities are tied to Zhipu's own models |
-| Current version | 3.14.3 (2026-09-23) |
+| Current version | 3.15.1 (tagged 2026-10-10; latest tag as of 2026-10-30) |
 | Official site | https://zcode.z.ai |
 
 > **Correction (2026-09-30).** Until this date the profile said the client was proprietary. Zhipu published the full source on 2026-09-20 under Apache-2.0; this map found it ten days later in its weekly repo scan. The table, the "when not to pick it" list, the capability shape and the bottom line below are corrected in place. See [market-events](../market-events.md#september-20-2026--zhipu-open-sources-zcode-and-this-map-had-it-as-closed-found-2026-09-30).
@@ -51,13 +51,13 @@ That distinction is why it sits on the direct-execution route rather than with [
 | Multi-agent | Strong | Positioned around several agents collaborating on one objective |
 | Platform coverage | Strong | macOS (both architectures), Windows (x64/ARM64), Linux (beta) |
 | Model freedom | Medium | GLM-first by design; other providers reported to work through your own key |
-| Open source | Source-available, licensed | Apache-2.0 since 2026-09-20; source drop, no contribution path yet |
+| Open source | Open source (Apache-2.0) | Apache-2.0 since 2026-09-20; source drop, no contribution path yet |
 
 **Sourcing note.** The official site documents GLM-5.3 and GLM-5.3-Flash. Third-party walkthroughs report that ZCode also accepts your own key for Anthropic, OpenRouter, and OpenAI-compatible endpoints (including pointing it at DeepSeek's Anthropic-compatible URL), and earlier coverage of the 3.0 release described it as a visual front end for Claude Code, Codex, and Gemini. That capability is **not** stated on the current official page, so this map records it as reported rather than confirmed — verify against the version you install before building a multi-vendor plan on it.
 
 ## Relationship To The Model Layer
 
-ZCode is the product; GLM is the model. This map does not yet profile the open-weights model tier that GLM belongs to, which is a separate gap it is tracking. What matters for selection here: the reason to choose ZCode over a vendor-neutral harness is the tuning between the client and Zhipu's own models, so a team that wants model portability above all should weigh a harness from the [harness route](../comparisons/agent-harness-frameworks.md) instead.
+ZCode is the product; GLM is the model. The model side is profiled separately as [GLM-5.3](glm-5.md). What matters for selection here: the reason to choose ZCode over a vendor-neutral harness is the tuning between the client and Zhipu's own models, so a team that wants model portability above all should weigh a harness from the [harness route](../comparisons/agent-harness-frameworks.md) instead.
 
 ## Bottom Line
 

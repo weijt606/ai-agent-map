@@ -4,6 +4,16 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-10-30 — Google Antigravity and Tencent CodeBuddy profiled, and an accuracy audit across the map
+
+Two coding products the map had only mentioned in passing are now profiled, 94 → 96:
+
+- **[Google Antigravity](agents/antigravity.md)** joins the **editor-centric** route: Google's agent-first platform (desktop agent app, the `agy` CLI, the standalone IDE, six editor extensions, a Python SDK) on one harness. Writing it surfaced the largest error this audit found: **since 2026-06-18 Google has moved free-tier, Google One, AI Pro and AI Ultra users off Gemini CLI to Antigravity CLI**, while the [Gemini CLI](agents/gemini-cli.md) profile and the comparison pages still led with its free tier. Both are corrected in place with a dated note; Antigravity CLI gets its own row in the [terminal coding CLI comparison](comparisons/coding-cli-agents.md).
+- **[CodeBuddy](agents/codebuddy.md)** joins **direct execution**: Tencent Cloud's coding line (plugin, CodeBuddy IDE, CodeBuddy Code CLI), which shares an account and credit balance with [WorkBuddy](agents/workbuddy.md). It is closed source (no tracked repository), so it does not enter the heat ranking.
+- Both get scored rows in the [capability matrix](capabilities/matrix.md).
+
+**The audit** re-read every profile and hub page against the 2026-10-28 snapshot, the map's own market-events record and, for the riskiest claims, the vendors' pages. Corrected in place: Opus 5 still described as Claude Code's default (Opus 5.5 since Sept 22, Sonnet 5.5 since Sept 28); GPT-5.5 still listed as running in Codex and ChatGPT (retired Oct 14); Codex's default given as GPT-5.x; several "cheapest" and "only" claims the cost table no longer supports; stale star figures and "days old" ages; two renamed repositories (`trailhq/Trail-Code`, `openinterpreter/openinterpreter`); missing rows in the agents index (eight profiles and the observability route); lines present in English but missing in Chinese on six profiles; and an internally contradictory sentence about Gemini 4 Argon's availability.
+
 ## 2026-10-28 (later) — A coverage-gap audit: five large projects this map had never named
 
 The weekly new-repo scan surfaced established repositories, each over 100k stars, that appeared nowhere in the map: not in a profile, the catalog, the watchlist or any table. They had been missed because the scan looks at *recently created* repos. Five are now profiled, 89 → 94:

@@ -12,17 +12,18 @@
 
 | 路线 | 代表项目 | 适合谁 |
 | --- | --- | --- |
-| 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Kimi Code](kimi-code.md), [MiMoCode](mimocode.md), [CodeWhale](codewhale.md), [ZCode](zcode.md), [OpenCode](opencode.md), [Gemini CLI](gemini-cli.md), [Qwen Code](qwen-code.md), [Grok Build](grok-build.md), [Devin](devin.md), [Jules](jules.md) | 想直接把 coding 任务交给 agent（在[终端编码 CLI agent](../comparisons/coding-cli-agents.md) 里对比） |
+| 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Kimi Code](kimi-code.md), [MiMoCode](mimocode.md), [CodeWhale](codewhale.md), [ZCode](zcode.md), [CodeBuddy](codebuddy.md), [OpenCode](opencode.md), [Gemini CLI](gemini-cli.md), [Qwen Code](qwen-code.md), [Grok Build](grok-build.md), [Devin](devin.md), [Jules](jules.md) | 想直接把 coding 任务交给 agent（在[终端编码 CLI agent](../comparisons/coding-cli-agents.md) 里对比） |
 | Agent harness 框架 | [DeepSeek Harness](deepseek-harness.md), [Pi](pi.md), [jcode](jcode.md), [OpenHands](openhands.md), [SWE-agent](swe-agent.md), [mini-swe-agent](mini-swe-agent.md), [OpenHarness](openharness.md), [QM](qm.md), [Omnigent](omnigent.md), [TrueForge](trueforge.md) | 想自己掌控 loop、工具表面和权限，不直接接受厂商成品（QM 和 Omnigent 在一层之下同时跑多个 harness） |
-| 前沿 agentic 模型 | [Claude Fable 5.1](claude-fable-5.md)、[Claude Opus 5](claude-opus-5.md)、[GPT-6 Astra](gpt-6-astra.md)、[GPT-5.5](gpt-5.5.md) | 在选要接入自己 agent 系统的模型，或在评估 Anthropic / OpenAI 系 agent 能力上限——天花板与其下的默认档是两个独立决策 |
+| 前沿 agentic 模型 | [Claude Fable 5.1](claude-fable-5.md)、[Claude Opus 5](claude-opus-5.md)、[GPT-6 Astra](gpt-6-astra.md)、[GPT-5.5](gpt-5.5.md) | 在选要接入自己 agent 系统的模型，或在评估 Anthropic / OpenAI 系 agent 能力上限——天花板与其下的默认档是两个独立决策（Claude Code 的默认 Opus 已于 9 月 22 日从 Opus 5 换成 Opus 5.5） |
 | 开放权重 agentic 模型 | [Kimi K3](kimi-k3.md)、[GLM-5.3](glm-5.md)、[DeepSeek V4](deepseek-v4.md)、[Qwen3-Coder](qwen3-coder.md) | 想在自己托管、自己承担许可的权重上拿到前沿级能力的人；这几个之间，许可的差别比 benchmark 的差别更大 |
 | Agentic skills 框架 | [Superpowers](superpowers.md), [ECC](ecc.md) | 想要一套方法论 + 可组合 skills 层、能接到 Claude Code、Codex、Cursor 等 agent 之上 |
 | 工作流 / orchestration layer | [oh-my-claudecode](oh-my-claudecode.md), [oh-my-codex](oh-my-codex.md), [Ruflo](ruflo.md), [Orca](orca.md), [Paperclip](paperclip.md) | 已经在用 Claude Code 或 Codex，只想补强 teams、skills 和持久工作流（Ruflo 进一步推到跨机器联邦）；Orca 和 Paperclip 同时调度多个不同的 agent |
-| 编辑器中心工作流 | [Cursor](cursor.md), [Windsurf](windsurf.md), [Continue](continue.md) | 想让编辑器本身成为 agent 主表面 |
+| 编辑器中心工作流 | [Cursor](cursor.md), [Windsurf](windsurf.md), [Google Antigravity](antigravity.md), [Continue](continue.md) | 想让编辑器本身成为 agent 主表面 |
 | review-first 自动化 | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md), [CoStrict](costrict.md), [Open Code Review](open-code-review.md) | 想把 review 和人工节奏留在核心（CoStrict 瞄准企业严格流程 + 私有化部署；Open Code Review 只做评审，为 CI 里的准确率调优） |
 | 通用自主 agent | [AutoGPT](autogpt.md), [Agent Zero](agent-zero.md), [BabyAGI](babyagi.md), [Julep](julep.md), [GenericAgent](generic-agent.md), [ml-intern](ml-intern.md), [WorkBuddy](workbuddy.md), [Kimi Work](kimi-work.md) | 想要通用自主任务执行（ml-intern 是 ML 工程取向的特化版） |
-| 自建平台 | [LangChain](langchain.md), [LangGraph](langgraph.md), [CrewAI](crewai.md), [LlamaIndex](llamaindex.md), [Haystack](haystack.md), [Semantic Kernel](semantic-kernel.md), [DSPy](dspy.md), [Pydantic AI](pydantic-ai.md), [eve](eve.md), [Microsoft Agent Framework](microsoft-agent-framework.md) | 想自己搭 agent system（eve 是其中唯一自带渠道、定时、沙箱与审批闸门的） |
+| 自建系统 | [LangChain](langchain.md), [LangGraph](langgraph.md), [CrewAI](crewai.md), [LlamaIndex](llamaindex.md), [Haystack](haystack.md), [Semantic Kernel](semantic-kernel.md), [DSPy](dspy.md), [Pydantic AI](pydantic-ai.md), [eve](eve.md), [Microsoft Agent Framework](microsoft-agent-framework.md) | 想自己搭 agent system（eve 是其中唯一自带渠道、定时、沙箱与审批闸门的） |
 | 运行时 & 工具 | [n8n](n8n.md), [MemGPT](memgpt.md), [Open Interpreter](open-interpreter.md), [LiteLLM](litellm.md), [Flowise](flowise.md), [CodeGraph](codegraph.md), [Graft](graft.md), [CLI-Anything](cli-anything.md), [claude-mem](claude-mem.md), [Graphify](graphify.md) | 需要工作流自动化、代码执行、LLM 网关、agent 上下文基础设施、agent 驱动 CLI 或可视化构建器 |
+| 观测与评估 | [Langfuse](langfuse.md) | agent 已经跑在生产上，需要知道它做了什么、花了多少、质量有没有漂移的团队（对比见[观测与评估](../comparisons/observability-and-evals.md)） |
 | 浏览器 agent | [Browser Use](browser-use.md) | 任务活在没有 API 的网站上的人；选型问题是"允许一个 agent 以你的身份在开放互联网上做什么" |
 | 自托管 / 本地 runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md), [Mercury Agent](mercury-agent.md), [OpenHuman](openhuman.md) | 需要端侧隐私、本地控制、扩展、渠道、runtime ownership 或个人数据生活集成 |
 | 管理式后台路径 | [Claude Managed Agents](claude-managed-agents.md) | 需要云端、定时、后台执行 |
@@ -81,13 +82,14 @@
 - **2026 年 7 月 8–14 —— curated skills 轮换、仍无黑马** —— [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 上升一位到 #2（+5.1k，越过 77k），反超滑到 #3 的 [Superpowers](superpowers.md)（越过 253k）。[mattpocock/skills](https://github.com/mattpocock/skills) 连续第四个窗口守住 #1 增量位（+7.7k，越过 168k）。下方唯一真正的重排是 [Pi](pi.md) 跳升两位到 #5、[Codex CLI](codex.md) 跳升两位到 #7，把 [anthropics/skills](https://github.com/anthropics/skills) 和 [codegraph](codegraph.md) 挤下去；[TradingAgents](https://github.com/TauricResearch/TradingAgents) 下滑到 #9。Skills 浪潮仍 5/10。本周新收录扫描没有新的达到收录门槛的 agent 表面；最新且体量最大的新仓库——[cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering)（7.3k，"loop engineering" 的模式与 CLI 工具集）和 [inkeep/open-knowledge](https://github.com/inkeep/open-knowledge)（2.8k，AI 原生的 markdown wiki 编辑器）——加入候补。
 - **2026 年 7 月 2–8 —— curated skills 轮换、仍无黑马** —— [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 是本窗口涨幅最大的项目（+4.3k），从 #6 上升三位到 #3，把 curated 那一端重新炒热。[mattpocock/skills](https://github.com/mattpocock/skills) 连续第三个窗口守住 #1 增量位（+6.6k，越过 160k），而 [Hermes Agent](hermes-agent.md) 和 [anthropics/skills](https://github.com/anthropics/skills) 各降温一位。Skills 浪潮仍 5/10；[TradingAgents](https://github.com/TauricResearch/TradingAgents) 下滑到 #8。本周新收录扫描没有新的达到收录门槛的 agent 表面；最新且体量最大的新仓库——[langchain-ai/openwiki](https://github.com/langchain-ai/openwiki)（9.6k，一个替 agent 写并维护文档的 CLI）和 [vercel/eve](https://github.com/vercel/eve)（3.3k，Vercel 的 agent 构建框架）——加入候补。
 - **2026 年 6 月 24 – 7 月 2 —— 榜首冻结** —— 本窗口没有黑马：[mattpocock/skills](https://github.com/mattpocock/skills) 连续第二个窗口守住 #1 增量位（+9.3k，越过 153k），[Superpowers](superpowers.md) 与 [Hermes Agent](hermes-agent.md) 稳守 #2/#3。Skills 浪潮内部（仍 5/10）：[anthropics/skills](https://github.com/anthropics/skills) 升到 #4，[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 降到 #6；[TradingAgents](https://github.com/TauricResearch/TradingAgents) 以更高的 #7 重回表内。本周新收录扫描没有新的达到收录门槛的 agent 表面；最新的候补——[tigicion/dao-code](https://github.com/tigicion/dao-code)（1.2k，DeepSeek-V4 终端 coding CLI）和 [JimLiu/baoyu-design](https://github.com/JimLiu/baoyu-design)（2.2k，把 Claude Design 打包成 Agent Skill）——加入候补。
+- **2026-03 → 06（补录）—— 中国的桌面 agent 品类打开了** —— 为一种本地图此前完全没有覆盖的形态补了三个 profile：**[WorkBuddy](workbuddy.md)**（腾讯，3 月 9 日上线，全场景办公 agent，据报道 6 月月访问量达 2097 万，超过第二、第三名之和）、**[Kimi Work](kimi-work.md)**（月之暗面，6 月 3–4 日公测，以 [Kimi Code](kimi-code.md) 为核心的桌面知识工作 agent，支持挂载文件夹、浏览器自动化、cron 引擎与 agent 集群），以及 **[ZCode](zcode.md)**（智谱，基于 GLM-5.3 调优的 agentic 开发环境，带长周期 "Goal" 任务，可从微信/飞书/Telegram 远程操控）。当时三者都不在这些榜上跟踪：WorkBuddy 和 Kimi Work 没有公开仓库，ZCode 的客户端在智谱 2026-09-20 以 Apache-2.0 开源之前一直闭源。选型上的要点是：编码 agent 的循环已经变成了通用工作的循环，而且这个品类**默认闭源**，正好和本地图开放一侧的常态相反。详见[市场事件](../market-events.md)。
 - **2026 年 6 月 17–24 —— Skills 浪潮榜首轮换、MiMoCode 降温** —— [mattpocock/skills](https://github.com/mattpocock/skills) 拿到本窗口最大涨幅（+11.1k，越过 144k）夺回 #1 增量位，而上周的黑马 [MiMoCode](mimocode.md) 只涨了约 1.0k（9.6k → 10.6k），跌出增量前 10。[Codex CLI](codex.md) 以 #9 重回表内，[Hermes Agent](hermes-agent.md) 突破 200k。本周新收录扫描没有新的达到收录门槛的 agent 表面；最大的几个新仓库（[op7418/guizang-social-card-skill](https://github.com/op7418/guizang-social-card-skill) 4.0k、[ruvnet/agent-harness-generator](https://github.com/ruvnet/agent-harness-generator) 0.3k）留在候补。
-- **2026 年 5 月底 —— 更名** —— 本目录以 DeepSeek-TUI 收录的 agent 已改名为 [CodeWhale](codewhale.md)（`Hmbown/CodeWhale`，现 36.6k），并从只支持 DeepSeek 扩展到 **DeepSeek + MiMo**。旧的 `DeepSeek-TUI` 链接会重定向；本目录已统一改用新名。
+- **2026 年 5 月底 —— 更名** —— 本目录以 DeepSeek-TUI 收录的 agent 已改名为 [CodeWhale](codewhale.md)（`Hmbown/CodeWhale`，当时 36.6k），并从只支持 DeepSeek 扩展到 **DeepSeek + MiMo**。旧的 `DeepSeek-TUI` 链接会重定向；本目录已统一改用新名。
 - **2026 年 5 月底 —— 代码上下文黑马** —— [codegraph](codegraph.md) 单窗口翻倍多（16.4k → 37.5k），是目前最清晰的信号：「agent 上下文基础设施」正在成为独立需求中心。全新的 harness 框架 [jcode](https://github.com/1jehuang/jcode)（1jehuang，Rust，6.8k）加入候补，与 [SWE-agent](swe-agent.md) / [mini-swe-agent](mini-swe-agent.md) 和 [OpenHarness](openharness.md) 并列。
 - **2026 年 5 月（降温）** —— `.claude/skills` 浪潮仍在继续，但从前 10 占 6 个收窄到 4 个（[mattpocock/skills](https://github.com/mattpocock/skills)、[Superpowers](superpowers.md)、[academic-research-skills](https://github.com/Imbad0202/academic-research-skills)、[anthropics/skills](https://github.com/anthropics/skills)），因为代码上下文和 harness 基础设施抢走了更多热度。Anthropic 自家的 [skills](https://github.com/anthropics/skills) 仍是整套范式的锚点。
 - **2026-04-08** —— Earendil（Armin Ronacher 的公司）从 Mario Zechner 手中收购 [Pi](pi.md) 项目，仓库从 `badlogic/pi-mono` 迁到 `earendil-works/pi`；Earendil 同时启动云端 agent 平台 Lefos。
 - **2026-04-16** —— OpenAI 推出 "Codex for (almost) everything"，在 [Codex](codex.md) 产品表面加入后台 Computer Use、并行多 agent 执行、内置浏览器，以及 90+ plugin。同时披露周活 300 万开发者，约为 3 月初的 2 倍。
-- **2026-04-23** —— OpenAI 发布 [GPT-5.5](gpt-5.5.md)，是 Codex、ChatGPT 和所有基于 OpenAI API 的 agent 的底层模型。 如今已是两代之前——见 [GPT-6 Astra](gpt-6-astra.md)。
+- **2026-04-23** —— OpenAI 发布 [GPT-5.5](gpt-5.5.md)，当时是 Codex、ChatGPT 和所有基于 OpenAI API 的 agent 的底层模型。2026-10-14 起已从 Codex 与 ChatGPT 下线（限 ChatGPT 账号登录，API 仍可用）；见 [GPT-6 Astra](gpt-6-astra.md)。
 
 ## 当前已收录
 
@@ -96,13 +98,14 @@
 | [Aider](aider.md) | execution | 是 | 终端优先、带强 git loop 的 AI 结对编程 | 已核验 |
 | [Claude Code](claude-code.md) | execution | 否 | 本地和 IDE 优先的 coding agent | 已核验 |
 | [Claude Managed Agents](claude-managed-agents.md) | automation | 否 | Anthropic 管理式 / 云端执行工作流映射 | 已注明映射关系 |
-| [Codex](codex.md) | execution | 否 | ChatGPT 内的云端软件工程 agent | 已按当前产品边界核验 |
+| [Codex](codex.md) | execution | 否（Codex CLI 开源） | ChatGPT 内的云端软件工程 agent | 已按当前产品边界核验 |
 | [oh-my-claudecode](oh-my-claudecode.md) | multi-agent | 是 | Claude Code 之上的工作流和 orchestration layer | 已核验，附带包名说明 |
 | [oh-my-codex](oh-my-codex.md) | multi-agent | 是 | Codex CLI 之上的工作流和 orchestration layer | 已核验 |
 | [Cursor](cursor.md) | platform | 否 | 覆盖本地编码、集成和后台 agent 的 AI 编辑器 | 已核验 |
 | [GitHub Copilot](github-copilot.md) | platform | 否 | VS Code / GitHub 里的多表面 agent 平台 | 已核验 |
 | [Cline](cline.md) | execution | 是 | approval-first 编辑器内 coding agent | 已核验 |
 | [Windsurf](windsurf.md) | platform | 否 | 以 Cascade 为中心的 AI 原生 IDE | 已核验 |
+| [Google Antigravity](antigravity.md) | platform | 否 | 谷歌的 agent 优先平台：agent 桌面应用、`agy` CLI、独立 IDE、六款编辑器扩展共用一套 harness；免费档按周封顶，付费档可用 Claude，配额不公布数字 | 2026-10-30 按谷歌官方文档、定价页与博客核验 |
 | [OpenHands](openhands.md) | execution | 是 | 开源 AI 软件工程 agent | 已核验 |
 | [Devin](devin.md) | execution | 否 | 托管式端到端软件工程执行 | 已核验 |
 | [Jules](jules.md) | automation | 否 | Google 托管、带 GitHub 和 PR 流程的云端 coding agent | 已按当前文档核验 |
@@ -114,20 +117,21 @@
 | [LangGraph](langgraph.md) | platform | 是 | 长期运行、有状态 agent workflow 的底层框架 | 已核验 |
 | [Continue](continue.md) | platform | 是 | 支持自选模型的开源 IDE 扩展 | 已核验 |
 | [Claude Fable 5.1](claude-fable-5.md) | model / agentic | 否 | Anthropic 的 Mythos 级天花板——Claude 系 agent 在 Opus 之上的按额度档 | 已按发布、恢复公告与一手价格页核验 |
-| [Claude Opus 5](claude-opus-5.md) | model / agentic | 否 | 天花板一半价格的 Opus 档——大多数 Claude 系 agent 真正在跑的模型 | 已按发布公告与一手价格页核验 |
+| [Claude Opus 5](claude-opus-5.md) | model / agentic | 否 | 天花板一半价格的 Opus 档；9 月 22 日之前是 Claude Code 的默认 Opus，此后由 Opus 5.5 接替（9 月 28 日默认 Sonnet 也换成了 Sonnet 5.5） | 已按发布公告与一手价格页核验 |
 | [GPT-6 Astra](gpt-6-astra.md) | model / agentic | 否 | OpenAI 当前的前沿模型；公开版本在网安上受限 | 已按一手价格页与 Codex release note 核验；官方发布页无法直接抓取 |
-| [GPT-5.5](gpt-5.5.md) | model / agentic | 否 | 驱动 Codex、ChatGPT 和 API 的前沿 agentic 模型（先由 GPT-5.6、再由 GPT-6 Astra 接棒） | 已按发布材料核验 |
+| [GPT-5.5](gpt-5.5.md) | model / agentic | 否 | OpenAI 2026 年春季的前沿 agentic 模型；2026-10-14 起从 Codex 与 ChatGPT 下线（限 ChatGPT 账号登录），API 仍可用 | 已按发布材料核验 |
 | [Kimi K3](kimi-k3.md) | model / 开放权重 | 权重开放，自定义许可 | 首个开放的 3T 级模型；原生多模态，100 万上下文 | 已按仓库 README 与模型卡核验 |
 | [GLM-5.3](glm-5.md) | model / 开放权重 | 是（Apache-2.0） | 按厂商数字最强的开放权重编码模型；网安能力不设闸 | 已按仓库 README 与 Z.ai 博客核验 |
 | [DeepSeek V4](deepseek-v4.md) | model / 开放权重 | 是（MIT） | 1.6T / 激活 49B，100 万上下文，SWE-bench Verified 80.6 | 已按 Hugging Face 模型卡与 DeepSeek API 公告核验 |
 | [Qwen3-Coder](qwen3-coder.md) | model / 开放权重 | 权重开放，许可按 checkpoint 而异 | 效率首选——Next 在 80B 里激活约 3B | 已按仓库 README 核验；许可不代为断言 |
-| [OpenCode](opencode.md) | execution | 是 | 厂商中立的开源编码 agent，21.9 万 star | 已按仓库核验；注意 sst → anomalyco 的迁移 |
-| [Gemini CLI](gemini-cli.md) | execution | 是 | 谷歌终端 agent，每天 1,000 次免费额度，内置搜索接地 | 已按仓库 README 核验 |
+| [OpenCode](opencode.md) | execution | 是 | 厂商中立的开源编码 agent，22.2 万 star（2026-10-28） | 已按仓库核验；注意 sst → anomalyco 的迁移 |
+| [Gemini CLI](gemini-cli.md) | execution | 是 | 谷歌的开源终端 agent，内置搜索接地；2026-06-18 起只服务 Code Assist 标准版/企业版与付费 API key，个人用户已转到 Antigravity CLI | 已按仓库 README 核验 |
 | [Qwen Code](qwen-code.md) | execution | 是 | 客户端与权重都开放；多协议且可运行时切换 | 已按仓库 README 核验 |
 | [Browser Use](browser-use.md) | browser | 是 | 把真浏览器交给 agent——浏览器 agent 路线的第一个条目 | 已按仓库 README 核验 |
 | [Microsoft Agent Framework](microsoft-agent-framework.md) | platform | 是 | AutoGen 的继任者；Python / .NET / Go 上的生产级多 agent 工作流 | 已按仓库 README 与 AutoGen 维护模式声明核验 |
 | [DeepSeek Harness](deepseek-harness.md) | harness | 是 | 一切皆插件的 agent harness；连 agent 循环本身都能从配置里替换 | 已按仓库 README 与架构文档核验 |
-| [ZCode](zcode.md) | execution | 否 | 智谱的桌面 agentic 开发环境，GLM 优先，带长周期 "Goal" 任务 | 已按官网核验；第三方后端支持标注为"据报" |
+| [ZCode](zcode.md) | execution | 是（Apache-2.0，2026-09-20 起） | 智谱的桌面 agentic 开发环境，GLM 优先，带长周期 "Goal" 任务 | 已按官网核验；第三方后端支持标注为"据报" |
+| [CodeBuddy](codebuddy.md) | execution | 否 | 腾讯云的编程产品线（插件、CodeBuddy IDE、CodeBuddy Code CLI），Claude Code 式循环，跨厂商模型目录，带私有云版本 | 2026-10-30 按官方文档、npm 与定价页核验；"WorkBuddy 跑在其引擎上"标为推断 |
 | [WorkBuddy](workbuddy.md) | autonomous | 否 | 腾讯的桌面办公 agent，产出文档、幻灯片与表格 | 已按官方产品页核验；市场数字为二手 |
 | [Kimi Work](kimi-work.md) | autonomous | 否 | 月之暗面的桌面知识工作 agent，把 Kimi Code 的循环跑在你的文件和浏览器上 | 已按官方产品页核验 |
 | [AutoGPT](autogpt.md) | autonomous | 是 | 可视化 agent 搭建平台，带工作流和市场 | 已核验 |
@@ -168,6 +172,14 @@
 | [jcode](jcode.md) | harness 框架 / 编码 | 是 | Rust 多会话 coding harness——启动最快、provider 中立 OAuth、被动语义记忆 | 2026-07 核验（10.6k，从候补转正） |
 | [TrueForge](trueforge.md) | harness 框架 / 服务端 | 是 | harness 即服务端：一个循环挂在 HTTP API 后面，带目录化配置、沙箱即工具、审批、subagent，以及公开的成本 benchmark | 对照上游 README 与文档核验（2026-09 收录） |
 | [eve](eve.md) | 平台 / agent 框架 | 是 | Vercel 的文件系统优先 agent 框架——持久化执行、每 agent 沙箱、审批、subagent、evals、渠道适配 | 对照上游 README 与发布博文核验（2026-08 补漏收录） |
+| [Kimi Code](kimi-code.md) | execution | 是（MIT） | Moonshot AI 官方、Kimi 原生的终端 coding CLI（kimi-cli 继任者） | 已按仓库核验 |
+| [MiMoCode](mimocode.md) | execution | 是（MIT） | 小米官方的 MiMo 终端 coding agent，内置跨会话记忆 | 已按仓库核验 |
+| [Grok Build](grok-build.md) | execution | Apache-2.0（源码可见；不接受外部贡献） | SpaceXAI 官方的 Rust 终端 coding agent：全屏 TUI、headless CI 模式、ACP 编辑器服务 | 已按仓库核验 |
+| [CoStrict](costrict.md) | review-first 自动化 | 是（Apache-2.0） | Cline 血统的企业 coding agent，含严格标准化流程、AI 代码评审、私有化部署 | 已按仓库核验 |
+| [Open Code Review](open-code-review.md) | review-first 自动化 | 是（Apache-2.0） | 阿里的准确率优先代码评审 CLI：模型外面包确定性流水线，带 CI 与 agent 插件表面 | 已按仓库核验 |
+| [QM](qm.md) | harness 框架 / 多人协作 | 是（MIT） | Y Combinator 的多人协作 agent，跑在 Slack 和 web：按人和按房间分作用域、自托管、harness 无关 | 已按仓库核验 |
+| [Omnigent](omnigent.md) | harness 框架 / 元 harness | 是（Apache-2.0） | 元 harness，在一个会话里混用 Claude Code、Codex、Cursor、OpenCode、Hermes、Pi，带策略与云沙箱 | 已按仓库核验 |
+| [Langfuse](langfuse.md) | 观测 / 评估 | 开放内核（核心 MIT，`ee/` 为商业许可） | 开源的 agent 观测、评估与 prompt 管理（观察 agent，不运行 agent） | 已按仓库核验 |
 | [ChatGPT dots](chatgpt-dots.md) | 个人 agent | 否 | OpenAI 放在 ChatGPT 里的常驻 agent——GPT-6 Astra、自己的云电脑，可在 Slack、Teams 和电话里找到；仅限 Pro，欧洲不可用 | 2026-10-21 按一手页面核验 |
 | [Gemini Task](gemini-task.md) | 个人 agent | 否 | Gemini 应用的 agent 模式（原 Spark）——在 Google Workspace 与 Chrome 里定时干活，公开列出确认清单 | 2026-10-21 按一手页面核验 |
 | [Claude（Cowork）](claude-cowork.md) | 个人 agent | 否 | Cowork 已并入 Claude 应用——任务可定时、在隔离的云端会话里持续运行，三种命名清楚的审批模式 | 2026-10-21 按一手页面核验 |

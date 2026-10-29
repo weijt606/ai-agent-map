@@ -43,10 +43,12 @@ One-line take: Cursor is for teams that want an AI editor to span local coding, 
 
 ## Mid-2026 Updates
 
-The agent surface kept widening through the summer:
+The agent surface kept widening through the summer, and the autumn added two entries from this map's [market-events](../market-events.md) log:
 
 - **June 2026**: Design Mode in the Cursor browser (click, draw, or describe UI changes by voice for agents to apply); **Cursor for iOS** in public beta on all paid plans — always-on agents, Remote Control, live notifications, mobile review; Teams pricing reworked with a new Premium seat (5x the included usage of Standard at 3x the cost).
 - **July 2026 (v3.11, July 10)**: cloud-agent upgrades in the Agents Window — faster environment setup, reusable snapshots, and /in-cloud subagents for isolated parallel work; side chats and agent-transcript search; Bugbot reviews over 3x faster and 22% cheaper.
+- **August 27 2026**: [Gambit Security reported](https://gambit.security/blog-posts/aurora-ransomware-targets-esxi-abuses-cursor-agent-for-exploitation) an operator driving Cursor Agent (with Claude Sonnet underneath) through intrusion work inside ten victim organizations between April 8 and May 21 2026. The restraints in the recovered logs were the operator's, not the product's.
+- **October 22 2026**: Anthropic named Cursor among the more than 70 platforms that have integrated the Agent Skills standard since December 2025 (Anthropic's statement), as it donated the standard to the Agentic AI Foundation.
 
 Selection takeaway: Cursor is pushing hardest on "agents you carry with you" (mobile, cloud, always-on) — the editor is now one of several surfaces.
 

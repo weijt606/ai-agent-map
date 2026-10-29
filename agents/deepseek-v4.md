@@ -6,6 +6,8 @@
 
 One-line take: DeepSeek V4 is the MIT-licensed end of the open frontier — 1.6T parameters with 49B active, 1M context, 80.6 on SWE-bench Verified — and the licence is the point: its scores are reproducible by anyone with the GPUs.
 
+> **Point update (2026-10-17):** DeepSeek shipped **DeepSeek-V4.1-Flash-1017**, which it describes as stronger on benchmarks, faster and shorter in output than V4.1-Flash, "a Pareto improvement", with weights published. DeepSeek names [DeepSeek Harness](deepseek-harness.md) `v0.2.1-rc.1` or later as the client to use. This map has not recorded V4.1-Flash's own release date or numbers; the tables below are the V4 launch figures (April 24 2026). Source: [DeepSeek release note](https://api-docs.deepseek.com/news/news261017/).
+
 ## Quick Read
 
 | Item | Conclusion |
@@ -26,7 +28,7 @@ DeepSeek is also the vendor behind [DeepSeek Harness](deepseek-harness.md), whic
 
 ## When To Pick It
 
-- **MIT is a requirement.** This is the most permissive licence at this capability level; [Kimi K3](kimi-k3.md) ships a bespoke licence and [GLM-5.3](glm-5.md) is Apache-2.0.
+- **MIT is a requirement.** V4 ships under MIT; at this capability level [GLM-5.3](glm-5.md) is Apache-2.0, another standard permissive licence, and [Kimi K3](kimi-k3.md) ships a bespoke licence.
 - You want scores you can **reproduce rather than trust**. Open weights under MIT mean an independent lab with sufficient GPUs can re-run the evaluations — a materially different evidence position from a closed model's published table.
 - You need **long context cheaply**: DeepSeek's stated design goal is world-leading long context at drastically reduced compute and memory cost, via token-wise compression and DeepSeek Sparse Attention.
 - You want a smaller variant with the same lineage: **V4-Flash** is 284B total / 13B active, and DeepSeek reports its reasoning approaching Pro's when given a larger thinking budget.
@@ -57,7 +59,7 @@ Architecture notes from the model card: a mixture-of-experts design with hybrid 
 
 ## How To Read The SWE-bench Number
 
-80.6 on SWE-bench Verified is the highest figure in this map's model layer — and it is not directly comparable to the numbers next to it. Anthropic publishes **SWE-bench Pro** (81.2 for [Fable 5.1](claude-fable-5.md)), a harder variant, and OpenAI quotes **DeepSWE** (74.1 for [GPT-6 Astra](gpt-6-astra.md)) rather than SWE-bench Verified at all. Three vendors, three benchmarks, no like-for-like row. This map records each vendor's own number and refuses to build the comparison table that would imply they are the same measurement — which is the honest state of the evidence in September 2026.
+80.6 on SWE-bench Verified is the highest figure in this map's model layer — and it is not directly comparable to the numbers next to it. Anthropic publishes **SWE-bench Pro** (81.2 for [Fable 5.1](claude-fable-5.md)), a harder variant, and OpenAI quotes **DeepSWE** (74.1 for [GPT-6 Astra](gpt-6-astra.md)) rather than SWE-bench Verified at all. Three vendors, three benchmarks, no like-for-like row. This map records each vendor's own number and refuses to build the comparison table that would imply they are the same measurement — which was the honest state of the evidence when this section was written in September 2026.
 
 ## Bottom Line
 

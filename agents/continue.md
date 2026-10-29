@@ -52,4 +52,4 @@ Complexity is Medium. The tool itself is free, but you own the model layer — t
 
 ## Bottom Line
 
-Continue is the strongest open-source option for teams that want a coding assistant without vendor lock-in on the model layer. The trade-off is clear: you get full control, but you also own the configuration and model cost.
+Continue is a strong open-source option for teams that want a coding assistant without vendor lock-in on the model layer. The trade-off is clear: you get full control, but you also own the configuration and model cost.

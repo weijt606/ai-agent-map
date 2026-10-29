@@ -32,7 +32,7 @@ MemGPT is the research-paper design pattern (self-editing memory for LLMs). Lett
 
 ## When Not To Pick It
 
-- You already use LangGraph, CrewAI, or AutoGen and want to add a memory layer. Letta replaces your agent stack, not slots in beside it.
+- You already use LangGraph, CrewAI, or AutoGen (now [Microsoft Agent Framework](microsoft-agent-framework.md)) and want to add a memory layer. Letta replaces your agent stack, not slots in beside it.
 - You need multi-agent orchestration or visual debugging out of the box.
 - Your tasks are stateless and short-lived — everything fits in a single context window.
 - You want the simplest possible memory solution. Mem0 is lighter.

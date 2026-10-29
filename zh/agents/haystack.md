@@ -24,12 +24,14 @@
 - 你需要 RAG，支持可插拔 retriever、document store 和内置评估。
 - 你在意更低的框架开销（benchmark 中 ~5.9ms vs LangChain ~10ms）。
 - 你想要带工具调用和记忆的 agent 工作流，结构清晰。
+- 你需要通过 Hayhooks 把 pipeline 暴露成 HTTP 或 MCP 端点。
 
 ## 什么时候别选
 
 - 你需要最广的第三方生态——LangChain 的社区集成更多。
 - 你想要可视化 no-code 构建器。
 - 你的项目很简单，Haystack 的 pipeline 抽象杀鸡用牛刀。
+- 你只要纯托管方案，完全不想自托管。
 
 ## 能力侧写
 
@@ -40,6 +42,7 @@
 | Agent 工作流 | 强 | 工具调用和记忆 |
 | 评估 | 强 | 内置可观测性和评估 |
 | 模型无关 | 很强 | OpenAI、Anthropic、Mistral、Cohere、HuggingFace、Azure、Bedrock、本地 |
+| MCP / API 暴露 | 中 | 用 Hayhooks 暴露 HTTP 和 MCP 端点 |
 | 生态规模 | 中 | 比 LangChain 小 |
 
 ## 使用代价

@@ -21,7 +21,7 @@
 | 许可证 | Apache-2.0（一方代码）；vendored 三方代码沿用原许可证 |
 | 模型 | Grok——首次启动时浏览器 OAuth 登录 SpaceXAI 账号 |
 | 适合 | 已经在用 Grok 模型、想要一个快速的一方 TUI，并且要 headless CI 和编辑器（ACP）触达的开发者 |
-| 主要代价 | 才两周大且绑定厂商；顶着 OSS 许可证但你无法向上游贡献 |
+| 主要代价 | 2026 年 7 月中旬才公开，且绑定厂商；顶着 OSS 许可证但你无法向上游贡献 |
 | GitHub 仓库 | https://github.com/xai-org/grok-build |
 
 ## 什么时候选它
@@ -35,7 +35,7 @@
 
 - 你想拥有并改造这个循环——许可证允许你 fork，但开发是封闭的、这棵树只是 monorepo 的导出，所以你的改动会永远活在下游。要 fork 就归你，那是 [Pi](pi.md)、[jcode](jcode.md) 或 [OpenHands](openhands.md)。
 - 你把厂商中立当作核心价值。Grok Build 设计上就是登录 SpaceXAI 账号；如果你经常换模型，[Pi](pi.md)、[jcode](jcode.md) 或 [Aider](aider.md) 这种厂商无关的底座更稳。
-- 你今天就需要成熟稳定的界面——这个仓库才两周大，还在快速变动。
+- 你今天就需要成熟稳定的界面——这个仓库 2026 年 7 月中旬才公开，还在快速变动。
 - 你需要云端委派、定时后台运行或并行远端 agent——那是 [Codex](codex.md)、[Devin](devin.md) 或 [Claude Managed Agents](claude-managed-agents.md) 的地盘。
 
 ## 能力形态
@@ -52,11 +52,11 @@
 
 ## 血缘说明
 
-根据仓库自己的 `THIRD-PARTY-NOTICES` 以及 `xai-grok-tools` 里的 crate 级声明，Grok Build 带有 **[`openai/codex`](codex.md) 和 `sst/opencode` 工具实现的 in-tree 源码移植**，并附了 Apache §4(b) 的修改声明。在比较工具行为时这点值得知道：工具层不是净室设计，如果你用过 Codex，它的一些语义会让你觉得眼熟。
+根据仓库自己的 `THIRD-PARTY-NOTICES` 以及 `xai-grok-tools` 里的 crate 级声明，Grok Build 带有 **[`openai/codex`](codex.md) 和 `sst/opencode`（现为 [`anomalyco/opencode`](opencode.md)）工具实现的 in-tree 源码移植**，并附了 Apache §4(b) 的修改声明。在比较工具行为时这点值得知道：工具层不是净室设计，如果你用过 Codex，它的一些语义会让你觉得眼熟。
 
 ## 使用成本
 
-*用*起来复杂度低到中，*依赖*它则更高。安装是一行脚本（`curl -fsSL https://x.ai/cli/install.sh | bash`，Windows 用 PowerShell），macOS/Linux/Windows 都有预编译二进制，首次启动在浏览器里完成鉴权。从源码构建比大多数项目重：需要固定版本的 Rust 工具链，外加 **DotSlash** 来跑 hermetic 工具（`protoc`），根 `Cargo.toml` 是生成的、只读，而且 Windows 源码构建属于尽力而为。真正的战略成本是治理形态——一棵两周大、厂商控制、你无法贡献的树，所以每一处本地改动都是永久的下游 diff。
+*用*起来复杂度低到中，*依赖*它则更高。安装是一行脚本（`curl -fsSL https://x.ai/cli/install.sh | bash`，Windows 用 PowerShell），macOS/Linux/Windows 都有预编译二进制，首次启动在浏览器里完成鉴权。从源码构建比大多数项目重：需要固定版本的 Rust 工具链，外加 **DotSlash** 来跑 hermetic 工具（`protoc`），根 `Cargo.toml` 是生成的、只读，而且 Windows 源码构建属于尽力而为。真正的战略成本是治理形态——一棵 2026 年 7 月中旬才公开、厂商控制、你无法贡献的树，所以每一处本地改动都是永久的下游 diff。
 
 ## 结论
 

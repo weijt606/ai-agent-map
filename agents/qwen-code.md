@@ -12,7 +12,7 @@ One-line take: Qwen Code is the rare vendor CLI that is open at both ends — th
 | --- | --- |
 | Vendor | Alibaba / Qwen |
 | Route | Direct execution |
-| Repository | [`QwenLM/qwen-code`](https://github.com/QwenLM/qwen-code) — Apache-2.0, TypeScript, **27.7k stars** |
+| Repository | [`QwenLM/qwen-code`](https://github.com/QwenLM/qwen-code) — Apache-2.0, TypeScript, **28.8k stars** (2026-10-28) |
 | Open source | Yes (Apache-2.0), and so are the models |
 | Best for | Teams that want a vendor CLI without the vendor lock-in that usually comes with one |
 | Main cost | Smaller than the leading CLIs; the self-iterating development model is unusual and worth understanding |
@@ -23,7 +23,7 @@ One-line take: Qwen Code is the rare vendor CLI that is open at both ends — th
 
 This map's direct-execution route documents one vendor CLI per model family, and Alibaba's was missing. It also completes a pair: this map now profiles [Qwen3-Coder](qwen3-coder.md), the open-weights model, and this is the loop its vendor ships to run it.
 
-The interesting property is the combination. Every other first-party CLI here pairs an open or closed client with **closed** weights. Qwen Code is open on both sides, which makes "no vendor lock-in" a checkable claim rather than a slogan.
+The interesting property is the combination. Most first-party CLIs here pair an open or closed client with **closed** weights. Qwen Code is one of the few open on both sides (see also [DeepSeek Harness](deepseek-harness.md) + [DeepSeek V4](deepseek-v4.md), and [Kimi Code](kimi-code.md) + [Kimi K3](kimi-k3.md)), which makes "no vendor lock-in" a checkable claim rather than a slogan.
 
 ## When To Pick It
 
@@ -34,7 +34,7 @@ The interesting property is the combination. Every other first-party CLI here pa
 
 ## When Not To Pick It
 
-- You want the largest ecosystem. At 27.7k stars it is an order of magnitude below [OpenCode](opencode.md) and [Gemini CLI](gemini-cli.md); fewer third-party integrations target it.
+- You want the largest ecosystem. At 28.8k stars (2026-10-28) it is roughly a quarter of [Gemini CLI](gemini-cli.md) and an eighth of [OpenCode](opencode.md); fewer third-party integrations target it.
 - **The self-iterating development model matters to you.** The project states it uses its own agent and models to file issues, submit PRs, review code, and run tests. That is an interesting claim about agent maturity and a governance question about review depth — decide which reading you hold before adopting it.
 - You want a vendor-neutral project rather than a vendor's open project — that is [OpenCode](opencode.md).
 - Your model commitment is Claude or GPT and you want their tuned defaults.

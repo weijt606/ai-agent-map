@@ -52,4 +52,4 @@
 
 ## 最后一句
 
-Semantic Kernel 是微软世界里的 LangChain——类型安全、企业级、Azure 原生。如果你的团队写 C# 或 Java，它是 AI 编排的第一选择。
+Semantic Kernel 是微软世界里的 LangChain——类型安全、企业级、Azure 原生。如果你的团队写 C# 或 Java，它是 AI 编排的有力选择；如果是新的 .NET agent 项目，也值得评估一下 [Microsoft Agent Framework](microsoft-agent-framework.md)。

@@ -17,15 +17,15 @@
 | 开源 | 是 |
 | 实现 | TypeScript |
 | 许可 | MIT |
-| 模型 | MiMo Auto（限时免费、零配置通道）；小米 MiMo 平台；任意主流 LLM API |
+| 模型 | MiMo Auto（限时免费、零配置通道；2026-10-12 更新的 npm README 里仍有，主 README 已不再列出）；小米 MiMo 平台；任意主流 LLM API |
 | 适合谁 | 想要一个记忆优先、为单项目长程任务调优的 coding CLI 的开发者 |
-| 主要代价 | 全新（上线才几天）——功能面和稳定性还在快速变动 |
+| 主要代价 | 很新（2026 年 6 月上线）——功能面和稳定性还在快速变动 |
 | GitHub 仓库 | https://github.com/XiaomiMiMo/MiMo-Code |
 
 ## 什么时候选它
 
 - 你想要把持久项目记忆做成内置而不是插件：MiMoCode 维护项目 `MEMORY.md`、自动会话 checkpoint、scratch 笔记和按任务进度，恢复时通过 SQLite FTS5 检索重新注入。
-- 你想要零配置启动——内置的 **MiMo Auto** 通道限时免费、不需要 API key，如果你已经用 Claude Code，还能一步导入。
+- 你想要零配置启动——内置的 **MiMo Auto** 通道限时免费（以 npm README 为准，截至 2026-10-12）、不需要 API key，如果你已经用 Claude Code，还能一步导入。
 - 你的工作是长程会话，上下文重建（窗口满时从最新 checkpoint + 记忆重建上下文）比纯速度更重要。
 
 ## 什么时候不选
@@ -46,8 +46,8 @@
 
 ## 使用成本
 
-复杂度：低。安装是一行脚本或 `npm install -g @mimo-ai/cli`，首次启动会带你走完配置；MiMo Auto 暂时把 API key 这一步完全省掉。真正的成本是成熟度：这是个上线才几天的项目，记忆系统、agent 模式和 provider 方案都还在动。
+复杂度：低。安装是一行脚本或 `npm install -g @mimo-ai/cli`，首次启动会带你走完配置；MiMo Auto 暂时把 API key 这一步完全省掉。真正的成本是成熟度：这个项目 2026 年 6 月才上线，记忆系统、agent 模式和 provider 方案都还在动。
 
 ## 底线
 
-MiMoCode 是终端 coding agent 领域里"记忆优先"的那个——小米官方为 MiMo 模型出的 CLI，设计成让 agent 跨会话带着项目理解，而不是每次冷启动。如果单代码库的长程工作是你的痛点，又能接受全新工具，值得一看；如果你需要稳定性或厂商中立，[Aider](aider.md) 或 [Pi](pi.md) 更稳。别把它和 [CodeWhale](codewhale.md)（第三方 DeepSeek + MiMo TUI）搞混；想要 Moonshot 官方的 Kimi CLI，看 [Kimi Code](kimi-code.md)。
+MiMoCode 是终端 coding agent 领域里"记忆优先"的那个——小米官方为 MiMo 模型出的 CLI，设计成让 agent 跨会话带着项目理解，而不是每次冷启动。如果单代码库的长程工作是你的痛点，又能接受一个 2026 年 6 月才上线的新工具，值得一看；如果你需要稳定性或厂商中立，[Aider](aider.md) 或 [Pi](pi.md) 更稳。别把它和 [CodeWhale](codewhale.md)（第三方 DeepSeek + MiMo TUI）搞混；想要 Moonshot 官方的 Kimi CLI，看 [Kimi Code](kimi-code.md)。

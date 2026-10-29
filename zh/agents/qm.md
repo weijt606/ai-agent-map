@@ -21,7 +21,7 @@
 | harness | 可插拔——Pi、OpenCode、Codex、Claude Code 驱动同一个 core |
 | 表面 | Slack + web 应用，两边共享同一套身份和配置 |
 | 适合 | 想要一套自托管 agent 部署服务全公司、同时保证按人隔离、并由管理员统一设定安全姿态的创业公司或团队 |
-| 主要代价 | 才几天大；而且这是一套要运维的部署——Postgres、沙箱、连接器凭证，还得用你自己的云账号 |
+| 主要代价 | 2026 年 7 月底才公开；而且这是一套要运维的部署——Postgres、沙箱、连接器凭证，还得用你自己的云账号 |
 | GitHub 仓库 | https://github.com/yc-software/qm |
 
 ## 什么时候选它
@@ -37,7 +37,7 @@
 
 - 你想要一个终端 coding agent。QM 不是那个东西，它是那个东西*上面*那一层。循环本身请看 [Claude Code](claude-code.md)、[Codex](codex.md)、[Grok Build](grok-build.md) 或 [jcode](jcode.md)——顺带一提，QM 可以驱动其中好几个。
 - 你就一个人。多人那套机械——Postgres、作用域、keychain 视图、管理员姿态、按作用域的沙箱——在 n=1 时全是开销没有收益。[Pi](pi.md) 或 [OpenHands](openhands.md) 才是对的体量。
-- 你需要经过验证的东西。这个仓库才几天大；在你自己跑通之前，把所有运维层面的说法都当作未经核实。
+- 你需要经过验证的东西。这个仓库 2026 年 7 月底才公开；在你自己跑通之前，把所有运维层面的说法都当作未经核实。
 - 你需要把改动合回上游。见上面那条贡献说明——[OpenHands](openhands.md)、[Pi](pi.md)、[OpenHarness](openharness.md) 是收代码的。
 - 你想要一个带支持合同的托管产品。每套 QM 部署都跑在运维方自己的云账号里，而且初始化过程刻意不生成部署 CI。
 
@@ -52,7 +52,7 @@
 | skill 与共享 | 强 | 作用域拥有 skill、按授权分享、组织级推广需管理员批准、可从 git 导入 skill 包 |
 | 调度 | 强 | 按作用域的 cron 和 watch |
 | 常驻环境 | 强 | 每个作用域的沙箱是一台持久的电脑——装过的工具会一直在 |
-| 运维成熟度 | 未经验证 | 撰写时才几天大 |
+| 运维成熟度 | 未经验证 | 2026 年 7 月底公开；首次收录时（2026-08-05）才几天大 |
 
 ## 值得知道的架构
 
@@ -76,4 +76,4 @@ web UI、管理面板和公开门户都是 core 的 HTTP API 之上的**可选�
 
 ## 结论
 
-QM 是这张地图上第一个把"很多人、一套 agent 部署"当作设计问题本身、而不是事后补丁的项目，它给出的答案是作用域：按人和按房间隔离的状态与权限、一档由管理员设定的安全姿态、以及一个不关心循环由谁来跑的 core。它来得非常响——第一周大约 11.4k star、1.3k fork——但它才几天大，所以合理的读法是*架构有前途、运维未经验证*。想要一个自己拥有的单人循环，看 [Pi](pi.md)、[jcode](jcode.md) 或 [OpenHands](openhands.md)；这张地图上另一个元 harness——它优化的是"一个开发者在一个会话里混用多个 harness"而不是"一家公司共用一套部署"——见 [Omnigent](omnigent.md)。路线级的横向对比见 [agent harness 框架](../comparisons/agent-harness-frameworks.md)。
+QM 是这张地图上第一个把"很多人、一套 agent 部署"当作设计问题本身、而不是事后补丁的项目，它给出的答案是作用域：按人和按房间隔离的状态与权限、一档由管理员设定的安全姿态、以及一个不关心循环由谁来跑的 core。它来得非常响——第一周大约 11.4k star、1.3k fork——但它 2026 年 7 月底才公开，所以合理的读法是*架构有前途、运维未经验证*。想要一个自己拥有的单人循环，看 [Pi](pi.md)、[jcode](jcode.md) 或 [OpenHands](openhands.md)；这张地图上另一个元 harness——它优化的是"一个开发者在一个会话里混用多个 harness"而不是"一家公司共用一套部署"——见 [Omnigent](omnigent.md)。路线级的横向对比见 [agent harness 框架](../comparisons/agent-harness-frameworks.md)。

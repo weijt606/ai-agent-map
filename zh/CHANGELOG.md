@@ -4,6 +4,16 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-10-30 —— 收录 Google Antigravity 与腾讯 CodeBuddy，并对全图做了一次准确性审查
+
+两个此前只被顺带提到的编码产品有了自己的 profile，94 → 96：
+
+- **[Google Antigravity](agents/antigravity.md)** 进**编辑器中心**路线：谷歌的 agent 优先平台（agent 桌面应用、`agy` CLI、独立 IDE、六款编辑器扩展、Python SDK）共用一套 harness。写它的时候查出了这次审查最大的一处错误：**2026-06-18 起，谷歌已把免费档、Google One、AI Pro 和 AI Ultra 用户从 Gemini CLI 转到 Antigravity CLI**，而 [Gemini CLI](agents/gemini-cli.md) 的 profile 和几张对比页还在拿它的免费档当卖点。两处都已就地改正并加了带日期的说明；Antigravity CLI 在[终端编码 CLI 对比](comparisons/coding-cli-agents.md)里单独占一行。
+- **[CodeBuddy](agents/codebuddy.md)** 进**直接执行**路线：腾讯云的编程产品线（插件、CodeBuddy IDE、CodeBuddy Code CLI），和 [WorkBuddy](agents/workbuddy.md) 共用账号与 credit 余额。它闭源，没有可跟踪的仓库，所以不进热度榜。
+- 两者都在[能力矩阵](capabilities/matrix.md)里打了分。
+
+**审查**把每个 profile 和每张总览页对照 2026-10-28 快照、本图自己的市场事件记录重读了一遍，风险最高的几处再回厂商页面核对。就地改正的包括：仍把 Opus 5 写成 Claude Code 的默认（9 月 22 日起是 Opus 5.5，9 月 28 日起默认 Sonnet 是 Sonnet 5.5）；仍把 GPT-5.5 列为在 Codex 和 ChatGPT 里运行（10 月 14 日已下线）；把 Codex 默认写成 GPT-5.x；几处成本表已不再支持的"最便宜""唯一"；过时的 star 数和"才几天"之类的年龄说法；两个改了名的仓库（`trailhq/Trail-Code`、`openinterpreter/openinterpreter`）；agents 索引里缺的行（八个 profile 和观测路线）；六个 profile 英文有、中文缺的句子；以及一句自相矛盾的 Gemini 4 Argon 开放范围。
+
 ## 2026-10-28（稍后）—— 覆盖面缺口审计：五个本地图从没提过的大项目
 
 每周的新仓库扫描翻出了一批早已成形、各自超过 10 万 star 的仓库，它们在本地图里一处都没有出现：没有 profile，不在 catalog、候补名单或任何表格里。漏掉的原因是扫描只看*新近创建*的仓库。现收录其中五个，89 → 94：

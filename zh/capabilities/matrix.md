@@ -38,14 +38,15 @@
 | [MiMoCode](../agents/mimocode.md) | ● | ● | ● | ○ | — | ◐ | — | ○ | ◐ |
 | [CodeWhale](../agents/codewhale.md) | ● | ● | ○ | ○ | — | ◐ | — | ○ | ◐ |
 | [Grok Build](../agents/grok-build.md) | ● | ● | ○ | ◐ | — | ◐ | ○ | ◐ | ◐ |
+| [CodeBuddy](../agents/codebuddy.md) | ● | ● | ◐ | ◐ | ◐ | ◐ | ◐ | ● | ● |
 | [OpenCode](../agents/opencode.md) | ● | ● | ○ | ◐ | ○ | ◐ | — | ◐ | ● |
 | [Gemini CLI](../agents/gemini-cli.md) | ● | ● | ○ | ○ | — | ◐ | — | ◐ | ◐ |
 | [Qwen Code](../agents/qwen-code.md) | ● | ● | ◐ | ◐ | ◐ | ◐ | — | ● | ● |
 | [ZCode](../agents/zcode.md) | ● | ● | ◐ | ◐ | ◐ | ◐ | ○ | ● | ○ |
 
-看点：Claude Code 和 Codex 的**交互面**最广；Codex 在这组里唯一强在**多 agent**（并行云端 agent）；MiMoCode 和 Qwen Code 是把**记忆**当招牌的两个；Aider 在显式 diff 的**人工审批**上领先。Grok Build 是最新加入的一个，在厂商 CLI 里**工具调用** + **代码执行**这对组合最强（MCP、skills、插件、hooks、沙箱、工作区 checkpoint），但注意它的**部署控制**分数对应的是一棵源码可见、却不接受贡献的树。
+看点：Claude Code、Codex、Qwen Code 和 ZCode 在**交互面**上拿 ●；Codex 在这组里唯一强在**多 agent**（并行云端 agent）；MiMoCode 是唯一把**记忆**当招牌的（●）；Aider 在显式 diff 的**人工审批**上领先。Grok Build 是最新加入的一个，在厂商 CLI 里**工具调用** + **代码执行**这对组合最强（MCP、skills、插件、hooks、沙箱、工作区 checkpoint），但注意它的**部署控制**分数对应的是一棵源码可见、却不接受贡献的树。
 
-2026-09-06 新增四行，而真正把它们分开的那一列是**部署控制**。[OpenCode](../agents/opencode.md) 拿 ●，因为它是 MIT、且不属于任何模型厂商——这也正是别的 harness 愿意架在它上面的原因。[Qwen Code](../agents/qwen-code.md) 同样是 ●，并且是这一组里**交互面**最宽的一行（终端、IDE 插件、桌面、daemon 模式、SDK，以及四个 IM 平台），因为它的客户端*和*权重都开放，还能在运行时换厂商。[Gemini CLI](../agents/gemini-cli.md) 是 ◐：Apache-2.0 的客户端，但绑死一家的模型，而且限流的免费档对无人值守运行是实打实的约束。[ZCode](../agents/zcode.md) 是 ○——一个要对厂商服务做认证的桌面客户端（它的源码自 2026-09-20 起已是 Apache-2.0，本矩阵此前把它写成闭源；分数不变，因为一次源码发布本身并不给你一套可自托管的部署）——它也是这一组里**唯一不是终端 CLI** 的条目：它的主对象是一个长跑的 "Goal"，你从微信、飞书或 Telegram 上去看它，这也是为什么在**调度**上它是 ○，而那些终端循环干脆是 —。
+2026-09-06 新增四行，而真正把它们分开的那一列是**部署控制**。[OpenCode](../agents/opencode.md) 拿 ●，因为它是 MIT、且不属于任何模型厂商——这也正是别的 harness 愿意架在它上面的原因。[Qwen Code](../agents/qwen-code.md) 同样是 ●，并且是这一组里**交互面**最宽的一行（终端、IDE 插件、桌面、daemon 模式、SDK，以及四个 IM 平台），因为它的客户端*和*权重都开放，还能在运行时换厂商。[Gemini CLI](../agents/gemini-cli.md) 是 ◐：Apache-2.0 的客户端，但绑死一家的模型；2026-06-18 起它不再服务免费用户和 Google AI Pro/Ultra 订阅用户，谷歌把这批人迁到了 [Antigravity](../agents/antigravity.md) 的 CLI。[ZCode](../agents/zcode.md) 是 ○——一个要对厂商服务做认证的桌面客户端（它的源码自 2026-09-20 起已是 Apache-2.0，本矩阵此前把它写成闭源；分数不变，因为一次源码发布本身并不给你一套可自托管的部署）——它也是这一组里**唯一不是终端 CLI** 的条目：它的主对象是一个长跑的 "Goal"，你从微信、飞书或 Telegram 上去看它，这也是为什么在**调度**上它是 ○，而多数终端循环干脆是 —。
 
 ## 自己掌控循环的 harness 框架
 
@@ -62,7 +63,7 @@
 | [TrueForge](../agents/trueforge.md) | ● | ● | ○ | ● | ◐ | ● | — | ◐ | ● |
 | [DeepSeek Harness](../agents/deepseek-harness.md) | ● | ● | ○ | ● | ◐ | ● | — | ● | ● |
 
-看点：整条路线由**部署控制**定义（你拥有循环）。jcode 是唯一把**记忆**当招牌的 harness（被动语义图谱——见[记忆方案](../comparisons/memory-approaches.md)）；OpenHands 和 OpenHarness 的**编排**最重。
+看点：整条路线由**部署控制**定义（你拥有循环）。jcode 是单循环 harness 里唯一把**记忆**当招牌的（被动语义图谱，见[记忆方案](../comparisons/memory-approaches.md)；元 harness 那边的例子是下面的 QM）；单循环 harness 里，OpenHands 和 OpenHarness 的**编排**最重。
 
 两个元 harness 打分面很宽，因为它们补的正是单循环 harness 刻意不做的那一层——而且两者分得很干净。[QM](../agents/qm.md) 是这条路线上唯一把**记忆**、**调度**和**交付表面**同时做成核心的，因为每个作用域自带记忆、cron 以及 Slack/web 的存在感；它的**工具使用**故意只给 ◐（工具面小而固定，靠 skill 扩展而不是靠铺广度）。[Omnigent](../agents/omnigent.md) 则在**多 agent** 上领先——在一个会话里混用多个 harness，包括让一个去评审另一个——而两者都靠策略引擎（而不是逐次编辑弹窗）把**人工审批**做成核心。读这两行时请带上成熟度：QM 才几天大，Omnigent 自标 alpha，所以这些分反映的是它们声明的设计重心，不是实战验证过的行为。
 
@@ -76,6 +77,7 @@
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | [Cursor](../agents/cursor.md) | ● | ◐ | ○ | ◐ | ◐ | ◐ | ◐ | ● | ○ |
 | [Windsurf](../agents/windsurf.md) | ● | ◐ | ○ | ◐ | ○ | ◐ | ○ | ◐ | ○ |
+| [Google Antigravity](../agents/antigravity.md) | ● | ● | ○ | ● | ● | ◐ | ● | ● | ○ |
 | [Continue](../agents/continue.md) | ◐ | ○ | ○ | ○ | — | ◐ | — | ◐ | ◐ |
 | [Cline](../agents/cline.md) | ● | ● | ○ | ○ | — | ● | — | ◐ | ◐ |
 | [GitHub Copilot](../agents/github-copilot.md) | ● | ◐ | ○ | ◐ | ◐ | ◐ | ◐ | ● | ○ |
@@ -83,7 +85,7 @@
 | [Open Code Review](../agents/open-code-review.md) | ● | — | — | ● | ◐ | ◐ | ○ | ● | ● |
 | [Froge Code](../agents/froge-code.md) | ● | ● | ○ | ● | ◐ | ● | — | ○ | ◐ |
 
-看点：Cline 和 CoStrict 把**人工审批**当作全部重点；CoStrict 是这组里唯一在**部署控制**（私有化、本地部署）和**编排**（需求→评审的标准化流程）上都强的。
+看点：Cline 和 CoStrict 把**人工审批**当作全部重点；**部署控制**拿 ● 的是 CoStrict 和 Open Code Review 两个（CoStrict 是私有化、本地部署）；**编排**拿 ● 的是 CoStrict、Open Code Review 和 Froge Code（CoStrict 靠的是需求→评审的标准化流程）。
 
 [Open Code Review](../agents/open-code-review.md) 在这一组里形状特别，值得仔细读：它在代码执行和记忆上是 **—**，因为它从不运行你的代码，除了可续跑的会话之外也不保留状态；人工审批只给 **◐**，不是因为把人晾在一边，而是因为它根本没有"审批闸口"可给——它只留评论然后停下。它的**编排** ● 对一个评审工具来说很反常，而这恰恰就是产品本身：确定性的文件选择、打包成并发子 agent、以及包在模型外面的规则匹配。它的**交付表面** ● 覆盖一个 CLI、四套 CI 系统，以及 Claude Code、Codex、Cursor、OpenCode 的插件。
 
@@ -170,7 +172,7 @@
 | [GenericAgent](../agents/generic-agent.md) | ● | ● | ● | ○ | — | ○ | — | ○ | ● |
 | [ml-intern](../agents/ml-intern.md) | ● | ● | ○ | ◐ | — | ○ | — | ○ | ● |
 
-看点：Hermes 是全图覆盖面最广的单个 profile——几乎每个维度都强。Mercury 把招牌级**人工审批**和**调度**配在一起（权限硬化、常驻）；OpenHuman 把**记忆** + **调度**做成了生活集成的闭环。
+看点：Hermes 与 [QM](../agents/qm.md)、[eve](../agents/eve.md) 并列全图覆盖面最广的单个 profile（各有七个 ●），几乎每个维度都强。Mercury 把招牌级**人工审批**和**调度**配在一起（权限硬化、常驻）；OpenHuman 把**记忆** + **调度**做成了生活集成的闭环。
 
 [WorkBuddy](../agents/workbuddy.md) 与 [Kimi Work](../agents/kimi-work.md) 是本矩阵里第一批桌面知识工作 agent，两行打分几乎一致，是有原因的：它们就是同一套循环，只不过指向文档而不是代码仓库。两者在**编排**、**多 agent**、**调度**上都是 ●——多个专职 agent 并行处理同一个目标，按 cron 或在厂商云里全天候跑——而两者在**人工审批**与**部署控制**上都是 ○，这才是诚实的代价。它们是闭源客户端，握着对你文件系统的授权访问，在 Kimi Work 的情形里还握着一个你已经登录的浏览器，而且没有任何有文档的逐动作闸门。这两行上其他每一个 ●，都要透过那两个 ○ 来读。
 

@@ -28,7 +28,7 @@ First, GLM is the model under [ZCode](zcode.md), and this map profiles the produ
 
 ## When To Pick It
 
-- You want **Apache-2.0**. Among the open frontier models here, this is the cleanest licence — [Kimi K3](kimi-k3.md) ships a bespoke licence and [DeepSeek V4](deepseek-v4.md) is MIT.
+- You want **Apache-2.0**. Among the open frontier models here it is one of two standard permissive licences, alongside [DeepSeek V4](deepseek-v4.md)'s MIT; [Kimi K3](kimi-k3.md) ships a bespoke licence.
 - **Coding is the whole job.** Zhipu positions 5.3 as the most capable open-weights model for coding, claiming a 50% improvement over 5.2 on their in-house Z.ai Code Bench and open-source state of the art on Terminal Bench 3.0 and Agents' Last Exam.
 - You need long context that holds up: 5.2 introduced what Zhipu calls a *solid* 1M-token context, with IndexShare reusing one indexer across every four sparse attention layers to cut per-token FLOPs 2.9x at 1M.
 - You want to tune spend per task — 5.2 added multiple thinking-effort levels.
@@ -60,4 +60,4 @@ This map does not editorialize about whether that is good. It records the select
 
 ## Bottom Line
 
-For a coding agent on self-hosted weights under a standard licence, GLM-5.3 is the strongest case on this map. Treat the in-house benchmark claims as claims, and treat the cyber capability as a live governance decision rather than a footnote — it is the first time this map has had to write that sentence about an openly downloadable model.
+For a coding agent on self-hosted weights under a standard licence, GLM-5.3 is a strong option on this map, on Zhipu's numbers. Treat the in-house benchmark claims as claims, and treat the cyber capability as a live governance decision rather than a footnote — it is the first time this map has had to write that sentence about an openly downloadable model.

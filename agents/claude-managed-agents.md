@@ -4,7 +4,9 @@
 [![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](claude-managed-agents.md)
 [![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-One-line take: this is the repository label for Anthropic's managed and cloud-style Claude execution paths, not a single sharply bounded product name.
+One-line take: Claude Managed Agents is a named Anthropic API product (in beta): a pre-built, configurable agent harness that runs in managed infrastructure, for long-running and asynchronous work.
+
+> **Correction (2026-10-30):** this profile called "Claude Managed Agents" a repository label for several Anthropic execution paths rather than a product name. Anthropic's docs now describe it as a product in its own right: "Pre-built, configurable agent harness that runs in managed infrastructure", built around agents, environments (an Anthropic-managed cloud sandbox or a self-hosted sandbox), sessions and events, behind the `managed-agents-2026-04-01` beta header and enabled by default for API accounts. It is not eligible for Zero Data Retention or HIPAA BAA coverage. Source: [Claude Managed Agents overview](https://platform.claude.com/docs/en/managed-agents/overview).
 
 ## Quick Read
 
@@ -14,8 +16,8 @@ One-line take: this is the repository label for Anthropic's managed and cloud-st
 | Route | Managed and cloud execution workflow |
 | Open source | No |
 | Best for | Scheduled, background, and programmatic Claude execution |
-| Main cost | The public product boundary is spread across multiple concepts |
-| Official website | https://code.claude.com/docs/en/agent-sdk/overview |
+| Main cost | Beta (`managed-agents-2026-04-01` header); sessions are stateful and stored server-side, so it is not eligible for Zero Data Retention or HIPAA BAA |
+| Official website | https://platform.claude.com/docs/en/managed-agents/overview |
 
 ## When To Pick It
 
@@ -25,9 +27,9 @@ One-line take: this is the repository label for Anthropic's managed and cloud-st
 
 ## When Not To Pick It
 
-- You want one clearly named product with one obvious operator surface.
+- You need Zero Data Retention or HIPAA BAA coverage; Managed Agents is not eligible for either.
 - You want highly interactive local coding collaboration.
-- You need an open-source or self-hosted path.
+- You need an open-source path. Self-hosted sandboxes exist, but the harness and the model stay Anthropic's.
 
 ## Capability Shape
 
@@ -41,7 +43,7 @@ One-line take: this is the repository label for Anthropic's managed and cloud-st
 
 ## Operating Cost
 
-Complexity is Medium. The difficult part is not capability, but naming and mental model: this is better understood as a family of Anthropic execution modes than as one button-like product.
+Complexity is Medium. The difficult part is not capability but the data and lifecycle model: sessions, environments and their stored history are server-side resources you create, steer and delete through the API.
 
 ## Bottom Line
 

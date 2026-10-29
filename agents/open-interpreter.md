@@ -16,7 +16,7 @@ One-line take: Open Interpreter lets LLMs execute code directly on your machine 
 | Best for | Developers who want LLMs to run Python, JS, and Shell directly on their machine with no file-size or time restrictions |
 | Main cost | Code runs unsandboxed on your real machine — every command is a real operation |
 | Official website | https://www.openinterpreter.com |
-| GitHub repo | https://github.com/openinterpreter/open-interpreter |
+| GitHub repo | https://github.com/openinterpreter/openinterpreter |
 
 ## When To Pick It
 

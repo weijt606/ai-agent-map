@@ -46,4 +46,4 @@
 
 ## 底线
 
-GenericAgent 填上 map 当前缺的一块：从小种子里自演进出来的自主 agent，而不是预加载的自主 agent。如果在研究这个模式，或者想要一份能完全掌控的小型代码库，GenericAgent 是当前最强候选。如果是主流生产用途，AutoGPT 或 Agent Zero 仍然更稳。
+GenericAgent 填上 map 当前缺的一块：从小种子里自演进出来的自主 agent，而不是预加载的自主 agent。如果在研究这个模式，或者想要一份能完全掌控的小型代码库，GenericAgent 是一个很强的候选。如果是主流生产用途，AutoGPT 或 Agent Zero 仍然更稳。

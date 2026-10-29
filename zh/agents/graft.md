@@ -26,7 +26,7 @@
 | 语言 | 23 种——九种全保真（TS/JS、Python、Go、Java、Kotlin、PHP、Swift、R），十四种到「符号 + 调用边」精度；另有可选 LSP 层拿编译器级精度的边 |
 | 最适合 | 仓库够大、agent 每次任务的开销主要花在重新认路、又希望产物本身可读的团队 |
 | 主要代价 | 0.x 且迭代很快；图谱是每个人各自重建的本地缓存；`init` 可能写入机器级的 Codex 配置 |
-| GitHub 仓库 | https://github.com/trailhq/Graft |
+| GitHub 仓库 | https://github.com/trailhq/Trail-Code |
 
 ## 什么时候选它
 

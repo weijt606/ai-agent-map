@@ -23,7 +23,7 @@ That question is no longer the useful one. The better question is: which operati
 | Async delegation into cloud execution | [Codex](../agents/codex.md) |
 | Strongest OpenAI model for agentic coding | [GPT-6 Astra](../agents/gpt-6-astra.md) |
 | Strongest Claude model, for the tasks that justify metered credits | [Claude Fable 5.1](../agents/claude-fable-5.md) |
-| One Claude model to run an agent all day without watching a credit meter | [Claude Opus 5](../agents/claude-opus-5.md) |
+| One Claude model to run an agent all day without watching a credit meter (Claude Code's default is now Opus 5.5, since Sept 22; Opus 5 is the previous default) | [Claude Opus 5](../agents/claude-opus-5.md) |
 | I already use Claude Code and want teams, skills, and stronger orchestration | [oh-my-claudecode](../agents/oh-my-claudecode.md) |
 | I already use Codex CLI and want teams, hooks, and persistent workflow state | [oh-my-codex](../agents/oh-my-codex.md) |
 | Google-managed GitHub-connected cloud delegation | [Jules](../agents/jules.md) |
@@ -55,13 +55,13 @@ That question is no longer the useful one. The better question is: which operati
 
 | Route | Representative projects | What it feels like |
 | --- | --- | --- |
-| Local collaboration | [Claude Code](../agents/claude-code.md), [Aider](../agents/aider.md), [Kimi Code](../agents/kimi-code.md), [MiMoCode](../agents/mimocode.md), [CodeWhale](../agents/codewhale.md) | High interaction, fast iteration, strong operator feel |
-| Workflow layer on top of a base agent | [oh-my-claudecode](../agents/oh-my-claudecode.md), [oh-my-codex](../agents/oh-my-codex.md) | Keep Claude Code or Codex as the execution engine and add reusable orchestration on top |
-| Editor-centric AI workflow | [Cursor](../agents/cursor.md), [Windsurf](../agents/windsurf.md) | Keep the editor central and make the IDE itself part of the agent choice |
+| Local collaboration | [Claude Code](../agents/claude-code.md), [Aider](../agents/aider.md), [Kimi Code](../agents/kimi-code.md), [MiMoCode](../agents/mimocode.md), [CodeWhale](../agents/codewhale.md), [OpenCode](../agents/opencode.md), [Gemini CLI](../agents/gemini-cli.md) / [Google Antigravity](../agents/antigravity.md), [Qwen Code](../agents/qwen-code.md), [CodeBuddy](../agents/codebuddy.md), [Grok Build](../agents/grok-build.md), [ZCode](../agents/zcode.md) | High interaction, fast iteration, strong operator feel |
+| Workflow layer on top of a base agent | [oh-my-claudecode](../agents/oh-my-claudecode.md), [oh-my-codex](../agents/oh-my-codex.md), [Ruflo](../agents/ruflo.md), [Orca](../agents/orca.md), [Paperclip](../agents/paperclip.md) | Keep Claude Code or Codex as the execution engine and add reusable orchestration on top (Orca and Paperclip coordinate several different agents at once) |
+| Editor-centric AI workflow | [Cursor](../agents/cursor.md), [Windsurf](../agents/windsurf.md), [Continue](../agents/continue.md), [Google Antigravity](../agents/antigravity.md) | Keep the editor central and make the IDE itself part of the agent choice |
 | Cloud delegation | [Codex](../agents/codex.md), [Devin](../agents/devin.md), [Jules](../agents/jules.md) | Assign work, come back later, review the result |
 | Managed background path | [Claude Managed Agents](../agents/claude-managed-agents.md) | Scheduled or detached Anthropic workflows |
-| Review-first automation | [Cline](../agents/cline.md), [GitHub Copilot](../agents/github-copilot.md), [Froge Code](../agents/froge-code.md), [Open Code Review](../agents/open-code-review.md) | Keep humans central while still using powerful agent workflows (Open Code Review is the review-only end — it comments, it never lands changes) |
-| Own-the-loop harness | [jcode](../agents/jcode.md), [OpenHands](../agents/openhands.md) | Keep the vendor product out — you own the loop, tools, and permissions (see the [harness comparison](../comparisons/agent-harness-frameworks.md)) |
+| Review-first automation | [Cline](../agents/cline.md), [GitHub Copilot](../agents/github-copilot.md), [Froge Code](../agents/froge-code.md), [CoStrict](../agents/costrict.md), [Open Code Review](../agents/open-code-review.md) | Keep humans central while still using powerful agent workflows (Open Code Review is the review-only end — it comments, it never lands changes) |
+| Own-the-loop harness | [Pi](../agents/pi.md), [jcode](../agents/jcode.md), [DeepSeek Harness](../agents/deepseek-harness.md), [OpenHands](../agents/openhands.md), [mini-swe-agent](../agents/mini-swe-agent.md), [OpenHarness](../agents/openharness.md) | Keep the vendor product out — you own the loop, tools, and permissions (see the [harness comparison](../comparisons/agent-harness-frameworks.md)) |
 | Meta-harness over several loops | [Omnigent](../agents/omnigent.md), [QM](../agents/qm.md) | You already run more than one harness and want one place for approval, spend, sandboxing, and session continuity |
 | Build / self-host | [OpenHands](../agents/openhands.md), [Goose](../agents/goose.md), [Hermes Agent](../agents/hermes-agent.md), [LangChain](../agents/langchain.md), [LangGraph](../agents/langgraph.md) | More flexibility, more environment and operations cost |
 
@@ -73,10 +73,10 @@ That question is no longer the useful one. The better question is: which operati
 | Aider | Terminal-first pair programming stays close to git | You still own model setup and terminal ergonomics |
 | Claude Managed Agents | Better fit for scheduled and background Anthropic workflows | Product boundary is not represented by one simple public page |
 | Codex | Strong isolation and review evidence | Less immediate than editor-native pair programming |
-| GPT-6 Astra | OpenAI's current ceiling; agentic execution, computer and browser use | $10/$50 and doubles past 272k input tokens; the public version refuses part of its cybersecurity capability |
-| Claude Fable 5.1 | SWE-bench Pro 81.2 and the cheapest cache read on the map ($0.25/M) | $10/$50 on metered credits rather than bundled |
-| Claude Opus 5 | Half the ceiling's price, 1M context as default and maximum, Claude Code's default | Behind Mythos on cybersecurity; fully proprietary |
-| GPT-5.5 | Highest agentic coding benchmarks at its April 2026 launch, 1M context | Two generations back; kept as the lineage reference |
+| GPT-6 Astra | OpenAI's current ceiling; agentic execution, computer and browser use | $10/$50, repricing to $20/$75 past 272k input tokens; the public version refuses part of its cybersecurity capability |
+| Claude Fable 5.1 | SWE-bench Pro 81.2 and a cache read of $0.25/M, 4× below GPT-6 Astra's $1/M | $10/$50 on metered credits rather than bundled |
+| Claude Opus 5 | Half the ceiling's price, 1M context as default and maximum; Claude Code's default Opus until Opus 5.5 replaced it on Sept 22 | Behind Mythos on cybersecurity; fully proprietary |
+| GPT-5.5 | Highest agentic coding benchmarks at its April 2026 launch, 1M context | Retired from Codex and ChatGPT for ChatGPT sign-in on Oct 14 2026; kept as the lineage reference |
 | oh-my-claudecode | Claude Code gains teams, reusable skills, and richer runtime control | You add another workflow layer and still depend on Claude Code |
 | oh-my-codex | Codex gets a clearer clarify-plan-execute operating model | More setup, more ceremony, and the best path usually involves tmux |
 | Cursor | One polished surface for editor, delegation, and integrations | Broad product surface and a clearly closed-source boundary |

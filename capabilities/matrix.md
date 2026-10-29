@@ -38,14 +38,15 @@ This is rolling out in phases; [jcode](../agents/jcode.md)'s memory cell is work
 | [MiMoCode](../agents/mimocode.md) | ● | ● | ● | ○ | — | ◐ | — | ○ | ◐ |
 | [CodeWhale](../agents/codewhale.md) | ● | ● | ○ | ○ | — | ◐ | — | ○ | ◐ |
 | [Grok Build](../agents/grok-build.md) | ● | ● | ○ | ◐ | — | ◐ | ○ | ◐ | ◐ |
+| [CodeBuddy](../agents/codebuddy.md) | ● | ● | ◐ | ◐ | ◐ | ◐ | ◐ | ● | ● |
 | [OpenCode](../agents/opencode.md) | ● | ● | ○ | ◐ | ○ | ◐ | — | ◐ | ● |
 | [Gemini CLI](../agents/gemini-cli.md) | ● | ● | ○ | ○ | — | ◐ | — | ◐ | ◐ |
 | [Qwen Code](../agents/qwen-code.md) | ● | ● | ◐ | ◐ | ◐ | ◐ | — | ● | ● |
 | [ZCode](../agents/zcode.md) | ● | ● | ◐ | ◐ | ◐ | ◐ | ○ | ● | ○ |
 
-Standouts: Claude Code and Codex are the broadest **delivery surfaces**; MiMoCode and Qwen Code are the entries treating **memory** as a headline feature; Aider leads on explicit-diff **human approval**. Grok Build is the strongest **tool use** + **code execution** pairing among the vendor CLIs (MCP, skills, plugins, hooks, sandboxing, workspace checkpoints), but note its **deployment control** score reflects a source-available tree that does not accept contributions.
+Standouts: Claude Code, Codex, Qwen Code and ZCode take ● on **delivery surfaces**; MiMoCode is the only entry with **memory** as a headline (●); Codex is the only ● on **multi-agent** (parallel cloud agents); Aider leads on explicit-diff **human approval**. Grok Build is the strongest **tool use** + **code execution** pairing among the vendor CLIs (MCP, skills, plugins, hooks, sandboxing, workspace checkpoints), but note its **deployment control** score reflects a source-available tree that does not accept contributions.
 
-Four entries were added on 2026-09-06 and they split the route along **deployment control**, which is the column that actually separates them. [OpenCode](../agents/opencode.md) takes ● because it is MIT and belongs to no model vendor — the reason other harnesses build on it. [Qwen Code](../agents/qwen-code.md) also takes ●, and is the widest row here on **delivery surfaces** (terminal, IDE plugins, desktop, daemon mode, SDKs, and four IM platforms) because the client *and* the weights are open and it switches providers at runtime. [Gemini CLI](../agents/gemini-cli.md) is ◐: an Apache-2.0 client bound to one vendor's models, with a rate-limited free tier that is a genuine constraint on unattended runs. [ZCode](../agents/zcode.md) is ○ — a desktop client that authenticates against the vendor's service (its source has been Apache-2.0 since 2026-09-20, which this matrix previously described as closed; the score is unchanged because the source drop does not by itself give you a self-hosted deployment) — and is the one entry in this group that is **not a terminal CLI**: its primary object is a long-running "Goal" you check on from WeChat, Feishu, or Telegram, which is why it scores ○ on **scheduling** where the terminal loops score — at all.
+Four entries were added on 2026-09-06 and they split the route along **deployment control**, which is the column that actually separates them. [OpenCode](../agents/opencode.md) takes ● because it is MIT and belongs to no model vendor — the reason other harnesses build on it. [Qwen Code](../agents/qwen-code.md) also takes ●, and is the widest row here on **delivery surfaces** (terminal, IDE plugins, desktop, daemon mode, SDKs, and four IM platforms) because the client *and* the weights are open and it switches providers at runtime. [Gemini CLI](../agents/gemini-cli.md) is ◐: an Apache-2.0 client bound to one vendor's models; since 2026-06-18 it no longer serves free or Google AI Pro/Ultra users, whom Google moved to [Antigravity](../agents/antigravity.md)'s CLI. [ZCode](../agents/zcode.md) is ○ — a desktop client that authenticates against the vendor's service (its source has been Apache-2.0 since 2026-09-20, which this matrix previously described as closed; the score is unchanged because the source drop does not by itself give you a self-hosted deployment) — and is the one entry in this group that is **not a terminal CLI**: its primary object is a long-running "Goal" you check on from WeChat, Feishu, or Telegram, which is why it scores ○ on **scheduling** where most terminal loops score —.
 
 ## Own-The-Loop Harness Frameworks
 
@@ -62,7 +63,7 @@ Four entries were added on 2026-09-06 and they split the route along **deploymen
 | [TrueForge](../agents/trueforge.md) | ● | ● | ○ | ● | ◐ | ● | — | ◐ | ● |
 | [DeepSeek Harness](../agents/deepseek-harness.md) | ● | ● | ○ | ● | ◐ | ● | — | ● | ● |
 
-Standouts: the whole route is defined by **deployment control** (you own the loop). jcode is the only harness with **memory** as a headline (passive semantic graph — see [memory approaches](../comparisons/memory-approaches.md)); OpenHands and OpenHarness carry the most **orchestration**.
+Standouts: the whole route is defined by **deployment control** (you own the loop). jcode is the only single-loop harness with **memory** as a headline (passive semantic graph — see [memory approaches](../comparisons/memory-approaches.md); QM, below, is the meta-harness case); among the single-loop harnesses, OpenHands and OpenHarness carry the most **orchestration**.
 
 The two meta-harnesses score wide because they add the layer the single-loop harnesses deliberately leave out — and they split cleanly. [QM](../agents/qm.md) is the only entry on this route with **memory**, **scheduling**, and **delivery surfaces** all as core, because each scope owns its own memory, crons, and Slack/web presence; its **tool use** is deliberately ◐ (a small fixed tool surface, extended through skills rather than breadth). [Omnigent](../agents/omnigent.md) instead leads on **multi-agent** — mixing several harnesses in one session, including having one review another — and both make **human approval** core through policy engines rather than per-edit prompts. Read both marks with their maturity in mind: QM is days old and Omnigent is self-declared alpha, so these reflect stated design centers, not field-proven behavior.
 
@@ -76,6 +77,7 @@ The two meta-harnesses score wide because they add the layer the single-loop har
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | [Cursor](../agents/cursor.md) | ● | ◐ | ○ | ◐ | ◐ | ◐ | ◐ | ● | ○ |
 | [Windsurf](../agents/windsurf.md) | ● | ◐ | ○ | ◐ | ○ | ◐ | ○ | ◐ | ○ |
+| [Google Antigravity](../agents/antigravity.md) | ● | ● | ○ | ● | ● | ◐ | ● | ● | ○ |
 | [Continue](../agents/continue.md) | ◐ | ○ | ○ | ○ | — | ◐ | — | ◐ | ◐ |
 | [Cline](../agents/cline.md) | ● | ● | ○ | ○ | — | ● | — | ◐ | ◐ |
 | [GitHub Copilot](../agents/github-copilot.md) | ● | ◐ | ○ | ◐ | ◐ | ◐ | ◐ | ● | ○ |
@@ -83,7 +85,7 @@ The two meta-harnesses score wide because they add the layer the single-loop har
 | [Open Code Review](../agents/open-code-review.md) | ● | — | — | ● | ◐ | ◐ | ○ | ● | ● |
 | [Froge Code](../agents/froge-code.md) | ● | ● | ○ | ● | ◐ | ● | — | ○ | ◐ |
 
-Standouts: Cline and CoStrict make **human approval** the whole point; CoStrict is the only one here strong on **deployment control** (private, on-prem) and **orchestration** (a standardized requirement→review workflow).
+Standouts: Cline and CoStrict make **human approval** the whole point; CoStrict and Open Code Review are the two ● on **deployment control** (private, on-prem for CoStrict); CoStrict, Open Code Review and Froge Code take ● on **orchestration** (for CoStrict, a standardized requirement→review workflow).
 
 [Open Code Review](../agents/open-code-review.md) is the odd shape in this group and worth reading carefully: it scores **—** on code execution and memory because it never runs your code and keeps no state beyond a resumable session, and only **◐** on human approval — not because humans are sidelined, but because it has no approval gate to offer: it comments and stops. Its **orchestration** ● is unusual for a review tool and is the actual product — deterministic file selection, bundling into concurrent sub-agents, and rule matching wrapped around the model. Its **delivery surfaces** ● covers a CLI, four CI systems, and plugins for Claude Code, Codex, Cursor, and OpenCode.
 
@@ -170,7 +172,7 @@ Standouts: this group is glue, so the shape is lopsided. n8n leads on **scheduli
 | [GenericAgent](../agents/generic-agent.md) | ● | ● | ● | ○ | — | ○ | — | ○ | ● |
 | [ml-intern](../agents/ml-intern.md) | ● | ● | ○ | ◐ | — | ○ | — | ○ | ● |
 
-Standouts: Hermes is the broadest single profile on this map — strong on nearly every dimension. Mercury pairs headline **human approval** with **scheduling** (permission-hardened, always-on); OpenHuman turns **memory** + **scheduling** into a life-integration loop.
+Standouts: Hermes is tied with [QM](../agents/qm.md) and [eve](../agents/eve.md) as the broadest single profile on this map (seven ● each) — strong on nearly every dimension. Mercury pairs headline **human approval** with **scheduling** (permission-hardened, always-on); OpenHuman turns **memory** + **scheduling** into a life-integration loop.
 
 [WorkBuddy](../agents/workbuddy.md) and [Kimi Work](../agents/kimi-work.md) are the first desktop knowledge-work agents in this matrix, and they score almost identically for a reason: they are the same loop pointed at documents instead of repositories. Both take ● on **orchestration**, **multi-agent**, and **scheduling** — parallel specialists on one goal, running on a cron or in the vendor's cloud around the clock — and both take ○ on **human approval** and **deployment control**, which is the honest cost. These are closed clients holding authorized access to your filesystem, and in Kimi Work's case a browser you are already logged into, with no documented per-action gate. Every other ● on those two rows should be read through that ○.
 

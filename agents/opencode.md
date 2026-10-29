@@ -4,7 +4,7 @@
 [![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](opencode.md)
 [![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-One-line take: OpenCode is the largest vendor-neutral open-source coding agent — 205k stars under MIT — and this map has been quietly referencing it as an integration target in five other profiles without ever writing one for it.
+One-line take: OpenCode is the largest vendor-neutral open-source coding agent — 222k stars (2026-10-28) under MIT — and this map has been quietly referencing it as an integration target in five other profiles without ever writing one for it.
 
 ## Quick Read
 
@@ -12,7 +12,7 @@ One-line take: OpenCode is the largest vendor-neutral open-source coding agent �
 | --- | --- |
 | Vendor | Anomaly Co (community project) |
 | Route | Direct execution |
-| Repository | [`anomalyco/opencode`](https://github.com/anomalyco/opencode) — MIT, TypeScript, **205k stars** |
+| Repository | [`anomalyco/opencode`](https://github.com/anomalyco/opencode) — MIT, TypeScript, **222k stars** (2026-10-28) |
 | Open source | Yes (MIT) |
 | Best for | A terminal coding agent that belongs to no model vendor |
 | Main cost | You choose and pay for the model; no vendor is optimizing the loop for their own weights |
@@ -30,7 +30,7 @@ That is worth naming as a failure mode: a project can become load-bearing in a m
 ## When To Pick It
 
 - **You want vendor neutrality at the loop level.** [Claude Code](claude-code.md), [Codex](codex.md), [Gemini CLI](gemini-cli.md), [Kimi Code](kimi-code.md), and [Qwen Code](qwen-code.md) are all first-party tools whose defaults follow their vendor's model. OpenCode's incentive is different because its authors do not sell a model.
-- You want a **large, actively developed** open-source agent rather than a lean one — at 205k stars it is one of the biggest agent repositories in existence, and it was still shipping the day this profile was written.
+- You want a **large, actively developed** open-source agent rather than a lean one — at 222k stars (2026-10-28) it is one of the biggest agent repositories in existence, and it was still shipping the day this profile was written.
 - You want **installation to be someone else's problem**: curl script, npm, Homebrew, Scoop, Chocolatey, pacman/AUR, mise, and Nix are all first-class.
 - You want a **GUI option without leaving the project** — the desktop app ships as `.dmg`, `.exe`, `.deb`, `.rpm`, and `.AppImage`, though it is explicitly beta.
 - You are building something on top of it: the integrations listed above mean the ecosystem already expects it.

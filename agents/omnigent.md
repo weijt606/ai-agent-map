@@ -6,7 +6,7 @@
 
 One-line take: Omnigent is an open-source **meta-harness** — one orchestration layer over Claude Code, Codex, Cursor, OpenCode, Hermes, Pi, and agents you define yourself, so you can mix several harnesses inside a single session, move that session between terminal, browser, phone, and desktop, run it in a disposable cloud sandbox, and put approval and spend policies in front of all of it.
 
-> **Alpha, and it says so.** The repository badges its own status as `alpha`. The surface area is unusually large for a project two months old — nine sandbox providers, half a dozen harnesses, a desktop app — so treat breadth as intent rather than as settled behavior, and pin versions.
+> **Alpha, and it says so.** The repository badges its own status as `alpha`. The surface area is unusually large for a project public only since June 2026 — nine sandbox providers, half a dozen harnesses, a desktop app — so treat breadth as intent rather than as settled behavior, and pin versions.
 
 ## Quick Read
 

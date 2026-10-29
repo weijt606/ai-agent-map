@@ -24,7 +24,7 @@ One-line take: TrueForge is an agent harness you **deploy and call over HTTP** r
 | Isolation | Sandbox-as-a-tool (Daytona today, more providers stated as planned), provisioned only when needed; secrets stay in the harness |
 | Deployment | Local mode (one process, SQLite, `npx`) or hosted mode (Postgres + Redis; Docker Compose, Helm, or Railway), with optional OIDC |
 | Best for | A team putting an agent behind their own product, who want the loop, sandbox, and approvals as infrastructure they run |
-| Main cost | Six weeks public and still on 0.x release candidates; the contributor base is almost entirely one company |
+| Main cost | Public since late July 2026 and still on 0.x release candidates; the contributor base is almost entirely one company |
 | GitHub repo | https://github.com/truefoundry/trueforge |
 
 ## When To Pick It

@@ -14,38 +14,41 @@
 
 - **编辑器中心表面** —— [Cursor](../agents/cursor.md)、[Windsurf](../agents/windsurf.md)、[Continue](../agents/continue.md)（编辑器本身是 agent，而不是终端）。
 - **云端委派 / 托管执行** —— [Devin](../agents/devin.md)、[Jules](../agents/jules.md)、[Claude Managed Agents](../agents/claude-managed-agents.md)（你交出去再回来查，不是前台循环）。
-- **可 fork 自有的 harness 框架** —— [Pi](../agents/pi.md)、[jcode](../agents/jcode.md)、[OpenHands](../agents/openhands.md)、[SWE-agent](../agents/swe-agent.md)（见 [agent harness 框架对比](agent-harness-frameworks.md)）。Pi 和 jcode 都是终端优先、能写代码，但它们的价值是拥有循环，而不是采用一个厂商产品。
+- **桌面任务表面** —— [ZCode](../agents/zcode.md)（属于直接执行型，但它是图形界面，不是终端循环）。
+- **可 fork 自有的 harness 框架** —— [Pi](../agents/pi.md)、[jcode](../agents/jcode.md)、[OpenHands](../agents/openhands.md)、[SWE-agent](../agents/swe-agent.md)、[mini-swe-agent](../agents/mini-swe-agent.md)、[OpenHarness](../agents/openharness.md)、[DeepSeek Harness](../agents/deepseek-harness.md)（见 [agent harness 框架对比](agent-harness-frameworks.md)）。Pi 和 jcode 都是终端优先、能写代码，但它们的价值是拥有循环，而不是采用一个厂商产品。
 
 ## 一页对比
 
 | 项目 | 厂商 | 模型（默认） | 语言 / 许可 | 最擅长的一件事 |
 | --- | --- | --- | --- | --- |
 | [Claude Code](../agents/claude-code.md) | Anthropic | Claude（Opus / Sonnet） | 闭源 | 参考实现——最深的 IDE/桌面/web 触达，最丰富的 skills + 插件生态 |
-| [Codex](../agents/codex.md) | OpenAI | GPT-5.x | CLI 开源 | 在同一产品表面把终端循环和隔离云端委派、并行 agent 结合 |
-| [OpenCode](../agents/opencode.md) | Anomaly Co（社区） | 自带 | TypeScript / MIT | 体量最大的厂商中立循环——20.5 万 star，也是别的 harness 架在上面的那个 |
-| [Gemini CLI](../agents/gemini-cli.md) | 谷歌 | Gemini 3 | TypeScript / Apache-2.0 | 够干活的免费档——每天 1,000 次请求——且内置谷歌搜索接地 |
+| [Codex](../agents/codex.md) | OpenAI | GPT-6.1 Sol（`rust-v0.159.1` 起的打包默认） | CLI 开源 | 在同一产品表面把终端循环和隔离云端委派、并行 agent 结合 |
+| [OpenCode](../agents/opencode.md) | Anomaly Co（社区） | 自带 | TypeScript / MIT | 体量最大的厂商中立循环，22.2 万 star（2026-10-28），也是别的 harness 架在上面的那个 |
+| [Gemini CLI](../agents/gemini-cli.md) | 谷歌 | Gemini 3 | TypeScript / Apache-2.0 | 开源循环，内置谷歌搜索接地；2026-06-18 起服务 Code Assist 标准版/企业版许可与付费 API key，不再服务免费用户和 Google AI Pro/Ultra 订阅用户 |
+| [Antigravity CLI](../agents/antigravity.md)（`agy`） | 谷歌 | Gemini（付费档可用 Claude） | Go / 闭源（CLI 仓库只有文档） | 谷歌在 2026-06-18 把 Gemini CLI 个人用户迁到这里：免费档按周给额度，2026-11-02 起只剩 Gemini，和 Antigravity 应用共用；条款禁止从第三方 agent 驱动它 |
 | [Qwen Code](../agents/qwen-code.md) | 阿里 / Qwen | Qwen（可运行时切换） | TypeScript / Apache-2.0 | 客户端与权重*都*开放，能说 OpenAI/Anthropic/Gemini/本地协议 |
 | [Aider](../agents/aider.md) | 开源 | 自带模型 | Python / Apache-2.0 | 以 git 为中心、显式 diff、完全的模型自由 |
-| [Kimi Code](../agents/kimi-code.md) | Moonshot AI | Kimi（K2） | TypeScript / MIT | 第一方 Kimi 循环，通过 ACP + VS Code 插件有强 IDE 触达 |
+| [Kimi Code](../agents/kimi-code.md) | Moonshot AI | Kimi | TypeScript / MIT | 第一方 Kimi 循环，通过 ACP + VS Code 插件有强 IDE 触达 |
+| [CodeBuddy Code](../agents/codebuddy.md) | 腾讯云 | 跨厂商内置目录（点名混元/Hy3、DeepSeek），或任意 OpenAI 格式端点 | 闭源（压缩打包代码附一份 MIT 文本） | 同一个 CLI 覆盖国际版、国内版、专有云和私有化部署，与插件和 IDE 共用账号 |
 | [MiMoCode](../agents/mimocode.md) | 小米 | MiMo（MiMo Auto） | TypeScript / MIT | 内置持久跨会话记忆——跨多次运行保留项目理解 |
 | [CodeWhale](../agents/codewhale.md) | codewhale-hq（社区） | 任意——40 多条 provider 路线，默认 DeepSeek | Rust / 开源 | Claude Code 形态，自 Hmbown → codewhale-hq 搬家后 provider 中立；起步时只支持 DeepSeek |
 | [Grok Build](../agents/grok-build.md) | SpaceXAI / xAI | Grok | Rust / Apache-2.0（源码可见） | 一个二进制覆盖三种模式——全屏 TUI、headless CI、以及编辑器可驱动的 ACP server |
 
-> 厂商官方 CLI（Claude Code、Codex、Kimi Code、MiMoCode、Grok Build）把模型和循环一起调优。第三方/社区 CLI（Aider、CodeWhale）用这点换取可移植性或特定的成本/模型目标。
+> 厂商官方 CLI（Claude Code、Codex、Gemini CLI、Antigravity CLI、Qwen Code、Kimi Code、MiMoCode、Grok Build）把模型和循环一起调优。第三方/社区 CLI（OpenCode、Aider、CodeWhale）用这点换取可移植性或特定的成本/模型目标。
 >
 > **这里的"开源"不是一回事。** Aider（Apache-2.0）、Kimi Code 和 MiMoCode（MIT）接受外部贡献。[Grok Build](../agents/grok-build.md) 发的是 Apache-2.0 源码，但它是 SpaceXAI monorepo 的周期性导出，而且**明确不接受外部贡献**——你可以读、可以 fork，但无法合回上游。
 
 ## 怎么选
 
-1. **从你想跑的模型出发。** 如果你绑定某厂商的模型，它的第一方 CLI 通常是调得最好的路径：Claude → [Claude Code](../agents/claude-code.md)，GPT-5.x → [Codex](../agents/codex.md)，Gemini → [Gemini CLI](../agents/gemini-cli.md)，Kimi → [Kimi Code](../agents/kimi-code.md)，Qwen → [Qwen Code](../agents/qwen-code.md)，MiMo → [MiMoCode](../agents/mimocode.md)，Grok → [Grok Build](../agents/grok-build.md)，想省钱跑 DeepSeek/MiMo → [CodeWhale](../agents/codewhale.md)。如果你**没有**绑定，[OpenCode](../agents/opencode.md) 是厂商中立的默认，[Gemini CLI](../agents/gemini-cli.md) 是那个免费档真能干活的。
+1. **从你想跑的模型出发。** 如果你绑定某厂商的模型，它的第一方 CLI 通常是调得最好的路径：Claude → [Claude Code](../agents/claude-code.md)，GPT → [Codex](../agents/codex.md)，Gemini → 个人谷歌账号用 [Antigravity CLI](../agents/antigravity.md)，有 Code Assist 标准版/企业版许可或付费 API key 用 [Gemini CLI](../agents/gemini-cli.md)，Kimi → [Kimi Code](../agents/kimi-code.md)，Qwen → [Qwen Code](../agents/qwen-code.md)，MiMo → [MiMoCode](../agents/mimocode.md)，Grok → [Grok Build](../agents/grok-build.md)，想省钱跑 DeepSeek/MiMo → [CodeWhale](../agents/codewhale.md)。如果你**没有**绑定，[OpenCode](../agents/opencode.md) 是厂商中立的默认。Gemini CLI 的免费档已经不是个人用户的路径：谷歌把这批用户迁到了 [Antigravity CLI](../agents/antigravity.md)，它的免费档按周给额度、不公布具体数字，2026-11-02 起只剩 Gemini 模型。
 2. **如果模型自由比调优更重要，** 选 provider 中立的底座：要成品 CLI 就用 [Aider](../agents/aider.md)，想拥有循环就上 [Pi](../agents/pi.md) harness。
 3. **如果单仓库长程记忆是痛点，** [MiMoCode](../agents/mimocode.md) 内置的跨会话记忆是最清晰的差异点；否则给任意 CLI 配上 [CodeGraph](../agents/codegraph.md) 或 [Graft](../agents/graft.md) 做代码上下文索引。
 4. **如果你需要云端委派或后台运行，** 这些前台循环都不合适——去 [Codex](../agents/codex.md)（云端那侧）、[Jules](../agents/jules.md) 或 [Devin](../agents/devin.md)。
 
-## 三个别搞混的点
+## 四个别搞混的点
 
 - **厂商 CLI 不只是一个模型端点。** Claude Code、Kimi Code、MiMoCode 把 agent 循环、工具和 prompt 围绕自家模型调优——这就是它相对于"拿通用 harness 指向同一个 API"的价值。
-- **MiMoCode 不是 [CodeWhale](../agents/codewhale.md)。** MiMoCode 是小米第一方 CLI；CodeWhale 是包装 DeepSeek + MiMo 的社区 Rust TUI。它们共享一个模型家族，不共享代码库。
+- **MiMoCode 不是 [CodeWhale](../agents/codewhale.md)。** MiMoCode 是小米第一方 CLI；CodeWhale 是社区维护、provider 中立的 Rust TUI（默认 DeepSeek），起步时是 DeepSeek + MiMo 的包装。它们共享一个模型家族，不共享代码库。
 - **Apache-2.0 不等于社区共建。** [Grok Build](../agents/grok-build.md) 顶着一个真实的开源许可证，但那棵树不接受贡献、且从私有 monorepo 同步而来。如果你选开源是为了对路线图有影响力、而不只是读和 fork 的权利，那要看的是贡献政策，不是 LICENSE 文件。
 - **coding CLI 不是 harness。** 如果你想端到端 fork、审计、拥有循环，那是 [Pi](../agents/pi.md) / [OpenHands](../agents/openhands.md) 的领地，而不是一个照单全收的厂商产品。
 

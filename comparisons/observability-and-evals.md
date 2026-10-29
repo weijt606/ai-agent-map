@@ -25,11 +25,11 @@ Most teams need tracing on day one, evaluation by the time they have real users,
 
 ## The Field
 
-Star counts and licenses checked **2026-07-29** against each project's own repository.
+Star counts and licenses checked **2026-07-29** against each project's own repository. Langfuse's count is refreshed from this map's **2026-10-28** snapshot; the other projects' stars have not been re-checked since 2026-07-29.
 
 | Project | Open source? | License | Stars | Self-host | Shape |
 | --- | --- | --- | --: | --- | --- |
-| **[Langfuse](../agents/langfuse.md)** | Open core | MIT + EE | 32.0k | Free, unlimited | The OSS default — tracing + evals + prompt management in one self-hostable platform |
+| **[Langfuse](../agents/langfuse.md)** | Open core | MIT + EE | 36.6k (2026-10-28) | Free, unlimited | The OSS default — tracing + evals + prompt management in one self-hostable platform |
 | **Comet Opik** | Yes | Apache-2.0 | 20.9k | Yes | The closest fully-permissive rival; strong eval focus, backed by Comet |
 | **Arize Phoenix** | **No — source-available** | **Elastic 2.0** | 10.8k | Yes | Strong tracing and drift analysis, but the license is not OSI-approved |
 | **Traceloop / OpenLLMetry** | Yes | Apache-2.0 | 7.3k | Yes | OpenTelemetry-native instrumentation layer; thinner UI, cleanest standards story |

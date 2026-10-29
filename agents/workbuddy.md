@@ -34,7 +34,7 @@ Tencent positions it as an all-scenario AI office workstation covering daily wor
 
 ## When Not To Pick It
 
-- **You are choosing a coding agent.** For repositories, everything else on this map is a better starting point — including Tencent's own CodeBuddy, which this map does not yet profile.
+- **You are choosing a coding agent.** For repositories, everything else on this map is a better starting point — including Tencent's own [CodeBuddy](codebuddy.md), which shares an account and credit balance with WorkBuddy.
 - **You care about reading what it does.** Closed source, running with authorized access to local files, is a materially different governance position from the open harnesses here. That is a real trade, not a formality — see [observability and evals](../comparisons/observability-and-evals.md) for what you lose when the log is not yours.
 - You need it outside mainland Chinese platforms. The integrations, the model choices, and the support are built for that market.
 - You want model transparency: the product surfaces let you switch between several large models, but which one runs a given step is not something the product page pins down.

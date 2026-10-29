@@ -13,7 +13,7 @@ One-line take: CodeGraph is a local code knowledge graph plus MCP server — it 
 | Vendor | colbymchenry (open source) |
 | Route | Runtime and tools — code knowledge graph / agent context layer |
 | Open source | Yes (MIT) |
-| Best for | Teams using [Claude Code](claude-code.md), [Cursor](cursor.md), [Codex](codex.md) CLI, opencode, or [Hermes Agent](hermes-agent.md) who want measurably cheaper code exploration |
+| Best for | Teams using [Claude Code](claude-code.md), [Cursor](cursor.md), [Codex](codex.md) CLI, [OpenCode](opencode.md), Gemini, [AntiGravity](antigravity.md), Kiro, or [Hermes Agent](hermes-agent.md) who want measurably cheaper code exploration |
 | Main cost | An extra indexing layer to keep in sync; payoff scales with codebase size and exploration frequency |
 | GitHub repo | https://github.com/colbymchenry/codegraph |
 

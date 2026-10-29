@@ -36,7 +36,7 @@ Astra is also the first release on this map where the *public* version of a fron
 
 - **Your work touches offensive security or adjacent research.** The generally available version rejects certain cybersecurity prompts outright. Expanded capability runs through Daybreak Blue approval, the same gate GPT-5.6-Cyber landed behind in August 2026.
 - Your prompts routinely exceed **272k input tokens** — past that threshold input doubles to $20/M and output rises to $75/M. A long-context agent loop can cross that line without anyone deciding to.
-- You are cost-sensitive: [GPT-5.6 Terra](gpt-5.5.md) at $2/$12 and Luna at $0.20/$1.20 do ordinary agent work at a fraction of the price, and the tier ladder is still the OpenAI-side lever.
+- You are cost-sensitive: GPT-6.1 Sol at $2/$10, GPT-6.1 Terra at $1/$5 and GPT-6 Luna at $0.10/$0.50 ([cost & benchmarks](../comparisons/cost-and-benchmarks.md)) do ordinary agent work at a fraction of the price, and the tier ladder is still the OpenAI-side lever.
 - You want open weights, self-hosting, or a model you can pin indefinitely.
 
 ## Capability Shape
@@ -52,11 +52,15 @@ Astra is also the first release on this map where the *public* version of a fron
 
 **Sourcing note.** Two things to flag. OpenAI's launch materials quote **DeepSWE v1.1**, not SWE-bench Verified, so there is no like-for-like SWE-bench comparison against Claude at launch — this map does not manufacture one, and where you see Astra-vs-Fable SWE-bench tables elsewhere, check whether the numbers came from the vendors or from a third-party leaderboard. Separately, `openai.com` was not directly reachable when this profile was written: the **prices and the two-band short/long-context structure below are first-party** (OpenAI's API pricing page), while the **272k threshold, the ~1.05M window, and the 128k max output are from secondary reporting** and are marked as such wherever they appear.
 
-## Price Structure (first-party, September 2026)
+## Price Structure (first-party, October 2026)
 
 | Tier | Short context in / out | Long context in / out | Cached input |
 | --- | --- | --- | --- |
 | **GPT-6 Astra** | $10 / $50 | $20 / $75 | $1 |
+| GPT-6 Sol (Sept 22) | $2 / $10 | — | $0.20 |
+| GPT-6.1 Sol (Sept 29) | $2 / $10 | — | $0.10 |
+| GPT-6.1 Terra (Oct 26) | $1 / $5 | $2 / $7.50 past 272k input tokens | $0.05 |
+| GPT-6 Luna (Sept 22) | $0.10 / $0.50 | — | $0.01 |
 | GPT-5.6 Sol | $4 / $20 | $8 / $30 | — |
 | GPT-5.6 Terra | $2 / $12 | $4 / $18 | — |
 | GPT-5.6 Luna | $0.20 / $1.20 | $0.40 / $1.80 | — |
@@ -71,12 +75,12 @@ Three things worth carrying into a budget:
 
 - **ChatGPT** — paid tiers, in the restricted public version.
 - **API** — with the pricing structure above.
-- **Codex** — see the [Codex profile](codex.md) for the product boundary; the model under it moved to the GPT-5.6 family in July and Astra is the current ceiling above it.
+- **Codex** — see the [Codex profile](codex.md) for the product boundary. Astra was Codex CLI's bundled default from Sept 4 (`rust-v0.153.4`) until `rust-v0.159.1` (Sept 29) switched the default to GPT-6.1 Sol.
 - Staged rollout ran from a limited partner preview (Sept 3) to paid users (Sept 4), then broader API and cloud availability.
 
 ## Relationship To GPT-5.6 And GPT-5.5
 
-[GPT-5.5](gpt-5.5.md) remains in this map as the spring 2026 reference point, and its profile carries the model-lineage table. The short version: GPT-5.5 (April) → GPT-5.6 Sol/Terra/Luna (July 9) → GPT-6 Astra (September 3). The tiered family did not go away when Astra shipped — it is still the cost-controlled path, and Sol's promotional $4/$20 runs to at least November 21 2026.
+[GPT-5.5](gpt-5.5.md) remains in this map as the spring 2026 reference point, and its profile carries the model-lineage table. The short version: GPT-5.5 (April) → GPT-5.6 Sol/Terra/Luna (July 9) → GPT-6 Astra (September 3) → GPT-6 Sol and Luna (September 22) → GPT-6.1 Sol (September 29) → GPT-6.1 Terra (October 26). The tiered family did not go away when Astra shipped — the GPT-6 and GPT-6.1 tiers are now the cost-controlled path, the GPT-5.6 tiers are still priced, and Sol's promotional $4/$20 runs to at least November 21 2026.
 
 ## Bottom Line
 

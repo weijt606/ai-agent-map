@@ -24,6 +24,7 @@
 - 你需要按 key 和按团队的预算控制，实时成本追踪。
 - 你想要跨 provider 的负载均衡、限流、fallback 和重试。
 - 你需要可观测性——导出到 Langfuse、Prometheus、OpenTelemetry。
+- 你需要用虚拟 API key 做团队管理。
 
 ## 什么时候别选
 

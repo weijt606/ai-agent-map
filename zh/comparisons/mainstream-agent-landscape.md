@@ -8,6 +8,8 @@
 
 每一行只回答一件事：它更适合拿来解决什么问题。
 
+这张表没有收进每一个 profile。有几条路线另有专门的对比页，就留在那边：9 月以来补进的终端编码 CLI，比如 [OpenCode](../agents/opencode.md)、[Gemini CLI](../agents/gemini-cli.md)、[Qwen Code](../agents/qwen-code.md) 和 [Google Antigravity](../agents/antigravity.md) 的 CLI，见[终端编码 CLI 对比](coding-cli-agents.md)；[Pi](../agents/pi.md)、[TrueForge](../agents/trueforge.md) 和几个元 harness 见 [agent harness 框架对比](agent-harness-frameworks.md)；消费级个人 agent 见[个人 agent 对比](personal-agents.md)；[Langfuse](../agents/langfuse.md) 见[观测与评估](observability-and-evals.md)。skills 框架、较新的编排层（[Ruflo](../agents/ruflo.md)、[Orca](../agents/orca.md)、[Paperclip](../agents/paperclip.md)）以及其余项目，按路线列在 [agents 目录](../agents/README.md)里。
+
 ## 一页式横向对比
 
 | 项目 | 路线 | 运行位置 | 操作节奏 | 最适合 | 主要代价 |
@@ -17,20 +19,20 @@
 | [Claude Managed Agents](../agents/claude-managed-agents.md) | 管理式自动化路径 | Anthropic 管理式 / 云端执行 | 后台、定时、程序化 | 想把 Claude 跑成后台工作流 | 官方公开边界分散在多个概念里 |
 | [Codex](../agents/codex.md) | 云端委派型 coding agent | 云端隔离环境 + CLI / IDE | 异步委派 | 想丢任务、等结果、看日志和测试证据 | 本地即时协作感弱一些 |
 | [Kimi Code](../agents/kimi-code.md) | 厂商官方终端 coding CLI | 本地终端、ACP 编辑器、VS Code | 高交互 | Kimi 原生的编码循环，IDE/ACP 触达强 | 正从旧版 kimi-cli 迁移中 |
-| [MiMoCode](../agents/mimocode.md) | 记忆优先的终端 coding CLI | 本地终端 | 高交互、长程 | 跨会话记忆重要的单仓库工作 | 上线才几天，表面还在快速变 |
+| [MiMoCode](../agents/mimocode.md) | 记忆优先的终端 coding CLI | 本地终端 | 高交互、长程 | 跨会话记忆重要的单仓库工作 | 2026-06-10 才上线，表面还在快速变 |
 | [CodeWhale](../agents/codewhale.md) | provider 中立的终端 coding agent（起步时只支持 DeepSeek） | 本地终端（Rust TUI） | 高交互 | 在 40 多条 provider 路线或本地模型上跑 Claude Code 循环，默认 DeepSeek | 社区项目；循环质量跟着你接进去的模型走 |
 | [DeepSeek Harness](../agents/deepseek-harness.md) | 插件组合式 agent harness | Web UI、headless、JSON-RPC SDK、ACP server | 组合并打补丁，而不是 fork | 想替换循环里某一个零件、又不想拥有全部的团队 | developer preview；明说会有破坏兼容性的变更 |
 | [ZCode](../agents/zcode.md) | 桌面 agentic 开发环境 | macOS / Windows / Linux 桌面 + IM 远程操控 | 长周期目标，远程查看进度 | GLM 优先、想要任务面而非编辑器的团队 | 自 2026-09-20 起源码以 Apache-2.0 开放（本表此前写作闭源）；最深的能力绑在智谱自家模型上 |
 | [WorkBuddy](../agents/workbuddy.md) | 桌面办公 agent | 桌面、网页、微信小程序、企业入口 | 交付一份可验收的办公成品 | 中国企业协作栈里的非工程工作 | 闭源，且带授权访问本地文件 |
 | [Kimi Work](../agents/kimi-work.md) | 桌面知识工作 agent | macOS / Windows 桌面 + 浏览器扩展 | 落在本地文件与实时网页上的常驻自动化 | 重复发生的"调研到交付物"工作 | 驱动你已登录的浏览器；闭源 |
-| [GPT-6 Astra](../agents/gpt-6-astra.md) | 前沿 agentic 模型 | ChatGPT、Codex、API | OpenAI 当前天花板，2026-09-03 | 想要最强 OpenAI 模型、且能接受其边界的 agent builder | $10/$50，输入超 272k token 后翻倍；公开版本会拒绝一部分网安能力 |
-| [Claude Fable 5.1](../agents/claude-fable-5.md) | 前沿 agentic 模型 | Claude Code、Claude.ai、API | Anthropic 当前天花板，2026-09-01 | 最难任务值得按量花钱的团队 | $10/$50 按额度计费；缓存读 $0.25/M，本地图最便宜 |
-| [Claude Opus 5](../agents/claude-opus-5.md) | 前沿 agentic 模型（默认档） | Claude Code、Claude.ai、Claude Cowork、API | 你实际在跑的那一档 | 想用一个模型把 agent 跑一整天、不盯额度表的人 | $5/$25；网安上落后于 Mythos；完全闭源 |
+| [GPT-6 Astra](../agents/gpt-6-astra.md) | 前沿 agentic 模型 | ChatGPT、Codex、API | OpenAI 当前天花板，2026-09-03 | 想要最强 OpenAI 模型、且能接受其边界的 agent builder | $10/$50，输入超 272k token 后整个请求按 $20/$75 计价；公开版本会拒绝一部分网安能力 |
+| [Claude Fable 5.1](../agents/claude-fable-5.md) | 前沿 agentic 模型 | Claude Code、Claude.ai、API | Anthropic 当前天花板，2026-09-01 | 最难任务值得按量花钱的团队 | $10/$50 按额度计费；缓存读 $0.25/M，是 GPT-6 Astra（$1/M）的四分之一 |
+| [Claude Opus 5](../agents/claude-opus-5.md) | 前沿 agentic 模型（上一任默认档） | Claude Code、Claude.ai、Claude Cowork、API | 9 月 22 日之前是 Claude Code 的默认 Opus，此后由 Opus 5.5 接替（9 月 28 日默认 Sonnet 也换成了 Sonnet 5.5） | 想用一个模型把 agent 跑一整天、不盯额度表的人 | $5/$25；网安上落后于 Mythos；完全闭源 |
 | [Kimi K3](../agents/kimi-k3.md) | 开放权重 agentic 模型 | 自托管，或月之暗面自家入口 | 在自己手里的权重上拿到前沿能力 | 需要上限但不想路径上有闭源厂商的团队 | 2.8T 参数是集群；自定义许可 |
 | [GLM-5.3](../agents/glm-5.md) | 开放权重 agentic 模型 | 自托管、Z.ai API、ZCode | 在标准宽松许可下跑编码 agent | 有 Apache-2.0 硬要求、做长周期编码 | 厂商自测 benchmark；不设闸的网安能力要你自己定政策 |
 | [DeepSeek V4](../agents/deepseek-v4.md) | 开放权重 agentic 模型 | 自托管、DeepSeek API | 前沿规模上的宽松许可 | 有 MIT 硬要求、需要可复现评测 | Pro 是 1.6T 参数；模型内无视觉 |
 | [Qwen3-Coder](../agents/qwen3-coder.md) | 开放权重 agentic 模型 | 自托管；Qwen Code、Cline、Claude Code | 塞进你已有的硬件 | 本地、隔离网、或有成本上限的部署 | 不是开放档的上限；许可按 checkpoint 而异 |
-| [GPT-5.5](../agents/gpt-5.5.md) | 前沿 agentic 模型（参照） | ChatGPT、Codex、API、GitHub Copilot | 2026 春季参照点 | 想理清 OpenAI 模型血统的读者 | 已被接棒两次；作血统参照保留，不建议用于新项目 |
+| [GPT-5.5](../agents/gpt-5.5.md) | 前沿 agentic 模型（参照） | API、用 API key 登录的 Codex、GitHub Copilot | 2026 春季参照点 | 想理清 OpenAI 模型血统的读者 | 2026-10-14 起从 Codex 与 ChatGPT 下线（限 ChatGPT 账号登录）；作血统参照保留，不建议用于新项目 |
 | [oh-my-claudecode](../agents/oh-my-claudecode.md) | 工作流 / orchestration layer | Claude Code 插件、终端、tmux | session 内驱动 + 编排侧流程 | 已经在用 Claude Code，想补上 skills、teams 和更强运行控制 | 前提是你本来就接受 Claude Code 这层基础表面 |
 | [oh-my-codex](../agents/oh-my-codex.md) | 工作流 / orchestration layer | Codex CLI、本地终端、tmux | 本地工作流标准化 | 已经在用 Codex，想补上 teams、hooks 和持久会话状态 | 流程会更厚，而且最好跑在 macOS / Linux + tmux |
 | [Cursor](../agents/cursor.md) | AI 编辑器 / agent 平台 | 编辑器、CLI、cloud、web、mobile | 编辑器中心，可延伸后台委派 | 想把编码和委派收进一个打磨完整的表面 | 产品边界很宽，可能超过一些团队真实需要 |
@@ -74,7 +76,7 @@
 | [mini-swe-agent](../agents/mini-swe-agent.md) | 极简 SWE harness | 本地 Python | fork-and-modify | 一次看完整个 agent loop、改任何想改的部分 | 故意做得很轻——工具、UI 和可运维性自己补 |
 | [OpenHarness](../agents/openharness.md) | 生产形态开源 harness | 本地 CLI / TUI | 按子系统逐个可审计 | 自托管一个带权限、skills、MCP 的生产级 harness | 比 mini-swe-agent 重；价值取决于你是否真的用上更宽的功能 |
 | [Grok Build](../agents/grok-build.md) | 厂商官方终端 coding agent | 本地终端（Rust TUI）、headless CI、ACP 编辑器 | 高交互；一个二进制三种模式 | 在用 Grok 模型、想要一方 TUI 并要 CI 和编辑器触达的人 | Apache-2.0，但仓库是 monorepo 导出，不接受外部贡献 |
-| [QM](../agents/qm.md) | 多人协作 agent harness | Slack、web 应用，自托管在 Fly 或 AWS | 一套部署；按人、按房间各一个隔离作用域 | 想让全公司共用一个 agent、但不共用状态的团队 | 才几天大；是一套真要运维的部署，而且贡献只收文字提案不收代码 |
+| [QM](../agents/qm.md) | 多人协作 agent harness | Slack、web 应用，自托管在 Fly 或 AWS | 一套部署；按人、按房间各一个隔离作用域 | 想让全公司共用一个 agent、但不共用状态的团队 | 2026 年 7 月下旬才公开；是一套真要运维的部署，而且贡献只收文字提案不收代码 |
 | [Omnigent](../agents/omnigent.md) | 跨其它 harness 的元 harness | 终端、浏览器、手机、macOS 应用、九家云沙箱供应商 | 在一个会话里混用多个 harness | 本来就在跑多个 harness、想要统一策略的开发者 | 自标 alpha；前置依赖链横跨三个语言生态 |
 | [Open Code Review](../agents/open-code-review.md) | 专职代码评审 agent | CLI、四套 CI 系统、Claude Code / Codex / Cursor / OpenCode 插件 | 准确率优先的评审；只留评论，从不动手 | 想在 CI 里用零头的 token 拿到可复现、行级精确评审的团队 | 召回被刻意压得比通用 agent 低，而支撑这个说法的 benchmark 是厂商自跑的 |
 

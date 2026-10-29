@@ -23,7 +23,7 @@
 | 我要把明确任务异步丢到云端跑 | [Codex](../agents/codex.md) |
 | 我要当前最强的 OpenAI agentic coding 模型 | [GPT-6 Astra](../agents/gpt-6-astra.md) |
 | 我要最强的 Claude 模型，做那些值得按量花钱的任务 | [Claude Fable 5.1](../agents/claude-fable-5.md) |
-| 我要一个 Claude 模型把 agent 跑一整天、不用盯额度 | [Claude Opus 5](../agents/claude-opus-5.md) |
+| 我要一个 Claude 模型把 agent 跑一整天、不用盯额度（Claude Code 的默认 Opus 自 9 月 22 日起已是 Opus 5.5，Opus 5 是上一任默认） | [Claude Opus 5](../agents/claude-opus-5.md) |
 | 我已经在用 Claude Code，只是想补强 teams、skills 和 orchestration | [oh-my-claudecode](../agents/oh-my-claudecode.md) |
 | 我已经在用 Codex CLI，只是想补上 teams、hooks 和持久 workflow state | [oh-my-codex](../agents/oh-my-codex.md) |
 | 我要 Google 托管、GitHub 连接的云端委派 | [Jules](../agents/jules.md) |
@@ -55,13 +55,13 @@
 
 | 路线 | 代表项目 | 核心感觉 |
 | --- | --- | --- |
-| 本地协作型 | [Claude Code](../agents/claude-code.md), [Aider](../agents/aider.md), [Kimi Code](../agents/kimi-code.md), [MiMoCode](../agents/mimocode.md), [CodeWhale](../agents/codewhale.md) | 边聊边做，节奏快，操作感强 |
-| 底层 agent 之上的工作流层 | [oh-my-claudecode](../agents/oh-my-claudecode.md), [oh-my-codex](../agents/oh-my-codex.md) | 保留 Claude Code 或 Codex 作为执行引擎，再往上叠可复用 orchestration |
-| 编辑器中心工作流 | [Cursor](../agents/cursor.md), [Windsurf](../agents/windsurf.md) | 编辑器本身就是选型的一部分 |
+| 本地协作型 | [Claude Code](../agents/claude-code.md), [Aider](../agents/aider.md), [Kimi Code](../agents/kimi-code.md), [MiMoCode](../agents/mimocode.md), [CodeWhale](../agents/codewhale.md), [OpenCode](../agents/opencode.md), [Gemini CLI](../agents/gemini-cli.md) / [Google Antigravity](../agents/antigravity.md), [Qwen Code](../agents/qwen-code.md), [CodeBuddy](../agents/codebuddy.md), [Grok Build](../agents/grok-build.md), [ZCode](../agents/zcode.md) | 边聊边做，节奏快，操作感强 |
+| 底层 agent 之上的工作流层 | [oh-my-claudecode](../agents/oh-my-claudecode.md), [oh-my-codex](../agents/oh-my-codex.md), [Ruflo](../agents/ruflo.md), [Orca](../agents/orca.md), [Paperclip](../agents/paperclip.md) | 保留 Claude Code 或 Codex 作为执行引擎，再往上叠可复用 orchestration（Orca 和 Paperclip 同时调度多个不同的 agent） |
+| 编辑器中心工作流 | [Cursor](../agents/cursor.md), [Windsurf](../agents/windsurf.md), [Continue](../agents/continue.md), [Google Antigravity](../agents/antigravity.md) | 编辑器本身就是选型的一部分 |
 | 云端委派型 | [Codex](../agents/codex.md), [Devin](../agents/devin.md), [Jules](../agents/jules.md) | 先交任务，再回来 review |
 | 管理式后台路径 | [Claude Managed Agents](../agents/claude-managed-agents.md) | 更偏定时、后台、程序化 Anthropic 工作流 |
-| review-first 自动化 | [Cline](../agents/cline.md), [GitHub Copilot](../agents/github-copilot.md), [Froge Code](../agents/froge-code.md), [Open Code Review](../agents/open-code-review.md) | 让 agent 很强，但把合并和节奏留给人（Open Code Review 是纯评审那一端——只留评论，从不落改动） |
-| 自己掌控循环的 harness | [jcode](../agents/jcode.md), [OpenHands](../agents/openhands.md) | 把厂商成品挡在外面——你拥有循环、工具和权限（见 [harness 框架对比](../comparisons/agent-harness-frameworks.md)） |
+| review-first 自动化 | [Cline](../agents/cline.md), [GitHub Copilot](../agents/github-copilot.md), [Froge Code](../agents/froge-code.md), [CoStrict](../agents/costrict.md), [Open Code Review](../agents/open-code-review.md) | 让 agent 很强，但把合并和节奏留给人（Open Code Review 是纯评审那一端——只留评论，从不落改动） |
+| 自己掌控循环的 harness | [Pi](../agents/pi.md), [jcode](../agents/jcode.md), [DeepSeek Harness](../agents/deepseek-harness.md), [OpenHands](../agents/openhands.md), [mini-swe-agent](../agents/mini-swe-agent.md), [OpenHarness](../agents/openharness.md) | 把厂商成品挡在外面——你拥有循环、工具和权限（见 [harness 框架对比](../comparisons/agent-harness-frameworks.md)） |
 | 跨多个循环的元 harness | [Omnigent](../agents/omnigent.md), [QM](../agents/qm.md) | 你本来就在跑不止一个 harness，想要一个统一管审批、花费、沙箱和会话连续性的地方 |
 | 自建 / 自托管 | [OpenHands](../agents/openhands.md), [Goose](../agents/goose.md), [Hermes Agent](../agents/hermes-agent.md), [LangChain](../agents/langchain.md), [LangGraph](../agents/langgraph.md) | 灵活，但要自己承担环境和运维 |
 
@@ -73,10 +73,10 @@
 | Aider | 终端里的 AI 结对编程依然贴着 git 走 | 模型配置和终端 ergonomics 还是要自己扛 |
 | Claude Managed Agents | 更适合后台、定时和程序化运行 | 官方公开边界不是单一产品页 |
 | Codex | 云端隔离、日志和测试证据很清楚 | 更偏异步，不如编辑器内 agent 即时 |
-| GPT-6 Astra | OpenAI 当前天花板；agentic 执行、计算机与浏览器操作 | $10/$50 且输入超 272k token 后翻倍；公开版本会拒绝一部分网安能力 |
-| Claude Fable 5.1 | SWE-bench Pro 81.2，且缓存读 $0.25/M 为本地图最低 | $10/$50，按额度计费而非订阅内含 |
-| Claude Opus 5 | 天花板一半的价格，1M 上下文既是默认也是上限，Claude Code 的默认 | 网安上落后于 Mythos；完全闭源 |
-| GPT-5.5 | 2026 年 4 月发布时 agentic coding benchmark 最高、百万 token 上下文 | 已隔两代；作血统参照保留 |
+| GPT-6 Astra | OpenAI 当前天花板；agentic 执行、计算机与浏览器操作 | $10/$50，输入超 272k token 后整个请求按 $20/$75 计价；公开版本会拒绝一部分网安能力 |
+| Claude Fable 5.1 | SWE-bench Pro 81.2，缓存读 $0.25/M，是 GPT-6 Astra（$1/M）的四分之一 | $10/$50，按额度计费而非订阅内含 |
+| Claude Opus 5 | 天花板一半的价格，1M 上下文既是默认也是上限；9 月 22 日之前是 Claude Code 的默认 Opus，此后由 Opus 5.5 接替 | 网安上落后于 Mythos；完全闭源 |
+| GPT-5.5 | 2026 年 4 月发布时 agentic coding benchmark 最高、百万 token 上下文 | 2026-10-14 起从 Codex 与 ChatGPT 下线（限 ChatGPT 账号登录）；作血统参照保留 |
 | oh-my-claudecode | 给 Claude Code 补上 teams、可复用 skills 和更强运行控制 | 你会多背一层工作流，而且仍然依赖 Claude Code |
 | oh-my-codex | 给 Codex 带来更清晰的 clarify-plan-execute operating model | 配置更多、流程更重，而且最佳路径通常离不开 tmux |
 | Cursor | 一个打磨完整的表面把编辑、委派、集成都串起来 | 产品边界更宽，而且闭源属性很明确 |

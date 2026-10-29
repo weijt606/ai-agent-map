@@ -17,15 +17,15 @@ One-line take: MiMoCode is Xiaomi's official terminal coding agent — a Claude-
 | Open source | Yes |
 | Implementation | TypeScript |
 | License | MIT |
-| Models | MiMo Auto (free zero-config channel, limited time); Xiaomi MiMo Platform; any mainstream LLM API |
+| Models | MiMo Auto (free zero-config channel, limited time; still listed in the npm README updated 2026-10-12, no longer in the main README); Xiaomi MiMo Platform; any mainstream LLM API |
 | Best for | Developers who want a memory-first coding CLI tuned for long-horizon work on one project |
-| Main cost | Brand new (days old) — feature surface and stability are still moving fast |
+| Main cost | Young (launched June 2026) — feature surface and stability are still moving fast |
 | GitHub repo | https://github.com/XiaomiMiMo/MiMo-Code |
 
 ## When To Pick It
 
 - You want persistent project memory as a built-in, not an add-on: MiMoCode keeps a project `MEMORY.md`, automatic session checkpoints, scratch notes, and per-task progress, injected back on resume via SQLite FTS5 search.
-- You want zero-config startup — the built-in **MiMo Auto** channel is free for a limited time and needs no API key, with one-step import from Claude Code if you already use it.
+- You want zero-config startup — the built-in **MiMo Auto** channel is free for a limited time (per the npm README, as of 2026-10-12) and needs no API key, with one-step import from Claude Code if you already use it.
 - You work in long-horizon sessions where context reconstruction (rebuilding context from the latest checkpoint + memory when the window fills) matters more than raw speed.
 
 ## When Not To Pick It
@@ -46,8 +46,8 @@ One-line take: MiMoCode is Xiaomi's official terminal coding agent — a Claude-
 
 ## Operating Cost
 
-Complexity is Low. Install is a one-line script or `npm install -g @mimo-ai/cli`, and first launch walks you through configuration; MiMo Auto removes the API-key step entirely for now. The real cost is maturity: this is a days-old project, so the memory system, agent modes, and provider story are all still moving.
+Complexity is Low. Install is a one-line script or `npm install -g @mimo-ai/cli`, and first launch walks you through configuration; MiMo Auto removes the API-key step entirely for now. The real cost is maturity: this project launched in June 2026, so the memory system, agent modes, and provider story are all still moving.
 
 ## Bottom Line
 
-MiMoCode is the memory-first entry in the terminal coding-agent field — Xiaomi's official CLI for the MiMo models, built so the agent carries project understanding across sessions rather than starting cold each run. If long-horizon work on a single codebase is your pain point and you are comfortable on a brand-new tool, it is worth a look; if you need stability or vendor neutrality, [Aider](aider.md) or [Pi](pi.md) is safer. Do not confuse it with [CodeWhale](codewhale.md), the third-party DeepSeek + MiMo TUI; for Moonshot's official Kimi CLI, see [Kimi Code](kimi-code.md).
+MiMoCode is the memory-first entry in the terminal coding-agent field — Xiaomi's official CLI for the MiMo models, built so the agent carries project understanding across sessions rather than starting cold each run. If long-horizon work on a single codebase is your pain point and you are comfortable on a young tool (launched June 2026), it is worth a look; if you need stability or vendor neutrality, [Aider](aider.md) or [Pi](pi.md) is safer. Do not confuse it with [CodeWhale](codewhale.md), the third-party DeepSeek + MiMo TUI; for Moonshot's official Kimi CLI, see [Kimi Code](kimi-code.md).

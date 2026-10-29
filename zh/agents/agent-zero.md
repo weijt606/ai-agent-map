@@ -21,9 +21,10 @@
 ## 什么时候选它
 
 - 你想要一个在运行时自己写工具、自己执行的 agent，而不是跑固定 pipeline。
-- 你需要模型灵活性——OpenAI、Anthropic、Groq、Ollama，通过 LiteLLM 接入。
+- 你需要模型灵活性——OpenAI、Anthropic、Groq、Ollama 等，通过 LiteLLM 接入。
 - 你想要多 agent 协作，agent 能生成子 agent 分担任务。
 - 你想要跨会话的持久记忆和自我纠正。
+- 你能接受自托管和自己调优。
 
 ## 什么时候别选
 
@@ -41,6 +42,7 @@
 | 多 agent | 强 | 生成子 agent 分担任务 |
 | 持久记忆 | 强 | 跨会话记忆 |
 | 模型无关 | 很强 | 通过 LiteLLM 支持任意 provider |
+| 插件生态 | 中 | 近期版本加入了 Plugin Hub |
 | 企业就绪 | 弱 | 无商业支持或 SLA |
 
 ## 使用代价

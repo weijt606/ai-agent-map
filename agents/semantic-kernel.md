@@ -52,4 +52,4 @@ Complexity is Medium. Well-documented, enterprise-grade, and strongly typed. The
 
 ## Bottom Line
 
-Semantic Kernel is the LangChain of the Microsoft world — typed, enterprise-grade, and Azure-native. If your team writes C# or Java, it is the obvious first choice for AI orchestration.
+Semantic Kernel is the LangChain of the Microsoft world — typed, enterprise-grade, and Azure-native. If your team writes C# or Java, it is a strong choice for AI orchestration; for new .NET agent work, also evaluate [Microsoft Agent Framework](microsoft-agent-framework.md).

@@ -4,7 +4,7 @@
 [![EN](https://img.shields.io/badge/EN-English-2563eb?style=for-the-badge&labelColor=1d4ed8)](../../agents/gemini-task.md)
 [![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-一句话定位：Task 是 Gemini 应用的 agent 模式——在 I/O 上以 **Gemini Spark** 之名发布，是跑在 Gemini 3.5 与 Antigravity harness 上的云端 agent——在 Google Workspace、Chrome 和已连接应用之间执行定时任务，并公开列出了它动手前会先请你确认哪些事。
+一句话定位：Task 是 Gemini 应用的 agent 模式——在 I/O 上以 **Gemini Spark** 之名发布，是跑在 Gemini 3.5 与 [Antigravity](antigravity.md) harness 上的云端 agent——在 Google Workspace、Chrome 和已连接应用之间执行定时任务，并公开列出了它动手前会先请你确认哪些事。
 
 ## 快速看点
 
@@ -16,7 +16,7 @@
 | 形态 | Gemini 移动应用、Mac 版 Gemini 应用和 gemini.google.com 里的 **Chat / Task 切换** |
 | 状态 | **2026-05-19** 以 Spark 之名发布，随后向订阅用户 beta；之后改名为 **Task**（改名日期未公布） |
 | 在哪里跑 | 带**远程浏览器和远程电脑**的云端 agent；也能驱动你本地的 Chrome |
-| 模型 | 按 I/O 发布文章，是 Gemini 3.5 加 Antigravity harness |
+| 模型 | I/O 发布时是 Gemini 3.5 加 [Antigravity](antigravity.md) harness；Gemini 4 Argon 于 2026 年 10 月 13 日进入 Pro 和 Ultra 用户的 Gemini 应用（Task 是否用它，官方没有说明） |
 | 价格 | 需要 **Google AI Pro（$19.99/月）**或 **AI Ultra（$99.99/月起）**，美国价格 |
 | 前提条件 | 个人 Google 账号（不支持工作或学校账号）、开启"保留活动记录"（Keep Activity）、加入 Personal Intelligence |
 | 地区 | Gemini 应用支持的地区均可，**欧洲经济区、尼日利亚、瑞士和英国除外** |
@@ -30,7 +30,7 @@
 
 ## 什么时候不选它
 
-- 你在欧洲、英国或尼日利亚，或者用的是工作账号。
+- 你在欧洲经济区、瑞士、英国或尼日利亚，或者用的是工作账号。
 - 你不希望活动记录被保留：必须开启"保留活动记录"。
 - 你想让它无人值守地完成付款或填写支付信息。它的设计就是把这些步骤交还给你。
 

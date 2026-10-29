@@ -38,7 +38,7 @@
 - 你要开放档的能力上限——那是 [Kimi K3](kimi-k3.md) 或 [GLM-5.3](glm-5.md)，取决于看哪个 benchmark。
 - 你需要模型内原生视觉。
 - 你想从本页拿到许可保证：GitHub 仓库没有暴露标准 license 字段，所以**请在你打算用的那个 Hugging Face checkpoint 上核对许可**——Qwen 这条线历史上对不同尺寸给过不同条款，本地图不替你断言。
-- 你要的是成品 agent——那是 Qwen Code，一个本地图尚未收录的独立项目。
+- 你要的是成品 agent——那是 [Qwen Code](qwen-code.md)，一个独立项目。
 
 ## 能力形状
 

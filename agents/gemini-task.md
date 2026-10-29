@@ -4,7 +4,7 @@
 [![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](gemini-task.md)
 [![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-One-line take: Task is the agent mode of the Gemini app — introduced at I/O as **Gemini Spark**, a cloud agent on Gemini 3.5 and the Antigravity harness — which runs scheduled jobs across Google Workspace, Chrome and connected apps, with a published list of what it will ask you to confirm first.
+One-line take: Task is the agent mode of the Gemini app — introduced at I/O as **Gemini Spark**, a cloud agent on Gemini 3.5 and the [Antigravity](antigravity.md) harness — which runs scheduled jobs across Google Workspace, Chrome and connected apps, with a published list of what it will ask you to confirm first.
 
 ## Quick Read
 
@@ -16,7 +16,7 @@ One-line take: Task is the agent mode of the Gemini app — introduced at I/O as
 | Form factor | A **Chat / Task toggle** in the Gemini mobile app, the Gemini app on Mac, and gemini.google.com |
 | Status | Announced as Spark on **May 19 2026**, then a beta for subscribers; renamed **Task** (rename date not published) |
 | Where it runs | A cloud agent with a **remote browser and remote computer**; can also drive your local Chrome |
-| Model | Gemini 3.5 with the Antigravity harness, per the I/O announcement |
+| Model | Gemini 3.5 with the [Antigravity](antigravity.md) harness at the I/O announcement; Gemini 4 Argon reached the Gemini app for Pro and Ultra on Oct 13 2026 (whether Task uses it is not stated) |
 | Price | Requires **Google AI Pro ($19.99/month)** or **AI Ultra (from $99.99/month)**, US prices |
 | Requirements | Personal Google account (not work or school), Keep Activity on, opted in to Personal Intelligence |
 | Regions | Wherever Gemini Apps are supported **except the EEA, Nigeria, Switzerland and the UK** |
@@ -30,7 +30,7 @@ One-line take: Task is the agent mode of the Gemini app — introduced at I/O as
 
 ## When Not To Pick It
 
-- You are in Europe, the UK or Nigeria, or on a work account.
+- You are in the EEA, Switzerland, the UK or Nigeria, or on a work account.
 - You do not want activity retained: Keep Activity must be on.
 - You want it to finish purchases or enter payment details unattended. By design it hands those steps back to you.
 

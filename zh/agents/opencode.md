@@ -4,7 +4,7 @@
 [![EN](https://img.shields.io/badge/EN-English-2563eb?style=for-the-badge&labelColor=1d4ed8)](../../agents/opencode.md)
 [![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-一句话：OpenCode 是体量最大的厂商中立开源编码 agent——20.5 万 star，MIT——而本地图此前已经在五个 profile 里把它当作集成对象反复提到，却始终没给它写过一页。
+一句话：OpenCode 是体量最大的厂商中立开源编码 agent：22.2 万 star（2026-10-28），MIT。而本地图此前已经在五个 profile 里把它当作集成对象反复提到，却始终没给它写过一页。
 
 ## 一眼判断
 
@@ -12,7 +12,7 @@
 | --- | --- |
 | 厂商 | Anomaly Co（社区项目） |
 | 路线 | 直接执行 |
-| 仓库 | [`anomalyco/opencode`](https://github.com/anomalyco/opencode)——MIT，TypeScript，**20.5 万 star** |
+| 仓库 | [`anomalyco/opencode`](https://github.com/anomalyco/opencode)——MIT，TypeScript，**22.2 万 star**（2026-10-28） |
 | 是否开源 | 是（MIT） |
 | 最适合 | 想要一个不属于任何模型厂商的终端编码 agent |
 | 主要代价 | 模型你自己选、自己付；没有厂商为自家权重去调这条循环 |
@@ -30,7 +30,7 @@
 ## 什么时候选它
 
 - **你要循环层面的厂商中立。** [Claude Code](claude-code.md)、[Codex](codex.md)、[Gemini CLI](gemini-cli.md)、[Kimi Code](kimi-code.md)、[Qwen Code](qwen-code.md) 都是第一方工具，默认设置跟着自家模型走。OpenCode 的动机不同，因为作者不卖模型。
-- 你要的是**体量大、活跃开发**的开源 agent，而不是精简的那种——20.5 万 star 是现存最大的 agent 仓库之一，写这一页的当天它还在提交。
+- 你要的是**体量大、活跃开发**的开源 agent，而不是精简的那种——22.2 万 star（2026-10-28）是现存最大的 agent 仓库之一，写这一页的当天它还在提交。
 - 你希望**安装这件事别成为你的问题**：curl 脚本、npm、Homebrew、Scoop、Chocolatey、pacman/AUR、mise、Nix 都是一等支持。
 - 你想在同一个项目里**要一个 GUI 选项**——桌面应用提供 `.dmg`、`.exe`、`.deb`、`.rpm`、`.AppImage`，但明确标着 beta。
 - 你要在它之上做东西：上面那串集成说明生态已经默认它存在。

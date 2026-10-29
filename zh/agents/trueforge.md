@@ -24,7 +24,7 @@
 | 隔离 | 沙箱即工具（目前是 Daytona，官方称计划接更多 provider），按需开；密钥留在 harness 里 |
 | 部署 | 本地模式（单进程 + SQLite，`npx` 起）或托管模式（Postgres + Redis；Docker Compose、Helm 或 Railway），可选 OIDC |
 | 适合 | 要把 agent 放进自家产品背后的团队——循环、沙箱、审批都当成自己运维的基础设施 |
-| 主要代价 | 公开六周，版本还停在 0.x 的 release candidate；贡献者几乎全来自一家公司 |
+| 主要代价 | 2026 年 7 月底才公开，版本还停在 0.x 的 release candidate；贡献者几乎全来自一家公司 |
 | GitHub 仓库 | https://github.com/truefoundry/trueforge |
 
 ## 什么时候选它

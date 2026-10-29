@@ -46,4 +46,4 @@ Complexity is Medium. The seed itself is small enough to read and modify, but op
 
 ## Bottom Line
 
-GenericAgent occupies a niche the rest of this map doesn't really cover: autonomous agents that self-evolve from a small seed, rather than autonomous agents that come preloaded. If you're researching that pattern or want a small codebase you can fully own, GenericAgent is the strongest current candidate. For mainstream production use, AutoGPT or Agent Zero are still safer picks.
+GenericAgent occupies a niche the rest of this map doesn't really cover: autonomous agents that self-evolve from a small seed, rather than autonomous agents that come preloaded. If you're researching that pattern or want a small codebase you can fully own, GenericAgent is a strong candidate. For mainstream production use, AutoGPT or Agent Zero are still safer picks.

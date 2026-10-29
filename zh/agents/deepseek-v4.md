@@ -6,6 +6,8 @@
 
 一句话：DeepSeek V4 是开放前沿里 MIT 许可的那一端——1.6T 参数、激活 49B、100 万上下文、SWE-bench Verified 80.6——而许可正是重点：它的分数任何有 GPU 的人都能复现。
 
+> **小版本更新（2026-10-17）：** DeepSeek 发布了 **DeepSeek-V4.1-Flash-1017**，官方说它比 V4.1-Flash 在 benchmark 上更强、速度更快、输出更短，是"帕累托改进"，权重已公开。DeepSeek 指定 [DeepSeek Harness](deepseek-harness.md) `v0.2.1-rc.1` 及以后版本作为配套客户端。本地图没有记录 V4.1-Flash 本身的发布日期和分数；下面表格里是 V4 发布时（2026 年 4 月 24 日）的数字。来源：[DeepSeek 发布说明](https://api-docs.deepseek.com/news/news261017/)。
+
 ## 一眼判断
 
 | 项目 | 结论 |
@@ -26,7 +28,7 @@ DeepSeek 同时也是 [DeepSeek Harness](deepseek-harness.md) 的厂商，这意
 
 ## 什么时候选它
 
-- **MIT 是硬要求。** 在这个能力级别上这是最宽松的许可；[Kimi K3](kimi-k3.md) 是自定义许可，[GLM-5.3](glm-5.md) 是 Apache-2.0。
+- **MIT 是硬要求。** V4 用的是 MIT；同一能力级别上 [GLM-5.3](glm-5.md) 是 Apache-2.0，同样是标准的宽松许可，[Kimi K3](kimi-k3.md) 则是自定义许可。
 - 你要的是**能复现而不是只能相信**的分数。MIT 下的开放权重意味着任何有足够 GPU 的独立实验室都能重跑评测——这与闭源模型公布一张表，是本质不同的证据位置。
 - 你需要**便宜的长上下文**：DeepSeek 声明的设计目标就是以大幅降低的算力与显存成本做到业界领先的长上下文，手段是 token 级压缩与 DeepSeek Sparse Attention。
 - 你想要同源的小号：**V4-Flash** 是 284B 总参数 / 13B 激活，DeepSeek 称在给更大思考预算时其推理能力接近 Pro。
@@ -57,7 +59,7 @@ DeepSeek 同时也是 [DeepSeek Harness](deepseek-harness.md) 的厂商，这意
 
 ## 这个 SWE-bench 数字该怎么读
 
-SWE-bench Verified 80.6 是本地图模型层里最高的数字——而它和旁边那些数字并不直接可比。Anthropic 公布的是 **SWE-bench Pro**（[Fable 5.1](claude-fable-5.md) 81.2），那是更难的变体；OpenAI 引用的是 **DeepSWE**（[GPT-6 Astra](gpt-6-astra.md) 74.1），根本没给 SWE-bench Verified。三家厂商、三个 benchmark、没有一行是同口径的。本地图记录每家自己的数字，并拒绝去搭那张会让人以为它们是同一次测量的对比表——这就是 2026 年 9 月证据的诚实状态。
+SWE-bench Verified 80.6 是本地图模型层里最高的数字——而它和旁边那些数字并不直接可比。Anthropic 公布的是 **SWE-bench Pro**（[Fable 5.1](claude-fable-5.md) 81.2），那是更难的变体；OpenAI 引用的是 **DeepSWE**（[GPT-6 Astra](gpt-6-astra.md) 74.1），根本没给 SWE-bench Verified。三家厂商、三个 benchmark、没有一行是同口径的。本地图记录每家自己的数字，并拒绝去搭那张会让人以为它们是同一次测量的对比表——这是 2026 年 9 月写这一节时证据的诚实状态。
 
 ## 结论
 

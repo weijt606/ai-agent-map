@@ -16,7 +16,7 @@
 | 最适合 | 想让 LLM 直接在本机跑 Python、JS、Shell，无文件大小和时间限制的开发者 |
 | 主要代价 | 代码在你的真实机器上无沙盒运行——每条命令都是真实操作 |
 | 官网 | https://www.openinterpreter.com |
-| GitHub 仓库 | https://github.com/openinterpreter/open-interpreter |
+| GitHub 仓库 | https://github.com/openinterpreter/openinterpreter |
 
 ## 什么时候选它
 
@@ -24,6 +24,7 @@
 - 你需要文件操作——创建/编辑照片、视频、PDF、电子表格。
 - 你想要浏览器和电脑控制（OS 模式，支持 Anthropic computer-use）。
 - 你想要完整的互联网访问，无文件大小和时间限制。
+- 你想用云端模型（GPT-4、Claude）或本地模型（Llama 等）。
 
 ## 什么时候别选
 

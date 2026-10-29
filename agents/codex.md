@@ -43,7 +43,11 @@ One-line take: Codex is the "delegate and review" coding agent that, since July 
 | GitHub / PR handoff | Strong | Well suited to review-oriented workflows |
 | Computer use | Strong | Background cursor and keyboard control across any macOS app; noticeably faster since the July 9 2026 GPT-5.6 upgrade, and computer use is a headline axis of the September [GPT-6 Astra](gpt-6-astra.md) upgrade |
 | PR review in-app | Strong (new July 9 2026) | Side-panel pull-request review and inline diff editing in the ChatGPT desktop app |
-| Local companion surfaces | Strong (was Medium) | Codex CLI is now a first-class surface, with persisted /goal workflows and MultiAgentV2 in v0.128 |
+| Local companion surfaces | Strong (was Medium) | Codex CLI is now a first-class surface, with persisted /goal workflows and MultiAgentV2 since v0.128 (April 2026); latest release recorded here is `rust-v0.164.0` (Oct 23 2026) |
+
+## DevDay (September 29 2026)
+
+At OpenAI's DevDay on September 29 2026, GPT-6.1 Sol arrived and Codex CLI `rust-v0.159.1` made it the bundled default the same day (see Model Layer below). DevDay also brought reusable Codex cloud environments, a refreshed Codex CLI, a new code-review experience, and computer use in the Agents API. This map has those product changes from [TechCrunch's report](https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/) rather than an OpenAI page, and has not yet assessed them one by one. See [market-events](../market-events.md).
 
 ## Merged Into ChatGPT (July 9 2026)
 
@@ -73,7 +77,7 @@ Complexity is Medium. It reduces local ops burden, but it also pushes the team i
 
 ## Model Layer
 
-From July 9 2026 Codex ran on **GPT-5.6** (Sol / Terra / Luna tiers), which succeeded [GPT-5.5](gpt-5.5.md) the same day the product merged into ChatGPT. The default then changed twice in September 2026. Codex CLI `rust-v0.153.4` (Sept 4) made [GPT-6 Astra](gpt-6-astra.md) "the bundled default when no model is explicitly configured" per the release notes; **since `rust-v0.159.1` (Sept 29) the bundled default is GPT-6.1 Sol** ($2 / $10, cache reads $0.10/M — see [cost & benchmarks](../comparisons/cost-and-benchmarks.md)). The Astra period left two consequences that still apply if you pin Astra explicitly: the generally available Astra **refuses part of its cybersecurity capability**, so security-adjacent work inherits that boundary; and Astra reprices past 272k input tokens, which a long Codex session can reach. The practical rule after two changes in a month: pin the model id rather than relying on the bundled default. See the [GPT-6 Astra profile](gpt-6-astra.md) for the pricing shape and the [GPT-5.5 profile](gpt-5.5.md) for the full model lineage.
+From July 9 2026 Codex ran on **GPT-5.6** (Sol / Terra / Luna tiers), which succeeded [GPT-5.5](gpt-5.5.md) the same day the product merged into ChatGPT. The default then changed twice in September 2026. Codex CLI `rust-v0.153.4` (Sept 4) made [GPT-6 Astra](gpt-6-astra.md) "the bundled default when no model is explicitly configured" per the release notes; **since `rust-v0.159.1` (Sept 29) the bundled default is GPT-6.1 Sol** ($2 / $10, cache reads $0.10/M — see [cost & benchmarks](../comparisons/cost-and-benchmarks.md)). The Astra period left two consequences that still apply if you pin Astra explicitly: the generally available Astra **refuses part of its cybersecurity capability**, so security-adjacent work inherits that boundary; and Astra reprices past 272k input tokens, which a long Codex session can reach. Two more model changes followed in October. On **October 14 2026** OpenAI retired GPT-5.5 from Codex and ChatGPT for users signed in with a ChatGPT account (API-key Codex sessions are unaffected), so any pinned `gpt-5.5` in a ChatGPT-signed-in workspace now resolves to nothing. On **October 26** GPT-6.1 Terra ($1 / $5) became selectable in Codex, **not as a default**: `rust-v0.164.0` (Oct 23) still bundles GPT-6.1 Sol. The practical rule after two changes in a month: pin the model id rather than relying on the bundled default, and put model retirements on the same review calendar. See the [GPT-6 Astra profile](gpt-6-astra.md) for the pricing shape and the [GPT-5.5 profile](gpt-5.5.md) for the full model lineage.
 
 ## Bottom Line
 

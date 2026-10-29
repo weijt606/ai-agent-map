@@ -13,7 +13,7 @@
 | 厂商 | colbymchenry（开源） |
 | 路线 | Runtime & tools——代码知识图谱 / agent 上下文层 |
 | 开源 | 是（MIT） |
-| 适合谁 | 已经在用 [Claude Code](claude-code.md)、[Cursor](cursor.md)、[Codex](codex.md) CLI、opencode 或 [Hermes Agent](hermes-agent.md) 并想把代码探索成本压下来的团队 |
+| 适合谁 | 已经在用 [Claude Code](claude-code.md)、[Cursor](cursor.md)、[Codex](codex.md) CLI、[OpenCode](opencode.md)、Gemini、[AntiGravity](antigravity.md)、Kiro 或 [Hermes Agent](hermes-agent.md) 并想把代码探索成本压下来的团队 |
 | 主要代价 | 多了一层索引要维护和同步；收益取决于代码库规模和探索频率 |
 | GitHub 仓库 | https://github.com/colbymchenry/codegraph |
 

@@ -6,9 +6,9 @@
 
 A "harness" is the minimal scaffolding around an LLM that turns it into an agent — the loop, the tool surface, the permission model, the skills hook. These are projects you can fork, audit, and own end-to-end, rather than vendor products you adopt as-is.
 
-Current star totals for all nine live in the [rankings boards](../rankings/README.md); this page compares shape, not size.
+Current star totals for all ten live in the [rankings boards](../rankings/README.md); this page compares shape, not size.
 
-Three shapes now sit under this route. **Single-loop harnesses** *are* the loop — you fork one and own it. **Meta-harnesses** run several of those loops under one layer, and are what you reach for once "which harness" stops being a single answer. **Harness-as-a-server** runs one loop, but behind an API, and is what you reach for when the agent belongs to your product rather than to your terminal.
+Three shapes now sit under this route. **Single-loop harnesses** *are* the loop — you fork one and own it. **Meta-harnesses** run several of those loops under one layer, and are what you reach for once "which harness" stops being a single answer. **Harness-as-a-server** runs one loop, but behind an API, and is what you reach for when the agent belongs to your product rather than to your terminal. [DeepSeek Harness](../agents/deepseek-harness.md) is listed with the single-loop harnesses because it runs one loop, but the [capability matrix](../capabilities/matrix.md) treats it as a fourth shape: the loop itself is a plugin you can replace from config.
 
 ## At A Glance
 
@@ -28,7 +28,7 @@ These do not ship a loop of their own. They run the harnesses above (and vendor 
 
 | Project | License | Runs | The unit it optimizes for | Watch out for |
 | --- | --- | --- | --- | --- |
-| [QM](../agents/qm.md) | MIT (TS) | Pi, OpenCode, Codex, Claude Code | **A company.** Scope = a person, channel, group message, or project, each with its own memory, files, keychain, permissions, crons, and durable sandbox | Days old; a real deployment to operate (Postgres, sandboxes, your own cloud account); contributions accepted as written proposals, not code |
+| [QM](../agents/qm.md) | MIT (TS) | Pi, OpenCode, Codex, Claude Code | **A company.** Scope = a person, channel, group message, or project, each with its own memory, files, keychain, permissions, crons, and durable sandbox | Public since late July 2026; a real deployment to operate (Postgres, sandboxes, your own cloud account); contributions accepted as written proposals, not code |
 | [Omnigent](../agents/omnigent.md) | Apache-2.0 (Py) | Claude Code, Codex, Cursor, OpenCode, Hermes, Pi, custom YAML agents | **A developer.** Session = the unit; it follows you across terminal, browser, phone, and desktop, and can run in one of nine cloud sandbox providers | Self-declared **alpha**; prerequisite chain spans three language ecosystems (`uv`, Node, tmux, `bwrap` on Linux) |
 
 The distinction that matters when choosing between them: QM assumes **many people share one deployment** and gives each of them isolation; Omnigent assumes **one person drives many agents** and gives them continuity and policy. Neither is a substitute for the other.
@@ -39,7 +39,7 @@ One loop, run as a service. You do not fork it and you do not point it at other 
 
 | Project | License | Front doors | The unit it optimizes for | Watch out for |
 | --- | --- | --- | --- | --- |
-| [TrueForge](../agents/trueforge.md) | MIT (TS) | Bundled chat UI, HTTP API + TypeScript SDK, embeddable UI SDK | **Your product's backend.** Models, MCP servers, skills, and the sandbox are connected once from catalogs; agents pick from what an operator allowed | Six weeks public, still on 0.x release candidates; contributor base is almost entirely one company; sandboxing is Daytona-only today; no scheduling and no channel adapters |
+| [TrueForge](../agents/trueforge.md) | MIT (TS) | Bundled chat UI, HTTP API + TypeScript SDK, embeddable UI SDK | **Your product's backend.** Models, MCP servers, skills, and the sandbox are connected once from catalogs; agents pick from what an operator allowed | Public since late July 2026, still on 0.x release candidates; contributor base is almost entirely one company; sandboxing is Daytona-only today; no scheduling and no channel adapters |
 
 The reason this is a separate shape and not a footnote on the single-loop list: putting the loop behind an API boundary forces choices the forkable harnesses never have to make. Session state must be persisted rather than held in a process, the tool surface must be declared centrally rather than passed per call, and approvals must be renderable to whoever holds the client — which is why they arrive as Generative UI rather than a terminal prompt. TrueForge is also the only entry on this route that argues its case with a **reproducible cost comparison** (14 cross-system tasks against [Claude Managed Agents](../agents/claude-managed-agents.md) and deepagents, same model and MCP servers, harness in `benchmark/`) rather than a feature list. Treat that as a vendor benchmark and read it anyway.
 

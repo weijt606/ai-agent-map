@@ -21,7 +21,7 @@ One-line take: QM is Y Combinator's multiplayer agent harness for work — a sel
 | Harnesses | Pluggable — Pi, OpenCode, Codex, and Claude Code all drive the same core |
 | Surfaces | Slack and a web app, with one identity and configuration across both |
 | Best for | A startup or team that wants one self-hosted agent deployment serving everybody, with per-person isolation and admin-set security posture |
-| Main cost | Days old, and it is a deployment to operate — Postgres, sandboxes, connector credentials, and your own cloud account |
+| Main cost | Public since late July 2026, and it is a deployment to operate — Postgres, sandboxes, connector credentials, and your own cloud account |
 | GitHub repo | https://github.com/yc-software/qm |
 
 ## When To Pick It
@@ -37,7 +37,7 @@ One-line take: QM is Y Combinator's multiplayer agent harness for work — a sel
 
 - You want a terminal coding agent. QM is not that; it is the layer *above* one. Use [Claude Code](claude-code.md), [Codex](codex.md), [Grok Build](grok-build.md), or [jcode](jcode.md) for the loop itself — and note QM can then drive several of them.
 - You are one developer. The multiplayer machinery — Postgres, scopes, keychain views, admin posture, per-scope sandboxes — is overhead with no payoff at n=1. [Pi](pi.md) or [OpenHands](openhands.md) are the right size.
-- You need something proven. The repo is days old; treat every operational claim as unverified until you have run it.
+- You need something proven. The repo has been public only since late July 2026; treat every operational claim as unverified until you have run it.
 - You need to upstream your changes. See the contribution note above — [OpenHands](openhands.md), [Pi](pi.md), and [OpenHarness](openharness.md) take code.
 - You want a hosted product with a support contract. Every QM deployment runs in the operator's own cloud account, and initialization deliberately does not generate deployment CI.
 
@@ -52,7 +52,7 @@ One-line take: QM is Y Combinator's multiplayer agent harness for work — a sel
 | Skills and sharing | Strong | Scope-owned skills, sharing by grant, admin-gated org promotion, git-imported skill packs |
 | Scheduling | Strong | Crons and watches per scope |
 | Durable environment | Strong | Each scope's sandbox is a persistent computer — installed tools stay installed |
-| Operating maturity | Unproven | Days old at the time of writing |
+| Operating maturity | Unproven | Public since late July 2026; days old when first profiled (2026-08-05) |
 
 ## Architecture Worth Knowing
 
@@ -76,4 +76,4 @@ Medium–High, and it is deployment cost rather than learning cost. You are runn
 
 ## Bottom Line
 
-QM is the first entry on this map that treats "many people, one agent deployment" as the design problem rather than an afterthought, and it answers it with scopes: isolated state and permissions per person and per room, one admin-set security posture, and a core that does not care which harness runs the loop. It arrived very loud — roughly 11.4k stars and 1.3k forks in its first week — but it is days old, so the sensible read is *promising architecture, unproven operations*. If you want a single-user loop you own, see [Pi](pi.md), [jcode](jcode.md), or [OpenHands](openhands.md); for the other meta-harness in this map, which optimizes for one developer mixing harnesses in a single session rather than a company sharing one deployment, see [Omnigent](omnigent.md). For the route-level comparison, see [agent harness frameworks](../comparisons/agent-harness-frameworks.md).
+QM is the first entry on this map that treats "many people, one agent deployment" as the design problem rather than an afterthought, and it answers it with scopes: isolated state and permissions per person and per room, one admin-set security posture, and a core that does not care which harness runs the loop. It arrived very loud — roughly 11.4k stars and 1.3k forks in its first week — but it has been public only since late July 2026, so the sensible read is *promising architecture, unproven operations*. If you want a single-user loop you own, see [Pi](pi.md), [jcode](jcode.md), or [OpenHands](openhands.md); for the other meta-harness in this map, which optimizes for one developer mixing harnesses in a single session rather than a company sharing one deployment, see [Omnigent](omnigent.md). For the route-level comparison, see [agent harness frameworks](../comparisons/agent-harness-frameworks.md).

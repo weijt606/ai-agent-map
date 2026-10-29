@@ -6,7 +6,7 @@
 
 One-line take: Kimi Code is Moonshot AI's official terminal coding agent — the same Claude-Code-shaped loop (read/edit code, run shell, search files, fetch the web), tuned around the Kimi models first, but configurable to any OpenAI-compatible provider.
 
-> **Lineage:** Kimi Code (`MoonshotAI/kimi-code`, TypeScript) is the next-generation successor to the original [`MoonshotAI/kimi-cli`](https://github.com/MoonshotAI/kimi-cli) (Python, 8.9k stars). The team is winding `kimi-cli` down — installing Kimi Code auto-migrates the older config and sessions. Treat Kimi Code as the forward-looking surface; `kimi-cli` docs and installs remain available during the transition.
+> **Lineage:** Kimi Code (`MoonshotAI/kimi-code`, TypeScript) is the next-generation successor to the original [`MoonshotAI/kimi-cli`](https://github.com/MoonshotAI/kimi-cli) (Python, 8.9k stars). The team has since archived `kimi-cli` (last release 1.52.0 on 2026-09-22; its README now says it is no longer maintained and existing installs will stop working). On first launch Kimi Code detects the older data in `~/.kimi/` and offers to migrate config, MCP servers, history and sessions (`kimi migrate` does the same). Treat Kimi Code as the only supported surface; the legacy `kimi-cli` docs stay online for reference.
 
 ## Quick Read
 
@@ -17,9 +17,9 @@ One-line take: Kimi Code is Moonshot AI's official terminal coding agent — the
 | Open source | Yes |
 | Implementation | TypeScript (kimi-code); Python (legacy kimi-cli) |
 | License | MIT |
-| Models | Kimi (K2 family) out of the box; any OpenAI-compatible provider |
+| Models | Kimi models out of the box; any OpenAI-compatible provider |
 | Best for | Developers who want a vendor-official Kimi-native coding CLI with first-class IDE/ACP integration |
-| Main cost | Mid-transition — the lineage is splitting across two repos as kimi-cli is retired |
+| Main cost | A young rebuild — `kimi-cli` was archived in September 2026, so older docs and issues still sit in the archived repo |
 | GitHub repo | https://github.com/MoonshotAI/kimi-code |
 
 ## When To Pick It
@@ -30,7 +30,7 @@ One-line take: Kimi Code is Moonshot AI's official terminal coding agent — the
 
 ## When Not To Pick It
 
-- You need a mature, stable surface today — the project is mid-migration from `kimi-cli` to `kimi-code`, so expect churn.
+- You need a mature, stable surface today — the project only recently replaced `kimi-cli` (archived September 2026), so expect churn.
 - You want broad multi-vendor neutrality as the core value — a provider-agnostic harness like [Pi](pi.md) or [Aider](aider.md) is a safer base.
 - You need cloud delegation, parallel agents, or detached background runs — that is [Codex](codex.md) or [Devin](devin.md) territory.
 
@@ -46,8 +46,8 @@ One-line take: Kimi Code is Moonshot AI's official terminal coding agent — the
 
 ## Operating Cost
 
-Complexity is Low–Medium. Install is a one-line script with no Node.js requirement. The real cost right now is the transition: the original `kimi-cli` is being retired in favor of `kimi-code`, so docs, issues, and feature parity are split across two repos until the migration settles.
+Complexity is Low–Medium. Install is a one-line script with no Node.js requirement. The real cost is youth: the original `kimi-cli` was archived in September 2026 in favor of `kimi-code`, so older docs and issues still live in the archived repo, and if you are coming from `kimi-cli` you have to migrate, because the old installs are no longer supported.
 
 ## Bottom Line
 
-Kimi Code is the vendor-official answer to "I want a Claude-Code-style CLI, but Kimi-native." It is the clearest first-party path onto Moonshot's models, with real IDE reach through ACP and a VS Code extension. The caveat is timing — it is mid-rebuild from `kimi-cli`, so the surface is still settling. If you want a provider-neutral base instead, [Pi](pi.md) or [Aider](aider.md) fits better; if you specifically want the official Kimi loop, this is it. For the Chinese-model-stack sibling that targets DeepSeek + MiMo, see [CodeWhale](codewhale.md); for Xiaomi's own official CLI, see [MiMoCode](mimocode.md).
+Kimi Code is the vendor-official answer to "I want a Claude-Code-style CLI, but Kimi-native." It is the clearest first-party path onto Moonshot's models, with real IDE reach through ACP and a VS Code extension. The caveat is age — it replaced `kimi-cli` only recently (archived September 2026), so the surface is still settling. If you want a provider-neutral base instead, [Pi](pi.md) or [Aider](aider.md) fits better; if you specifically want the official Kimi loop, this is it. For the Chinese-model-stack sibling that targets DeepSeek + MiMo, see [CodeWhale](codewhale.md); for Xiaomi's own official CLI, see [MiMoCode](mimocode.md).

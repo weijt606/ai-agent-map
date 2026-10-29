@@ -4,7 +4,7 @@
 [![EN](https://img.shields.io/badge/EN-English-2563eb?style=for-the-badge&labelColor=1d4ed8)](../../agents/browser-use.md)
 [![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-一句话：Browser Use 把一个真浏览器交给 agent——像人一样打开页面、点击、输入、填表单——11.3 万 star、MIT，它是本地图此前完全没有路线覆盖的那项能力的默认答案。
+一句话：Browser Use 把一个真浏览器交给 agent——像人一样打开页面、点击、输入、填表单——11.9 万 star（2026-10-28）、MIT，它是本地图此前完全没有路线覆盖的那项能力的默认答案。
 
 ## 一眼判断
 
@@ -12,7 +12,7 @@
 | --- | --- |
 | 厂商 | Browser Use（开源项目，另有托管云） |
 | 路线 | **浏览器 agent**——一条新路线上的第一个条目 |
-| 仓库 | [`browser-use/browser-use`](https://github.com/browser-use/browser-use)——MIT，Python，**11.3 万 star** |
+| 仓库 | [`browser-use/browser-use`](https://github.com/browser-use/browser-use)——MIT，Python，**11.9 万 star（2026-10-28）** |
 | 是否开源 | 是（MIT）；另有托管的 Browser Use Cloud |
 | 最适合 | 活在网站上而不是代码仓库里的任务 |
 | 主要代价 | 一个驱动真浏览器的 agent 是实打实的安全面——要刻意划范围 |
@@ -30,7 +30,7 @@
 ## 什么时候选它
 
 - **任务在网站上，而且没有 API。** 填申请、从页面抽结构化数据、跨表单的多步流程——都是项目自己的例子。
-- 你想把它装进**你已经在跑的 agent**里：它以 skill 形式注册（`browser-use skill install`），README 里给了 Claude Code、Codex、Cursor、[Hermes Agent](hermes-agent.md)、[OpenClaw](openclaw.md) 的接法——其中三个本地图已经收录。
+- 你想把它装进**你已经在跑的 agent**里：它以 skill 形式注册（`browser-use skill install`），README 里给了 [Claude Code](claude-code.md)、[Codex](codex.md)、[Cursor](cursor.md)、[Hermes Agent](hermes-agent.md)、[OpenClaw](openclaw.md) 的接法，这五个本地图都已收录。
 - 你想在自己的代码里用**任意 LLM**：这个 Python 库按设计与模型无关。
 - 你希望以后有换到托管路径的选项而不用换工具——Browser Use Cloud 与库并存。
 - 你要 MIT，而不是 copyleft 或 source-available：在浏览器 agent 里，Skyvern 是 AGPL-3.0，而这个差别会决定部署。

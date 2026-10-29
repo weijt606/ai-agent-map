@@ -32,7 +32,7 @@ MemGPT 是论文中的设计模式（LLM 自编辑记忆）。Letta 是基于这
 
 ## 什么时候别选
 
-- 你已经在用 LangGraph、CrewAI 或 AutoGen，想加一层记忆。Letta 会替换你的 agent 栈，不是插在旁边。
+- 你已经在用 LangGraph、CrewAI 或 AutoGen（现为 [Microsoft Agent Framework](microsoft-agent-framework.md)），想加一层记忆。Letta 会替换你的 agent 栈，不是插在旁边。
 - 你需要开箱即用的多 agent 编排或可视化调试器。
 - 你的任务是无状态、短周期的——所有内容都能放进单个上下文窗口。
 - 你想要最简单的记忆方案。Mem0 更轻量。

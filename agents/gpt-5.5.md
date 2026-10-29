@@ -13,7 +13,7 @@ One-line take: GPT-5.5 was OpenAI's frontier agentic model of spring 2026 — de
 | Item | Conclusion |
 | --- | --- |
 | Vendor | OpenAI |
-| Route | Frontier agentic model powering Codex, ChatGPT, and API surfaces (legacy — succeeded by GPT-5.6 in July and [GPT-6 Astra](gpt-6-astra.md) in September 2026) |
+| Route | Frontier agentic model that powered Codex, ChatGPT, and API surfaces (legacy — succeeded by GPT-5.6 in July and [GPT-6 Astra](gpt-6-astra.md) in September 2026; retired from Codex and ChatGPT for ChatGPT sign-in on 2026-10-14, so now API and API-key Codex only) |
 | Open source | No |
 | Best for | High-autonomy coding, research, multi-step agent workflows, and long-context tasks |
 | Main cost | 2x the API price of GPT-5.4, and the model boundary blurs with the Codex product boundary |
@@ -28,11 +28,11 @@ When a model release changes what agents built on top of it can do, the model it
 
 ## When To Pick It
 
-- You want the strongest available OpenAI model for agentic coding tasks through Codex or the API.
+- You want the model that was OpenAI's strongest for agentic coding at its April launch, and you reach it through the API or an API-key Codex session (ChatGPT sign-in lost it on 2026-10-14).
 - You need a 1-million-token context window for large codebases or long research workflows.
 - You care about fewer tokens per task — GPT-5.5 completes the same Codex tasks with significantly fewer tokens than GPT-5.4.
 - You are building your own agent system on the OpenAI API and want native tool calling, self-checking, and multi-step planning.
-- Your workflow already runs through ChatGPT, Codex, or GitHub Copilot and you want the latest model upgrade.
+- Your workflow ran through ChatGPT, Codex, or GitHub Copilot and you wanted the latest model upgrade at the time. For ChatGPT-signed-in Codex and ChatGPT that path closed on 2026-10-14.
 
 ## When Not To Pick It
 
@@ -57,10 +57,10 @@ When a model release changes what agents built on top of it can do, the model it
 
 ## Where It Runs
 
-GPT-5.5 is not a standalone runtime. It is available through:
+GPT-5.5 is not a standalone runtime. It was available through the surfaces below; since 2026-10-14 it is gone from ChatGPT and from Codex signed in with a ChatGPT account, and remains on the API and API-key Codex sessions:
 
-- **ChatGPT** — Plus, Pro, Business, Enterprise tiers
-- **Codex** — OpenAI's agentic coding product with sandboxed cloud execution
+- **ChatGPT** — Plus, Pro, Business, Enterprise tiers (retired 2026-10-14)
+- **Codex** — OpenAI's agentic coding product with sandboxed cloud execution (retired for ChatGPT sign-in 2026-10-14; API-key sessions unaffected)
 - **API** — Responses and Chat Completions (rolling out)
 - **GitHub Copilot** — available in the model picker for ask, edit, and agent modes
 
@@ -70,9 +70,9 @@ Complexity is Medium to High. The model itself is straightforward to use through
 
 ## Relationship To Codex
 
-This profile covers GPT-5.5 as a model. The [Codex](codex.md) profile covers the product — the cloud execution environment, isolation model, and review workflow. GPT-5.5 powers Codex but is not the same thing. If you are choosing between agent products, start with Codex. If you are choosing which model to wire into your own agent system, this profile is the right one.
+This profile covers GPT-5.5 as a model. The [Codex](codex.md) profile covers the product — the cloud execution environment, isolation model, and review workflow. GPT-5.5 powered Codex (the bundled default moved to GPT-6 Astra on Sept 4 and to GPT-6.1 Sol on Sept 29, and ChatGPT-signed-in Codex dropped GPT-5.5 on 2026-10-14), but it was never the same thing. If you are choosing between agent products, start with Codex. If you are choosing which model to wire into your own agent system, this profile is the right one.
 
-## Post-Launch Landscape (as of September 2026)
+## Post-Launch Landscape (as of October 2026)
 
 The frontier moved fast after GPT-5.5's April launch, and has now moved through two more generations on each side:
 
@@ -84,9 +84,15 @@ The frontier moved fast after GPT-5.5's April launch, and has now moved through 
 | **GPT-5.6** (OpenAI) | July 9 2026 | Succeeded GPT-5.5 across ChatGPT/Codex/API in three tiers — Sol, Terra, Luna — with an Ultra multi-agent setting; led the Artificial Analysis Coding Agent Index at launch (Sol 80 vs Fable 5 77.2, GPT-5.5 76.4, Opus 4.8 72.5) |
 | **[Claude Opus 5](claude-opus-5.md)** (Anthropic) | July 24 2026 | Held the Opus price ($5/$25) while closing most of the gap to Fable 5; 1M context as default *and* maximum; became the default model on Claude Max |
 | **[Claude Fable 5.1](claude-fable-5.md)** (Anthropic) | September 1 2026 | Same $10/$50 sticker, cache reads cut 75% to $0.25/M; SWE-bench Pro 81.2; ~60% fewer cybersecurity false positives in Claude Code |
-| **[GPT-6 Astra](gpt-6-astra.md)** (OpenAI) | September 3 2026 | Current OpenAI ceiling; $10/$50, doubling past 272k input tokens; public version restricted on cybersecurity prompts |
+| **[GPT-6 Astra](gpt-6-astra.md)** (OpenAI) | September 3 2026 | Current OpenAI ceiling; $10/$50, repricing to $20/$75 past 272k input tokens; public version restricted on cybersecurity prompts |
+| **Claude Opus 5.5** (Anthropic) | September 22 2026 | $4/$20, cache reads $0.20/M; Anthropic says Fable 5.1-level on most work at 40% less to run than Opus 5; default Opus in Claude Code `v2.1.280` |
+| **GPT-6 Sol and GPT-6 Luna** (OpenAI) | September 22 2026 | Sol $2/$10 (cache $0.20), Luna $0.10/$0.50 (cache $0.01), each roughly half its GPT-5.6 namesake; not the same models as GPT-5.6 Sol and Luna |
+| **Claude Sonnet 5.5** (Anthropic) | September 28 2026 | $2/$10, cache reads $0.10/M; Terminal-Bench 4.0 70.6%; default Sonnet in Claude Code `2.1.284` |
+| **GPT-6.1 Sol** (OpenAI) | September 29 2026 | $2/$10, cache reads $0.10/M; bundled Codex default since `rust-v0.159.1`, replacing Astra; the model OpenAI points GPT-5.5 users to |
+| **Claude Haiku 5.5** (Anthropic) | October 7 2026 | $0.10/$0.50 on prompts up to 100K tokens ($0.50/$2.50 above), cache reads $0.01/M; the Anthropic floor |
+| **GPT-6.1 Terra** (OpenAI) | October 26 2026 | $1/$5, cache reads $0.05/M; selectable in Codex, not a default |
 
-Practical read: GPT-5.5 is a legacy choice for new work. The September 2026 model-layer decision is **[GPT-6 Astra](gpt-6-astra.md) versus [Fable 5.1](claude-fable-5.md) at an identical $10/$50 headline** — separated by cache-read cost and long-context pricing shape rather than by sticker — with the cost-controlled path being GPT-5.6's tiers on one side and [Opus 5](claude-opus-5.md) / Sonnet 5 on the other.
+Practical read: GPT-5.5 is a legacy choice for new work, and since 2026-10-14 it is API-only for anyone signed in with ChatGPT. At the ceiling the decision is still **[GPT-6 Astra](gpt-6-astra.md) versus [Fable 5.1](claude-fable-5.md) at an identical $10/$50 headline** — separated by cache-read cost and long-context pricing shape rather than by sticker. The cost-controlled path is now GPT-6.1 Sol ($2/$10), GPT-6.1 Terra ($1/$5) and GPT-6 Luna on one side, and Opus 5.5 ($4/$20), Sonnet 5.5 ($2/$10) and Haiku 5.5 on the other; both vendors' coding agents default to that middle layer. Prices: [cost & benchmarks](../comparisons/cost-and-benchmarks.md).
 
 ## Bottom Line
 

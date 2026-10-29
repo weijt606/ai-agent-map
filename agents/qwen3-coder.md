@@ -38,7 +38,7 @@ Every other model on this route answers "how close can open weights get to the f
 - You want the open tier's capability ceiling — that is [Kimi K3](kimi-k3.md) or [GLM-5.3](glm-5.md) depending on the benchmark.
 - You need native vision in-model.
 - You need a licence guarantee from this page: the GitHub repository does not expose a standard licence field, so **verify the licence on the specific Hugging Face checkpoint you intend to use** — the Qwen line has historically shipped different terms for different sizes, and this map does not assert one.
-- You want a finished agent — that is Qwen Code, a separate project this map does not yet profile.
+- You want a finished agent — that is [Qwen Code](qwen-code.md), a separate project.
 
 ## Capability Shape
 

@@ -41,13 +41,15 @@ One-line take: GitHub Copilot now behaves more like an agent platform than a sin
 
 ## Mid-2026 Updates
 
-June–July 2026 pushed Copilot further toward an agent platform than an autocomplete product:
+June–October 2026 pushed Copilot further toward an agent platform than an autocomplete product:
 
 - **Agent finder (June 17)**: Copilot discovers the right capability for a task on its own instead of requiring manual MCP/skills/agents configuration.
 - **JetBrains AI Assistant (June 30)**: Copilot Agent became a first-class option in the JetBrains agent picker — it now competes inside other vendors' surfaces.
 - **VS Code (June)**: agentic browser tools GA (navigate, inspect, screenshot, validate web apps in-editor), agent-session organization with cost visibility, and 1M-token context with compatible Anthropic and OpenAI models.
 - **Code review (June 18)**: repository-level AGENTS.md support in Copilot code review.
 - **Copilot CLI (July)**: plan mode now hard-blocks mutating tool calls while planning, plus voice-mode persistence, canvas support, and tighter subagent controls; a /security-review command entered public preview.
+- **Agent Skills (Oct 22)**: Anthropic donated the Agent Skills standard to the Agentic AI Foundation and named GitHub Copilot among the more than 70 platforms that have integrated it since December 2025 (Anthropic's statement; [announcement](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation)).
+- **GPT-6.1 Terra (Oct 26)**: OpenAI's $1 / $5 model reached Copilot the same day it launched ([GitHub changelog](https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot)). See [market-events](../market-events.md).
 
 Selection takeaway: the platform advantage keeps compounding — Copilot is increasingly the agent layer of the whole GitHub workflow rather than a single assistant.
 

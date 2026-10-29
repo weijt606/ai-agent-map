@@ -24,6 +24,7 @@
 - 你想把 flow 暴露为 REST API，不用写后端代码。
 - 你需要原生向量数据库支持——Pinecone、Qdrant、Chroma 等。
 - 你想从市场里的预建模板快速开始。
+- 你更喜欢 no-code / low-code，而不是直接写 LangChain Python。
 
 ## 什么时候别选
 

@@ -43,10 +43,12 @@
 
 ## 2026 年年中动态
 
-整个夏天 agent 表面还在继续变宽：
+整个夏天 agent 表面还在继续变宽，秋天本地图的[市场事件](../market-events.md)又记下两条：
 
 - **2026 年 6 月**：Cursor 浏览器内的 Design Mode（点击、涂画或语音描述 UI 改动，交给 agent 执行）；**Cursor for iOS** 在全部付费计划公测——常驻 agent、Remote Control、实时通知、移动端 review；Teams 定价改版，新增 Premium 席位（3 倍价格换 5 倍用量）。
 - **2026 年 7 月（v3.11，7 月 10 日）**：Agents Window 的云端 agent 升级——环境启动更快、可复用快照、/in-cloud subagent 隔离并行；side chats 和 agent 记录搜索；Bugbot review 快 3 倍以上且便宜 22%。
+- **2026 年 8 月 27 日**：[Gambit Security 报告](https://gambit.security/blog-posts/aurora-ransomware-targets-esxi-abuses-cursor-agent-for-exploitation)，有攻击者在 2026 年 4 月 8 日到 5 月 21 日之间驱动 Cursor Agent（底层是 Claude Sonnet），在十家受害机构内部做入侵操作。恢复出的日志里，各种约束来自操作者本人，而不是产品。
+- **2026 年 10 月 22 日**：Anthropic 把 Agent Skills 标准捐给 Agentic AI Foundation，并把 Cursor 列为自 2025 年 12 月以来接入这一标准的 70 多个平台之一（Anthropic 的说法）。
 
 选型要点：Cursor 现在押注最重的是"随身携带的 agent"（移动端、云端、常驻）——编辑器只是若干表面之一。
 

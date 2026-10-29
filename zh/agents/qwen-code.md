@@ -12,7 +12,7 @@
 | --- | --- |
 | 厂商 | 阿里 / Qwen |
 | 路线 | 直接执行 |
-| 仓库 | [`QwenLM/qwen-code`](https://github.com/QwenLM/qwen-code)——Apache-2.0，TypeScript，**2.77 万 star** |
+| 仓库 | [`QwenLM/qwen-code`](https://github.com/QwenLM/qwen-code)——Apache-2.0，TypeScript，**2.88 万 star**（2026-10-28） |
 | 是否开源 | 是（Apache-2.0），模型同样开放 |
 | 最适合 | 想要一个厂商 CLI、但不想要通常随之而来的厂商锁定的团队 |
 | 主要代价 | 体量小于头部 CLI；自迭代的开发方式很特别，值得先搞清楚 |
@@ -23,7 +23,7 @@
 
 本地图的直接执行路线是每个模型家族收一个厂商 CLI，而阿里那个一直缺着。它同时补上了一对：本地图现在收了开放权重模型 [Qwen3-Coder](qwen3-coder.md)，而这就是厂商为跑它而发的循环。
 
-有意思的性质在于这个组合。这里其他所有第一方 CLI，都是"开放或闭源的客户端 + **闭源**权重"。Qwen Code 两侧都开放，这让"无厂商锁定"从一句口号变成一个可核对的说法。
+有意思的性质在于这个组合。这里大多数第一方 CLI 都是"开放或闭源的客户端 + **闭源**权重"。Qwen Code 是少数两侧都开放的之一（另见 [DeepSeek Harness](deepseek-harness.md) + [DeepSeek V4](deepseek-v4.md)，以及 [Kimi Code](kimi-code.md) + [Kimi K3](kimi-k3.md)），这让"无厂商锁定"从一句口号变成一个可核对的说法。
 
 ## 什么时候选它
 
@@ -34,7 +34,7 @@
 
 ## 什么时候不选它
 
-- 你要最大的生态。2.77 万 star 比 [OpenCode](opencode.md) 和 [Gemini CLI](gemini-cli.md) 低一个数量级，瞄准它的第三方集成更少。
+- 你要最大的生态。2.88 万 star（2026-10-28）约为 [Gemini CLI](gemini-cli.md) 的四分之一、[OpenCode](opencode.md) 的八分之一，瞄准它的第三方集成更少。
 - **自迭代的开发方式对你重要。** 项目声明它用自己的 agent 和模型来提 issue、提 PR、评审代码、跑测试。这既是一个关于 agent 成熟度的有趣主张，也是一个关于评审深度的治理问题——采纳前先决定你持哪种读法。
 - 你要的是厂商中立项目而不是某厂商的开放项目——那是 [OpenCode](opencode.md)。
 - 你的模型承诺是 Claude 或 GPT，而且想要它们调好的默认值。

@@ -4,7 +4,7 @@
 [![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](browser-use.md)
 [![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-One-line take: Browser Use gives an agent a real browser — it opens pages, clicks, types, and fills forms the way a person does — and at 113k stars under MIT it is the default answer for the one capability this map had no route for.
+One-line take: Browser Use gives an agent a real browser — it opens pages, clicks, types, and fills forms the way a person does — and at 119k stars (2026-10-28) under MIT it is the default answer for the one capability this map had no route for.
 
 ## Quick Read
 
@@ -12,7 +12,7 @@ One-line take: Browser Use gives an agent a real browser — it opens pages, cli
 | --- | --- |
 | Vendor | Browser Use (open-source project, with a hosted cloud) |
 | Route | **Browser agent** — the first entry on a new route |
-| Repository | [`browser-use/browser-use`](https://github.com/browser-use/browser-use) — MIT, Python, **113k stars** |
+| Repository | [`browser-use/browser-use`](https://github.com/browser-use/browser-use) — MIT, Python, **119k stars (2026-10-28)** |
 | Open source | Yes (MIT); a hosted Browser Use Cloud also exists |
 | Best for | Tasks that live on websites rather than in repositories |
 | Main cost | An agent driving a real browser is a real security surface — scope it deliberately |
@@ -30,7 +30,7 @@ The gap became untenable once the map recorded [Kimi Work](kimi-work.md) shippin
 ## When To Pick It
 
 - **The task is on a website and there is no API.** Filling applications, extracting structured data from pages, multi-step flows across forms — the project's own examples.
-- You want it **inside an agent you already run**: it registers as a skill (`browser-use skill install`) and the README documents setup for Claude Code, Codex, Cursor, [Hermes Agent](hermes-agent.md), and [OpenClaw](openclaw.md) — three of which this map already profiles.
+- You want it **inside an agent you already run**: it registers as a skill (`browser-use skill install`) and the README documents setup for [Claude Code](claude-code.md), [Codex](codex.md), [Cursor](cursor.md), [Hermes Agent](hermes-agent.md), and [OpenClaw](openclaw.md), all five of which this map profiles.
 - You want **any LLM**, from your own code: the Python library is model-agnostic by design.
 - You want the option of a hosted path later without changing tools — Browser Use Cloud exists alongside the library.
 - You want MIT rather than a copyleft or source-available licence; among browser agents, Skyvern is AGPL-3.0 and that difference decides deployments.

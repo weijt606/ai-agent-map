@@ -51,4 +51,4 @@ Complexity is High. Self-hosting requires Docker, database setup, and ongoing ma
 
 ## Bottom Line
 
-AutoGPT is the most well-known autonomous agent project (182k stars) and has evolved significantly from a CLI experiment to a visual platform. The trade-off: high ambition, broad feature set, but reliability and polish are still catching up.
+AutoGPT is one of the best-known autonomous agent projects (188k stars, 2026-10-28) and has evolved significantly from a CLI experiment to a visual platform. The trade-off: high ambition, broad feature set, but reliability and polish are still catching up.

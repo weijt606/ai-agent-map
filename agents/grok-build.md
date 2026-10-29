@@ -21,7 +21,7 @@ One-line take: Grok Build (`grok`) is SpaceXAI's official terminal coding agent 
 | License | Apache-2.0 (first-party code); vendored third-party under original licenses |
 | Models | Grok — browser OAuth to a SpaceXAI account on first launch |
 | Best for | Developers on Grok models who want a fast, first-party TUI with headless CI and editor (ACP) reach |
-| Main cost | Two weeks old and vendor-bound; you cannot contribute upstream despite the OSS license |
+| Main cost | Public since mid-July 2026 and vendor-bound; you cannot contribute upstream despite the OSS license |
 | GitHub repo | https://github.com/xai-org/grok-build |
 
 ## When To Pick It
@@ -35,7 +35,7 @@ One-line take: Grok Build (`grok`) is SpaceXAI's official terminal coding agent 
 
 - You want to own and extend the loop — the license lets you fork, but development is closed and the tree is a monorepo export, so your changes live downstream forever. [Pi](pi.md), [jcode](jcode.md), or [OpenHands](openhands.md) are the fork-and-own picks.
 - You want provider neutrality as the core value. Grok Build authenticates to a SpaceXAI account by design; a provider-agnostic base like [Pi](pi.md), [jcode](jcode.md), or [Aider](aider.md) is safer if you switch models often.
-- You need a mature, stable surface today — the repo is roughly two weeks old and moving fast.
+- You need a mature, stable surface today — the repo has been public only since mid-July 2026 and is moving fast.
 - You need cloud delegation, scheduled background runs, or parallel remote agents — that is [Codex](codex.md), [Devin](devin.md), or [Claude Managed Agents](claude-managed-agents.md) territory.
 
 ## Capability Shape
@@ -52,11 +52,11 @@ One-line take: Grok Build (`grok`) is SpaceXAI's official terminal coding agent 
 
 ## Lineage Note
 
-Per the repo's own `THIRD-PARTY-NOTICES` and the crate-local notice in `xai-grok-tools`, Grok Build carries **in-tree source ports of [`openai/codex`](codex.md) and `sst/opencode` tool implementations**, with the Apache §4(b) change notice attached. That is worth knowing when comparing tool behavior: the tool layer is not a clean-room design, and some of its semantics will feel familiar if you have used Codex.
+Per the repo's own `THIRD-PARTY-NOTICES` and the crate-local notice in `xai-grok-tools`, Grok Build carries **in-tree source ports of [`openai/codex`](codex.md) and `sst/opencode` (now [`anomalyco/opencode`](opencode.md)) tool implementations**, with the Apache §4(b) change notice attached. That is worth knowing when comparing tool behavior: the tool layer is not a clean-room design, and some of its semantics will feel familiar if you have used Codex.
 
 ## Operating Cost
 
-Complexity is Low–Medium to *use*, higher to *depend on*. Install is a one-line script (`curl -fsSL https://x.ai/cli/install.sh | bash`, or PowerShell on Windows) with prebuilt macOS/Linux/Windows binaries, and first launch handles auth in the browser. Building from source is heavier than most: it needs a pinned Rust toolchain plus **DotSlash** for hermetic tooling (`protoc`), the root `Cargo.toml` is generated and read-only, and Windows source builds are best-effort. The strategic cost is the governance shape — a two-week-old, vendor-controlled tree you cannot contribute to, so every local change is a permanent downstream diff.
+Complexity is Low–Medium to *use*, higher to *depend on*. Install is a one-line script (`curl -fsSL https://x.ai/cli/install.sh | bash`, or PowerShell on Windows) with prebuilt macOS/Linux/Windows binaries, and first launch handles auth in the browser. Building from source is heavier than most: it needs a pinned Rust toolchain plus **DotSlash** for hermetic tooling (`protoc`), the root `Cargo.toml` is generated and read-only, and Windows source builds are best-effort. The strategic cost is the governance shape — a vendor-controlled tree, public only since mid-July 2026, you cannot contribute to, so every local change is a permanent downstream diff.
 
 ## Bottom Line
 

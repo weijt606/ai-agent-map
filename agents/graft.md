@@ -26,7 +26,7 @@ One-line take: Graft is a code context layer that writes your codebase's structu
 | Languages | 23 — nine at full fidelity (TS/JS, Python, Go, Java, Kotlin, PHP, Swift, R), fourteen at symbol-plus-call-edge fidelity; optional LSP tier for compiler-grade edges |
 | Best for | A team on a large repo whose agent burns most of a run rediscovering the codebase, and who wants the artifact to stay readable |
 | Main cost | 0.x and moving fast; the graph is a local cache each teammate rebuilds; `init` can write machine-wide Codex config |
-| GitHub repo | https://github.com/trailhq/Graft |
+| GitHub repo | https://github.com/trailhq/Trail-Code |
 
 ## When To Pick It
 

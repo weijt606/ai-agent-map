@@ -28,7 +28,7 @@ Fable and **Mythos** share the same underlying model at each version; the differ
 
 ## When To Pick It
 
-- You want the strongest available Claude model for agentic work — engineering, research, or analysis.
+- You want the top Claude tier for agentic work — engineering, research, or analysis. It is not the top Claude score on every benchmark: on Terminal-Bench 4.0, [Opus 5.5](../comparisons/cost-and-benchmarks.md) leads it 66.4% to 55.8% (Anthropic, Sept 22) and Sonnet 5.5 scores 70.6% (Sept 28).
 - Your tasks are big enough to justify the price. The Fable 5 launch reference case is Stripe reporting a codebase migration "that would have taken a whole team two months by hand" completed in a day.
 - **Your agent re-reads a large context on every turn.** This is the 5.1-specific reason: cache reads dropped from $1/M to $0.25/M, which Anthropic puts at roughly 25% off typical workloads and up to 45% off heavily agentic ones with no change to the sticker price.
 - You hit false refusals on security-adjacent code. Anthropic reports around 60% fewer cybersecurity false positives for Claude Code users on 5.1.
@@ -36,7 +36,7 @@ Fable and **Mythos** share the same underlying model at each version; the differ
 ## When Not To Pick It
 
 - You are cost-sensitive — $10/$50 per million tokens is 2x [Opus 5](claude-opus-5.md) on both sides, and since July 7 2026 it is metered rather than bundled in subscriptions.
-- Your workload does not need Mythos-class capability. **Opus 5 is the dependable default under it** and takes most of the distance at half the price; Sonnet 5 sits under that again at $2/$10.
+- Your workload does not need Mythos-class capability. **Opus 5.5 has been the default under it since Sept 22** ($4 / $20, which Anthropic says performs at Fable 5.1's level on most work); [Opus 5](claude-opus-5.md) at $5/$25 is still available, and Sonnet 5.5 sits under them at $2/$10.
 - You need an open-source or self-hosted model.
 - You want a finished agent product, not a model — look at [Claude Code](claude-code.md) instead.
 
@@ -49,7 +49,7 @@ Fable and **Mythos** share the same underlying model at each version; the differ
 | Scientific work | Very strong | Terminal-Bench-Science more than doubled, 24.7% → **52.6%** |
 | Knowledge work | Very strong | Top score on financial-analysis benchmarks at the Fable 5 launch |
 | Vision | Very strong | Rebuilds web-app source code from screenshots; completed Pokémon FireRed autonomously |
-| Long-session economics | Strong | Cache reads at 2.5% of input price — the cheapest cache read of any frontier model on this map |
+| Long-session economics | Strong | Cache reads at 2.5% of input price — the lowest cache-to-input ratio of any frontier model on this map; in absolute terms Opus 5.5 ($0.20/M) and Sonnet 5.5 ($0.10/M) are cheaper |
 | Availability stability | Medium | Pulled globally June 12 → July 1 2026 under short-lived export controls; now behind stricter safety classifiers with automatic Opus fallback |
 | Open-source / self-host | None | Fully proprietary |
 
@@ -63,10 +63,11 @@ Fable and **Mythos** share the same underlying model at each version; the differ
 - **July 7** — subscription bundling ended; Fable moved to metered usage credits.
 - **July 24** — [Opus 5](claude-opus-5.md) shipped and became the default under it, changing what "spend a credit" is being compared against.
 - **September 1** — **Fable 5.1 and Mythos 5.1** released. Cache reads cut 75%, benchmark gains above, ~60% fewer cybersecurity false positives in Claude Code, and invisible watermarking of Claude-generated text with a detection API in private preview for eligible organizations under EU law.
+- **September 22** — Claude Opus 5.5 ($4 / $20, cache reads $0.20/M) shipped and became the default Opus in Claude Code `v2.1.280`. Anthropic says it performs at Fable 5.1's level on most work at 40% less to run than Opus 5, and it scores above Fable 5.1 on Terminal-Bench 4.0 (66.4% vs 55.8%).
 
 ## Relationship To Claude Code
 
-This profile covers the model. [Claude Code](claude-code.md) covers the product where most readers will actually meet it. The practical question inside Claude Code is per-task: **spend Fable 5.1 credits on the hardest work, stay on [Opus 5](claude-opus-5.md) for everything else.**
+This profile covers the model. [Claude Code](claude-code.md) covers the product where most readers will actually meet it. The practical question inside Claude Code is per-task: **spend Fable 5.1 credits on the hardest work, stay on Opus 5.5 (the default since Sept 22, replacing [Opus 5](claude-opus-5.md)) for everything else.**
 
 ## Bottom Line
 

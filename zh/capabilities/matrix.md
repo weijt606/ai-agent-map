@@ -78,6 +78,7 @@
 | [Cursor](../agents/cursor.md) | ● | ◐ | ○ | ◐ | ◐ | ◐ | ◐ | ● | ○ |
 | [Windsurf](../agents/windsurf.md) | ● | ◐ | ○ | ◐ | ○ | ◐ | ○ | ◐ | ○ |
 | [Google Antigravity](../agents/antigravity.md) | ● | ● | ○ | ● | ● | ◐ | ● | ● | ○ |
+| [TRAE](../agents/trae.md) | ● | ● | ◐ | ● | ◐ | ◐ | ● | ● | ○ |
 | [Continue](../agents/continue.md) | ◐ | ○ | ○ | ○ | — | ◐ | — | ◐ | ◐ |
 | [Cline](../agents/cline.md) | ● | ● | ○ | ○ | — | ● | — | ◐ | ◐ |
 | [GitHub Copilot](../agents/github-copilot.md) | ● | ◐ | ○ | ◐ | ◐ | ◐ | ◐ | ● | ○ |

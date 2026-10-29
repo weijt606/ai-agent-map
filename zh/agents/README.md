@@ -18,7 +18,7 @@
 | 开放权重 agentic 模型 | [Kimi K3](kimi-k3.md)、[GLM-5.3](glm-5.md)、[DeepSeek V4](deepseek-v4.md)、[Qwen3-Coder](qwen3-coder.md) | 想在自己托管、自己承担许可的权重上拿到前沿级能力的人；这几个之间，许可的差别比 benchmark 的差别更大 |
 | Agentic skills 框架 | [Superpowers](superpowers.md), [ECC](ecc.md) | 想要一套方法论 + 可组合 skills 层、能接到 Claude Code、Codex、Cursor 等 agent 之上 |
 | 工作流 / orchestration layer | [oh-my-claudecode](oh-my-claudecode.md), [oh-my-codex](oh-my-codex.md), [Ruflo](ruflo.md), [Orca](orca.md), [Paperclip](paperclip.md) | 已经在用 Claude Code 或 Codex，只想补强 teams、skills 和持久工作流（Ruflo 进一步推到跨机器联邦）；Orca 和 Paperclip 同时调度多个不同的 agent |
-| 编辑器中心工作流 | [Cursor](cursor.md), [Windsurf](windsurf.md), [Google Antigravity](antigravity.md), [Continue](continue.md) | 想让编辑器本身成为 agent 主表面 |
+| 编辑器中心工作流 | [Cursor](cursor.md), [Windsurf](windsurf.md), [Google Antigravity](antigravity.md), [TRAE](trae.md), [Continue](continue.md) | 想让编辑器本身成为 agent 主表面 |
 | review-first 自动化 | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md), [CoStrict](costrict.md), [Open Code Review](open-code-review.md) | 想把 review 和人工节奏留在核心（CoStrict 瞄准企业严格流程 + 私有化部署；Open Code Review 只做评审，为 CI 里的准确率调优） |
 | 通用自主 agent | [AutoGPT](autogpt.md), [Agent Zero](agent-zero.md), [BabyAGI](babyagi.md), [Julep](julep.md), [GenericAgent](generic-agent.md), [ml-intern](ml-intern.md), [WorkBuddy](workbuddy.md), [Kimi Work](kimi-work.md) | 想要通用自主任务执行（ml-intern 是 ML 工程取向的特化版） |
 | 自建系统 | [LangChain](langchain.md), [LangGraph](langgraph.md), [CrewAI](crewai.md), [LlamaIndex](llamaindex.md), [Haystack](haystack.md), [Semantic Kernel](semantic-kernel.md), [DSPy](dspy.md), [Pydantic AI](pydantic-ai.md), [eve](eve.md), [Microsoft Agent Framework](microsoft-agent-framework.md) | 想自己搭 agent system（eve 是其中唯一自带渠道、定时、沙箱与审批闸门的） |
@@ -106,6 +106,7 @@
 | [Cline](cline.md) | execution | 是 | approval-first 编辑器内 coding agent | 已核验 |
 | [Windsurf](windsurf.md) | platform | 否 | 以 Cascade 为中心的 AI 原生 IDE | 已核验 |
 | [Google Antigravity](antigravity.md) | platform | 否 | 谷歌的 agent 优先平台：agent 桌面应用、`agy` CLI、独立 IDE、六款编辑器扩展共用一套 harness；免费档按周封顶，付费档可用 Claude，配额不公布数字 | 2026-10-30 按谷歌官方文档、定价页与博客核验 |
+| [TRAE](trae.md) | platform | 否（另有 MIT 研究型 CLI：`bytedance/trae-agent`） | 字节跳动的 AI IDE：IDE 与 SOLO 模式，Agent 窗口跑并行、云端和定时任务，另有网页端和移动端；国际版与国内版的模型、价格各自独立；CLI 只在国内版企业旗舰版 | 2026-10-30 按 docs.trae.ai、docs.trae.cn、定价页与隐私政策核验 |
 | [OpenHands](openhands.md) | execution | 是 | 开源 AI 软件工程 agent | 已核验 |
 | [Devin](devin.md) | execution | 否 | 托管式端到端软件工程执行 | 已核验 |
 | [Jules](jules.md) | automation | 否 | Google 托管、带 GitHub 和 PR 流程的云端 coding agent | 已按当前文档核验 |

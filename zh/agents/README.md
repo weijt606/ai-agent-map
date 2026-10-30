@@ -27,7 +27,7 @@
 | 浏览器 agent | [Browser Use](browser-use.md) | 任务活在没有 API 的网站上的人；选型问题是"允许一个 agent 以你的身份在开放互联网上做什么" |
 | 自托管 / 本地 runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md), [Mercury Agent](mercury-agent.md), [OpenHuman](openhuman.md) | 需要端侧隐私、本地控制、扩展、渠道、runtime ownership 或个人数据生活集成 |
 | 管理式后台路径 | [Claude Managed Agents](claude-managed-agents.md) | 需要云端、定时、后台执行 |
-| 消费级个人 agent | [ChatGPT dots](chatgpt-dots.md), [Gemini Task](gemini-task.md), [Claude（Cowork）](claude-cowork.md), [Claude Duet](claude-duet.md), [Muse（Meta）](meta-muse.md), [Grok Bot](grok-bot.md), [Cue（Manus）](manus-cue.md), [豆包](doubao.md), [千问 App](qwen-app.md), [AutoGLM](autoglm.md), [元宝](yuanbao.md) | 想把跑腿、收件箱或手机交给闭源消费级产品的人；对比见[个人 agent](../comparisons/personal-agents.md) |
+| 消费级个人 agent | [ChatGPT dots](chatgpt-dots.md), [Gemini Task](gemini-task.md), [Claude（Cowork）](claude-cowork.md), [Claude Duet](claude-duet.md), [Muse（Meta）](meta-muse.md), [Grok Bot](grok-bot.md), [Cue（Manus）](manus-cue.md), [豆包](doubao.md), [千问 App](qwen-app.md), [AutoGLM](autoglm.md), [元宝](yuanbao.md), [Today](today-ai.md) | 想把跑腿、收件箱或手机交给闭源消费级产品的人；对比见[个人 agent](../comparisons/personal-agents.md) |
 
 ## 近期热门快照
 
@@ -192,6 +192,7 @@
 | [千问 App](qwen-app.md) | 个人 agent | 否 | 阿里的消费级应用变成了跑腿 agent——成品交付、定时任务、外卖、酒店和政务 | 2026-10-21 按一手页面核验 |
 | [AutoGLM](autoglm.md) | 个人 agent | 部分（框架） | 智谱的手机操作 agent：一个在云手机上干活的免费应用，加上能操作你自己手机的 Apache-2.0 框架 Open-AutoGLM | 2026-10-21 按一手页面核验 |
 | [元宝](yuanbao.md) | 个人 agent | 否 | 腾讯的免费助手，Hy3 Agent 功能交付办公文件——WorkBuddy 同一模型家族的消费级那一端 | 2026-10-21 按一手页面核验 |
+| [Today](today-ai.md) | 个人 agent | 否 | 主打记忆与主动帮助的个人 AI 助理：早晚间简报、定时任务、云端电脑和 Chrome 插件；关键步骤由你确认；中国版 + 国际版 | 2026-10-31 按一手页面核验 |
 
 ## 写法标准
 

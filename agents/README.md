@@ -27,7 +27,7 @@ Think of it as a shortlist directory: understand the route first, then decide wh
 | Browser agent | [Browser Use](browser-use.md) | People whose task lives on a website with no API; the selection question is what an agent may do as you on the open web |
 | Self-hosted / local runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md), [Mercury Agent](mercury-agent.md), [OpenHuman](openhuman.md) | Users who need local control, on-device privacy, extensions, channels, runtime ownership, or personal-data life integration |
 | Managed background path | [Claude Managed Agents](claude-managed-agents.md) | Users who need scheduled, cloud, or detached execution |
-| Consumer personal agent | [ChatGPT dots](chatgpt-dots.md), [Gemini Task](gemini-task.md), [Claude (Cowork)](claude-cowork.md), [Claude Duet](claude-duet.md), [Muse (Meta)](meta-muse.md), [Grok Bot](grok-bot.md), [Cue (Manus)](manus-cue.md), [Doubao](doubao.md), [Qwen app](qwen-app.md), [AutoGLM](autoglm.md), [Yuanbao](yuanbao.md) | People who want to hand errands, inboxes or their phone to a closed consumer product; compared in [personal agents](../comparisons/personal-agents.md) |
+| Consumer personal agent | [ChatGPT dots](chatgpt-dots.md), [Gemini Task](gemini-task.md), [Claude (Cowork)](claude-cowork.md), [Claude Duet](claude-duet.md), [Muse (Meta)](meta-muse.md), [Grok Bot](grok-bot.md), [Cue (Manus)](manus-cue.md), [Doubao](doubao.md), [Qwen app](qwen-app.md), [AutoGLM](autoglm.md), [Yuanbao](yuanbao.md), [Today](today-ai.md) | People who want to hand errands, inboxes or their phone to a closed consumer product; compared in [personal agents](../comparisons/personal-agents.md) |
 
 ## Recent Heat Snapshot
 
@@ -192,6 +192,7 @@ Rank history over time is charted in [rankings/](../rankings/README.md), alongsi
 | [Qwen app](qwen-app.md) | personal agent | No | Alibaba's consumer app turned errand agent — deliverables, scheduled tasks, food, hotels and government services | Verified against first-party pages, 2026-10-21 |
 | [AutoGLM](autoglm.md) | personal agent | Partly (framework) | Zhipu's phone-use agent: a free app on cloud phones, plus the Apache-2.0 Open-AutoGLM framework for your own phone | Verified against first-party pages, 2026-10-21 |
 | [Yuanbao](yuanbao.md) | personal agent | No | Tencent's free assistant with a Hy3 Agent feature that delivers office files — the consumer end of WorkBuddy's model family | Verified against first-party pages, 2026-10-21 |
+| [Today](today-ai.md) | personal agent | No | A personal AI assistant built on memory and proactive help: morning and evening briefings, scheduled tasks, cloud computers and a Chrome extension; key steps left for you to confirm; China and international editions | Verified against first-party pages, 2026-10-31 |
 
 ## Writing Standard
 

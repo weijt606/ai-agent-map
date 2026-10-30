@@ -4,6 +4,10 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-10-31 — Today profiled
+
+**[Today](agents/today-ai.md)**, a personal AI assistant built around memory and proactive help, joins the **consumer personal agent** route as the twelfth agent on the [personal agents](comparisons/personal-agents.md) page, 97 → 98. It ships as a China edition (todayai.cn, operated by 汇翮（上海）智能科技有限公司) and an international edition (today.ai, sold on the App Store by Today AI PTE. LTD.). Every fact in the profile comes from its own site, privacy policies, terms, App Store, Google Play and Chrome Web Store pages; the founder, launch date and financing are reported only by media and are marked *media*. The new-user offer follows the site's current "300 million tokens + 3 months of Pro", not the "100 million tokens + one month" media reported on Oct 22. On the capability grid, Approval controls is ◐ (only "you confirm or take over key steps" is written) and Multi-agent is **?**.
+
 ## 2026-10-30 (later) — TRAE profiled
 
 **[TRAE](agents/trae.md)**, ByteDance's AI IDE, joins the **editor-centric** route next to Cursor, Windsurf and Google Antigravity, 96 → 97. It ships as separate international and China editions with different model lists and prices. Its own docs say chat interactions, including code snippets and AI outputs, "may be used for analytics, product improvement, and model training" unless each signed-in user turns on Privacy Mode; the profile puts that in the Quick Read. There is no public CLI for individuals (TRAE CLI 2.0 is only on the China enterprise flagship plan); the MIT `bytedance/trae-agent` research CLI is noted in the profile but not tracked, because TRAE's docs never say the IDE uses it. TRAE gets a scored matrix row and a mention among the editor-centric exclusions on the terminal CLI comparison.

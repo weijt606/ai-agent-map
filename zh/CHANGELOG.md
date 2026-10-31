@@ -4,6 +4,15 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-11-01 —— 新增对比页：Agent Skills
+
+**新增对比页 [Agent Skills](comparisons/agent-skills.md)**，起因是 Anthropic 10 月 22 日把这个标准捐给了 Agentic AI Foundation。profile 数仍是 98。
+
+- **skill 是什么、在哪里能用。** 本页按 Anthropic 文档写清格式和渐进式披露各阶段的加载开销，用各自官方的说法把 skill 和提示词、MCP、插件、Project 分开，并逐个列出官方文档写明支持的 agent 的目录和调用方式：Claude 应用、Claude Code、Agent SDK、API、Codex 与 ChatGPT、Cursor、VS Code 里的 Copilot、Gemini CLI、OpenCode。
+- **集合在这里比较，不写 profile。** 原有政策不变：精选 skill 集合是内容资产，不是 agent 本身。Superpowers、mattpocock/skills、ECC、anthropics/skills、addyosmani/agent-skills 放进同一张表，列出类型、skill 数、覆盖的 agent、体量、维护者、许可证和 2026-10-28 的 star 数。"70 多个平台""100 万个 skill"都标明是 Anthropic 自报。
+- **安全建议引用原文。** 引用了 Anthropic"只用可信来源的 skill、像对待安装软件一样审查"的建议，Claude Code 关于 `allowed-tools` 和 shell 注入的提醒，以及每个已装 skill 都要付出的上下文开销。
+- 顺带发现、尚未改进 profile 的：ECC 的 README 现在写 314 个 skill、98 个命令，[它的 profile](agents/ecc.md) 写的是 311 和 97；Superpowers 的 README 列了 16 个安装目标和七个 skill 组成的流程，[它的 profile](agents/superpowers.md) 列得更少。
+
 ## 2026-10-31 —— 收录 Today
 
 主打记忆与主动帮助的个人 AI 助理 **[Today](agents/today-ai.md)** 进**消费级个人 agent**路线，成为[个人 agent 对比](comparisons/personal-agents.md)页第十二个 agent，97 → 98。它分中国版（todayai.cn，汇翮（上海）智能科技有限公司运营）和国际版（today.ai，App Store 卖家 Today AI PTE. LTD.）。profile 里每条事实都来自它自己的官网、隐私政策、服务条款、App Store、Google Play 和 Chrome 应用店页面；创始人、发布日期和融资只有媒体报道，标了 *媒体*。新用户权益以官网现在写的"3亿 Tokens + 3 个月 Pro"为准，而不是媒体 10 月 22 日写的"1亿 Token + 一个月 Pro"。能力格里审批控制给 ◐（只写了"关键步骤由你确认或接手"），多 agent 给 **?**。

@@ -24,5 +24,6 @@
 - [Agent 观测与评估](observability-and-evals.md) —— 上线之后你怎么知道 agent 还正常
 - [消费级个人 agent](personal-agents.md) —— 你把日常交出去的闭源 agent，按事实和控制力比较；不做热度排名
 - [成本 & benchmark](cost-and-benchmarks.md) —— 编码能力 vs 价格，以及 agent 怎么收费
+- [Agent Skills](agent-skills.md) —— skill 是什么、在哪里能用，以及主要 skill 集合与框架的对比
 
 另见[能力矩阵](../capabilities/matrix.md) —— 每个项目在统一能力维度上的打分。

@@ -18,7 +18,7 @@
 | 在哪里干活 | "一台带自己浏览器的虚拟机"，所以"不需要你的电脑或手机开着" |
 | 模型 | 围绕 **Claude Opus 5.5** 设计（[成本与基准](../comparisons/cost-and-benchmarks.md)） |
 | 价格 | 预览期间含在 **Pro**、**Max** 和 **Ultra** 里，和套餐共用用量额度；它的后台检查也计入额度 |
-| 地区 | "US only during the research preview"（帮助中心） |
+| 地区 | "US only during the research preview"（[帮助中心](https://support.claude.com/en/articles/17631495-get-started-with-claude-duet)） |
 | 官方页面 | https://claude.com/resources/articles/claude-duet |
 
 ## 和 Claude（Cowork）有什么不同

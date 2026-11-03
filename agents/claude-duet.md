@@ -18,7 +18,7 @@ One-line take: Anthropic's standalone proactive agent, separate from [Claude (Co
 | Where it runs | "A virtual machine with its own browser", so it "doesn't require your laptop or phone to be on" |
 | Model | Designed around **Claude Opus 5.5** ([cost & benchmarks](../comparisons/cost-and-benchmarks.md)) |
 | Price | Included in **Pro**, **Max** and **Ultra** during the preview, sharing the plan's usage limits; its background checks count against them |
-| Regions | "US only during the research preview" (help center) |
+| Regions | "US only during the research preview" ([help center](https://support.claude.com/en/articles/17631495-get-started-with-claude-duet)) |
 | Official page | https://claude.com/resources/articles/claude-duet |
 
 ## How It Differs From Claude (Cowork)

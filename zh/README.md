@@ -49,7 +49,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 | --- | --- | --- | --- | --- | --- |
 | #1&#8288;（=） | [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) | 269.8k | +6,264 | 已收录 · [profile](agents/deepseek-harness.md) | **守住 #1**，这是它第一次连续两个窗口坐榜首（09-30 那次只坐一期），29 个窗口里第三个 #1。约 7,308/周：与上期大致持平，是 09-17 以来最快。越过 **26.5 万**，**差 216 到 27 万**。窗口内只有预发布版（`dsh-v0.2.1-rc.4`、`rc.5`、`v0.2.2-alpha.2`） |
 | #2&#8288;（=） | [mattpocock/skills](https://github.com/mattpocock/skills) | 310.3k | +5,633 | 候补（Skills 浪潮） | 周率涨 **20%**，仍是 #2。**越过 31 万**（310,320），距 [Superpowers](agents/superpowers.md) 缩到 967（上期 1,457）。增量比其他三个通用集合之和*少* 3,943。一个补丁版 `v1.3.2`（10 月 29 日） |
-| #3&#8288;（↑） | [Superpowers](https://github.com/obra/superpowers) | 311.3k | +5,143 | 已收录 · [profile](agents/superpowers.md) | 周率涨 **81%** 到约 6,000/周，是 07-22 以来最快，名次升一位。**越过 31 万**（311,287），仍以 967 领先成为最大的集合。窗口内默认分支没有发版也没有提交，原因查不到，按尖峰算 |
+| #3&#8288;（↑） | [Superpowers](https://github.com/obra/superpowers) | 311.3k | +5,143 | 已收录 · [profile](agents/superpowers.md) | 周率涨 **81%** 到约 6,000/周，是 07-08 以来最快，名次升一位。**越过 31 万**（311,287），仍以 967 领先成为最大的集合。窗口内默认分支没有发版也没有提交，原因查不到，按尖峰算 |
 | #4&#8288;（↓） | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 120.0k | +2,874 | 候补（金融垂直） | 上期尖峰后周率降 28%，但保住席位：只掉一位，没有离榜。**以 1 个 star 越过 12 万**（120,001）。窗口内没有发版 |
 | #5&#8288;（↑） | [anthropics/skills](https://github.com/anthropics/skills) | 186.8k | +2,626 | 候补（Skills 浪潮） | 周率涨 **97%**，从 #10 到 #5：06-17 以来最快的周率，09-06 以来最好的名次。越过 **18.5 万**。窗口内一个提交（10 月 28 日更新 `mcp-builder`） |
 | #6&#8288;（=） | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | 259.9k | +2,252 | 已收录 · [profile](agents/hermes-agent.md) | 周率涨 37%，名次不变。**29 个记录窗口全部在榜**。一个版本 `v0.22.6`（11 月 2 日）。**差 96 到 26 万** |

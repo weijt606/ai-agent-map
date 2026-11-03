@@ -39,7 +39,7 @@ skill 是分阶段加载的，规范和 Anthropic 文档都把这叫作**渐进�
 
 ## skill 在哪里能用
 
-只列官方文档里写明支持 Agent Skills 的 agent。预置的文档类 skill（Word、Excel、PowerPoint、PDF）是 Anthropic 的产品功能，不属于标准本身。Anthropic 文档说它们在 claude.ai 和 Claude API 上可用，在 Claude Code 里不可用。
+列出官方文档里写明支持 Agent Skills 的 agent，外加 [WorkBuddy](../agents/workbuddy.md)：它的文档写的是同样的文件格式，但没有提这个标准。预置的文档类 skill（Word、Excel、PowerPoint、PDF）是 Anthropic 的产品功能，不属于标准本身。Anthropic 文档说它们在 claude.ai 和 Claude API 上可用，在 Claude Code 里不可用。
 
 | Agent | skill 放在哪里 | 怎么用 | 文档里值得注意的 |
 | --- | --- | --- | --- |
@@ -52,6 +52,7 @@ skill 是分阶段加载的，规范和 Anthropic 文档都把这叫作**渐进�
 | **VS Code 里的 [GitHub Copilot](../agents/github-copilot.md)** | `.github/skills/`、`~/.copilot/skills/`；也列出 `.claude/skills/` 和 `.agents/skills/` | skill 适用时加载；对话里输入 `/skills` | 文档提醒只复用可信的 skill |
 | **[Gemini CLI](../agents/gemini-cli.md)** | `.gemini/skills/` 或 `.agents/skills/`（及 `~/` 下对应目录）；`gemini skills install <git 地址>` | Gemini 调用 `activate_skill`，你在同意提示里批准 | 免费用户和 Google One 用户已于 2026-06-18 转到 Antigravity CLI |
 | **[OpenCode](../agents/opencode.md)** | `.opencode/skills/`、`.claude/skills/`、`.agents/skills/`（及全局对应目录） | 内置 `skill` 工具按需加载 | 可在 `opencode.json` 里把每个 skill 设成允许、拒绝或询问 |
+| **[WorkBuddy](../agents/workbuddy.md)** | 技能页：点市场卡片上的 "+"，或 添加技能 → 上传（文件夹或 .zip，需含 `SKILL.md`，并用 YAML 写名称和描述）/ 创建 / 查找。文档没有写目录路径 | 已安装的技能在对话里用自然语言调用；每个技能可单独开关 | 文档没有提 Agent Skills 标准。上传时可勾选非高风险自动安装。复杂技能的积分消耗通常较高 |
 
 从这张表能看出两件事。第一，`.agents/skills/` 是这些 agent 共用最多的文件夹：Codex、Cursor、VS Code 里的 Copilot、Gemini CLI 和 OpenCode 都读它，Claude Code 的文档没有列它；而 Claude Code、Agent SDK、Cursor、VS Code 里的 Copilot 和 OpenCode 读 `.claude/skills/`。第二，自定义 skill 在 Claude 自家各个入口之间不同步。上传到 claude.ai 的 skill 要另外上传到 API，Claude Code 则在磁盘上另存一份。
 
@@ -81,7 +82,7 @@ Anthropic 自己的页面有一处不一致：帮助中心说 Free、Pro、Max�
 
 ## 装别人的 skill 之前
 
-1. **skill 能跑代码。** Anthropic 文档原话："Use Skills only from trusted sources: those you created yourself or obtained from Anthropic"（只用可信来源的 skill：你自己写的，或来自 Anthropic 的）；如果非用不明来源的不可，要"thoroughly audit it before use"（使用前彻底审查），也就是检查 `SKILL.md`、脚本、图片和其他附带文件，留意意外的网络请求或文件访问。文档还说要"treat like installing software"（当成安装软件来对待）。Claude Code 另外写了两点：项目 skill 的 `allowed-tools` 即使在你从没信任过的文件夹里也会生效，所以要先看仓库里提交的 skill；`` !`command` `` 行会在 Claude 看到 skill 之前执行 shell 命令，设置 `"disableSkillShellExecution": true` 可以关掉。VS Code 文档也提醒只复用可信的 skill。Gemini CLI 激活 skill 前会征求你的同意，OpenCode 可以把 skill 设成"询问"。
+1. **skill 能跑代码。** Anthropic 文档原话："Use Skills only from trusted sources: those you created yourself or obtained from Anthropic"（只用可信来源的 skill：你自己写的，或来自 Anthropic 的）；如果非用不明来源的不可，要"thoroughly audit it before use"（使用前彻底审查），也就是检查 `SKILL.md`、脚本、图片和其他附带文件，留意意外的网络请求或文件访问。文档还说要"treat like installing software"（当成安装软件来对待）。Claude Code 另外写了两点：项目 skill 的 `allowed-tools` 即使在你从没信任过的文件夹里也会生效，所以要先看仓库里提交的 skill；`` !`command` `` 行会在 Claude 看到 skill 之前执行 shell 命令，设置 `"disableSkillShellExecution": true` 可以关掉。VS Code 文档也提醒只复用可信的 skill。WorkBuddy 的文档提醒，非官方技能可能有恶意提示词注入、越权访问、后门程序等隐患，而且技能的操作都以你本人身份执行。Gemini CLI 激活 skill 前会征求你的同意，OpenCode 可以把 skill 设成"询问"。
 2. **skill 闲着也占上下文。** 每个装上的 skill，描述每一轮都在上下文里：按 Anthropic 文档约 100 token 一个，Claude Code 每条列表最多截到 1,536 个字符。插件里的 skill 和 agent 也会加进来，"even in sessions where nothing from the plugin runs"（即使这次会话插件什么都没用上）。Claude Code 官方插件市场在安装前会显示上下文开销估算。同一套包用两种方式装，开销就翻倍；mattpocock/skills 提醒，插件和复制文件都装"gives you every skill twice"（每个 skill 都会有两份）。
 3. **看清谁在维护。** 8 月 5–12 日那个窗口，浪潮里增量最大的两个席位都是个人目录，[市场事件](../market-events.md#2026-05持续中-claudeskills-浪潮)当时就指出了关键人风险。ECC 的 README 说它只有一位维护者。按某个 agent 的行为调好的 skill，在那个 agent 改版后可能失灵；anthropics/skills 也提醒"always test skills thoroughly in your own environment"（一定要在你自己的环境里充分测试）。
 4. **留意数据条款。** Superpowers 的可选可视化组件会从 Prime Radiant 网站加载一个 logo，请求里带 Superpowers 的版本号。README 说不含任何项目信息，设置环境变量 `SUPERPOWERS_DISABLE_TELEMETRY` 即可关闭。
@@ -97,6 +98,7 @@ Anthropic 自己的页面有一处不一致：帮助中心说 Free、Pro、Max�
 
 ## 最近变化
 
+- **2026-11-03** —— "在哪里能用"加入 WorkBuddy。它的技能页和上传弹窗要求 `SKILL.md`，并用 YAML 写名称和描述，与规范的结构相同，但文档没有提这个标准，所以本图不说它符合标准。
 - **2026-11-03** —— star 改用 2026-11-03 快照，ECC 已进入快照。skill 数复核没有变化（15、39、20、25；ECC 的 README 仍写 314）。ECC 和 Superpowers 的 profile 已按现在的 README 更正。本周复核的是五个集合；"在哪里能用"表里的 agent 文档最后一次读取是 2026-11-01。
 - **2026-11-01** —— 本页建立，起因是 Anthropic 10 月 22 日把标准捐了出去。顺带记下：ECC 的 README 现在写的是 314 个 skill、98 个命令（它 10 月 28 日的 profile 写的是 311 和 97）；Superpowers 的 README 现在列了 16 个安装目标，比它的 profile 列得多。
 
@@ -104,6 +106,6 @@ Anthropic 自己的页面有一处不一致：帮助中心说 Free、Pro、Max�
 
 - 标准：[agentskills.io 概览](https://agentskills.io) · [规范](https://agentskills.io/specification) · [Donating Agent Skills to the Agentic AI Foundation](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation)（Anthropic，2026-10-22）
 - Anthropic：[Agent Skills 概览](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) · [Claude Code 中的 skill](https://code.claude.com/docs/en/skills) · [插件概览](https://code.claude.com/docs/en/plugins) · [Agent SDK 中的 skill](https://code.claude.com/docs/en/agent-sdk/skills) · [What are Skills?](https://support.claude.com/en/articles/12512176-what-are-skills) · [Using Skills in Claude](https://support.claude.com/en/articles/12512180-using-skills-in-claude)
-- 其他 agent：[Codex / ChatGPT skill](https://learn.chatgpt.com/docs/build-skills) · [Cursor skill](https://cursor.com/docs/context/skills) · [VS Code agent skill](https://code.visualstudio.com/docs/copilot/customization/agent-skills) · [Gemini CLI skill](https://geminicli.com/docs/cli/skills/) · [OpenCode skill](https://opencode.ai/docs/skills/) · [What is MCP](https://modelcontextprotocol.io/docs/getting-started/intro)
+- 其他 agent：[WorkBuddy 技能](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) · [Codex / ChatGPT skill](https://learn.chatgpt.com/docs/build-skills) · [Cursor skill](https://cursor.com/docs/context/skills) · [VS Code agent skill](https://code.visualstudio.com/docs/copilot/customization/agent-skills) · [Gemini CLI skill](https://geminicli.com/docs/cli/skills/) · [OpenCode skill](https://opencode.ai/docs/skills/) · [What is MCP](https://modelcontextprotocol.io/docs/getting-started/intro)
 - 集合：[Superpowers README](https://github.com/obra/superpowers#readme) · [mattpocock/skills README](https://github.com/mattpocock/skills#readme) · [ECC README](https://github.com/affaan-m/ECC#readme) · [anthropics/skills README](https://github.com/anthropics/skills#readme) · [addyosmani/agent-skills README](https://github.com/addyosmani/agent-skills#readme)
 - 维护者：[mattpocock.com](https://www.mattpocock.com/) · [totaltypescript.com](https://www.totaltypescript.com/) · [addyosmani.com](https://addyosmani.com/)

@@ -47,6 +47,7 @@ Tencent positions it as an all-scenario AI office workstation covering daily wor
 | Task decomposition | Strong | Autonomous multi-step planning with self-verification |
 | Multi-agent | Strong | Parallel agents on one project |
 | Local file operations | Strong | Reads and writes within directories you authorize |
+| Skills | Strong | A skills market plus upload, create and find. Uploads need a folder or .zip containing `SKILL.md`; docs do not name the Agent Skills standard (see [Agent Skills](../comparisons/agent-skills.md)) |
 | Remote / mobile control | Strong | Bound through WeCom, QQ, Feishu, or DingTalk; phone-side control of the desktop |
 | Model choice | Medium | Multiple large models selectable; the mapping to steps is not published |
 | Open source / auditability | None | Proprietary |

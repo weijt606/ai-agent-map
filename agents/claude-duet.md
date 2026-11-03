@@ -14,11 +14,11 @@ One-line take: Anthropic's standalone proactive agent, separate from [Claude (Co
 | Route | Consumer personal agent |
 | Open source | No |
 | Form factor | A **standalone app** on iOS and Android, and on claude.ai; "for now" separate from the main Claude app |
-| Status | **Research preview by waitlist since Oct 21 2026**, starting with US Pro and Max subscribers; iOS app listed Oct 26 |
+| Status | **Research preview by waitlist since Oct 21 2026**, for US Pro, Max and Ultra subscribers (the release notes still say Pro and Max; corrected 2026-11-03); iOS app listed Oct 26 |
 | Where it runs | "A virtual machine with its own browser", so it "doesn't require your laptop or phone to be on" |
 | Model | Designed around **Claude Opus 5.5** ([cost & benchmarks](../comparisons/cost-and-benchmarks.md)) |
-| Price | Included in **Pro** and **Max** during the preview, sharing the plan's usage limits; its background checks count against them |
-| Regions | US first |
+| Price | Included in **Pro**, **Max** and **Ultra** during the preview, sharing the plan's usage limits; its background checks count against them |
+| Regions | "US only during the research preview" (help center) |
 | Official page | https://claude.com/resources/articles/claude-duet |
 
 ## How It Differs From Claude (Cowork)
@@ -29,7 +29,7 @@ One-line take: Anthropic's standalone proactive agent, separate from [Claude (Co
 
 - You run a small business or a busy practice and want something that **watches** your inbox, calendar and business tools and raises what matters, rather than waiting for a prompt.
 - Your work lives in tools it can reach through the Claude Marketplace: Gmail, Slack, QuickBooks, Stripe, Gusto, Docusign, HubSpot, Canva, Shopify.
-- You are already on Pro or Max in the US and can get through the waitlist.
+- You are already on Pro, Max or Ultra in the US and can get through the waitlist.
 
 ## When Not To Pick It
 
@@ -43,7 +43,7 @@ Duet "reads, drafts, and prepares work on its own", but before it sends a messag
 
 ## Bottom Line
 
-An agent designed to interrupt you selectively, with a written list of actions it will not take even when you approve them. It is a preview: waitlisted, opening to the US first, and still tuning its judgment about when to interrupt you. For a US small-business owner already paying for Claude, it is worth joining the waitlist. Everyone else should wait for it to merge with, or graduate from, the main app.
+An agent designed to interrupt you selectively, with a written list of actions it will not take even when you approve them. It is a preview: waitlisted, US only for now, and still tuning its judgment about when to interrupt you. For a US small-business owner already paying for Claude, it is worth joining the waitlist. Everyone else should wait for it to merge with, or graduate from, the main app.
 
 ## Sources
 

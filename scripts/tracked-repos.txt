@@ -63,3 +63,8 @@ browser-use/browser-use
 microsoft/agent-framework
 trailhq/Trail-Code
 zai-org/ZCode
+stablyai/orca
+paperclipai/paperclip
+affaan-m/ECC
+thedotmack/claude-mem
+Graphify-Labs/graphify

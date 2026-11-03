@@ -14,7 +14,7 @@ One-line take: Muse is Meta's consumer personal agent — you message it in its 
 | Route | Consumer personal agent |
 | Open source | No |
 | Form factor | iOS and Android apps, the muse.ai web app, and WhatsApp; AI glasses "coming soon" |
-| Status | Announced **Sept 8 2026**, "rolling out in the US"; Meta's help center says Muse and its subscriptions are "in limited testing" |
+| Status | Announced **Sept 8 2026**, "rolling out in the US"; Meta's help center says Muse and its subscriptions are "in limited testing". **Available in Singapore since Oct 27 2026** on iOS, Android and muse.ai |
 | Where it runs | **Muse Secure VM** — a dedicated cloud computer per person, with its own browser |
 | Model | **Muse Spark**; Meta says [Muse Wonder](../market-events.md) will "soon power experiences in Muse", subscribers first |
 | Price | Free with a usage limit; **Power $20/month** (500M Muse tokens a week), **Maximum $100/month** (3B a week) |
@@ -30,7 +30,7 @@ Not to be confused with Meta's Muse *models* (Muse Spark, Muse Wonder), which th
 
 ## When Not To Pick It
 
-- You are outside the US, or not in the limited test.
+- You are outside the US and Singapore, or not in the limited test.
 - You need the vendor to be unable to see your data. Today's architecture "does not prevent Meta from accessing data when necessary to support, secure or operate the service"; **Muse Confidential VM**, encrypted with a key only you hold, is announced for "later this year" and has not shipped.
 - You need your existing logins. 1Password support and Shop Pay are both "coming soon".
 
@@ -40,7 +40,7 @@ A host-side **Sentinel**, which the agent cannot override, is "the sole permissi
 
 ## Bottom Line
 
-An errand agent with a published containment design — and, until Confidential VM ships, one whose operator can still reach your data. Read it as a strong US-only preview, not a finished privacy story.
+An errand agent with a published containment design — and, until Confidential VM ships, one whose operator can still reach your data. Read it as a strong preview, so far in the US and Singapore, not a finished privacy story.
 
 ## Sources
 

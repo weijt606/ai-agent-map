@@ -4,7 +4,7 @@
 [![EN](https://img.shields.io/badge/EN-English-2563eb?style=for-the-badge&labelColor=1d4ed8)](../../agents/ecc.md)
 [![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-一句话定位：ECC 是一个装进现有 coding agent 的插件，装进去的是一整套工程体系——71 个 subagent、311 个 skill、hooks、rules、本地记忆库和 AgentShield 配置扫描器——围绕 plan → test → implement → review → verify → remember → improve 这条循环组织。
+一句话定位：ECC 是一个装进现有 coding agent 的插件，装进去的是一整套工程体系——71 个 subagent、314 个 skill、hooks、rules、本地记忆库和 AgentShield 配置扫描器——围绕 plan → test → implement → review → verify → remember → improve 这条循环组织。
 
 ## 快速看点
 
@@ -12,7 +12,7 @@
 | --- | --- |
 | 厂商 | Affaan Mustafa（README 自述为单人维护）和贡献者 |
 | 路线 | Agentic skills 框架——跑在宿主 agent 里的 skills、hooks 与记忆层 |
-| 仓库 | [`affaan-m/ECC`](https://github.com/affaan-m/ECC)——MIT，JavaScript；截至 2026-10-28 有 29.06 万 star |
+| 仓库 | [`affaan-m/ECC`](https://github.com/affaan-m/ECC)——MIT，JavaScript；截至 2026-11-03 有 29.57 万 star |
 | 开源 | 是（MIT）。托管的 ECC Tools GitHub App：免费档仅限公开仓库（每月 10 次分析）；**ECC Pro** $19/席位/月，覆盖私有仓库；Enterprise 联系销售 |
 | 适配哪些 agent | [Claude Code](claude-code.md)（稳定、首要）；[Codex](codex.md) 和 Qoder（原生插件）；[Cursor](cursor.md)、[OpenCode](opencode.md)、GitHub Copilot CLI（beta）；Gemini、Zed、Antigravity、Qwen、[Hermes](hermes-agent.md)、[OpenClaw](openclaw.md)、Kimi 等（实验性适配）；[GitHub Copilot](github-copilot.md) Chat（仅指令文件） |
 | 适合谁 | 想一次装好规划、TDD、新上下文评审、hook 强制检查和 agent 配置安全扫描的 Claude Code 用户 |
@@ -22,7 +22,7 @@
 
 ## 它怎么运作
 
-ECC 把工作拆给五类组件，每类的上下文成本不同。**Skills**（311 个）是 TDD、安全评审、深度调研这类工作流，只在任务需要时加载。**Agents**（71 个）是有独立上下文和工具权限的 subagent，用来把规划、实现和评审隔开。**Rules** 是始终加载的规范，按语言选装。**Hooks** 在宿主事件上运行，不占模型上下文：会话摘要、持续学习，以及 GateGuard——它会在 `rm`、强制 `git checkout` 这类破坏性命令执行前先拦下来。**Instincts** 是从过往会话里学到的模式，带置信度存储，相关时调回。
+ECC 把工作拆给五类组件，每类的上下文成本不同。**Skills**（314 个）是 TDD、安全评审、深度调研这类工作流，只在任务需要时加载。**Agents**（71 个）是有独立上下文和工具权限的 subagent，用来把规划、实现和评审隔开。**Rules** 是始终加载的规范，按语言选装。**Hooks** 在宿主事件上运行，不占模型上下文：会话摘要、持续学习，以及 GateGuard——它会在 `rm`、强制 `git checkout` 这类破坏性命令执行前先拦下来。**Instincts** 是从过往会话里学到的模式，带置信度存储，相关时调回。
 
 核心之外还有两块。**Memory Vault**（`ecc memory`，2.2 系列加入）把长期上下文和跨 harness 的交接以本地 Markdown 存在 `.ecc/memory/` 下；README 明确说记忆是未经审核的上下文，不是可执行的策略。**AgentShield** 也以 `ecc-agentshield` npm 包单独发布，扫描 `CLAUDE.md`、settings、MCP 配置、hooks、agent 定义和 skills，查密钥泄露、权限问题、hook 注入和有风险的 MCP server。
 
@@ -46,7 +46,7 @@ ECC 把工作拆给五类组件，每类的上下文成本不同。**Skills**（
 
 | 维度 | 评估 | 说明 |
 | --- | --- | --- |
-| Skill 与 agent 目录 | 非常强 | 71 个 agent、311 个 skill、97 个命令 shim；skills 按需加载 |
+| Skill 与 agent 目录 | 非常强 | 71 个 agent、314 个 skill、98 个命令 shim；skills 按需加载 |
 | Hook 强制 | 强 | GateGuard 拦截破坏性命令；hooks 在模型上下文之外运行 |
 | 记忆 | 中等 | Memory Vault（本地 Markdown，可选 MCP server）加学到的 instincts；调回内容按未审核上下文处理 |
 | Agent 配置安全 | 强 | AgentShield 扫描 prompt、hooks、MCP 配置、权限、密钥和 agent 文件 |

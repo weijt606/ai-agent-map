@@ -12,7 +12,7 @@
 | --- | --- |
 | 厂商 | Stably AI（`stablyai/orca`，onorca.dev；官网写"Backed by Y Combinator"）。LICENSE 文件里的版权方是 Lovecast Inc. |
 | 路线 | 工作流 / orchestration layer，横跨多个 CLI agent，而不是架在某一个之上 |
-| 仓库 | [`stablyai/orca`](https://github.com/stablyai/orca)：MIT，TypeScript，截至 2026-10-28 共 107.8k star |
+| 仓库 | [`stablyai/orca`](https://github.com/stablyai/orca)：MIT，TypeScript，截至 2026-11-03 共 113.7k star |
 | 开源 | 是（MIT）。桌面应用、手机应用，以及把两者配对起来的中继服务都在仓库里 |
 | 形态 | macOS、Windows、Linux 桌面应用；iOS 和 Android 配套应用（beta）；无界面的 `orca serve` 运行时；`orca` CLI |
 | 支持的 agent | "Works with any CLI agent"：README 列了三十多个，包括 Claude Code、Codex、Grok、Cursor、GitHub Copilot、Antigravity、OpenCode、Pi、Hermes Agent、Goose、Kimi、Qwen Code 和 DeepSeek Harness |

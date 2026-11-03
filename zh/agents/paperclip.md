@@ -12,7 +12,7 @@
 | --- | --- |
 | 厂商 | 据 README 的许可证落款为 Paperclip Labs, Inc.；LICENSE 文件里写的是"Paperclip AI"（`paperclipai/paperclip`，paperclip.ing） |
 | 路线 | 工作流 / orchestration layer，围绕工单和组织架构组织，而不是围绕单个 agent 的会话 |
-| 仓库 | [`paperclipai/paperclip`](https://github.com/paperclipai/paperclip)：MIT，TypeScript，截至 2026-10-28 共 107.9k star |
+| 仓库 | [`paperclipai/paperclip`](https://github.com/paperclipai/paperclip)：MIT，TypeScript，截至 2026-11-03 共 110.5k star |
 | 开源 | 是（MIT）。"Open source. Self-hosted. No Paperclip account required." |
 | 形态 | Node.js 服务端 + React 网页界面 + 内嵌 PostgreSQL；用 `npx paperclipai@latest onboard --yes` 或 Docker 安装 |
 | 支持的 agent | 有 OpenClaw、Claude Code、Codex、Cursor（及 Cursor Cloud）、Gemini CLI、OpenCode、Pi、Hermes（及 Hermes Gateway）、Grok Build、Kimi Code 的适配器，另外支持自定义进程、HTTP 端点和适配器插件 |

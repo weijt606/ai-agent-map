@@ -526,8 +526,7 @@
     "vertical": null,
     "group": "orchestration",
     "profile": "agents/orca.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   },
   "paperclipai/paperclip": {
     "display": "Paperclip",
@@ -535,8 +534,7 @@
     "vertical": null,
     "group": "orchestration",
     "profile": "agents/paperclip.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   },
   "affaan-m/ecc": {
     "display": "ECC",
@@ -544,8 +542,7 @@
     "vertical": "collections",
     "group": null,
     "profile": "agents/ecc.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   },
   "thedotmack/claude-mem": {
     "display": "claude-mem",
@@ -553,8 +550,7 @@
     "vertical": null,
     "group": "memory-context",
     "profile": "agents/claude-mem.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   },
   "graphify-labs/graphify": {
     "display": "Graphify",
@@ -562,7 +558,6 @@
     "vertical": null,
     "group": "memory-context",
     "profile": "agents/graphify.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   }
 }

@@ -13,12 +13,12 @@
 | 厂商 | OpenAI |
 | 路线 | 消费级个人 agent |
 | 开源 | 否 |
-| 形态 | ChatGPT 移动应用、桌面应用和桌面浏览器；也能在 **Slack、Microsoft Teams 和语音通话**里找到它 |
+| 形态 | ChatGPT 移动应用、桌面应用和桌面浏览器；也能在 **Slack、Microsoft Teams 和语音通话**里找到它；**短信**入口（iMessage 或 Android 的 RCS）自 2026-10-26 这一周起向美国 Pro 用户测试 |
 | 状态 | **2026-09-29** DevDay 发布；"逐步向符合条件的账号推出" |
 | 在哪里跑 | 自己的云端电脑和浏览器；也能使用**一台**已连接的个人电脑（需该电脑上 ChatGPT 应用开着） |
 | 模型 | **GPT-6 Astra**——OpenAI 的天花板模型（[profile](gpt-6-astra.md)） |
 | 价格 | 个人可用于 **Pro（$100、$200 或 $500/月）**，仅限 18 岁以上；Business Premium 与 Enterprise 正在推出（Enterprise 需管理员开启） |
-| 地区 | Pro 不覆盖**欧洲经济区、英国和瑞士** |
+| 地区 | Pro 不覆盖**欧洲经济区、英国和瑞士**；Business Premium 与 Enterprise 是"rolling out worldwide" |
 | 官方页面 | https://learn.chatgpt.com/docs/dots |
 
 ## 它和 ChatGPT 其他部分的区别

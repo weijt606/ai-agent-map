@@ -14,11 +14,11 @@
 | 路线 | 消费级个人 agent |
 | 开源 | 否 |
 | 形态 | iOS 与 Android 上的**独立应用**，以及 claude.ai；"目前"与主 Claude 应用分开 |
-| 状态 | **2026-10-21 起以候补名单方式开放研究预览**，先面向美国 Pro 与 Max 订阅用户；iOS 应用 10 月 26 日上架 |
+| 状态 | **2026-10-21 起以候补名单方式开放研究预览**，面向美国 Pro、Max 和 Ultra 订阅用户（发布说明仍写 Pro 和 Max；2026-11-03 更正）；iOS 应用 10 月 26 日上架 |
 | 在哪里干活 | "一台带自己浏览器的虚拟机"，所以"不需要你的电脑或手机开着" |
 | 模型 | 围绕 **Claude Opus 5.5** 设计（[成本与基准](../comparisons/cost-and-benchmarks.md)） |
-| 价格 | 预览期间含在 **Pro** 与 **Max** 里，和套餐共用用量额度；它的后台检查也计入额度 |
-| 地区 | 先开放美国 |
+| 价格 | 预览期间含在 **Pro**、**Max** 和 **Ultra** 里，和套餐共用用量额度；它的后台检查也计入额度 |
+| 地区 | "US only during the research preview"（[帮助中心](https://support.claude.com/en/articles/17631495-get-started-with-claude-duet)） |
 | 官方页面 | https://claude.com/resources/articles/claude-duet |
 
 ## 和 Claude（Cowork）有什么不同
@@ -29,7 +29,7 @@
 
 - 你经营小企业或忙碌的业务，想要一个**盯着**收件箱、日历和业务工具、把要紧的事推给你的东西，而不是等你提问。
 - 你的工作都在它能通过 Claude Marketplace 接上的工具里：Gmail、Slack、QuickBooks、Stripe、Gusto、Docusign、HubSpot、Canva、Shopify。
-- 你已经是美国的 Pro 或 Max 用户，并且能从候补名单里排上。
+- 你已经是美国的 Pro、Max 或 Ultra 用户，并且能从候补名单里排上。
 
 ## 什么时候不选它
 
@@ -43,7 +43,7 @@ Duet"会自己阅读、起草、准备工作"，但在发消息、付款、签�
 
 ## 结论
 
-一个被设计成有选择地打扰你的 agent，并且写明了哪些操作即使你批准也不做。它还在预览期：要排候补、先开放美国、何时打扰你的判断还在调。如果你是美国的小企业主、已经在付 Claude 的钱，值得去排候补。其他人等它和主应用合并或正式毕业再说。
+一个被设计成有选择地打扰你的 agent，并且写明了哪些操作即使你批准也不做。它还在预览期：要排候补、目前仅限美国、何时打扰你的判断还在调。如果你是美国的小企业主、已经在付 Claude 的钱，值得去排候补。其他人等它和主应用合并或正式毕业再说。
 
 ## 来源
 

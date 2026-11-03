@@ -14,19 +14,19 @@
 | 路线 | Agentic skills 框架 / 方法论层 |
 | 开源 | 是（MIT，Shell + plugin pack） |
 | 适合谁 | 想要在 Claude Code、Codex、Cursor、Copilot、Gemini 等之间共享一致 skills 层的工程师 |
-| 主要代价 | 你要接受一套方法论——它对 brainstorm → design → plan → implement → review → complete 有明确意见 |
+| 主要代价 | 你要接受一套方法论——README 称之为“强制工作流”（mandatory workflows）：brainstorming → git worktree → 写计划 → subagent 或当前会话执行 → TDD → 代码评审 → 收尾分支 |
 | GitHub 仓库 | https://github.com/obra/superpowers |
 
 ## 什么时候选它
 
-- 你已经用 Claude Code、Codex、Cursor、GitHub Copilot、Gemini、OpenCode 或 Factory Droid，想跨多个 agent 共享一套 skills 层。
+- 你已经在用它 README 列出的 16 个安装目标之一或多个（Claude Code、Antigravity、Codex App 与 CLI、Cursor、Devin CLI、Factory Droid、Gemini CLI、GitHub Copilot CLI、Grok Build CLI、Kimi Code、OpenCode、Pi、Qwen Code、Hermes Agent、Muse；2026-11-03 核对），想跨多个 agent 共享一套 skills 层。
 - 你想要一种方法论强制 TDD、基于证据的验证和复杂度控制，而不仅是几个 skill 文件。
 - 你不想手工维护自己的 `.claude/skills` 目录，更愿意接入插件 marketplace。
 
 ## 什么时候不选
 
 - 你想要一个端到端 agent 产品；Superpowers 本身不跑 agent，它只塑造已有 agent 上 skills 怎么组合。
-- 你不认同它强加的开发周期（brainstorm → design → plan → implement → review → complete），更想自己定义工作流。
+- 你不认同它强加的开发周期（brainstorming → git worktree → 写计划 → subagent 或当前会话执行 → TDD → 代码评审 → 收尾分支），更想自己定义工作流。
 - 你想要轻量、极简的 skill 集——Superpowers 故意做得全面，不是极简。
 
 ## 能力轮廓
@@ -34,7 +34,7 @@
 | 维度 | 评估 | 说明 |
 | --- | --- | --- |
 | Skill 组合 | 非常强 | 可组合 skills 根据开发阶段自动激活 |
-| 跨 agent 覆盖 | 非常强 | 已有 Claude Code、Codex、Cursor、GitHub Copilot、Gemini、OpenCode、Factory Droid 的 plugin |
+| 跨 agent 覆盖 | 非常强 | 截至 2026-11-03，README 列出 16 个安装目标，包括 Claude Code、Codex App 与 CLI、Cursor、Gemini CLI、GitHub Copilot CLI、OpenCode |
 | 方法论强制度 | 强 | TDD 和基于证据的验证是一等公民 |
 | 独立运行时 | 不是目标 | Superpowers 不跑 agent——它只塑造已有 agent 怎么工作 |
 | 插件 marketplace 集成 | 强 | Anthropic 官方 marketplace 有正式 plugin |

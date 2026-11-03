@@ -4,6 +4,10 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-11-03 — Five coverage-gap repos enter tracking
+
+Graphify, ECC, Orca, claude-mem and Paperclip, profiled on 2026-10-28, are now polled for stars, taking the tracked set from 57 to 62. They appear on the [category boards](rankings/README.md) now, with ECC third on the [skill board](rankings/skill-verticals.md); their first measured gains come next window. The profile count stays at 98. The ECC and Superpowers profiles are corrected to their current READMEs, as the 2026-11-01 entry below flagged.
+
 ## 2026-11-01 — A new comparison page: Agent Skills
 
 **A new comparison page, [Agent Skills](comparisons/agent-skills.md)**, follows Anthropic's Oct 22 donation of the standard to the Agentic AI Foundation. The profile count stays at 98.
@@ -11,7 +15,7 @@ Structural milestones of the map, newest first. The heat tables are refreshed ev
 - **What a skill is and where it runs.** The page gives the format and its progressive-disclosure loading costs from Anthropic's docs. It sets a skill apart from a prompt, MCP, a plugin and a Project in each owner's own words, and lists the folder and invocation for each agent whose own docs document support: Claude apps, Claude Code, the Agent SDK, the API, Codex and ChatGPT, Cursor, Copilot in VS Code, Gemini CLI and OpenCode.
 - **Collections are compared here, not profiled.** The existing policy holds: curated skill collections are content assets, not agent surfaces. Superpowers, mattpocock/skills, ECC, anthropics/skills and addyosmani/agent-skills share one table, with kind, skill count, covered agents, footprint, maintainer, license and 2026-10-28 stars. The "70+ platforms" and "1 million skills" figures are labelled as Anthropic's own.
 - **Safety from the source.** Anthropic's guidance to use skills only from trusted sources and to audit them like software is quoted, together with Claude Code's warnings on `allowed-tools` and shell injection, and the context cost every installed skill carries.
-- Found on the way, not yet corrected in the profiles: ECC's README now gives 314 skills and 98 commands, against 311 and 97 in [its profile](agents/ecc.md). Superpowers' README lists 16 install targets and a seven-skill workflow, and [its profile](agents/superpowers.md) names fewer.
+- Found on the way, not yet corrected in the profiles (corrected 2026-11-03): ECC's README now gives 314 skills and 98 commands, against 311 and 97 in [its profile](agents/ecc.md). Superpowers' README lists 16 install targets and a seven-skill workflow, and [its profile](agents/superpowers.md) names fewer.
 
 ## 2026-10-31 — Today profiled
 

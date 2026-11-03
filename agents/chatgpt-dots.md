@@ -13,12 +13,12 @@ One-line take: a dot is OpenAI's always-on agent inside ChatGPT — one per pers
 | Vendor | OpenAI |
 | Route | Consumer personal agent |
 | Open source | No |
-| Form factor | ChatGPT mobile app, desktop app and desktop browser; also reachable in **Slack, Microsoft Teams and by voice call** |
+| Form factor | ChatGPT mobile app, desktop app and desktop browser; also reachable in **Slack, Microsoft Teams and by voice call**; **texting** by iMessage or RCS on Android, in beta for US Pro users since the week of Oct 26 2026 |
 | Status | Announced at DevDay, **Sept 29 2026**; "rolling out gradually to eligible accounts" |
 | Where it runs | Its own computer and browser in the cloud; can also use **one** connected personal computer while the ChatGPT app is open on it |
 | Model | **GPT-6 Astra** — OpenAI's ceiling model ([profile](gpt-6-astra.md)) |
 | Price | Personal access on **Pro ($100, $200 or $500 a month)**, users over 18 only; Business Premium and Enterprise rolling out (Enterprise off until an admin enables it) |
-| Regions | Pro access **excludes the EEA, the UK and Switzerland** |
+| Regions | Pro access **excludes the EEA, the UK and Switzerland**; Business Premium and Enterprise are "rolling out worldwide" |
 | Official page | https://learn.chatgpt.com/docs/dots |
 
 ## How It Differs From The Rest Of ChatGPT

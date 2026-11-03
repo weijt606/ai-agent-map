@@ -14,19 +14,19 @@ One-line take: Superpowers is a composable agentic skills framework plus a devel
 | Route | Agentic skills framework / methodology layer |
 | Open source | Yes (MIT, Shell + plugin packs) |
 | Best for | Engineers who want a consistent skills layer across Claude Code, Codex, Cursor, Copilot, Gemini, and similar |
-| Main cost | You inherit a methodology — the framework has opinions about brainstorm → design → plan → implement → review → complete |
+| Main cost | You inherit a methodology — the README calls these "mandatory workflows": brainstorming → git worktree → plan → subagent or inline execution → TDD → code review → finish the branch |
 | GitHub repo | https://github.com/obra/superpowers |
 
 ## When To Pick It
 
-- You already use Claude Code, Codex, Cursor, GitHub Copilot, Gemini, OpenCode, or Factory Droid and want a shared skills layer across them.
+- You already use one or more of its 16 README install targets (Claude Code, Antigravity, Codex App and CLI, Cursor, Devin CLI, Factory Droid, Gemini CLI, GitHub Copilot CLI, Grok Build CLI, Kimi Code, OpenCode, Pi, Qwen Code, Hermes Agent and Muse; checked 2026-11-03) and want a shared skills layer across them.
 - You want a methodology that enforces TDD, evidence-based verification, and complexity reduction — not just isolated skill files.
 - You want to lean on a plugin marketplace integration rather than maintain your own `.claude/skills` directory by hand.
 
 ## When Not To Pick It
 
 - You want a single end-to-end agent product; Superpowers does not run the agent itself, it only shapes how skills compose on top of one.
-- You disagree with the imposed development cycle (brainstorm → design → plan → implement → review → complete) and prefer your own.
+- You disagree with the imposed development cycle (brainstorming → git worktree → plan → subagent or inline execution → TDD → code review → finish the branch) and prefer your own.
 - You want a lightweight, minimal skill set — Superpowers is comprehensive on purpose, not minimal.
 
 ## Capability Shape
@@ -34,7 +34,7 @@ One-line take: Superpowers is a composable agentic skills framework plus a devel
 | Dimension | Assessment | Notes |
 | --- | --- | --- |
 | Skill composition | Very strong | Composable skills activate based on development stage |
-| Cross-agent coverage | Very strong | Plugins for Claude Code, Codex, Cursor, GitHub Copilot, Gemini, OpenCode, Factory Droid |
+| Cross-agent coverage | Very strong | 16 install targets in the README as of 2026-11-03, including Claude Code, Codex App and CLI, Cursor, Gemini CLI, GitHub Copilot CLI and OpenCode |
 | Methodology enforcement | Strong | Test-driven development and evidence-based verification are first-class concerns |
 | Standalone runtime | Not the goal | Superpowers does not run agents — it shapes how an existing agent works |
 | Plugin marketplace integration | Strong | Official plugin in Anthropic's marketplace |

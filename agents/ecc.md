@@ -4,7 +4,7 @@
 [![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](ecc.md)
 [![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-One-line take: ECC is a plugin you install into an existing coding agent that brings a whole engineering system with it — 71 subagents, 311 skills, hooks, rules, a local memory vault, and the AgentShield config scanner — organised around a plan → test → implement → review → verify → remember → improve loop.
+One-line take: ECC is a plugin you install into an existing coding agent that brings a whole engineering system with it — 71 subagents, 314 skills, hooks, rules, a local memory vault, and the AgentShield config scanner — organised around a plan → test → implement → review → verify → remember → improve loop.
 
 ## Quick Read
 
@@ -12,7 +12,7 @@ One-line take: ECC is a plugin you install into an existing coding agent that br
 | --- | --- |
 | Vendor | Affaan Mustafa (single maintainer, per the README) and contributors |
 | Route | Agentic skills framework — a skills, hooks, and memory layer that runs inside a host agent |
-| Repository | [`affaan-m/ECC`](https://github.com/affaan-m/ECC) — MIT, JavaScript; 290.6k stars as of 2026-10-28 |
+| Repository | [`affaan-m/ECC`](https://github.com/affaan-m/ECC) — MIT, JavaScript; 295.7k stars as of 2026-11-03 |
 | Open source | Yes (MIT). The hosted ECC Tools GitHub App has a Free tier for public repos (10 analyses a month); **ECC Pro** is $19/seat/month and covers private repos; Enterprise via sales |
 | Works with | [Claude Code](claude-code.md) (stable, primary); [Codex](codex.md) and Qoder (native plugins); [Cursor](cursor.md), [OpenCode](opencode.md), GitHub Copilot CLI (beta); Gemini, Zed, Antigravity, Qwen, [Hermes](hermes-agent.md), [OpenClaw](openclaw.md), Kimi and others (experimental adapters); [GitHub Copilot](github-copilot.md) Chat (instructions only) |
 | Best for | Claude Code users who want planning, TDD, fresh-context review, hook-enforced checks, and agent-config security scanning in one install |
@@ -22,7 +22,7 @@ One-line take: ECC is a plugin you install into an existing coding agent that br
 
 ## How It Works
 
-ECC splits its work across five kinds of component, each with a different context cost. **Skills** (311) are workflows such as TDD, security review, or deep research, loaded only when a task needs them. **Agents** (71) are scoped subagents with their own context and tool permissions, used to keep planning, implementation, and review apart. **Rules** are always-loaded standards that you install per language. **Hooks** run outside the model on harness events: session summaries, continuous learning, and GateGuard, which gates destructive shell commands such as `rm` or a forced `git checkout` before they run. **Instincts** are patterns learned from past sessions, stored with confidence scores and recalled when relevant.
+ECC splits its work across five kinds of component, each with a different context cost. **Skills** (314) are workflows such as TDD, security review, or deep research, loaded only when a task needs them. **Agents** (71) are scoped subagents with their own context and tool permissions, used to keep planning, implementation, and review apart. **Rules** are always-loaded standards that you install per language. **Hooks** run outside the model on harness events: session summaries, continuous learning, and GateGuard, which gates destructive shell commands such as `rm` or a forced `git checkout` before they run. **Instincts** are patterns learned from past sessions, stored with confidence scores and recalled when relevant.
 
 Two pieces sit beside that core. The **Memory Vault** (`ecc memory`, added in the 2.2 line) stores durable context and cross-harness handoffs as local Markdown under `.ecc/memory/`; the README states that memory is unreviewed context, not executable policy. **AgentShield**, also shipped as the `ecc-agentshield` npm package, scans `CLAUDE.md`, settings, MCP configs, hooks, agent definitions, and skills for secrets, permission problems, hook injection, and risky MCP servers.
 
@@ -46,7 +46,7 @@ Two pieces sit beside that core. The **Memory Vault** (`ecc memory`, added in th
 
 | Dimension | Assessment | Notes |
 | --- | --- | --- |
-| Skill and agent catalog | Very strong | 71 agents, 311 skills, 97 command shims; skills load on demand |
+| Skill and agent catalog | Very strong | 71 agents, 314 skills, 98 command shims; skills load on demand |
 | Enforcement via hooks | Strong | GateGuard gates destructive shell commands; hooks run outside the model context |
 | Memory | Medium | Memory Vault (local Markdown, optional MCP server) plus learned instincts; recall is treated as unreviewed context |
 | Agent-config security | Strong | AgentShield scans prompts, hooks, MCP config, permissions, secrets, and agent files |

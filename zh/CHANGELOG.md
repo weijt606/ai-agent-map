@@ -4,6 +4,10 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-11-03 —— 五个覆盖面补齐的仓库进入跟踪
+
+2026-10-28 写了 profile 的 Graphify、ECC、Orca、claude-mem、Paperclip 现在开始抓 star，跟踪仓库从 57 个增加到 62 个。它们已进[分类榜](rankings/README.md)，ECC 在 [skill 榜](rankings/skill-verticals.md)排第三；第一个可测增量在下一期。profile 数仍是 98。ECC 与 Superpowers 的 profile 已按它们现在的 README 更正，这是下面 2026-11-01 条目提到的事。
+
 ## 2026-11-01 —— 新增对比页：Agent Skills
 
 **新增对比页 [Agent Skills](comparisons/agent-skills.md)**，起因是 Anthropic 10 月 22 日把这个标准捐给了 Agentic AI Foundation。profile 数仍是 98。
@@ -11,7 +15,7 @@
 - **skill 是什么、在哪里能用。** 本页按 Anthropic 文档写清格式和渐进式披露各阶段的加载开销，用各自官方的说法把 skill 和提示词、MCP、插件、Project 分开，并逐个列出官方文档写明支持的 agent 的目录和调用方式：Claude 应用、Claude Code、Agent SDK、API、Codex 与 ChatGPT、Cursor、VS Code 里的 Copilot、Gemini CLI、OpenCode。
 - **集合在这里比较，不写 profile。** 原有政策不变：精选 skill 集合是内容资产，不是 agent 本身。Superpowers、mattpocock/skills、ECC、anthropics/skills、addyosmani/agent-skills 放进同一张表，列出类型、skill 数、覆盖的 agent、体量、维护者、许可证和 2026-10-28 的 star 数。"70 多个平台""100 万个 skill"都标明是 Anthropic 自报。
 - **安全建议引用原文。** 引用了 Anthropic"只用可信来源的 skill、像对待安装软件一样审查"的建议，Claude Code 关于 `allowed-tools` 和 shell 注入的提醒，以及每个已装 skill 都要付出的上下文开销。
-- 顺带发现、尚未改进 profile 的：ECC 的 README 现在写 314 个 skill、98 个命令，[它的 profile](agents/ecc.md) 写的是 311 和 97；Superpowers 的 README 列了 16 个安装目标和七个 skill 组成的流程，[它的 profile](agents/superpowers.md) 列得更少。
+- 顺带发现、尚未改进 profile 的（2026-11-03 已更正）：ECC 的 README 现在写 314 个 skill、98 个命令，[它的 profile](agents/ecc.md) 写的是 311 和 97；Superpowers 的 README 列了 16 个安装目标和七个 skill 组成的流程，[它的 profile](agents/superpowers.md) 列得更少。
 
 ## 2026-10-31 —— 收录 Today
 

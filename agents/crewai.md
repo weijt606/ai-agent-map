@@ -48,7 +48,7 @@ One-line take: CrewAI is a Python framework for orchestrating role-based AI agen
 
 ## Operating Cost
 
-Complexity is Medium. The open-source core is free and quick to start with — define roles, wire up a crew, run it. The real cost is LLM API tokens: every agent call is a model call, and multi-agent crews multiply spend proportionally. Paid cloud plans range from $99/month to $120K/year for Enterprise.
+Complexity is Medium. The open-source core is free and quick to start with — define roles, wire up a crew, run it. The real cost is LLM API tokens: every agent call is a model call, and multi-agent crews multiply spend proportionally. Paid cloud plans are available, up to Enterprise.
 
 ## Bottom Line
 

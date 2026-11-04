@@ -58,6 +58,6 @@ jcode 把每一轮嵌入成语义向量，用余弦相似度查一张**记忆图
 
 1. **说清什么必须留存。** 对话状态 → [Letta](../agents/memgpt.md) 或 [jcode](../agents/jcode.md)。项目理解 → [MiMoCode](../agents/mimocode.md) 或 `CLAUDE.md` 惯例。代码架构 → [CodeGraph](../agents/codegraph.md) 或 [Graft](../agents/graft.md)。个人数据 → [OpenHuman](../agents/openhuman.md)。长驻多渠道状态 → [Hermes](../agents/hermes-agent.md) / [Mercury](../agents/mercury-agent.md)。
 2. **定被动还是显式。** 被动召回（[jcode](../agents/jcode.md)、自编辑的 [Letta](../agents/memgpt.md)）省事但更难审计；文件式记忆（[MiMoCode](../agents/mimocode.md)）完全可查看，但只和它的关键词检索一样好。
-3. **盯住隐藏成本。** 每套记忆系统都拿 token、LLM 调用或运维负担换连续性。读 profile 的"使用成本"一节，和[成本 & benchmark](cost-and-benchmarks.md) 一起权衡。
+3. **盯住隐藏负担。** 每套记忆系统都拿 token、LLM 调用或运维负担换连续性。读 profile 的"使用成本"一节，和[基准与计费](benchmarks-and-billing.md)一起权衡。
 
 想给"没记忆的 agent"加记忆的团队，可以看已收录的外挂层 [claude-mem](../agents/claude-mem.md)；provider 中立的 [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory) 仍在候补名单上追踪。要看能力视角，记忆是[能力矩阵](../capabilities/matrix.md)里的一列。

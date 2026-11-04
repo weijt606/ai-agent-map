@@ -20,7 +20,7 @@
 | 输入 | 代码与配置（包括 SQL、Terraform/HCL、包清单与 MCP 清单）本地解析；Markdown、PDF、Office 文件、图片以及转写后的音视频经可选的语义那一遍加入 |
 | 模型 | 代码部分不用。语义那一遍在走 skill 时用 assistant 自己的模型，headless 的 `graphify extract` 则用你配置的后端（Gemini、Kimi、Claude、OpenAI、DeepSeek、Azure OpenAI、Bedrock、Ollama，或 `claude` CLI） |
 | 已接入的 agent | [Claude Code](claude-code.md)、[Codex](codex.md)、[Cursor](cursor.md)、[Gemini CLI](gemini-cli.md)、[GitHub Copilot](github-copilot.md) CLI 与 VS Code Copilot Chat、[OpenCode](opencode.md)、[Aider](aider.md)、[OpenClaw](openclaw.md)、[Hermes](hermes-agent.md)、[Kimi Code](kimi-code.md)、[Pi](pi.md)、[Devin](devin.md) CLI、Kiro、Amp、Kilo Code、Factory Droid、Trae、CodeBuddy、Google Antigravity，以及跨框架的 `.agents/skills` 位置 |
-| 托管档 | Graphify Cloud：Free（$0，最多 3 个索引仓库）、Pro（$15/月，按年付折合 $10/月）、Teams（前 100 个团队优惠价 $29/席/月，标准价 $40，至少 2 席）、Enterprise（定制报价，自托管）。价格取自文档定价页，2026 年 10 月 8 日更新 |
+| 托管档 | Graphify Cloud：Free（最多 3 个索引仓库）、Pro、Teams（按席位，至少 2 席）、Enterprise（自托管） |
 | 最适合 | 希望 agent 先问一张全项目的图再去开文件、并希望这张图把文档和设计材料也一起覆盖进来的开发者 |
 | 主要代价 | 图是一份快照，要靠 hooks、`watch` 或 `update` 保持最新；对非代码文件的语义那一遍要花模型 token；发版节奏很快（0.9.x，2026 年 10 月每周好几个版本） |
 | GitHub 仓库 | https://github.com/Graphify-Labs/graphify |
@@ -72,4 +72,4 @@ Graphify 是一个本地、Apache-2.0 的上下文层：从项目里建出一张
 ## 来源
 
 - [GitHub 仓库与 README](https://github.com/Graphify-Labs/graphify) · [Releases（v0.9.96，2026-10-26）](https://github.com/Graphify-Labs/graphify/releases) · [LICENSE（Apache-2.0）](https://github.com/Graphify-Labs/graphify/blob/v8/LICENSE) · [BENCHMARKS.md](https://github.com/Graphify-Labs/graphify/blob/v8/BENCHMARKS.md) · [docs/how-it-works.md](https://github.com/Graphify-Labs/graphify/blob/v8/docs/how-it-works.md)
-- 文档：[How Graphify works](https://docs.graphify.com/concepts/architecture) · [Supported inputs](https://docs.graphify.com/concepts/supported-inputs) · [Connect the graph MCP server](https://docs.graphify.com/mcp/overview) · [MCP tool reference](https://docs.graphify.com/reference/mcp-tools) · [Serve a graph over HTTP](https://docs.graphify.com/mcp/shared-http) · [Keep the graph current](https://docs.graphify.com/guides/incremental-updates) · [Record useful findings](https://docs.graphify.com/guides/work-memory) · [Share context with your team](https://docs.graphify.com/guides/team-workflows) · [Plans and pricing](https://docs.graphify.com/pricing/overview)
+- 文档：[How Graphify works](https://docs.graphify.com/concepts/architecture) · [Supported inputs](https://docs.graphify.com/concepts/supported-inputs) · [Connect the graph MCP server](https://docs.graphify.com/mcp/overview) · [MCP tool reference](https://docs.graphify.com/reference/mcp-tools) · [Serve a graph over HTTP](https://docs.graphify.com/mcp/shared-http) · [Keep the graph current](https://docs.graphify.com/guides/incremental-updates) · [Record useful findings](https://docs.graphify.com/guides/work-memory) · [Share context with your team](https://docs.graphify.com/guides/team-workflows)

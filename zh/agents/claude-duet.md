@@ -16,8 +16,8 @@
 | 形态 | iOS 与 Android 上的**独立应用**，以及 claude.ai；"目前"与主 Claude 应用分开 |
 | 状态 | **2026-10-21 起以候补名单方式开放研究预览**，面向美国 Pro、Max 和 Ultra 订阅用户（发布说明仍写 Pro 和 Max；2026-11-03 更正）；iOS 应用 10 月 26 日上架 |
 | 在哪里干活 | "一台带自己浏览器的虚拟机"，所以"不需要你的电脑或手机开着" |
-| 模型 | 围绕 **Claude Opus 5.5** 设计（[成本与基准](../comparisons/cost-and-benchmarks.md)） |
-| 价格 | 预览期间含在 **Pro**、**Max** 和 **Ultra** 里，和套餐共用用量额度；它的后台检查也计入额度 |
+| 模型 | 围绕 **Claude Opus 5.5** 设计（[基准与计费](../comparisons/benchmarks-and-billing.md)） |
+| 使用条件 | 预览期间含在 **Pro**、**Max** 和 **Ultra** 里，和套餐共用用量额度；它的后台检查也计入额度 |
 | 地区 | "US only during the research preview"（[帮助中心](https://support.claude.com/en/articles/17631495-get-started-with-claude-duet)） |
 | 官方页面 | https://claude.com/resources/articles/claude-duet |
 

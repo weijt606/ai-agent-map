@@ -18,8 +18,8 @@
 | 形态 | 桌面（macOS、Windows）、网页和移动端的 Claude 应用；浏览器操作用 **Claude in Chrome** 扩展 |
 | 状态 | Cowork 桌面版 **2026-04-09** GA；**07-07** 上线网页与移动端并支持远程会话（beta）；Claude in Chrome **08-26** 在所有付费套餐 GA；**09-16** Cowork 与聊天合并，先向 Pro 与 Max 推出，Team 与 Free 随后 |
 | 在哪里跑 | 云端任务跑在"Anthropic 服务器上一个隔离的临时环境"里，按会话创建；也可以在你自己的电脑上使用 computer use |
-| 模型 | Anthropic 当前的模型（见 [Opus 5](claude-opus-5.md)、[成本与 benchmark](../comparisons/cost-and-benchmarks.md)） |
-| 价格 | **Pro $20/月**（按年付 $17/月）；**Max $100/月起** |
+| 模型 | Anthropic 当前的模型（见 [Opus 5](claude-opus-5.md)、[成本与 benchmark](../comparisons/benchmarks-and-billing.md)） |
+| 使用条件 | 付费套餐：**Pro** 和 **Max** |
 | 官方页面 | https://claude.com/resources/articles/cowork-is-now-claude |
 
 本地图另外收录了 Anthropic 的编码 agent（[Claude Code](claude-code.md)）和面向开发者的托管 agent（[Claude Managed Agents](claude-managed-agents.md)）。Claude Tag（Slack 里的 Claude）是 Team 与 Enterprise 产品，所以不在这里。
@@ -48,4 +48,4 @@
 
 - [Claude Cowork 与聊天合并为一个 Claude（2026-09-16）](https://claude.com/resources/articles/cowork-is-now-claude) · [Claude in Chrome 正式可用（2026-08-26）](https://claude.com/resources/articles/claude-in-chrome-generally-available)
 - [Claude 发布说明](https://support.claude.com/en/articles/12138966-release-notes) · [安全使用 Claude Cowork](https://support.claude.com/en/articles/13364135-use-claude-cowork-safely)
-- [Claude 价格](https://claude.com/pricing) · [消费者条款更新](https://www.anthropic.com/news/updates-to-our-consumer-terms)
+- [消费者条款更新](https://www.anthropic.com/news/updates-to-our-consumer-terms)

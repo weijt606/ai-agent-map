@@ -16,7 +16,7 @@ One-line take: Alibaba's Qwen consumer app (千问) has turned into an errand-an
 | Form factor | iOS and Android app, web |
 | Status | Shipping; agent features listed in the current App Store description (v7.4.9, Oct 20 2026) |
 | Model | Qwen models; the listing does not name a version |
-| Price | Free to download, with paid in-app subscriptions; see the App Store listing for current tiers |
+| Access | Free to download, with paid in-app subscriptions |
 | Regions | China App Store |
 | Official page | https://apps.apple.com/cn/app/id6466733523 |
 

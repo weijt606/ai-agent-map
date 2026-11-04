@@ -16,7 +16,7 @@ That question is no longer the useful one. The better question is: which operati
 | Terminal-first local coding with a strong git loop | [Aider](../agents/aider.md) |
 | Vendor-official Kimi-native terminal coding loop | [Kimi Code](../agents/kimi-code.md) |
 | Terminal coding with built-in cross-session memory | [MiMoCode](../agents/mimocode.md) |
-| Claude-Code loop on low-cost DeepSeek / MiMo models | [CodeWhale](../agents/codewhale.md) |
+| Claude-Code loop on DeepSeek / MiMo models | [CodeWhale](../agents/codewhale.md) |
 | A fast, provider-neutral harness you own, with passive memory across many sessions | [jcode](../agents/jcode.md) |
 | Comparing vendor terminal coding CLIs side by side | [terminal coding CLI agents](../comparisons/coding-cli-agents.md) |
 | Comparing own-the-loop harness frameworks | [agent harness frameworks](../comparisons/agent-harness-frameworks.md) |
@@ -67,15 +67,15 @@ That question is no longer the useful one. The better question is: which operati
 
 ## Key Trade-Offs
 
-| Project | Biggest upside | Cost you must accept |
+| Project | Biggest upside | Burden you must accept |
 | --- | --- | --- |
 | Claude Code | Smooth local loop with MCP, instructions, and subagents | You still own permissions and local environment control |
 | Aider | Terminal-first pair programming stays close to git | You still own model setup and terminal ergonomics |
 | Claude Managed Agents | Better fit for scheduled and background Anthropic workflows | Product boundary is not represented by one simple public page |
 | Codex | Strong isolation and review evidence | Less immediate than editor-native pair programming |
-| GPT-6 Astra | OpenAI's current ceiling; agentic execution, computer and browser use | $10/$50, repricing to $20/$75 past 272k input tokens; the public version refuses part of its cybersecurity capability |
-| Claude Fable 5.1 | SWE-bench Pro 81.2 and a cache read of $0.25/M, 4× below GPT-6 Astra's $1/M | $10/$50 on metered credits rather than bundled |
-| Claude Opus 5 | Half the ceiling's price, 1M context as default and maximum; Claude Code's default Opus until Opus 5.5 replaced it on Sept 22 | Behind Mythos on cybersecurity; fully proprietary |
+| GPT-6 Astra | OpenAI's current ceiling; agentic execution, computer and browser use | The public version refuses part of its cybersecurity capability |
+| Claude Fable 5.1 | SWE-bench Pro 81.2 | Metered credits rather than bundled |
+| Claude Opus 5 | 1M context as default and maximum; Claude Code's default Opus until Opus 5.5 replaced it on Sept 22 | Behind Mythos on cybersecurity; fully proprietary |
 | GPT-5.5 | Highest agentic coding benchmarks at its April 2026 launch, 1M context | Retired from Codex and ChatGPT for ChatGPT sign-in on Oct 14 2026; kept as the lineage reference |
 | oh-my-claudecode | Claude Code gains teams, reusable skills, and richer runtime control | You add another workflow layer and still depend on Claude Code |
 | oh-my-codex | Codex gets a clearer clarify-plan-execute operating model | More setup, more ceremony, and the best path usually involves tmux |

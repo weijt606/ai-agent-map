@@ -17,7 +17,7 @@ One-line take: a dot is OpenAI's always-on agent inside ChatGPT — one per pers
 | Status | Announced at DevDay, **Sept 29 2026**; "rolling out gradually to eligible accounts" |
 | Where it runs | Its own computer and browser in the cloud; can also use **one** connected personal computer while the ChatGPT app is open on it |
 | Model | **GPT-6 Astra** — OpenAI's ceiling model ([profile](gpt-6-astra.md)) |
-| Price | Personal access on **Pro ($100, $200 or $500 a month)**, users over 18 only; Business Premium and Enterprise rolling out (Enterprise off until an admin enables it) |
+| Access | Personal access on **Pro**, users over 18 only; Business Premium and Enterprise rolling out (Enterprise off until an admin enables it) |
 | Regions | Pro access **excludes the EEA, the UK and Switzerland**; Business Premium and Enterprise are "rolling out worldwide" |
 | Official page | https://learn.chatgpt.com/docs/dots |
 
@@ -34,7 +34,6 @@ OpenAI draws the line itself: **Chat** answers, **ChatGPT Work** takes a delegat
 ## When Not To Pick It
 
 - You are in the EEA, the UK or Switzerland, or not on Pro.
-- You want a cheap agent: personal access starts at $100 a month.
 - You want a narrowly scoped tool. A dot draws on your ChatGPT memory, its own private notes and every enabled plugin; that breadth is the product.
 
 ## Permissions And Data
@@ -43,8 +42,8 @@ Before an action affects your accounts or shares information, an automatic revie
 
 ## Bottom Line
 
-The most ambitious of the big-three assistants' agents — ceiling model, own computer, multi-channel — and the most expensive of the three, closed to Europe. If you are on Pro outside Europe, it is the one to evaluate first; if not, it is not yet a choice you can make.
+The most ambitious of the big-three assistants' agents — ceiling model, own computer, multi-channel — and closed to Europe. If you are on Pro outside Europe, it is the one to evaluate first; if not, it is not yet a choice you can make.
 
 ## Sources
 
-- [Meet dots (ChatGPT docs)](https://learn.chatgpt.com/docs/dots) · [DevDay 2026 (Sept 29 2026)](https://learn.chatgpt.com/docs/whats-new/devday-2026) · [ChatGPT pricing (docs)](https://learn.chatgpt.com/docs/pricing)
+- [Meet dots (ChatGPT docs)](https://learn.chatgpt.com/docs/dots) · [DevDay 2026 (Sept 29 2026)](https://learn.chatgpt.com/docs/whats-new/devday-2026)

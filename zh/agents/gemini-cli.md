@@ -6,7 +6,7 @@
 
 一句话：Gemini CLI 是谷歌的开源终端 agent，但它**已经不是谷歌给个人用户的免费入口**：2026 年 6 月 18 日起，免费用户和 Google AI Pro、Ultra 订阅用户改由 [Google Antigravity](antigravity.md) 的 CLI 承接。它现在是给 Gemini Code Assist Standard / Enterprise 组织和付费 Gemini API key 用的 Apache-2.0 客户端。
 
-> **更正（2026-10-30）：** 本 profile 原先以面向个人的免费额度开头，而这一点从 2026-06-18 起已经不成立。谷歌的配额页面顶部现在写着："Unpaid tier and Google One users: Gemini CLI was replaced by Antigravity CLI on June 18th, 2026." 谷歌开发者博客（2026 年 5 月 19 日）说，自该日起 Gemini CLI 不再服务 Google AI Pro 和 Ultra 订阅用户、Gemini Code Assist 个人版的免费用户以及 Code Assist IDE 扩展；Code Assist Standard / Enterprise 组织和付费的 Gemini、Gemini Enterprise Agent Platform API key 继续可用，Antigravity CLI 则"对所有人开放"。"每分钟 60 次"这个数字也一并撤回：谷歌页面上没有给出每分钟的具体数字。下文已就地改正。来源：[Gemini CLI 配额与价格](https://geminicli.com/docs/resources/quota-and-pricing)、[谷歌开发者博客](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)。
+> **更正（2026-10-30）：** 本 profile 原先以面向个人的免费额度开头，而这一点从 2026-06-18 起已经不成立。谷歌的配额页面顶部现在写着："Unpaid tier and Google One users: Gemini CLI was replaced by Antigravity CLI on June 18th, 2026." 谷歌开发者博客（2026 年 5 月 19 日）说，自该日起 Gemini CLI 不再服务 Google AI Pro 和 Ultra 订阅用户、Gemini Code Assist 个人版的免费用户以及 Code Assist IDE 扩展；Code Assist Standard / Enterprise 组织和付费的 Gemini、Gemini Enterprise Agent Platform API key 继续可用，Antigravity CLI 则"对所有人开放"。"每分钟 60 次"这个数字也一并撤回：谷歌页面上没有给出每分钟的具体数字。下文已就地改正。来源：[Gemini CLI 配额](https://geminicli.com/docs/resources/quota-and-pricing)、[谷歌开发者博客](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)。
 
 ## 一眼判断
 
@@ -29,7 +29,7 @@
 
 ## 什么时候选它
 
-- **你的组织已经买了 Gemini Code Assist Standard 或 Enterprise，或者你用的是付费 Gemini API key。** 这是谷歌在 2026-06-18 之后保留的访问方式。如果你是个人用户、预算又是约束条件，请改看 [Google Antigravity](antigravity.md)。
+- **你的组织已经买了 Gemini Code Assist Standard 或 Enterprise，或者你用的是付费 Gemini API key。** 这是谷歌在 2026-06-18 之后保留的访问方式。如果你是个人用户，请改看 [Google Antigravity](antigravity.md)。
 - 你想要**循环内置谷歌搜索接地**——它是内置工具，不是你得自己接的 MCP server。对研究形态的任务，这相对这里其他所有 CLI 都是实打实的差异点。
 - 你想在终端里用带 **100 万上下文的 Gemini 3**，并且要厂商自己的调校。
 - 你想要客户端上的宽松许可：Apache-2.0，不同于这条路线上那些闭源第一方 CLI。
@@ -38,7 +38,7 @@
 ## 什么时候不选它
 
 - 你的模型承诺在别处。这个工具的存在是为了跑 Gemini；如果你在 Claude 或 GPT 上，它们自家的 CLI 调得更好——见[编码 CLI 对比](../comparisons/coding-cli-agents.md)。
-- **你需要可预测的吞吐。** 每分钟和每天的请求上限，就是横在 agent 循环中间的一道限流；在依赖它之前先把付费路径算进预算。
+- **你需要可预测的吞吐。** 每分钟和每天的请求上限，就是横在 agent 循环中间的一道限流；在依赖它之前先把付费路径考虑进去。
 - 你要一条厂商中立的循环——那是 [OpenCode](opencode.md)。
 - 你需要本地部署或离线运行。
 

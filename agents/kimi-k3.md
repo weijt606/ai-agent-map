@@ -75,4 +75,4 @@ K3 is the model. [Kimi Code](kimi-code.md) is the terminal coding agent, [Kimi W
 
 ## Bottom Line
 
-K3 is the strongest argument yet that the open-weights tier is a real option at the top of the market rather than a budget fallback — with two caveats that matter more than the benchmark table: the licence is custom, and 2.8T parameters means the serving bill replaces the token bill. Compare against [DeepSeek V4](deepseek-v4.md) if licence purity matters and [GLM-5.3](glm-5.md) if coding is the whole job.
+K3 is the strongest argument yet that the open-weights tier is a real option at the top of the market rather than a fallback — with two caveats that matter more than the benchmark table: the licence is custom, and 2.8T parameters means the serving bill replaces the token bill. Compare against [DeepSeek V4](deepseek-v4.md) if licence purity matters and [GLM-5.3](glm-5.md) if coding is the whole job.

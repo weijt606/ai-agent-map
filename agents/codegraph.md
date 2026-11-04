@@ -13,7 +13,7 @@ One-line take: CodeGraph is a local code knowledge graph plus MCP server — it 
 | Vendor | colbymchenry (open source) |
 | Route | Runtime and tools — code knowledge graph / agent context layer |
 | Open source | Yes (MIT) |
-| Best for | Teams using [Claude Code](claude-code.md), [Cursor](cursor.md), [Codex](codex.md) CLI, [OpenCode](opencode.md), Gemini, [AntiGravity](antigravity.md), Kiro, or [Hermes Agent](hermes-agent.md) who want measurably cheaper code exploration |
+| Best for | Teams using [Claude Code](claude-code.md), [Cursor](cursor.md), [Codex](codex.md) CLI, [OpenCode](opencode.md), Gemini, [AntiGravity](antigravity.md), Kiro, or [Hermes Agent](hermes-agent.md) who want code exploration that uses measurably fewer tokens |
 | Main cost | An extra indexing layer to keep in sync; payoff scales with codebase size and exploration frequency |
 | GitHub repo | https://github.com/colbymchenry/codegraph |
 
@@ -21,7 +21,7 @@ One-line take: CodeGraph is a local code knowledge graph plus MCP server — it 
 
 - You already use [Claude Code](claude-code.md), [Cursor](cursor.md), [Codex](codex.md) CLI, opencode, or [Hermes Agent](hermes-agent.md). CodeGraph plugs in via MCP — no new agent surface to learn.
 - Your codebase is large enough that agent exploration costs noticeable tokens per task.
-- You want measurable wins on the same exploration workload — the project reports median 35% cheaper, 59% fewer tokens, 49% faster, 70% fewer tool calls across real-world benchmarks.
+- You want measurable wins on the same exploration workload — the project reports median 59% fewer tokens, 49% faster, 70% fewer tool calls across real-world benchmarks.
 - You need local-only operation: no external APIs, no cloud, no data transmission.
 
 ## When Not To Pick It
@@ -46,4 +46,4 @@ Complexity is Low to Medium. Initial indexing happens automatically; the steady-
 
 ## Bottom Line
 
-CodeGraph is the first profile in this map dedicated to "agent context infrastructure" — the realization that as agents do more code exploration, the cheapest way to make them better is not to upgrade the agent but to give it pre-computed structure. The MCP-first design slots cleanly into already-tracked agents ([Claude Code](claude-code.md), [Cursor](cursor.md), [Codex](codex.md) CLI, OpenCode, Gemini, AntiGravity, Kiro, and [Hermes Agent](hermes-agent.md)). If you spend serious tokens on code Q&A, the published 35-70% improvements are the bar to evaluate against.
+CodeGraph is the first profile in this map dedicated to "agent context infrastructure" — the realization that as agents do more code exploration, the way to make them better is not to upgrade the agent but to give it pre-computed structure. The MCP-first design slots cleanly into already-tracked agents ([Claude Code](claude-code.md), [Cursor](cursor.md), [Codex](codex.md) CLI, OpenCode, Gemini, AntiGravity, Kiro, and [Hermes Agent](hermes-agent.md)). If you spend serious tokens on code Q&A, the published improvements are the bar to evaluate against.

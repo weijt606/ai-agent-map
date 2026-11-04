@@ -4,9 +4,9 @@
 [![EN](https://img.shields.io/badge/EN-English-2563eb?style=for-the-badge&labelColor=1d4ed8)](../../agents/claude-opus-5.md)
 [![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-一句话：Claude Opus 5 是 2026 年 7 月到 9 月间大多数 Claude 系 agent 真正在跑的那个模型——价格还是 Opus 档的 $5/$25（和 Opus 4.8 一样），能力却被推到接近 Fable 5，于是"上不上天花板"重新变成一个要专门决定的花销，而不是默认选项。
+一句话：Claude Opus 5 是 2026 年 7 月到 9 月间大多数 Claude 系 agent 真正在跑的那个模型——它把 Opus 档的能力推到接近 Fable 5，于是"上不上天花板"重新变成一个要专门决定的选择，而不是默认选项。
 
-> **已不再是默认（2026-09-22）：** 2026 年 9 月 22 日，Claude Code `v2.1.280` 把 **Claude Opus 5.5** 设为默认 Opus 模型，价格 $4 / $20 每百万 token，缓存读 $0.20/M。Anthropic 称它在多数工作上达到 Fable 5.1 的水平，运行成本比 Opus 5 低 40%。9 月 28 日 Sonnet 5.5 又成为默认 Sonnet。Opus 5 仍可使用，价格 $5 / $25（`claude-opus-5`）；下文说的"默认"指 2026 年 7 月 24 日到 9 月 22 日这段时间。见[成本与基准](../comparisons/cost-and-benchmarks.md)。
+> **已不再是默认（2026-09-22）：** 2026 年 9 月 22 日，Claude Code `v2.1.280` 把 **Claude Opus 5.5** 设为默认 Opus 模型。Anthropic 称它在多数工作上达到 Fable 5.1 的水平。9 月 28 日 Sonnet 5.5 又成为默认 Sonnet。Opus 5 仍可使用（`claude-opus-5`）；下文说的"默认"指 2026 年 7 月 24 日到 9 月 22 日这段时间。见[基准与计费](../comparisons/benchmarks-and-billing.md)。
 
 ## 一眼判断
 
@@ -16,7 +16,6 @@
 | 路线 | 前沿 agentic 模型——Opus 档，2026-07-24 至 09-22 期间 Mythos 天花板之下真正的默认 |
 | 是否开源 | 否 |
 | 最适合 | 长跑 agent、1M 上下文的整仓工作、多 agent 协同、文档与表格类任务 |
-| 主要代价 | $5 / $25 每百万 token（与 Opus 4.8 持平）；Fast 模式 $10 / $50 |
 | API 模型 id | `claude-opus-5` |
 | 官方公告 | https://www.anthropic.com/news/claude-opus-5 |
 
@@ -37,7 +36,6 @@
 ## 什么时候不选它
 
 - 单个最难任务要绝对天花板——[Fable 5.1](claude-fable-5.md) 仍然领先；网安类工作上 Mythos 5 直接强于 Opus 5。
-- 你在量上对成本敏感。**Sonnet 5 是 $2/$10**，Anthropic 把它定位在接近 Opus 4.8；如果 agent 干的多是常规活，Opus 档就是 2.5 倍的账单换你可能用不上的能力。
 - 你要开源或可自托管的模型——这一档完全闭源。
 - 你要的是成品 agent 而不是模型，请从 [Claude Code](claude-code.md) 开始。
 
@@ -45,36 +43,34 @@
 
 | 维度 | 判断 | 说明 |
 | --- | --- | --- |
-| Agentic 编码 | 很强 | CursorBench 3.2 距 Fable 5 峰值 0.5% 以内，价格是其一半 |
+| Agentic 编码 | 很强 | CursorBench 3.2 距 Fable 5 峰值 0.5% 以内 |
 | 长上下文 | 很强 | 1M token，既是默认也是上限；最大输出 128K |
-| 计算机操作 | 很强 | OSWorld 2.0——Anthropic 称其发布时（2026 年 7 月）在任意价位上都优于所有模型，且以约三分之一成本超过 Fable 5 |
+| 计算机操作 | 很强 | OSWorld 2.0——Anthropic 称其发布时（2026 年 7 月）优于所有模型 |
 | 抽象推理 | 很强 | ARC-AGI 3 约为次优模型的 3 倍 |
 | 工作流自动化 | 强 | Zapier AutomationBench 通过率约为次优模型的 1.5 倍 |
 | 多 agent 协同 | 强 | writer-verifier 子 agent 团队，极少互相覆盖 |
 | 网络安全 | 中 | 这一轴上刻意落后于 Mythos 5 |
 | 开源 / 自托管 | 无 | 完全闭源 |
 
-Anthropic 主打的头条数字是 Frontier-Bench v0.1：SOTA，且以更低成本达到 Opus 4.8 的两倍以上。单一厂商自测的 benchmark 一律当作"待你用自己负载复核的说法"——这是本地图对所有 benchmark 的固定立场。
+Anthropic 主打的头条数字是 Frontier-Bench v0.1：SOTA，且达到 Opus 4.8 的两倍以上。单一厂商自测的 benchmark 一律当作"待你用自己负载复核的说法"——这是本地图对所有 benchmark 的固定立场。
 
-## 档位阶梯（一手 API 价格，2026 年 10 月）
+## 档位阶梯（2026 年 10 月）
 
-| 模型 | 输入 / 输出（每百万） | 缓存读 | 位置 |
-| --- | --- | --- | --- |
-| [Claude Fable 5.1](claude-fable-5.md) | $10 / $50 | **$0.25** | Mythos 级天花板；缓存读是输入价的 2.5%，而非通常的 10% |
-| Claude Opus 5.5 | $4 / $20 | $0.20 | 2026-09-22 起 Claude Code 的默认 Opus；Fast 模式 $8 / $40 |
-| **Claude Opus 5** | **$5 / $25** | $0.50 | 2026-07-24 至 09-22 的默认档，现在仍可用；Fast 模式 $10 / $50 |
-| Claude Sonnet 5.5 | $2 / $10 | $0.10 | 2026-09-28 起 Claude Code 的默认 Sonnet |
-| Claude Sonnet 5 | $2 / $10 | $0.20 | 走量档——$2/$10 原本是首发促销价，后来转正为长期价 |
-| Claude Haiku 5.5 | 10 万 token 以内的提示 $0.10 / $0.50（以上 $0.50 / $2.50） | $0.01 | 底档，2026-10-07 发布；按提示长度计价 |
-
-Claude 4.6 及以后的模型，1M 上下文在整个窗口内按标准价计费，所以在 Anthropic 这边长上下文不是单独的价格带。对照 [GPT-6 Astra](gpt-6-astra.md)：它超过 272k 输入 token 后输入价翻倍。
+| 模型 | 位置 |
+| --- | --- |
+| [Claude Fable 5.1](claude-fable-5.md) | Mythos 级天花板 |
+| Claude Opus 5.5 | 2026-09-22 起 Claude Code 的默认 Opus |
+| **Claude Opus 5** | 2026-07-24 至 09-22 的默认档，现在仍可用 |
+| Claude Sonnet 5.5 | 2026-09-28 起 Claude Code 的默认 Sonnet |
+| Claude Sonnet 5 | 走量档 |
+| Claude Haiku 5.5 | 底档，2026-10-07 发布 |
 
 ## 在哪里能用
 
 - **Claude Code**——7 月 24 日起是默认 Opus 模型，9 月 22 日 `v2.1.280` 换成 Opus 5.5，之后仍可手动选择。被安全分类器拦下的请求会带提示回退到 Opus 4.8。
 - **Claude.ai 与 Claude Cowork**——发布时是 Max 上的默认、Pro 上的最强。
 - **Claude API**——`claude-opus-5`，另有 Bedrock、Google Cloud、Microsoft Foundry。
-- **Fast 模式**（research preview）——约 2.5 倍输出速度，2 倍价格，仅第一方 API。
+- **Fast 模式**（research preview）——约 2.5 倍输出速度，仅第一方 API。
 
 ## 与 Claude Code、Fable 5.1 的关系
 
@@ -82,4 +78,4 @@ Claude 4.6 及以后的模型，1M 上下文在整个窗口内按标准价计费
 
 ## 结论
 
-Opus 5 是 Anthropic 这一侧不再是"直接为天花板付费"的原因。它守住 Opus 的价格，吃掉了通往 Fable 5 的大部分距离，在 9 月 22 日被 Opus 5.5 接替默认之前，它就是没人盯额度表的时候你的 agent 在跑的那个模型。前沿档留给真正需要它的任务。
+Opus 5 是 Anthropic 这一侧不再是"直接上天花板"的原因。它吃掉了通往 Fable 5 的大部分距离，在 9 月 22 日被 Opus 5.5 接替默认之前，它就是没人盯额度表的时候你的 agent 在跑的那个模型。前沿档留给真正需要它的任务。

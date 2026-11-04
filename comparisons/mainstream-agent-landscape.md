@@ -12,7 +12,7 @@ This table does not carry every profile. Several routes have their own compariso
 
 ## One-Page Comparison View
 
-| Project | Route | Where it runs | Operating rhythm | Best for | Main cost |
+| Project | Route | Where it runs | Operating rhythm | Best for | Main burden |
 | --- | --- | --- | --- | --- | --- |
 | [Aider](../agents/aider.md) | Terminal-first pair-programming agent | Local terminal and repo | High interaction, git-centered | Repo-local coding with explicit diffs and model choice | API and model setup are part of the workflow |
 | [Claude Code](../agents/claude-code.md) | Local collaboration coding agent | Terminal, IDE, desktop, web | High interaction | Teams who want to code with an agent in-flow | Less ideal for fully detached background execution |
@@ -25,13 +25,13 @@ This table does not carry every profile. Several routes have their own compariso
 | [ZCode](../agents/zcode.md) | Desktop agentic dev environment | macOS, Windows, Linux desktop + IM remote control | Long-horizon goals, checked on remotely | GLM-first teams who want a task surface rather than an editor | Source open under Apache-2.0 since 2026-09-20 (previously listed here as closed); deepest capability tied to Zhipu's own models |
 | [WorkBuddy](../agents/workbuddy.md) | Desktop office agent | Desktop, web, WeChat mini-program, enterprise portal | Deliver a finished office artefact | Non-engineering work inside the Chinese enterprise stack | Closed source with authorized local file access |
 | [Kimi Work](../agents/kimi-work.md) | Desktop knowledge-work agent | macOS, Windows desktop + browser extension | Standing automation on local files and the live web | Recurring research-to-deliverable work | Drives the browser you are already logged into; closed source |
-| [GPT-6 Astra](../agents/gpt-6-astra.md) | Frontier agentic model | ChatGPT, Codex, API | Current OpenAI ceiling, Sept 3 2026 | Agent builders who want the strongest OpenAI model and can live with its boundaries | $10/$50, repricing to $20/$75 past 272k input tokens; the public version refuses part of its cybersecurity capability |
-| [Claude Fable 5.1](../agents/claude-fable-5.md) | Frontier agentic model | Claude Code, Claude.ai, API | Current Anthropic ceiling, Sept 1 2026 | Teams whose hardest tasks justify a metered frontier spend | $10/$50 on metered credits; cache read $0.25/M, 4× below GPT-6 Astra's $1/M |
-| [Claude Opus 5](../agents/claude-opus-5.md) | Frontier agentic model (previous default tier) | Claude Code, Claude.ai, Claude Cowork, API | Claude Code's default Opus until Opus 5.5 replaced it on Sept 22 (Sonnet 5.5 became the default Sonnet on Sept 28) | Anyone who wants one model to run an agent all day without watching a credit meter | $5/$25; behind Mythos on cybersecurity; fully proprietary |
+| [GPT-6 Astra](../agents/gpt-6-astra.md) | Frontier agentic model | ChatGPT, Codex, API | Current OpenAI ceiling, Sept 3 2026 | Agent builders who want the strongest OpenAI model and can live with its boundaries | The public version refuses part of its cybersecurity capability |
+| [Claude Fable 5.1](../agents/claude-fable-5.md) | Frontier agentic model | Claude Code, Claude.ai, API | Current Anthropic ceiling, Sept 1 2026 | Teams whose hardest tasks justify metered frontier use | Billed on metered credits |
+| [Claude Opus 5](../agents/claude-opus-5.md) | Frontier agentic model (previous default tier) | Claude Code, Claude.ai, Claude Cowork, API | Claude Code's default Opus until Opus 5.5 replaced it on Sept 22 (Sonnet 5.5 became the default Sonnet on Sept 28) | Anyone who wants one model to run an agent all day without watching a credit meter | Behind Mythos on cybersecurity; fully proprietary |
 | [Kimi K3](../agents/kimi-k3.md) | Open-weights agentic model | Self-hosted, or Moonshot's own surfaces | Frontier capability on weights you hold | Teams that need the ceiling without a closed vendor in the path | 2.8T parameters is a cluster; bespoke licence |
 | [GLM-5.3](../agents/glm-5.md) | Open-weights agentic model | Self-hosted, Z.ai API, ZCode | Coding agents under a standard permissive licence | Apache-2.0 requirements and long-horizon coding | Vendor-run benchmarks; ungated cyber capability is your policy call |
 | [DeepSeek V4](../agents/deepseek-v4.md) | Open-weights agentic model | Self-hosted, DeepSeek API | Permissive licensing at frontier scale | MIT requirements; reproducible evaluation | Pro is 1.6T parameters; no in-model vision |
-| [Qwen3-Coder](../agents/qwen3-coder.md) | Open-weights agentic model | Self-hosted; Qwen Code, Cline, Claude Code | Fitting on hardware you already have | Local, air-gapped, or cost-capped deployments | Not the open tier's ceiling; licence varies by checkpoint |
+| [Qwen3-Coder](../agents/qwen3-coder.md) | Open-weights agentic model | Self-hosted; Qwen Code, Cline, Claude Code | Fitting on hardware you already have | Local or air-gapped deployments | Not the open tier's ceiling; licence varies by checkpoint |
 | [GPT-5.5](../agents/gpt-5.5.md) | Frontier agentic model (legacy) | API, Codex with an API key, GitHub Copilot | Spring 2026 reference point | Readers tracing the OpenAI model lineage | Retired from Codex and ChatGPT for ChatGPT sign-in on Oct 14 2026; kept for lineage, not for new work |
 | [oh-my-claudecode](../agents/oh-my-claudecode.md) | Workflow / orchestration layer | Claude Code plugin, terminal, tmux | In-session plus orchestrated side flows | Claude Code users who want reusable skills, teams, and richer runtime control | Best value depends on already using Claude Code |
 | [oh-my-codex](../agents/oh-my-codex.md) | Workflow / orchestration layer | Codex CLI, local terminal, tmux | Local workflow standardization | Codex users who want teams, hooks, and durable session state | Adds ceremony and works best on macOS or Linux with tmux |
@@ -68,7 +68,7 @@ This table does not carry every profile. Several routes have their own compariso
 | [Flowise](../agents/flowise.md) | Visual LLM app builder | Self-hosted or Flowise Cloud | Drag-and-drop visual | Teams wanting no-code RAG chatbots and agent flows | Complex flows become fragile at scale |
 | [Froge Code](../agents/froge-code.md) | Review-first automation platform | Self-hosted platform | Multiple attempts plus human choice | Task-board-centric coding automation | Name still needs confirmation |
 | [OpenHuman](../agents/openhuman.md) | Self-hosted desktop life-integration agent | Local desktop (Tauri) | Always-on with 20-min auto-fetch | Personal AI assistant that already knows your Gmail, Notion, GitHub, calendar | GPL-3.0; value scales with how many of the 118+ connectors you wire up |
-| [CodeGraph](../agents/codegraph.md) | Agent context infrastructure | Local MCP server + SQLite | Indexes once, then live-watches files | Cheaper code Q&A for Claude Code, Cursor, Codex CLI, opencode, Hermes Agent | Extra indexing layer; payoff only on medium-to-large repos |
+| [CodeGraph](../agents/codegraph.md) | Agent context infrastructure | Local MCP server + SQLite | Indexes once, then live-watches files | Code Q&A for Claude Code, Cursor, Codex CLI, opencode, Hermes Agent | Extra indexing layer; payoff only on medium-to-large repos |
 | [Graft](../agents/graft.md) | Agent context infrastructure | Linked markdown in the repo + optional MCP | Rebuilds on every query, ~3ms when nothing moved | Readable code context across Claude Code, Codex, Cursor, Gemini CLI and five more, wired in one command | 0.x mid-rename; graph is gitignored so every teammate rebuilds their own |
 | [CLI-Anything](../agents/cli-anything.md) | Agent-native software bridge | Pipeline that emits Click-based PyPI CLIs | Generate-once, then maintain | Letting agents drive software without exposed APIs (Blender, GIMP, LibreOffice, etc.) | Generated CLIs need re-validation as upstream apps evolve |
 | [jcode](../agents/jcode.md) | Performance-first coding harness | Local terminal (Rust) | Multi-session, own-the-loop | A fast, low-RAM, provider-neutral harness with passive semantic memory across many sessions | Younger project; config and features still moving |
@@ -84,10 +84,10 @@ This table does not carry every profile. Several routes have their own compariso
 
 1. Start with the route and eliminate the models that do not match your workflow.
 2. Check where the system runs and remove anything that violates your deployment boundary.
-3. Read the “main cost” column carefully. It is usually more important than the feature list.
+3. Read the “main burden” column carefully. It is usually more important than the feature list.
 
 ## Three Things Not To Mix Up
 
 - A framework is not the same thing as a finished agent.
 - Feature support is not the same thing as primary strength.
-- Operating cost is part of the product.
+- Operating burden is part of the product.

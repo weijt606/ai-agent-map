@@ -47,7 +47,7 @@
 
 ## 使用代价
 
-复杂度 Medium 到 High。用 Docker + Ollama 大约 10 分钟就能跑起来，但后续的模型选择和 prompt 调优靠你自己。成本来自 LLM API token 或 VPS 费用（4GB 实例约 $24/月）。
+复杂度 Medium 到 High。用 Docker + Ollama 大约 10 分钟就能跑起来，但后续的模型选择和 prompt 调优靠你自己。成本来自 LLM API token 或 VPS 费用。
 
 ## 最后一句
 

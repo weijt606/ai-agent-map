@@ -25,7 +25,7 @@ This map covered agents that edit code, run terminals, orchestrate other agents,
 
 The gap became untenable once the map recorded [Kimi Work](kimi-work.md) shipping browser automation as a headline feature and [Claude in Chrome](../market-events.md) going generally available with per-action approval removed. Browser Use is the open, self-hostable member of that category, and it is the one the others get compared against.
 
-> **Sibling repository (noted 2026-10-14):** the same organisation published [`browser-use/jev-ultrafast`](https://github.com/browser-use/jev-ultrafast) on September 16 2026 — MIT, described as the "fastest and cheapest web agent" — and it reached 22.9k stars in four weeks. It has had no push since September 30, so this map records it here rather than as its own profile; if it resumes development it will be reconsidered.
+> **Sibling repository (noted 2026-10-14):** the same organisation published [`browser-use/jev-ultrafast`](https://github.com/browser-use/jev-ultrafast) on September 16 2026 under MIT, and it reached 22.9k stars in four weeks. It has had no push since September 30, so this map records it here rather than as its own profile; if it resumes development it will be reconsidered.
 
 ## When To Pick It
 
@@ -38,7 +38,7 @@ The gap became untenable once the map recorded [Kimi Work](kimi-work.md) shippin
 ## When Not To Pick It
 
 - **You have not thought about what the browser is logged into.** This is the central risk of the category, not a footnote: an autonomous loop with your live sessions can act as you. Scope the profile, the credentials, and the approval gate before the first run.
-- You want deterministic automation. If the flow is stable and scriptable, Playwright is cheaper, faster, and more predictable than a model deciding what to click.
+- You want deterministic automation. If the flow is stable and scriptable, Playwright is faster and more predictable than a model deciding what to click.
 - You want a coding agent — this is a capability to give one, not a replacement for one.
 - You need a Node-native SDK rather than Python — Stagehand (MIT, TypeScript) is the neighbour to compare, and it is on this map's watchlist rather than profiled.
 

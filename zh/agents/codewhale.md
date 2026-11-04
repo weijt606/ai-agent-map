@@ -19,7 +19,7 @@
 | 开源 | 是——MIT |
 | 实现 | Rust（引擎 + 终端客户端）；可从 npm 与 crates.io 安装 |
 | 模型 | 任意——40 多条 provider 路线（Anthropic、DeepSeek、Google、Mistral、Moonshot、OpenAI、OpenRouter、xAI……）、OpenAI 兼容端点、本地运行时。**DeepSeek 仍是默认 provider** |
-| 适合谁 | 想要 Claude Code 风格的循环、又想指向当下最便宜或自己能用的模型——包括国产栈和本地模型——而不想用某家厂商自己 CLI 的开发者 |
+| 适合谁 | 想要 Claude Code 风格的循环、又想指向自己能用的模型——包括国产栈和本地模型——而不想用某家厂商自己 CLI 的开发者 |
 | 主要代价 | 社区项目，表面变化快，还有一层可选的账号；provider 越宽，循环的质量越取决于你接进去的模型 |
 | GitHub 仓库 | https://github.com/codewhale-hq/Codewhale |
 
@@ -46,7 +46,7 @@
 
 ## 使用成本
 
-复杂度：低-中。安装很简单（npm 或 crates.io）；模型账单就是你路由到的那个 provider 的价格，没有加价。可选的 Codewhale 账号替你在已登录设备间保管 provider key；不登录也能本地用。价格风险跟着你选的 provider，不跟着 agent。
+复杂度：低-中。安装很简单（npm 或 crates.io）；模型用量由你路由到的那个 provider 计费。可选的 Codewhale 账号替你在已登录设备间保管 provider key；不登录也能本地用。
 
 ## 底线
 

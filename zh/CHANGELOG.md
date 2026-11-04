@@ -4,6 +4,14 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-11-04 —— 本图不再列出或比较价格
+
+所有页面都移除了价格数字、价格列和成本排名，包括过去的市场事件和这份 changelog；旧内容仍在 git 历史里。`comparisons/cost-and-benchmarks.md` 改名为 [`comparisons/benchmarks-and-billing.md`](comparisons/benchmarks-and-billing.md)，保留基准分数和每个 agent 的计费方式。计费方式（开源、订阅、按量）、套餐可用范围和地区继续保留。
+
+## 2026-11-04 —— 热度榜按周三重新发布
+
+标着 2026-11-03 的那一期提前一天跑在周二，窗口只有 6 天。本期用 2026-10-28 → 2026-11-04 的窗口取代它。11-03 窗口已从 `history.json` 的 `windows` 移除，所以[趋势图](rankings/README.md)和窗口计数都不算它；那次抓取留在 `raw`。说明现在按实际时长比较，因为最近两个窗口按日期都是 7 天，两次抓取实际相隔约 6.24 天和 7.45 天。
+
 ## 2026-11-03 —— 五个覆盖面补齐的仓库进入跟踪
 
 2026-10-28 写了 profile 的 Graphify、ECC、Orca、claude-mem、Paperclip 现在开始抓 star，跟踪仓库从 57 个增加到 62 个。它们已进[分类榜](rankings/README.md)，ECC 在 [skill 榜](rankings/skill-verticals.md)排第三；第一个可测增量在下一期。profile 数仍是 98。ECC 与 Superpowers 的 profile 已按它们现在的 README 更正，这是下面 2026-11-01 条目提到的事。
@@ -23,7 +31,7 @@
 
 ## 2026-10-30（稍后）—— 收录 TRAE
 
-字节跳动的 AI IDE **[TRAE](agents/trae.md)** 进**编辑器中心**路线，和 Cursor、Windsurf、Google Antigravity 放在一起，96 → 97。它分国际版和国内版，模型列表和价格各不相同。它自己的文档写着，对话内容（包括相关代码片段和 AI 输出）"may be used for analytics, product improvement, and model training"，除非每个登录用户自己打开隐私模式；profile 把这一条放进了一眼判断。个人用户没有公开的 CLI（TRAE CLI 2.0 只开放给国内版企业旗舰版）；MIT 许可的 `bytedance/trae-agent` 研究型 CLI 在 profile 里有记录，但没有纳入跟踪，因为 TRAE 的文档从没说过 IDE 用的是它。TRAE 在能力矩阵里打了分，也在终端编码 CLI 对比的"编辑器中心"排除项里列出。
+字节跳动的 AI IDE **[TRAE](agents/trae.md)** 进**编辑器中心**路线，和 Cursor、Windsurf、Google Antigravity 放在一起，96 → 97。它分国际版和国内版，模型列表各不相同。它自己的文档写着，对话内容（包括相关代码片段和 AI 输出）"may be used for analytics, product improvement, and model training"，除非每个登录用户自己打开隐私模式；profile 把这一条放进了一眼判断。个人用户没有公开的 CLI（TRAE CLI 2.0 只开放给国内版企业旗舰版）；MIT 许可的 `bytedance/trae-agent` 研究型 CLI 在 profile 里有记录，但没有纳入跟踪，因为 TRAE 的文档从没说过 IDE 用的是它。TRAE 在能力矩阵里打了分，也在终端编码 CLI 对比的"编辑器中心"排除项里列出。
 
 ## 2026-10-30 —— 收录 Google Antigravity 与腾讯 CodeBuddy，并对全图做了一次准确性审查
 
@@ -33,7 +41,7 @@
 - **[CodeBuddy](agents/codebuddy.md)** 进**直接执行**路线：腾讯云的编程产品线（插件、CodeBuddy IDE、CodeBuddy Code CLI），和 [WorkBuddy](agents/workbuddy.md) 共用账号与 credit 余额。它闭源，没有可跟踪的仓库，所以不进热度榜。
 - 两者都在[能力矩阵](capabilities/matrix.md)里打了分。
 
-**审查**把每个 profile 和每张总览页对照 2026-10-28 快照、本图自己的市场事件记录重读了一遍，风险最高的几处再回厂商页面核对。就地改正的包括：仍把 Opus 5 写成 Claude Code 的默认（9 月 22 日起是 Opus 5.5，9 月 28 日起默认 Sonnet 是 Sonnet 5.5）；仍把 GPT-5.5 列为在 Codex 和 ChatGPT 里运行（10 月 14 日已下线）；把 Codex 默认写成 GPT-5.x；几处成本表已不再支持的"最便宜""唯一"；过时的 star 数和"才几天"之类的年龄说法；两个改了名的仓库（`trailhq/Trail-Code`、`openinterpreter/openinterpreter`）；agents 索引里缺的行（八个 profile 和观测路线）；六个 profile 英文有、中文缺的句子；以及一句自相矛盾的 Gemini 4 Argon 开放范围。
+**审查**把每个 profile 和每张总览页对照 2026-10-28 快照、本图自己的市场事件记录重读了一遍，风险最高的几处再回厂商页面核对。就地改正的包括：仍把 Opus 5 写成 Claude Code 的默认（9 月 22 日起是 Opus 5.5，9 月 28 日起默认 Sonnet 是 Sonnet 5.5）；仍把 GPT-5.5 列为在 Codex 和 ChatGPT 里运行（10 月 14 日已下线）；把 Codex 默认写成 GPT-5.x；过时的 star 数和"才几天"之类的年龄说法；两个改了名的仓库（`trailhq/Trail-Code`、`openinterpreter/openinterpreter`）；agents 索引里缺的行（八个 profile 和观测路线）；六个 profile 英文有、中文缺的句子；以及一句自相矛盾的 Gemini 4 Argon 开放范围。
 
 ## 2026-10-28（稍后）—— 覆盖面缺口审计：五个本地图从没提过的大项目
 
@@ -46,36 +54,35 @@
 
 **看过但刻意不收：**`morluto/rea`（逆向工程工具的 MCP 桥，约 39.6 万 star，其中约 37.6 万是它自己的 README 10 月 8 日标出 2 万之后的 20 天里涨的）。它是领域工具而非 agent，star 曲线在本地图没有先例，star 账号也无法审计，所以在积累几个窗口的速率数据之前不进热度榜。它虽然带 `dsh-plugin` 话题，但不是 DeepSeek Harness 插件。`Leonxlnx/taste-skill` 与 `tt-a1i/archify`（各超过 9 万）是单个 skill，而本地图跟踪的是精选集合，不是单个 skill。
 
-## 2026-10-28 —— GPT-6.1 Terra 进入成本表，Claude Duet 与 Cue 的新文档写进个人 agent 页
+## 2026-10-28 —— GPT-6.1 Terra 记入地图，Claude Duet 与 Cue 的新文档写进个人 agent 页
 
-- **[成本与基准](comparisons/cost-and-benchmarks.md)**新增 **GPT-6.1 Terra**（$1 / $5，缓存读 $0.05，10 月 26 日）；其余各行已对照四家价格页复核，没有变化，"截至"日期改为 10 月 28 日。
-- **[消费级个人 agent](comparisons/personal-agents.md)**：第一条每周"最近变化"——Anthropic 的独立应用 **Claude Duet**（10 月 21 日），**收录为第十一个个人 agent**（[Claude Duet](agents/claude-duet.md)；88 → 89 个 profile）；Cue 的调度与记忆两格依据其 App Store 介绍由 **?** 改为 ◐；豆包写明的价格档位。[Claude（Cowork）](agents/claude-cowork.md)、[Cue](agents/manus-cue.md)、[豆包](agents/doubao.md)三个 profile 加了带日期的说明。
+- **[基准与计费](comparisons/benchmarks-and-billing.md)**新增 **GPT-6.1 Terra**（10 月 26 日），"截至"日期改为 10 月 28 日。
+- **[消费级个人 agent](comparisons/personal-agents.md)**：第一条每周"最近变化"——Anthropic 的独立应用 **Claude Duet**（10 月 21 日），**收录为第十一个个人 agent**（[Claude Duet](agents/claude-duet.md)；88 → 89 个 profile）；Cue 的调度与记忆两格依据其 App Store 介绍由 **?** 改为 ◐。[Claude（Cowork）](agents/claude-cowork.md)、[Cue](agents/manus-cue.md)两个 profile 加了带日期的说明。
 - **对上周的更新：**OpenCode 10 月 17 日的事件现在有了厂商声明；[agents 时间线](agents/README.md)里那条带日期的记录已就地更新。
 
 ## 2026-10-21（稍后）—— 第五类决策：消费级个人 agent，收录与比较，而不是排名
 
 本地图新增**第五个路线组"把日常交给 agent"**，下设一条路线——**消费级个人 agent**——和十个 profile：[ChatGPT dots](agents/chatgpt-dots.md)、[Gemini Task](agents/gemini-task.md)、[Claude（Cowork）](agents/claude-cowork.md)、[Muse](agents/meta-muse.md)、[Grok Bot](agents/grok-bot.md)、[Cue](agents/manus-cue.md)、[豆包](agents/doubao.md)、[千问 App](agents/qwen-app.md)、[AutoGLM](agents/autoglm.md)、[元宝](agents/yuanbao.md)。本地图现有 **88 个 profile、16 条路线**。
 
-- **新增对比页[消费级个人 agent](comparisons/personal-agents.md)**：一张事实表（形态、状态、在哪里干活、模型、入门价格、地区），一张按消费级产品维度打分的能力格，三个选型问题，以及随每周更新刷新、带日期的"最近变化"记录。
+- **新增对比页[消费级个人 agent](comparisons/personal-agents.md)**：一张事实表（形态、状态、在哪里干活、模型、地区），一张按消费级产品维度打分的能力格，三个选型问题，以及随每周更新刷新、带日期的"最近变化"记录。
 - **刻意不做热度排名。** 这些产品是闭源的，没有可以和 GitHub star 相比的公开数字；下载量和活跃用户数是二手的，口径也不统一。拿它们排名会违背本地图"只用一手来源"的规矩。厂商没有写明的格子一律标 **?**，不去猜。
 - 这些产品都不开源；AutoGLM 部分例外，它有 Apache-2.0 的 Open-AutoGLM 框架。它们不进热度榜。[能力矩阵](capabilities/matrix.md)改为指向新的能力格，而不是在闭源产品从不公开的列上给它们打分。
 
-## 2026-10-21 —— $4 / $20 成了三家共用的价位，成本表的空格补上了，一处更正改到了它漏掉的地方
+## 2026-10-21 —— 新增两行 Meta，一处更正改到了它漏掉的地方
 
 本周刷新附带三项结构性变化，此外是例行的热度表更新。
 
-- **[成本 & benchmark](comparisons/cost-and-benchmarks.md) 新增两行 Meta。** 有标价那张表加了 Muse Wonder（10 月 12 日，$4 / $20，缓存读 $0.20——与 Opus 5.5 完全相同；晚一个窗口才记下），开放权重档加了 Muse Spark Open（10 月 15 日，816B / 激活 42B，Muse Model License）。Muse Spark 两行从 1.2 改名为 1.3，Meta 价格表现在按同样价格列的就是它。
-- **空格按一手页面补上，不再用估算。** GPT-5.5 原来的"≈GPT-5.4 的 2×"换成 OpenAI 标的 $5 / $30（缓存 $0.50），GPT-5.6 Sol / Terra / Luna 的缓存读也补上了（$0.40 / $0.20 / $0.02）。[GPT-5.5 profile](agents/gpt-5.5.md) 记下了它 10 月 14 日从 Codex 与 ChatGPT 下线（限 ChatGPT 账号登录）。全部记录在 [market-events](market-events.md)。
+- **[基准与计费](comparisons/benchmarks-and-billing.md) 新增两行 Meta。** 主表加了 Muse Wonder（10 月 12 日；晚一个窗口才记下），开放权重档加了 Muse Spark Open（10 月 15 日，816B / 激活 42B，Muse Model License）。Muse Spark 两行从 1.2 改名为 1.3，Meta 现在列的就是它。
+- **[GPT-5.5 profile](agents/gpt-5.5.md) 记下了它 10 月 14 日的下线**：从 Codex 与 ChatGPT 下线（限 ChatGPT 账号登录）。已记录在 [market-events](market-events.md)。
 - **一处更正改到了本该改的地方。** 上周对 CodeWhale 的更正只改了 profile，没改主页目录和 [agents 索引](agents/README.md)里的一句话定位；这四行（中英）现在都写成 provider 中立。OpenCode 目录行里过时的"20.5 万 star"也更新为 21.9 万。
 
 本窗口的热度解读见 [agents/README.md](agents/README.md)：OpenCode 2.0 爆发到 #3，DeepSeek Harness 总 star 反超 Hermes Agent，Superpowers 越过 30 万，Pi 连续 20 个窗口在榜——本榜有史以来结束的最长一条——就此结束。
 
-## 2026-10-14 —— 本地图记下的一个价格已在底下变了，两个被跟踪的仓库搬了家，模型阶梯够到了地板
+## 2026-10-14 —— Haiku 5.5 与 Gemini 4 Argon 记入地图，两个被跟踪的仓库搬了家
 
-本周刷新除常规热度表之外，还落了三项结构性改动。
+本周刷新除常规热度表之外，还落了两项结构性改动。
 
-- **一处在源头改掉的更正：Sonnet 5.5 的缓存读是 $0.10/M，不是 $0.20。** 本地图 9 月 28 日从 Claude Code `2.1.284` 的 changelog 记下 $0.20，并在它上面搭了一条要点——GPT-6.1 Sol 的 $0.10 是把两个中间档分开的唯一一列。Anthropic 的价格页标的是 $0.10（输入价的 5%），Claude Code `v2.1.296` 也于 10 月 9 日改正了自己的成本统计。[成本表](comparisons/cost-and-benchmarks.md)那一行与对应要点、9 月 28 日的[市场事件](market-events.md)条目、主页的市场脉搏都已加带日期的更正；那条要点是撤回，不是软化。
-- **[成本 & benchmark](comparisons/cost-and-benchmarks.md) 新增两行：** Claude Haiku 5.5（10 月 7 日，prompt 不超过 10 万 token 时 $0.10 / $0.50，超过则 $0.50 / $2.50——表上唯一一行按 prompt 长度分价）与 Gemini 4 Argon（10 月 13 日开放付费 API，11 月 30 日前 $2 / $10，之后 $4 / $20——表上第一行 Google）。两者都已记进[市场事件](market-events.md)。5.5 家族与 GPT-6 各档的模型 profile 仍是待办。
+- **[基准与计费](comparisons/benchmarks-and-billing.md) 新增两行：** Claude Haiku 5.5（10 月 7 日）与 Gemini 4 Argon（10 月 13 日开放付费 API——表上第一行 Google）。两者都已记进[市场事件](market-events.md)。5.5 家族与 GPT-6 各档的模型 profile 仍是待办。
 - **两次上游搬家，做的是迁移而不是糊过去。** `trailhq/Graft` 现在是 `trailhq/Trail-Code`（"Trail-code，原 graft"），在没变的 `graft` CLI 前面多了一层 Trail 的 learnings；[profile](agents/graft.md) 保留文件名并加了带日期的说明。`Hmbown/CodeWhale` 在 10 月 7 日抓取之前就已搬到 `codewhale-hq/Codewhale`——本地图漏看了一个窗口——它的 README 现在是 provider 中立、40 多条路线，所以 [CodeWhale](agents/codewhale.md) profile、[CLI 对比](comparisons/coding-cli-agents.md)那一行与[全景表](comparisons/mainstream-agent-landscape.md)那一行都已就地改正；原来"DeepSeek + MiMo 原生、模型集窄"的定位已经过时。两个 slug 在 `tracked-repos.txt`、`catalog.json`、`snapshot.json` 与 `history.json` 里一起重新编了 key，增量历史保持连续。
 
 日常维护：`browser-use/jev-ultrafast`（22.9k，9 月 30 日起没有推送）作为兄弟仓库记在 [Browser Use](agents/browser-use.md) 的 profile 里，不单独收录。本窗口的热度榜解读见 [agents/README.md](agents/README.md)：mattpocock/skills 创下有记录以来最大的 7 天增量，skills 浪潮升到四席，尖峰规矩在 OpenHuman 身上兑现。
@@ -85,16 +92,16 @@
 本周刷新除常规热度表之外，还落了两项结构性改动。
 
 - **一处在源头改掉的更正：[ZCode](agents/zcode.md) 已经开源。** 智谱于 9 月 20 日以 Apache-2.0 发布 `zai-org/ZCode`，含客户端、后端与 Agent CLI；而本地图的 profile、[能力矩阵](capabilities/matrix.md)行说明与[全景表](comparisons/mainstream-agent-landscape.md)三处都还写着"闭源"。三处都已就地改正并附日期说明；矩阵分数保持不变（一次需要对厂商服务认证的源码发布，并不等于一套可自托管的部署）；该仓库已以 `tracked: false` 登记进 catalog，下次刷新进入榜单。[Codex](agents/codex.md) 的模型段落也已更新：它的打包默认已经不是 Astra。
-- **[成本 & benchmark](comparisons/cost-and-benchmarks.md) 新增两行：** Claude Sonnet 5.5（9 月 28 日）与 GPT-6.1 Sol（9 月 29 日），都是 $2 / $10，都在一天之内成了自家编码 agent 的默认。上周写下的"两家在缓存读上已经收敛"这条要点已重写——它只成立了七天：GPT-6.1 Sol 的 $0.10/M 缓存读现在是区分两个中间档的那一列。5.5 家族与 GPT-6 各档的模型 profile 仍是后续待办。
+- **[基准与计费](comparisons/benchmarks-and-billing.md) 新增两行：** Claude Sonnet 5.5（9 月 28 日）与 GPT-6.1 Sol（9 月 29 日），都在一天之内成了自家编码 agent 的默认。5.5 家族与 GPT-6 各档的模型 profile 仍是后续待办。
 
 日常维护：[Graft](agents/graft.md) 进入跟踪（tracked slug 56 个）；周更手册里自 2026-08-27 起就过期的"待翻正条目"那一行，现在写的是当前的待翻正条目。本窗口的热度榜解读见 [agents/README.md](agents/README.md)。
 
-## 2026-09-24 —— Graft 进入地图，模型层最便宜的那一档往下挪了
+## 2026-09-24 —— Graft 进入地图，Opus 5.5 与 GPT-6 Sol 和 Luna 发布
 
 本周刷新除常规热度表之外，还落了三项结构性改动。
 
 - **第 78 个 profile：[Graft](agents/graft.md)**（`trailhq/Graft`，MIT，TypeScript，9.1k）。它在 2026-08-27 因与 [CodeGraph](agents/codegraph.md) 重叠被按住；四周、+69% 之后，那个"重叠"已经清楚地分成两种值得各占一页的形态——CodeGraph 用 MCP 供一份 SQLite 索引，Graft 把代码图谱写成 agent 用普通文件工具就能读的互链 markdown。已接入路线表、覆盖表、能力矩阵、[记忆方案对比](comparisons/memory-approaches.md)（现在是七种而不是六种）与路线图。
-- **两家在同一天把价格砍到自家天花板之下。** [Claude Opus 5.5](market-events.md#2026-09-22--两家在同一天动了天花板的价格) $4 / $20，GPT-6 Sol / Luna $2 / $10 与 $0.10 / $0.50，都在 9 月 22 日。[成本 & benchmark](comparisons/cost-and-benchmarks.md) 新增三行并重写了要点：天花板那一行不再是有意思的那一行、两家的缓存读都收敛到 $0.20/M、以及 `GPT-6 Sol` 不是 `GPT-5.6 Sol`。5.5 家族与 GPT-6 低档的模型 profile 留作后续。
+- **两家在同一天发布了自家天花板之下的模型。** [Claude Opus 5.5](market-events.md#2026-09-22--opus-55-与-gpt-6-sol-和-luna-在同一天发布) 与 GPT-6 Sol / Luna，都在 9 月 22 日。[基准与计费](comparisons/benchmarks-and-billing.md) 新增三行，并加了一条要点：`GPT-6 Sol` 不是 `GPT-5.6 Sol`。5.5 家族与 GPT-6 低档的模型 profile 留作后续。
 - **一处维护问题：修掉并写出来，而不是静默改掉。** 两个主页上的"更多窗口笔记"块最后一次重写是 2026-09-01，之后原封不动地熬过了 09-09 与 09-17 两次刷新，一直在对外显示那一期的 5 天数字，以及一个和它上方主 bullet 早已矛盾的 skills 浪潮计数。本期按这一窗口的抓取整体重写，榜外增长清单也改成从快照生成。market-events 时间线顶部此前也不是严格倒序，已重排。
 - 本窗口的热度解读见 [agents/README.md](agents/README.md)：[Open Code Review](agents/open-code-review.md) 的 Trending 尖峰得到确认，[Claude Code](agents/claude-code.md) 在 23 个记录窗口里第一次拿到前十席位，而上期对 TradingAgents 的确认落空——这是两个窗口里第二次确认失败，被记为本榜"两窗口规矩"本身的弱点，而不是一次偶发。
 
@@ -107,7 +114,7 @@
 - **一处 star 数与已 stamp 的快照不符**（正文写 213.8k，`snapshot.json` 是 213,948，因为 profile 写在刷新之前）。已统一。
 - **因绕开工具报错而引入的引号风格混用**，涉及七个 zh 文件。已统一；另两处是原有的，不动。
 
-复查通过项：32 对中英文文档的标题数、表格行数、profile 链接集合完全一致；三处 profile 计数均为 77；价格与 benchmark 数字在所有重复出现的位置一致。
+复查通过项：32 对中英文文档的标题数、表格行数、profile 链接集合完全一致；三处 profile 计数均为 77；benchmark 数字在所有重复出现的位置一致。
 
 写进周更坑清单的长期教训：**比较型最高级与时长断言，每期都要从数据现算，不能靠推理**——以及，一条只写在新条目里的更正，在原文没改之前不算更正。
 
@@ -128,7 +135,7 @@
 这次做的是完整覆盖扫描而不是周差异。新增五个 profile（EN + zh）与第十五条路线，收录数到 77——而这些遗漏共享一个值得点名的模式。
 
 - **新增 [OpenCode](agents/opencode.md)**（`anomalyco/opencode`，MIT，**20.5 万 star**）—— 在五个既有 profile 里被点名为集成对象，却从来没有自己的页面。它是现存体量最大的厂商中立编码 agent，也是 [QM](agents/qm.md) 与 [Omnigent](agents/omnigent.md) 和 Claude Code、Codex 并列驱动的那个。
-- **新增 [Gemini CLI](agents/gemini-cli.md)**（Apache-2.0，10.7 万）—— 顺带纠正一个事实错误：[market-events](market-events.md) 在 8 月写了 Meta"补上第一方编码 CLI 阵营的最后一块"，而谷歌那一个从来就没进过这个阵营。它也是这里唯一一个免费档真能干活的 CLI——每天 1,000 次请求——并把谷歌搜索接地做成内置工具。
+- **新增 [Gemini CLI](agents/gemini-cli.md)**（Apache-2.0，10.7 万）—— 顺带纠正一个事实错误：[market-events](market-events.md) 在 8 月写了 Meta"补上第一方编码 CLI 阵营的最后一块"，而谷歌那一个从来就没进过这个阵营。它也是这里唯一一个免费档真能干活的 CLI，并把谷歌搜索接地做成内置工具。
 - **新增 [Browser Use](agents/browser-use.md)**（MIT，11.3 万）—— 开出**新路线：浏览器 agent**。本地图此前已经把浏览器自动化记为 [Kimi Work](agents/kimi-work.md) 的头条功能、把 Claude in Chrome 取消逐动作审批记在案，却没有一条覆盖这项能力本身的路线。
 - **新增 [Microsoft Agent Framework](agents/microsoft-agent-framework.md)**（MIT）—— 按微软自己的声明，AutoGen 处于**维护模式**，所以 profile 给继任者，AutoGen 记在它里面。[命名说明](agents/README.md)里写下新政策：维护模式的项目不单独收录，因为一个 profile 会被读成当前推荐。
 - **新增 [Qwen Code](agents/qwen-code.md)**（Apache-2.0）—— 与 [Qwen3-Coder](agents/qwen3-coder.md) 配成一对；它是这里唯一一个客户端与权重两层都开放的第一方 CLI。
@@ -147,7 +154,7 @@
 - **新增 [DeepSeek V4](agents/deepseek-v4.md)**（MIT）—— 1.6T/49B，100 万上下文，SWE-bench Verified 80.6，另有 284B/13B 的 Flash 变体。
 - **新增 [Qwen3-Coder](agents/qwen3-coder.md)** —— 回答"塞得进什么"的那个条目：Next 在 80B 里激活约 3B，256K 到 100 万上下文，在 Qwen Code、Cline、Claude Code 里都有一等支持。
 
-结构性后果：[成本与基准](comparisons/cost-and-benchmarks.md)新增开放权重一节，算的是**硬件与许可而不是 token**；[market-events](market-events.md) 记录这一档追到前沿，以及它与 [GPT-6 Astra](agents/gpt-6-astra.md)、Mythos 之间在网安能力上的不对称；[主流格局](comparisons/mainstream-agent-landscape.md)加上四行。
+结构性后果：[基准与计费](comparisons/benchmarks-and-billing.md)新增开放权重一节，讲的是**硬件与许可而不是 token**；[market-events](market-events.md) 记录这一档追到前沿，以及它与 [GPT-6 Astra](agents/gpt-6-astra.md)、Mythos 之间在网安能力上的不对称；[主流格局](comparisons/mainstream-agent-landscape.md)加上四行。
 
 工具改动：`render-route-map.py` 现在**自动算出路线数**，不再把"13 条路线"写死在四处字符串里，以后加路线不会再让 SVG 标题过期。
 
@@ -169,12 +176,12 @@
 
 自本地图上次写下模型层以来，两侧各自又动了两次，而路线表还指着已经被接棒的条目。新增两个 profile（EN + zh），收录数到 64：
 
-- **新增 [Claude Opus 5](agents/claude-opus-5.md)**（2026-07-24）—— 这条路线一直缺的那个条目：不是天花板，而是 Claude 系 agent 真正在跑的模型。价格守在 Opus 档的 $5/$25，CursorBench 3.2 距 Fable 5 峰值 0.5% 以内，1M 上下文既是默认也是上限。它在 Claude Code 里接替 Opus 4.8 成为可靠默认档——而本仓库好几页此前还写着旧的说法。
+- **新增 [Claude Opus 5](agents/claude-opus-5.md)**（2026-07-24）—— 这条路线一直缺的那个条目：不是天花板，而是 Claude 系 agent 真正在跑的模型。CursorBench 3.2 距 Fable 5 峰值 0.5% 以内，1M 上下文既是默认也是上限。它在 Claude Code 里接替 Opus 4.8 成为可靠默认档——而本仓库好几页此前还写着旧的说法。
 - **新增 [GPT-6 Astra](agents/gpt-6-astra.md)**（2026-09-03）—— OpenAI 当前的天花板，也是本地图记录到的第一个**公开版本本身就是受限版本**的前沿模型（它会拒绝自己一部分网安能力，进阶访问走 Daybreak Blue）。次日 Codex CLI `rust-v0.153.4` 把它设为打包默认，于是这条限制落到了产品默认之下。
-- **[Claude Fable 5](agents/claude-fable-5.md) 更新到 Fable 5.1 / Mythos 5.1**（2026-09-01）—— 标价仍是 $10/$50，缓存读砍 75% 到 $0.25/M。profile 沿用原路径，既有链接不断。
+- **[Claude Fable 5](agents/claude-fable-5.md) 更新到 Fable 5.1 / Mythos 5.1**（2026-09-01）。profile 沿用原路径，既有链接不断。
 - **[GPT-5.5](agents/gpt-5.5.md) 重新定位为血统参照** —— 其"发布后格局"表现在是 GPT-5.5 → GPT-5.6 → Astra，与 Opus 4.8 → Fable 5 → Sonnet 5 → Opus 5 → Fable 5.1 并列。
 
-结构性后果：[成本与基准](comparisons/cost-and-benchmarks.md) 按一手价格页重建，并新增**缓存读一列**——两家天花板都落在 $10/$50 之后，标价已经不再是区分点；[market-events](market-events.md) 新增三条（Opus 5、Fable 5.1、Astra）；[README](README.md) 与 [agents/](agents/README.md) 的路线表现在把天花板和其下的默认档分开列，因为那是两个不同的决策。
+结构性后果：[market-events](market-events.md) 新增三条（Opus 5、Fable 5.1、Astra）；[README](README.md) 与 [agents/](agents/README.md) 的路线表现在把天花板和其下的默认档分开列，因为那是两个不同的决策。
 
 两处刻意保留的来源纪律：Artificial Analysis 编码 agent 指数目前没有本地图愿意照抄的 Astra / Fable 5.1 / Opus 5 数字，因此那些格子留破折号，不用第三方榜单去填；外面流传的 Fable 5.1"SWE-bench Verified 95%"是第三方数字，Anthropic 公布的是 SWE-bench Pro 81.2，本地图记的是后者。
 
@@ -208,7 +215,7 @@
 三个纯新增的对比面，把地图推过"只看流行度"，且不动现有路线/覆盖结构：
 
 - **新增 [能力矩阵](capabilities/matrix.md)**（EN + zh）——把九个[能力维度](capabilities/README.md)并排应用到约 40 个项目，按核心（●）/ 支持（◐）/ 有限（○）/ 非目标（—）打分，按路线分组。终于用起了此前定义却从未大规模应用的能力词表。
-- **新增 [成本 & benchmark](comparisons/cost-and-benchmarks.md)**（EN + zh）——前沿模型能力（Artificial Analysis 编码 agent 指数、SWE-Bench Pro）vs 每 token 价格，加上每个编码 agent 怎么收费（开源自带 / 订阅 / 按量额度 / 托管席位）。复用厂商 profile 里已确立的数字。
+- **新增 [基准与计费](comparisons/benchmarks-and-billing.md)**（EN + zh）——前沿模型能力（Artificial Analysis 编码 agent 指数、SWE-Bench Pro），加上每个编码 agent 怎么收费（开源自带 / 订阅 / 按量额度 / 托管席位）。复用厂商 profile 里已确立的数字。
 - **新增 [记忆方案对比](comparisons/memory-approaches.md)**（EN + zh）——把地图上带记忆的项目按*怎么*记分类（自编辑、被动语义、文件/关键词、代码知识图谱、个人数据树、长驻运行时），串起 jcode、MiMoCode、Letta、CodeGraph、OpenHuman、Hermes、Mercury。
 
 两个对比页从 [comparisons/](comparisons/README.md) 链接；矩阵从 [capabilities/](capabilities/README.md) 链接。

@@ -19,7 +19,7 @@ Every column is one of the [priority dimensions](README.md). Every cell is score
 
 Columns, abbreviated from the [dimension vocabulary](README.md): **Tool** = tool use · **Exec** = code execution · **Mem** = memory · **Orch** = orchestration · **Multi** = multi-agent · **Appr** = human approval · **Sched** = scheduling · **Surf** = delivery surfaces · **Deploy** = deployment control.
 
-> Scores are coarse by design — a selection aid, not a benchmark. They reflect each project's *stated* center of gravity as captured in its profile, not a lab measurement. For hard numbers on cost and coding capability, see [cost & benchmarks](../comparisons/cost-and-benchmarks.md).
+> Scores are coarse by design — a selection aid, not a benchmark. They reflect each project's *stated* center of gravity as captured in its profile, not a lab measurement. For hard numbers on coding capability, see [benchmarks & billing](../comparisons/benchmarks-and-billing.md).
 
 ## Evidence Behind A Cell
 
@@ -192,7 +192,7 @@ Standouts: this row is deliberately narrow, because Browser Use is a **capabilit
 Coverage here is a judgment, not an oversight, and the gaps are worth stating so nobody reads a missing row as a missing project.
 
 - **Consumer personal agents** — [ChatGPT dots](../agents/chatgpt-dots.md), [Gemini Task](../agents/gemini-task.md), [Claude (Cowork)](../agents/claude-cowork.md), [Claude Duet](../agents/claude-duet.md), [Muse](../agents/meta-muse.md), [Grok Bot](../agents/grok-bot.md), [Cue](../agents/manus-cue.md), [Doubao](../agents/doubao.md), [Qwen app](../agents/qwen-app.md), [AutoGLM](../agents/autoglm.md), [Yuanbao](../agents/yuanbao.md), [Today](../agents/today-ai.md) — scored on their own grid in [personal agents](../comparisons/personal-agents.md), on dimensions that fit a consumer product (errands, deliverables, your device, approval controls) and with a **?** for anything the vendor does not document. Forcing them onto this grid would mean guessing at deployment and orchestration columns a closed product never discloses.
-- **Models** — [Fable 5.1](../agents/claude-fable-5.md), [Opus 5](../agents/claude-opus-5.md), [GPT-6 Astra](../agents/gpt-6-astra.md), [GPT-5.5](../agents/gpt-5.5.md), [Kimi K3](../agents/kimi-k3.md), [GLM-5.3](../agents/glm-5.md), [DeepSeek V4](../agents/deepseek-v4.md), [Qwen3-Coder](../agents/qwen3-coder.md). Every column here is a property of an agent *product* — approval gates, scheduling, delivery surfaces, deployment control. A model has none of them. Compare models in [cost & benchmarks](../comparisons/cost-and-benchmarks.md) instead.
+- **Models** — [Fable 5.1](../agents/claude-fable-5.md), [Opus 5](../agents/claude-opus-5.md), [GPT-6 Astra](../agents/gpt-6-astra.md), [GPT-5.5](../agents/gpt-5.5.md), [Kimi K3](../agents/kimi-k3.md), [GLM-5.3](../agents/glm-5.md), [DeepSeek V4](../agents/deepseek-v4.md), [Qwen3-Coder](../agents/qwen3-coder.md). Every column here is a property of an agent *product* — approval gates, scheduling, delivery surfaces, deployment control. A model has none of them. Compare models in [benchmarks & billing](../comparisons/benchmarks-and-billing.md) instead.
 - **[Superpowers](../agents/superpowers.md)** — a skills framework that runs *inside* other agents rather than having a loop of its own. Its capabilities are whichever agent you attach it to, so a row would measure the host, not the tool.
 - **[ECC](../agents/ecc.md)** — like Superpowers, a plugin that runs *inside* a host agent (Claude Code first; Codex and Qoder native; others beta or experimental). Its hooks, memory vault and subagents are real, but their reach is set by the host harness and differs per harness by its own support table, so a row would score the host, not ECC.
 - **[BabyAGI](../agents/babyagi.md)** — kept in this map as a historical and educational entry; its own profile says it is not a production tool, and its capability table is scored on influence and educational value rather than on capability. A row in this matrix would imply it is a live candidate, which would be the wrong signal.
@@ -203,6 +203,6 @@ If a project is profiled and has none of the above reasons, a missing row is a b
 
 1. **Circle the columns that are mandatory** for your workflow — not the ones that sound nice.
 2. Keep only the rows that score **●** on those columns. A ◐ or ○ where you need a ● is where projects quietly fail you later.
-3. For the survivors, flip to the cost side of the ledger: [cost & benchmarks](../comparisons/cost-and-benchmarks.md) for price and coding capability, and the profile's own "Operating Cost" section for the operational burden each strength carries.
+3. For the survivors, flip to the other side of the ledger: [benchmarks & billing](../comparisons/benchmarks-and-billing.md) for coding capability and billing mode, and the profile's own "Operating Cost" section for the operational burden each strength carries.
 
 For the full route view see [agents/](../agents/README.md); for popularity over time see [rankings/](../rankings/README.md).

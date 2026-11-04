@@ -17,7 +17,7 @@ One-line take: AutoGLM is Zhipu's phone-and-computer-use agent in two forms — 
 | Status | App released **Aug 19 2025**; last App Store update **July 9 2026** (v2.0.20, adding an AutoClaw entry). Open-AutoGLM last pushed **Mar 6 2026** |
 | Where it runs | App: one cloud phone and one cloud computer per user, in Zhipu's data centres — your own device is not touched. Framework: your phone, controlled from your machine |
 | Model | AutoGLM-Phone-9B (Chinese apps) and AutoGLM-Phone-9B-Multilingual, published on Hugging Face and ModelScope |
-| Price | App free on the China App Store; framework free |
+| Access | App free on the China App Store; framework free |
 | Official pages | https://apps.apple.com/cn/app/id6748391183 · https://github.com/zai-org/Open-AutoGLM |
 
 ## When To Pick It

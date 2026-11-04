@@ -6,7 +6,7 @@
 
 One-line take: Gemini CLI is Google's open-source terminal agent, and it is **no longer Google's free path for individuals**: since June 18 2026 free users and Google AI Pro and Ultra subscribers are served by [Google Antigravity](antigravity.md)'s CLI instead. It remains the Apache-2.0 client for Gemini Code Assist Standard and Enterprise organisations and paid Gemini API keys.
 
-> **Correction (2026-10-30):** this profile led with a consumer free tier that stopped applying on 2026-06-18. Google's quota page now opens with the banner "Unpaid tier and Google One users: Gemini CLI was replaced by Antigravity CLI on June 18th, 2026." Google's developer blog (May 19 2026) says that from that date Gemini CLI stops serving Google AI Pro and Ultra subscribers, free users of Gemini Code Assist for individuals and the Code Assist IDE extensions, while Code Assist Standard and Enterprise organisations and paid Gemini and Gemini Enterprise Agent Platform API keys keep working; Antigravity CLI "is available to everyone". The "60 requests/min" figure is withdrawn too: Google's page gives no per-minute number. Corrected in place below. Sources: [Gemini CLI quota and pricing](https://geminicli.com/docs/resources/quota-and-pricing), [Google Developers Blog](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/).
+> **Correction (2026-10-30):** this profile led with a consumer free tier that stopped applying on 2026-06-18. Google's quota page now opens with the banner "Unpaid tier and Google One users: Gemini CLI was replaced by Antigravity CLI on June 18th, 2026." Google's developer blog (May 19 2026) says that from that date Gemini CLI stops serving Google AI Pro and Ultra subscribers, free users of Gemini Code Assist for individuals and the Code Assist IDE extensions, while Code Assist Standard and Enterprise organisations and paid Gemini and Gemini Enterprise Agent Platform API keys keep working; Antigravity CLI "is available to everyone". The "60 requests/min" figure is withdrawn too: Google's page gives no per-minute number. Corrected in place below. Sources: [Gemini CLI quota](https://geminicli.com/docs/resources/quota-and-pricing), [Google Developers Blog](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/).
 
 ## Quick Read
 
@@ -29,7 +29,7 @@ It is also referenced as an integration target inside [CodeGraph](codegraph.md),
 
 ## When To Pick It
 
-- **Your organisation already pays for Gemini Code Assist Standard or Enterprise, or you run on a paid Gemini API key.** Those are the access paths Google kept on 2026-06-18. If you are an individual and budget is the constraint, look at [Google Antigravity](antigravity.md) instead.
+- **Your organisation already pays for Gemini Code Assist Standard or Enterprise, or you run on a paid Gemini API key.** Those are the access paths Google kept on 2026-06-18. If you are an individual, look at [Google Antigravity](antigravity.md) instead.
 - You want **Google Search grounding inside the loop** — a built-in tool, not an MCP server you have to wire up. For research-shaped tasks that is a genuine differentiator against every other CLI here.
 - You want **Gemini 3 with a 1M-token context** in your terminal, with the vendor's own tuning.
 - You want a permissive licence on the client: Apache-2.0, unlike the proprietary first-party CLIs on this route.
@@ -38,7 +38,7 @@ It is also referenced as an integration target inside [CodeGraph](codegraph.md),
 ## When Not To Pick It
 
 - Your model commitment is elsewhere. The tool exists to run Gemini; if you are on Claude or GPT, their own CLIs are better tuned — see the [coding CLI comparison](../comparisons/coding-cli-agents.md).
-- **You need predictable throughput.** Per-minute and per-day request caps are a rate limit in the middle of your agent loop; budget for the paid path before you depend on it.
+- **You need predictable throughput.** Per-minute and per-day request caps are a rate limit in the middle of your agent loop; plan for the paid path before you depend on it.
 - You want a vendor-neutral loop — that is [OpenCode](opencode.md).
 - You need on-premises or offline operation.
 

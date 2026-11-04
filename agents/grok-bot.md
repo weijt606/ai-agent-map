@@ -17,7 +17,7 @@ One-line take: Grok Bot is xAI's team of always-on agents — several named Bots
 | Status | Beta since **Aug 11 2026**; an enterprise offering followed on Sept 3 |
 | Where it runs | **One cloud computer shared by all your Bots** (files, browser sessions, app logins), **in Cursor's cloud**, located **in the United States** |
 | Model | Not chosen by you — "Cursor manages model selection", with no model picker |
-| Price | Since Oct 12 2026, included in the X Subscription on **Premium ($30/month), Super ($100/month) and Ultra ($200/month)**, not on Plus ($8) |
+| Access | Since Oct 12 2026, included in the X Subscription on **Premium, Super and Ultra**, not on Plus |
 | Official page | https://x.ai/news/introducing-grok-bot |
 
 ## Why This Entry Exists

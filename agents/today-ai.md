@@ -17,7 +17,7 @@ One-line take: a personal AI assistant built around "remembers you and helps bef
 | Status | Live. First release dates recorded by the App Store: international 2026-08-27, China 2026-10-04; China iOS is on 1.24.0 (2026-10-30). Media report the China launch on Sept 24–25 (*media*) |
 | Where it runs | Its own "stable computers in the cloud" that "can open browsers, work with files, run code", labelled "24 Hours Available"; with the extension installed, also **your Chrome**, where it reads pages, clicks and fills forms |
 | Model | China edition: inference through **Alibaba Cloud Bailian, Tencent Cloud TokenHub and Kingsoft Cloud**, which serve "DeepSeek and other models"; speech through Alibaba Cloud DashScope. International: AI providers "may include" AWS, Anthropic and OpenAI. Neither names the model in use |
-| Price | China edition: the **basic plan is free "permanently"**, and new users get "300 million tokens and 3 months of Pro" (todayai.cn, read 2026-10-31); the China Pro price is not listed. International App Store in-app purchases: **Pro $20/mo, Ultra $200/mo**; eligible accounts may get a 7-day Pro trial, Ultra has none |
+| Access | China edition: the **basic plan is free "permanently"**, and a Pro tier exists (todayai.cn, read 2026-10-31). International App Store in-app purchases: **Pro** and **Ultra**; eligible accounts may get a 7-day Pro trial, Ultra has none |
 | Regions | Mainland China (China edition, mainland phone-number accounts) plus an international edition |
 | Official page | https://todayai.cn · https://today.ai/?international=1 |
 
@@ -40,7 +40,6 @@ The mobile tab bar is Chat, Today, Memories, Tasks, plus a fifth tab called Spar
 ## When Not To Pick It
 
 - You need written approval rules. It says only that "key steps" such as submitting forms, ordering and paying are yours to confirm or take over, and that sending or modifying things externally is confirmed "per feature"; there is no published per-action rule set or off-limits list.
-- You want to know what China-edition Pro costs first. Neither the site nor the China App Store page lists it.
 - You are choosing by specific connector. The site lists categories only, with no public connector list; media lists disagree with each other.
 
 ## Permissions And Data
@@ -57,11 +56,11 @@ The mobile tab bar is Chat, Today, Memories, Tasks, plus a fifth tab called Spar
 
 ## Bottom Line
 
-A personal assistant with memory, briefings and scheduled tasks at its center, usable on desktop, phone and web, and specific about training and storage: no training of public foundation models on identifiable content, and China-edition data kept in mainland China in principle. The weak side is the control surface: approvals are written only as "you confirm key steps", connectors have no public list, and the China Pro price is not stated. Worth trying on the free plan plus the new-user allowance if you want a proactive assistant with data kept in mainland China; before you let it pay or send on your behalf, check in the app exactly where it stops to ask.
+A personal assistant with memory, briefings and scheduled tasks at its center, usable on desktop, phone and web, and specific about training and storage: no training of public foundation models on identifiable content, and China-edition data kept in mainland China in principle. The weak side is the control surface: approvals are written only as "you confirm key steps", and connectors have no public list. Worth trying on the free plan if you want a proactive assistant with data kept in mainland China; before you let it pay or send on your behalf, check in the app exactly where it stops to ask.
 
 ## Sources
 
 - [todayai.cn](https://todayai.cn/) · [International today.ai](https://today.ai/?international=1) · [China downloads](https://todayai.cn/downloads) · [International downloads](https://today.ai/downloads)
 - [China privacy policy (2026-10-25)](https://todayai.cn/privacy) · [China user agreement](https://todayai.cn/terms) · [International Privacy Policy (2026-08-31)](https://today.ai/privacy) · [International Terms of Service (effective 2026-09-07)](https://today.ai/terms)
-- [Today on the China App Store](https://apps.apple.com/cn/app/id6775764827) · [Today on the US App Store (in-app prices)](https://apps.apple.com/us/app/id6760608312) · [Google Play](https://play.google.com/store/apps/details?id=ai.today.android.app) · [Chrome extension "Today AI 中国版"](https://chromewebstore.google.com/detail/edkhmdfegifiidpkfifcoiafjgbopggj) · [Chrome extension "Today AI"](https://chromewebstore.google.com/detail/today-ai/adhckffghihcelhbpgbkbepmlhcmofjc)
-- *Media*: [QbitAI, 2026-09-24](https://finance.sina.cn/2026-09-24/detail-inisxnuz4997238.d.html) (founder, launch) · [The Capital via 36Kr, 2026-10-22](https://eu.36kr.com/zh/p/4036453319660681) (cumulative financing above $200M per 5Y Capital; it gave the new-user offer as 100 million tokens plus one month of Pro, which differs from the 300 million tokens plus 3 months of Pro the site states now — this page follows the site)
+- [Today on the China App Store](https://apps.apple.com/cn/app/id6775764827) · [Today on the US App Store](https://apps.apple.com/us/app/id6760608312) · [Google Play](https://play.google.com/store/apps/details?id=ai.today.android.app) · [Chrome extension "Today AI 中国版"](https://chromewebstore.google.com/detail/edkhmdfegifiidpkfifcoiafjgbopggj) · [Chrome extension "Today AI"](https://chromewebstore.google.com/detail/today-ai/adhckffghihcelhbpgbkbepmlhcmofjc)
+- *Media*: [QbitAI, 2026-09-24](https://finance.sina.cn/2026-09-24/detail-inisxnuz4997238.d.html) (founder, launch) · [The Capital via 36Kr, 2026-10-22](https://eu.36kr.com/zh/p/4036453319660681) (cumulative financing above $200M per 5Y Capital)

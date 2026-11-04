@@ -17,7 +17,7 @@
 | 状态 | **2026-08-11** 起 beta；9 月 3 日推出企业版 |
 | 在哪里跑 | **你所有的 Bot 共用一台云端电脑**（文件、浏览器会话、应用登录都共享），**在 Cursor 的云上**，位于**美国** |
 | 模型 | 不由你选——"Cursor 负责模型选择"，没有模型选择器 |
-| 价格 | 2026-10-12 起包含在 X Subscription 的 **Premium（$30/月）、Super（$100/月）、Ultra（$200/月）**，Plus（$8）不含 |
+| 使用条件 | 2026-10-12 起包含在 X Subscription 的 **Premium、Super、Ultra**，Plus 不含 |
 | 官方页面 | https://x.ai/news/introducing-grok-bot |
 
 ## 为什么收录

@@ -77,7 +77,7 @@ Codex CLI（开源终端伴侣，github.com/openai/codex）也走得很快：202
 
 ## 模型层
 
-2026-07-09 起 Codex 底层是 **GPT-5.6**（Sol / Terra / Luna 三档）——与产品并入 ChatGPT 同日接棒 [GPT-5.5](gpt-5.5.md)。随后默认值在 2026 年 9 月换了两次。Codex CLI `rust-v0.153.4`（9 月 4 日）按其 release note 的原话，把 [GPT-6 Astra](gpt-6-astra.md) 变成"未显式配置模型时打包的默认"；**自 `rust-v0.159.1`（9 月 29 日）起，打包默认是 GPT-6.1 Sol**（$2 / $10，缓存读 $0.10/M——见[成本与基准](../comparisons/cost-and-benchmarks.md)）。Astra 那段时期留下的两个后果，在你显式钉死 Astra 时仍然适用：正式开放的 Astra **会拒绝一部分网安能力**，安全相邻的工作会继承这条边界；以及 Astra 在输入超过 272k token 后换价，而一个长 Codex 会话是够得着这条线的。10 月又有两处模型变化。**2026 年 10 月 14 日**，OpenAI 让用 ChatGPT 账号登录的 Codex 和 ChatGPT 下线了 GPT-5.5（用 API key 登录的 Codex 会话不受影响），所以在 ChatGPT 登录的工作区里钉死的 `gpt-5.5` 现在什么也指不到。**10 月 26 日**，GPT-6.1 Terra（$1 / $5）在 Codex 里可选，但**不是默认**：`rust-v0.164.0`（10 月 23 日）打包的仍是 GPT-6.1 Sol。一个月换两次之后的实际规矩：钉死模型 id，不要依赖打包默认，并把模型下线也排进同一张复查日历。价格形状见 [GPT-6 Astra profile](gpt-6-astra.md)，完整模型谱系见 [GPT-5.5 profile](gpt-5.5.md)。
+2026-07-09 起 Codex 底层是 **GPT-5.6**（Sol / Terra / Luna 三档）——与产品并入 ChatGPT 同日接棒 [GPT-5.5](gpt-5.5.md)。随后默认值在 2026 年 9 月换了两次。Codex CLI `rust-v0.153.4`（9 月 4 日）按其 release note 的原话，把 [GPT-6 Astra](gpt-6-astra.md) 变成"未显式配置模型时打包的默认"；**自 `rust-v0.159.1`（9 月 29 日）起，打包默认是 GPT-6.1 Sol**。Astra 那段时期留下的一个后果，在你显式钉死 Astra 时仍然适用：正式开放的 Astra **会拒绝一部分网安能力**，安全相邻的工作会继承这条边界。10 月又有两处模型变化。**2026 年 10 月 14 日**，OpenAI 让用 ChatGPT 账号登录的 Codex 和 ChatGPT 下线了 GPT-5.5（用 API key 登录的 Codex 会话不受影响），所以在 ChatGPT 登录的工作区里钉死的 `gpt-5.5` 现在什么也指不到。**10 月 26 日**，GPT-6.1 Terra 在 Codex 里可选，但**不是默认**：`rust-v0.164.0`（10 月 23 日）打包的仍是 GPT-6.1 Sol。一个月换两次之后的实际规矩：钉死模型 id，不要依赖打包默认，并把模型下线也排进同一张复查日历。完整模型谱系见 [GPT-5.5 profile](gpt-5.5.md)。
 
 ## 最后一句
 

@@ -17,7 +17,7 @@ Three things change every week, not just the rank:
    watchlist bullet and note it for next week.
 
 Plus one **conditional** pass: the selection surfaces (capability matrix,
-cost & benchmarks, memory approaches) are refreshed only when the window's
+benchmarks & billing, memory approaches) are refreshed only when the window's
 changes actually touch them — see step 5.
 
 ## Steps
@@ -36,6 +36,8 @@ changes actually touch them — see step 5.
    keeps the stamped snapshot identical to the numbers you are about to write
    into the heat tables — **do the editing between `check` and `publish` on the
    same day** and there is nothing to reconcile afterwards.
+
+   **Check elapsed time, not just dates.** Compare this `check`'s `fetched_at` with the previous one (the previous publish commit is the upper bound). Two windows that both read "7 days" have run 7.45 and 6.24 days apart. If the two differ by more than about 5%, compare on gain ÷ elapsed days and say so in the notes.
 
 2. **Refresh the rank** in all four heat tables. Keep them in lockstep:
    - `README.md` — "Recent Heat Ranking"
@@ -84,7 +86,7 @@ changes actually touch them — see step 5.
    only ever a profile written during the *previous* refresh, so carry it
    forward by naming it here when you write it. **Rewrite this line every
    refresh** — it went stale for two months once (it named `vercel/eve`, long
-   since flipped). **As of 2026-11-03: no pending pickups.** The five from the coverage-gap PR (`stablyai/orca`, `paperclipai/paperclip`, `affaan-m/ecc`, `thedotmack/claude-mem`, `graphify-labs/graphify`) were flipped this refresh; their first measured gain comes next window. No new profile was written this
+   since flipped). **As of 2026-11-04: no pending pickups.** The five from the coverage-gap PR (`stablyai/orca`, `paperclipai/paperclip`, `affaan-m/ecc`, `thedotmack/claude-mem`, `graphify-labs/graphify`) were flipped on 2026-11-03; their first measured gain comes next window. No new profile was written this
    refresh and no tracked repo moved (the `.fetch-cache.json` and
    `snapshot.json` `full_name` values all matched). When a repo does move,
    migrate tracked-repos.txt, catalog.json, snapshot.json and history.json raw
@@ -103,10 +105,9 @@ changes actually touch them — see step 5.
      "Standouts" line if it changes the story.
    - **New profile with memory as a headline feature** → wire it into the right
      section of `comparisons/memory-approaches.md` ×2.
-   - **Model-layer event** (new model/tier, price change, new benchmark number
-     recorded in market-events) → refresh the affected rows in
-     `comparisons/cost-and-benchmarks.md` ×2, including the "as of" month in
-     its note line.
+   - **Model-layer event** (new model/tier, new benchmark number recorded in
+     market-events) → refresh the affected rows in
+     `comparisons/benchmarks-and-billing.md` ×2.
    - **Route or profile-count change** (new profile, new/renamed route) → update
      the data block in `scripts/render-route-map.py` (names, "+N" counts — they
      must keep summing to the home page's profile total) and rerun it to refresh
@@ -114,7 +115,10 @@ changes actually touch them — see step 5.
      does not regenerate it.
    - Keep the rule from the profiles: only numbers already established
      elsewhere in the map (vendor profiles, market-events) go into
-     cost-and-benchmarks — never invent a figure during a routine refresh.
+     benchmarks-and-billing — never invent a figure during a routine refresh.
+   - **This map does not list or compare prices.** No price figures, price
+     columns or cost rankings on any page, including market events and the
+     changelog. Billing mode (open source, subscription, metered) is fine.
 
 6. **Publish (gated).**
    ```

@@ -14,7 +14,7 @@ One-line take: Qwen3-Coder is the open-weights line you pick when the model has 
 | Route | Open-weights agentic model |
 | Weights | [`QwenLM/Qwen3-Coder`](https://github.com/QwenLM/Qwen3-Coder) · [Hugging Face](https://huggingface.co/collections/Qwen/qwen3-coder-687fc861e53c939e52d52d10) |
 | Sizes | Qwen3-Coder-480B-A35B-Instruct, 30B-A3B-Instruct, and **Qwen3-Coder-Next** (80B-A3B) |
-| Best for | Local and cost-constrained agent deployments that still need real agentic coding |
+| Best for | Local and resource-constrained agent deployments that still need real agentic coding |
 | Main cost | Not the top of the open tier on raw capability — it trades ceiling for footprint |
 | Context | 256K native, extendable to 1M with Yarn |
 | Blog | https://qwenlm.github.io/blog/qwen3-coder-next/ |
@@ -29,7 +29,7 @@ Every other model on this route answers "how close can open weights get to the f
 
 - **The model has to run where you are** — a workstation, a single node, an air-gapped environment, or a cost ceiling that a 1.6T model cannot meet.
 - You want it wired into an existing loop: Qwen explicitly supports **Qwen Code, Cline, and Claude Code**, with a purpose-designed function-call format.
-- You need **repository-scale context** without a frontier bill: 256K native, up to 1M with Yarn.
+- You need **repository-scale context**: 256K native, up to 1M with Yarn.
 - Your codebase is unusual — the line advertises **358 coding languages**.
 - You want size options rather than one deployment shape: 480B-A35B at the top, 30B-A3B for small deployments, Next as the efficiency pick.
 

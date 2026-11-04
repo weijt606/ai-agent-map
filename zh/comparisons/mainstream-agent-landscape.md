@@ -12,7 +12,7 @@
 
 ## 一页式横向对比
 
-| 项目 | 路线 | 运行位置 | 操作节奏 | 最适合 | 主要代价 |
+| 项目 | 路线 | 运行位置 | 操作节奏 | 最适合 | 主要负担 |
 | --- | --- | --- | --- | --- | --- |
 | [Aider](../agents/aider.md) | 终端优先结对编程 agent | 本地终端和仓库 | 高频交互、git 中心 | 想在本地仓库里带着 diff 和模型选择写代码 | API 和模型配置本身就是工作流一部分 |
 | [Claude Code](../agents/claude-code.md) | 本地协作型 coding agent | 终端、IDE、桌面、Web | 高频交互 | 想边做边和 agent 配合写代码 | 不适合完全脱离人的后台执行 |
@@ -25,13 +25,13 @@
 | [ZCode](../agents/zcode.md) | 桌面 agentic 开发环境 | macOS / Windows / Linux 桌面 + IM 远程操控 | 长周期目标，远程查看进度 | GLM 优先、想要任务面而非编辑器的团队 | 自 2026-09-20 起源码以 Apache-2.0 开放（本表此前写作闭源）；最深的能力绑在智谱自家模型上 |
 | [WorkBuddy](../agents/workbuddy.md) | 桌面办公 agent | 桌面、网页、微信小程序、企业入口 | 交付一份可验收的办公成品 | 中国企业协作栈里的非工程工作 | 闭源，且带授权访问本地文件 |
 | [Kimi Work](../agents/kimi-work.md) | 桌面知识工作 agent | macOS / Windows 桌面 + 浏览器扩展 | 落在本地文件与实时网页上的常驻自动化 | 重复发生的"调研到交付物"工作 | 驱动你已登录的浏览器；闭源 |
-| [GPT-6 Astra](../agents/gpt-6-astra.md) | 前沿 agentic 模型 | ChatGPT、Codex、API | OpenAI 当前天花板，2026-09-03 | 想要最强 OpenAI 模型、且能接受其边界的 agent builder | $10/$50，输入超 272k token 后整个请求按 $20/$75 计价；公开版本会拒绝一部分网安能力 |
-| [Claude Fable 5.1](../agents/claude-fable-5.md) | 前沿 agentic 模型 | Claude Code、Claude.ai、API | Anthropic 当前天花板，2026-09-01 | 最难任务值得按量花钱的团队 | $10/$50 按额度计费；缓存读 $0.25/M，是 GPT-6 Astra（$1/M）的四分之一 |
-| [Claude Opus 5](../agents/claude-opus-5.md) | 前沿 agentic 模型（上一任默认档） | Claude Code、Claude.ai、Claude Cowork、API | 9 月 22 日之前是 Claude Code 的默认 Opus，此后由 Opus 5.5 接替（9 月 28 日默认 Sonnet 也换成了 Sonnet 5.5） | 想用一个模型把 agent 跑一整天、不盯额度表的人 | $5/$25；网安上落后于 Mythos；完全闭源 |
+| [GPT-6 Astra](../agents/gpt-6-astra.md) | 前沿 agentic 模型 | ChatGPT、Codex、API | OpenAI 当前天花板，2026-09-03 | 想要最强 OpenAI 模型、且能接受其边界的 agent builder | 公开版本会拒绝一部分网安能力 |
+| [Claude Fable 5.1](../agents/claude-fable-5.md) | 前沿 agentic 模型 | Claude Code、Claude.ai、API | Anthropic 当前天花板，2026-09-01 | 最难任务值得按量使用前沿模型的团队 | 按额度计费 |
+| [Claude Opus 5](../agents/claude-opus-5.md) | 前沿 agentic 模型（上一任默认档） | Claude Code、Claude.ai、Claude Cowork、API | 9 月 22 日之前是 Claude Code 的默认 Opus，此后由 Opus 5.5 接替（9 月 28 日默认 Sonnet 也换成了 Sonnet 5.5） | 想用一个模型把 agent 跑一整天、不盯额度表的人 | 网安上落后于 Mythos；完全闭源 |
 | [Kimi K3](../agents/kimi-k3.md) | 开放权重 agentic 模型 | 自托管，或月之暗面自家入口 | 在自己手里的权重上拿到前沿能力 | 需要上限但不想路径上有闭源厂商的团队 | 2.8T 参数是集群；自定义许可 |
 | [GLM-5.3](../agents/glm-5.md) | 开放权重 agentic 模型 | 自托管、Z.ai API、ZCode | 在标准宽松许可下跑编码 agent | 有 Apache-2.0 硬要求、做长周期编码 | 厂商自测 benchmark；不设闸的网安能力要你自己定政策 |
 | [DeepSeek V4](../agents/deepseek-v4.md) | 开放权重 agentic 模型 | 自托管、DeepSeek API | 前沿规模上的宽松许可 | 有 MIT 硬要求、需要可复现评测 | Pro 是 1.6T 参数；模型内无视觉 |
-| [Qwen3-Coder](../agents/qwen3-coder.md) | 开放权重 agentic 模型 | 自托管；Qwen Code、Cline、Claude Code | 塞进你已有的硬件 | 本地、隔离网、或有成本上限的部署 | 不是开放档的上限；许可按 checkpoint 而异 |
+| [Qwen3-Coder](../agents/qwen3-coder.md) | 开放权重 agentic 模型 | 自托管；Qwen Code、Cline、Claude Code | 塞进你已有的硬件 | 本地或隔离网部署 | 不是开放档的上限；许可按 checkpoint 而异 |
 | [GPT-5.5](../agents/gpt-5.5.md) | 前沿 agentic 模型（参照） | API、用 API key 登录的 Codex、GitHub Copilot | 2026 春季参照点 | 想理清 OpenAI 模型血统的读者 | 2026-10-14 起从 Codex 与 ChatGPT 下线（限 ChatGPT 账号登录）；作血统参照保留，不建议用于新项目 |
 | [oh-my-claudecode](../agents/oh-my-claudecode.md) | 工作流 / orchestration layer | Claude Code 插件、终端、tmux | session 内驱动 + 编排侧流程 | 已经在用 Claude Code，想补上 skills、teams 和更强运行控制 | 前提是你本来就接受 Claude Code 这层基础表面 |
 | [oh-my-codex](../agents/oh-my-codex.md) | 工作流 / orchestration layer | Codex CLI、本地终端、tmux | 本地工作流标准化 | 已经在用 Codex，想补上 teams、hooks 和持久会话状态 | 流程会更厚，而且最好跑在 macOS / Linux + tmux |
@@ -68,7 +68,7 @@
 | [Flowise](../agents/flowise.md) | 可视化 LLM 应用构建器 | 自托管或 Flowise Cloud | 拖拽可视化 | 想不写代码搭 RAG chatbot 和 agent 流程的团队 | 复杂流程在规模化时变脆弱 |
 | [Froge Code](../agents/froge-code.md) | review-first 自动化平台 | 自托管平台 | 多尝试 + 人工挑选 | 想把 coding automation 做成任务板流程 | 名称仍待进一步确认 |
 | [OpenHuman](../agents/openhuman.md) | 自托管桌面生活集成 agent | 本地桌面（Tauri） | 常驻 + 20 分钟自动拉取 | 想要一个已经认识你的 Gmail、Notion、GitHub、日历的个人 AI 助手 | GPL-3.0；价值随你接入的 118+ 连接器数量放大 |
-| [CodeGraph](../agents/codegraph.md) | Agent 上下文基础设施 | 本地 MCP server + SQLite | 一次索引 + 文件实时 watch | 让 Claude Code、Cursor、Codex CLI、opencode、Hermes Agent 的代码问答更便宜 | 多了一层索引；只在中到大仓库回本 |
+| [CodeGraph](../agents/codegraph.md) | Agent 上下文基础设施 | 本地 MCP server + SQLite | 一次索引 + 文件实时 watch | 给 Claude Code、Cursor、Codex CLI、opencode、Hermes Agent 做代码问答 | 多了一层索引；只在中到大仓库回本 |
 | [Graft](../agents/graft.md) | Agent 上下文基础设施 | 仓库里互链的 markdown + 可选 MCP | 每次查询先重建，没动过约 3ms | 跨 Claude Code、Codex、Cursor、Gemini CLI 等八家一条命令接入的可读代码上下文 | 0.x 且换名换到一半；图谱被 gitignore，每个同事各自重建 |
 | [CLI-Anything](../agents/cli-anything.md) | Agent-native 软件桥接 | 生成 Click PyPI CLI 的 pipeline | 一次生成、持续维护 | 让 agent 驱动那些没有 API 的软件（Blender、GIMP、LibreOffice 等） | 上游应用演进后生成的 CLI 需要重新验证 |
 | [jcode](../agents/jcode.md) | 性能优先的 coding harness | 本地终端（Rust） | 多会话、自己掌控循环 | 想要快、低 RAM、provider 中立、跨多会话带被动语义记忆的 harness | 项目较年轻；配置和功能仍在移动 |
@@ -84,10 +84,10 @@
 
 1. 先看“路线”，确定你是本地协作、云端委派、review-first 还是自建平台。
 2. 再看“运行位置”，排掉明显不符合你环境边界的项目。
-3. 最后看“主要代价”，这往往比功能表更能决定是否适合你。
+3. 最后看“主要负担”，这往往比功能表更能决定是否适合你。
 
 ## 读表时别混淆三件事
 
 - framework 不等于成品 agent。
 - 支持某个能力，不等于在那个能力上最强。
-- 操作成本也是产品的一部分。
+- 操作负担也是产品的一部分。

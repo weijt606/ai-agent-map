@@ -36,7 +36,7 @@ One-line take: Langfuse is the open-source reference for **watching** agents —
 
 - You want something that *does* work — this is instrumentation. If you need the agent itself, you are on the wrong page entirely.
 - You want a single-vendor stack and already live in one framework's tooling. If you are all-in on LangChain, LangSmith is the path of least resistance (at the cost of it being closed).
-- You are a solo developer on one small project. The free Hobby tier (50k units/month, 30 days retention, 2 users) is generous, but running another service for one hobby agent is usually not worth it — read the logs.
+- You are a solo developer on one small project. The free Hobby tier (30 days retention, 2 users) is generous, but running another service for one hobby agent is usually not worth it — read the logs.
 - You need enterprise governance **without** paying: RBAC, audit logs, SCIM, server-side data masking, retention policies, and SSO are all behind the Enterprise license on both cloud and self-host.
 - You need a documented isolation guarantee for running evaluation code. Code evaluators state their constraints (no network egress, 2-second limit, standard libraries only), but the **sandbox mechanism is not documented** — verify it yourself if that matters.
 
@@ -54,7 +54,7 @@ One-line take: Langfuse is the open-source reference for **watching** agents —
 
 ## Operating Cost
 
-Complexity is Medium. Instrumentation is genuinely light — decorate or wrap your calls with the Python/JS SDK, or point any OTel exporter at it — but Langfuse is a stateful service with a database behind it, so self-hosting means you now operate an observability system alongside your agents. Cloud pricing runs Hobby $0 (50k units/month), Core $29/mo, Pro $199/mo, Enterprise $2,499/mo (annual), with graduated overage from $8.00 down to $6.00 per 100k units; self-hosting is free on OSS or custom-priced for Enterprise. The release cadence is fast — roughly 20 tagged releases a month — which is good for fixes and demanding if you pin versions.
+Complexity is Medium. Instrumentation is genuinely light — decorate or wrap your calls with the Python/JS SDK, or point any OTel exporter at it — but Langfuse is a stateful service with a database behind it, so self-hosting means you now operate an observability system alongside your agents. Cloud plans run from a free Hobby tier through Core, Pro and Enterprise, with metered overage; self-hosting is free on OSS, with a paid Enterprise option. The release cadence is fast — roughly 20 tagged releases a month — which is good for fixes and demanding if you pin versions.
 
 > **Two things to verify yourself.** (1) Two release lines ship side by side: v4 is GA (`v4.72.0` as of 2026-10-29) while a `v3.225.x` line still ships (`v3.225.15` on 2026-10-27) — check which you are actually installing. (2) Post-acquisition, "remains 100% open source, roadmap unchanged" is a **vendor statement**, not a verifiable fact; the MIT license and continued OSS releases are consistent with it so far, but treat the commitment as a promise rather than a guarantee.
 

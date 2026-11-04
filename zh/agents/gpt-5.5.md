@@ -6,7 +6,7 @@
 
 一句话：GPT-5.5 是 OpenAI 2026 年春季的前沿 agentic 模型——为多步任务执行、工具调用和自我检查而设计——此后已被接棒两次：2026-07-09 的 GPT-5.6，以及 2026-09-03 的 [GPT-6 Astra](gpt-6-astra.md)。本页作为血统参照保留（见下方"发布后格局"）。
 
-> **从 Codex 与 ChatGPT 下线（2026-10-14）：** 自 2026 年 10 月 14 日 19:00 UTC 起，用 ChatGPT 账号登录的用户在 Codex 和 ChatGPT 里不能再用 GPT-5.5；OpenAI 让他们改用 GPT-6.1 Sol（`gpt-6.1-sol`），并提醒更新仍在选 `gpt-5.5` 的工作区默认、已存设置、自定义 agent 与脚本。OpenAI API 和用 API key 登录的 Codex 会话不受影响，API 价格表仍列着它：每百万 token $5 / $30（缓存 $0.50）。来源：[Codex changelog](https://learn.chatgpt.com/docs/changelog)。
+> **从 Codex 与 ChatGPT 下线（2026-10-14）：** 自 2026 年 10 月 14 日 19:00 UTC 起，用 ChatGPT 账号登录的用户在 Codex 和 ChatGPT 里不能再用 GPT-5.5；OpenAI 让他们改用 GPT-6.1 Sol（`gpt-6.1-sol`），并提醒更新仍在选 `gpt-5.5` 的工作区默认、已存设置、自定义 agent 与脚本。OpenAI API 和用 API key 登录的 Codex 会话不受影响，API 仍列着它。来源：[Codex changelog](https://learn.chatgpt.com/docs/changelog)。
 
 ## 一眼判断
 
@@ -16,7 +16,7 @@
 | 路线 | 曾驱动 Codex、ChatGPT 和 API 的前沿 agentic 模型（已退居参照——7 月由 GPT-5.6、9 月由 [GPT-6 Astra](gpt-6-astra.md) 接棒；2026-10-14 起用 ChatGPT 登录的 Codex 与 ChatGPT 已下线它，现在只剩 API 和 API key 登录的 Codex） |
 | 是否开源 | 否 |
 | 最适合 | 高自主度编码、科研、多步 agent 工作流、长上下文任务 |
-| 主要代价 | API 价格是 GPT-5.4 的 2 倍，模型边界与 Codex 产品边界容易混淆 |
+| 主要代价 | 模型边界与 Codex 产品边界容易混淆 |
 | 官网 | https://openai.com/index/introducing-gpt-5-5/ |
 | API 文档 | https://developers.openai.com |
 
@@ -37,7 +37,6 @@
 ## 什么时候别选
 
 - 你需要开源或自托管模型。GPT-5.5 完全闭源。
-- 你对成本敏感——输入 $5/M tokens，输出 $30/M tokens，是 GPT-5.4 的 2 倍。
 - 你需要当前的前沿——2026 年春季之后双方都已迭代了两轮（[GPT-6 Astra](gpt-6-astra.md)、[Claude Fable 5.1](claude-fable-5.md)、[Opus 5](claude-opus-5.md)），见下方"发布后格局"。
 - 你要的是一个成品 agent 产品，不是一个模型。那请看 [Codex](codex.md)。
 - 你需要完全本地执行，不想依赖云端。
@@ -66,7 +65,7 @@ GPT-5.5 不是独立的 runtime，它曾通过以下表面提供；2026-10-14 �
 
 ## 使用代价
 
-复杂度 Medium 到 High。通过 ChatGPT 或 Codex 使用时体验直观，但用 API 搭 agent 的团队面临实打实的成本跃升：$5/$30 每百万 token（输入/输出），是 GPT-5.4 的整整 2 倍。OpenAI 的说法是单任务成本可能反降，因为 GPT-5.5 每个任务用的 token 更少——但团队应该拿自己的工作负载做 benchmark，而不是直接信这个结论。
+复杂度 Medium 到 High。通过 ChatGPT 或 Codex 使用时体验直观。OpenAI 的说法是 GPT-5.5 每个任务用的 token 更少——但团队应该拿自己的工作负载做 benchmark，而不是直接信这个结论。
 
 ## 和 Codex 的关系
 
@@ -78,21 +77,21 @@ GPT-5.5 4 月发布后前沿迭代得很快，如今两侧各自又走了两代�
 
 | 发布 | 日期 | 改变了什么 |
 | --- | --- | --- |
-| **Claude Opus 4.8**（Anthropic） | 2026-05-28 | 修复 Opus 4.7 的啰嗦与 tool-calling 问题；新增 Dynamic workflows（Claude Code 内数百个并行 subagent）；$5/$25 每百万 token |
-| **[Claude Fable 5](claude-fable-5.md)**（Anthropic） | 2026-06-09 | 首个 Mythos 级模型——位于 Opus 之上的新等级；$10/$50 每百万 token，7 月 7 日起在 Claude 订阅内按额度计费 |
-| **Claude Sonnet 5**（Anthropic） | 2026-06-30 | 中间档 $2/$10，定位接近 Opus 4.8；8 月确认首发价转正为长期价 |
+| **Claude Opus 4.8**（Anthropic） | 2026-05-28 | 修复 Opus 4.7 的啰嗦与 tool-calling 问题；新增 Dynamic workflows（Claude Code 内数百个并行 subagent） |
+| **[Claude Fable 5](claude-fable-5.md)**（Anthropic） | 2026-06-09 | 首个 Mythos 级模型——位于 Opus 之上的新等级；7 月 7 日起在 Claude 订阅内按额度计费 |
+| **Claude Sonnet 5**（Anthropic） | 2026-06-30 | 中间档，定位接近 Opus 4.8 |
 | **GPT-5.6**（OpenAI） | 2026-07-09 | 在 ChatGPT / Codex / API 全面接棒 GPT-5.5，分三档 Sol / Terra / Luna，另有 Ultra 多 agent 模式；发布时领先 Artificial Analysis 编码 agent 指数（Sol 80 vs Fable 5 77.2、GPT-5.5 76.4、Opus 4.8 72.5） |
-| **[Claude Opus 5](claude-opus-5.md)**（Anthropic） | 2026-07-24 | 守住 Opus 价格（$5/$25）的同时补上了通往 Fable 5 的大部分差距；1M 上下文既是默认也是上限；成为 Claude Max 的默认模型 |
-| **[Claude Fable 5.1](claude-fable-5.md)**（Anthropic） | 2026-09-01 | 标价仍是 $10/$50，缓存读砍 75% 到 $0.25/M；SWE-bench Pro 81.2；Claude Code 网安误报少约 60% |
-| **[GPT-6 Astra](gpt-6-astra.md)**（OpenAI） | 2026-09-03 | OpenAI 当前的天花板；$10/$50，输入超 272k token 后整个请求改按 $20/$75 计价；公开版本在网安类 prompt 上受限 |
-| **Claude Opus 5.5**（Anthropic） | 2026-09-22 | $4/$20，缓存读 $0.20/M；Anthropic 称其在多数工作上达到 Fable 5.1 的水平，运行成本比 Opus 5 低 40%；Claude Code `v2.1.280` 的默认 Opus |
-| **GPT-6 Sol 与 GPT-6 Luna**（OpenAI） | 2026-09-22 | Sol $2/$10（缓存 $0.20），Luna $0.10/$0.50（缓存 $0.01），大约都是同名 GPT-5.6 档的一半价；和 GPT-5.6 Sol、Luna 不是同一个模型 |
-| **Claude Sonnet 5.5**（Anthropic） | 2026-09-28 | $2/$10，缓存读 $0.10/M；Terminal-Bench 4.0 70.6%；Claude Code `2.1.284` 的默认 Sonnet |
-| **GPT-6.1 Sol**（OpenAI） | 2026-09-29 | $2/$10，缓存读 $0.10/M；`rust-v0.159.1` 起成为 Codex 内置默认，接替 Astra；也是 OpenAI 让 GPT-5.5 用户改用的模型 |
-| **Claude Haiku 5.5**（Anthropic） | 2026-10-07 | 10 万 token 以内的提示 $0.10/$0.50（以上 $0.50/$2.50），缓存读 $0.01/M；Anthropic 的底档 |
-| **GPT-6.1 Terra**（OpenAI） | 2026-10-26 | $1/$5，缓存读 $0.05/M；在 Codex 里可选，但不是默认 |
+| **[Claude Opus 5](claude-opus-5.md)**（Anthropic） | 2026-07-24 | 补上了通往 Fable 5 的大部分差距；1M 上下文既是默认也是上限；成为 Claude Max 的默认模型 |
+| **[Claude Fable 5.1](claude-fable-5.md)**（Anthropic） | 2026-09-01 | SWE-bench Pro 81.2；Claude Code 网安误报少约 60% |
+| **[GPT-6 Astra](gpt-6-astra.md)**（OpenAI） | 2026-09-03 | OpenAI 当前的天花板；公开版本在网安类 prompt 上受限 |
+| **Claude Opus 5.5**（Anthropic） | 2026-09-22 | Anthropic 称其在多数工作上达到 Fable 5.1 的水平；Claude Code `v2.1.280` 的默认 Opus |
+| **GPT-6 Sol 与 GPT-6 Luna**（OpenAI） | 2026-09-22 | 和 GPT-5.6 Sol、Luna 不是同一个模型 |
+| **Claude Sonnet 5.5**（Anthropic） | 2026-09-28 | Terminal-Bench 4.0 70.6%；Claude Code `2.1.284` 的默认 Sonnet |
+| **GPT-6.1 Sol**（OpenAI） | 2026-09-29 | `rust-v0.159.1` 起成为 Codex 内置默认，接替 Astra；也是 OpenAI 让 GPT-5.5 用户改用的模型 |
+| **Claude Haiku 5.5**（Anthropic） | 2026-10-07 | Anthropic 的底档 |
+| **GPT-6.1 Terra**（OpenAI） | 2026-10-26 | 在 Codex 里可选，但不是默认 |
 
-务实的读法：新项目里 GPT-5.5 已是遗留选择，而且 2026-10-14 起对用 ChatGPT 登录的人来说只剩 API 能用。天花板那一层的决策仍是 **[GPT-6 Astra](gpt-6-astra.md) 对 [Fable 5.1](claude-fable-5.md)，两者标价同为 $10/$50**——分开它们的是缓存读价和长上下文的计价形状，而不是标价。控成本那条路现在是一侧 GPT-6.1 Sol（$2/$10）、GPT-6.1 Terra（$1/$5）和 GPT-6 Luna，另一侧 Opus 5.5（$4/$20）、Sonnet 5.5（$2/$10）和 Haiku 5.5；两家的编码 agent 默认都落在这一中间层。价格见[成本与基准](../comparisons/cost-and-benchmarks.md)。
+务实的读法：新项目里 GPT-5.5 已是遗留选择，而且 2026-10-14 起对用 ChatGPT 登录的人来说只剩 API 能用。天花板那一层的决策仍是 **[GPT-6 Astra](gpt-6-astra.md) 对 [Fable 5.1](claude-fable-5.md)**。再往下，一侧是 GPT-6.1 Sol、GPT-6.1 Terra 和 GPT-6 Luna，另一侧是 Opus 5.5、Sonnet 5.5 和 Haiku 5.5；两家的编码 agent 默认都落在这一中间层。
 
 ## 最后一句
 

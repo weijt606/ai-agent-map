@@ -12,8 +12,8 @@ One-line take: ECC is a plugin you install into an existing coding agent that br
 | --- | --- |
 | Vendor | Affaan Mustafa (single maintainer, per the README) and contributors |
 | Route | Agentic skills framework — a skills, hooks, and memory layer that runs inside a host agent |
-| Repository | [`affaan-m/ECC`](https://github.com/affaan-m/ECC) — MIT, JavaScript; 295.7k stars as of 2026-11-03 |
-| Open source | Yes (MIT). The hosted ECC Tools GitHub App has a Free tier for public repos (10 analyses a month); **ECC Pro** is $19/seat/month and covers private repos; Enterprise via sales |
+| Repository | [`affaan-m/ECC`](https://github.com/affaan-m/ECC) — MIT, JavaScript; 296.6k stars as of 2026-11-04 |
+| Open source | Yes (MIT). The hosted ECC Tools GitHub App has a Free tier for public repos (10 analyses a month); **ECC Pro** is a paid per-seat tier that covers private repos; Enterprise via sales |
 | Works with | [Claude Code](claude-code.md) (stable, primary); [Codex](codex.md) and Qoder (native plugins); [Cursor](cursor.md), [OpenCode](opencode.md), GitHub Copilot CLI (beta); Gemini, Zed, Antigravity, Qwen, [Hermes](hermes-agent.md), [OpenClaw](openclaw.md), Kimi and others (experimental adapters); [GitHub Copilot](github-copilot.md) Chat (instructions only) |
 | Best for | Claude Code users who want planning, TDD, fresh-context review, hook-enforced checks, and agent-config security scanning in one install |
 | Main cost | A large surface to install and keep in context; the README itself warns against stacking install methods and recommends a selective or minimal profile when context footprint matters |
@@ -55,7 +55,7 @@ Two pieces sit beside that core. The **Memory Vault** (`ecc memory`, added in th
 
 ## Operating Cost
 
-Complexity is Medium to High. Setup is one guided command, but you are adopting a large catalog plus runtime hooks, and the README spends whole sections on not installing twice, trimming rules, and disabling unused MCP servers to keep context under control. The OSS layer is MIT; private-repo analysis through the hosted GitHub App is $19 per seat per month.
+Complexity is Medium to High. Setup is one guided command, but you are adopting a large catalog plus runtime hooks, and the README spends whole sections on not installing twice, trimming rules, and disabling unused MCP servers to keep context under control. The OSS layer is MIT; private-repo analysis through the hosted GitHub App is paid per seat.
 
 ## Bottom Line
 
@@ -63,4 +63,4 @@ ECC packs a methodology plus subagents, hooks, memory, and a security scanner in
 
 ## Sources
 
-- [ECC README](https://github.com/affaan-m/ECC#readme) · [Releases](https://github.com/affaan-m/ECC/releases) · [2.0.0 release notes](https://github.com/affaan-m/ECC/blob/main/docs/releases/2.0.0/release-notes.md) · [LICENSE (MIT)](https://github.com/affaan-m/ECC/blob/main/LICENSE) · [ECC Tools pricing](https://ecc.tools/pricing) · [Superpowers README](https://github.com/obra/superpowers#readme)
+- [ECC README](https://github.com/affaan-m/ECC#readme) · [Releases](https://github.com/affaan-m/ECC/releases) · [2.0.0 release notes](https://github.com/affaan-m/ECC/blob/main/docs/releases/2.0.0/release-notes.md) · [LICENSE (MIT)](https://github.com/affaan-m/ECC/blob/main/LICENSE) · [Superpowers README](https://github.com/obra/superpowers#readme)

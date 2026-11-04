@@ -17,7 +17,7 @@
 | 状态 | 已上线。App Store 记录的首发日期：国际版 2026-08-27，中国版 2026-10-04；中国版 iOS 当前 1.24.0（2026-10-30）。媒体报道国内版 9 月 24–25 日发布（*媒体*） |
 | 在哪里干活 | 自己"稳定的云端电脑"，"可以打开浏览器、处理文件、运行代码"，官网标注"24 小时在线"；装了插件时，也在**你的 Chrome**里读页面、点击、填表 |
 | 模型 | 中国版经**阿里云百炼、腾讯云 TokenHub、金山云**调用"DeepSeek 等模型"，语音走阿里云 DashScope；国际版写的是 AI 服务商"可能包括" AWS、Anthropic、OpenAI。具体用哪个模型没有写 |
-| 价格 | 中国版"**基础版永久免费**"，新用户"注册即领 3亿 Tokens，畅享 3 个月 Pro 权益"（todayai.cn，2026-10-31 读取）；中国版 Pro 价格官网没列。国际版 App Store 内购：**Pro $20/月、Ultra $200/月**；符合条件的账号可试用 7 天 Pro，Ultra 不提供试用 |
+| 使用条件 | 中国版"**基础版永久免费**"，另有 Pro 档（todayai.cn，2026-10-31 读取）。国际版 App Store 内购：**Pro** 和 **Ultra**；符合条件的账号可试用 7 天 Pro，Ultra 不提供试用 |
 | 地区 | 中国大陆（中国版，需中国大陆手机号账号）+ 国际版 |
 | 官方页面 | https://todayai.cn · https://today.ai/?international=1 |
 
@@ -40,7 +40,6 @@ Today 把自己定位成"懂你所想，为你先行的个人 AI 助理"。它�
 ## 什么时候不选它
 
 - 你需要一份写明的审批规则。它只说提交表单、下单、付款等"关键步骤"由你确认或接手，发送、修改等外部操作"按具体功能由你确认"，没有公开逐动作的规则或禁止清单。
-- 你想先知道中国版 Pro 多少钱。官网和中国区 App Store 页面都没列价格。
 - 你要按具体服务挑连接器。官网只写了类别，没有公开连接器名单；媒体报道的名单彼此对不上。
 
 ## 权限与数据
@@ -57,11 +56,11 @@ Today 把自己定位成"懂你所想，为你先行的个人 AI 助理"。它�
 
 ## 结论
 
-一个把记忆、简报和定时任务做在中心的个人助理，桌面、手机、网页都能用，训练和数据存放写得具体：不拿可识别内容训练公开基础模型，中国版数据原则上留在中国大陆。短板在控制面：审批只写到"关键步骤由你确认"，连接器没有公开名单，中国版 Pro 的价格也没写。适合想要一个主动型助理、又想把数据留在中国大陆的人先用免费版加新用户额度试一试；要把付款或对外发信交给它之前，先在应用里看清楚它到底会在哪一步停下来问你。
+一个把记忆、简报和定时任务做在中心的个人助理，桌面、手机、网页都能用，训练和数据存放写得具体：不拿可识别内容训练公开基础模型，中国版数据原则上留在中国大陆。短板在控制面：审批只写到"关键步骤由你确认"，连接器也没有公开名单。适合想要一个主动型助理、又想把数据留在中国大陆的人先用免费版试一试；要把付款或对外发信交给它之前，先在应用里看清楚它到底会在哪一步停下来问你。
 
 ## 来源
 
 - [todayai.cn](https://todayai.cn/) · [国际版 today.ai](https://today.ai/?international=1) · [中国版下载页](https://todayai.cn/downloads) · [国际版下载页](https://today.ai/downloads)
 - [中国版隐私政策（2026-10-25）](https://todayai.cn/privacy) · [中国版用户服务协议](https://todayai.cn/terms) · [国际版 Privacy Policy（2026-08-31）](https://today.ai/privacy) · [国际版 Terms of Service（2026-09-07 生效）](https://today.ai/terms)
-- [Today 中国区 App Store](https://apps.apple.com/cn/app/id6775764827) · [Today 美区 App Store（含内购价格）](https://apps.apple.com/us/app/id6760608312) · [Google Play](https://play.google.com/store/apps/details?id=ai.today.android.app) · [Chrome 插件「Today AI 中国版」](https://chromewebstore.google.com/detail/edkhmdfegifiidpkfifcoiafjgbopggj) · [Chrome 插件「Today AI」](https://chromewebstore.google.com/detail/today-ai/adhckffghihcelhbpgbkbepmlhcmofjc)
-- *媒体*：[量子位，2026-09-24](https://finance.sina.cn/2026-09-24/detail-inisxnuz4997238.d.html)（创始人、发布）· [融中财经 / 36氪，2026-10-22](https://eu.36kr.com/zh/p/4036453319660681)（据五源资本披露累计融资超过 2 亿美元；当时写的新用户权益是 1亿 Token 加一个月 Pro，与官网现在写的 3亿 Tokens 加 3 个月 Pro 不同，本页以官网为准）
+- [Today 中国区 App Store](https://apps.apple.com/cn/app/id6775764827) · [Today 美区 App Store](https://apps.apple.com/us/app/id6760608312) · [Google Play](https://play.google.com/store/apps/details?id=ai.today.android.app) · [Chrome 插件「Today AI 中国版」](https://chromewebstore.google.com/detail/edkhmdfegifiidpkfifcoiafjgbopggj) · [Chrome 插件「Today AI」](https://chromewebstore.google.com/detail/today-ai/adhckffghihcelhbpgbkbepmlhcmofjc)
+- *媒体*：[量子位，2026-09-24](https://finance.sina.cn/2026-09-24/detail-inisxnuz4997238.d.html)（创始人、发布）· [融中财经 / 36氪，2026-10-22](https://eu.36kr.com/zh/p/4036453319660681)（据五源资本披露累计融资超过 2 亿美元）

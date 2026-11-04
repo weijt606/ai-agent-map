@@ -12,12 +12,12 @@
 | --- | --- |
 | 厂商 | Stably AI（`stablyai/orca`，onorca.dev；官网写"Backed by Y Combinator"）。LICENSE 文件里的版权方是 Lovecast Inc. |
 | 路线 | 工作流 / orchestration layer，横跨多个 CLI agent，而不是架在某一个之上 |
-| 仓库 | [`stablyai/orca`](https://github.com/stablyai/orca)：MIT，TypeScript，截至 2026-11-03 共 113.7k star |
+| 仓库 | [`stablyai/orca`](https://github.com/stablyai/orca)：MIT，TypeScript，截至 2026-11-04 共 114.6k star |
 | 开源 | 是（MIT）。桌面应用、手机应用，以及把两者配对起来的中继服务都在仓库里 |
 | 形态 | macOS、Windows、Linux 桌面应用；iOS 和 Android 配套应用（beta）；无界面的 `orca serve` 运行时；`orca` CLI |
 | 支持的 agent | "Works with any CLI agent"：README 列了三十多个，包括 Claude Code、Codex、Grok、Cursor、GitHub Copilot、Antigravity、OpenCode、Pi、Hermes Agent、Goose、Kimi、Qwen Code 和 DeepSeek Harness |
 | 模型与计费 | 用你自己的 agent 订阅或 key："Plug in the subscriptions you already have and run them side by side." 内置账号切换和 Claude / Codex 用量追踪 |
-| 价格 | 官网写"Free and open source"。Enterprise 页面提供落地指导，只有"Get in touch"联系入口，没写价格；没有描述托管方案，文档明确说 Orca "does **not** sell managed VPS hosting" |
+| 使用条件 | 官网写"Free and open source"。Enterprise 页面提供落地指导，只有"Get in touch"联系入口；没有描述托管方案，文档明确说 Orca "does **not** sell managed VPS hosting" |
 | 适合谁 | 已经在跑两个以上 coding agent、想把它们放进并行 worktree，并在一个地方完成评审、浏览器调试和手机提醒的开发者 |
 | 主要代价 | 你和 agent 之间又多一个应用，而且几乎每天发版；编排、Cloud VM 和远程服务器都标着 experimental 或 beta |
 

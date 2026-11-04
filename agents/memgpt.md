@@ -51,7 +51,7 @@ MemGPT is the research-paper design pattern (self-editing memory for LLMs). Lett
 
 ## Operating Cost
 
-Complexity is Medium to High. Self-hosting requires Docker and PostgreSQL. The MemGPT architecture adds extra LLM calls for memory management operations (reading, writing, searching memory), which increases token spend compared to stateless approaches. Baseline hosting cost is around $5–10/month on Railway, plus LLM API costs.
+Complexity is Medium to High. Self-hosting requires Docker and PostgreSQL. The MemGPT architecture adds extra LLM calls for memory management operations (reading, writing, searching memory), which increases token spend compared to stateless approaches. Baseline costs are hosting, for example on Railway, plus LLM API usage.
 
 ## Bottom Line
 

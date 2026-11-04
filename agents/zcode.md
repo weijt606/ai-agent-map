@@ -38,7 +38,7 @@ That distinction is why it sits on the direct-execution route rather than with [
 
 - **You want an open project you can contribute to.** The source is open (Apache-2.0, since 2026-09-20), but the public repo is a three-commit source drop with no contribution guide, and the product still authenticates against Z.ai's service. If a community-run project is the requirement on this route, [Kimi Code](kimi-code.md) and [CodeWhale](codewhale.md) are the comparable Chinese-vendor options.
 - You are a terminal-first developer. This is a desktop app; a CLI loop is a different ergonomic bet — see the [terminal coding CLI comparison](../comparisons/coding-cli-agents.md).
-- You do not run GLM. The tool accepts other backends (see below), but the tuning, the pricing, and the vendor's attention are on their own model line.
+- You do not run GLM. The tool accepts other backends (see below), but the tuning and the vendor's attention are on their own model line.
 - You need an established governance story. This is a young product on a fast release cadence — 3.11.2 when first profiled, 3.14.3 by 2026-09-23.
 
 ## Capability Shape

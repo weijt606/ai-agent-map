@@ -13,7 +13,7 @@
 | 厂商 | colbymchenry（开源） |
 | 路线 | Runtime & tools——代码知识图谱 / agent 上下文层 |
 | 开源 | 是（MIT） |
-| 适合谁 | 已经在用 [Claude Code](claude-code.md)、[Cursor](cursor.md)、[Codex](codex.md) CLI、[OpenCode](opencode.md)、Gemini、[AntiGravity](antigravity.md)、Kiro 或 [Hermes Agent](hermes-agent.md) 并想把代码探索成本压下来的团队 |
+| 适合谁 | 已经在用 [Claude Code](claude-code.md)、[Cursor](cursor.md)、[Codex](codex.md) CLI、[OpenCode](opencode.md)、Gemini、[AntiGravity](antigravity.md)、Kiro 或 [Hermes Agent](hermes-agent.md) 并想让代码探索用的 token 可量化地减少的团队 |
 | 主要代价 | 多了一层索引要维护和同步；收益取决于代码库规模和探索频率 |
 | GitHub 仓库 | https://github.com/colbymchenry/codegraph |
 
@@ -21,7 +21,7 @@
 
 - 你已经在用 [Claude Code](claude-code.md)、[Cursor](cursor.md)、[Codex](codex.md) CLI、opencode 或 [Hermes Agent](hermes-agent.md)，CodeGraph 通过 MCP 接入，不用学新 agent 表面。
 - 你的代码库已经大到 agent 每次探索都要烧明显多的 token。
-- 你想要在同一探索负载上拿到可量化的提升——项目方给出的中位数是便宜 35%、token 少 59%、快 49%、工具调用少 70%（真实代码库基准）。
+- 你想要在同一探索负载上拿到可量化的提升——项目方给出的中位数是 token 少 59%、快 49%、工具调用少 70%（真实代码库基准）。
 - 你需要纯本地运行：无外部 API、无云、不传输数据。
 
 ## 什么时候不选
@@ -46,4 +46,4 @@
 
 ## 底线
 
-CodeGraph 是本仓库里第一个专门写给"agent 上下文基础设施"这层的 profile——意识到当 agent 越来越多做代码探索时，提升它最便宜的办法不是换更强的 agent，而是给它预先算好的结构。MCP 优先的设计让它能干净地嵌进本仓库已经收录的 agent（[Claude Code](claude-code.md)、[Cursor](cursor.md)、[Codex](codex.md) CLI、OpenCode、Gemini、AntiGravity、Kiro、[Hermes Agent](hermes-agent.md)）。如果你每周在代码问答上烧的 token 已经显著，那 35-70% 的官方改进数据就是评估时要打的基线。
+CodeGraph 是本仓库里第一个专门写给"agent 上下文基础设施"这层的 profile——意识到当 agent 越来越多做代码探索时，提升它的办法不是换更强的 agent，而是给它预先算好的结构。MCP 优先的设计让它能干净地嵌进本仓库已经收录的 agent（[Claude Code](claude-code.md)、[Cursor](cursor.md)、[Codex](codex.md) CLI、OpenCode、Gemini、AntiGravity、Kiro、[Hermes Agent](hermes-agent.md)）。如果你每周在代码问答上烧的 token 已经显著，那些官方改进数据就是评估时要打的基线。

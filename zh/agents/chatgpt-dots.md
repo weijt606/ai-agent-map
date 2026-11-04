@@ -17,7 +17,7 @@
 | 状态 | **2026-09-29** DevDay 发布；"逐步向符合条件的账号推出" |
 | 在哪里跑 | 自己的云端电脑和浏览器；也能使用**一台**已连接的个人电脑（需该电脑上 ChatGPT 应用开着） |
 | 模型 | **GPT-6 Astra**——OpenAI 的天花板模型（[profile](gpt-6-astra.md)） |
-| 价格 | 个人可用于 **Pro（$100、$200 或 $500/月）**，仅限 18 岁以上；Business Premium 与 Enterprise 正在推出（Enterprise 需管理员开启） |
+| 使用条件 | 个人可用于 **Pro**，仅限 18 岁以上；Business Premium 与 Enterprise 正在推出（Enterprise 需管理员开启） |
 | 地区 | Pro 不覆盖**欧洲经济区、英国和瑞士**；Business Premium 与 Enterprise 是"rolling out worldwide" |
 | 官方页面 | https://learn.chatgpt.com/docs/dots |
 
@@ -34,7 +34,6 @@ OpenAI 自己划了线：**Chat** 回答问题，**ChatGPT Work** 接一个委�
 ## 什么时候不选它
 
 - 你在欧洲经济区、英国或瑞士，或者不是 Pro 用户。
-- 你想要便宜的 agent：个人使用起步就是每月 $100。
 - 你想要一个范围很窄的工具。dot 会用到你的 ChatGPT 记忆、它自己的私人笔记和所有已启用的插件；这种广度正是这个产品本身。
 
 ## 权限与数据
@@ -43,8 +42,8 @@ OpenAI 自己划了线：**Chat** 回答问题，**ChatGPT Work** 接一个委�
 
 ## 结论
 
-三大助手的 agent 里野心最大的一个——天花板模型、自己的电脑、多渠道——也是三家里最贵的一个，并且对欧洲关闭。如果你是欧洲以外的 Pro 用户，它是第一个该评估的；如果不是，它目前还不是你能做的选择。
+三大助手的 agent 里野心最大的一个——天花板模型、自己的电脑、多渠道——并且对欧洲关闭。如果你是欧洲以外的 Pro 用户，它是第一个该评估的；如果不是，它目前还不是你能做的选择。
 
 ## 来源
 
-- [Meet dots（ChatGPT 文档）](https://learn.chatgpt.com/docs/dots) · [DevDay 2026（2026-09-29）](https://learn.chatgpt.com/docs/whats-new/devday-2026) · [ChatGPT 价格（文档）](https://learn.chatgpt.com/docs/pricing)
+- [Meet dots（ChatGPT 文档）](https://learn.chatgpt.com/docs/dots) · [DevDay 2026（2026-09-29）](https://learn.chatgpt.com/docs/whats-new/devday-2026)

@@ -18,8 +18,8 @@ One-line take: Anthropic's personal agent is no longer a separate product — **
 | Form factor | The Claude app on desktop (macOS, Windows), web and mobile; **Claude in Chrome** extension for browser actions |
 | Status | Cowork GA on desktop **Apr 9 2026**; web and mobile with remote sessions (beta) **July 7**; Claude in Chrome GA on every paid plan **Aug 26**; Cowork and chat merged **Sept 16**, rolling out to Pro and Max first, Team and Free later |
 | Where it runs | Cloud tasks run "in an isolated, temporary environment on Anthropic's servers", created for that session; computer use on your own machine is also available |
-| Model | Anthropic's current models (see [Opus 5](claude-opus-5.md), [cost & benchmarks](../comparisons/cost-and-benchmarks.md)) |
-| Price | **Pro $20/month** ($17/month billed annually); **Max from $100/month** |
+| Model | Anthropic's current models (see [Opus 5](claude-opus-5.md), [benchmarks & billing](../comparisons/benchmarks-and-billing.md)) |
+| Access | Paid plans: **Pro** and **Max** |
 | Official page | https://claude.com/resources/articles/cowork-is-now-claude |
 
 The map profiles Anthropic's coding agent ([Claude Code](claude-code.md)) and its developer-hosted agents ([Claude Managed Agents](claude-managed-agents.md)) separately. Claude Tag (Claude in Slack) is a Team and Enterprise product, so it is not covered here.
@@ -48,4 +48,4 @@ An agent folded into the default app rather than sold as a separate product, wit
 
 - [Claude Cowork and chat merge into one Claude (Sept 16 2026)](https://claude.com/resources/articles/cowork-is-now-claude) · [Claude in Chrome is generally available (Aug 26 2026)](https://claude.com/resources/articles/claude-in-chrome-generally-available)
 - [Claude release notes](https://support.claude.com/en/articles/12138966-release-notes) · [Use Claude Cowork safely](https://support.claude.com/en/articles/13364135-use-claude-cowork-safely)
-- [Claude pricing](https://claude.com/pricing) · [Updates to consumer terms](https://www.anthropic.com/news/updates-to-our-consumer-terms)
+- [Updates to consumer terms](https://www.anthropic.com/news/updates-to-our-consumer-terms)

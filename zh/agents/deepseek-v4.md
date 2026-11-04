@@ -30,7 +30,7 @@ DeepSeek 同时也是 [DeepSeek Harness](deepseek-harness.md) 的厂商，这意
 
 - **MIT 是硬要求。** V4 用的是 MIT；同一能力级别上 [GLM-5.3](glm-5.md) 是 Apache-2.0，同样是标准的宽松许可，[Kimi K3](kimi-k3.md) 则是自定义许可。
 - 你要的是**能复现而不是只能相信**的分数。MIT 下的开放权重意味着任何有足够 GPU 的独立实验室都能重跑评测——这与闭源模型公布一张表，是本质不同的证据位置。
-- 你需要**便宜的长上下文**：DeepSeek 声明的设计目标就是以大幅降低的算力与显存成本做到业界领先的长上下文，手段是 token 级压缩与 DeepSeek Sparse Attention。
+- 你需要**高效的长上下文**：DeepSeek 声明的设计目标就是以大幅降低的算力与显存成本做到业界领先的长上下文，手段是 token 级压缩与 DeepSeek Sparse Attention。
 - 你想要同源的小号：**V4-Flash** 是 284B 总参数 / 13B 激活，DeepSeek 称在给更大思考预算时其推理能力接近 Pro。
 
 ## 什么时候不选它

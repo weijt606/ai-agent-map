@@ -16,7 +16,7 @@
 | 形态 | iOS 与 Android 应用、网页 |
 | 状态 | Agent 功能随 Hy3 上线，**2026-07-06** 公布 |
 | 模型 | **Hy3**（腾讯混元） |
-| 价格 | **免费**——腾讯称 Agent 交付"全部免费"；中国区 App Store 免费下载 |
+| 使用条件 | **免费**——腾讯称 Agent 交付"全部免费"；中国区 App Store 免费下载 |
 | 地区 | 中国区 App Store |
 | 官方页面 | https://www.tencent.com/zh-hk/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/ |
 

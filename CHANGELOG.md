@@ -4,6 +4,14 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-11-04 — This map no longer lists or compares prices
+
+Price figures, price columns and cost rankings are removed from every page, including past market events and this changelog; earlier versions remain in git history. `comparisons/cost-and-benchmarks.md` is now [`comparisons/benchmarks-and-billing.md`](comparisons/benchmarks-and-billing.md), which keeps benchmark scores and how each agent bills. Billing mode (open source, subscription, metered), plan availability and regions stay.
+
+## 2026-11-04 — Heat ranking reissued on its Wednesday date
+
+The edition dated 2026-11-03 ran a day early, on a Tuesday, over a 6-day window. This edition replaces it with the window 2026-10-28 → 2026-11-04. The 11-03 window is removed from `history.json`'s `windows`, so the [charts](rankings/README.md) and window counts do not count it; its fetch stays in `raw`. Notes now compare on elapsed time, because fetches in the last two windows were about 6.24 and 7.45 days apart even though both read as 7 days by date.
+
 ## 2026-11-03 — Five coverage-gap repos enter tracking
 
 Graphify, ECC, Orca, claude-mem and Paperclip, profiled on 2026-10-28, are now polled for stars, taking the tracked set from 57 to 62. They appear on the [category boards](rankings/README.md) now, with ECC third on the [skill board](rankings/skill-verticals.md); their first measured gains come next window. The profile count stays at 98. The ECC and Superpowers profiles are corrected to their current READMEs, as the 2026-11-01 entry below flagged.
@@ -23,7 +31,7 @@ Graphify, ECC, Orca, claude-mem and Paperclip, profiled on 2026-10-28, are now p
 
 ## 2026-10-30 (later) — TRAE profiled
 
-**[TRAE](agents/trae.md)**, ByteDance's AI IDE, joins the **editor-centric** route next to Cursor, Windsurf and Google Antigravity, 96 → 97. It ships as separate international and China editions with different model lists and prices. Its own docs say chat interactions, including code snippets and AI outputs, "may be used for analytics, product improvement, and model training" unless each signed-in user turns on Privacy Mode; the profile puts that in the Quick Read. There is no public CLI for individuals (TRAE CLI 2.0 is only on the China enterprise flagship plan); the MIT `bytedance/trae-agent` research CLI is noted in the profile but not tracked, because TRAE's docs never say the IDE uses it. TRAE gets a scored matrix row and a mention among the editor-centric exclusions on the terminal CLI comparison.
+**[TRAE](agents/trae.md)**, ByteDance's AI IDE, joins the **editor-centric** route next to Cursor, Windsurf and Google Antigravity, 96 → 97. It ships as separate international and China editions with different model lists. Its own docs say chat interactions, including code snippets and AI outputs, "may be used for analytics, product improvement, and model training" unless each signed-in user turns on Privacy Mode; the profile puts that in the Quick Read. There is no public CLI for individuals (TRAE CLI 2.0 is only on the China enterprise flagship plan); the MIT `bytedance/trae-agent` research CLI is noted in the profile but not tracked, because TRAE's docs never say the IDE uses it. TRAE gets a scored matrix row and a mention among the editor-centric exclusions on the terminal CLI comparison.
 
 ## 2026-10-30 — Google Antigravity and Tencent CodeBuddy profiled, and an accuracy audit across the map
 
@@ -33,7 +41,7 @@ Two coding products the map had only mentioned in passing are now profiled, 94 �
 - **[CodeBuddy](agents/codebuddy.md)** joins **direct execution**: Tencent Cloud's coding line (plugin, CodeBuddy IDE, CodeBuddy Code CLI), which shares an account and credit balance with [WorkBuddy](agents/workbuddy.md). It is closed source (no tracked repository), so it does not enter the heat ranking.
 - Both get scored rows in the [capability matrix](capabilities/matrix.md).
 
-**The audit** re-read every profile and hub page against the 2026-10-28 snapshot, the map's own market-events record and, for the riskiest claims, the vendors' pages. Corrected in place: Opus 5 still described as Claude Code's default (Opus 5.5 since Sept 22, Sonnet 5.5 since Sept 28); GPT-5.5 still listed as running in Codex and ChatGPT (retired Oct 14); Codex's default given as GPT-5.x; several "cheapest" and "only" claims the cost table no longer supports; stale star figures and "days old" ages; two renamed repositories (`trailhq/Trail-Code`, `openinterpreter/openinterpreter`); missing rows in the agents index (eight profiles and the observability route); lines present in English but missing in Chinese on six profiles; and an internally contradictory sentence about Gemini 4 Argon's availability.
+**The audit** re-read every profile and hub page against the 2026-10-28 snapshot, the map's own market-events record and, for the riskiest claims, the vendors' pages. Corrected in place: Opus 5 still described as Claude Code's default (Opus 5.5 since Sept 22, Sonnet 5.5 since Sept 28); GPT-5.5 still listed as running in Codex and ChatGPT (retired Oct 14); Codex's default given as GPT-5.x; stale star figures and "days old" ages; two renamed repositories (`trailhq/Trail-Code`, `openinterpreter/openinterpreter`); missing rows in the agents index (eight profiles and the observability route); lines present in English but missing in Chinese on six profiles; and an internally contradictory sentence about Gemini 4 Argon's availability.
 
 ## 2026-10-28 (later) — A coverage-gap audit: five large projects this map had never named
 
@@ -46,36 +54,35 @@ The weekly new-repo scan surfaced established repositories, each over 100k stars
 
 **Looked at and deliberately not added:** `morluto/rea` (an MCP bridge to reverse-engineering tools, about 396k stars, of which about 376k arrived in the 20 days since its own README marked 20k on Oct 8). It is a domain tool rather than an agent, its star curve has no precedent on this map and its stargazers cannot be audited, so it stays off the heat board until it has a few windows of rate data. Despite its `dsh-plugin` topic, it is not a DeepSeek Harness plugin. `Leonxlnx/taste-skill` and `tt-a1i/archify` (over 90k each) are single skills, and the map tracks curated collections, not individual skills.
 
-## 2026-10-28 — GPT-6.1 Terra joins the cost table, and Claude Duet and Cue's new documentation reach the personal-agents page
+## 2026-10-28 — GPT-6.1 Terra is recorded, and Claude Duet and Cue's new documentation reach the personal-agents page
 
-- **[Cost & benchmarks](comparisons/cost-and-benchmarks.md)** adds **GPT-6.1 Terra** ($1 / $5, cache read $0.05, Oct 26); every other row was re-checked against the four vendors' pricing pages and is unchanged, and the "as of" date moves to Oct 28.
-- **[Consumer personal agents](comparisons/personal-agents.md)**: first weekly "Recent changes" entry — Anthropic's separate **Claude Duet** app (Oct 21), **profiled as the eleventh personal agent** ([Claude Duet](agents/claude-duet.md); 88 → 89 profiles), Cue's Scheduling and Memory cells moved from **?** to ◐ on its App Store description, and Doubao's listed price tiers. Dated notes added to the [Claude (Cowork)](agents/claude-cowork.md), [Cue](agents/manus-cue.md) and [Doubao](agents/doubao.md) profiles.
+- **[Benchmarks & billing](comparisons/benchmarks-and-billing.md)** adds **GPT-6.1 Terra** (Oct 26), and the "as of" date moves to Oct 28.
+- **[Consumer personal agents](comparisons/personal-agents.md)**: first weekly "Recent changes" entry — Anthropic's separate **Claude Duet** app (Oct 21), **profiled as the eleventh personal agent** ([Claude Duet](agents/claude-duet.md); 88 → 89 profiles), and Cue's Scheduling and Memory cells moved from **?** to ◐ on its App Store description. Dated notes added to the [Claude (Cowork)](agents/claude-cowork.md) and [Cue](agents/manus-cue.md) profiles.
 - **An update to last week:** OpenCode's Oct 17 incident now has a vendor statement on record; the dated line in the [agents timeline](agents/README.md) is updated in place.
 
 ## 2026-10-21 (later) — A fifth decision: consumer personal agents, listed and compared rather than ranked
 
 The map gains a **fifth route group, "Hand off your day"**, with one route — **consumer personal agent** — and ten profiles: [ChatGPT dots](agents/chatgpt-dots.md), [Gemini Task](agents/gemini-task.md), [Claude (Cowork)](agents/claude-cowork.md), [Muse](agents/meta-muse.md), [Grok Bot](agents/grok-bot.md), [Cue](agents/manus-cue.md), [Doubao](agents/doubao.md), [Qwen app](agents/qwen-app.md), [AutoGLM](agents/autoglm.md) and [Yuanbao](agents/yuanbao.md). The map now holds **88 profiles in 16 routes**.
 
-- **A new comparison page, [consumer personal agents](comparisons/personal-agents.md)**, with a fact table (form, status, where it works, model, entry price, regions), a capability grid on consumer-fit dimensions, three selection questions, and a dated "Recent changes" log refreshed with the weekly update.
+- **A new comparison page, [consumer personal agents](comparisons/personal-agents.md)**, with a fact table (form, status, where it works, model, regions), a capability grid on consumer-fit dimensions, three selection questions, and a dated "Recent changes" log refreshed with the weekly update.
 - **No popularity ranking, on purpose.** These products are closed and have no public number comparable to GitHub stars; downloads and active-user figures are second-hand and inconsistently defined. Ranking on them would contradict this map's first-party-source rule. Cells the vendor does not document are marked **?** rather than guessed.
 - None of these products is open source; AutoGLM is the exception in part, through its Apache-2.0 Open-AutoGLM framework. They are not tracked in the heat ranking. The [capability matrix](capabilities/matrix.md) points to the new grid instead of scoring them on columns closed products never disclose.
 
-## 2026-10-21 — $4 / $20 becomes a three-vendor price point, the cost table's gaps are filled, and a correction reaches the rows it missed
+## 2026-10-21 — Two Meta rows are added, and a correction reaches the rows it missed
 
 Three structural changes landed with this week's refresh, alongside the routine heat-table update.
 
-- **Two new Meta rows in [cost & benchmarks](comparisons/cost-and-benchmarks.md).** Muse Wonder (October 12, $4 / $20, $0.20 cache reads — Opus 5.5's numbers exactly; recorded one window late) in the priced table, and Muse Spark Open (October 15, 816B / 42B active, Muse Model License) in the open-weights tier. The Muse Spark rows are relabelled from 1.2 to 1.3, the model Meta's price list now names at the same prices.
-- **Gaps filled from first-party pages rather than estimates.** GPT-5.5's "≈2× GPT-5.4" is replaced with OpenAI's listed $5 / $30 ($0.50 cached), and the GPT-5.6 Sol / Terra / Luna cache-read cells are filled ($0.40 / $0.20 / $0.02). The [GPT-5.5 profile](agents/gpt-5.5.md) records its October 14 retirement from Codex and ChatGPT for ChatGPT sign-in. All of it is in [market-events](market-events.md).
+- **Two new Meta rows in [benchmarks & billing](comparisons/benchmarks-and-billing.md).** Muse Wonder (October 12; recorded one window late) in the main table, and Muse Spark Open (October 15, 816B / 42B active, Muse Model License) in the open-weights tier. The Muse Spark rows are relabelled from 1.2 to 1.3, the model Meta now names.
+- **The [GPT-5.5 profile](agents/gpt-5.5.md) records its October 14 retirement** from Codex and ChatGPT for ChatGPT sign-in. It is in [market-events](market-events.md).
 - **A correction finished where it should have been made.** Last week's CodeWhale correction changed the profile but not the one-line descriptions in the home-page catalog and the [agents index](agents/README.md); those four rows (EN and zh) now say provider-neutral. The stale "205k stars" in OpenCode's catalog rows is updated to 219k.
 
 The heat-ranking read for the window is in [agents/README.md](agents/README.md): OpenCode 2.0 broke out to #3, DeepSeek Harness passed Hermes Agent in total stars, Superpowers crossed 300k, and Pi's 20-window run — the longest on the board ever to end — is over.
 
-## 2026-10-14 — A price this map recorded had changed under it, two tracked repos moved, and the model ladder reached the floor
+## 2026-10-14 — Haiku 5.5 and Gemini 4 Argon are recorded, and two tracked repos moved
 
-Three structural changes landed with this week's refresh, alongside the routine heat-table update.
+Two structural changes landed with this week's refresh, alongside the routine heat-table update.
 
-- **A correction made at source: Sonnet 5.5 cache reads are $0.10/M, not $0.20.** This map recorded $0.20 from the Claude Code `2.1.284` changelog on September 28 and built a takeaway on it — that GPT-6.1 Sol's $0.10 was the one column separating the two mid tiers. Anthropic's pricing page lists $0.10 (5% of input), and Claude Code `v2.1.296` corrected its own cost accounting on October 9. The [cost table](comparisons/cost-and-benchmarks.md) row, its takeaway bullet, the September 28 [market-events](market-events.md) entry and the home-page Market Pulse all carry dated corrections; the takeaway is withdrawn rather than softened.
-- **Two new rows in [cost & benchmarks](comparisons/cost-and-benchmarks.md):** Claude Haiku 5.5 (October 7, $0.10 / $0.50 up to 100K-token prompts, $0.50 / $2.50 above — the only row priced by prompt length) and Gemini 4 Argon (opened to the paid API October 13, $2 / $10 through November 30, then $4 / $20 — the first Google row). Both are recorded in [market-events](market-events.md). The 5.5-family and GPT-6 model profiles remain the open backlog item.
+- **Two new rows in [benchmarks & billing](comparisons/benchmarks-and-billing.md):** Claude Haiku 5.5 (October 7) and Gemini 4 Argon (opened to the paid API October 13 — the first Google row). Both are recorded in [market-events](market-events.md). The 5.5-family and GPT-6 model profiles remain the open backlog item.
 - **Two upstream moves, migrated rather than papered over.** `trailhq/Graft` is now `trailhq/Trail-Code` ("Trail-code, previously graft"), with a Trail learnings layer in front of the unchanged `graft` CLI; the [profile](agents/graft.md) keeps its file name and carries a dated note. `Hmbown/CodeWhale` had moved to `codewhale-hq/Codewhale` before the October 7 fetch — this map missed it for a window — and its README is now provider-neutral with 40+ routes, so the [CodeWhale](agents/codewhale.md) profile, the [CLI comparison](comparisons/coding-cli-agents.md) row and the [landscape](comparisons/mainstream-agent-landscape.md) row are corrected in place; the old "DeepSeek + MiMo native, narrow model set" framing was out of date. Both slugs are re-keyed across `tracked-repos.txt`, `catalog.json`, `snapshot.json` and `history.json` so the gain history stays continuous.
 
 Housekeeping: `browser-use/jev-ultrafast` (22.9k, no push since September 30) is recorded inside the [Browser Use](agents/browser-use.md) profile as a sibling repository rather than profiled. The heat-ranking read for the window is in [agents/README.md](agents/README.md): mattpocock/skills posted its largest 7-day gain on record, the skills wave rose to four seats, and the spike rule paid out on OpenHuman.
@@ -85,16 +92,16 @@ Housekeeping: `browser-use/jev-ultrafast` (22.9k, no push since September 30) is
 Two structural changes landed with this week's refresh, alongside the routine heat-table update.
 
 - **A correction made at source: [ZCode](agents/zcode.md) is open source.** Zhipu published the client, backend and agent CLI as `zai-org/ZCode` under Apache-2.0 on September 20; this map's profile, [capability matrix](capabilities/matrix.md) row note and [landscape table](comparisons/mainstream-agent-landscape.md) all still said "closed". All three are corrected in place with dated notes, the matrix score is kept (a source drop that authenticates against the vendor's service is not a self-hosted deployment), and the repo is catalogued with `tracked: false` to enter the boards next refresh. [Codex](agents/codex.md)'s model paragraph is also updated: its bundled default is no longer Astra.
-- **Two new rows in [cost & benchmarks](comparisons/cost-and-benchmarks.md):** Claude Sonnet 5.5 (Sept 28) and GPT-6.1 Sol (Sept 29), both $2 / $10, both made their vendor's coding-agent default within a day. The "vendors converged on cache reads" takeaway written last week is rewritten — it lasted seven days: GPT-6.1 Sol's $0.10/M cache read is now the column that separates the two mid tiers. Model profiles for the 5.5 family and the GPT-6 tiers remain a follow-up.
+- **Two new rows in [benchmarks & billing](comparisons/benchmarks-and-billing.md):** Claude Sonnet 5.5 (Sept 28) and GPT-6.1 Sol (Sept 29), both made their vendor's coding-agent default within a day. Model profiles for the 5.5 family and the GPT-6 tiers remain a follow-up.
 
 Housekeeping: [Graft](agents/graft.md) entered tracking (56 tracked slugs), and the pending-pickup line in the weekly playbook, stale since 2026-08-27, now names the current pending entry. The heat-ranking read for the window is in [agents/README.md](agents/README.md).
 
-## 2026-09-24 — Graft joins the map, and the model layer's cheapest tier moves
+## 2026-09-24 — Graft joins the map, and Opus 5.5 and GPT-6 Sol and Luna ship
 
 Three structural changes landed with this week's refresh, alongside the routine heat-table update.
 
 - **A 78th profile: [Graft](agents/graft.md)** (`trailhq/Graft`, MIT, TypeScript, 9.1k). It was held on 2026-08-27 for overlap with [CodeGraph](agents/codegraph.md); four weeks and +69% later the overlap resolved into a real distinction worth a page — CodeGraph serves a SQLite index over MCP, Graft writes the code graph as linked markdown the agent reads with its ordinary file tools. Wired into the route tables, the coverage tables, the capability matrix, [memory approaches](comparisons/memory-approaches.md) (now seven approaches, not six) and the route map.
-- **Both vendors cut below their own ceiling on the same day.** [Claude Opus 5.5](market-events.md#september-22-2026--both-vendors-moved-the-price-of-the-ceiling-on-the-same-day) at $4 / $20 and GPT-6 Sol / Luna at $2 / $10 and $0.10 / $0.50, all on September 22. [Cost & benchmarks](comparisons/cost-and-benchmarks.md) now carries three new rows and a rewritten set of takeaways: the ceiling row stopped being the interesting one, both vendors converged on $0.20/M cache reads, and `GPT-6 Sol` is not `GPT-5.6 Sol`. Model profiles for the 5.5 family and the GPT-6 lower tiers remain a follow-up.
+- **Both vendors shipped below their own ceiling on the same day.** [Claude Opus 5.5](market-events.md#september-22-2026--opus-55-and-gpt-6-sol-and-luna-ship-on-the-same-day) and GPT-6 Sol / Luna, all on September 22. [Benchmarks & billing](comparisons/benchmarks-and-billing.md) now carries three new rows and a takeaway that `GPT-6 Sol` is not `GPT-5.6 Sol`. Model profiles for the 5.5 family and the GPT-6 lower tiers remain a follow-up.
 - **A maintenance finding, fixed and stated rather than silently corrected.** The "More window notes" block on both home pages was last rewritten on 2026-09-01 and survived the 09-09 and 09-17 refreshes unchanged, still publishing that window's 5-day figures and a skills-wave count the main bullets above it already contradicted. It is regenerated from this window's fetch, and the off-board growth list is now produced from the snapshot rather than typed by hand. The market-events timeline was also out of chronological order at the top and has been resequenced.
 
 The heat-ranking read for the window is in [agents/README.md](agents/README.md): [Open Code Review](agents/open-code-review.md) confirmed its Trending spike, [Claude Code](agents/claude-code.md) took its first top-ten seat in 23 recorded windows, and last window's confirmation of TradingAgents failed — the second failed confirmation in two windows, which is recorded as a weakness in the board's own two-window rule rather than as a one-off.
@@ -108,7 +115,7 @@ A full review of everything changed on 2026-09-06 — 76 files — covering EN/z
 - **A star count disagreed with the stamped snapshot** (213.8k in prose against 213,948 in `snapshot.json`, because the profile predated the refresh). Normalized.
 - **Quote-style mixing introduced by a tooling workaround** in seven zh files. Normalized; two pre-existing cases left alone.
 
-Verified clean: 32 EN/zh document pairs with identical heading counts, table rows and profile-link sets; all three profile counts at 77; prices and benchmark figures consistent wherever they repeat.
+Verified clean: 32 EN/zh document pairs with identical heading counts, table rows and profile-link sets; all three profile counts at 77; benchmark figures consistent wherever they repeat.
 
 The standing lesson, added to the weekly-update gotchas: **comparative superlatives and elapsed-time claims get recomputed from data every edition, not reasoned about** — and a correction published in a new entry is not a correction until the original text changes.
 
@@ -129,7 +136,7 @@ The "Terminal Coding CLIs" section is renamed **"Direct-Execution Agents (Termin
 A full coverage scan rather than a weekly diff. Five new profiles (EN + zh) and a fifteenth route, taking the map to 77 — and the misses share a pattern worth naming.
 
 - **New [OpenCode](agents/opencode.md)** (`anomalyco/opencode`, MIT, **205k stars**) — named as an integration target in five existing profiles without ever having a page. The largest vendor-neutral coding agent in existence, and the one [QM](agents/qm.md) and [Omnigent](agents/omnigent.md) drive alongside Claude Code and Codex.
-- **New [Gemini CLI](agents/gemini-cli.md)** (Apache-2.0, 107k) — corrects a factual error: [market-events](market-events.md) claimed in August that Meta had "closed the first-party coding-CLI field" while Google's entry had never been in it. Also the only CLI here with a free tier you can work on — 1,000 requests/day — and Google Search grounding as a built-in tool.
+- **New [Gemini CLI](agents/gemini-cli.md)** (Apache-2.0, 107k) — corrects a factual error: [market-events](market-events.md) claimed in August that Meta had "closed the first-party coding-CLI field" while Google's entry had never been in it. Also the only CLI here with a free tier you can work on, and Google Search grounding as a built-in tool.
 - **New [Browser Use](agents/browser-use.md)** (MIT, 113k) — opens a **new route, Browser agent**. The map had recorded browser automation as a headline feature of [Kimi Work](agents/kimi-work.md) and per-action approval disappearing in Claude in Chrome, while having no route for the capability itself.
 - **New [Microsoft Agent Framework](agents/microsoft-agent-framework.md)** (MIT) — AutoGen is in **maintenance mode** by Microsoft's own notice, so the profile goes to the successor and AutoGen is recorded inside it. New policy stated in [Naming Notes](agents/README.md): maintenance mode disqualifies a project from its own entry, because a profile reads as a current recommendation.
 - **New [Qwen Code](agents/qwen-code.md)** (Apache-2.0) — completes the pair with [Qwen3-Coder](agents/qwen3-coder.md); the only first-party CLI here that is open at both the client and the weights.
@@ -148,7 +155,7 @@ The map's model layer had two closed vendors and nothing else, which left it una
 - **New [DeepSeek V4](agents/deepseek-v4.md)** (MIT) — 1.6T/49B, 1M context, SWE-bench Verified 80.6, plus a 284B/13B Flash variant.
 - **New [Qwen3-Coder](agents/qwen3-coder.md)** — the entry that answers "what fits": ~3B activated of 80B on Next, 256K to 1M context, first-class support in Qwen Code, Cline, and Claude Code.
 
-Structural consequences: [cost & benchmarks](comparisons/cost-and-benchmarks.md) gains an open-weights section that prices **hardware and licences rather than tokens**; [market-events](market-events.md) records the tier reaching the frontier alongside the cyber-capability asymmetry against [GPT-6 Astra](agents/gpt-6-astra.md) and Mythos; the [mainstream landscape](comparisons/mainstream-agent-landscape.md) carries the four rows.
+Structural consequences: [benchmarks & billing](comparisons/benchmarks-and-billing.md) gains an open-weights section that covers **hardware and licences rather than tokens**; [market-events](market-events.md) records the tier reaching the frontier alongside the cyber-capability asymmetry against [GPT-6 Astra](agents/gpt-6-astra.md) and Mythos; the [mainstream landscape](comparisons/mainstream-agent-landscape.md) carries the four rows.
 
 Tooling: `render-route-map.py` now **derives the route count** instead of hardcoding "13 routes" in four strings, so adding a route can no longer leave the SVG title stale.
 
@@ -170,12 +177,12 @@ Two things this entry states rather than hides. The DeepSeek repository sat off 
 
 The model layer had moved twice on each side since this map last wrote it down, and the route was pointing at superseded entries. Two new profiles (EN + zh), taking the map to 64:
 
-- **New [Claude Opus 5](agents/claude-opus-5.md)** (July 24 2026) — the entry this route was missing: not the ceiling, but the model Claude-based agents actually run on. Holds the Opus price ($5/$25) while landing within 0.5% of Fable 5 on CursorBench 3.2, with 1M context as both default *and* maximum. It replaced Opus 4.8 as Claude Code's dependable default, which several pages here still described incorrectly.
+- **New [Claude Opus 5](agents/claude-opus-5.md)** (July 24 2026) — the entry this route was missing: not the ceiling, but the model Claude-based agents actually run on. Lands within 0.5% of Fable 5 on CursorBench 3.2, with 1M context as both default *and* maximum. It replaced Opus 4.8 as Claude Code's dependable default, which several pages here still described incorrectly.
 - **New [GPT-6 Astra](agents/gpt-6-astra.md)** (September 3 2026) — OpenAI's current ceiling, and the first frontier model this map has recorded whose *public* version is deliberately restricted (it refuses part of its own cybersecurity capability, with advanced access behind Daybreak Blue). Codex CLI `rust-v0.153.4` made it the bundled default the next day, so the restriction now sits under a product default.
-- **[Claude Fable 5](agents/claude-fable-5.md) updated to Fable 5.1 / Mythos 5.1** (September 1 2026) — same $10/$50 sticker, cache reads cut 75% to $0.25/M. The profile keeps its original path so existing links hold.
+- **[Claude Fable 5](agents/claude-fable-5.md) updated to Fable 5.1 / Mythos 5.1** (September 1 2026). The profile keeps its original path so existing links hold.
 - **[GPT-5.5](agents/gpt-5.5.md) reframed as the lineage reference** — its post-launch table now runs GPT-5.5 → GPT-5.6 → Astra alongside Opus 4.8 → Fable 5 → Sonnet 5 → Opus 5 → Fable 5.1.
 
-Structural consequences: [cost & benchmarks](comparisons/cost-and-benchmarks.md) is rebuilt on first-party price pages and gains a **cache-read column**, because with both ceilings at an identical $10/$50 the sticker stopped being the differentiator; [market-events](market-events.md) records three new entries (Opus 5, Fable 5.1, Astra); the route tables in [README](README.md) and [agents/](agents/README.md) now separate the ceiling from the default tier under it, since those are two different decisions.
+Structural consequences: [market-events](market-events.md) records three new entries (Opus 5, Fable 5.1, Astra); the route tables in [README](README.md) and [agents/](agents/README.md) now separate the ceiling from the default tier under it, since those are two different decisions.
 
 Two sourcing notes the map is deliberately holding: the Artificial Analysis Coding Agent Index has no figure this map will copy for Astra, Fable 5.1, or Opus 5, so those cells stay dashed rather than filled from third-party leaderboards; and the "95% SWE-bench Verified" figure circulating for Fable 5.1 is a third-party number — Anthropic published SWE-bench Pro 81.2, which is what is recorded here.
 
@@ -204,12 +211,12 @@ Two new home-page visuals (EN + zh), same design language as the bump chart:
 - **Route ecosystem map** (`assets/route-map-{en,zh}.svg`, from `scripts/render-route-map.py`) — the "First Cut" table drawn as an actual map: 12 routes as cards grouped into four decisions, each naming its flagships. Embedded at the top of the route section on both home pages; regenerated manually when routes change (playbook step 5).
 - **Top-10 composition chart** (`assets/heat-composition-{en,zh}.svg`, from `scripts/render-composition.py`) — stacked bars of weekly top-10 seats by layer (agent / infra / skill), computed from `history.json` + `catalog.json`. The quantitative form of the skills-wave story; wired into `publish` so it refreshes weekly, and into `validate.py`'s SVG freshness gate.
 
-## 2026-07-22 — Capability matrix, cost/benchmark, and memory-approaches pages
+## 2026-07-22 — Capability matrix, benchmark, and memory-approaches pages
 
 Three additive comparison surfaces that move the map beyond popularity, without touching the existing route/coverage structure:
 
 - **New [capability matrix](capabilities/matrix.md)** (EN + zh) — applies the nine [capability dimensions](capabilities/README.md) to ~40 projects side by side, scored core (●) / support (◐) / limited (○) / not-a-goal (—), grouped by route. Finally uses the capabilities vocabulary that had been defined but never applied at scale.
-- **New [cost & benchmarks](comparisons/cost-and-benchmarks.md)** (EN + zh) — frontier-model capability (Artificial Analysis Coding Agent Index, SWE-Bench Pro) vs per-token price, plus how each coding agent bills (open-source BYO / subscription / metered credits / managed seat). Reuses the numbers already established in the vendor profiles.
+- **New [benchmarks & billing](comparisons/benchmarks-and-billing.md)** (EN + zh) — frontier-model capability (Artificial Analysis Coding Agent Index, SWE-Bench Pro), plus how each coding agent bills (open-source BYO / subscription / metered credits / managed seat). Reuses the numbers already established in the vendor profiles.
 - **New [memory approaches](comparisons/memory-approaches.md)** (EN + zh) — sorts the map's memory-carrying projects by *how* they remember (self-editing, passive semantic, file/keyword, code knowledge graph, personal-data tree, long-lived runtime), tying together jcode, MiMoCode, Letta, CodeGraph, OpenHuman, Hermes, and Mercury.
 
 Both comparison pages are linked from [comparisons/](comparisons/README.md); the matrix from [capabilities/](capabilities/README.md).

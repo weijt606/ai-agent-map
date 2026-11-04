@@ -16,8 +16,8 @@ One-line take: Anthropic's standalone proactive agent, separate from [Claude (Co
 | Form factor | A **standalone app** on iOS and Android, and on claude.ai; "for now" separate from the main Claude app |
 | Status | **Research preview by waitlist since Oct 21 2026**, for US Pro, Max and Ultra subscribers (the release notes still say Pro and Max; corrected 2026-11-03); iOS app listed Oct 26 |
 | Where it runs | "A virtual machine with its own browser", so it "doesn't require your laptop or phone to be on" |
-| Model | Designed around **Claude Opus 5.5** ([cost & benchmarks](../comparisons/cost-and-benchmarks.md)) |
-| Price | Included in **Pro**, **Max** and **Ultra** during the preview, sharing the plan's usage limits; its background checks count against them |
+| Model | Designed around **Claude Opus 5.5** ([benchmarks & billing](../comparisons/benchmarks-and-billing.md)) |
+| Access | Included in **Pro**, **Max** and **Ultra** during the preview, sharing the plan's usage limits; its background checks count against them |
 | Regions | "US only during the research preview" ([help center](https://support.claude.com/en/articles/17631495-get-started-with-claude-duet)) |
 | Official page | https://claude.com/resources/articles/claude-duet |
 

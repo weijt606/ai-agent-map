@@ -26,7 +26,7 @@ The point is to keep profile pages speaking the same language, otherwise it beco
 
 1. Mark the dimensions that are mandatory for your workflow.
 2. Decide whether each one is a core strength or just incidental support.
-3. Check the cost attached to that dimension: security, approvals, secrets, runtime burden, and operator overhead.
+3. Check the burden attached to that dimension: security, approvals, secrets, runtime burden, and operator overhead.
 
 ## The Matrix
 

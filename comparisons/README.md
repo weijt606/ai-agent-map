@@ -21,7 +21,7 @@ No leaderboard, no total score, no “ultimate best agent” framing.
 - [Terminal coding CLI agents](coding-cli-agents.md)
 - [Agent harness frameworks](agent-harness-frameworks.md)
 - [Agent memory approaches](memory-approaches.md) — how projects differ on *how* they remember
-- [Cost & benchmarks](cost-and-benchmarks.md) — coding capability vs price, and how agents bill
+- [Benchmarks & billing](benchmarks-and-billing.md) — coding capability, and how agents bill
 - [Agent observability & evaluation](observability-and-evals.md) — how you know a shipped agent still works
 - [Consumer personal agents](personal-agents.md) — closed agents you hand your day to, compared on facts and control; no popularity ranking
 - [Agent Skills](agent-skills.md) — what a skill is, where it runs, and the major skill collections and frameworks compared

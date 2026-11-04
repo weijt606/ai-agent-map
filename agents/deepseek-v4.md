@@ -30,7 +30,7 @@ DeepSeek is also the vendor behind [DeepSeek Harness](deepseek-harness.md), whic
 
 - **MIT is a requirement.** V4 ships under MIT; at this capability level [GLM-5.3](glm-5.md) is Apache-2.0, another standard permissive licence, and [Kimi K3](kimi-k3.md) ships a bespoke licence.
 - You want scores you can **reproduce rather than trust**. Open weights under MIT mean an independent lab with sufficient GPUs can re-run the evaluations — a materially different evidence position from a closed model's published table.
-- You need **long context cheaply**: DeepSeek's stated design goal is world-leading long context at drastically reduced compute and memory cost, via token-wise compression and DeepSeek Sparse Attention.
+- You need **efficient long context**: DeepSeek's stated design goal is world-leading long context at drastically reduced compute and memory cost, via token-wise compression and DeepSeek Sparse Attention.
 - You want a smaller variant with the same lineage: **V4-Flash** is 284B total / 13B active, and DeepSeek reports its reasoning approaching Pro's when given a larger thinking budget.
 
 ## When Not To Pick It

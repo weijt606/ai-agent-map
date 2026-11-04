@@ -48,7 +48,7 @@
 
 ## 使用代价
 
-复杂度 Medium。开源核心免费，上手快——定义角色、组建 crew、运行。真实成本在 LLM API token 上：每次 agent 调用就是一次模型调用，多 agent crew 的花费成倍增长。付费云计划从 $99/月到 $120K/年（Enterprise）。
+复杂度 Medium。开源核心免费，上手快——定义角色、组建 crew、运行。真实成本在 LLM API token 上：每次 agent 调用就是一次模型调用，多 agent crew 的花费成倍增长。另有付费云计划，最高到 Enterprise。
 
 ## 最后一句
 

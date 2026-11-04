@@ -25,7 +25,7 @@
 
 本地图已经收了腾讯的办公 agent [WorkBuddy](workbuddy.md) 和面向大众的[元宝](yuanbao.md)，两页都提到 CodeBuddy 是腾讯管代码仓库的那个工具，却一直没有单独写它。这一页补上。
 
-**WorkBuddy 和 CodeBuddy 怎么分。** 腾讯国内版定价页把 "Buddy AI" 当作 WorkBuddy、CodeBuddy 等系列产品的统称，并写明 CodeBuddy 和 WorkBuddy **同一账号、积分共享**，不用分别订阅。两者按工作对象分工：WorkBuddy 处理文档、幻灯片和表格，CodeBuddy 处理代码仓库。底层其实比产品页看上去更近：CodeBuddy Code 自己的 v2.176.0 发布说明里有一组 "Resident service (WorkBuddy)" 修复。这说明 WorkBuddy 很可能跑在 CodeBuddy Code 的引擎上，但腾讯没有公开架构说明，所以这里只当作从更新日志得出的推断。腾讯 2026-07-06 发布 Hy3 的公告里，也把 WorkBuddy/CodeBuddy 并列写进了接入该模型的产品名单。
+**WorkBuddy 和 CodeBuddy 怎么分。** 腾讯国内版套餐文档把 "Buddy AI" 当作 WorkBuddy、CodeBuddy 等系列产品的统称，并写明 CodeBuddy 和 WorkBuddy **同一账号、积分共享**，不用分别订阅。两者按工作对象分工：WorkBuddy 处理文档、幻灯片和表格，CodeBuddy 处理代码仓库。底层其实比产品页看上去更近：CodeBuddy Code 自己的 v2.176.0 发布说明里有一组 "Resident service (WorkBuddy)" 修复。这说明 WorkBuddy 很可能跑在 CodeBuddy Code 的引擎上，但腾讯没有公开架构说明，所以这里只当作从更新日志得出的推断。腾讯 2026-07-06 发布 Hy3 的公告里，也把 WorkBuddy/CodeBuddy 并列写进了接入该模型的产品名单。
 
 ## 三种形态
 
@@ -41,7 +41,7 @@ IDE 是偏 vibe coding 的那一端，和 [Cursor](cursor.md)、[Windsurf](winds
 
 循环就是 Claude Code 那一套，文档里一眼能看出来：`CODEBUDDY.md` 和 `AGENTS.md` 指令文件、Shift+Tab 进入计划模式、权限模式叫 `default`、`acceptEdits`、`plan`、`bypassPermissions`、`auto`，还有 hooks、skills、插件与插件市场、子代理、`/rewind` 检查点、`-p` 无头运行。用过 [Claude Code](claude-code.md) 的人几乎不用重新学。不同的地方在这些：
 
-- **模型目录。** [Claude Code](claude-code.md)、[Kimi Code](kimi-code.md)、[MiMoCode](mimocode.md)、[Grok Build](grok-build.md) 都围绕自家模型调校。CodeBuddy 的内置清单跨多家厂商，由腾讯后端按版本下发，腾讯自己的混元/Hy3 只是其中一个选项。它还会把 `lite` 和 `reasoning` 两类子任务自动分给更便宜或更强的模型。
+- **模型目录。** [Claude Code](claude-code.md)、[Kimi Code](kimi-code.md)、[MiMoCode](mimocode.md)、[Grok Build](grok-build.md) 都围绕自家模型调校。CodeBuddy 的内置清单跨多家厂商，由腾讯后端按版本下发，腾讯自己的混元/Hy3 只是其中一个选项。它还会把 `lite` 和 `reasoning` 两类子任务自动分给更轻量或更强的模型。
 - **部署版本。** 同一个 CLI 可以在国际版、国内版、iOA、专有云、私有化几种后端之间切换（`CODEBUDDY_INTERNET_ENVIRONMENT`，再加企业的 `endpoint`）。企业用户可以通过 `apiKeyHelper` 走 OAuth 客户端凭证登录。
 - **国内消息渠道。** Channels（Beta）能把微信、Telegram、Discord 的消息推进正在运行的会话，另有企业微信机器人接入指南。Remote Control（Beta）可以从手机或浏览器访问本机会话。
 - **IDE 触达。** `codebuddy --acp` 把它作为 ACP agent server 给 Zed 用；`--ide` 通过本地 MCP 连接接上 VS Code、Cursor、Windsurf、JetBrains 的插件。
@@ -77,19 +77,19 @@ IDE 是偏 vibe coding 的那一端，和 [Cursor](cursor.md)、[Windsurf](winds
 | 无头 / 自动化 | 强 | `-p` 模式、GitLab CI/CD 指南、定时任务、JS 与 Python SDK |
 | 开源 / 可审计性 | 低 | MIT 文本附在压缩打包的代码上；没有公开源码仓库 |
 
-## 价格（2026-10-30 读取）
+## 套餐（2026-10-30 读取）
 
-两个版本都按积分计，不同模型消耗不同。下面的赠送额度是腾讯自己标的"限时"数字，会变。
+两个版本都按积分计，不同模型消耗不同。
 
-| 版本 | 套餐 | 价格 | 每月积分 |
-| --- | --- | --- | --- |
-| 国际版 | Free | $0 | 100（另有限时每日奖励） |
-| 国际版 | Pro | $10/月 或 $96/年 | 基础 1,000 + 赠送 1,000 |
-| 国际版 | Team | $40/席/月 或 $480/席/年 | 每席 1,000，团队共享 |
-| 国内版 | 体验版 | 免费 | 500 |
-| 国内版 | 标准版 / 高级版 / 旗舰版 | 99 / 199 / 999 元/月（连续包月或年付更低） | 基础 2,000 / 4,000 / 20,000，另有限时加赠 |
-| 国内版 | 企业旗舰版（SaaS） | 198 元/人/月，1 个坐席起购 | 每人 2,000，团队共享 |
-| 国内版 | 企业专享版（专有云） | 316 元/人/月，100 个坐席起购 | 每人 2,000，团队共享 |
+| 版本 | 套餐 | 计费 |
+| --- | --- | --- |
+| 国际版 | Free | 免费 |
+| 国际版 | Pro | 付费，按月或按年 |
+| 国际版 | Team | 按席位付费，按月或按年；积分团队共享 |
+| 国内版 | 体验版 | 免费 |
+| 国内版 | 标准版 / 高级版 / 旗舰版 | 付费，按月、连续包月或按年 |
+| 国内版 | 企业旗舰版（SaaS） | 按人付费，1 个坐席起购；积分团队共享 |
+| 国内版 | 企业专享版（专有云） | 按人付费，100 个坐席起购；积分团队共享 |
 
 国内版三档自 2026-07-01 起生效，原来的单一付费套餐从那天拆成三档。国内版的同一份积分也能用在 WorkBuddy 上。
 
@@ -102,8 +102,8 @@ CodeBuddy 一家厂商覆盖的使用面比这里多数条目都多：插件、�
 均于 2026-10-30 读取。
 
 - 腾讯云产品文档：[CodeBuddy 产品简介](https://cloud.tencent.com/document/product/1831/134343)（最近更新 2026-08-14）
-- CodeBuddy 文档（国际版）：[IDE 简介](https://www.codebuddy.ai/docs/ide/Introduction) · [IDE 安装](https://www.codebuddy.ai/docs/ide/Getting-Started/Installation) · [IDE models.json](https://www.codebuddy.ai/docs/ide/Features/models) · [Pricing](https://www.codebuddy.ai/docs/ide/Account/pricing) · [Credits](https://www.codebuddy.ai/docs/ide/Account/credits) · [IDE 发布说明](https://www.codebuddy.ai/docs/ide/release-notes/release-notes)
-- CodeBuddy 文档（国内版）：[IDE 简介（三种形态、插件最低版本）](https://copilot.tencent.com/docs/ide/Introduction) · [IDE 安装和登录](https://copilot.tencent.com/docs/ide/Getting-Started/Installation) · [定价](https://copilot.tencent.com/docs/ide/Account/pricing) · [IDE 发布说明](https://copilot.tencent.com/docs/ide/release-notes/release-notes)
+- CodeBuddy 文档（国际版）：[IDE 简介](https://www.codebuddy.ai/docs/ide/Introduction) · [IDE 安装](https://www.codebuddy.ai/docs/ide/Getting-Started/Installation) · [IDE models.json](https://www.codebuddy.ai/docs/ide/Features/models) · [Credits](https://www.codebuddy.ai/docs/ide/Account/credits) · [IDE 发布说明](https://www.codebuddy.ai/docs/ide/release-notes/release-notes)
+- CodeBuddy 文档（国内版）：[IDE 简介（三种形态、插件最低版本）](https://copilot.tencent.com/docs/ide/Introduction) · [IDE 安装和登录](https://copilot.tencent.com/docs/ide/Getting-Started/Installation) · [IDE 发布说明](https://copilot.tencent.com/docs/ide/release-notes/release-notes)
 - CodeBuddy Code 文档：[概述](https://www.codebuddy.ai/docs/cli/overview) · [安装](https://www.codebuddy.ai/docs/cli/installation) · [身份和访问管理](https://www.codebuddy.ai/docs/cli/iam)（[中文](https://copilot.tencent.com/docs/cli/iam)） · [模型配置](https://www.codebuddy.ai/docs/cli/models) · [成本](https://www.codebuddy.ai/docs/cli/costs) · [IDE 集成](https://www.codebuddy.ai/docs/cli/ide-integrations) · [ACP](https://www.codebuddy.ai/docs/cli/acp) · [权限模式](https://www.codebuddy.ai/docs/cli/permission-modes) · [无头模式](https://www.codebuddy.ai/docs/cli/headless) · [Channels](https://www.codebuddy.ai/docs/cli/channels) · [SDK](https://www.codebuddy.ai/docs/cli/sdk)
 - CodeBuddy Code 发布说明：[v2.178.1（2026-10-29）](https://www.codebuddy.ai/docs/cli/release-notes/v2.178.1) · [v2.176.0（"Resident service (WorkBuddy)" 修复）](https://www.codebuddy.ai/docs/cli/release-notes/v2.176.0) · [v2.93.4（Hy3 预览版，2026-04-23）](https://www.codebuddy.ai/docs/cli/release-notes/v2.93.4)
 - 软件包：[npm 上的 `@tencent-ai/codebuddy-code`](https://www.npmjs.com/package/@tencent-ai/codebuddy-code)（2.178.1，LICENSE.txt 为 MIT 文本） · [npm 上的 `@tencent-ai/agent-sdk`](https://www.npmjs.com/package/@tencent-ai/agent-sdk) · [PyPI 上的 `codebuddy-agent-sdk`](https://pypi.org/project/codebuddy-agent-sdk/) · [VS Code 市场上的 `Tencent-Cloud.coding-copilot`](https://marketplace.visualstudio.com/items?itemName=Tencent-Cloud.coding-copilot)

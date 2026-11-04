@@ -6,93 +6,81 @@
 
 ## 2026-10-27 → 11-04 —— Copilot 转向路由和计量，GPT-6 Rosalind 不碰编码，Kimi 的权重还没到
 
-**GitHub 于 10 月 28 日让 Copilot Fusion 正式可用。** 你选 Fusion，由 Copilot "intelligently" 路由和编排它用的模型；管理员可以通过企业托管设置把它设为 Copilot 用户的默认，所以这不是一次厂商层面的换默认。GitHub 说 Fusion Max "scored 60, within two points of Claude Code with Opus 5.5 Max"（Artificial Analysis Coding Agent Index），平均每个任务的 API 成本约为一半。这是 GitHub 转述的第三方指数，本图没有抄进基准表。同一天 **Copilot 包含进了 GitHub Enterprise**，面向有 GitHub 或微软客户团队对接的企业，"AI usage ... metered from the first request against your enterprise budget"，没有包含额度。自助购买"分阶段"开放，Copilot Business 与 Enterprise 继续提供。
+**GitHub 于 10 月 28 日让 Copilot Fusion 正式可用。** 你选 Fusion，由 Copilot "intelligently" 路由和编排它用的模型；管理员可以通过企业托管设置把它设为 Copilot 用户的默认，所以这不是一次厂商层面的换默认。GitHub 说 Fusion Max "scored 60, within two points of Claude Code with Opus 5.5 Max"（Artificial Analysis Coding Agent Index）。这是 GitHub 转述的第三方指数，本图没有抄进基准表。同一天 **Copilot 包含进了 GitHub Enterprise**，面向有 GitHub 或微软客户团队对接的企业，AI 用量从第一次请求起计量，没有包含额度。自助购买"分阶段"开放，Copilot Business 与 Enterprise 继续提供。
 
-**OpenAI 于 10 月 30 日发布 GPT-6 Rosalind**，"specialized biological reasoning with scientific tool use"，$15 / $75，缓存输入 $1.50，面向获批进入受信访问计划的机构。它不是编码模型，不进 cost 表。10 月 28 日起，符合条件的 ChatGPT Pro 与 Business 订阅用户可领取"up to $500 per month in free API credits"。
+**OpenAI 于 10 月 30 日发布 GPT-6 Rosalind**，"specialized biological reasoning with scientific tool use"，面向获批进入受信访问计划的机构。它不是编码模型。
 
-**本期 11 月 4 日抓取时（北京时间 11:16），Kimi K3.1 Pro 的权重还没公开**，这正是月之暗面给的日期（"by Nov 4"），这一天还没过完：Hugging Face 路径未公开。它的 quickstart 已把 `[xx.x%]` 占位符换成了分数：月之暗面报告 Terminal-Bench 4.0 得 65.7%，Claude Opus 5.5 为 66.4%，GPT-6 Astra 为 58.2%，自家 Kimi Code Bench 3.0 Long-horizon 得 61.2%。这些是厂商自己的数字，权重发布之前它继续不进开放权重表。**Google 将从 12 月 1 日起把 `gemini-2.5-pro` 路由到 `gemini-3.8-flash`**，按 Flash 价计费（11 月 2 日 changelog）；这个字符串仍是 [Gemini CLI](agents/gemini-cli.md) 源码里的 `DEFAULT_GEMINI_MODEL`，所以它的实际默认可能不发版就变。Anthropic 弃用 Opus 4.8 的 fast mode，11 月 30 日移除。
+**本期 11 月 4 日抓取时（北京时间 11:16），Kimi K3.1 Pro 的权重还没公开**，这正是月之暗面给的日期（"by Nov 4"），这一天还没过完：Hugging Face 路径未公开。它的 quickstart 已把 `[xx.x%]` 占位符换成了分数：月之暗面报告 Terminal-Bench 4.0 得 65.7%，Claude Opus 5.5 为 66.4%，GPT-6 Astra 为 58.2%，自家 Kimi Code Bench 3.0 Long-horizon 得 61.2%。这些是厂商自己的数字，权重发布之前它继续不进开放权重表。**Google 将从 12 月 1 日起把 `gemini-2.5-pro` 路由到 `gemini-3.8-flash`**（11 月 2 日 changelog）；这个字符串仍是 [Gemini CLI](agents/gemini-cli.md) 源码里的 `DEFAULT_GEMINI_MODEL`，所以它的实际默认可能不发版就变。Anthropic 弃用 Opus 4.8 的 fast mode，11 月 30 日移除。
 
 **Anthropic 于 11 月 2 日在 Messages API 上开放 message threads 测试版**：API 把对话保存在服务端，之后每次请求只发新消息，thread 在最后一次请求 5 分钟后过期。
 
 **消费级 agent 也有动作。** [Muse](agents/meta-muse.md) 10 月 27 日在新加坡开放，[ChatGPT dots](agents/chatgpt-dots.md) 为美国 Pro 用户加了 iMessage 与 RCS 短信入口（测试版）；细节见[个人 agent](comparisons/personal-agents.md#最近变化) 日志。
 
-**两个本图此前没记录的更早发布。** **MiniMax M3.1 Flash** 于 10 月 19 日上 MiniMax API，$0.15 / $0.60，缓存输入 $0.015；当时的文章说"Model weights will be released later"，它的 Hugging Face 仓库现在写的是自定义 `minimax-community` 许可证，以及厂商自报的 Terminal-Bench 4.0 38.1 分。**Grok 4.7** 于 9 月 21 日上 xAI API，prompt 低于 20 万 token 时 $2 / $6，缓存输入 $0.50，上下文 50 万。两者本期都不进 cost 表。
+**两个本图此前没记录的更早发布。** **MiniMax M3.1 Flash** 于 10 月 19 日上 MiniMax API；当时的文章说"Model weights will be released later"，它的 Hugging Face 仓库现在写的是自定义 `minimax-community` 许可证，以及厂商自报的 Terminal-Bench 4.0 38.1 分。**Grok 4.7** 于 9 月 21 日上 xAI API，上下文 50 万。
 
 **对选型的影响：** 两点。
 
-第一，**Copilot 的问题正从席位数转向预算。** cost 表里"固定席位"的读法不再覆盖所有买法，而 Fusion 会把模型选择拿走，除非你自己保留。如果你走企业协议，先问清自己属于哪一种。
+第一，**Copilot 的问题正从席位转向计量。** 固定席位不再覆盖所有买法，而 Fusion 会把模型选择拿走，除非你自己保留。如果你走企业协议，先问清自己属于哪一种。
 
-第二，**价格和默认模型都没动。** [cost 表](comparisons/cost-and-benchmarks.md)每一行在 11 月 3 日都与厂商页面一致，11 月 4 日又读了一遍主要行，没有变化。窗口内没有被跟踪的编码 agent 换默认模型，已是连续第五个窗口（[Claude Code](agents/claude-code.md) `v2.1.312`–`v2.1.318`；[Codex CLI](agents/codex.md) `rust-v0.165.0`、`rust-v0.166.0` 把 GPT-6.1 Terra 加进目录，Sol 仍排第一；Gemini CLI `v0.66.0`；[OpenCode](agents/opencode.md) `v2.2.1`–`v2.2.5`，它的"New Default Model Picker"是界面改动）。
+第二，**默认模型没动。** 窗口内没有被跟踪的编码 agent 换默认模型，已是连续第五个窗口（[Claude Code](agents/claude-code.md) `v2.1.312`–`v2.1.318`；[Codex CLI](agents/codex.md) `rust-v0.165.0`、`rust-v0.166.0` 把 GPT-6.1 Terra 加进目录，Sol 仍排第一；Gemini CLI `v0.66.0`；[OpenCode](agents/opencode.md) `v2.2.1`–`v2.2.5`，它的"New Default Model Picker"是界面改动）。
 
-来源：[Copilot Fusion](https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/)、[GitHub Enterprise 包含 Copilot](https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot/)、[OpenAI API changelog](https://developers.openai.com/api/docs/changelog)、[OpenAI 价格](https://developers.openai.com/api/docs/pricing)、[Kimi K3.1 Pro quickstart](https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart)、[Gemini API changelog](https://aistudio.google.com/docs/changelog)、[Anthropic 发布说明](https://platform.claude.com/docs/en/release-notes/overview)、[Muse 新加坡](https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/)、[ChatGPT what's new](https://learn.chatgpt.com/docs/whats-new)、[MiniMax M3.1 Flash](https://www.minimax.io/blog/minimax-m31f)、[模型卡](https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash)、[xAI 发布说明](https://docs.x.ai/developers/release-notes)。
+来源：[Copilot Fusion](https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/)、[GitHub Enterprise 包含 Copilot](https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot/)、[OpenAI API changelog](https://developers.openai.com/api/docs/changelog)、[Kimi K3.1 Pro quickstart](https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart)、[Gemini API changelog](https://aistudio.google.com/docs/changelog)、[Anthropic 发布说明](https://platform.claude.com/docs/en/release-notes/overview)、[Muse 新加坡](https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/)、[ChatGPT what's new](https://learn.chatgpt.com/docs/whats-new)、[MiniMax M3.1 Flash](https://www.minimax.io/blog/minimax-m31f)、[模型卡](https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash)、[xAI 发布说明](https://docs.x.ai/developers/release-notes)。
 
-## 2026-10-21 → 10-26 —— GPT-6.1 Terra 开出 $1 / $5 一档，Kimi K3.1 Pro 发布却没有分数，Anthropic 捐出 Agent Skills 并递交上市申请
+## 2026-10-21 → 10-26 —— GPT-6.1 Terra 发布，Kimi K3.1 Pro 发布却没有分数，Anthropic 捐出 Agent Skills 并递交上市申请
 
-**OpenAI 于 2026 年 10 月 26 日发布 GPT-6.1 Terra**，"一个快速、高效的模型，用于视觉推理、精确的电脑操作，以及清晰自然的写作"。标价 **每百万 token $1 / $5，缓存输入 $0.05**（输入价的 5%），缓存写入 $1.25；上下文 105 万（最多输入 92.2 万、输出 12.8 万）。输入超过 **272K token** 的请求整单按输入与缓存 2 倍、输出 1.5 倍计价——和 GPT-6 Astra 是同一道坎。当天进入 Plus、Pro、Business、Enterprise、Edu 档的 Codex 与 ChatGPT Work，也进了 GitHub Copilot。它**不是默认模型**：Codex `rust-v0.164.0`（10 月 23 日）打包排第一的仍是 GPT-6.1 Sol，Codex changelog 那条只是让 Terra 可选。本地图读不到 OpenAI 的发布文章，因此不记基准数字。
+**OpenAI 于 2026 年 10 月 26 日发布 GPT-6.1 Terra**，"一个快速、高效的模型，用于视觉推理、精确的电脑操作，以及清晰自然的写作"。上下文 105 万（最多输入 92.2 万、输出 12.8 万）。当天进入 Plus、Pro、Business、Enterprise、Edu 档的 Codex 与 ChatGPT Work，也进了 GitHub Copilot。它**不是默认模型**：Codex `rust-v0.164.0`（10 月 23 日）打包排第一的仍是 GPT-6.1 Sol，Codex changelog 那条只是让 Terra 可选。本地图读不到 OpenAI 的发布文章，因此不记基准数字。
 
-**月之暗面发布 Kimi K3.1 Pro**，它自己的研究索引页记为 10 月 24 日（OpenCode 10 月 23 日宣布可用）。官方称它是"我们迄今最强的 3T 级开放权重模型"，是 Kimi K3 的后训练版本，100 万上下文，并说"完整权重将于 11 月 4 日前发布"。月之暗面 API 上价格为 **$2 / $10，缓存输入 $0.20**；速度快 2–3 倍的 Highspeed 版为 $4 / $20。它的快速上手文档里基准数字**仍是没填的占位符**（Terminal-Bench 4.0 写着 `[xx.x%]`），所以本地图不记分数，在权重和数字公布之前也不放进开放权重表。月之暗面价格页还写明，K2 系列 **10 月 31 日**起不再对新注册用户开放，2026 年 12 月底前全部下线。
+**月之暗面发布 Kimi K3.1 Pro**，它自己的研究索引页记为 10 月 24 日（OpenCode 10 月 23 日宣布可用）。官方称它是"我们迄今最强的 3T 级开放权重模型"，是 Kimi K3 的后训练版本，100 万上下文，并说"完整权重将于 11 月 4 日前发布"。它已上月之暗面 API，另有速度快 2–3 倍的 Highspeed 版。它的快速上手文档里基准数字**仍是没填的占位符**（Terminal-Bench 4.0 写着 `[xx.x%]`），所以本地图不记分数，在权重和数字公布之前也不放进开放权重表。月之暗面还写明，K2 系列 **10 月 31 日**起不再对新注册用户开放，2026 年 12 月底前全部下线。
 
 **Anthropic 于 10 月 22 日把 Agent Skills 捐给了 Agentic AI Foundation**，称自 2025 年 12 月发布以来，已有 70 多个 agent 平台（包括 ChatGPT、Cursor、GitHub Copilot、VS Code）接入这个标准，已发布 100 万个 skill（均为厂商自述）。**10 月 26 日它向 SEC 提交了 S-1**，拟以"ANT"为代码在纳斯达克全球精选市场公开发行 A 类普通股；发行数量与价格区间尚未确定。它还以候补名单方式开放了 **[Claude Duet](agents/claude-duet.md)** 的研究预览（10 月 21 日），一个独立的个人 agent 应用，本期已收录，并记在[消费级个人 agent](comparisons/personal-agents.md#最近变化) 页。
 
 **OpenCode 10 月 17 日的事件，上期记录时没有厂商声明，现在有了。** 厂商的 X 帖说，这次入侵"与一次大规模蒸馏攻击有关，影响了 1.4% 的 OpenCode Console 用户"，即"关联了外部 provider"的那部分，均已邮件通知，并正与 Anthropic、OpenAI、Google 合作处置。没有发布 GitHub 安全公告，状态页也没有对应事件。有用户在 issue 里说 OpenCode 自己的 key 也被吊销了；厂商没有确认。
 
-**对选型的影响：**三点。
+**对选型的影响：**两点。
 
-第一，**OpenAI 的阶梯上多了 $1 / $5 这一级。** GPT-6.1 Sol（$2 / $10）和 GPT-6 Luna（$0.10 / $0.50）之间原本是空的；Terra 填上了，缓存比例与 6.1 代一样是 5%。272K 那道坎在这个价位比在 Astra 那里更要紧：便宜的模型恰恰是你最可能拿来跑长会话的那个。
+第一，**没有数字的模型还不算一个选项。** Kimi K3.1 Pro 有上下文、有权重日期，而它自己的文档说分数还没写。11 月 4 日之前把它当观察项。
 
-第二，**没有数字的模型还不算一个选项。** Kimi K3.1 Pro 有价格、有上下文、有权重日期，而它自己的文档说分数还没写。11 月 4 日之前把它当观察项。
+第二，**Agent Skills 交给基金会，变的是 skills 浪潮所依赖的格式归谁管**，不是它今天怎么用。本地图跟踪的集合（[Superpowers](agents/superpowers.md)、[mattpocock/skills](https://github.com/mattpocock/skills)、[anthropics/skills](https://github.com/anthropics/skills)）本来就按这个标准发布。窗口内被跟踪的编码 agent 没有换默认模型——连续第四个窗口（[Claude Code](agents/claude-code.md) `v2.1.307`–`v2.1.311`、[Codex CLI](agents/codex.md) `rust-v0.164.0`、[OpenCode](agents/opencode.md) `v2.2.0`、[Qwen Code](agents/qwen-code.md)、[Kimi Code](agents/kimi-code.md)；[Gemini CLI](agents/gemini-cli.md) 没有发正式版）。
 
-第三，**Agent Skills 交给基金会，变的是 skills 浪潮所依赖的格式归谁管**，不是它今天怎么用。本地图跟踪的集合（[Superpowers](agents/superpowers.md)、[mattpocock/skills](https://github.com/mattpocock/skills)、[anthropics/skills](https://github.com/anthropics/skills)）本来就按这个标准发布。窗口内被跟踪的编码 agent 没有换默认模型——连续第四个窗口（[Claude Code](agents/claude-code.md) `v2.1.307`–`v2.1.311`、[Codex CLI](agents/codex.md) `rust-v0.164.0`、[OpenCode](agents/opencode.md) `v2.2.0`、[Qwen Code](agents/qwen-code.md)、[Kimi Code](agents/kimi-code.md)；[Gemini CLI](agents/gemini-cli.md) 没有发正式版）。
+来源：[OpenAI API changelog](https://developers.openai.com/api/docs/changelog)、[GPT-6.1 Terra 模型页](https://developers.openai.com/api/docs/models/gpt-6.1-terra)、[Codex changelog](https://learn.chatgpt.com/docs/changelog)、[GPT-6.1 Terra in GitHub Copilot](https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot)、[Kimi K3.1 Pro 快速上手](https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart)、[Kimi 模型说明](https://platform.kimi.ai/docs/pricing/chat)、[Donating Agent Skills to the Agentic AI Foundation](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation)、[Anthropic files S-1](https://www.anthropic.com/news/s1-sec)、[Introducing Claude Duet](https://claude.com/resources/articles/claude-duet)、[OpenCode 的 X 帖，10 月 17 日](https://x.com/opencode/status/2111519637049319818)。
 
-来源：[OpenAI API changelog](https://developers.openai.com/api/docs/changelog)、[GPT-6.1 Terra 模型页](https://developers.openai.com/api/docs/models/gpt-6.1-terra)、[Codex changelog](https://learn.chatgpt.com/docs/changelog)、[GPT-6.1 Terra in GitHub Copilot](https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot)、[Kimi K3.1 Pro 快速上手](https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart)、[Kimi 价格](https://platform.kimi.ai/docs/pricing/chat)、[Donating Agent Skills to the Agentic AI Foundation](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation)、[Anthropic files S-1](https://www.anthropic.com/news/s1-sec)、[Introducing Claude Duet](https://claude.com/resources/articles/claude-duet)、[OpenCode 的 X 帖，10 月 17 日](https://x.com/opencode/status/2111519637049319818)。
+## 2026-10-12 → 10-17 —— Meta 发布 Muse Wonder，GPT-5.5 退出 Codex，两个开放权重发布
 
-## 2026-10-12 → 10-17 —— Meta 把 Muse Wonder 定在 Opus 5.5 的价位，GPT-5.5 退出 Codex，两个开放权重发布
-
-**Meta 于 2026 年 10 月 12 日发布 Muse Wonder**——这一天落在上一个窗口里，本地图当时漏了，在此补记。Meta 的定位是"前沿编码、长时运行 agent 与高级电脑操作"。在 Meta Model API 上它的价格是**每百万 token $4 / $20，缓存输入 $0.20，100 万上下文**——和 Claude Opus 5.5 的标价、缓存读完全一样。更大的 **Muse Wonder Full** 不上 API，只在 Muse Code 订阅的 Power 与 Maximum 用量档里提供。Meta 的价格表现在列的也已经是 **Muse Spark 1.3**（9 月 2 日发布），价格与本地图之前记的 1.2 相同，所以[成本表](comparisons/cost-and-benchmarks.md)里那两行已就地改名。
+**Meta 于 2026 年 10 月 12 日发布 Muse Wonder**——这一天落在上一个窗口里，本地图当时漏了，在此补记。Meta 的定位是"前沿编码、长时运行 agent 与高级电脑操作"。它已上 Meta Model API，**100 万上下文**。更大的 **Muse Wonder Full** 不上 API，只在 Muse Code 订阅的 Power 与 Maximum 用量档里提供。Meta 现在列的也已经是 **Muse Spark 1.3**（9 月 2 日发布），本地图之前记的是 1.2，所以[对比表](comparisons/benchmarks-and-billing.md)里那两行已就地改名。
 
 **OpenAI 于 2026 年 10 月 14 日（19:00 UTC）让 GPT-5.5 从 Codex 与 ChatGPT 下线**，针对用 ChatGPT 账号登录的用户。它让这些用户改用 GPT-6.1 Sol，并提醒更新仍在选 `gpt-5.5` 的工作区默认、已存模型设置、托管配置、自定义 agent、定时任务与脚本。API 和用 API key 登录的 Codex 会话不受影响。这不算换默认：[Codex CLI](agents/codex.md) 的打包默认自 9 月 29 日 `rust-v0.159.1` 起就是 GPT-6.1 Sol，`rust-v0.163.0`（10 月 15 日）没有动它。
 
-**Meta 于 2026 年 10 月 15 日开放 Muse Spark Open 的权重**：总参数 816B、激活 42B、100 万 token 上下文、原生多模态，许可是 **Muse Model License，"有限商用条款"**。Meta 称它是"迄今最强的美国开放权重模型"，并针对 Mac Studio M5 Ultra 上的 MLX 做了优化。**DeepSeek 于 10 月 17 日发布 DeepSeek-V4.1-Flash-1017**，一次小版本更新，官方说法是比 V4.1-Flash benchmark 更强、完成更快、输出更短，"性能与成本的帕累托改进"，权重同步公开；它点名推荐用 [DeepSeek Harness](agents/deepseek-harness.md) `v0.2.1-rc.1` 及以上版本来用，harness 当天发的 `rc.2` 也加上了对它的支持。
+**Meta 于 2026 年 10 月 15 日开放 Muse Spark Open 的权重**：总参数 816B、激活 42B、100 万 token 上下文、原生多模态，许可是 **Muse Model License，"有限商用条款"**。Meta 称它是"迄今最强的美国开放权重模型"，并针对 Mac Studio M5 Ultra 上的 MLX 做了优化。**DeepSeek 于 10 月 17 日发布 DeepSeek-V4.1-Flash-1017**，一次小版本更新，官方说法是比 V4.1-Flash benchmark 更强、完成更快、输出更短，"帕累托改进"，权重同步公开；它点名推荐用 [DeepSeek Harness](agents/deepseek-harness.md) `v0.2.1-rc.1` 及以上版本来用，harness 当天发的 `rc.2` 也加上了对它的支持。
 
 **Anthropic 于 10 月 15 日让 Code Review 结束研究预览、正式开放**给 Claude Team 与 Enterprise 组织，分 Quick、Standard（默认）、Deep 三档。它和 [Open Code Review](agents/open-code-review.md)、[Cline](agents/cline.md) 属于同一条 review-first 路线，只不过是托管产品而不是 CLI。
 
-**对选型的影响：** 三点。
+**对选型的影响：** 两点。
 
-第一，**$4 / $20 现在是三家厂商共用的价位。** Opus 5.5（长期价）、Muse Wonder（长期价）、GPT-5.6 Sol（促销价，至少到 11 月 21 日）都在这里，Gemini 4 Argon 也会在 12 月 1 日涨到这里。在同一标价上，决策看的是缓存列和 benchmark 列，不是标价——而 Muse Wonder 连缓存读都和 Opus 5.5 一样。
+第一，**agent 产品里的模型下线是配置风险，不只是血统备注。** 在用 ChatGPT 登录的 Codex 工作区里钉死了 `gpt-5.5` 的人——本地图一直建议钉死模型——现在钉的是一个解析不到的名字。照样要钉，但把模型下线放进复查日程。
 
-第二，**agent 产品里的模型下线是配置风险，不只是血统备注。** 在用 ChatGPT 登录的 Codex 工作区里钉死了 `gpt-5.5` 的人——本地图一直建议钉死模型——现在钉的是一个解析不到的名字。照样要钉，但把模型下线和促销价到期放进同一份复查日程。
+第二，**开放权重档迎来第一个用自定义许可的美国模型。** Muse Spark Open 和 Kimi K3 一起进了[开放权重表](comparisons/benchmarks-and-billing.md#开放权重这一档)的自定义许可那一栏；先读"有限商用条款"，再看参数量。本窗口没有任何被跟踪的编码 agent 换默认模型，已连续第三个窗口（[Claude Code](agents/claude-code.md) `v2.1.300`–`v2.1.306`、Codex `rust-v0.163.0`、[Gemini CLI](agents/gemini-cli.md) `v0.65.0`、[OpenCode](agents/opencode.md) `v1.19.1`–`v1.19.3`）；Gemini CLI 的默认模型常量没变，也没有指向 Argon。
 
-第三，**开放权重档迎来第一个用自定义许可的美国模型。** Muse Spark Open 和 Kimi K3 一起进了[开放权重表](comparisons/cost-and-benchmarks.md#开放权重这一档)的自定义许可那一栏；先读"有限商用条款"，再看参数量。本窗口没有任何被跟踪的编码 agent 换默认模型，已连续第三个窗口（[Claude Code](agents/claude-code.md) `v2.1.300`–`v2.1.306`、Codex `rust-v0.163.0`、[Gemini CLI](agents/gemini-cli.md) `v0.65.0`、[OpenCode](agents/opencode.md) `v1.19.1`–`v1.19.3`）；Gemini CLI 的默认模型常量没变，也没有指向 Argon。
+来源：[Muse Wonder（Meta AI Research）](https://research.meta.ai/blog/muse-wonder)、[Muse Wonder 模型页](https://dev.meta.ai/models/muse-wonder)、[Muse Spark 1.3 模型页](https://dev.meta.ai/models/muse-spark)、[Codex changelog：GPT-5.5 下线](https://learn.chatgpt.com/docs/changelog)、[Introducing Muse Spark Open](https://research.meta.ai/blog/muse-spark-open)、[DeepSeek-V4.1-Flash-1017 发布](https://api-docs.deepseek.com/news/news261017/)、[DeepSeek Harness `dsh-v0.2.1-rc.2`](https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-rc.2)、[Code Review 正式开放（Anthropic）](https://claude.com/resources/articles/code-review-is-now-generally-available)。
 
-来源：[Muse Wonder（Meta AI Research）](https://research.meta.ai/blog/muse-wonder)、[Muse Wonder 价格](https://dev.meta.ai/models/muse-wonder)、[Muse Spark 1.3 价格](https://dev.meta.ai/models/muse-spark)、[Codex changelog：GPT-5.5 下线](https://learn.chatgpt.com/docs/changelog)、[Introducing Muse Spark Open](https://research.meta.ai/blog/muse-spark-open)、[DeepSeek-V4.1-Flash-1017 发布](https://api-docs.deepseek.com/news/news261017/)、[DeepSeek Harness `dsh-v0.2.1-rc.2`](https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.1-rc.2)、[Code Review 正式开放（Anthropic）](https://claude.com/resources/articles/code-review-is-now-generally-available)、[OpenAI API 价格](https://developers.openai.com/api/docs/pricing)。
+## 2026-10-07 → 10-13 —— Haiku 5.5 发布，Gemini 4 Argon 开放付费 API
 
-## 2026-10-07 → 10-13 —— Haiku 5.5 发布，Gemini 4 Argon 开放付费 API，Sonnet 5.5 的缓存读原来只有本地图记下的一半
+**Anthropic 于 2026-10-07 发布 Claude Haiku 5.5（`claude-haiku-5-5`）**，就是随 Sonnet 5.5 一起承诺"未来几周"推出的那个模型。上下文 1M，输出 128K，知识截止 2026 年 6 月；Anthropic 的文档注明它的 tokenizer 对同一段文本比 Haiku 4.5 多算约 30% token。它是 API 以及 Bedrock、Vertex、Foundry 上默认的 Haiku 模型；[Claude Code](agents/claude-code.md) `v2.1.293` 同日加入，但没有换自己的 Opus 或 Sonnet 默认。
 
-**Anthropic 于 2026-10-07 发布 Claude Haiku 5.5（`claude-haiku-5-5`）**，就是随 Sonnet 5.5 一起承诺"未来几周"推出的那个模型。它按 prompt 长度分价：**prompt 不超过 10 万 token 时每百万 token $0.10 / $0.50，超过则 $0.50 / $2.50**，缓存读 $0.01 / $0.05，5 分钟缓存写 $0.125 / $0.625。上下文 1M，输出 128K，知识截止 2026 年 6 月；Anthropic 的文档注明它的 tokenizer 对同一段文本比 Haiku 4.5 多算约 30% token。它是 API 以及 Bedrock、Vertex、Foundry 上默认的 Haiku 模型；[Claude Code](agents/claude-code.md) `v2.1.293` 同日加入，但没有换自己的 Opus 或 Sonnet 默认。
+**Google 于 2026-10-13 把 Gemini 4 Argon 开放到付费 API。** 本地图 9 月 30 日记下的那道闸门，对带防护的版本已经撤掉：`gemini-4-argon` 可通过 Gemini API 在 AI Studio 付费层使用，也进了 Gemini for business、面向 AI Ultra 订户的 Antigravity，以及 Pro 与 Ultra 订户的 Gemini 应用（据 Google 发布文章，文中没有提免费层）。*2026-10-30 更正：这句原来还写着"不对免费层和 AI Pro 套餐开放"，和前面 Gemini 应用那半句互相矛盾；AI Pro 不能用，说的是发布时的 Antigravity。Antigravity 的模型页现在也把 Argon 列在了 AI Pro 上，见 [Google Antigravity](agents/antigravity.md)。*它用隐式缓存，不支持显式缓存，采样参数会被忽略。无网安防护的版本仍留在 Fairwind 计划里，滚动放行。
 
-**Google 于 2026-10-13 把 Gemini 4 Argon 开放到付费 API。** 本地图 9 月 30 日记下的那道闸门，对带防护的版本已经撤掉：`gemini-4-argon` 可通过 Gemini API 在 AI Studio 付费层使用，也进了 Gemini for business、面向 AI Ultra 订户的 Antigravity，以及 Pro 与 Ultra 订户的 Gemini 应用（据 Google 发布文章，文中没有提免费层）。*2026-10-30 更正：这句原来还写着"不对免费层和 AI Pro 套餐开放"，和前面 Gemini 应用那半句互相矛盾；AI Pro 不能用，说的是发布时的 Antigravity。Antigravity 的模型页现在也把 Argon 列在了 AI Pro 上，见 [Google Antigravity](agents/antigravity.md)。*价格是首发的 **$2 / $10，至 2026-11-30，之后 $4 / $20**；隐式缓存把缓存输入便宜 95%（$0.10，12 月 1 日起 $0.20），不支持显式缓存，采样参数会被忽略。无网安防护的版本仍留在 Fairwind 计划里，滚动放行。
+**对选型的影响：** **Gemini 4 Argon 现在是一个可选项。** 窗口内没有被跟踪的编码 agent 把它设为默认——[Gemini CLI](agents/gemini-cli.md) `v0.64.0`（10 月 13 日）没有换模型——而且连续第二个窗口没有任何被跟踪的编码 agent 换默认（[Codex CLI](agents/codex.md) `rust-v0.161.0` 于 10 月 7 日把 GPT-6.1 Sol 默认带到主发布线，和 `rust-v0.159.1` 在 9 月 29 日回移的是同一处改动）。
 
-**本地图 9 月 28 日记下的一个数字已经在它底下变了。** Anthropic 的价格页现在把 Sonnet 5.5 的缓存读标为 **$0.10/M**——输入价的 5%，与 Opus 5.5 同一个倍数——不是本地图引用的 Claude Code `2.1.284` changelog 里的 $0.20/M。Claude Code `v2.1.296`（10 月 9 日）把自己的 `/cost`、状态栏和 SDK 数字改为"按每百万 token $0.10 计 Sonnet 5.5 缓存读（原为 $0.20）"。是 Anthropic 降了价还是改正了标价，本地图找不到任何地方有说明；确定的只是现在的数字。[成本表](comparisons/cost-and-benchmarks.md)那一行和下面 9 月 28 日的条目都已加带日期的更正。
-
-**对选型的影响：** 三件事。
-
-第一，**两家的阶梯现在都够到了地板。** Haiku 5.5 在短 prompt 上与 GPT-6 Luna 的 $0.10 / $0.50 标价和 $0.01 缓存读相同——但它是[成本表](comparisons/cost-and-benchmarks.md)上唯一一个按 prompt 长度分价的模型，agent 会话一旦堆过 10 万 token，从那一个请求起两端都付 5 倍。做路由、抽取和 subagent 之间的碎话，它是 Anthropic 最便宜的一级；跑一个长 agent 循环，它并不自动比 Sonnet 5.5 便宜。
-
-第二，**两个中间档现在标价和缓存都完全相同**（$2 / $10 / $0.10）。本地图挂了两周的那个判断——GPT-6.1 Sol 的缓存价是把它和 Sonnet 5.5 分开的唯一一列——撤回。能分开它们的是长上下文的计价形状（OpenAI 输入超 272K token 后对整个请求换价，Anthropic 不这样）和基准那几列。
-
-第三，**Gemini 4 Argon 现在是一个可选项，而且带着日期。** 它的首发标价是中间档的价格；12 月 1 日起的常规价是 Opus 5.5 的。谁按 $2 / $10 做了规划，就自带一次 11 月 30 日的复核，和 GPT-5.6 Sol 的 11 月 21 日并排。窗口内没有被跟踪的编码 agent 把它设为默认——[Gemini CLI](agents/gemini-cli.md) `v0.64.0`（10 月 13 日）没有换模型——而且连续第二个窗口没有任何被跟踪的编码 agent 换默认（[Codex CLI](agents/codex.md) `rust-v0.161.0` 于 10 月 7 日把 GPT-6.1 Sol 默认带到主发布线，和 `rust-v0.159.1` 在 9 月 29 日回移的是同一处改动）。
-
-来源：[Claude Haiku 5.5（Anthropic）](https://www.anthropic.com/claude-haiku-5-5)、[Haiku 5.5 模型概览](https://platform.claude.com/docs/en/models/haiku-5-5/overview)、[Anthropic 价格页](https://platform.claude.com/docs/en/about-claude/pricing)、[Claude Code v2.1.293](https://github.com/anthropics/claude-code/releases/tag/v2.1.293) 与 [v2.1.296](https://github.com/anthropics/claude-code/releases/tag/v2.1.296)、[Introducing Gemini 4 Argon（Google 博客）](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/)、[Gemini 4 Argon 开发者文档](https://ai.google.dev/gemini-api/docs/latest-model)、[Codex rust-v0.161.0](https://github.com/openai/codex/releases/tag/rust-v0.161.0)。
+来源：[Claude Haiku 5.5（Anthropic）](https://www.anthropic.com/claude-haiku-5-5)、[Haiku 5.5 模型概览](https://platform.claude.com/docs/en/models/haiku-5-5/overview)、[Claude Code v2.1.293](https://github.com/anthropics/claude-code/releases/tag/v2.1.293)、[Introducing Gemini 4 Argon（Google 博客）](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/)、[Gemini 4 Argon 开发者文档](https://ai.google.dev/gemini-api/docs/latest-model)、[Codex rust-v0.161.0](https://github.com/openai/codex/releases/tag/rust-v0.161.0)。
 
 ## 2026-09-30 → 10-01 —— Gemini 4 Argon 带着闸门发布，Pi 到了 1.0
 
-**Google 于 2026-09-30 发布 Gemini 4 Argon。** 首发价为**每百万 token $2 / $10**，首发期结束后改为 **$4 / $20**，缓存输入比输入价便宜 95%。输出上限 **1M token**，此前是 64K。Google 自己的表里是 **DeepSWE v1.1 77.9%**、**AutomationBench 51.3%**——后者高于本地图记下的 [GPT-6 Astra](agents/gpt-6-astra.md) 41.4% 和 Opus 5.5 的 40.0%，但两家的表不是同场跑的。问题在于能不能用：它目前"通过 Fairwind 计划向一批受信任的网安防御者"推出，接下来才是付费 API 客户与 Google AI Ultra 订阅用户，暂时没有公开的 API 模型 id。
+**Google 于 2026-09-30 发布 Gemini 4 Argon。** 输出上限 **1M token**，此前是 64K。Google 自己的表里是 **DeepSWE v1.1 77.9%**、**AutomationBench 51.3%**——后者高于本地图记下的 [GPT-6 Astra](agents/gpt-6-astra.md) 41.4% 和 Opus 5.5 的 40.0%，但两家的表不是同场跑的。问题在于能不能用：它目前"通过 Fairwind 计划向一批受信任的网安防御者"推出，接下来才是付费 API 客户与 Google AI Ultra 订阅用户，暂时没有公开的 API 模型 id。
 
 **10 月 1 日，[Pi](agents/pi.md) 发布 v1.0.0。** 这个版本把全屏 TUI 设为默认，按发布说明 codemode 的 prompt token 少了约 40%；它写明了一处破坏性变更（用 `typeof` 探测工具的脚本要改写）。它没有明确承诺 API 稳定。Pi 的 star 周率在同一窗口涨了 56%。
 
 **对选型的影响：** 两点。
 
-第一，**买不到的前沿模型不是选型选项。** Argon 的首发标价与另外两家现在给自家编码 agent 设的 $2 / $10 中间档相同，常规价与 Opus 5.5 相同——但在付费 API 开放之前，它不进[成本与基准](comparisons/cost-and-benchmarks.md)表。要盯的是 API id 何时出现、[Gemini CLI](agents/gemini-cli.md) 会不会接上。
+第一，**买不到的前沿模型不是选型选项。** 在付费 API 开放之前，Argon 不进[基准与计费](comparisons/benchmarks-and-billing.md)表。要盯的是 API id 何时出现、[Gemini CLI](agents/gemini-cli.md) 会不会接上。
 
 第二，**继 9 月的四次之后，本窗口没有任何被跟踪的编码 agent 换默认模型**——Claude Code `2.1.285`–`2.1.292`、Codex `rust-v0.160.x`、Gemini CLI `v0.63.0`、OpenCode `v1.18.35` 都没动默认。Haiku 5.5 仍未发布。
 
@@ -100,43 +88,35 @@
 
 ## 2026-09-28 → 09-29 —— Sonnet 5.5 与 GPT-6.1 Sol 在同一周成为默认
 
-**Anthropic 于 2026-09-28 发布 Claude Sonnet 5.5（`claude-sonnet-5-5`）**，价格不变，仍是**每百万 token $2 / $10**，**缓存读 $0.20/M**、缓存写 $2.50/M*（2026-10-14 更正：Anthropic 的价格页现在把 Sonnet 5.5 的缓存读标为 **$0.10/M**，Claude Code `v2.1.296` 也于 10 月 9 日把自己的数字从 $0.20 改正——见 10-07 → 10-13 条目）*。Anthropic 的定位是更快更便宜的 Sonnet，而不是更强的 Sonnet：比 Sonnet 5 快 30% 以上，单任务成本最多低 30%，在编码上与 Sonnet 5 持平"但步数、token 与工具调用显著更少"。它公布的表里有一个数字和全家族其他数字格格不入：**Terminal-Bench 4.0 70.6%**，高于六天前 [Opus 5.5](#2026-09-22--两家在同一天动了天花板的价格) 公布的 **66.4%**。在两者共有的其他基准上，Sonnet 5.5 全部落后于 Opus 5.5（CursorBench 4.0 55.5% 对 57.8%，FrontierCode v1.1 46.2% 对 54.4%，带工具的 Humanity's Last Exam 64.5% 对 67.7%，GDPval-AA v2.1 1844 对 1846 Elo）。Anthropic 说 **Haiku 5.5**"将在未来几周加入 Claude 5.5 家族"。
+**Anthropic 于 2026-09-28 发布 Claude Sonnet 5.5（`claude-sonnet-5-5`）**。Anthropic 的定位是更快的 Sonnet，而不是更强的 Sonnet：比 Sonnet 5 快 30% 以上，在编码上与 Sonnet 5 持平"但步数、token 与工具调用显著更少"。它公布的表里有一个数字和全家族其他数字格格不入：**Terminal-Bench 4.0 70.6%**，高于六天前 [Opus 5.5](#2026-09-22--opus-55-与-gpt-6-sol-和-luna-在同一天发布) 公布的 **66.4%**。在两者共有的其他基准上，Sonnet 5.5 全部落后于 Opus 5.5（CursorBench 4.0 55.5% 对 57.8%，FrontierCode v1.1 46.2% 对 54.4%，带工具的 Humanity's Last Exam 64.5% 对 67.7%，GDPval-AA v2.1 1844 对 1846 Elo）。Anthropic 说 **Haiku 5.5**"将在未来几周加入 Claude 5.5 家族"。
 
-**[Claude Code](agents/claude-code.md) `2.1.284` 当天把 Sonnet 5.5 设为默认的 Sonnet 模型**，并在 changelog 里写明 1M 上下文与 $2 / $10 / $0.20 的价格；Anthropic 在 Claude Code 和自家应用里把默认 effort 设为 Medium。
+**[Claude Code](agents/claude-code.md) `2.1.284` 当天把 Sonnet 5.5 设为默认的 Sonnet 模型**，并在 changelog 里写明 1M 上下文；Anthropic 在 Claude Code 和自家应用里把默认 effort 设为 Medium。
 
-**第二天，OpenAI DevDay，GPT-6.1 Sol 到来。** 一手价格页列出它为 **$2 / $10**——与 GPT-6 Sol 同一个标价——缓存输入 **$0.10/M**，是 GPT-6 Sol 那 $0.20 的一半。**[Codex CLI](agents/codex.md) `rust-v0.159.1`（9 月 29 日）把 GPT-6.1 Sol 设为打包目录里的默认模型**，Amazon Bedrock 目录同样如此，替掉了它 9 月 4 日设的 [GPT-6 Astra](agents/gpt-6-astra.md)。DevDay 还带来了可复用的 Codex 云端环境、刷新后的 Codex CLI、新的代码评审体验，以及 Agents API 里的 computer use；这些是产品面的变化，本地图会在 [Codex](agents/codex.md) profile 里跟进，不在这里展开。
+**第二天，OpenAI DevDay，GPT-6.1 Sol 到来。** **[Codex CLI](agents/codex.md) `rust-v0.159.1`（9 月 29 日）把 GPT-6.1 Sol 设为打包目录里的默认模型**，Amazon Bedrock 目录同样如此，替掉了它 9 月 4 日设的 [GPT-6 Astra](agents/gpt-6-astra.md)。DevDay 还带来了可复用的 Codex 云端环境、刷新后的 Codex CLI、新的代码评审体验，以及 Agents API 里的 computer use；这些是产品面的变化，本地图会在 [Codex](agents/codex.md) profile 里跟进，不在这里展开。
 
-**对选型的影响：** 三件事。
+**对选型的影响：** 两件事。
 
 第一，**两家现在都把自家编码 agent 指向中间档。** 9 月里本地图记下了四次编码 agent 在补丁版本里换默认模型——Codex 换到 Astra（9 月 4 日）、Claude Code 换到 Opus 5.5（9 月 22 日）、Claude Code 换到 Sonnet 5.5（9 月 28 日）、Codex 换到 GPT-6.1 Sol（9 月 29 日）。后两次是*往下*走。如果你用默认值跑其中任何一个，你跑的东西这周已经变了，而且没有经过大版本。
 
-第二，**按标价两家的中间档已完全相同（$2 / $10），唯一能把它们分开的是缓存读这一列**——GPT-6.1 Sol $0.10/M，Sonnet 5.5 $0.20/M。对一个每轮都重放大段 prompt 的长跑 agent，这一列就是账单的大头。上周两家刚在 $0.20 上汇合，七天之内 OpenAI 就打破了平局。*（2026-10-14 撤回：Anthropic 价格页上 Sonnet 5.5 的缓存读是 $0.10/M，所以两个中间档在这一列上也完全相同——见 10-07 → 10-13 条目。）*
+第二，**一个 Sonnet 在 agentic 终端基准上超过 Opus，是先试低一档的理由**，不是相信它整体更强的理由——在其他共有基准上它都落后。它确实加强了本地图从 7 月起一直在讲的那条：多数编码工作，从你以为需要的那一档往下一档开始。
 
-第三，**一个 Sonnet 在 agentic 终端基准上超过 Opus，是先试便宜档的理由**，不是相信它整体更强的理由——在其他共有基准上它都落后。它确实加强了本地图从 7 月起一直在讲的那条：多数编码工作，从你以为需要的那一档往下一档开始。
+来源：[Introducing Claude Sonnet 5.5](https://www.anthropic.com/claude-sonnet-5-5)、[Claude Code CHANGELOG `2.1.284`](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md)、[Codex `rust-v0.159.1`](https://github.com/openai/codex/releases/tag/rust-v0.159.1)、[TechCrunch 关于 DevDay 上 Codex 变化的报道](https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/)。
 
-来源：[Introducing Claude Sonnet 5.5](https://www.anthropic.com/claude-sonnet-5-5)、[Claude Code CHANGELOG `2.1.284`](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md)、[OpenAI API 价格](https://developers.openai.com/api/docs/pricing)、[Codex `rust-v0.159.1`](https://github.com/openai/codex/releases/tag/rust-v0.159.1)、[TechCrunch 关于 DevDay 上 Codex 变化的报道](https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/)。
+## 2026-09-22 —— Opus 5.5 与 GPT-6 Sol 和 Luna 在同一天发布
 
-## 2026-09-22 —— 两家在同一天动了天花板的价格
-
-**Anthropic 于 2026-09-22 发布 Claude Opus 5.5（`claude-opus-5-5`）**，**每百万 token $4 / $20**，**缓存读 $0.20/M**、缓存写 $5/M，Fast 模式 $8 / $40，1M 上下文窗口。Anthropic 自己的说法是它"在多数工作上达到 Claude Fable 5.1 的水平，运行成本比 Opus 5 低 40%"，输出速度快约 30%。对照 Opus 5 的 $5 / $25 与 $0.50 缓存读，这是标价砍 20%、而 agent 负载真正花钱的那一列砍 60%。
+**Anthropic 于 2026-09-22 发布 Claude Opus 5.5（`claude-opus-5-5`）**，1M 上下文窗口。Anthropic 自己的说法是它"在多数工作上达到 Claude Fable 5.1 的水平"，输出速度快约 30%。
 
 公布的基准表里，Opus 5.5 在**全部九项**上都高于 Opus 5，在 agentic coding 与知识工作上同时高于 Fable 5.1 与 [GPT-6 Astra](agents/gpt-6-astra.md)：**Terminal-Bench 4.0 66.4%**（Fable 5.1 55.8、Opus 5 52.3、Astra 57.9）、**CursorBench 4.0 57.8%**、**FrontierCode v1.1 54.4%**、**GDPval-AA v2.1 1846 Elo**（Astra 1542）、**Humanity's Last Exam 67.7%**（带工具）、**OSWorld 2.0 81.8%**。落后 Astra 的有两项：**AutomationBench 40.0% 对 41.4%**、**Terminal-Bench-Science 0.1 58.7% 对 64.6%**。Anthropic 说 Sonnet 5.5 与 Haiku 5.5 会在"未来几周"跟上。
 
-agent 层这次不是等下一个版本，而是当天就动了：**[Claude Code](agents/claude-code.md) `v2.1.280` 把 Opus 5.5 设成默认的 Opus 模型**，并在自己的 changelog 条目里写明 1M 上下文与 $4 / $20 / $0.20 的价格。这是本地图一个月内第二次记录到 coding agent 的默认模型在一个补丁版本里换掉——[9 月 4 日 Codex CLI 对 Astra 做过同样的事](#2026-09-03--09-04--gpt-6-astra-发布codex-的默认在你脚下换了)。
+agent 层这次不是等下一个版本，而是当天就动了：**[Claude Code](agents/claude-code.md) `v2.1.280` 把 Opus 5.5 设成默认的 Opus 模型**，并在自己的 changelog 条目里写明 1M 上下文。这是本地图一个月内第二次记录到 coding agent 的默认模型在一个补丁版本里换掉——[9 月 4 日 Codex CLI 对 Astra 做过同样的事](#2026-09-03--09-04--gpt-6-astra-发布codex-的默认在你脚下换了)。
 
-**几小时后 OpenAI 发布 GPT-6 Sol 与 GPT-6 Luna。** 一手价格是 **Sol $2 / $10**、缓存输入 $0.20，**Luna $0.10 / $0.50**、缓存输入 $0.01——各自约为同名 GPT-5.6 档的一半，而且是常规价不是促销价。加上 $10 / $50 的 Astra，OpenAI 现在有一套跨两个数量级的 GPT-6 三档。
+**几小时后 OpenAI 发布 GPT-6 Sol 与 GPT-6 Luna。** 加上 Astra，OpenAI 现在有一套 GPT-6 三档。
 
-**对选型的影响：** 三点要带走。
+**对选型的影响：** **撞名是实打实的运维风险。** `GPT-6 Sol` 与 `GPT-5.6 Sol` 是两个不同的模型，Luna 同理。配置文件里写 "sol" 等于什么都没说。请写完整的 model id。
 
-第一，**天花板那一行不再是有意思的那一行。** Astra 与 Fable 5.1 仍然都是 $10 / $50，但两家最新、性价比最好的模型现在都落在那条线**之下**。按价格选型，该比的是 Opus 5.5（$4 / $20）对 GPT-6 Sol（$2 / $10），不是两个天花板互比。
+本地图目前还没有 5.5 家族与 GPT-6 低档的 profile；在补上之前，[基准与计费](comparisons/benchmarks-and-billing.md) 表已把两代分开列。
 
-第二，**两家在缓存读上收敛了。** Opus 5.5 是 $0.20/M，GPT-6 Sol 也是 $0.20/M，完全相同。缓存读是长跑 agent 账单堆积的地方，所以本地图这一季一直指着的那一列，现在已经区分不了它们。仍然存在结构性差异的是**长上下文的计价形状**：OpenAI 过线之后对整个请求换价，Anthropic 的 1M 窗口整窗按标准价。
-
-第三，**撞名是实打实的运维风险。** `GPT-6 Sol` 与 `GPT-5.6 Sol` 是两个不同的模型、两个不同的价（$2 / $10 对促销的 $4 / $20），Luna 同理（$0.10 / $0.50 对 $0.20 / $1.20）。配置文件里写 "sol" 等于什么都没说。请写完整的 model id。
-
-本地图目前还没有 5.5 家族与 GPT-6 低档的 profile；在补上之前，[成本 & benchmark](comparisons/cost-and-benchmarks.md) 表已把两代分开列。
-
-来源：[Introducing Claude Opus 5.5](https://www.anthropic.com/news/claude-opus-5-5)、[Claude Code CHANGELOG `2.1.280`](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md)、[OpenAI API 价格页](https://developers.openai.com/api/docs/pricing)。
+来源：[Introducing Claude Opus 5.5](https://www.anthropic.com/news/claude-opus-5-5)、[Claude Code CHANGELOG `2.1.280`](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md)。
 
 ## 2026-09-20 —— 智谱开源 ZCode，而本地图一直把它记成闭源（2026-09-30 发现）
 
@@ -166,23 +146,23 @@ agent 层这次不是等下一个版本，而是当天就动了：**[Claude Code
 
 **OpenAI 于 2026-09-03 发布 [GPT-6 Astra](https://openai.com/index/gpt-6-astra/)**，先是面向受信任伙伴的限定预览，次日面向付费 ChatGPT 用户公开——公开的是一个**会直接拒绝网络安全等领域部分 prompt 的受限版本**，进阶能力走 Daybreak Blue 审批，也就是 2026 年 8 月 GPT-5.6-Cyber 落地时用的那道闸。OpenAI 的说法是在编码、数学、以及驱动计算机和网页浏览器上达到 SOTA，而具体主张集中在*保持专注、守住任务边界、把多步流程做完*，不是刷分。公布的软件工程数字是 **DeepSWE v1.1 74.1%**——不是 SWE-bench Verified，所以发布时不存在与 Claude 的同口径对比。
 
-一手 API 价格：Astra **$10 / $50 每百万 token，另有 $20 / $75 的长上下文档**，缓存输入 $1，batch 半价，Fast 模式 2 倍价（EU 数据驻留下不可用）。那条换价线据报是 **272k 输入 token**，窗口据报约 105 万 token、最大输出 128k——这两个数字是二手的，因为 `openai.com` 当时无法直接抓取；价格与"两档"结构则出自 OpenAI 自己的价格页。
+窗口据报约 105 万 token、最大输出 128k——这两个数字是二手的，因为 `openai.com` 当时无法直接抓取。Fast 模式在 EU 数据驻留下不可用。
 
 紧接着产品在使用者脚下动了：**Codex CLI `rust-v0.153.1`（9 月 3 日）加入对 `gpt-6-astra` 的一等配置支持，`rust-v0.153.4`（9 月 4 日）"把它变成未显式配置模型时打包的默认"**——引自该项目自己的 release note。
 
-**对选型的影响：** 两点要带走。第一，前沿现在是一次**同标价对比**——Astra 与 [Fable 5.1](agents/claude-fable-5.md) 相隔两天，都标 $10 / $50，于是决策转到缓存读（$1 对 $0.25）和长上下文的*形状*上：OpenAI 在 272k token 之后把输入价翻倍，Anthropic 的 1M 窗口整窗按标准价。一个在会话中不断堆积上下文的 agent，可能没人拍板就越过了 OpenAI 那条线。第二，对任何在跑 [Codex](agents/codex.md) 的人更要紧：**默认模型是在一个补丁版本里换掉的，而新的默认会拒绝自己一部分网安能力**。这是本地图第一次记录到厂商把一个*刻意受限*的模型作为编码产品的静默默认。如果你的活是安全相邻的，"你有权用哪个版本"现在是选型输入，不是脚注。详见 [GPT-6 Astra](agents/gpt-6-astra.md)、[Codex](agents/codex.md)、[成本与基准](comparisons/cost-and-benchmarks.md)。
+**对选型的影响：** 对任何在跑 [Codex](agents/codex.md) 的人：**默认模型是在一个补丁版本里换掉的，而新的默认会拒绝自己一部分网安能力**。这是本地图第一次记录到厂商把一个*刻意受限*的模型作为编码产品的静默默认。如果你的活是安全相邻的，"你有权用哪个版本"现在是选型输入，不是脚注。详见 [GPT-6 Astra](agents/gpt-6-astra.md)、[Codex](agents/codex.md)。
 
-来源：[GPT-6 Astra: A new generation of intelligence](https://openai.com/index/gpt-6-astra/)、[OpenAI API 价格页](https://developers.openai.com/api/docs/pricing)、[openai/codex rust-v0.153.4 release](https://github.com/openai/codex/releases/tag/rust-v0.153.4)、[GPT-6 Astra（Wikipedia）](https://en.wikipedia.org/wiki/GPT-6_Astra)。
+来源：[GPT-6 Astra: A new generation of intelligence](https://openai.com/index/gpt-6-astra/)、[openai/codex rust-v0.153.4 release](https://github.com/openai/codex/releases/tag/rust-v0.153.4)、[GPT-6 Astra（Wikipedia）](https://en.wikipedia.org/wiki/GPT-6_Astra)。
 
-## 2026-09-01 —— Fable 5.1 砍掉的正是 agent 真正产生的那部分账单
+## 2026-09-01 —— Fable 5.1 与 Mythos 5.1 发布
 
-**Anthropic 于 2026-09-01 发布 Claude Fable 5.1 与 Claude Mythos 5.1**——仍是同一底层模型、不同安全访问，Mythos 通过 Project Glasswing 仅向经审核的网络安全与生命科学组织开放。标价没动：**$10 / $50 每百万 token，与 Fable 5 相同**。动的是缓存：**缓存读降了 75%，从 $1/M 到 $0.25/M**——是输入价的 2.5%，而其他所有 Claude 模型都是 10%。Anthropic 给的效果是**典型负载成本低约 25%，重 agent 负载最多低 45%**。
+**Anthropic 于 2026-09-01 发布 Claude Fable 5.1 与 Claude Mythos 5.1**——仍是同一底层模型、不同安全访问，Mythos 通过 Project Glasswing 仅向经审核的网络安全与生命科学组织开放。
 
 能力上，Anthropic 报的是 **SWE-bench Pro 81.2**（对 Fable 5 与 Opus 5 都是小幅领先）、**Terminal-Bench 4.0 从 42.0% 升到 55.8%**、**Terminal-Bench-Science 翻倍有余，24.7% → 52.6%**。Claude Code 用户的网安类误报应减少约 **60%**。这次还加入了对 Claude 生成文本的**隐形水印**，并按欧盟法规要求向符合条件的组织私有预览检测 API。
 
-**对选型的影响：** 这是一次精准打在本地图所覆盖负载上的降价。长跑 agent 每一轮都重放一大块上下文，所以账单堆积的地方是缓存读而不是新输入；在标价不动的前提下把它砍掉 75%，意味着比较前沿模型时，标价已经是*错的*那一列。9 月 1 日之前算过 Fable 预算的人应该重算一遍。另有两点值得记录。外面广为流传的 **5.1"SWE-bench Verified 95%"是第三方榜单数字——Anthropic 对两个 Fable 版本都没有公布 SWE-bench Verified 分数**，本地图记的是 SWE-bench Pro 81.2。以及水印：这是本地图模型层第一次出现内容溯源机制，今天它是合规特性，但这类东西后来往往会变成采购问题。详见 [Claude Fable 5.1](agents/claude-fable-5.md)、[成本与基准](comparisons/cost-and-benchmarks.md)。
+**对选型的影响：** 两点值得记录。外面广为流传的 **5.1"SWE-bench Verified 95%"是第三方榜单数字——Anthropic 对两个 Fable 版本都没有公布 SWE-bench Verified 分数**，本地图记的是 SWE-bench Pro 81.2。以及水印：这是本地图模型层第一次出现内容溯源机制，今天它是合规特性，但这类东西后来往往会变成采购问题。详见 [Claude Fable 5.1](agents/claude-fable-5.md)。
 
-来源：[Anthropic 价格文档](https://platform.claude.com/docs/en/about-claude/pricing)、[Anthropic's Claude Fable 5.1 and Mythos 5.1 arrive with a 75% cost reduction for Fable cache reads](https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads)、[Anthropic Launches Claude Fable 5.1 With Lower Costs and Fewer False Positives](https://www.macrumors.com/2026/09/01/anthropic-claude-fable-5-1/)。
+来源：[Claude Fable 5.1 发布报道（MacRumors）](https://www.macrumors.com/2026/09/01/anthropic-claude-fable-5-1/)。
 
 ## 2026-04 → 09 —— 开放权重这一档追到了前沿，并且交付了闭源那边设闸的东西（补录）
 
@@ -200,15 +180,15 @@ agent 层这次不是等下一个版本，而是当天就动了：**[Claude Code
 
 来源：[DeepSeek-V4-Pro 模型卡](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)、[DeepSeek V4 发布说明](https://api-docs.deepseek.com/news/news260424/)、[MoonshotAI/Kimi-K3](https://github.com/MoonshotAI/Kimi-K3)、[Kimi K3 技术博客](https://www.kimi.com/blog/kimi-k3)、[zai-org/GLM-5](https://github.com/zai-org/GLM-5)、[GLM-5.3 博客](https://z.ai/blog/glm-5.3)、[QwenLM/Qwen3-Coder](https://github.com/QwenLM/Qwen3-Coder)。
 
-## 2026-08-31 —— Meta 给 Muse Code 定价，顺便把你的 prompt 摆上了菜单
+## 2026-08-31 —— Meta 让 Muse Code 转正，顺便把你的 prompt 摆上了菜单
 
-**Meta 于 2026 年 8 月 31 日把 [Muse Code](https://thenewstack.io/muse-code-sdk-pricing/) 转正**，距 8 月 5 日的 beta 不到一个月，而这次公告几乎全是关于价格与触达，不是关于循环本身。三档订阅上线，**从每月 $5 到 $50**。一个**开发者预览版 SDK** 把这个 agent 从命令行里带了出来：按 Mark Zuckerberg 的说法，开发者可以在 Muse Code 之上造自己的 agent——嵌进应用、接自定义工具、流式看进度、恢复会话。运行时本身也长出了长任务真正需要的部分：**会话间消息传递，让并行的 agent 直接共享状态**而不是靠人来回粘贴；把一个任务拆给多个 subagent 的工作流；以及**跑在独立 git worktree 里的 subagent**。它仍然是 macOS 或 Linux 上一条命令装好，仍然没有图形界面和 IDE 集成。
+**Meta 于 2026 年 8 月 31 日把 [Muse Code](https://thenewstack.io/muse-code-sdk-pricing/) 转正**，距 8 月 5 日的 beta 不到一个月。三档订阅上线。一个**开发者预览版 SDK** 把这个 agent 从命令行里带了出来：按 Mark Zuckerberg 的说法，开发者可以在 Muse Code 之上造自己的 agent——嵌进应用、接自定义工具、流式看进度、恢复会话。运行时本身也长出了长任务真正需要的部分：**会话间消息传递，让并行的 agent 直接共享状态**而不是靠人来回粘贴；把一个任务拆给多个 subagent 的工作流；以及**跑在独立 git worktree 里的 subagent**。它仍然是 macOS 或 Linux 上一条命令装好，仍然没有图形界面和 IDE 集成。
 
-API 价格现在有了确切记录，而且是两档不是一档。**Standard 是每百万输入/输出 token $1.25 / $4.25**（缓存输入 $0.15），每分钟 3,000 次请求、400 万 token。**Contributor 是 $0.10 / $0.20**（缓存 $0.002）——输入约便宜 **12 倍、输出约便宜 21 倍**——每分钟只有 60 次请求上限；它之所以这么便宜，是因为你授权 Meta **用你的 prompt 与 completion 训练未来的模型**。
+API 分两档，不是一档。**Standard** 每分钟 3,000 次请求、400 万 token。**Contributor** 每分钟只有 60 次请求上限，而且要求你授权 Meta **用你的 prompt 与 completion 训练未来的模型**。
 
-**对选型的影响：** 三周前本地图写过，厂商在竞争的是**access 和价格，不是循环**。这次是同一个论断加了一个新维度，而新的这个才是有意思的。本地图记录过的其他所有价格动作——OpenAI 的 Sol 降价、按量 credits、分档——要你拿钱换能力。Contributor 档要你拿**代码保密性**换输出侧 21 倍的折扣，而对 agent 负载来说（token 花在生成的 diff、工具调用和推理上，不是花在 prompt 文本上）输出侧正是账单的大头。这让它成为本地图上第一个不是预算决策而是**治理决策**的定价选择——而且这个决策，一个开发者可以在一台 checkout 了公司仓库的机器上悄悄做掉。那档 $5 的入门订阅要按同样的方式读：最便宜的入口，就是把你的代码泛化进别人模型里的那条路。两个二阶注记。Contributor 的 60 rpm 上限低到足以成为并行 subagent 工作流的真实约束，所以这个折扣和同一次发布正在宣传的并发能力**并不叠加**。以及 Muse Code 仍然**没有公开仓库**，所以不像本地图榜单上的任何一个 harness，你没法在决定之前先读它——它因此仍不纳入本地图跟踪。Muse Spark 1.2 的单价现已记入[成本与基准](comparisons/cost-and-benchmarks.md)；它的榜单分数仍然没有以本地图愿意照抄的形式公布。
+**对选型的影响：** 三周前本地图写过，厂商在竞争的是**access，不是循环**。这次是同一个论断加了一个新维度，而新的这个才是有意思的。Contributor 档要你放弃**代码保密性**。这让它成为本地图上第一个属于**治理决策**的 API 档位选择——而且这个决策，一个开发者可以在一台 checkout 了公司仓库的机器上悄悄做掉。两个二阶注记。Contributor 的 60 rpm 上限低到足以成为并行 subagent 工作流的真实约束，所以这一档和同一次发布正在宣传的并发能力**并不叠加**。以及 Muse Code 仍然**没有公开仓库**，所以不像本地图榜单上的任何一个 harness，你没法在决定之前先读它——它因此仍不纳入本地图跟踪。Muse Spark 1.2 的榜单分数仍然没有以本地图愿意照抄的形式公布。
 
-来源：[Meta 的 Claude Code 对手转正，带三档订阅](https://thenewstack.io/muse-code-sdk-pricing/)、[Meta 用数据换 21 倍便宜给 Muse Code 定价](https://www.implicator.ai/meta-muse-code-21x-discount-for-developer-data/)、[Introducing Muse Code and Muse Spark 1.2](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2)。
+来源：[Meta 的 Claude Code 对手转正，带三档订阅](https://thenewstack.io/muse-code-sdk-pricing/)、[Muse Code 的 Contributor 档与数据共享（Implicator）](https://www.implicator.ai/meta-muse-code-21x-discount-for-developer-data/)、[Introducing Muse Code and Muse Spark 1.2](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2)。
 
 ## 2026-08-26 → 08-27 —— Anthropic 把 agent 推出终端：推进浏览器，也推上实验台
 
@@ -232,13 +212,13 @@ API 价格现在有了确切记录，而且是两档不是一档。**Standard �
 
 来源：[Aurora 勒索软件针对 ESXi，滥用 Cursor Agent 做利用](https://gambit.security/blog-posts/aurora-ransomware-targets-esxi-abuses-cursor-agent-for-exploitation)、[勒索软件操作者把 Cursor Agent 开进十家受害机构内网](https://oodaloop.com/briefs/cyber/ransomware-operator-ran-cursor-agent-inside-ten-victim-networks/)、[Aurora 勒索软件操作者用 Cursor AI 攻击 10 个目标](https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html)。
 
-## 2026-08-21 —— OpenAI 把 Sol 降价 20% 以上，价格挪动了整张榜
+## 2026-08-21 —— Codex CLI 在热度榜上从 #9 跳到 #2
 
-OpenAI 于 **2026 年 8 月 21 日把 GPT-5.6 Sol 从每百万输入/输出 token 的 $5 / $30 降到 $4 / $20**，输入降 20%，**输出降 33%**。这是促销价，为期三个月——至少持续到 2026 年 11 月 21 日——且适用范围不止裸 API：按量付费 API、**Codex credits**、符合条件的 ChatGPT Work 计划都算。这是 GPT-5.6 家族一个月内的第二次降价。同一天，OpenAI 宣布 **Codex 活跃用户 2000 万**。
+OpenAI 于 2026 年 8 月 21 日宣布 **Codex 活跃用户 2000 万**。
 
-**对选型的影响：** 这是热度榜第一次由降价而不是发布来解释榜首移动。[Codex CLI](agents/codex.md) 从 #9 到 #2，**周 star 率跳增 4.5 倍**，是本地图记录过最大的一次重新加速，而窗口内并没有可与之匹配的产品事件——这段时间的 release 都是常规增量（Bedrock Runtime 支持、带 MCP 工具的异步 hooks、会话 fork 与恢复、TUI 对话导出）。对选型有两点推论。第一，降得更狠的是输出侧，而这对 agent 负载的意义被低估了：agent 循环的 token 花在生成的 diff、工具调用和推理上，不是花在 prompt 文本上，所以 33% 的输出降价，实际折扣比"20% 以上"这个标题给人的印象大。第二，也更不舒服的一点：**"促销"这两个字是承重的**。三个月的价格不是预算基线；任何按 $4 / $20 做的测算都需要在 11 月复核一次，而按档位算成本的那张表——见[成本与基准](comparisons/cost-and-benchmarks.md)——从此是一份要维护的运营文档，不是一张参考表。本地图一直在跟的那条大趋势没有变：厂商在**访问方式和价格**上竞争，不在循环上。
+**对选型的影响：** [Codex CLI](agents/codex.md) 从 #9 到 #2，**周 star 率跳增 4.5 倍**，是本地图记录过最大的一次重新加速；这段时间的 release 都是常规增量（Bedrock Runtime 支持、带 MCP 工具的异步 hooks、会话 fork 与恢复、TUI 对话导出）。本地图一直在跟的那条大趋势没有变：厂商在**访问方式**上竞争，不在循环上。
 
-来源：[OpenAI 下调 GPT-5.6 Sol 价格](https://enterprisedna.co/resources/news/openai-gpt-56-sol-price-cut-20-percent-frontier-model-august-2026/)、[GPT-5.6](https://openai.com/index/gpt-5-6/)、[降价后的 GPT-5.6 定价](https://cellcog.ai/blog/gpt-5-6-pricing/)、[openai/codex releases](https://github.com/openai/codex/releases)。
+来源：[GPT-5.6](https://openai.com/index/gpt-5-6/)、[openai/codex releases](https://github.com/openai/codex/releases)。
 
 ## 2026-08-13 —— DeepSeek 开源了一个没有内核的 harness
 
@@ -262,7 +242,7 @@ OpenAI 于 **2026 年 8 月 21 日把 GPT-5.6 Sol 从每百万输入/输出 toke
 
 **对选型的影响：** 本地图 7 月写过"每一家主要模型厂商现在都有自己的一方 coding CLI"，并把这个阵营列为 Anthropic、OpenAI、Moonshot、小米、xAI。Meta 是当时显眼的缺席者，现在不是了——但要注意它是*怎么*来的。
 
-> **更正（2026-09-06）。** 那份名单是错的，本条原标题「Meta 补上厂商 CLI 的最后一块」也是错的。**谷歌的 [Gemini CLI](agents/gemini-cli.md)（Apache-2.0，10.7 万 star）与阿里的 [Qwen Code](agents/qwen-code.md)（Apache-2.0，2.77 万）当时都早已在发**，而两者既不在 7 月那次点名里，也直到 9 月 6 日那次覆盖面审计之前根本不在本地图里。Meta 没有补上最后一块；它加入的是一个本地图数错了的阵营。下面这段保持原样，只加这条更正，不做无声改写。Muse Code 是通过 Meta Model API 分发的 beta，**没有公开仓库**，所以它连 Grok Build 那种 source-available 的一端都没够到；本地图的榜单也因此不跟踪它。厂商阵营在不到一个月里迅速填满，而且填进来的多半是你读不到源码的 agent——这才是真正的故事；而按上面那条更正，它当时其实比本条以为的还要满。同时，Claude Code 和 GPT-5.6-Cyber 从另一个角度指向同一件事：厂商现在竞争的差异点是**部署方式与访问控制**——这个 loop 跑在谁的基础设施上、谁被允许跑它——而不是 loop 本身。Muse Code 那个可精确重放的事件日志，是这批发布里唯一一个真正的能力想法，而它对付的正是[观测层](comparisons/observability-and-evals.md)从外部切入的同一个持久性问题。Muse Spark 1.2 的价格与指数位次尚未在本地图记录，因此不会出现在[成本与基准](comparisons/cost-and-benchmarks.md)页。
+> **更正（2026-09-06）。** 那份名单是错的，本条原标题「Meta 补上厂商 CLI 的最后一块」也是错的。**谷歌的 [Gemini CLI](agents/gemini-cli.md)（Apache-2.0，10.7 万 star）与阿里的 [Qwen Code](agents/qwen-code.md)（Apache-2.0，2.77 万）当时都早已在发**，而两者既不在 7 月那次点名里，也直到 9 月 6 日那次覆盖面审计之前根本不在本地图里。Meta 没有补上最后一块；它加入的是一个本地图数错了的阵营。下面这段保持原样，只加这条更正，不做无声改写。Muse Code 是通过 Meta Model API 分发的 beta，**没有公开仓库**，所以它连 Grok Build 那种 source-available 的一端都没够到；本地图的榜单也因此不跟踪它。厂商阵营在不到一个月里迅速填满，而且填进来的多半是你读不到源码的 agent——这才是真正的故事；而按上面那条更正，它当时其实比本条以为的还要满。同时，Claude Code 和 GPT-5.6-Cyber 从另一个角度指向同一件事：厂商现在竞争的差异点是**部署方式与访问控制**——这个 loop 跑在谁的基础设施上、谁被允许跑它——而不是 loop 本身。Muse Code 那个可精确重放的事件日志，是这批发布里唯一一个真正的能力想法，而它对付的正是[观测层](comparisons/observability-and-evals.md)从外部切入的同一个持久性问题。Muse Spark 1.2 的指数位次尚未在本地图记录，因此不会出现在[基准与计费](comparisons/benchmarks-and-billing.md)页。
 
 来源：[Introducing Muse Code and Muse Spark 1.2](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2)、[developer.meta.com/ai/models/muse-spark](https://developer.meta.com/ai/models/muse-spark/)、[Self-hosted environments for Claude Code](https://claude.com/blog/run-claude-code-sessions-on-your-own-compute)、[Claude Code 自托管文档](https://code.claude.com/docs/en/self-hosted-environments)、[GPT-5.6-Cyber](https://developers.openai.com/api/docs/models/gpt-5.6-cyber)。
 
@@ -276,13 +256,13 @@ OpenAI 于 **2026 年 8 月 21 日把 GPT-5.6 Sol 从每百万输入/输出 toke
 
 ## 2026-07-24 —— Opus 5 让前沿档重新变成可选项
 
-**Anthropic 于 2026-07-24 发布 [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5)**，距 Fable 5 退出订阅内含十七天。它守住 Opus 档的价格——**$5 / $25 每百万 token，与 Opus 4.8 相同**——而 Anthropic 的定位是以一半成本接近 Fable 5 的前沿智力。具体主张：**CursorBench 3.2 距 Fable 5 峰值 0.5% 以内**、**OSWorld 2.0 在任意价位上都优于所有模型**（且以约三分之一成本超过 Fable 5）、**ARC-AGI 3 约为次优模型的 3 倍**、Frontier-Bench v0.1 达到 Opus 4.8 的两倍以上。它带 **1M token 上下文窗口，既是默认也是上限**，最大输出 128k，默认开启思考，并有五档 effort 设置。它成为 **Claude Max 的默认模型**、Pro 上最强的模型；被安全分类器拦下的请求回退到 Opus 4.8。网安轴上它刻意落后于 Mythos 5。
+**Anthropic 于 2026-07-24 发布 [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5)**，距 Fable 5 退出订阅内含十七天。Anthropic 的定位是接近 Fable 5 的前沿智力。具体主张：**CursorBench 3.2 距 Fable 5 峰值 0.5% 以内**、**OSWorld 2.0 优于所有模型**、**ARC-AGI 3 约为次优模型的 3 倍**、Frontier-Bench v0.1 达到 Opus 4.8 的两倍以上。它带 **1M token 上下文窗口，既是默认也是上限**，最大输出 128k，默认开启思考，并有五档 effort 设置。它成为 **Claude Max 的默认模型**、Pro 上最强的模型；被安全分类器拦下的请求回退到 Opus 4.8。网安轴上它刻意落后于 Mythos 5。
 
-三周半前的 **6 月 30 日**，**Claude Sonnet 5** 已以 **$2 / $10** 落地——定位接近 Opus 4.8——其首发价在 8 月被确认转正，原定 9 月 1 日涨到 $3 / $15 的计划取消。
+三周半前的 **6 月 30 日**，**Claude Sonnet 5** 已落地，定位接近 Opus 4.8。
 
-**对选型的影响：** 7 月 7 日把 Anthropic 的天花板变成了按量花销，于是真正的问题往下沉了一档：*不花额度的时候你跑什么？* Opus 5 就是答案，而且强到让前沿档对多数工作真的变成可选项，而不是默认。再加上 $2/$10 的 Sonnet 5，Anthropic 侧现在是三级阶梯，其内部价差（Sonnet 5 到 Fable，两端 5 倍）比厂商之间的差距还大。本地图的路线表把天花板和默认档当作两个独立的选型决策，原因就在这里。详见 [Claude Opus 5](agents/claude-opus-5.md)、[Claude Code](agents/claude-code.md)。
+**对选型的影响：** 7 月 7 日把 Anthropic 的天花板改成了按量计费，于是真正的问题往下沉了一档：*不花额度的时候你跑什么？* Opus 5 就是答案，而且强到让前沿档对多数工作真的变成可选项，而不是默认。再加上 Sonnet 5，Anthropic 侧现在是三级阶梯。本地图的路线表把天花板和默认档当作两个独立的选型决策。详见 [Claude Opus 5](agents/claude-opus-5.md)、[Claude Code](agents/claude-code.md)。
 
-来源：[Introducing Claude Opus 5](https://www.anthropic.com/news/claude-opus-5)、[Introducing Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5)、[Anthropic 价格文档](https://platform.claude.com/docs/en/about-claude/pricing)。
+来源：[Introducing Claude Opus 5](https://www.anthropic.com/news/claude-opus-5)、[Introducing Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5)。
 
 ## 2026-07-14 —— xAI 发布 Grok Build，"开源"就此分成两种
 
@@ -294,9 +274,9 @@ SpaceXAI（xAI）发布了 **[Grok Build](agents/grok-build.md)**（`grok`），
 
 ## 2026-07-09 —— Codex 并入 ChatGPT；GPT-5.6 发布
 
-OpenAI 把独立的 Codex 应用并入 ChatGPT 桌面应用（macOS/Windows）：Codex 成为与 Chat 和新的 agentic 模式 **ChatGPT Work** 并列的专属编码入口，所有计划（含免费版）可用。同日，**GPT-5.6** 在 ChatGPT、Codex 和 API 全面接棒 GPT-5.5，分三档——Sol（$5/$30 每百万 token）、Terra（$2.5/$15）、Luna（$1/$6），另有 Ultra 多 agent 模式。Codex 周活超 500 万，其中 100 万以上用于软件开发以外的工作。
+OpenAI 把独立的 Codex 应用并入 ChatGPT 桌面应用（macOS/Windows）：Codex 成为与 Chat 和新的 agentic 模式 **ChatGPT Work** 并列的专属编码入口，所有计划（含免费版）可用。同日，**GPT-5.6** 在 ChatGPT、Codex 和 API 全面接棒 GPT-5.5，分三档——Sol、Terra、Luna，另有 Ultra 多 agent 模式。Codex 周活超 500 万，其中 100 万以上用于软件开发以外的工作。
 
-**对选型的影响：** OpenAI 侧"选哪个 coding agent"的问题坍缩成"你怎么用 ChatGPT"——移动的是产品边界，不只是能力。GPT-5.6 Sol 以 GPT-5.5 的老价格领跑 Artificial Analysis 编码 agent 指数（80，vs Fable 5 77.2、GPT-5.5 76.4、Opus 4.8 72.5），GPT-5.5 就此成为过渡选择。详见 [Codex](agents/codex.md)、[GPT-5.5](agents/gpt-5.5.md)。
+**对选型的影响：** OpenAI 侧"选哪个 coding agent"的问题坍缩成"你怎么用 ChatGPT"——移动的是产品边界，不只是能力。GPT-5.6 Sol 领跑 Artificial Analysis 编码 agent 指数（80，vs Fable 5 77.2、GPT-5.5 76.4、Opus 4.8 72.5），GPT-5.5 就此成为过渡选择。详见 [Codex](agents/codex.md)、[GPT-5.5](agents/gpt-5.5.md)。
 
 来源：[OpenAI Codex changelog](https://learn.chatgpt.com/docs/changelog)、[GPT-5.6 公告](https://openai.com/index/gpt-5-6/)、[Axios](https://www.axios.com/2026/07/09/ai-openai-gpt-release)。
 
@@ -322,7 +302,7 @@ Vercel 在伦敦的 Vercel Ship 上发布 **[eve](agents/eve.md)**（`vercel/eve
 
 Anthropic 发布 **Claude Fable 5** 和 **Claude Mythos 5**——同一底层模型，Fable 5 面向所有人（附加安全措施），Mythos 5 仅限获批组织。Mythos 是位于 Opus 之上的新等级。Fable 5 成为 Claude Code 中 Pro/Max 的默认模型，6 月 12 日因短暂的美国出口管制全球下架，7 月 1 日在更严格的安全分类器后面恢复（被拦截的请求回退 Opus 4.8），7 月 7 日起改为按量计费的 usage credits。两周前（5 月 28 日），**Opus 4.8** 已修复 Opus 4.7 的 tool-calling 问题并推出 Dynamic workflows。
 
-**对选型的影响：** Anthropic 侧的模型层变成两档预算决策——最难的活花 Fable 5 额度，Opus 4.8 作为可靠默认档。这个家族在本条之后继续补齐：6 月 30 日的 **Sonnet 5**（$2/$10）、7 月 24 日的 **[Opus 5](agents/claude-opus-5.md)** 接替 Opus 4.8 成为你实际会跑的那一档，再到 9 月 1 日的 **Fable 5.1**。详见 [Claude Fable 5.1](agents/claude-fable-5.md)、[Claude Opus 5](agents/claude-opus-5.md)、[Claude Code](agents/claude-code.md)。
+**对选型的影响：** Anthropic 侧的模型层变成两档决策——最难的活花 Fable 5 额度，Opus 4.8 作为可靠默认档。这个家族在本条之后继续补齐：6 月 30 日的 **Sonnet 5**、7 月 24 日的 **[Opus 5](agents/claude-opus-5.md)** 接替 Opus 4.8 成为你实际会跑的那一档，再到 9 月 1 日的 **Fable 5.1**。详见 [Claude Fable 5.1](agents/claude-fable-5.md)、[Claude Opus 5](agents/claude-opus-5.md)、[Claude Code](agents/claude-code.md)。
 
 来源：[Anthropic 公告](https://www.anthropic.com/news/claude-fable-5-mythos-5)、[Redeploying Fable 5](https://www.anthropic.com/news/redeploying-fable-5)、[Opus 4.8](https://www.anthropic.com/news/claude-opus-4-8)。
 
@@ -345,7 +325,7 @@ Anthropic 发布 **Claude Fable 5** 和 **Claude Mythos 5**——同一底层模
 
 ## 2026-04 —— GPT-5.5 与 "Codex for (almost) everything"
 
-相隔一周的两次 OpenAI 发布定下了春季格局。**4 月 16 日**：并入 ChatGPT 之前 Codex 最大的一次产品更新——任意 macOS app 的后台 Computer Use、同机并行多 agent 执行、带主动建议的内置浏览器、90+ plugin、周活 300 万开发者（3 月初的 2 倍）。**4 月 23 日**：**GPT-5.5** 作为 OpenAI 前沿 agentic 模型发布——Terminal-Bench 2.0 得分 82.7%（发布时最高）、1M token 上下文窗口、价格是 GPT-5.4 的 2 倍。
+相隔一周的两次 OpenAI 发布定下了春季格局。**4 月 16 日**：并入 ChatGPT 之前 Codex 最大的一次产品更新——任意 macOS app 的后台 Computer Use、同机并行多 agent 执行、带主动建议的内置浏览器、90+ plugin、周活 300 万开发者（3 月初的 2 倍）。**4 月 23 日**：**GPT-5.5** 作为 OpenAI 前沿 agentic 模型发布——Terminal-Bench 2.0 得分 82.7%（发布时最高）、1M token 上下文窗口。
 
 **对选型的影响：** 两者一起抬高了所有 OpenAI 系表面的能力上限，把模型层带进了 agent 选型。两者如今都已被接棒（见 7 月 9 日条目），但仍是"2026 竞赛跑得有多快"的参照点。详见 [GPT-5.5](agents/gpt-5.5.md)、[Codex](agents/codex.md)。
 

@@ -17,7 +17,7 @@
 | 状态 | 应用 **2025-08-19** 上线；App Store 最近一次更新是 **2026-07-09**（v2.0.20，新增 AutoClaw 入口）。Open-AutoGLM 最近一次推送是 **2026-03-06** |
 | 在哪里跑 | 应用：每位用户一台云手机和一台云电脑，部署在智谱的数据中心——不碰你自己的设备。框架：你的手机，由你的电脑控制 |
 | 模型 | AutoGLM-Phone-9B（中文应用）与 AutoGLM-Phone-9B-Multilingual，发布在 Hugging Face 和 ModelScope |
-| 价格 | 中国区 App Store 免费；框架免费 |
+| 使用条件 | 中国区 App Store 免费；框架免费 |
 | 官方页面 | https://apps.apple.com/cn/app/id6748391183 · https://github.com/zai-org/Open-AutoGLM |
 
 ## 什么时候选它

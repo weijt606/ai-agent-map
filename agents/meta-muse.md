@@ -17,10 +17,10 @@ One-line take: Muse is Meta's consumer personal agent — you message it in its 
 | Status | Announced **Sept 8 2026**, "rolling out in the US"; Meta's help center says Muse and its subscriptions are "in limited testing". **Available in Singapore since Oct 27 2026** on iOS, Android and muse.ai |
 | Where it runs | **Muse Secure VM** — a dedicated cloud computer per person, with its own browser |
 | Model | **Muse Spark**; Meta says [Muse Wonder](../market-events.md) will "soon power experiences in Muse", subscribers first |
-| Price | Free with a usage limit; **Power $20/month** (500M Muse tokens a week), **Maximum $100/month** (3B a week) |
+| Access | Free with a usage limit; paid **Power** and **Maximum** plans |
 | Official page | https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/ |
 
-Not to be confused with Meta's Muse *models* (Muse Spark, Muse Wonder), which this map tracks in [cost & benchmarks](../comparisons/cost-and-benchmarks.md), or with Muse Code, Meta's coding agent.
+Not to be confused with Meta's Muse *models* (Muse Spark, Muse Wonder), which this map tracks in [benchmarks & billing](../comparisons/benchmarks-and-billing.md), or with Muse Code, Meta's coding agent.
 
 ## When To Pick It
 
@@ -36,7 +36,7 @@ Not to be confused with Meta's Muse *models* (Muse Spark, Muse Wonder), which th
 
 ## Permissions And Data
 
-A host-side **Sentinel**, which the agent cannot override, is "the sole permission authority for connector actions and network egress"; the agent never sees real credentials. Grants can be one-time, session-, task- or time-bounded, or perpetual. Muse remembers what you tell it and makes unprompted suggestions; you can tell it to "forget" specific things. Meta runs a bug bounty of up to $300,000, including for successful prompt injections. The help center page this map read states prices and limits but says nothing about whether conversations train models.
+A host-side **Sentinel**, which the agent cannot override, is "the sole permission authority for connector actions and network egress"; the agent never sees real credentials. Grants can be one-time, session-, task- or time-bounded, or perpetual. Muse remembers what you tell it and makes unprompted suggestions; you can tell it to "forget" specific things. Meta runs a bug bounty of up to $300,000, including for successful prompt injections. The help center page this map read says nothing about whether conversations train models.
 
 ## Bottom Line
 

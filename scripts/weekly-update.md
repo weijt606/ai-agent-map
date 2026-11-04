@@ -17,7 +17,7 @@ Three things change every week, not just the rank:
    watchlist bullet and note it for next week.
 
 Plus one **conditional** pass: the selection surfaces (capability matrix,
-cost & benchmarks, memory approaches) are refreshed only when the window's
+benchmarks & billing, memory approaches) are refreshed only when the window's
 changes actually touch them — see step 5.
 
 ## Steps
@@ -105,10 +105,9 @@ changes actually touch them — see step 5.
      "Standouts" line if it changes the story.
    - **New profile with memory as a headline feature** → wire it into the right
      section of `comparisons/memory-approaches.md` ×2.
-   - **Model-layer event** (new model/tier, price change, new benchmark number
-     recorded in market-events) → refresh the affected rows in
-     `comparisons/cost-and-benchmarks.md` ×2, including the "as of" month in
-     its note line.
+   - **Model-layer event** (new model/tier, new benchmark number recorded in
+     market-events) → refresh the affected rows in
+     `comparisons/benchmarks-and-billing.md` ×2.
    - **Route or profile-count change** (new profile, new/renamed route) → update
      the data block in `scripts/render-route-map.py` (names, "+N" counts — they
      must keep summing to the home page's profile total) and rerun it to refresh
@@ -116,7 +115,10 @@ changes actually touch them — see step 5.
      does not regenerate it.
    - Keep the rule from the profiles: only numbers already established
      elsewhere in the map (vendor profiles, market-events) go into
-     cost-and-benchmarks — never invent a figure during a routine refresh.
+     benchmarks-and-billing — never invent a figure during a routine refresh.
+   - **This map does not list or compare prices.** No price figures, price
+     columns or cost rankings on any page, including market events and the
+     changelog. Billing mode (open source, subscription, metered) is fine.
 
 6. **Publish (gated).**
    ```

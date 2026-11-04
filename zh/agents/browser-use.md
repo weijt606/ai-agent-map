@@ -25,7 +25,7 @@
 
 当本地图记录到 [Kimi Work](kimi-work.md) 把浏览器自动化作为头条功能、以及 [Claude in Chrome](../market-events.md) 在取消逐动作审批后正式开放时，这个缺口就撑不住了。Browser Use 是这个品类里开放、可自托管的那一个，也是别人被拿来对比的那一个。
 
-> **兄弟仓库（2026-10-14 记录）：** 同一组织于 2026 年 9 月 16 日发布了 [`browser-use/jev-ultrafast`](https://github.com/browser-use/jev-ultrafast)——MIT，自述"最快最便宜的 web agent"——四周内到 22.9k star。它自 9 月 30 日起没有再推送，所以本地图把它记在这里，不单独立 profile；若恢复开发再重新评估。
+> **兄弟仓库（2026-10-14 记录）：** 同一组织于 2026 年 9 月 16 日以 MIT 许可发布了 [`browser-use/jev-ultrafast`](https://github.com/browser-use/jev-ultrafast)，四周内到 22.9k star。它自 9 月 30 日起没有再推送，所以本地图把它记在这里，不单独立 profile；若恢复开发再重新评估。
 
 ## 什么时候选它
 
@@ -38,7 +38,7 @@
 ## 什么时候不选它
 
 - **你还没想清楚那个浏览器登录着什么。** 这是这个品类的核心风险，不是脚注：一个握着你活跃会话的自主循环，能以你的身份行动。第一次运行之前，先把浏览器配置、凭据和审批闸划清楚。
-- 你要的是确定性自动化。如果流程稳定、可脚本化，Playwright 比让模型决定点哪里更便宜、更快、更可预测。
+- 你要的是确定性自动化。如果流程稳定、可脚本化，Playwright 比让模型决定点哪里更快、更可预测。
 - 你要的是编码 agent——这是给 agent 的一项能力，不是 agent 的替代品。
 - 你需要 Node 原生 SDK 而不是 Python——Stagehand（MIT，TypeScript）是可比的邻居，它在本地图的候补名单上而不是已收录。
 

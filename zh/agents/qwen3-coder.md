@@ -14,7 +14,7 @@
 | 路线 | 开放权重 agentic 模型 |
 | 权重 | [`QwenLM/Qwen3-Coder`](https://github.com/QwenLM/Qwen3-Coder) · [Hugging Face](https://huggingface.co/collections/Qwen/qwen3-coder-687fc861e53c939e52d52d10) |
 | 规格 | Qwen3-Coder-480B-A35B-Instruct、30B-A3B-Instruct，以及 **Qwen3-Coder-Next**（80B-A3B） |
-| 最适合 | 本地与成本受限、但仍需要真 agentic 编码的部署 |
+| 最适合 | 本地与资源受限、但仍需要真 agentic 编码的部署 |
 | 主要代价 | 不是开放档能力的天花板——它拿上限换体量 |
 | 上下文 | 原生 256K，用 Yarn 可扩到 100 万 |
 | 博客 | https://qwenlm.github.io/blog/qwen3-coder-next/ |
@@ -29,7 +29,7 @@
 
 - **模型必须跑在你所在的地方**——一台工作站、一个单节点、一个物理隔离环境，或者一个 1.6T 模型达不到的成本上限。
 - 你要把它接进现有循环：Qwen 明确支持 **Qwen Code、Cline 和 Claude Code**，并有专门设计的 function call 格式。
-- 你需要**仓库级上下文**又不想付前沿账单：原生 256K，用 Yarn 到 100 万。
+- 你需要**仓库级上下文**：原生 256K，用 Yarn 到 100 万。
 - 你的代码库很偏门——这条线宣称支持 **358 种编程语言**。
 - 你要的是多个尺寸而不是一种部署形态：顶上是 480B-A35B，小部署有 30B-A3B，效率首选是 Next。
 

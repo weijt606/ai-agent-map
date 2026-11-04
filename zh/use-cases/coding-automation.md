@@ -16,13 +16,13 @@
 | 我要终端优先、本地写代码，还想保留强 git 节奏 | [Aider](../agents/aider.md) |
 | 我要厂商官方、Kimi 原生的终端编码循环 | [Kimi Code](../agents/kimi-code.md) |
 | 我要终端写代码，且内置跨会话记忆 | [MiMoCode](../agents/mimocode.md) |
-| 我要在低成本 DeepSeek / MiMo 模型上跑 Claude Code 循环 | [CodeWhale](../agents/codewhale.md) |
+| 我要在 DeepSeek / MiMo 模型上跑 Claude Code 循环 | [CodeWhale](../agents/codewhale.md) |
 | 我要一个自己拥有、快、provider 中立、跨多会话带被动记忆的 harness | [jcode](../agents/jcode.md) |
 | 我要把各厂商终端编码 CLI 摆一起对比 | [终端编码 CLI agent](../comparisons/coding-cli-agents.md) |
 | 我要对比自己掌控循环的 harness 框架 | [agent harness 框架](../comparisons/agent-harness-frameworks.md) |
 | 我要把明确任务异步丢到云端跑 | [Codex](../agents/codex.md) |
 | 我要当前最强的 OpenAI agentic coding 模型 | [GPT-6 Astra](../agents/gpt-6-astra.md) |
-| 我要最强的 Claude 模型，做那些值得按量花钱的任务 | [Claude Fable 5.1](../agents/claude-fable-5.md) |
+| 我要最强的 Claude 模型，做那些值得按量计费的任务 | [Claude Fable 5.1](../agents/claude-fable-5.md) |
 | 我要一个 Claude 模型把 agent 跑一整天、不用盯额度（Claude Code 的默认 Opus 自 9 月 22 日起已是 Opus 5.5，Opus 5 是上一任默认） | [Claude Opus 5](../agents/claude-opus-5.md) |
 | 我已经在用 Claude Code，只是想补强 teams、skills 和 orchestration | [oh-my-claudecode](../agents/oh-my-claudecode.md) |
 | 我已经在用 Codex CLI，只是想补上 teams、hooks 和持久 workflow state | [oh-my-codex](../agents/oh-my-codex.md) |
@@ -67,15 +67,15 @@
 
 ## 关键取舍
 
-| 项目 | 最值得看的优点 | 最需要接受的代价 |
+| 项目 | 最值得看的优点 | 最需要接受的负担 |
 | --- | --- | --- |
 | Claude Code | 本地 loop 很顺，MCP、instructions、subagents 组合完整 | 权限、环境和节奏还是你自己管 |
 | Aider | 终端里的 AI 结对编程依然贴着 git 走 | 模型配置和终端 ergonomics 还是要自己扛 |
 | Claude Managed Agents | 更适合后台、定时和程序化运行 | 官方公开边界不是单一产品页 |
 | Codex | 云端隔离、日志和测试证据很清楚 | 更偏异步，不如编辑器内 agent 即时 |
-| GPT-6 Astra | OpenAI 当前天花板；agentic 执行、计算机与浏览器操作 | $10/$50，输入超 272k token 后整个请求按 $20/$75 计价；公开版本会拒绝一部分网安能力 |
-| Claude Fable 5.1 | SWE-bench Pro 81.2，缓存读 $0.25/M，是 GPT-6 Astra（$1/M）的四分之一 | $10/$50，按额度计费而非订阅内含 |
-| Claude Opus 5 | 天花板一半的价格，1M 上下文既是默认也是上限；9 月 22 日之前是 Claude Code 的默认 Opus，此后由 Opus 5.5 接替 | 网安上落后于 Mythos；完全闭源 |
+| GPT-6 Astra | OpenAI 当前天花板；agentic 执行、计算机与浏览器操作 | 公开版本会拒绝一部分网安能力 |
+| Claude Fable 5.1 | SWE-bench Pro 81.2 | 按额度计费而非订阅内含 |
+| Claude Opus 5 | 1M 上下文既是默认也是上限；9 月 22 日之前是 Claude Code 的默认 Opus，此后由 Opus 5.5 接替 | 网安上落后于 Mythos；完全闭源 |
 | GPT-5.5 | 2026 年 4 月发布时 agentic coding benchmark 最高、百万 token 上下文 | 2026-10-14 起从 Codex 与 ChatGPT 下线（限 ChatGPT 账号登录）；作血统参照保留 |
 | oh-my-claudecode | 给 Claude Code 补上 teams、可复用 skills 和更强运行控制 | 你会多背一层工作流，而且仍然依赖 Claude Code |
 | oh-my-codex | 给 Codex 带来更清晰的 clarify-plan-execute operating model | 配置更多、流程更重，而且最佳路径通常离不开 tmux |

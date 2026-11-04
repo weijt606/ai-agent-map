@@ -17,7 +17,7 @@ One-line take: Orca is an open-source desktop app for running several coding age
 | Form factor | Desktop app for macOS, Windows and Linux; iOS and Android companion app (beta); a headless `orca serve` runtime; an `orca` CLI |
 | Agents | "Works with any CLI agent": the README lists over thirty, including Claude Code, Codex, Grok, Cursor, GitHub Copilot, Antigravity, OpenCode, Pi, Hermes Agent, Goose, Kimi, Qwen Code and DeepSeek Harness |
 | Models and billing | Your own agent subscriptions or keys: "Plug in the subscriptions you already have and run them side by side." Account switching and Claude/Codex usage tracking are built in |
-| Price | The site says "Free and open source". An Enterprise page offers rollout guidance via "Get in touch" and lists no price; no hosted plan is described, and the docs say Orca "does **not** sell managed VPS hosting" |
+| Access | The site says "Free and open source". An Enterprise page offers rollout guidance via "Get in touch"; no hosted plan is described, and the docs say Orca "does **not** sell managed VPS hosting" |
 | Best for | A developer who already runs two or more coding agents and wants them in parallel worktrees, with review, a browser and phone alerts in one place |
 | Main cost | One more app between you and your agents, shipping a release almost every day; orchestration, Cloud VM and remote servers are labelled experimental or beta |
 

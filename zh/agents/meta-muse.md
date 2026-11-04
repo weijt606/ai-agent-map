@@ -17,10 +17,10 @@
 | 状态 | **2026-09-08** 发布，"正在美国推出"；Meta 帮助中心称 Muse 及其订阅"正在小范围测试"。**2026-10-27 起在新加坡开放**，覆盖 iOS、Android 和 muse.ai |
 | 在哪里跑 | **Muse Secure VM**——每人一台带独立浏览器的专属云端电脑 |
 | 模型 | **Muse Spark**；Meta 称 [Muse Wonder](../market-events.md) 将"很快为 Muse 提供能力"，订阅用户优先 |
-| 价格 | 免费（有用量限制）；**Power $20/月**（每周 5 亿 Muse token）、**Maximum $100/月**（每周 30 亿） |
+| 使用条件 | 免费（有用量限制）；付费的 **Power** 和 **Maximum** 套餐 |
 | 官方页面 | https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/ |
 
-别和 Meta 的 Muse *模型*（Muse Spark、Muse Wonder）混淆——本地图在[成本与 benchmark](../comparisons/cost-and-benchmarks.md) 里跟踪它们——也别和 Meta 的编码 agent Muse Code 混淆。
+别和 Meta 的 Muse *模型*（Muse Spark、Muse Wonder）混淆——本地图在[成本与 benchmark](../comparisons/benchmarks-and-billing.md) 里跟踪它们——也别和 Meta 的编码 agent Muse Code 混淆。
 
 ## 什么时候选它
 
@@ -36,7 +36,7 @@
 
 ## 权限与数据
 
-宿主侧的 **Sentinel**（agent 无法覆盖）是"连接器动作与网络出口的唯一权限决定方"；agent 永远看不到真实凭证。授权可以是一次性、会话级、任务级、限时或永久。Muse 会记住你说过的事并主动给建议；你可以让它"忘掉"特定内容。Meta 设有最高 30 万美元的漏洞奖励，包括成功的提示词注入。本地图读到的帮助中心页面写了价格与用量，但没有说对话是否用于训练模型。
+宿主侧的 **Sentinel**（agent 无法覆盖）是"连接器动作与网络出口的唯一权限决定方"；agent 永远看不到真实凭证。授权可以是一次性、会话级、任务级、限时或永久。Muse 会记住你说过的事并主动给建议；你可以让它"忘掉"特定内容。Meta 设有最高 30 万美元的漏洞奖励，包括成功的提示词注入。本地图读到的帮助中心页面没有说对话是否用于训练模型。
 
 ## 结论
 

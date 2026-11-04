@@ -17,7 +17,7 @@ One-line take: Paperclip is an open-source, self-hosted control plane that runs 
 | Form factor | A Node.js server with a React web UI and an embedded PostgreSQL database; installed with `npx paperclipai@latest onboard --yes` or Docker |
 | Agents | Adapters for OpenClaw, Claude Code, Codex, Cursor (and Cursor Cloud), Gemini CLI, OpenCode, Pi, Hermes (and Hermes Gateway), Grok Build and Kimi Code, plus custom processes, HTTP endpoints and adapter plugins |
 | Models | Chosen per agent; since `v2026.1023.0`, agents can also run through your own gateway (OpenRouter, Amazon Bedrock, Google Gemini, or any OpenAI Responses, Anthropic Messages or Chat Completions endpoint) |
-| Hosted tier | A "Paperclip Cloud" waitlist is linked from the README; the site describes no pricing, and the README roadmap marks "Cloud deployments" as in progress |
+| Hosted tier | A "Paperclip Cloud" waitlist is linked from the README, and the README roadmap marks "Cloud deployments" as in progress |
 | Best for | Someone running many agents on ongoing work (code, but also research, operations and content) who needs to know who is doing what, what it costs, and what needs sign-off |
 | Main cost | A server and a database to operate, a new concept set (companies, heartbeats, routines, governance), and releases that regularly carry breaking changes |
 

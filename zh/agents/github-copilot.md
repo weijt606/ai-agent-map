@@ -50,7 +50,7 @@
 - **Copilot CLI（7 月）**：plan mode 硬拦截会改动工作区的工具调用，另有语音模式持久化、canvas 支持、更细的 subagent 控制；/security-review 命令进入公测。
 - **Agent Skills（10 月 22 日）**：Anthropic 把 Agent Skills 标准捐给 Agentic AI Foundation，并把 GitHub Copilot 列为自 2025 年 12 月以来接入这一标准的 70 多个平台之一（Anthropic 的说法；[公告](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation)）。
 - **Fusion 与 Enterprise（10 月 28 日）**：替你在模型之间路由的 Copilot Fusion 正式可用；Copilot 包含进 GitHub Enterprise（面向有客户团队对接的企业），AI 用量"metered from the first request"（[Fusion](https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/)、[Enterprise](https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot/)）。
-- **GPT-6.1 Terra（10 月 26 日）**：OpenAI 这款 $1 / $5 的模型在发布当天进入 Copilot（[GitHub changelog](https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot)）。见[市场事件](../market-events.md)。
+- **GPT-6.1 Terra（10 月 26 日）**：OpenAI 这款模型在发布当天进入 Copilot（[GitHub changelog](https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot)）。见[市场事件](../market-events.md)。
 
 选型要点：平台优势还在复利——Copilot 越来越像整条 GitHub 工作流的 agent 层，而不是单个助手。
 

@@ -14,7 +14,7 @@
 | 路线 | Runtime & tools——给其他 agent 用的跨会话记忆层 |
 | 仓库 | [`thedotmack/claude-mem`](https://github.com/thedotmack/claude-mem)——Apache-2.0，TypeScript；截至 2026-11-04 有 11.20 万 star |
 | 开源 | open core。引擎、Claude-Mem Server、CLI、SDK、适配器和 MCP 工具是 Apache-2.0；托管云、团队/组织同步、SSO 等企业功能保留为商业部分 |
-| 付费档 | **CMEM Pro**（托管 observer、云同步、私有 MCP 链接）：30 天试用，之后 $30/月；Heavy $70/月，Max $100/月（超额另计费） |
+| 付费档 | **CMEM Pro**（托管 observer、云同步、私有 MCP 链接）：30 天试用后付费；另有 Heavy 和 Max 档（超额另计费） |
 | 适配哪些 agent | [Claude Code](claude-code.md)（插件 marketplace）、[Codex](codex.md)、[OpenCode](opencode.md)（1.3.4+，含 2.x）、[OpenClaw](openclaw.md) gateway、[Pi](pi.md)、[DeepSeek Harness](deepseek-harness.md)、[Grok Bot](grok-bot.md)、T3 Code、Antigravity CLI、Oh My Pi；仓库简介里还列了 Gemini、[Hermes](hermes-agent.md) 和 Copilot |
 | 适合谁 | 想让项目上下文跨会话延续、又不想手写记忆文件的开发者 |
 | 主要代价 | 本地要跑一个 worker（Bun）和做向量搜索的 Chroma；生成记忆本身要调模型，费用记在你的套餐、你自己的 key 或托管 observer 上 |
@@ -27,7 +27,7 @@
 
 需要深挖时，agent 走项目称为"渐进披露"的三步 MCP 工具：`search` 返回紧凑索引（每条约 50–100 token），`timeline` 看某条结果前后发生了什么，`get_observations` 只拉选中 ID 的完整内容。README 估计这比一次全取省约 10 倍 token。用 `<private>` 标签包住的内容不会被存储。
 
-**observer 跑在哪。** 首次安装时，安装器会让你在浏览器里登录 claude-mem（邮件魔法链接），再选 provider：托管的 claude-mem observer（CMEM Pro，厂商的卖点是把记忆生成从你 agent 的订阅额度里挪出去）、你自己的 OpenRouter 或 Gemini key，或者你的 Anthropic 套餐。传 `--provider`、设 `CLAUDE_MEM_ONLINE_OPTIN=false` 或在 CI 里运行，都会跳过登录。Grok Bot 集成默认用托管服务。README 说登录不需要绑卡，但定价页写的是试用需要信用卡或借记卡。
+**observer 跑在哪。** 首次安装时，安装器会让你在浏览器里登录 claude-mem（邮件魔法链接），再选 provider：托管的 claude-mem observer（CMEM Pro，厂商的卖点是把记忆生成从你 agent 的订阅额度里挪出去）、你自己的 OpenRouter 或 Gemini key，或者你的 Anthropic 套餐。传 `--provider`、设 `CLAUDE_MEM_ONLINE_OPTIN=false` 或在 CI 里运行，都会跳过登录。Grok Bot 集成默认用托管服务。README 说登录不需要绑卡，但 cmem.ai 写的是试用需要信用卡或借记卡。
 
 ## 什么时候选它
 
@@ -40,7 +40,7 @@
 
 - 你想要能当普通文件读写的记忆。claude-mem 把记忆存在 SQLite 和 Chroma 里，通过网页查看器访问；要文件式方案，看 [MiMoCode](mimocode.md) 或 `CLAUDE.md` 约定。
 - 你不希望会话活动离开本机。纯本地可以跑，但默认安装流程会把你引向托管 observer，开了云同步数据也会存在 CMEM 那边。
-- 你现在就需要开放许可下的团队共享记忆。团队/组织同步保留为商业部分，TeamBrain 试点也还没公布公开定价。
+- 你现在就需要开放许可下的团队共享记忆。团队/组织同步保留为商业部分。
 - 你要的是代码结构上下文而不是历史记录。那是 [CodeGraph](codegraph.md) 和 [Graft](graft.md) 的活。
 
 ## 能力轮廓
@@ -56,7 +56,7 @@
 
 ## 使用成本
 
-复杂度：中。安装器会装好 Bun、uv（向量搜索用）、hooks 和 worker，出问题有 `doctor` 命令修复。持续成本在 observer：每次会话都要模型做摘要，费用记在你的 Anthropic 套餐、你的 OpenRouter 或 Gemini key 上，或者付 CMEM Pro（$30/月起）。发版很频繁：2026-10-23 到 10-26 之间从 v15.0.2 走到了 v15.3.0，要做好经常更新的准备。
+复杂度：中。安装器会装好 Bun、uv（向量搜索用）、hooks 和 worker，出问题有 `doctor` 命令修复。持续成本在 observer：每次会话都要模型做摘要，费用记在你的 Anthropic 套餐、你的 OpenRouter 或 Gemini key 上，或者 CMEM Pro。发版很频繁：2026-10-23 到 10-26 之间从 v15.0.2 走到了 v15.3.0，要做好经常更新的准备。
 
 采用之前还有一点要知道：README 结尾有一节"What About CMEM?"，说 CMEM 是一个加密货币代币，"由第三方创建，但得到 Claude-Mem 作者的正式认可"，并附上了 Base 链上的合约地址。cmem.ai 的产品页面没有提到它。这不改变软件怎么工作，但它是这个项目公开形象的一部分。
 
@@ -66,4 +66,4 @@ claude-mem 是被动调回这种模式的外挂版：agent 不用换，加上 ho
 
 ## 来源
 
-- [claude-mem README](https://github.com/thedotmack/claude-mem#readme) · [Releases](https://github.com/thedotmack/claude-mem/releases) · [LICENSE（Apache-2.0）](https://github.com/thedotmack/claude-mem/blob/main/LICENSE) · [docs/license.md](https://github.com/thedotmack/claude-mem/blob/main/docs/license.md) · [docs/ip-boundary.md](https://github.com/thedotmack/claude-mem/blob/main/docs/ip-boundary.md) · [cmem.ai](https://cmem.ai/) · [cmem.ai 定价](https://cmem.ai/pricing) · [文档](https://docs.claude-mem.ai/)
+- [claude-mem README](https://github.com/thedotmack/claude-mem#readme) · [Releases](https://github.com/thedotmack/claude-mem/releases) · [LICENSE（Apache-2.0）](https://github.com/thedotmack/claude-mem/blob/main/LICENSE) · [docs/license.md](https://github.com/thedotmack/claude-mem/blob/main/docs/license.md) · [docs/ip-boundary.md](https://github.com/thedotmack/claude-mem/blob/main/docs/ip-boundary.md) · [cmem.ai](https://cmem.ai/) · [文档](https://docs.claude-mem.ai/)

@@ -47,7 +47,7 @@ One-line take: n8n is a workflow automation platform with native AI agent capabi
 
 ## Operating Cost
 
-Complexity is Medium. Self-hosting is free with unlimited executions, but requires Docker/Kubernetes knowledge for setup and maintenance. Cloud plans range from $20 to $800/month with execution-based limits. The real value proposition is combining AI agent capabilities with the massive integration ecosystem — something pure agent frameworks do not offer.
+Complexity is Medium. Self-hosting is free with unlimited executions, but requires Docker/Kubernetes knowledge for setup and maintenance. Paid cloud plans have execution-based limits. The real value proposition is combining AI agent capabilities with the massive integration ecosystem — something pure agent frameworks do not offer.
 
 ## Bottom Line
 

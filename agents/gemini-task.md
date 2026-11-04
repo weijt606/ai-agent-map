@@ -17,7 +17,7 @@ One-line take: Task is the agent mode of the Gemini app — introduced at I/O as
 | Status | Announced as Spark on **May 19 2026**, then a beta for subscribers; renamed **Task** (rename date not published) |
 | Where it runs | A cloud agent with a **remote browser and remote computer**; can also drive your local Chrome |
 | Model | Gemini 3.5 with the [Antigravity](antigravity.md) harness at the I/O announcement; Gemini 4 Argon reached the Gemini app for Pro and Ultra on Oct 13 2026. The help page now lists Flash and Argon as the Task models on AI Pro and Ultra, and says you can switch models manually in Task mode ([help page](https://support.google.com/gemini/answer/18648722?hl=en), checked 2026-11-03) |
-| Price | Requires **Google AI Pro ($19.99/month)** or **AI Ultra (from $99.99/month)**, US prices |
+| Access | Requires **Google AI Pro** or **AI Ultra** |
 | Requirements | Personal Google account (not work or school), Keep Activity on, opted in to Personal Intelligence |
 | Regions | Wherever Gemini Apps are supported **except the EEA, Nigeria, Switzerland and the UK** |
 | Official page | https://support.google.com/gemini/answer/17094507 |
@@ -40,7 +40,7 @@ Google's help page lists what it asks to confirm: sending communications, modify
 
 ## Bottom Line
 
-The safest default for a Google-centric life — clear confirmations, visible plans, first-party Workspace access — at a mid-range price, but closed to Europe and dependent on settings that keep your activity on file.
+The safest default for a Google-centric life — clear confirmations, visible plans, first-party Workspace access — but closed to Europe and dependent on settings that keep your activity on file.
 
 ## Sources
 

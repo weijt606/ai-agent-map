@@ -47,7 +47,7 @@ One-line take: Agent Zero is a general-purpose autonomous agent framework that d
 
 ## Operating Cost
 
-Complexity is Medium to High. Setup is ~10 minutes with Docker + Ollama, but ongoing tuning of model selection and prompts is your responsibility. Costs come from LLM API tokens or from running a VPS (~$24/month for a 4GB instance).
+Complexity is Medium to High. Setup is ~10 minutes with Docker + Ollama, but ongoing tuning of model selection and prompts is your responsibility. Costs come from LLM API tokens or from running a VPS.
 
 ## Bottom Line
 

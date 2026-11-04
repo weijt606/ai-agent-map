@@ -15,7 +15,7 @@ One-line take: Antigravity is Google's agent-first development platform. It star
 | Open source | No. The app and IDE are closed. The [`antigravity-cli`](https://github.com/google-antigravity/antigravity-cli) repo holds a README, changelog and examples, no source and no licence file. The [Python SDK](https://github.com/google-antigravity/antigravity-sdk-python) is Apache-2.0 but needs a compiled runtime binary that ships only in the PyPI wheels |
 | Best for | Developers on Gemini who want local agents they can run in parallel and watch, with browser use and plan review built in, and who want a usable free tier |
 | Main cost | Quotas are not published as numbers and Google says they can change; no bring-your-own-key; the product spans five surfaces that move at different speeds; terms forbid using your Antigravity login from third-party agents |
-| Status (2026-10-30) | Launched as a free public preview on 2025-11-18; the pricing page now labels the subscription plans "Generally Available". The SDK is in preview, and enterprise support in the JetBrains, Zed, Xcode and Eclipse extensions is in preview |
+| Status (2026-10-30) | Launched as a free public preview on 2025-11-18; the site now labels the subscription plans "Generally Available". The SDK is in preview, and enterprise support in the JetBrains, Zed, Xcode and Eclipse extensions is in preview |
 | Current versions (2026-10-30) | App v2.28.1 (2026-10-28) · CLI v1.4.0 (2026-10-16) · standalone IDE v2.6.0 (2026-10-26) · VS Code extension v1.10.0 (2026-10-26) · SDK v0.1.22 (2026-10-12) |
 | Platforms | macOS 12+ (Apple Silicon and Intel), Windows 10 64-bit+ (x64 and ARM64), Linux with glibc 2.28+ (x64 and ARM64), Googlebook |
 | Official site | https://antigravity.google |
@@ -57,19 +57,19 @@ From Google's "Choose a model" page. Each model has Low, Medium or High thinking
 
 Reading the table: after 2026-11-02 the free tier's only reasoning model is Gemini 3.8 Flash, and Claude stays only on paid Pro, Ultra and Enterprise. Gemini and the third-party models draw on separate quotas, each with a weekly limit and a five-hour limit. Image generation uses Nano Banana 2 and cannot be changed. Automations default to Flash (v2.24.0). When signed in with Google Cloud Application Default Credentials, the app and CLI can also offer Claude Opus 5.5 and Sonnet 5.5 if your Vertex AI project has access.
 
-## Pricing And Limits (as of 2026-10-30)
+## Plans And Limits (as of 2026-10-30)
 
-| Plan | Price (US, per month) | What Antigravity gets |
-| --- | --- | --- |
-| Free (Individual) | $0 | A quota refreshed weekly, a weekly rate limit, unlimited Tab completions and Command requests |
-| Google AI Pro | $19.99 | A quota refreshed every five hours until a weekly limit is reached |
-| Google AI Ultra | $99.99 or $199.99 | Google's plans page puts these at 5x and 20x Pro's limits; third-party models; the highest weekly limits |
-| Business via Google Cloud | Gemini Enterprise Standard and Plus from $30 per seat; or pay-as-you-go with no seat fee | App, CLI and IDE extensions; seat credits of $10 (Standard) or $15 (Plus) a month for first-party models; third-party models billed by token |
+| Plan | What Antigravity gets |
+| --- | --- |
+| Free (Individual) | A quota refreshed weekly, a weekly rate limit, unlimited Tab completions and Command requests |
+| Google AI Pro | A quota refreshed every five hours until a weekly limit is reached |
+| Google AI Ultra | Google's plans page puts these at 5x and 20x Pro's limits; third-party models; the highest weekly limits |
+| Business via Google Cloud (Gemini Enterprise Standard and Plus seats, or pay-as-you-go with no seat fee) | App, CLI and IDE extensions; monthly seat credits for first-party models; third-party models billed by token |
 
-Details that change the arithmetic:
+Details worth knowing:
 
 - Google publishes no request or token numbers for any plan. The plans page says limits track "the amount of work done by the agent", are set mainly by available capacity, and "are subject to modification".
-- Pro and Ultra can buy AI credits for overage, charged at Gemini Enterprise consumption prices. A setting controls whether credits are spent automatically (Never or Always).
+- Pro and Ultra can buy AI credits for overage. A setting controls whether credits are spent automatically (Never or Always).
 - No bring-your-own-key or custom endpoint for extra capacity, and no custom-contract organisational tier.
 - Sign-in needs a personal Google account aged 18+ in a supported country, or an organisation that has provisioned Antigravity. As of 2026-10-30, mainland China, Hong Kong, Macau and Russia are not on Google's list of supported countries and territories.
 
@@ -86,7 +86,7 @@ Details that change the arithmetic:
 ## When Not To Pick It
 
 - You need open source or self-hosting. Nothing here qualifies except the SDK's Python layer, and that still needs Google's compiled runtime.
-- You want to plan around a known budget. Without published quota numbers, the only way to know whether Pro is enough is to run your workload on it.
+- You want to plan around known limits. Without published quota numbers, the only way to know whether Pro is enough is to run your workload on it.
 - You want to bring your own model key or use the subscription from other tools. Google's FAQ says using third-party software (it names Claude Code, OpenClaw and OpenCode) with an Antigravity login violates the terms and can get the account suspended, and wrapping `agy` inside third-party agents is not supported on consumer plans. For Gemini inside another agent, Google points to a Gemini Enterprise or AI Studio API key.
 - You want the standalone IDE as an enterprise standard. It is not supported for enterprise, and its release pace now trails the app.
 - You are in mainland China, Hong Kong, Macau or Russia, or under 18.
@@ -126,10 +126,10 @@ Antigravity is Google's answer on the editor-centric route, and since May 2026 i
 
 All read 2026-10-30.
 
-- Product: [antigravity.google](https://antigravity.google/) · [Antigravity IDE](https://antigravity.google/product/antigravity-ide) · [Download (versions and requirements)](https://antigravity.google/download) · [Releases (update modes)](https://antigravity.google/releases) · [Pricing](https://antigravity.google/pricing)
+- Product: [antigravity.google](https://antigravity.google/) · [Antigravity IDE](https://antigravity.google/product/antigravity-ide) · [Download (versions and requirements)](https://antigravity.google/download) · [Releases (update modes)](https://antigravity.google/releases)
 - Docs: [Overview](https://antigravity.google/docs/overview/) · [Choose a model](https://antigravity.google/docs/models/) · [Plans](https://antigravity.google/docs/plans/) · [FAQ (regions, age, third-party use)](https://antigravity.google/docs/faq/) · [Enterprise](https://antigravity.google/docs/enterprise/) · [Authenticate](https://antigravity.google/docs/install/) · [IDE extensions](https://antigravity.google/docs/ide/extensions/) · [IDE browser](https://antigravity.google/docs/ide/browser/) · [Migrating from Gemini CLI](https://antigravity.google/docs/cli/gcli-migration/) · [Changelog (App v2.28.1, CLI v1.4.0, IDE v2.6.0, extensions v1.10.0, SDK v0.1.22)](https://antigravity.google/docs/changelog/)
 - Blog: [Introducing Google Antigravity (2025-11-18)](https://antigravity.google/blog/introducing-google-antigravity) · [Antigravity @ I/O 2026 (2026-05-19)](https://antigravity.google/blog/google-io-2026) · [Introducing Antigravity 2.0 (2026-05-19)](https://antigravity.google/blog/introducing-google-antigravity-2) · [Introducing Antigravity CLI (2026-05-19)](https://antigravity.google/blog/introducing-google-antigravity-cli) · [Changes to Antigravity plans (2026-05-19)](https://antigravity.google/blog/changes-to-antigravity-plans) · [Remote Control (2026-08-21)](https://antigravity.google/blog/remote-control-for-antigravity) · [Gemini 4 Argon in Antigravity (2026-10-13)](https://antigravity.google/blog/gemini-4-argon-in-google-antigravity) · [Plugin Marketplace (2026-10-29)](https://antigravity.google/blog/plugin-marketplace-in-antigravity)
-- [Gemini CLI quota and pricing (replacement banner)](https://geminicli.com/docs/resources/quota-and-pricing) · [Antigravity CLI AI credits](https://antigravity.google/docs/cli/credits/)
+- [Gemini CLI quota (replacement banner)](https://geminicli.com/docs/resources/quota-and-pricing) · [Antigravity CLI AI credits](https://antigravity.google/docs/cli/credits/)
 - [Google Developers Blog: Transitioning Gemini CLI to Antigravity CLI (2026-05-19)](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)
-- [Google AI plans (US prices)](https://gemini.google/us/subscriptions/?hl=en) · [Jules](https://jules.google/)
+- [Google AI plans](https://gemini.google/us/subscriptions/?hl=en) · [Jules](https://jules.google/)
 - GitHub: [google-antigravity/antigravity-cli](https://github.com/google-antigravity/antigravity-cli) · [google-antigravity/antigravity-sdk-python](https://github.com/google-antigravity/antigravity-sdk-python)

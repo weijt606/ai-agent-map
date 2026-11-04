@@ -25,7 +25,7 @@ One-line take: CodeBuddy is Tencent Cloud's coding product line, sold in three f
 
 The map already profiles Tencent's office agent [WorkBuddy](workbuddy.md) and its consumer assistant [Yuanbao](yuanbao.md), and both pages point at CodeBuddy as the Tencent tool for repositories without profiling it. This page closes that gap.
 
-**WorkBuddy vs CodeBuddy.** Tencent's China pricing page uses "Buddy AI" as the umbrella name for WorkBuddy, CodeBuddy and related products, and states that CodeBuddy and WorkBuddy **share one account and one credit balance**, so you do not subscribe twice. The split is by object of work: WorkBuddy acts on documents, decks and spreadsheets; CodeBuddy acts on a code repository. The two are also closer under the hood than the product pages suggest: CodeBuddy Code's own v2.176.0 release notes list fixes under "Resident service (WorkBuddy)". That points to WorkBuddy running on the CodeBuddy Code engine, but Tencent has not published an architecture description, so treat it as an inference from the changelog. Tencent's Hy3 announcement (2026-07-06) lists WorkBuddy/CodeBuddy together among the products the model is wired into.
+**WorkBuddy vs CodeBuddy.** Tencent's China plan docs use "Buddy AI" as the umbrella name for WorkBuddy, CodeBuddy and related products, and states that CodeBuddy and WorkBuddy **share one account and one credit balance**, so you do not subscribe twice. The split is by object of work: WorkBuddy acts on documents, decks and spreadsheets; CodeBuddy acts on a code repository. The two are also closer under the hood than the product pages suggest: CodeBuddy Code's own v2.176.0 release notes list fixes under "Resident service (WorkBuddy)". That points to WorkBuddy running on the CodeBuddy Code engine, but Tencent has not published an architecture description, so treat it as an inference from the changelog. Tencent's Hy3 announcement (2026-07-06) lists WorkBuddy/CodeBuddy together among the products the model is wired into.
 
 ## The Three Surfaces
 
@@ -41,7 +41,7 @@ The IDE is the vibe-coding end and overlaps with [Cursor](cursor.md) and [Windsu
 
 The loop is the Claude Code shape, and the docs make that obvious: `CODEBUDDY.md` and `AGENTS.md` instruction files, Shift+Tab into plan mode, permission modes named `default`, `acceptEdits`, `plan`, `bypassPermissions` and `auto`, plus hooks, skills, plugins and marketplaces, sub-agents, checkpoints with `/rewind`, and `-p` headless runs. If you know [Claude Code](claude-code.md), there is little to relearn. What differs:
 
-- **Model catalog.** [Claude Code](claude-code.md), [Kimi Code](kimi-code.md), [MiMoCode](mimocode.md) and [Grok Build](grok-build.md) are tuned around their vendor's own model. CodeBuddy's built-in list is multi-vendor and served from Tencent's backend per edition; Tencent's own Hunyuan/Hy3 is one option, not the whole point. It also routes `lite` and `reasoning` sub-tasks to cheaper or stronger models automatically.
+- **Model catalog.** [Claude Code](claude-code.md), [Kimi Code](kimi-code.md), [MiMoCode](mimocode.md) and [Grok Build](grok-build.md) are tuned around their vendor's own model. CodeBuddy's built-in list is multi-vendor and served from Tencent's backend per edition; Tencent's own Hunyuan/Hy3 is one option, not the whole point. It also routes `lite` and `reasoning` sub-tasks to lighter or stronger models automatically.
 - **Deployment editions.** One CLI switches between international, China, iOA, dedicated-cloud and self-hosted backends (`CODEBUDDY_INTERNET_ENVIRONMENT`, plus an enterprise `endpoint`). Enterprises get OAuth client credentials through `apiKeyHelper`.
 - **Chinese messaging reach.** Channels (beta) push WeChat, Telegram and Discord events into a live session, and there is a WeCom bot setup guide. Remote Control (beta) exposes the local session to a phone or browser.
 - **IDE reach.** `codebuddy --acp` runs it as an ACP agent server for Zed; `--ide` attaches it to the VS Code, Cursor, Windsurf and JetBrains plugins over a local MCP connection.
@@ -77,19 +77,19 @@ The loop is the Claude Code shape, and the docs make that obvious: `CODEBUDDY.md
 | Headless / automation | Strong | `-p` mode, GitLab CI/CD guide, scheduled tasks, JS and Python SDKs |
 | Open source / auditability | Low | MIT license file on a minified bundle; no public source repository |
 
-## Pricing (read 2026-10-30)
+## Plans (read 2026-10-30)
 
-Credits are the unit for both editions; different models consume different amounts. Promotional bonuses below are Tencent's own "limited-time" figures and will change.
+Credits are the unit for both editions; different models consume different amounts.
 
-| Edition | Plan | Price | Credits / month |
-| --- | --- | --- | --- |
-| International | Free | $0 | 100 (plus a limited-time daily bonus) |
-| International | Pro | $10 / month or $96 / year | 1,000 base + 1,000 bonus |
-| International | Team | $40 / seat / month or $480 / seat / year | 1,000 per seat, pooled |
-| China | 体验版 (trial) | Free | 500 |
-| China | 标准版 / 高级版 / 旗舰版 | ¥99 / ¥199 / ¥999 per month (lower on auto-renew or annual) | 2,000 / 4,000 / 20,000 base, plus limited-time bonus |
-| China | Enterprise SaaS (旗舰版) | ¥198 / seat / month, from 1 seat | 2,000 per seat, pooled |
-| China | Enterprise private cloud (专享版) | ¥316 / seat / month, from 100 seats | 2,000 per seat, pooled |
+| Edition | Plan | Billing |
+| --- | --- | --- |
+| International | Free | Free |
+| International | Pro | Paid, monthly or annual |
+| International | Team | Paid per seat, monthly or annual; credits pooled |
+| China | 体验版 (trial) | Free |
+| China | 标准版 / 高级版 / 旗舰版 | Paid, monthly, auto-renew or annual |
+| China | Enterprise SaaS (旗舰版) | Paid per seat, from 1 seat; credits pooled |
+| China | Enterprise private cloud (专享版) | Paid per seat, from 100 seats; credits pooled |
 
 The China tiers took effect on 2026-07-01, when the single paid plan was split into three. On the China edition the same credits cover WorkBuddy.
 
@@ -102,8 +102,8 @@ CodeBuddy covers more surfaces from one vendor than most entries here: a plugin,
 All read 2026-10-30.
 
 - Tencent Cloud product docs: [CodeBuddy product introduction](https://cloud.tencent.com/document/product/1831/134343) (last updated 2026-08-14)
-- CodeBuddy docs (international): [IDE introduction](https://www.codebuddy.ai/docs/ide/Introduction) · [IDE installation](https://www.codebuddy.ai/docs/ide/Getting-Started/Installation) · [IDE models.json](https://www.codebuddy.ai/docs/ide/Features/models) · [Pricing](https://www.codebuddy.ai/docs/ide/Account/pricing) · [Credits](https://www.codebuddy.ai/docs/ide/Account/credits) · [IDE release notes](https://www.codebuddy.ai/docs/ide/release-notes/release-notes)
-- CodeBuddy docs (China): [IDE introduction (three forms, plugin minimum versions)](https://copilot.tencent.com/docs/ide/Introduction) · [IDE installation](https://copilot.tencent.com/docs/ide/Getting-Started/Installation) · [定价 / pricing](https://copilot.tencent.com/docs/ide/Account/pricing) · [IDE release notes](https://copilot.tencent.com/docs/ide/release-notes/release-notes)
+- CodeBuddy docs (international): [IDE introduction](https://www.codebuddy.ai/docs/ide/Introduction) · [IDE installation](https://www.codebuddy.ai/docs/ide/Getting-Started/Installation) · [IDE models.json](https://www.codebuddy.ai/docs/ide/Features/models) · [Credits](https://www.codebuddy.ai/docs/ide/Account/credits) · [IDE release notes](https://www.codebuddy.ai/docs/ide/release-notes/release-notes)
+- CodeBuddy docs (China): [IDE introduction (three forms, plugin minimum versions)](https://copilot.tencent.com/docs/ide/Introduction) · [IDE installation](https://copilot.tencent.com/docs/ide/Getting-Started/Installation) · [IDE release notes](https://copilot.tencent.com/docs/ide/release-notes/release-notes)
 - CodeBuddy Code docs: [Overview](https://www.codebuddy.ai/docs/cli/overview) · [Installation](https://www.codebuddy.ai/docs/cli/installation) · [Identity and access management](https://www.codebuddy.ai/docs/cli/iam) · [Models](https://www.codebuddy.ai/docs/cli/models) · [Costs](https://www.codebuddy.ai/docs/cli/costs) · [IDE integrations](https://www.codebuddy.ai/docs/cli/ide-integrations) · [ACP](https://www.codebuddy.ai/docs/cli/acp) · [Permission modes](https://www.codebuddy.ai/docs/cli/permission-modes) · [Headless](https://www.codebuddy.ai/docs/cli/headless) · [Channels](https://www.codebuddy.ai/docs/cli/channels) · [SDK](https://www.codebuddy.ai/docs/cli/sdk)
 - CodeBuddy Code release notes: [v2.178.1 (2026-10-29)](https://www.codebuddy.ai/docs/cli/release-notes/v2.178.1) · [v2.176.0 ("Resident service (WorkBuddy)" fixes)](https://www.codebuddy.ai/docs/cli/release-notes/v2.176.0) · [v2.93.4 (Hy3 preview, 2026-04-23)](https://www.codebuddy.ai/docs/cli/release-notes/v2.93.4)
 - Packages: [`@tencent-ai/codebuddy-code` on npm](https://www.npmjs.com/package/@tencent-ai/codebuddy-code) (2.178.1, LICENSE.txt is MIT text) · [`@tencent-ai/agent-sdk` on npm](https://www.npmjs.com/package/@tencent-ai/agent-sdk) · [`codebuddy-agent-sdk` on PyPI](https://pypi.org/project/codebuddy-agent-sdk/) · [`Tencent-Cloud.coding-copilot` on the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Tencent-Cloud.coding-copilot)

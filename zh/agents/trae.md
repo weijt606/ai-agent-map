@@ -4,7 +4,7 @@
 [![EN](https://img.shields.io/badge/EN-English-2563eb?style=for-the-badge&labelColor=1d4ed8)](../../agents/trae.md)
 [![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-TRAE 是字节跳动的 AI IDE，分成两个版本，账号、模型和价格各自独立：国际版（trae.ai，按模型 token 价格从美元额度里扣，提供 GPT、Gemini、Kimi 等模型，美国用户另有 Claude 和 Grok）和国内版（trae.cn，按积分计费，只有国产模型）。2026 年 10 月起，同一个桌面应用里有一个 VS Code 风格的 IDE 窗口（含由 AI 主导的 SOLO 模式），以及一个独立的 Agent 窗口，用来跑并行任务、云端任务和定时任务；网页端和移动端共用同一个账号。
+TRAE 是字节跳动的 AI IDE，分成两个版本，账号、模型和套餐各自独立：国际版（trae.ai，按模型 token 计量，提供 GPT、Gemini、Kimi 等模型，美国用户另有 Claude 和 Grok）和国内版（trae.cn，按积分计费，只有国产模型）。2026 年 10 月起，同一个桌面应用里有一个 VS Code 风格的 IDE 窗口（含由 AI 主导的 SOLO 模式），以及一个独立的 Agent 窗口，用来跑并行任务、云端任务和定时任务；网页端和移动端共用同一个账号。
 
 ## 一眼判断
 
@@ -15,7 +15,7 @@ TRAE 是字节跳动的 AI IDE，分成两个版本，账号、模型和价格�
 | 版本 | 国际版：[trae.ai](https://www.trae.ai)、[docs.trae.ai](https://docs.trae.ai)。国内版：trae.cn、[docs.trae.cn](https://docs.trae.cn)。模型列表、套餐、币种都不同；国内版单独编号（同一天国际版是 v3.6.x，国内版是 v3.4.x） |
 | 入口 | TRAE 桌面端（Agent 窗口与 IDE 窗口）、TRAE 网页端、TRAE 移动端；面向 VS Code 和 JetBrains 系列的 TRAE Plugin；TRAE CLI 2.0 只在国内版企业旗舰版提供 |
 | 是否开源 | 产品闭源。[`bytedance/trae-agent`](https://github.com/bytedance/trae-agent) 是另一个项目：MIT 许可的研究型 CLI agent（`trae-cli`，自带 API key），最近一次提交在 2026-02-05。`Trae-AI/TRAE` 仓库里只有两行 README |
-| 最适合 | 想要兼容 VS Code 的 IDE、入门档便宜、内置模型多、还能用手机把任务派给桌面或云端的开发者；在国内、想在 IDE 里用国产模型的团队 |
+| 最适合 | 想要兼容 VS Code 的 IDE、内置模型多、还能用手机把任务派给桌面或云端的开发者；在国内、想在 IDE 里用国产模型的团队 |
 | 主要代价 | 不打开隐私模式，对话数据可能被用于分析和模型训练；两个版本差别大到可以算两个产品；免费档没有 SOLO 模式，额度也没有公布具体数字；Claude 只出现在美国的模型列表里 |
 | 状态（2026-10-30） | 在售。2026 年 10 月 TraeCode 与 TraeWork 合并为"全新的 TRAE"（v3.6.0，2026-10-08，上线 Agent 窗口） |
 | 当前版本（2026-10-30） | 国际版 v3.6.4（更新日志 2026-10-15 条目，"v3.6.1 ~ 3.6.4"）。国内版 v3.4.4（同日） |
@@ -60,41 +60,40 @@ TRAE 是字节跳动的 AI IDE，分成两个版本，账号、模型和价格�
 | 美国以外 | GPT-6-Astra、GPT-6-Sol、GPT-6-Luna、GPT-5.6-Sol、GPT-5.6-Terra、GPT-5.6-Luna、GPT-5.5、GPT-5.4、GPT-5.2；Gemini-3.1-Pro-Preview、Gemini-3-Flash-Preview；Seed-2.1-Turbo；GLM-5.2；DeepSeek-V4-Flash；Kimi-K3、Kimi-K2.7-Code、Kimi-K2.5；MiniMax-M3、MiniMax-M2.7。没有 Claude |
 | 美国 | GPT-6.1-Sol、GPT-6-Sol、GPT-6-Luna、GPT-6-Astra、GPT-5.6-Sol、GPT-5.6-Terra、GPT-5.6-Luna、GPT-5.5；Grok-4.7、Grok-4.6；Claude Opus 5.5、Sonnet 5.5、Haiku 5.5、Opus 5、Sonnet 5、Opus 4.8、Opus 4.7、Sonnet 4.6、Haiku 4.5；Gemini-3.1-Pro-Preview、Gemini-3.1-Flash-Preview、Gemini-2.5-Pro、Gemini-2.5-Flash；Kimi-K2-0905 |
 
-每个模型都公布了每百万 token 的输入、缓存读、缓存写、输出价格，套餐额度就按这个价格扣。举美国表里的两个例子：Claude Opus 5.5 输入 $4.00、输出 $20.00；GPT-6-Astra 在 272k 上下文以内输入 $10.00、输出 $50.00。最新的一批模型（GPT-6.x、GPT-5.6、GPT-5.5、GLM-5.2、DeepSeek-V4-Flash、Kimi-K2.7-Code、Kimi-K3）只在 2026 年秋季推出的新套餐里提供，老订阅用户升级后才能用。
+每个模型都按 token 计量，用量从套餐额度里扣。最新的一批模型（GPT-6.x、GPT-5.6、GPT-5.5、GLM-5.2、DeepSeek-V4-Flash、Kimi-K2.7-Code、Kimi-K3）只在 2026 年秋季推出的新套餐里提供，老订阅用户升级后才能用。
 
 免费用户只能用 Auto 模式，由 TRAE 自动挑内置模型。付费套餐还可以手动选模型。所有套餐都能加自定义模型：从预设服务商里选并填 API key（包括服务商的 Coding Plan 或 Agent Plan 额度），或者接任何兼容 OpenAI Chat Completions 或 Anthropic Messages 格式的端点，可自定义请求地址。Auto 模式不会用你加的自定义模型。
 
 国内版，出自 docs.trae.cn：Seed-Evolving（仅 Pro 及以上）、Seed-2.1-Pro-0915、Seed-2.1-Turbo、Seed-Code、MiMo-V2.6-Flash 与 -Pro、Step-5-Preview、GLM-5.3-FlashX、GLM-5.3-Flash、GLM-5.3、GLM-5.2、DeepSeek-V4.1-Flash、DeepSeek-V4-Flash、DeepSeek-V4-Pro、Kimi-K3、Kimi-K2.8-Preview、MiniMax-M3、Qwen3.8-Flash、Qwen3.8-Max、Qwen3.7-Plus。没有 GPT、Claude、Gemini、Grok。国内版调用自定义模型不消耗积分。
 
-## 价格与限制（截至 2026-10-30）
+## 套餐与限制（截至 2026-10-30）
 
-国际版，出自定价页和 "Plans & billing" 文档（2026-10-26 更新）：
+国际版，出自官网和 "Plans & billing" 文档（2026-10-26 更新）：
 
-| 方案 | 月付 | 年付 | 每月包含额度 | 云端任务并行上限 | 说明 |
-| --- | --- | --- | --- | --- | --- |
-| Free | $0 | $0 | "Limited"（没有公布数字） | 2 | 只能用 Auto 模式；普通队列；补全有限（定价页写每月 5,000 次）；没有 SOLO 模式 |
-| Lite | $8 | $80 | $8 | 2 | 只在泰国、印尼、越南、菲律宾、印度、巴基斯坦、土耳其、马来西亚、巴西、哥伦比亚、秘鲁、尼日利亚提供 |
-| Pro | $20 | $200 | $20 | 10 | 可手动选模型、快速队列、补全不限量、SOLO 模式 |
-| Pro+ | $60 | $600 | $60 | 15 | 同 Pro |
-| Ultra | $200 | $2,000 | $200 | 20 | 新模型优先体验 |
+| 方案 | 云端任务并行上限 | 说明 |
+| --- | --- | --- |
+| Free | 2 | 用量 "Limited"（没有公布数字）；只能用 Auto 模式；普通队列；补全有限（每月 5,000 次）；没有 SOLO 模式 |
+| Lite | 2 | 只在泰国、印尼、越南、菲律宾、印度、巴基斯坦、土耳其、马来西亚、巴西、哥伦比亚、秘鲁、尼日利亚提供 |
+| Pro | 10 | 可手动选模型、快速队列、补全不限量、SOLO 模式 |
+| Pro+ | 15 | 同 Pro |
+| Ultra | 20 | 新模型优先体验 |
 
 计费方式：
 
-- 每次模型请求单独计量：费用 = token 用量 × 该模型的标价。先从每月的美元额度里扣。
-- 额度用完后，可以开 On-Demand Usage（仅付费套餐，需要手动打开），按"模型服务商官方标准 API 价格"继续计费，每累计 $3 扣一次款。不开的话，AI 对话要等到下个周期；免费用户要等到下个月。
-- 企业版单独售卖（trae.ai 上通过 BytePlus 联系）。只有购买后 24 小时内、且没用过任何服务才能退款。没有学生优惠。
-- 老订阅用户只要月付不中断，换到新套餐后继续按原价续费（文档举的例子是 Pro 按 $10/月续费），额度换成新套餐的额度。
+- 每次模型请求按 token 用量单独计量。先从每月额度里扣。
+- 额度用完后，可以开 On-Demand Usage（仅付费套餐，需要手动打开），继续按 token 计费。不开的话，AI 对话要等到下个周期；免费用户要等到下个月。
+- 企业版单独售卖（trae.ai 上通过 BytePlus 联系）。只有购买后 24 小时内、且没用过任何服务才能退款。
 
 国内版，出自 docs.trae.cn《套餐与计费说明》：按积分计费，只有调用内置模型才扣积分。
 
-| 方案 | 单月购买 | 连续包月 | 每月积分 | 云端任务并行上限 |
-| --- | --- | --- | --- | --- |
-| Lite | ¥49 | ¥45 | 2,000 | 2 |
-| Pro | ¥99 | ¥89 | 4,000 | 10 |
-| Pro+ | ¥239 | ¥219 | 12,000 | 10 |
-| Ultra | ¥699 | ¥629 | 40,000 | 20 |
+| 方案 | 云端任务并行上限 |
+| --- | --- |
+| Lite | 2 |
+| Pro | 10 |
+| Pro+ | 10 |
+| Ultra | 20 |
 
-国内版免费用户每月登录送 500 积分，新用户注册一次性送 2,000 积分，每日签到送 100 积分。增购积分每 1,000 积分 50 元。会员调用 Seed-2.1-Turbo 和 Seed-Code 按 2.5 折扣积分；另有限时闲时折扣（22:00 至次日 8:00），免费用户用 DeepSeek V4 系列积分消耗减半。支付方式是抖音支付、支付宝、微信支付。
+国内版免费用户通过登录、新用户注册和每日签到获得积分。积分可以增购。支付方式是抖音支付、支付宝、微信支付。
 
 ## 隐私与数据（截至 2026-10-30）
 
@@ -111,12 +110,11 @@ TRAE 是字节跳动的 AI IDE，分成两个版本，账号、模型和价格�
 
 - 国际版的 "Supported countries and regions" 页面列出了亚洲、欧洲、美洲、大洋洲和非洲的大部分国家和地区，**没有**列入中国大陆、香港、澳门、台湾、俄罗斯、白俄罗斯、伊朗、古巴、叙利亚、委内瑞拉、埃及和加拿大。
 - 国际版付费套餐只在 59 个国家和地区出售。这份名单里有香港、澳门和埃及，而可用性页面没有列这三个；两页对不上，建议在你所在的地方两页都核对一下。
-- 中国大陆用户用的是独立的 trae.cn 版本，账号体系、模型和人民币价格都单独一套。写这一页时，从境外访问 trae.cn 返回 HTTP 403；本页的国内版信息来自 docs.trae.cn。
+- 中国大陆用户用的是独立的 trae.cn 版本，账号体系、模型和人民币计费都单独一套。写这一页时，从境外访问 trae.cn 返回 HTTP 403；本页的国内版信息来自 docs.trae.cn。
 
 ## 什么时候选它
 
 - 你想要一个兼容 VS Code 的 IDE，能导入 VS Code 或 Cursor 的配置、继续用原来的扩展，再加上智能体、CUE 补全和 SOLO 模式。
-- 你想低成本上手：12 个国家有 $8 的 Lite，Pro 是 $20，用量按公开的模型价格逐 token 扣，选便宜的模型额度就更耐用。
 - 你想一份订阅用很多模型：美国以外有 OpenAI 当前这一代、Gemini、Kimi、GLM、DeepSeek、MiniMax 和 Seed，美国另有 Claude 和 Grok，还能再接自己的 key。
 - 你想用手机把任务派给自己的电脑或云端环境，并在三个客户端里都能看到进度。
 - 你要端到端做小型 Web 应用：SOLO 的 Figma、Supabase、Vercel、Stripe 集成能从设计稿一路做到可访问的部署链接。
@@ -148,7 +146,7 @@ TRAE 是字节跳动的 AI IDE，分成两个版本，账号、模型和价格�
 
 ## 和其他条目的关系
 
-- [Cursor](cursor.md) 和 [Windsurf](windsurf.md) 形态最接近：都是从 VS Code 派生、带智能体的编辑器。TRAE 的不同在于独立的 Agent 窗口、移动端、从 $8 起按 token 计价的套餐，以及按地区拆分的模型列表。
+- [Cursor](cursor.md) 和 [Windsurf](windsurf.md) 形态最接近：都是从 VS Code 派生、带智能体的编辑器。TRAE 的不同在于独立的 Agent 窗口、移动端、按 token 计量的套餐，以及按地区拆分的模型列表。
 - [Google Antigravity](antigravity.md) 是这条路线上另一个"编辑器加 agent 管理器"的设计。Antigravity 有公开的 CLI 和带 Gemini 的免费档；TRAE 的多厂商模型列表更宽，还有 SOLO 的应用构建集成，但没有公开的 CLI。
 - [CodeBuddy](codebuddy.md) 是腾讯对应的产品线，同样分国际版和国内版。CodeBuddy 的终端 CLI 对个人开放，TRAE 没有。
 - [豆包](doubao.md) 是字节跳动的消费级助手；TRAE 模型列表里的 Seed 系列是字节自己的模型。
@@ -159,16 +157,16 @@ TRAE 是字节跳动的 AI IDE，分成两个版本，账号、模型和价格�
 
 ## 结论
 
-TRAE 是一个能力完整的编辑器中心产品，入口比这条路线上的大多数都多：IDE、AI 主导的 SOLO 模式、多 agent 的 Agent 窗口、网页端、移动端和定时任务，背后是一张宽而便宜、按 token 计价的模型菜单。选它之前先读数据条款：不开隐私模式，对话内容可能被用于训练；字节跳动集团内的公司会处理这些数据；严格的不训练、不留存条款跟着企业版走。它也实际上是两个产品：中国和美国以外的国际版、带 Claude 和 Grok 的美国变体，以及只有国产模型、按人民币积分计费的国内版。如果你需要终端 agent 或开源方案，看本地图上的其他条目。
+TRAE 是一个能力完整的编辑器中心产品，入口比这条路线上的大多数都多：IDE、AI 主导的 SOLO 模式、多 agent 的 Agent 窗口、网页端、移动端和定时任务，背后是一张宽、按 token 计量的模型菜单。选它之前先读数据条款：不开隐私模式，对话内容可能被用于训练；字节跳动集团内的公司会处理这些数据；严格的不训练、不留存条款跟着企业版走。它也实际上是两个产品：中国和美国以外的国际版、带 Claude 和 Grok 的美国变体，以及只有国产模型、按人民币积分计费的国内版。如果你需要终端 agent 或开源方案，看本地图上的其他条目。
 
 ## 来源
 
 以下均于 2026-10-30 查阅。
 
-- 官网：[trae.ai](https://www.trae.ai/) · [定价](https://www.trae.ai/pricing) · [下载中心](https://www.trae.ai/download) · [企业版（"CLI (coming soon)"、零留存、SOC 2 Type 2）](https://www.trae.ai/enterprise) · [隐私政策（最近更新 2026-05-20）](https://www.trae.ai/privacy-policy)
+- 官网：[trae.ai](https://www.trae.ai/) · [下载中心](https://www.trae.ai/download) · [企业版（"CLI (coming soon)"、零留存、SOC 2 Type 2）](https://www.trae.ai/enterprise) · [隐私政策（最近更新 2026-05-20）](https://www.trae.ai/privacy-policy)
 - 国际版文档，入门：[About TRAE](https://docs.trae.ai/ide/what-is-trae) · [TraeCode 与 TraeWork 合并为全新的 TRAE](https://docs.trae.ai/ide/traework-to-traecode-data-migration) · [桌面端、网页端与移动端](https://docs.trae.ai/ide/trae-across-desktop-web-and-mobile) · [TRAE 桌面端快速开始（系统要求）](https://docs.trae.ai/ide/get-started-with-trae-desktop) · [支持的国家和地区](https://docs.trae.ai/ide/supported-countries-and-regions) · [设备数量限制](https://docs.trae.ai/ide/device-limit) · [更新日志（v3.6.4，2026-10-15）](https://docs.trae.ai/ide/changelog)
 - 国际版文档，功能：[SOLO 模式](https://docs.trae.ai/ide/solo-mode) · [智能体概述](https://docs.trae.ai/ide/agent-overview) · [自动运行与安全](https://docs.trae.ai/ide/auto-run-and-security) · [沙箱](https://docs.trae.ai/ide/sandbox) · [自动化任务](https://docs.trae.ai/ide/automated-tasks) · [云端运行环境配置](https://docs.trae.ai/ide/set-up-your-cloud-environment) · [记忆](https://docs.trae.ai/ide/memories) · [Max 模式](https://docs.trae.ai/ide/max-mode) · [TRAE Plugin](https://docs.trae.ai/plugin/what-is-trae-plugin)
 - 国际版文档，模型与计费：[内置模型与自定义模型](https://docs.trae.ai/ide/models) · [Auto 模式](https://docs.trae.ai/ide/auto-mode) · [套餐与计费](https://docs.trae.ai/ide/new-plans-and-billing) · [On-Demand Usage](https://docs.trae.ai/ide/on-demand-usage) · [套餐与计费常见问题](https://docs.trae.ai/ide/plans-and-billing-faqs)
 - 国际版文档，数据：[隐私模式](https://docs.trae.ai/ide/privacy-mode) · [云端智能体数据存储政策](https://docs.trae.ai/ide/data-storage-policy-for-remote-agents)
-- 国内版文档：[关于 TRAE](https://docs.trae.cn/ide_what-is-trae-code) · [套餐与计费说明](https://docs.trae.cn/ide_plans-and-billing) · [内置模型 & 自定义模型](https://docs.trae.cn/ide_models) · [内置模型限时折扣](https://docs.trae.cn/ide_limited-time-discount-for-builtin-models) · [隐私模式](https://docs.trae.cn/ide_privacy-mode) · [更新日志（v3.4.4）](https://docs.trae.cn/ide_changelog) · [TRAE CLI 2.0 简介（仅旗舰版）](https://docs.trae.cn/cli_about-trae-code-cli-2) · [TRAE CLI 2.0 快速开始](https://docs.trae.cn/cli_get-started-with-trae-cli-2) · [升级到 TRAE CLI 2.0](https://docs.trae.cn/cli_get-started-with-trae-cli) · [权限与沙箱](https://docs.trae.cn/cli_permission-and-sandbox) · [企业版概览](https://docs.trae.cn/enterprise_trae-enterprise-edition-overview) · [企业版安全合规](https://docs.trae.cn/enterprise_security-compliance-and-governance)
+- 国内版文档：[关于 TRAE](https://docs.trae.cn/ide_what-is-trae-code) · [套餐与计费说明](https://docs.trae.cn/ide_plans-and-billing) · [内置模型 & 自定义模型](https://docs.trae.cn/ide_models) · [隐私模式](https://docs.trae.cn/ide_privacy-mode) · [更新日志（v3.4.4）](https://docs.trae.cn/ide_changelog) · [TRAE CLI 2.0 简介（仅旗舰版）](https://docs.trae.cn/cli_about-trae-code-cli-2) · [TRAE CLI 2.0 快速开始](https://docs.trae.cn/cli_get-started-with-trae-cli-2) · [升级到 TRAE CLI 2.0](https://docs.trae.cn/cli_get-started-with-trae-cli) · [权限与沙箱](https://docs.trae.cn/cli_permission-and-sandbox) · [企业版概览](https://docs.trae.cn/enterprise_trae-enterprise-edition-overview) · [企业版安全合规](https://docs.trae.cn/enterprise_security-compliance-and-governance)
 - GitHub：[bytedance/trae-agent](https://github.com/bytedance/trae-agent)（MIT）· [Trae-AI/TRAE](https://github.com/Trae-AI/TRAE)

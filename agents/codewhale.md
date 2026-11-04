@@ -19,7 +19,7 @@ One-line take: CodeWhale (formerly DeepSeek-TUI) is an open-source Rust terminal
 | Open source | Yes — MIT |
 | Implementation | Rust (engine + terminal client); npm and crates.io installs |
 | Models | Any — 40+ provider routes (Anthropic, DeepSeek, Google, Mistral, Moonshot, OpenAI, OpenRouter, xAI …), OpenAI-compatible endpoints, local runtimes. **DeepSeek remains the default provider** |
-| Best for | Developers who want a Claude-Code-style loop they can point at whichever model is cheapest or available to them — including Chinese-stack and local models — without a vendor's own CLI |
+| Best for | Developers who want a Claude-Code-style loop they can point at whichever model is available to them — including Chinese-stack and local models — without a vendor's own CLI |
 | Main cost | A community project with a fast-moving surface and an optional account layer; provider breadth means the quality of the loop varies with the model you plug in |
 | GitHub repo | https://github.com/codewhale-hq/Codewhale |
 
@@ -46,7 +46,7 @@ One-line take: CodeWhale (formerly DeepSeek-TUI) is an open-source Rust terminal
 
 ## Operating Cost
 
-Complexity is Low–Medium. Installing it is straightforward (npm or crates.io); the model bill is whatever provider you route to, with no markup. The optional Codewhale account stores provider keys for your signed-in devices; local use works without it. Pricing exposure follows the provider you choose, not the agent.
+Complexity is Low–Medium. Installing it is straightforward (npm or crates.io); model usage is billed by whatever provider you route to. The optional Codewhale account stores provider keys for your signed-in devices; local use works without it.
 
 ## Bottom Line
 

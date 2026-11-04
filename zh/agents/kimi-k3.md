@@ -75,4 +75,4 @@ K3 是模型。[Kimi Code](kimi-code.md) 是终端编码 agent，[Kimi Work](kim
 
 ## 结论
 
-K3 是迄今最有力的论据，说明开放权重档是市场顶端的真实选项，而不是省钱的退路——但有两条比 benchmark 表更重要的保留：许可是自定义的，以及 2.8T 参数意味着 serving 账单取代了 token 账单。如果许可纯净度重要，去比 [DeepSeek V4](deepseek-v4.md)；如果编码就是全部的活，去比 [GLM-5.3](glm-5.md)。
+K3 是迄今最有力的论据，说明开放权重档是市场顶端的真实选项，而不是退路——但有两条比 benchmark 表更重要的保留：许可是自定义的，以及 2.8T 参数意味着 serving 账单取代了 token 账单。如果许可纯净度重要，去比 [DeepSeek V4](deepseek-v4.md)；如果编码就是全部的活，去比 [GLM-5.3](glm-5.md)。

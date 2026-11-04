@@ -17,7 +17,7 @@
 | 状态 | **2026-05-19** 以 Spark 之名发布，随后向订阅用户 beta；之后改名为 **Task**（改名日期未公布） |
 | 在哪里跑 | 带**远程浏览器和远程电脑**的云端 agent；也能驱动你本地的 Chrome |
 | 模型 | I/O 发布时是 Gemini 3.5 加 [Antigravity](antigravity.md) harness；Gemini 4 Argon 于 2026 年 10 月 13 日进入 Pro 和 Ultra 用户的 Gemini 应用。帮助页现在把 Flash 和 Argon 列为 AI Pro、Ultra 的 Task 模型，并说明 Task 模式下可以手动切换（[帮助页](https://support.google.com/gemini/answer/18648722?hl=en)，2026-11-03 核对） |
-| 价格 | 需要 **Google AI Pro（$19.99/月）**或 **AI Ultra（$99.99/月起）**，美国价格 |
+| 使用条件 | 需要 **Google AI Pro** 或 **AI Ultra** |
 | 前提条件 | 个人 Google 账号（不支持工作或学校账号）、开启"保留活动记录"（Keep Activity）、加入 Personal Intelligence |
 | 地区 | Gemini 应用支持的地区均可，**欧洲经济区、尼日利亚、瑞士和英国除外** |
 | 官方页面 | https://support.google.com/gemini/answer/17094507 |
@@ -40,7 +40,7 @@ Google 的帮助页面列出了它会先请你确认的事：发送消息、修�
 
 ## 结论
 
-以 Google 为中心的生活里最稳妥的默认选择——确认清单清楚、计划可见、第一方 Workspace 接入——价格中等，但对欧洲关闭，而且依赖于要求保留活动记录的设置。
+以 Google 为中心的生活里最稳妥的默认选择——确认清单清楚、计划可见、第一方 Workspace 接入——但对欧洲关闭，而且依赖于要求保留活动记录的设置。
 
 ## 来源
 

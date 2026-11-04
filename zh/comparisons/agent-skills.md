@@ -52,7 +52,7 @@ skill 是分阶段加载的，规范和 Anthropic 文档都把这叫作**渐进�
 | **VS Code 里的 [GitHub Copilot](../agents/github-copilot.md)** | `.github/skills/`、`~/.copilot/skills/`；也列出 `.claude/skills/` 和 `.agents/skills/` | skill 适用时加载；对话里输入 `/skills` | 文档提醒只复用可信的 skill |
 | **[Gemini CLI](../agents/gemini-cli.md)** | `.gemini/skills/` 或 `.agents/skills/`（及 `~/` 下对应目录）；`gemini skills install <git 地址>` | Gemini 调用 `activate_skill`，你在同意提示里批准 | 免费用户和 Google One 用户已于 2026-06-18 转到 Antigravity CLI |
 | **[OpenCode](../agents/opencode.md)** | `.opencode/skills/`、`.claude/skills/`、`.agents/skills/`（及全局对应目录） | 内置 `skill` 工具按需加载 | 可在 `opencode.json` 里把每个 skill 设成允许、拒绝或询问 |
-| **[WorkBuddy](../agents/workbuddy.md)** | 技能页：点市场卡片上的 "+"，或 添加技能 → 上传（文件夹或 .zip，需含 `SKILL.md`，并用 YAML 写名称和描述）/ 创建 / 查找。文档没有写目录路径 | 已安装的技能在对话里用自然语言调用；每个技能可单独开关 | 文档没有提 Agent Skills 标准。上传时可勾选非高风险自动安装。复杂技能的积分消耗通常较高 |
+| **[WorkBuddy](../agents/workbuddy.md)** | 技能页：点市场卡片上的 "+"，或 添加技能 → 上传（文件夹或 .zip，需含 `SKILL.md`，并用 YAML 写名称和描述）/ 创建 / 查找。文档没有写目录路径 | 已安装的技能在对话里用自然语言调用；每个技能可单独开关 | 文档没有提 Agent Skills 标准。上传时可勾选非高风险自动安装。 |
 
 从这张表能看出两件事。第一，`.agents/skills/` 是这些 agent 共用最多的文件夹：Codex、Cursor、VS Code 里的 Copilot、Gemini CLI 和 OpenCode 都读它，Claude Code 的文档没有列它；而 Claude Code、Agent SDK、Cursor、VS Code 里的 Copilot 和 OpenCode 读 `.claude/skills/`。第二，自定义 skill 在 Claude 自家各个入口之间不同步。上传到 claude.ai 的 skill 要另外上传到 API，Claude Code 则在磁盘上另存一份。
 

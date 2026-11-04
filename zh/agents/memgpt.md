@@ -51,7 +51,7 @@ MemGPT 是论文中的设计模式（LLM 自编辑记忆）。Letta 是基于这
 
 ## 使用代价
 
-复杂度 Medium 到 High。自托管需要 Docker 和 PostgreSQL。MemGPT 架构会为记忆管理操作（读、写、搜索记忆）增加额外 LLM 调用，token 花费比无状态方案更高。基础托管成本在 Railway 上大约 $5–10/月，加上 LLM API 费用。
+复杂度 Medium 到 High。自托管需要 Docker 和 PostgreSQL。MemGPT 架构会为记忆管理操作（读、写、搜索记忆）增加额外 LLM 调用，token 花费比无状态方案更高。基础成本是托管（例如 Railway）加上 LLM API 用量。
 
 ## 最后一句
 

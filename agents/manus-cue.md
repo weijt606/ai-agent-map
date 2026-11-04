@@ -17,7 +17,7 @@ One-line take: Cue is Manus's standalone app for personal agents in which **each
 | Status | **Early access, invite code required**; launched alongside Manus 2.0 |
 | Where it runs | Each agent has its own computer; built "on the same infrastructure as Manus" |
 | Model | Not stated |
-| Price | **Free during early access** with an invite code; the App Store listing (checked Oct 28 2026) adds that "Plus membership is included at no charge" once you have access. Pricing after early access not announced |
+| Access | **Free during early access** with an invite code; the App Store listing (checked Oct 28 2026) adds that "Plus membership is included at no charge" once you have access. Terms after early access not announced |
 | Official page | https://cue.im/ |
 
 ## Why This Entry Exists
@@ -32,7 +32,7 @@ Every other agent here borrows *your* identity: it signs in as you, sends from y
 
 ## When Not To Pick It
 
-- You need a price, a model or a region commitment: none is stated first-hand yet.
+- You need a model or a region commitment: neither is stated first-hand yet.
 - You cannot get an invite — access is limited and first-come, first-served.
 - You are not comfortable with an agent that **acts as a separate party** toward other people. Messages and payments from the agent's own identity are still sent on your instruction, and the people on the other end may not know they are dealing with an agent.
 

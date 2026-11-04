@@ -4,9 +4,9 @@
 [![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](claude-opus-5.md)
 [![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-One-line take: Claude Opus 5 was the model most Claude-based agents actually ran on from July to September 2026 — it took the Opus tier's price ($5/$25, unchanged from Opus 4.8) and moved it close to Fable 5's capability, which makes the frontier tier a deliberate spend rather than the obvious choice.
+One-line take: Claude Opus 5 was the model most Claude-based agents actually ran on from July to September 2026 — it moved the Opus tier close to Fable 5's capability, which makes the frontier tier a deliberate choice rather than the obvious one.
 
-> **Superseded as default (2026-09-22):** Claude Code `v2.1.280` made **Claude Opus 5.5** the default Opus model on September 22 2026, at $4 / $20 per M tokens with cache reads at $0.20/M. Anthropic says it performs at Fable 5.1's level on most work at 40% less to run than Opus 5. Sonnet 5.5 became the default Sonnet on September 28. Opus 5 remains available at $5 / $25 (`claude-opus-5`); the "default" wording below describes July 24 to September 22 2026. See [cost & benchmarks](../comparisons/cost-and-benchmarks.md).
+> **Superseded as default (2026-09-22):** Claude Code `v2.1.280` made **Claude Opus 5.5** the default Opus model on September 22 2026. Anthropic says it performs at Fable 5.1's level on most work. Sonnet 5.5 became the default Sonnet on September 28. Opus 5 remains available (`claude-opus-5`); the "default" wording below describes July 24 to September 22 2026. See [benchmarks & billing](../comparisons/benchmarks-and-billing.md).
 
 ## Quick Read
 
@@ -16,7 +16,6 @@ One-line take: Claude Opus 5 was the model most Claude-based agents actually ran
 | Route | Frontier agentic model — the Opus tier, and the practical default under the Mythos ceiling from July 24 to September 22 2026 |
 | Open source | No |
 | Best for | Long-running agents, whole-repository work at 1M context, multi-agent coordination, document and spreadsheet tasks |
-| Main cost | $5 / $25 per M tokens — same as Opus 4.8; Fast mode is $10 / $50 |
 | API model id | `claude-opus-5` |
 | Official announcement | https://www.anthropic.com/news/claude-opus-5 |
 
@@ -37,7 +36,6 @@ That gap mattered, because the selection question on the Anthropic side is not "
 ## When Not To Pick It
 
 - You need the absolute ceiling on the hardest single task — [Fable 5.1](claude-fable-5.md) still leads, and on cybersecurity work Mythos 5 is ahead of Opus 5 outright.
-- You are cost-sensitive at volume. **Sonnet 5 is $2/$10** and Anthropic positions it close to Opus 4.8; if your agent's work is mostly routine, the Opus tier is a 2.5x bill for capability you may not be using.
 - You want an open-source or self-hosted model — this tier is fully proprietary.
 - You want a finished agent product rather than a model. Start at [Claude Code](claude-code.md).
 
@@ -45,36 +43,34 @@ That gap mattered, because the selection question on the Anthropic side is not "
 
 | Dimension | Assessment | Notes |
 | --- | --- | --- |
-| Agentic coding | Very strong | CursorBench 3.2 within 0.5% of Fable 5's peak, at half the price |
+| Agentic coding | Very strong | CursorBench 3.2 within 0.5% of Fable 5's peak |
 | Long context | Very strong | 1M tokens, default *and* maximum; 128K max output |
-| Computer use | Very strong | OSWorld 2.0 — Anthropic reports it ahead of every model at any price point at launch (July 2026), and ahead of Fable 5 at roughly a third of the cost |
+| Computer use | Very strong | OSWorld 2.0 — Anthropic reports it ahead of every model at launch (July 2026) |
 | Abstract reasoning | Very strong | ARC-AGI 3 at ~3x the next-best model |
 | Workflow automation | Strong | Zapier AutomationBench at ~1.5x the next-best pass rate |
 | Multi-agent coordination | Strong | Writer-verifier subagent teams; few overwrite collisions |
 | Cybersecurity | Medium | Deliberately behind Mythos 5 on this axis |
 | Open-source / self-host | None | Fully proprietary |
 
-Frontier-Bench v0.1 is the headline number Anthropic leads with — state of the art, more than 2x Opus 4.8 at lower cost. Treat single-vendor benchmarks as a claim to check against your own workload, which is this map's standing position on all of them.
+Frontier-Bench v0.1 is the headline number Anthropic leads with — state of the art, more than 2x Opus 4.8. Treat single-vendor benchmarks as a claim to check against your own workload, which is this map's standing position on all of them.
 
-## The Tier Ladder (first-party API prices, October 2026)
+## The Tier Ladder (October 2026)
 
-| Model | Input / Output per M | Cache read | Where it sits |
-| --- | --- | --- | --- |
-| [Claude Fable 5.1](claude-fable-5.md) | $10 / $50 | **$0.25** | Mythos-class ceiling; the cache read is 2.5% of input, not the usual 10% |
-| Claude Opus 5.5 | $4 / $20 | $0.20 | Default Opus in Claude Code since Sept 22 2026; Fast mode $8 / $40 |
-| **Claude Opus 5** | **$5 / $25** | $0.50 | The default from July 24 to Sept 22 2026, still available; Fast mode $10 / $50 |
-| Claude Sonnet 5.5 | $2 / $10 | $0.10 | Default Sonnet in Claude Code since Sept 28 2026 |
-| Claude Sonnet 5 | $2 / $10 | $0.20 | The volume tier — $2/$10 was introductory pricing, made permanent |
-| Claude Haiku 5.5 | $0.10 / $0.50 up to 100K-token prompts ($0.50 / $2.50 above) | $0.01 | The floor, Oct 7 2026; priced by prompt length |
-
-The 1M-token context window is billed at standard rates across the whole window on Claude 4.6 and later, so long context is not a separate price band on this side of the market. Compare with [GPT-6 Astra](gpt-6-astra.md), which doubles input price past 272k tokens.
+| Model | Where it sits |
+| --- | --- |
+| [Claude Fable 5.1](claude-fable-5.md) | Mythos-class ceiling |
+| Claude Opus 5.5 | Default Opus in Claude Code since Sept 22 2026 |
+| **Claude Opus 5** | The default from July 24 to Sept 22 2026, still available |
+| Claude Sonnet 5.5 | Default Sonnet in Claude Code since Sept 28 2026 |
+| Claude Sonnet 5 | The volume tier |
+| Claude Haiku 5.5 | The floor, Oct 7 2026 |
 
 ## Where It Runs
 
 - **Claude Code** — the default Opus model from July 24 until `v2.1.280` switched to Opus 5.5 on Sept 22; still selectable. A request blocked by the safety classifier falls back to Opus 4.8 with notice.
 - **Claude.ai and Claude Cowork** — default on Max and top model on Pro at launch.
 - **Claude API** — `claude-opus-5`, plus Bedrock, Google Cloud, and Microsoft Foundry.
-- **Fast mode** (research preview) — about 2.5x the output speed at 2x the price, first-party API only.
+- **Fast mode** (research preview) — about 2.5x the output speed, first-party API only.
 
 ## Relationship To Claude Code And Fable 5.1
 
@@ -82,4 +78,4 @@ The 1M-token context window is billed at standard rates across the whole window 
 
 ## Bottom Line
 
-Opus 5 is the reason the Anthropic side of the model layer stopped being a straight "pay for the ceiling" question. It holds the Opus price, takes most of the distance to Fable 5, and was the model your agent ran on when nobody was watching the credit meter, until Opus 5.5 replaced it as the default on September 22. Budget the frontier tier for the tasks that actually need it.
+Opus 5 is the reason the Anthropic side of the model layer stopped being a straight "use the ceiling" question. It takes most of the distance to Fable 5, and was the model your agent ran on when nobody was watching the credit meter, until Opus 5.5 replaced it as the default on September 22. Save the frontier tier for the tasks that actually need it.

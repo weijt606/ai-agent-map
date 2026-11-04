@@ -12,7 +12,7 @@ One-line take: claude-mem is a memory layer you add to an existing agent. Lifecy
 | --- | --- |
 | Vendor | Alex Newman ([@thedotmack](https://github.com/thedotmack)) and contributors |
 | Route | Runtime and tools — cross-session memory layer for other agents |
-| Repository | [`thedotmack/claude-mem`](https://github.com/thedotmack/claude-mem) — Apache-2.0, TypeScript; 110.8k stars as of 2026-11-03 |
+| Repository | [`thedotmack/claude-mem`](https://github.com/thedotmack/claude-mem) — Apache-2.0, TypeScript; 112.0k stars as of 2026-11-04 |
 | Open source | Open core. The engine, Claude-Mem Server, CLI, SDKs, adapters, and MCP tools are Apache-2.0; hosted cloud, team/org sync, SSO, and other enterprise features are reserved as commercial |
 | Paid tier | **CMEM Pro** (hosted observer, cloud sync, private MCP link): 30-day trial, then $30/month; Heavy $70/month, Max $100/month with billed overage |
 | Works with | [Claude Code](claude-code.md) (plugin marketplace), [Codex](codex.md), [OpenCode](opencode.md) (1.3.4+, including 2.x), [OpenClaw](openclaw.md) gateways, [Pi](pi.md), [DeepSeek Harness](deepseek-harness.md), [Grok Bot](grok-bot.md), T3 Code, Antigravity CLI, Oh My Pi; the repo description also lists Gemini, [Hermes](hermes-agent.md), and Copilot |

@@ -4,6 +4,10 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-11-04 — Heat ranking reissued on its Wednesday date
+
+The edition dated 2026-11-03 ran a day early, on a Tuesday, over a 6-day window. This edition replaces it with the window 2026-10-28 → 2026-11-04. The 11-03 window is removed from `history.json`'s `windows`, so the [charts](rankings/README.md) and window counts do not count it; its fetch stays in `raw`. Notes now compare on elapsed time, because fetches in the last two windows were about 6.24 and 7.45 days apart even though both read as 7 days by date.
+
 ## 2026-11-03 — Five coverage-gap repos enter tracking
 
 Graphify, ECC, Orca, claude-mem and Paperclip, profiled on 2026-10-28, are now polled for stars, taking the tracked set from 57 to 62. They appear on the [category boards](rankings/README.md) now, with ECC third on the [skill board](rankings/skill-verticals.md); their first measured gains come next window. The profile count stays at 98. The ECC and Superpowers profiles are corrected to their current READMEs, as the 2026-11-01 entry below flagged.

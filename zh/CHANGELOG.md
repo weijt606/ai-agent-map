@@ -4,6 +4,10 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-11-04 —— 热度榜按周三重新发布
+
+标着 2026-11-03 的那一期提前一天跑在周二，窗口只有 6 天。本期用 2026-10-28 → 2026-11-04 的窗口取代它。11-03 窗口已从 `history.json` 的 `windows` 移除，所以[趋势图](rankings/README.md)和窗口计数都不算它；那次抓取留在 `raw`。说明现在按实际时长比较，因为最近两个窗口按日期都是 7 天，两次抓取实际相隔约 6.24 天和 7.45 天。
+
 ## 2026-11-03 —— 五个覆盖面补齐的仓库进入跟踪
 
 2026-10-28 写了 profile 的 Graphify、ECC、Orca、claude-mem、Paperclip 现在开始抓 star，跟踪仓库从 57 个增加到 62 个。它们已进[分类榜](rankings/README.md)，ECC 在 [skill 榜](rankings/skill-verticals.md)排第三；第一个可测增量在下一期。profile 数仍是 98。ECC 与 Superpowers 的 profile 已按它们现在的 README 更正，这是下面 2026-11-01 条目提到的事。

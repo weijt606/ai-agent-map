@@ -12,7 +12,7 @@ One-line take: Paperclip is an open-source, self-hosted control plane that runs 
 | --- | --- |
 | Vendor | Paperclip Labs, Inc. per the README's licence footer; the LICENSE file names "Paperclip AI" (`paperclipai/paperclip`, paperclip.ing) |
 | Route | Workflow / orchestration layer, organized around tickets and an org chart rather than a single agent's session |
-| Repository | [`paperclipai/paperclip`](https://github.com/paperclipai/paperclip): MIT, TypeScript, 110.5k stars as of 2026-11-03 |
+| Repository | [`paperclipai/paperclip`](https://github.com/paperclipai/paperclip): MIT, TypeScript, 110.9k stars as of 2026-11-04 |
 | Open source | Yes (MIT). "Open source. Self-hosted. No Paperclip account required." |
 | Form factor | A Node.js server with a React web UI and an embedded PostgreSQL database; installed with `npx paperclipai@latest onboard --yes` or Docker |
 | Agents | Adapters for OpenClaw, Claude Code, Codex, Cursor (and Cursor Cloud), Gemini CLI, OpenCode, Pi, Hermes (and Hermes Gateway), Grok Build and Kimi Code, plus custom processes, HTTP endpoints and adapter plugins |

@@ -37,6 +37,8 @@ changes actually touch them — see step 5.
    into the heat tables — **do the editing between `check` and `publish` on the
    same day** and there is nothing to reconcile afterwards.
 
+   **Check elapsed time, not just dates.** Compare this `check`'s `fetched_at` with the previous one (the previous publish commit is the upper bound). Two windows that both read "7 days" have run 7.45 and 6.24 days apart. If the two differ by more than about 5%, compare on gain ÷ elapsed days and say so in the notes.
+
 2. **Refresh the rank** in all four heat tables. Keep them in lockstep:
    - `README.md` — "Recent Heat Ranking"
    - `zh/README.md` — "近期热度排名"
@@ -84,7 +86,7 @@ changes actually touch them — see step 5.
    only ever a profile written during the *previous* refresh, so carry it
    forward by naming it here when you write it. **Rewrite this line every
    refresh** — it went stale for two months once (it named `vercel/eve`, long
-   since flipped). **As of 2026-11-03: no pending pickups.** The five from the coverage-gap PR (`stablyai/orca`, `paperclipai/paperclip`, `affaan-m/ecc`, `thedotmack/claude-mem`, `graphify-labs/graphify`) were flipped this refresh; their first measured gain comes next window. No new profile was written this
+   since flipped). **As of 2026-11-04: no pending pickups.** The five from the coverage-gap PR (`stablyai/orca`, `paperclipai/paperclip`, `affaan-m/ecc`, `thedotmack/claude-mem`, `graphify-labs/graphify`) were flipped on 2026-11-03; their first measured gain comes next window. No new profile was written this
    refresh and no tracked repo moved (the `.fetch-cache.json` and
    `snapshot.json` `full_name` values all matched). When a repo does move,
    migrate tracked-repos.txt, catalog.json, snapshot.json and history.json raw

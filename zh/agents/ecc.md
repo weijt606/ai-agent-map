@@ -12,7 +12,7 @@
 | --- | --- |
 | 厂商 | Affaan Mustafa（README 自述为单人维护）和贡献者 |
 | 路线 | Agentic skills 框架——跑在宿主 agent 里的 skills、hooks 与记忆层 |
-| 仓库 | [`affaan-m/ECC`](https://github.com/affaan-m/ECC)——MIT，JavaScript；截至 2026-11-03 有 29.57 万 star |
+| 仓库 | [`affaan-m/ECC`](https://github.com/affaan-m/ECC)——MIT，JavaScript；截至 2026-11-04 有 29.66 万 star |
 | 开源 | 是（MIT）。托管的 ECC Tools GitHub App：免费档仅限公开仓库（每月 10 次分析）；**ECC Pro** $19/席位/月，覆盖私有仓库；Enterprise 联系销售 |
 | 适配哪些 agent | [Claude Code](claude-code.md)（稳定、首要）；[Codex](codex.md) 和 Qoder（原生插件）；[Cursor](cursor.md)、[OpenCode](opencode.md)、GitHub Copilot CLI（beta）；Gemini、Zed、Antigravity、Qwen、[Hermes](hermes-agent.md)、[OpenClaw](openclaw.md)、Kimi 等（实验性适配）；[GitHub Copilot](github-copilot.md) Chat（仅指令文件） |
 | 适合谁 | 想一次装好规划、TDD、新上下文评审、hook 强制检查和 agent 配置安全扫描的 Claude Code 用户 |

@@ -12,7 +12,7 @@ One-line take: Orca is an open-source desktop app for running several coding age
 | --- | --- |
 | Vendor | Stably AI (`stablyai/orca`, onorca.dev; "Backed by Y Combinator"). The LICENSE file names Lovecast Inc. as copyright holder |
 | Route | Workflow / orchestration layer, across many CLI agents rather than on top of one |
-| Repository | [`stablyai/orca`](https://github.com/stablyai/orca): MIT, TypeScript, 113.7k stars as of 2026-11-03 |
+| Repository | [`stablyai/orca`](https://github.com/stablyai/orca): MIT, TypeScript, 114.6k stars as of 2026-11-04 |
 | Open source | Yes (MIT). The desktop app, the mobile app, and the relay that pairs them are all in the repo |
 | Form factor | Desktop app for macOS, Windows and Linux; iOS and Android companion app (beta); a headless `orca serve` runtime; an `orca` CLI |
 | Agents | "Works with any CLI agent": the README lists over thirty, including Claude Code, Codex, Grok, Cursor, GitHub Copilot, Antigravity, OpenCode, Pi, Hermes Agent, Goose, Kimi, Qwen Code and DeepSeek Harness |

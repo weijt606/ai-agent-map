@@ -4,13 +4,15 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
-## 2026-10-27 → 11-03 —— Copilot 转向路由和计量，GPT-6 Rosalind 不碰编码，Kimi 的权重还没到
+## 2026-10-27 → 11-04 —— Copilot 转向路由和计量，GPT-6 Rosalind 不碰编码，Kimi 的权重还没到
 
 **GitHub 于 10 月 28 日让 Copilot Fusion 正式可用。** 你选 Fusion，由 Copilot "intelligently" 路由和编排它用的模型；管理员可以通过企业托管设置把它设为 Copilot 用户的默认，所以这不是一次厂商层面的换默认。GitHub 说 Fusion Max "scored 60, within two points of Claude Code with Opus 5.5 Max"（Artificial Analysis Coding Agent Index），平均每个任务的 API 成本约为一半。这是 GitHub 转述的第三方指数，本图没有抄进基准表。同一天 **Copilot 包含进了 GitHub Enterprise**，面向有 GitHub 或微软客户团队对接的企业，"AI usage ... metered from the first request against your enterprise budget"，没有包含额度。自助购买"分阶段"开放，Copilot Business 与 Enterprise 继续提供。
 
 **OpenAI 于 10 月 30 日发布 GPT-6 Rosalind**，"specialized biological reasoning with scientific tool use"，$15 / $75，缓存输入 $1.50，面向获批进入受信访问计划的机构。它不是编码模型，不进 cost 表。10 月 28 日起，符合条件的 ChatGPT Pro 与 Business 订阅用户可领取"up to $500 per month in free API credits"。
 
-**Kimi K3.1 Pro 的权重截至 11 月 3 日还没发布**，距月之暗面"by Nov 4"的日期还有一天：Hugging Face 路径未公开，quickstart 里基准分数的位置仍是 `[xx.x%]`。它继续不进开放权重表。**Google 将从 12 月 1 日起把 `gemini-2.5-pro` 路由到 `gemini-3.8-flash`**，按 Flash 价计费（11 月 2 日 changelog）；这个字符串仍是 [Gemini CLI](agents/gemini-cli.md) 源码里的 `DEFAULT_GEMINI_MODEL`，所以它的实际默认可能不发版就变。Anthropic 弃用 Opus 4.8 的 fast mode，11 月 30 日移除。
+**本期 11 月 4 日抓取时（北京时间 11:16），Kimi K3.1 Pro 的权重还没公开**，这正是月之暗面给的日期（"by Nov 4"），这一天还没过完：Hugging Face 路径未公开。它的 quickstart 已把 `[xx.x%]` 占位符换成了分数：月之暗面报告 Terminal-Bench 4.0 得 65.7%，Claude Opus 5.5 为 66.4%，GPT-6 Astra 为 58.2%，自家 Kimi Code Bench 3.0 Long-horizon 得 61.2%。这些是厂商自己的数字，权重发布之前它继续不进开放权重表。**Google 将从 12 月 1 日起把 `gemini-2.5-pro` 路由到 `gemini-3.8-flash`**，按 Flash 价计费（11 月 2 日 changelog）；这个字符串仍是 [Gemini CLI](agents/gemini-cli.md) 源码里的 `DEFAULT_GEMINI_MODEL`，所以它的实际默认可能不发版就变。Anthropic 弃用 Opus 4.8 的 fast mode，11 月 30 日移除。
+
+**Anthropic 于 11 月 2 日在 Messages API 上开放 message threads 测试版**：API 把对话保存在服务端，之后每次请求只发新消息，thread 在最后一次请求 5 分钟后过期。
 
 **消费级 agent 也有动作。** [Muse](agents/meta-muse.md) 10 月 27 日在新加坡开放，[ChatGPT dots](agents/chatgpt-dots.md) 为美国 Pro 用户加了 iMessage 与 RCS 短信入口（测试版）；细节见[个人 agent](comparisons/personal-agents.md#最近变化) 日志。
 
@@ -20,7 +22,7 @@
 
 第一，**Copilot 的问题正从席位数转向预算。** cost 表里"固定席位"的读法不再覆盖所有买法，而 Fusion 会把模型选择拿走，除非你自己保留。如果你走企业协议，先问清自己属于哪一种。
 
-第二，**价格和默认模型都没动。** [cost 表](comparisons/cost-and-benchmarks.md)每一行都与厂商页面一致。窗口内没有被跟踪的编码 agent 换默认模型，已是连续第五个窗口（[Claude Code](agents/claude-code.md) `v2.1.312`–`v2.1.317`；[Codex CLI](agents/codex.md) `rust-v0.165.0`、`rust-v0.166.0` 把 GPT-6.1 Terra 加进目录，Sol 仍排第一；Gemini CLI `v0.66.0`；[OpenCode](agents/opencode.md) `v2.2.1`–`v2.2.5`，它的"New Default Model Picker"是界面改动）。
+第二，**价格和默认模型都没动。** [cost 表](comparisons/cost-and-benchmarks.md)每一行在 11 月 3 日都与厂商页面一致，11 月 4 日又读了一遍主要行，没有变化。窗口内没有被跟踪的编码 agent 换默认模型，已是连续第五个窗口（[Claude Code](agents/claude-code.md) `v2.1.312`–`v2.1.318`；[Codex CLI](agents/codex.md) `rust-v0.165.0`、`rust-v0.166.0` 把 GPT-6.1 Terra 加进目录，Sol 仍排第一；Gemini CLI `v0.66.0`；[OpenCode](agents/opencode.md) `v2.2.1`–`v2.2.5`，它的"New Default Model Picker"是界面改动）。
 
 来源：[Copilot Fusion](https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/)、[GitHub Enterprise 包含 Copilot](https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot/)、[OpenAI API changelog](https://developers.openai.com/api/docs/changelog)、[OpenAI 价格](https://developers.openai.com/api/docs/pricing)、[Kimi K3.1 Pro quickstart](https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart)、[Gemini API changelog](https://aistudio.google.com/docs/changelog)、[Anthropic 发布说明](https://platform.claude.com/docs/en/release-notes/overview)、[Muse 新加坡](https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/)、[ChatGPT what's new](https://learn.chatgpt.com/docs/whats-new)、[MiniMax M3.1 Flash](https://www.minimax.io/blog/minimax-m31f)、[模型卡](https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash)、[xAI 发布说明](https://docs.x.ai/developers/release-notes)。
 

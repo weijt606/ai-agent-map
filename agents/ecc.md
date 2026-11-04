@@ -12,7 +12,7 @@ One-line take: ECC is a plugin you install into an existing coding agent that br
 | --- | --- |
 | Vendor | Affaan Mustafa (single maintainer, per the README) and contributors |
 | Route | Agentic skills framework — a skills, hooks, and memory layer that runs inside a host agent |
-| Repository | [`affaan-m/ECC`](https://github.com/affaan-m/ECC) — MIT, JavaScript; 295.7k stars as of 2026-11-03 |
+| Repository | [`affaan-m/ECC`](https://github.com/affaan-m/ECC) — MIT, JavaScript; 296.6k stars as of 2026-11-04 |
 | Open source | Yes (MIT). The hosted ECC Tools GitHub App has a Free tier for public repos (10 analyses a month); **ECC Pro** is $19/seat/month and covers private repos; Enterprise via sales |
 | Works with | [Claude Code](claude-code.md) (stable, primary); [Codex](codex.md) and Qoder (native plugins); [Cursor](cursor.md), [OpenCode](opencode.md), GitHub Copilot CLI (beta); Gemini, Zed, Antigravity, Qwen, [Hermes](hermes-agent.md), [OpenClaw](openclaw.md), Kimi and others (experimental adapters); [GitHub Copilot](github-copilot.md) Chat (instructions only) |
 | Best for | Claude Code users who want planning, TDD, fresh-context review, hook-enforced checks, and agent-config security scanning in one install |

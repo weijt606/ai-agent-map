@@ -12,7 +12,7 @@
 | --- | --- |
 | 厂商 | Alex Newman（[@thedotmack](https://github.com/thedotmack)）和贡献者 |
 | 路线 | Runtime & tools——给其他 agent 用的跨会话记忆层 |
-| 仓库 | [`thedotmack/claude-mem`](https://github.com/thedotmack/claude-mem)——Apache-2.0，TypeScript；截至 2026-11-03 有 11.08 万 star |
+| 仓库 | [`thedotmack/claude-mem`](https://github.com/thedotmack/claude-mem)——Apache-2.0，TypeScript；截至 2026-11-04 有 11.20 万 star |
 | 开源 | open core。引擎、Claude-Mem Server、CLI、SDK、适配器和 MCP 工具是 Apache-2.0；托管云、团队/组织同步、SSO 等企业功能保留为商业部分 |
 | 付费档 | **CMEM Pro**（托管 observer、云同步、私有 MCP 链接）：30 天试用，之后 $30/月；Heavy $70/月，Max $100/月（超额另计费） |
 | 适配哪些 agent | [Claude Code](claude-code.md)（插件 marketplace）、[Codex](codex.md)、[OpenCode](opencode.md)（1.3.4+，含 2.x）、[OpenClaw](openclaw.md) gateway、[Pi](pi.md)、[DeepSeek Harness](deepseek-harness.md)、[Grok Bot](grok-bot.md)、T3 Code、Antigravity CLI、Oh My Pi；仓库简介里还列了 Gemini、[Hermes](hermes-agent.md) 和 Copilot |

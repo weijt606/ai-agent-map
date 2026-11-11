@@ -16,7 +16,7 @@
 | 形态 | iOS 与 Android 应用、muse.ai 网页、WhatsApp；AI 眼镜"即将推出" |
 | 状态 | **2026-09-08** 发布，"正在美国推出"；Meta 帮助中心称 Muse 及其订阅"正在小范围测试"。**2026-10-27 起在新加坡开放**，覆盖 iOS、Android 和 muse.ai |
 | 在哪里跑 | **Muse Secure VM**——每人一台带独立浏览器的专属云端电脑 |
-| 模型 | **Muse Spark**；Meta 称 [Muse Wonder](../market-events.md) 将"很快为 Muse 提供能力"，订阅用户优先 |
+| 模型 | **Muse Spark**；Meta 称 [Muse Wonder](../market-events.md) 将"很快为 Muse 提供能力"，订阅用户优先。2026-11-06 Meta 说正在"rolling out specialized versions of our models to Muse, trained with learnings from Muse Wonder"，没有点名 |
 | 使用条件 | 免费（有用量限制）；付费的 **Power** 和 **Maximum** 套餐 |
 | 官方页面 | https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/ |
 

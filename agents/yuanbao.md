@@ -15,7 +15,7 @@ One-line take: Yuanbao is Tencent's free consumer assistant, and since July 2026
 | Open source | No (the Hy3 model is described by Tencent as a 295B-total / 21B-active MoE with 256K context) |
 | Form factor | iOS and Android app, web |
 | Status | Agent feature launched with Hy3, announced **July 6 2026** |
-| Model | **Hy3** (Tencent Hunyuan) |
+| Model | **Hy3** (Tencent Hunyuan) at the Agent launch; the App Store notes for v2.92.0 (Nov 6 2026) say "Hy4 模型上线" (no Tencent newsroom post found, so whether the Agent feature runs on Hy4 is not documented) |
 | Access | **Free** — Tencent says the Agent deliverables are "all free"; the app is free to download on the China App Store |
 | Regions | China App Store |
 | Official page | https://www.tencent.com/zh-hk/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/ |

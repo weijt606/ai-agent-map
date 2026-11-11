@@ -55,6 +55,8 @@ IDE 的处境：2.0 发布时，现有 IDE 用户被自动升级到桌面应用�
 | Claude Sonnet 4.6、Opus 4.6（thinking） | 有，2026-11-02 下线 | 有，2026-11-02 下线 | 无 | 无 |
 | GPT-OSS-120b | 有，2026-11-02 下线 | 有，2026-11-02 下线 | 有，2026-11-02 下线 | 无 |
 
+**更新（2026-11-11）：** Google 11 月 10 日的文章说 Gemini 4 Carbon "rolling out to all Google AI Ultra subscribers in Google Antigravity"；上表自 10-30 以来没有对照 Choose a model 页面重读。
+
 按这张表：2026-11-02 之后，免费档唯一的推理模型是 Gemini 3.8 Flash，Claude 只留在付费的 Pro、Ultra 和企业版。Gemini 和第三方模型各走一套配额，每套都有周上限和五小时上限。图像生成固定用 Nano Banana 2，不能换。Automations 默认用 Flash（v2.24.0）。用 Google Cloud 的应用默认凭据（ADC）登录时，如果你的 Vertex AI 项目有权限，桌面应用和 CLI 也会列出 Claude Opus 5.5 和 Sonnet 5.5。
 
 ## 方案与限制（截至 2026-10-30）

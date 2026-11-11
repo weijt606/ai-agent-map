@@ -6,7 +6,7 @@
 
 skill（技能）就是一个装着说明、有时还带脚本的文件夹，agent 在任务需要时才把它加载进来。5 月 [`.claude/skills` 浪潮](../market-events.md#2026-05持续中-claudeskills-浪潮)开始以来，skill 集合一直是本地图跟踪的仓库里 star 最多的一批。本地图不给精选集合写 profile，因为它们是内容资产，不是 agent 本身；这一页就是比较它们的地方。本页讲四件事：skill 是什么，哪些 agent 能加载它，最大的五个集合和框架，以及装别人的 skill 之前要查什么。
 
-> **最近复核：** 2026-11-03 · 下面每条事实都来自厂商自己的文档、仓库自己的 README 和文件，或维护者自己的网站。star 数是本地图 2026-11-04 的快照。厂商自报的数字都注明了出处。
+> **最近复核：** 2026-11-11 · 下面每条事实都来自厂商自己的文档、仓库自己的 README 和文件，或维护者自己的网站。star 数是本地图 2026-11-11 的快照。厂商自报的数字都注明了出处。
 
 ## skill 是什么
 
@@ -43,18 +43,18 @@ skill 是分阶段加载的，规范和 Anthropic 文档都把这叫作**渐进�
 
 | Agent | skill 放在哪里 | 怎么用 | 文档里值得注意的 |
 | --- | --- | --- | --- |
-| **Claude 应用**（claude.ai） | 自定义 → Skills → "+" → 上传 skill（把文件夹打成 ZIP） | 相关时 Claude 自己调用；每个 skill 可单独开关 | 需要先打开代码执行。自定义 skill 只属于个人，不是全组织共享 |
-| **[Claude Code](../agents/claude-code.md)** | `~/.claude/skills/<名字>/SKILL.md`（个人）、`.claude/skills/<名字>/SKILL.md`（项目），或放在插件里 | 自动调用，或输入 `/skill-name` | 自定义命令"have been merged into skills"（已并入 skill） |
+| **Claude 应用**（claude.ai） | 自定义 → Skills → "+" → 上传 skill（把文件夹打成 ZIP） | 相关时 Claude 自己调用；每个 skill 可单独开关 | 需要先打开代码执行。Team 和 Enterprise 的所有者可以给全组织预置 skill，成员也可以分享 skill（群组仅限 Enterprise；所有者要先打开"Share with organization"或"Share with groups"，两者默认关闭，之后才会出现分享按钮） |
+| **[Claude Code](../agents/claude-code.md)** | `~/.claude/skills/<名字>/SKILL.md`（个人）、`.claude/skills/<名字>/SKILL.md`（项目），或放在插件里 | 自动调用，或输入 `/skill-name` | 自定义命令"have been merged into skills"（已并入 skill）。v2.1.273 起，claude.ai 账号里的 skill 会同步到 `~/.claude/skills/synced/` |
 | **Claude Agent SDK** | `.claude/skills/` 和 `~/.claude/skills/`，通过 `settingSources` 加载 | 模型自行调用，或发送 `/<名字>`；用 `skills` 选项限定范围 | 没有编程注册接口，skill 就是磁盘上的文件 |
 | **Claude API / Managed Agents** | 通过 `/v1/skills` 上传，或用预置的 `pptx` / `xlsx` / `docx` / `pdf` | 在 `container` 参数里列出 `skill_ids`，并带上代码执行工具 | 在沙箱里运行，不能联网 |
 | **[Codex](../agents/codex.md) 与 ChatGPT** | `.agents/skills/`（仓库）、`~/.agents/skills/`（用户）；`$skill-installer` 可装精选 skill | 自动调用，或在 Codex 里用 `$` / `/skills`，在 ChatGPT 里用 `@` | 独立 skill 可用于 ChatGPT 桌面版、Codex CLI 和 IDE 扩展；插件里打包的 skill 在网页版和手机端也能用 |
-| **[Cursor](../agents/cursor.md)** | `.agents/skills/`、`.cursor/skills/`（及 `~/` 下对应目录）；也读 `.claude/skills/` | 自动调用，或在 Agent 对话里输入 `/` | 来自 GitHub 仓库的 skill 要以插件形式导入 |
+| **[Cursor](../agents/cursor.md)** | `.agents/skills/`、`.cursor/skills/`（及 `~/` 下对应目录）；也读 `.claude/skills/`、`.codex/skills/` 及其 `~/` 下对应目录 | 自动调用，或在 Agent 对话里输入 `/` | 来自 GitHub 仓库的 skill 要以插件形式导入。文档点名了 Agent Skills 开放标准 |
 | **VS Code 里的 [GitHub Copilot](../agents/github-copilot.md)** | `.github/skills/`、`~/.copilot/skills/`；也列出 `.claude/skills/` 和 `.agents/skills/` | skill 适用时加载；对话里输入 `/skills` | 文档提醒只复用可信的 skill |
 | **[Gemini CLI](../agents/gemini-cli.md)** | `.gemini/skills/` 或 `.agents/skills/`（及 `~/` 下对应目录）；`gemini skills install <git 地址>` | Gemini 调用 `activate_skill`，你在同意提示里批准 | 免费用户和 Google One 用户已于 2026-06-18 转到 Antigravity CLI |
 | **[OpenCode](../agents/opencode.md)** | `.opencode/skills/`、`.claude/skills/`、`.agents/skills/`（及全局对应目录） | 内置 `skill` 工具按需加载 | 可在 `opencode.json` 里把每个 skill 设成允许、拒绝或询问 |
 | **[WorkBuddy](../agents/workbuddy.md)** | 技能页：点市场卡片上的 "+"，或 添加技能 → 上传（文件夹或 .zip，需含 `SKILL.md`，并用 YAML 写名称和描述）/ 创建 / 查找。文档没有写目录路径 | 已安装的技能在对话里用自然语言调用；每个技能可单独开关 | 文档没有提 Agent Skills 标准。上传时可勾选非高风险自动安装。 |
 
-从这张表能看出两件事。第一，`.agents/skills/` 是这些 agent 共用最多的文件夹：Codex、Cursor、VS Code 里的 Copilot、Gemini CLI 和 OpenCode 都读它，Claude Code 的文档没有列它；而 Claude Code、Agent SDK、Cursor、VS Code 里的 Copilot 和 OpenCode 读 `.claude/skills/`。第二，自定义 skill 在 Claude 自家各个入口之间不同步。上传到 claude.ai 的 skill 要另外上传到 API，Claude Code 则在磁盘上另存一份。
+从这张表能看出两件事。第一，`.agents/skills/` 是这些 agent 共用最多的文件夹：Codex、Cursor、VS Code 里的 Copilot、Gemini CLI 和 OpenCode 都读它，Claude Code 的文档没有列它；而 Claude Code、Agent SDK、Cursor、VS Code 里的 Copilot 和 OpenCode 读 `.claude/skills/`。第二，Claude 自家各入口只部分同步。Claude Code（v2.1.273 及以后）、Cowork 和云端会话会加载你 claude.ai 账号里启用的 skill，但上传到 claude.ai 的 skill 仍要另外上传到 API。*（2026-11-11 更正：这句原先说自定义 skill 完全不同步、Claude Code 在磁盘上另存一份；Claude Code 文档说终端同步需要 v2.1.273 或更高版本，该版本于 2026-09-15 发布。）*
 
 Anthropic 自己的页面有一处不一致：帮助中心说 Free、Pro、Max、Ultra、Team、Enterprise 各档都能用 skill，平台文档则说自定义 skill 上传从 Pro 档起。以你自己账户的设置页为准。
 
@@ -64,15 +64,15 @@ Anthropic 自己的页面有一处不一致：帮助中心说 Free、Pro、Max�
 
 ## 集合对比
 
-按 2026-11-04 的 star 数排序。"skill 数"是 2026-11-03 各仓库里 `SKILL.md` 文件的个数；ECC 例外，它的目录树里有翻译副本，所以用它 README 里的数字。
+按 2026-11-11 的 star 数排序。"skill 数"是 2026-11-03 各仓库里 `SKILL.md` 文件的个数；ECC 例外，它的目录树里有翻译副本，所以用它 README 里的数字。
 
-| 项目 | 类型 | 对你来说改变了什么 | skill 数 | README 覆盖的 agent | 体量 | 维护者 | 许可证 | Star（2026-11-04） |
+| 项目 | 类型 | 对你来说改变了什么 | skill 数 | README 覆盖的 agent | 体量 | 维护者 | 许可证 | Star（2026-11-11） |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [Superpowers](../agents/superpowers.md) | 框架 + 方法论 | 一套自动触发、必须遵守的流程：头脑风暴 → git worktree → 计划 → 子 agent 或当前会话执行 → TDD → 代码评审 → 收尾分支 | 15 | 16 个安装目标，包括 Claude Code、Codex 应用与 CLI、Cursor、Gemini CLI、GitHub Copilot CLI、OpenCode、Antigravity、Kimi Code、Qwen Code、Pi、Hermes Agent | 每个 harness 装一个插件；会话开始时注入引导 | Jesse Vincent 与 Prime Radiant | MIT | 311.9k |
-| [mattpocock/skills](https://github.com/mattpocock/skills) | 个人集合 | 一组小 skill，你手动调用或 agent 自己挑：`/grill-me`、`/tdd`、`/to-spec`、`/diagnosing-bugs` 等，分成用户调用和模型调用两类 | 39（README 列出的工程与效率两组共 27） | Claude Code、Codex、GitHub Copilot（CLI 和 VS Code）、Gemini CLI；其他 agent 用 `npx skills` | 插件（自动更新）或可编辑的副本，二选一 | Matt Pocock | MIT | 311.6k |
-| [ECC](../agents/ecc.md) | 框架 + 运行时层 | 一整套工程体系：子 agent、拦截命令的 hook、本地记忆库、AgentShield 配置扫描 | 314 个 skill、71 个 agent（README） | Claude Code 稳定；Codex 与 Qoder 原生；Cursor、OpenCode、Copilot CLI 为 beta；其余实验性 | 体量大；README 建议在意上下文时用 `--profile minimal` | Affaan Mustafa（README 自称"a single maintainer"） | MIT（托管的 Pro 档收费） | 296.6k |
-| [anthropics/skills](https://github.com/anthropics/skills) | 官方参考示例 | 演示这种模式：创意与设计、开发、企业沟通，以及 Claude 文件生成背后的文档类 skill | 20（含一个模板） | Claude Code（插件市场）、claude.ai、Claude API | 按插件挑（`document-skills`、`example-skills`） | Anthropic | 多数 Apache-2.0；`docx` / `pdf` / `pptx` / `xlsx` 是源码可见（source-available），不是开源 | 187.2k |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 按开发生命周期组织的集合 | 从 `/spec` 到 `/ship` 的九个命令（定义 → 计划 → 构建 → 验证 → 评审 → 上线），skill 也会自己触发 | 25 | Claude Code（推荐）、Codex、Cursor、Antigravity CLI、Gemini CLI、OpenCode、GitHub Copilot、Windsurf、Kiro、Command Code | 整包安装，或用 `npx skills` 一次装一个 | Addy Osmani | MIT | 113.1k |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | 个人集合 | 一组小 skill，你手动调用或 agent 自己挑：`/grill-me`、`/tdd`、`/to-spec`、`/diagnosing-bugs` 等，分成用户调用和模型调用两类 | 39（README 列出的工程与效率两组共 27） | Claude Code、Codex、GitHub Copilot（CLI 和 VS Code）、Gemini CLI；其他 agent 用 `npx skills` | 插件（自动更新）或可编辑的副本，二选一 | Matt Pocock | MIT | 321.2k |
+| [Superpowers](../agents/superpowers.md) | 框架 + 方法论 | 一套自动触发、必须遵守的流程：头脑风暴 → git worktree → 计划 → 子 agent 或当前会话执行 → TDD → 代码评审 → 收尾分支 | 15 | 16 个安装目标，包括 Claude Code、Codex 应用与 CLI、Cursor、Gemini CLI、GitHub Copilot CLI、OpenCode、Antigravity、Kimi Code、Qwen Code、Pi、Hermes Agent | 每个 harness 装一个插件；会话开始时注入引导 | Jesse Vincent 与 Prime Radiant | MIT | 315.9k |
+| [ECC](../agents/ecc.md) | 框架 + 运行时层 | 一整套工程体系：子 agent、拦截命令的 hook、本地记忆库、AgentShield 配置扫描 | 314 个 skill、71 个 agent（README） | Claude Code 稳定；Codex 与 Qoder 原生；Cursor、OpenCode、Copilot CLI 为 beta；其余实验性 | 体量大；README 建议在意上下文时用 `--profile minimal` | Affaan Mustafa（README 自称"a single maintainer"） | MIT（托管的 Pro 档收费） | 300.9k |
+| [anthropics/skills](https://github.com/anthropics/skills) | 官方参考示例 | 演示这种模式：创意与设计、开发、企业沟通，以及 Claude 文件生成背后的文档类 skill | 20（含一个模板） | Claude Code（插件市场）、claude.ai、Claude API | 按插件挑（`document-skills`、`example-skills`） | Anthropic | Apache-2.0；`docx` / `pdf` / `pptx` / `xlsx` 于 2026-11-06 从源码可见改为 Apache-2.0（PR #2146） | 192.6k |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 按开发生命周期组织的集合 | 从 `/spec` 到 `/ship` 的九个命令（定义 → 计划 → 构建 → 验证 → 评审 → 上线），skill 也会自己触发 | 25 | Claude Code（推荐）、Codex、Cursor、Antigravity CLI、Gemini CLI、OpenCode、GitHub Copilot、Windsurf、Kiro、Command Code | 整包安装，或用 `npx skills` 一次装一个 | Addy Osmani | MIT | 115.4k |
 
 维护者各自怎么介绍自己：**Matt Pocock** 说自己是"an educator, content creator and engineer"（教育者、内容创作者和工程师），现在全职教 AI 工程，并运营 Total TypeScript。**Addy Osmani** 的个人网站说他是"a Member of Technical Staff at Anthropic"，参与 Claude Code；此前在 Google 工作 14 年以上，最近的职位是 Google Cloud AI 的 Director。**Jesse Vincent** 和 Prime Radiant 一起开发 Superpowers，Prime Radiant 提供商业支持。**Affaan Mustafa** 按 README 的说法是 ECC 的唯一维护者。
 
@@ -98,6 +98,7 @@ Anthropic 自己的页面有一处不一致：帮助中心说 Free、Pro、Max�
 
 ## 最近变化
 
+- **2026-11-11** —— star 改用 2026-11-11 快照；[mattpocock/skills](https://github.com/mattpocock/skills)（321.2k）现在超过 Superpowers（315.9k），表格顺序随之调整。**anthropics/skills 于 11 月 6 日把 Office 类 skill（`docx`、`pdf`、`pptx`、`xlsx`）改为 Apache-2.0**（[PR #2146](https://github.com/anthropics/skills/pull/2146)）；许可证格原写它们是源码可见。重读了各 agent 文档：Cursor 还会加载 `.codex/skills/`，并点名了 Agent Skills 标准；Claude 两行有两处更正（不是本周的变化）：Claude Code 自 v2.1.273（9 月 15 日）起就会同步 claude.ai 的 skill，Team 和 Enterprise 可以给全组织预置 skill。skill 数不变（15、39、20、25；ECC 的 README 仍写 314）。
 - **2026-11-04** —— star 改用 2026-11-04 快照，它取代了 11-03 那份。这次改动没有重读 skill 数和 agent 文档。
 - **2026-11-03** —— "在哪里能用"加入 WorkBuddy。它的技能页和上传弹窗要求 `SKILL.md`，并用 YAML 写名称和描述，与规范的结构相同，但文档没有提这个标准，所以本图不说它符合标准。
 - **2026-11-03** —— star 改用 2026-11-03 快照，ECC 已进入快照。skill 数复核没有变化（15、39、20、25；ECC 的 README 仍写 314）。ECC 和 Superpowers 的 profile 已按现在的 README 更正。本周复核的是五个集合；"在哪里能用"表里的 agent 文档最后一次读取是 2026-11-01。

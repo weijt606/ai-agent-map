@@ -55,6 +55,8 @@ From Google's "Choose a model" page. Each model has Low, Medium or High thinking
 | Claude Sonnet 4.6 and Opus 4.6 (thinking) | Yes, removed 2026-11-02 | Yes, removed 2026-11-02 | No | No |
 | GPT-OSS-120b | Yes, removed 2026-11-02 | Yes, removed 2026-11-02 | Yes, removed 2026-11-02 | No |
 
+**Update (2026-11-11):** Google's Nov 10 post says Gemini 4 Carbon is "rolling out to all Google AI Ultra subscribers in Google Antigravity"; the table above has not been re-read against the Choose a model page since 10-30.
+
 Reading the table: after 2026-11-02 the free tier's only reasoning model is Gemini 3.8 Flash, and Claude stays only on paid Pro, Ultra and Enterprise. Gemini and the third-party models draw on separate quotas, each with a weekly limit and a five-hour limit. Image generation uses Nano Banana 2 and cannot be changed. Automations default to Flash (v2.24.0). When signed in with Google Cloud Application Default Credentials, the app and CLI can also offer Claude Opus 5.5 and Sonnet 5.5 if your Vertex AI project has access.
 
 ## Plans And Limits (as of 2026-10-30)

@@ -53,11 +53,12 @@ The model layer under Claude Code moved a lot in mid-2026; the product's selecti
 - **September 22 2026 — Opus 5.5**: Claude Code `v2.1.280` made Opus 5.5 the default Opus model, with a 1M context. Anthropic says it works at Fable 5.1's level on most tasks. See [benchmarks & billing](../comparisons/benchmarks-and-billing.md).
 - **September 28 2026 — Sonnet 5.5**: `2.1.284` made Sonnet 5.5 the default Sonnet model (1M context); its Terminal-Bench 4.0 score (70.6%) is above Opus 5.5's 66.4%.
 - **October 7 2026 — Haiku 5.5**: `v2.1.293` added Haiku 5.5 without changing the Opus or Sonnet defaults.
+- **November 9 2026 — [Fable 5.2](claude-fable-5.md)**: `2.1.321` made Fable 5.2 the default Fable model (1M context) and moved saved Fable 5.1 picks to the `fable` alias, at once on Pro and Max and on Team and Enterprise once the organization allows it; `/model claude-fable-5-1` switches back. The Opus and Sonnet defaults did not change.
 
 ## Operating Cost
 
-Complexity is Medium. Starting is straightforward, but good long-term use depends on clean project instructions, permission design, and disciplined tool setup. Since July 2026, budgeting [Fable 5.1](claude-fable-5.md) credits versus staying on the default Opus 5.5 (it replaced [Opus 5](claude-opus-5.md) on Sept 22) is part of the operating decision.
+Complexity is Medium. Starting is straightforward, but good long-term use depends on clean project instructions, permission design, and disciplined tool setup. Since July 2026, budgeting [Fable](claude-fable-5.md) credits (5.2 since Nov 9) versus staying on the default Opus 5.5 (it replaced [Opus 5](claude-opus-5.md) on Sept 22) is part of the operating decision.
 
 ## Bottom Line
 
-Claude Code behaves more like a durable development augmentation layer than a one-shot task inbox — and since mid-2026, one whose capability ceiling is a per-task model choice ([Fable 5.1](claude-fable-5.md) on credits, Opus 5.5 as the default Opus, Sonnet 5.5 as the default Sonnet) rather than a fixed property.
+Claude Code behaves more like a durable development augmentation layer than a one-shot task inbox — and since mid-2026, one whose capability ceiling is a per-task model choice ([Fable 5.2](claude-fable-5.md) on credits, Opus 5.5 as the default Opus, Sonnet 5.5 as the default Sonnet) rather than a fixed property.

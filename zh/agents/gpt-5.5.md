@@ -37,7 +37,7 @@
 ## 什么时候别选
 
 - 你需要开源或自托管模型。GPT-5.5 完全闭源。
-- 你需要当前的前沿——2026 年春季之后双方都已迭代了两轮（[GPT-6 Astra](gpt-6-astra.md)、[Claude Fable 5.1](claude-fable-5.md)、[Opus 5](claude-opus-5.md)），见下方"发布后格局"。
+- 你需要当前的前沿——2026 年春季之后双方都已迭代了两轮（[GPT-6 Astra](gpt-6-astra.md)、[Claude Fable 5.2](claude-fable-5.md)、[Opus 5](claude-opus-5.md)），见下方"发布后格局"。
 - 你要的是一个成品 agent 产品，不是一个模型。那请看 [Codex](codex.md)。
 - 你需要完全本地执行，不想依赖云端。
 
@@ -91,7 +91,7 @@ GPT-5.5 4 月发布后前沿迭代得很快，如今两侧各自又走了两代�
 | **Claude Haiku 5.5**（Anthropic） | 2026-10-07 | Anthropic 的底档 |
 | **GPT-6.1 Terra**（OpenAI） | 2026-10-26 | 在 Codex 里可选，但不是默认 |
 
-务实的读法：新项目里 GPT-5.5 已是遗留选择，而且 2026-10-14 起对用 ChatGPT 登录的人来说只剩 API 能用。天花板那一层的决策仍是 **[GPT-6 Astra](gpt-6-astra.md) 对 [Fable 5.1](claude-fable-5.md)**。再往下，一侧是 GPT-6.1 Sol、GPT-6.1 Terra 和 GPT-6 Luna，另一侧是 Opus 5.5、Sonnet 5.5 和 Haiku 5.5；两家的编码 agent 默认都落在这一中间层。
+务实的读法：新项目里 GPT-5.5 已是遗留选择，而且 2026-10-14 起对用 ChatGPT 登录的人来说只剩 API 能用。天花板那一层的决策仍是 **[GPT-6 Astra](gpt-6-astra.md) 对 [Fable 5.2](claude-fable-5.md)**。再往下，一侧是 GPT-6.1 Sol、GPT-6.1 Terra 和 GPT-6 Luna，另一侧是 Opus 5.5、Sonnet 5.5 和 Haiku 5.5；两家的编码 agent 默认都落在这一中间层。
 
 ## 最后一句
 

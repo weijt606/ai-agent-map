@@ -37,7 +37,7 @@ When a model release changes what agents built on top of it can do, the model it
 ## When Not To Pick It
 
 - You want an open-source or self-hosted model. GPT-5.5 is fully proprietary.
-- You need the current frontier — the landscape has moved twice on both sides since spring 2026 ([GPT-6 Astra](gpt-6-astra.md), [Claude Fable 5.1](claude-fable-5.md), [Opus 5](claude-opus-5.md)); see Post-Launch Landscape below.
+- You need the current frontier — the landscape has moved twice on both sides since spring 2026 ([GPT-6 Astra](gpt-6-astra.md), [Claude Fable 5.2](claude-fable-5.md), [Opus 5](claude-opus-5.md)); see Post-Launch Landscape below.
 - You want a finished agent product, not a model. In that case, look at [Codex](codex.md) (the product) instead.
 - You want local execution without cloud dependency.
 
@@ -91,7 +91,7 @@ The frontier moved fast after GPT-5.5's April launch, and has now moved through 
 | **Claude Haiku 5.5** (Anthropic) | October 7 2026 | The Anthropic floor |
 | **GPT-6.1 Terra** (OpenAI) | October 26 2026 | Selectable in Codex, not a default |
 
-Practical read: GPT-5.5 is a legacy choice for new work, and since 2026-10-14 it is API-only for anyone signed in with ChatGPT. At the ceiling the decision is still **[GPT-6 Astra](gpt-6-astra.md) versus [Fable 5.1](claude-fable-5.md)**. Below it sit GPT-6.1 Sol, GPT-6.1 Terra and GPT-6 Luna on one side, and Opus 5.5, Sonnet 5.5 and Haiku 5.5 on the other; both vendors' coding agents default to that middle layer.
+Practical read: GPT-5.5 is a legacy choice for new work, and since 2026-10-14 it is API-only for anyone signed in with ChatGPT. At the ceiling the decision is still **[GPT-6 Astra](gpt-6-astra.md) versus [Fable 5.2](claude-fable-5.md)**. Below it sit GPT-6.1 Sol, GPT-6.1 Terra and GPT-6 Luna on one side, and Opus 5.5, Sonnet 5.5 and Haiku 5.5 on the other; both vendors' coding agents default to that middle layer.
 
 ## Bottom Line
 

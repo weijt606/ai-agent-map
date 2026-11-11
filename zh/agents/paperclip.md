@@ -15,7 +15,7 @@
 | 仓库 | [`paperclipai/paperclip`](https://github.com/paperclipai/paperclip)：MIT，TypeScript，截至 2026-11-04 共 110.9k star |
 | 开源 | 是（MIT）。"Open source. Self-hosted. No Paperclip account required." |
 | 形态 | Node.js 服务端 + React 网页界面 + 内嵌 PostgreSQL；用 `npx paperclipai@latest onboard --yes` 或 Docker 安装 |
-| 支持的 agent | 有 OpenClaw、Claude Code、Codex、Cursor（及 Cursor Cloud）、Gemini CLI、OpenCode、Pi、Hermes（及 Hermes Gateway）、Grok Build、Kimi Code 的适配器，另外支持自定义进程、HTTP 端点和适配器插件 |
+| 支持的 agent | 有 OpenClaw、Claude Code、Codex、Cursor（及 Cursor Cloud）、Gemini CLI、OpenCode、Pi、Hermes（及 Hermes Gateway）、Grok Build、Kimi Code 的适配器，另外支持自定义进程、HTTP 端点和适配器插件。`v2026.1106.0`（2026-11-06）起，在符合条件的 macOS 和 Linux 主机上，新建的 Claude、Codex、OpenCode、Pi agent 默认跑在原生 **Paperclip Runner** 上，不再用旧适配器（已有 agent 保持原样，并多一个"Upgrade runner"按钮）；GitHub Copilot 成为原生 harness；Pipelines 实验功能被移除 |
 | 模型 | 每个 agent 单独选；从 `v2026.1023.0` 起，agent 也可以走你自己的网关（OpenRouter、Amazon Bedrock、Google Gemini，或任何 OpenAI Responses、Anthropic Messages、Chat Completions 端点） |
 | 托管版 | README 链了一个"Paperclip Cloud"候补名单，README 路线图把"Cloud deployments"标为进行中 |
 | 适合谁 | 有很多 agent 在跑持续性工作（写代码，也包括调研、运营、内容）、需要搞清楚谁在做什么、花了多少、哪些要人签字的人 |

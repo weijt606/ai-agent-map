@@ -4,6 +4,30 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
+## 2026-10-28 → 11-10 —— Fable 5.2 发布，Gemini 4 Carbon 进入 API，Kimi K3.1 Pro 开放权重，默认模型冻结期结束
+
+**Anthropic 于 11 月 9 日发布 Claude Fable 5.2 与 Claude Mythos 5.2**（`claude-fable-5-2`），输出比 5.1 快最多 30%，可选 fast mode；Claude Code 的 changelog 写明 1M 上下文，Pi 的发布说明写明输出上限 128K。按 Anthropic 自己的表，Fable 5.2 在 **FrontierSWE v2 得 69.9%**、**FrontierCode 2.0 得 49.1%**（Xhigh 推理强度），Opus 5.5 为 62.3% 和 45.5%，[GPT-6 Astra](agents/gpt-6-astra.md) 为 65.5% 和 42.8%，Gemini 4 Carbon 为 61.2% 和 41.1%（它的 FrontierCode 分数是 Medium 推理强度）。这是厂商自报，而且是本图以前没有跟踪过的基准。Anthropic 仍建议大多数编码和知识工作先从 Opus 5.5 开始。被拦下的请求现在网安类由 Opus 4.8 回答、生物类由 Opus 5 回答；Mythos 5.2 给进入 Anthropic 网安与生命科学验证计划的机构，Claude Enterprise 客户也能通过 Claude Security 用到它。[Claude Code](agents/claude-code.md) `2.1.321` 同日把 Fable 5.2 设为默认 Fable 模型，并把已保存的 Fable 5.1 选择迁到 `fable` 别名。GitHub Copilot 为 Pro+、Max、Business、Enterprise 加入了它。
+
+**Google 于 10 月 28 日发布 Gemini 4 Carbon**，称其为"our strongest model with state-of-the-art cybersecurity and long horizon capabilities"，起初只通过 Fairwind 计划开放给一部分网安防御者。它在 **11 月 10 日**以 `gemini-4-carbon` 进入 Gemini API，并正向 Google AI Ultra 用户的 Antigravity、Gemini 应用（含 Gemini Task）和 AI Mode 推送。Google 报告它在 Artificial Analysis Intelligence Index v5.0 排第一（59）；这不是本图跟踪的 Coding Agent Index，而 Google 的编码基准表是图片，本图读不到。**本图漏记了 10 月 28 日的发布**：11-04 那期一句没提，基准表直到现在才有 Carbon 一行。GitHub Copilot 于 11 月 10 日加入 Carbon。
+
+**Kimi K3.1 Pro 的权重已公开。** `moonshotai/Kimi-K3.1-Pro` 已在 Hugging Face 上，不需申请，第二个提交时间是 11 月 5 日 07:11 UTC；Hugging Face 不显示它转为公开的时刻，本图 11 月 4 日抓取时它还是私有的。模型卡给出总参数 2.8T、激活 104B、1M 上下文，并重复了月之暗面 Terminal-Bench 4.0 得 65.7 的说法（Opus 5.5 为 66.4，GPT-6 Astra 为 58.2）。**Kimi K3.1 Pro License** 是 MIT 式许可，附两个条件：营收超过门槛的模型即服务业务要另签协议，月活超过 1 亿或月营收超过门槛的产品要在界面上醒目显示"Kimi K3.1-Pro"。它现已进入[开放权重表](comparisons/benchmarks-and-billing.md)。
+
+**OpenAI 于 11 月 5 日发布 GPT-6-Cyber**（`gpt-6-cyber`），用于调查漏洞、在授权环境里复现并验证修复；changelog 说首次请求前先看 Daybreak 配置说明。它不是编码默认。
+
+**另一条本图没记的 12 月 1 日路由：** Google 11 月 2 日的 Gemini API 条目，在把 `gemini-2.5-pro` 路由到 `gemini-3.8-flash` 的同时，也把 `gemini-2.5-flash` 路由到 `gemini-3.5-flash-lite`；11-04 那期只报了前一条。[Gemini CLI](agents/gemini-cli.md) 的源码默认在 `v0.68.0`（11 月 10 日）仍是 `gemini-2.5-pro`，它的文档现在写着"has not been optimized for Gemini 4 Argon"，并让想用 Argon 的人去 Antigravity。
+
+**被跟踪仓库里有两处许可与产品变化。** anthropics/skills 于 11 月 6 日把 Office 类 skill（`docx`、`pdf`、`pptx`、`xlsx`）从源码可见改为 Apache-2.0（PR #2146），与仓库里多数 skill 的 Apache-2.0 许可一致；[Agent Skills](comparisons/agent-skills.md) 页已更正。[Paperclip](agents/paperclip.md) `v2026.1106.0` 让新建的 Claude、Codex、OpenCode、Pi agent 默认跑在原生 Runner 上，并移除了 Pipelines。
+
+**消费级 agent 也有变化。** Carbon 进入 Ultra 的 Gemini Task，[ChatGPT dots](agents/chatgpt-dots.md) 加入 GPT-6.1 Terra，[Muse](agents/meta-muse.md) 加了语音以及 Meta 所说的模型"specialized versions"，[Grok Bot](agents/grok-bot.md) 的文档现在写由 Grok Bot 选模型；细节见[个人 agent](comparisons/personal-agents.md#最近变化) 的记录。
+
+**对选型的影响：** 两点。
+
+第一，**默认模型的冻结期结束了，但变化在模型家族内部。** 连续五个窗口没有被跟踪的编码 agent 在发版里换默认。11 月 9 日有两个换了：Claude Code 把 Fable 默认换成 5.2；[Pi](agents/pi.md) `v1.5.1` 把 `anthropic` provider 的默认从 Opus 4.8 换成 Opus 5.5，另有多个 provider 换到更新的模型。新开一个 Claude Code 会话时用的模型，以及 [Codex CLI](agents/codex.md) 的 GPT-6.1 Sol，都没变。如果你之前在 Claude Code 里选的是 Fable 5.1，现在会跟随指向 5.2 的 `fable` 别名；用 `/model claude-fable-5-1` 可切回。
+
+第二，**新的天花板不是新的起点。** Anthropic 自己的公告说先用 Opus 5.5、需要时再升到 Fable；Carbon 发布 13 天后才进入 API。顶端的选型仍是按任务决策，自 Fable 5 发布以来一直如此。
+
+来源：[Claude Fable 5.2 与 Mythos 5.2](https://www.anthropic.com/news/claude-fable-and-mythos-5-2)、[Claude Code changelog](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md)、[Copilot 加入 Fable 5.2](https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot)、[Introducing Gemini 4 Carbon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/)、[Gemini 4 Carbon now available](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/)、[Gemini API 发布说明](https://aistudio.google.com/docs/changelog)、[Copilot 加入 Carbon](https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot)、[Kimi K3.1 Pro（Hugging Face）](https://huggingface.co/moonshotai/Kimi-K3.1-Pro)、[OpenAI API changelog](https://developers.openai.com/api/docs/changelog)、[Pi v1.5.1](https://github.com/earendil-works/pi/releases/tag/v1.5.1)、[anthropics/skills PR #2146](https://github.com/anthropics/skills/pull/2146)、[Paperclip v2026.1106.0](https://github.com/paperclipai/paperclip/releases/tag/v2026.1106.0)。
+
 ## 2026-10-27 → 11-04 —— Copilot 转向路由和计量，GPT-6 Rosalind 不碰编码，Kimi 的权重还没到
 
 **GitHub 于 10 月 28 日让 Copilot Fusion 正式可用。** 你选 Fusion，由 Copilot "intelligently" 路由和编排它用的模型；管理员可以通过企业托管设置把它设为 Copilot 用户的默认，所以这不是一次厂商层面的换默认。GitHub 说 Fusion Max "scored 60, within two points of Claude Code with Opus 5.5 Max"（Artificial Analysis Coding Agent Index）。这是 GitHub 转述的第三方指数，本图没有抄进基准表。同一天 **Copilot 包含进了 GitHub Enterprise**，面向有 GitHub 或微软客户团队对接的企业，AI 用量从第一次请求起计量，没有包含额度。自助购买"分阶段"开放，Copilot Business 与 Enterprise 继续提供。

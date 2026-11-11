@@ -53,11 +53,12 @@
 - **2026-09-22 Opus 5.5**：Claude Code `v2.1.280` 把 Opus 5.5 设为默认 Opus 模型，1M 上下文。Anthropic 的说法是它在多数工作上达到 Fable 5.1 的水平。见[基准与计费](../comparisons/benchmarks-and-billing.md)。
 - **2026-09-28 Sonnet 5.5**：`2.1.284` 把 Sonnet 5.5 设为默认 Sonnet 模型（1M 上下文）；它在 Terminal-Bench 4.0 上的 70.6% 还高过 Opus 5.5 的 66.4%。
 - **2026-10-07 Haiku 5.5**：`v2.1.293` 加入 Haiku 5.5，Opus 和 Sonnet 的默认不变。
+- **2026-11-09 [Fable 5.2](claude-fable-5.md)**：`2.1.321` 把 Fable 5.2 设为默认 Fable 模型（1M 上下文），并把已保存的 Fable 5.1 选择迁到 `fable` 别名：Pro、Max 立即生效，Team、Enterprise 在组织允许后生效；用 `/model claude-fable-5-1` 可切回。Opus 和 Sonnet 的默认没变。
 
 ## 使用代价
 
-复杂度是 Medium。上手不算难，真正的门槛在于怎么写好项目指令、怎么限制权限、怎么把 MCP 和 subagents 用得不混乱。2026 年 7 月起，"花 [Fable 5.1](claude-fable-5.md) 额度 vs 留在默认的 Opus 5.5"（9 月 22 日接替了 [Opus 5](claude-opus-5.md)）也是使用成本决策的一部分。
+复杂度是 Medium。上手不算难，真正的门槛在于怎么写好项目指令、怎么限制权限、怎么把 MCP 和 subagents 用得不混乱。2026 年 7 月起，"花 [Fable](claude-fable-5.md) 额度（11 月 9 日起为 5.2） vs 留在默认的 Opus 5.5"（9 月 22 日接替了 [Opus 5](claude-opus-5.md)）也是使用成本决策的一部分。
 
 ## 最后一句
 
-Claude Code 更像“长期可用的开发增强层”，不是一次性任务投递箱——而且 2026 年年中之后，它的能力上限变成了按任务做的模型选择（花额度用 [Fable 5.1](claude-fable-5.md)，默认 Opus 是 Opus 5.5，默认 Sonnet 是 Sonnet 5.5），不再是固定属性。
+Claude Code 更像“长期可用的开发增强层”，不是一次性任务投递箱——而且 2026 年年中之后，它的能力上限变成了按任务做的模型选择（花额度用 [Fable 5.2](claude-fable-5.md)，默认 Opus 是 Opus 5.5，默认 Sonnet 是 Sonnet 5.5），不再是固定属性。

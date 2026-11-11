@@ -35,7 +35,7 @@ That gap mattered, because the selection question on the Anthropic side is not "
 
 ## When Not To Pick It
 
-- You need the absolute ceiling on the hardest single task — [Fable 5.1](claude-fable-5.md) still leads, and on cybersecurity work Mythos 5 is ahead of Opus 5 outright.
+- You need the absolute ceiling on the hardest single task — [Fable 5.2](claude-fable-5.md) still leads, and on cybersecurity work Mythos 5 is ahead of Opus 5 outright.
 - You want an open-source or self-hosted model — this tier is fully proprietary.
 - You want a finished agent product rather than a model. Start at [Claude Code](claude-code.md).
 
@@ -58,7 +58,7 @@ Frontier-Bench v0.1 is the headline number Anthropic leads with — state of the
 
 | Model | Where it sits |
 | --- | --- |
-| [Claude Fable 5.1](claude-fable-5.md) | Mythos-class ceiling |
+| [Claude Fable 5.2](claude-fable-5.md) | Mythos-class ceiling |
 | Claude Opus 5.5 | Default Opus in Claude Code since Sept 22 2026 |
 | **Claude Opus 5** | The default from July 24 to Sept 22 2026, still available |
 | Claude Sonnet 5.5 | Default Sonnet in Claude Code since Sept 28 2026 |

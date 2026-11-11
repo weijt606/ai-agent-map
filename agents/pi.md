@@ -15,7 +15,8 @@ One-line take: Pi is a minimal, opinionated coding-agent harness — the agent l
 | Open source | Yes (MIT, TypeScript) |
 | Best for | Developers who want to keep the harness small and own the orchestration choices themselves |
 | Main cost | You bring your own API keys, your own skills, and your own opinions about how to extend the agent |
-| Official website | https://lefos.ai/ |
+| Default model | Set per provider. `v1.5.1` (Nov 9 2026) moved the `anthropic` default from Claude Opus 4.8 to **Opus 5.5** and moved several other providers to newer models |
+| Official website | https://pi.dev/ |
 | GitHub repo | https://github.com/earendil-works/pi |
 
 ## When To Pick It
@@ -41,6 +42,8 @@ One-line take: Pi is a minimal, opinionated coding-agent harness — the agent l
 | Channels (Slack, web UI) | Available as toolkit packages | TUI, web UI, and Slack bot ship as separate packages |
 
 ## Operating Cost
+
+> **Correction (2026-11-11):** the Official website row said `lefos.ai`, which redirects to an unrelated domain. Pi's README links pi.dev throughout (install script and docs), so the row now says pi.dev.
 
 Complexity is Medium. Installation is straightforward, but Pi assumes you will pick the model, wire in the skills, and decide how the agent extends itself. The "harness rebellion" framing is intentional: less bundled, more your call.
 

@@ -4,6 +4,10 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-11-11 —— Claude Fable profile 升到 5.2；Gemini 4 Carbon 与 Kimi K3.1 Pro 进入基准表
+
+[Claude Fable](agents/claude-fable-5.md) 就地更新到 Fable 5.2 / Mythos 5.2（2026-11-09）；profile 沿用原路径，既有链接不断，全图描述当前状态的链接都已改称 5.2。[基准与计费](comparisons/benchmarks-and-billing.md)加入 Gemini 4 Carbon（Google 10 月 28 日发布时本图漏记了），并在权重公开后把 Kimi K3.1 Pro 加进开放权重表。
+
 ## 2026-11-04 —— 本图不再列出或比较价格
 
 所有页面都移除了价格数字、价格列和成本排名，包括过去的市场事件和这份 changelog；旧内容仍在 git 历史里。`comparisons/cost-and-benchmarks.md` 改名为 [`comparisons/benchmarks-and-billing.md`](comparisons/benchmarks-and-billing.md)，保留基准分数和每个 agent 的计费方式。计费方式（开源、订阅、按量）、套餐可用范围和地区继续保留。

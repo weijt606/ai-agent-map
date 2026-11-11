@@ -16,7 +16,7 @@ One-line take: Grok Bot is xAI's team of always-on agents — several named Bots
 | Form factor | Desktop app (macOS, Windows, Linux), mobile app (iPhone, iPad, Android); tag `@bot` on X, not in every region yet |
 | Status | Beta since **Aug 11 2026**; an enterprise offering followed on Sept 3 |
 | Where it runs | **One cloud computer shared by all your Bots** (files, browser sessions, app logins), **in Cursor's cloud**, located **in the United States** |
-| Model | Not chosen by you — "Cursor manages model selection", with no model picker |
+| Model | Not chosen by you — "Grok Bot manages model selection", with no model picker; each request goes to "a first-party SpaceXSI model or a third-party model" (security page, checked 2026-11-11; it previously said "Cursor manages model selection") |
 | Access | Since Oct 12 2026, included in the X Subscription on **Premium, Super and Ultra**, not on Plus |
 | Official page | https://x.ai/news/introducing-grok-bot |
 

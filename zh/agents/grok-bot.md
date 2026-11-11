@@ -16,7 +16,7 @@
 | 形态 | 桌面应用（macOS、Windows、Linux）、移动应用（iPhone、iPad、Android）；也可在 X 上 `@bot`，但尚未覆盖所有地区 |
 | 状态 | **2026-08-11** 起 beta；9 月 3 日推出企业版 |
 | 在哪里跑 | **你所有的 Bot 共用一台云端电脑**（文件、浏览器会话、应用登录都共享），**在 Cursor 的云上**，位于**美国** |
-| 模型 | 不由你选——"Cursor 负责模型选择"，没有模型选择器 |
+| 模型 | 不由你选——"Grok Bot manages model selection"，没有模型选择器；每个请求发往"a first-party SpaceXSI model or a third-party model"（安全页，2026-11-11 核对；原先写的是 Cursor 负责模型选择） |
 | 使用条件 | 2026-10-12 起包含在 X Subscription 的 **Premium、Super、Ultra**，Plus 不含 |
 | 官方页面 | https://x.ai/news/introducing-grok-bot |
 

@@ -16,9 +16,9 @@ One-line take: a dot is OpenAI's always-on agent inside ChatGPT — one per pers
 | Form factor | ChatGPT mobile app, desktop app and desktop browser; also reachable in **Slack, Microsoft Teams and by voice call**; **texting** by iMessage or RCS on Android, in beta for US Pro users since the week of Oct 26 2026 |
 | Status | Announced at DevDay, **Sept 29 2026**; "rolling out gradually to eligible accounts" |
 | Where it runs | Its own computer and browser in the cloud; can also use **one** connected personal computer while the ChatGPT app is open on it |
-| Model | **GPT-6 Astra** — OpenAI's ceiling model ([profile](gpt-6-astra.md)) |
+| Model | **GPT-6 Astra** — OpenAI's ceiling model ([profile](gpt-6-astra.md)); OpenAI's dots page now adds **GPT-6.1 Terra** to "the family of frontier models that power dots" (checked 2026-11-11, undated) |
 | Access | Personal access on **Pro**, users over 18 only; Business Premium and Enterprise rolling out (Enterprise off until an admin enables it) |
-| Regions | Pro access **excludes the EEA, the UK and Switzerland**; Business Premium and Enterprise are "rolling out worldwide" |
+| Regions | Pro access **excludes the EEA, the UK and Switzerland**; as of 2026-11-11 Business Premium is "Available in supported ChatGPT regions", and Enterprise, Edu and Healthcare are "Generally available in eligible workspaces" (not UAE-residency workspaces), on by default from Nov 18 2026 unless a workspace opts out |
 | Official page | https://learn.chatgpt.com/docs/dots |
 
 ## How It Differs From The Rest Of ChatGPT

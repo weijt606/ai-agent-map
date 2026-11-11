@@ -35,7 +35,7 @@
 
 ## 什么时候不选它
 
-- 单个最难任务要绝对天花板——[Fable 5.1](claude-fable-5.md) 仍然领先；网安类工作上 Mythos 5 直接强于 Opus 5。
+- 单个最难任务要绝对天花板——[Fable 5.2](claude-fable-5.md) 仍然领先；网安类工作上 Mythos 5 直接强于 Opus 5。
 - 你要开源或可自托管的模型——这一档完全闭源。
 - 你要的是成品 agent 而不是模型，请从 [Claude Code](claude-code.md) 开始。
 
@@ -58,7 +58,7 @@ Anthropic 主打的头条数字是 Frontier-Bench v0.1：SOTA，且达到 Opus 4
 
 | 模型 | 位置 |
 | --- | --- |
-| [Claude Fable 5.1](claude-fable-5.md) | Mythos 级天花板 |
+| [Claude Fable 5.2](claude-fable-5.md) | Mythos 级天花板 |
 | Claude Opus 5.5 | 2026-09-22 起 Claude Code 的默认 Opus |
 | **Claude Opus 5** | 2026-07-24 至 09-22 的默认档，现在仍可用 |
 | Claude Sonnet 5.5 | 2026-09-28 起 Claude Code 的默认 Sonnet |

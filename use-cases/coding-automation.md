@@ -22,7 +22,7 @@ That question is no longer the useful one. The better question is: which operati
 | Comparing own-the-loop harness frameworks | [agent harness frameworks](../comparisons/agent-harness-frameworks.md) |
 | Async delegation into cloud execution | [Codex](../agents/codex.md) |
 | Strongest OpenAI model for agentic coding | [GPT-6 Astra](../agents/gpt-6-astra.md) |
-| Strongest Claude model, for the tasks that justify metered credits | [Claude Fable 5.1](../agents/claude-fable-5.md) |
+| Strongest Claude model, for the tasks that justify metered credits | [Claude Fable 5.2](../agents/claude-fable-5.md) |
 | One Claude model to run an agent all day without watching a credit meter (Claude Code's default is now Opus 5.5, since Sept 22; Opus 5 is the previous default) | [Claude Opus 5](../agents/claude-opus-5.md) |
 | I already use Claude Code and want teams, skills, and stronger orchestration | [oh-my-claudecode](../agents/oh-my-claudecode.md) |
 | I already use Codex CLI and want teams, hooks, and persistent workflow state | [oh-my-codex](../agents/oh-my-codex.md) |

@@ -8,6 +8,8 @@ One-line take: Gemini CLI is Google's open-source terminal agent, and it is **no
 
 > **Correction (2026-10-30):** this profile led with a consumer free tier that stopped applying on 2026-06-18. Google's quota page now opens with the banner "Unpaid tier and Google One users: Gemini CLI was replaced by Antigravity CLI on June 18th, 2026." Google's developer blog (May 19 2026) says that from that date Gemini CLI stops serving Google AI Pro and Ultra subscribers, free users of Gemini Code Assist for individuals and the Code Assist IDE extensions, while Code Assist Standard and Enterprise organisations and paid Gemini and Gemini Enterprise Agent Platform API keys keep working; Antigravity CLI "is available to everyone". The "60 requests/min" figure is withdrawn too: Google's page gives no per-minute number. Corrected in place below. Sources: [Gemini CLI quota](https://geminicli.com/docs/resources/quota-and-pricing), [Google Developers Blog](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/).
 
+> **Note (2026-11-11):** Gemini CLI's docs now carry a second banner: "Gemini CLI has not been optimized for Gemini 4 Argon. To use Gemini 4 Argon, please use Antigravity." Its source default is still `gemini-2.5-pro` (`v0.68.0`, Nov 10), which Google will route to `gemini-3.8-flash` from Dec 1 2026.
+
 ## Quick Read
 
 | Item | Conclusion |

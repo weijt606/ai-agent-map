@@ -16,7 +16,7 @@ One-line take: Muse is Meta's consumer personal agent — you message it in its 
 | Form factor | iOS and Android apps, the muse.ai web app, and WhatsApp; AI glasses "coming soon" |
 | Status | Announced **Sept 8 2026**, "rolling out in the US"; Meta's help center says Muse and its subscriptions are "in limited testing". **Available in Singapore since Oct 27 2026** on iOS, Android and muse.ai |
 | Where it runs | **Muse Secure VM** — a dedicated cloud computer per person, with its own browser |
-| Model | **Muse Spark**; Meta says [Muse Wonder](../market-events.md) will "soon power experiences in Muse", subscribers first |
+| Model | **Muse Spark**; Meta says [Muse Wonder](../market-events.md) will "soon power experiences in Muse", subscribers first. On Nov 6 2026 Meta said it is "rolling out specialized versions of our models to Muse, trained with learnings from Muse Wonder", without naming them |
 | Access | Free with a usage limit; paid **Power** and **Maximum** plans |
 | Official page | https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/ |
 

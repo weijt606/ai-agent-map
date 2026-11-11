@@ -15,7 +15,8 @@
 | 开源 | 是（MIT，TypeScript） |
 | 适合谁 | 想把 harness 保持精简、自己掌控编排选择的开发者 |
 | 主要代价 | 自带 API key、自带 skill、自带"agent 该怎么扩展"的主张 |
-| 官网 | https://lefos.ai/ |
+| 默认模型 | 按 provider 分别设定。`v1.5.1`（2026-11-09）把 `anthropic` 的默认从 Claude Opus 4.8 换成 **Opus 5.5**，另有多个 provider 换到更新的模型 |
+| 官网 | https://pi.dev/ |
 | GitHub 仓库 | https://github.com/earendil-works/pi |
 
 ## 什么时候选它
@@ -41,6 +42,8 @@
 | 渠道（Slack、Web UI） | 以工具包形式提供 | TUI、Web UI、Slack bot 作为独立包发布 |
 
 ## 使用代价
+
+> **更正（2026-11-11）：** 官网一行原写 `lefos.ai`，它会跳转到一个无关域名。Pi 的 README 通篇链接 pi.dev（安装脚本与文档），已改为 pi.dev。
 
 复杂度 Medium。安装本身简单，但 Pi 默认你会自己挑模型、挑 skill、决定 agent 怎么扩展自己。"harness rebellion" 的定位是有意为之：少打包、多自决。
 

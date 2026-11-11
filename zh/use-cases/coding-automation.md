@@ -22,7 +22,7 @@
 | 我要对比自己掌控循环的 harness 框架 | [agent harness 框架](../comparisons/agent-harness-frameworks.md) |
 | 我要把明确任务异步丢到云端跑 | [Codex](../agents/codex.md) |
 | 我要当前最强的 OpenAI agentic coding 模型 | [GPT-6 Astra](../agents/gpt-6-astra.md) |
-| 我要最强的 Claude 模型，做那些值得按量计费的任务 | [Claude Fable 5.1](../agents/claude-fable-5.md) |
+| 我要最强的 Claude 模型，做那些值得按量计费的任务 | [Claude Fable 5.2](../agents/claude-fable-5.md) |
 | 我要一个 Claude 模型把 agent 跑一整天、不用盯额度（Claude Code 的默认 Opus 自 9 月 22 日起已是 Opus 5.5，Opus 5 是上一任默认） | [Claude Opus 5](../agents/claude-opus-5.md) |
 | 我已经在用 Claude Code，只是想补强 teams、skills 和 orchestration | [oh-my-claudecode](../agents/oh-my-claudecode.md) |
 | 我已经在用 Codex CLI，只是想补上 teams、hooks 和持久 workflow state | [oh-my-codex](../agents/oh-my-codex.md) |

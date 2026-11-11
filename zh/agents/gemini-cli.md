@@ -8,6 +8,8 @@
 
 > **更正（2026-10-30）：** 本 profile 原先以面向个人的免费额度开头，而这一点从 2026-06-18 起已经不成立。谷歌的配额页面顶部现在写着："Unpaid tier and Google One users: Gemini CLI was replaced by Antigravity CLI on June 18th, 2026." 谷歌开发者博客（2026 年 5 月 19 日）说，自该日起 Gemini CLI 不再服务 Google AI Pro 和 Ultra 订阅用户、Gemini Code Assist 个人版的免费用户以及 Code Assist IDE 扩展；Code Assist Standard / Enterprise 组织和付费的 Gemini、Gemini Enterprise Agent Platform API key 继续可用，Antigravity CLI 则"对所有人开放"。"每分钟 60 次"这个数字也一并撤回：谷歌页面上没有给出每分钟的具体数字。下文已就地改正。来源：[Gemini CLI 配额](https://geminicli.com/docs/resources/quota-and-pricing)、[谷歌开发者博客](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)。
 
+> **注（2026-11-11）：** Gemini CLI 的文档现在多了第二条横幅："Gemini CLI has not been optimized for Gemini 4 Argon. To use Gemini 4 Argon, please use Antigravity." 它源码里的默认仍是 `gemini-2.5-pro`（`v0.68.0`，11 月 10 日），Google 将从 2026-12-01 起把它路由到 `gemini-3.8-flash`。
+
 ## 一眼判断
 
 | 项目 | 结论 |

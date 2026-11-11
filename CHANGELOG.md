@@ -4,6 +4,10 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-11-11 — Claude Fable profile moves to 5.2; Gemini 4 Carbon and Kimi K3.1 Pro join the benchmark tables
+
+[Claude Fable](agents/claude-fable-5.md) is updated in place to Fable 5.2 / Mythos 5.2 (November 9 2026); the profile keeps its original path so existing links hold, and current-state links across the map now name 5.2. [Benchmarks & billing](comparisons/benchmarks-and-billing.md) adds Gemini 4 Carbon, which this map missed when Google announced it on October 28, and adds Kimi K3.1 Pro to the open-weights table now that its weights are public.
+
 ## 2026-11-04 — This map no longer lists or compares prices
 
 Price figures, price columns and cost rankings are removed from every page, including past market events and this changelog; earlier versions remain in git history. `comparisons/cost-and-benchmarks.md` is now [`comparisons/benchmarks-and-billing.md`](comparisons/benchmarks-and-billing.md), which keeps benchmark scores and how each agent bills. Billing mode (open source, subscription, metered), plan availability and regions stay.

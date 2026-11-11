@@ -15,7 +15,7 @@ One-line take: Paperclip is an open-source, self-hosted control plane that runs 
 | Repository | [`paperclipai/paperclip`](https://github.com/paperclipai/paperclip): MIT, TypeScript, 110.9k stars as of 2026-11-04 |
 | Open source | Yes (MIT). "Open source. Self-hosted. No Paperclip account required." |
 | Form factor | A Node.js server with a React web UI and an embedded PostgreSQL database; installed with `npx paperclipai@latest onboard --yes` or Docker |
-| Agents | Adapters for OpenClaw, Claude Code, Codex, Cursor (and Cursor Cloud), Gemini CLI, OpenCode, Pi, Hermes (and Hermes Gateway), Grok Build and Kimi Code, plus custom processes, HTTP endpoints and adapter plugins |
+| Agents | Adapters for OpenClaw, Claude Code, Codex, Cursor (and Cursor Cloud), Gemini CLI, OpenCode, Pi, Hermes (and Hermes Gateway), Grok Build and Kimi Code, plus custom processes, HTTP endpoints and adapter plugins. Since `v2026.1106.0` (Nov 6 2026), new Claude, Codex, OpenCode and Pi agents start on the native **Paperclip Runner** on qualified macOS and Linux hosts instead of the legacy adapter (existing agents keep theirs and get an "Upgrade runner" action), GitHub Copilot joins as a native harness, and the Pipelines experiment is removed |
 | Models | Chosen per agent; since `v2026.1023.0`, agents can also run through your own gateway (OpenRouter, Amazon Bedrock, Google Gemini, or any OpenAI Responses, Anthropic Messages or Chat Completions endpoint) |
 | Hosted tier | A "Paperclip Cloud" waitlist is linked from the README, and the README roadmap marks "Cloud deployments" as in progress |
 | Best for | Someone running many agents on ongoing work (code, but also research, operations and content) who needs to know who is doing what, what it costs, and what needs sign-off |

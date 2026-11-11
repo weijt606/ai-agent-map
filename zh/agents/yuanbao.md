@@ -15,7 +15,7 @@
 | 开源 | 否（腾讯介绍 Hy3 为总参数 2,950 亿、激活 210 亿的 MoE，支持 256K 上下文） |
 | 形态 | iOS 与 Android 应用、网页 |
 | 状态 | Agent 功能随 Hy3 上线，**2026-07-06** 公布 |
-| 模型 | **Hy3**（腾讯混元） |
+| 模型 | Agent 上线时为 **Hy3**（腾讯混元）；v2.92.0（2026-11-06）的 App Store 更新说明写"Hy4 模型上线"（没找到腾讯新闻中心公告，Agent 功能是否跑在 Hy4 上没有文档） |
 | 使用条件 | **免费**——腾讯称 Agent 交付"全部免费"；中国区 App Store 免费下载 |
 | 地区 | 中国区 App Store |
 | 官方页面 | https://www.tencent.com/zh-hk/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/ |

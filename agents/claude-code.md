@@ -57,7 +57,7 @@ The model layer under Claude Code moved a lot in mid-2026; the product's selecti
 
 ## Operating Cost
 
-Complexity is Medium. Starting is straightforward, but good long-term use depends on clean project instructions, permission design, and disciplined tool setup. Since July 2026, budgeting [Fable 5.2](claude-fable-5.md) credits versus staying on the default Opus 5.5 (it replaced [Opus 5](claude-opus-5.md) on Sept 22) is part of the operating decision.
+Complexity is Medium. Starting is straightforward, but good long-term use depends on clean project instructions, permission design, and disciplined tool setup. Since July 2026, budgeting [Fable](claude-fable-5.md) credits (5.2 since Nov 9) versus staying on the default Opus 5.5 (it replaced [Opus 5](claude-opus-5.md) on Sept 22) is part of the operating decision.
 
 ## Bottom Line
 

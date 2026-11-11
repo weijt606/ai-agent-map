@@ -57,7 +57,7 @@
 
 ## 使用代价
 
-复杂度是 Medium。上手不算难，真正的门槛在于怎么写好项目指令、怎么限制权限、怎么把 MCP 和 subagents 用得不混乱。2026 年 7 月起，"花 [Fable 5.2](claude-fable-5.md) 额度 vs 留在默认的 Opus 5.5"（9 月 22 日接替了 [Opus 5](claude-opus-5.md)）也是使用成本决策的一部分。
+复杂度是 Medium。上手不算难，真正的门槛在于怎么写好项目指令、怎么限制权限、怎么把 MCP 和 subagents 用得不混乱。2026 年 7 月起，"花 [Fable](claude-fable-5.md) 额度（11 月 9 日起为 5.2） vs 留在默认的 Opus 5.5"（9 月 22 日接替了 [Opus 5](claude-opus-5.md)）也是使用成本决策的一部分。
 
 ## 最后一句
 

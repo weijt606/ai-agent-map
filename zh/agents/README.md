@@ -119,7 +119,7 @@
 | [LangChain](langchain.md) | platform | 是 | 快速搭自定义 agent 的高层框架 | 已核验 |
 | [LangGraph](langgraph.md) | platform | 是 | 长期运行、有状态 agent workflow 的底层框架 | 已核验 |
 | [Continue](continue.md) | platform | 是 | 支持自选模型的开源 IDE 扩展 | 已核验 |
-| [Claude Fable 5.2](claude-fable-5.md) | model / agentic | 否 | Anthropic 的 Mythos 级天花板——Claude 系 agent 在 Opus 之上的按额度档 | 已按发布、恢复公告与一手价格页核验 |
+| [Claude Fable 5.2](claude-fable-5.md) | model / agentic | 否 | Anthropic 的 Mythos 级天花板——Claude 系 agent 在 Opus 之上的按额度档 | 已按发布、恢复公告与 Claude Code changelog 核验 |
 | [Claude Opus 5](claude-opus-5.md) | model / agentic | 否 | 天花板之下的 Opus 档；9 月 22 日之前是 Claude Code 的默认 Opus，此后由 Opus 5.5 接替（9 月 28 日默认 Sonnet 也换成了 Sonnet 5.5） | 已按发布公告与一手价格页核验 |
 | [GPT-6 Astra](gpt-6-astra.md) | model / agentic | 否 | OpenAI 当前的前沿模型；公开版本在网安上受限 | 已按一手价格页与 Codex release note 核验；官方发布页无法直接抓取 |
 | [GPT-5.5](gpt-5.5.md) | model / agentic | 否 | OpenAI 2026 年春季的前沿 agentic 模型；2026-10-14 起从 Codex 与 ChatGPT 下线（限 ChatGPT 账号登录），API 仍可用 | 已按发布材料核验 |

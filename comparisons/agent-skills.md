@@ -43,7 +43,7 @@ Agents whose own docs document Agent Skills support are listed, plus [WorkBuddy]
 
 | Agent | Where you put a skill | How it is used | Notes from its docs |
 | --- | --- | --- | --- |
-| **Claude apps** (claude.ai) | Customize → Skills → "+" → Upload a skill (a ZIP of the folder) | Claude picks it when relevant; toggle each skill on or off | Needs code execution turned on. On Team and Enterprise, owners can provision skills organization-wide and members can share skills (sharing with groups is Enterprise-only; sharing is off by default) |
+| **Claude apps** (claude.ai) | Customize → Skills → "+" → Upload a skill (a ZIP of the folder) | Claude picks it when relevant; toggle each skill on or off | Needs code execution turned on. On Team and Enterprise, owners can provision skills organization-wide and members can share skills (groups are Enterprise-only; an owner must turn on Share with organization or Share with groups, both off by default, before the Share button appears) |
 | **[Claude Code](../agents/claude-code.md)** | `~/.claude/skills/<name>/SKILL.md` (personal), `.claude/skills/<name>/SKILL.md` (project), or inside a plugin | Automatic, or type `/skill-name` | Custom commands "have been merged into skills". Since v2.1.273, skills from your claude.ai account sync to `~/.claude/skills/synced/` |
 | **Claude Agent SDK** | `.claude/skills/` and `~/.claude/skills/`, loaded via `settingSources` | Model-invoked, or send `/<name>`; scope with the `skills` option | No programmatic registration; skills are files on disk |
 | **Claude API / Managed Agents** | Upload via `/v1/skills`, or use the pre-built `pptx` / `xlsx` / `docx` / `pdf` | List `skill_ids` in the `container` parameter with the code execution tool | Runs in a sandbox with no network access |

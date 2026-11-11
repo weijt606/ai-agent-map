@@ -119,7 +119,7 @@ Rank history over time is charted in [rankings/](../rankings/README.md), alongsi
 | [LangChain](langchain.md) | platform | Yes | High-level framework for custom agents | Verified |
 | [LangGraph](langgraph.md) | platform | Yes | Low-level framework for durable workflows | Verified |
 | [Continue](continue.md) | platform | Yes | Open-source IDE extension with full model freedom | Verified |
-| [Claude Fable 5.2](claude-fable-5.md) | model / agentic | No | Anthropic's Mythos-class ceiling — the credits tier above Opus for Claude-based agents | Verified against launch, redeployment, and first-party pricing |
+| [Claude Fable 5.2](claude-fable-5.md) | model / agentic | No | Anthropic's Mythos-class ceiling — the credits tier above Opus for Claude-based agents | Verified against launch and redeployment announcements and the Claude Code changelog |
 | [Claude Opus 5](claude-opus-5.md) | model / agentic | No | The Opus tier below the ceiling; Claude Code's default Opus until Opus 5.5 replaced it on Sept 22 (Sonnet 5.5 became the default Sonnet on Sept 28) | Verified against launch announcement + first-party pricing |
 | [GPT-6 Astra](gpt-6-astra.md) | model / agentic | No | OpenAI's current frontier model; the public version is restricted on cybersecurity | Verified against first-party pricing and Codex release notes; launch page not directly reachable |
 | [GPT-5.5](gpt-5.5.md) | model / agentic | No | OpenAI's spring 2026 frontier agentic model; retired from Codex and ChatGPT for ChatGPT sign-in on Oct 14 2026, still on the API | Verified against launch materials |

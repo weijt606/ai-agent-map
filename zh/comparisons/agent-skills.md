@@ -43,7 +43,7 @@ skill 是分阶段加载的，规范和 Anthropic 文档都把这叫作**渐进�
 
 | Agent | skill 放在哪里 | 怎么用 | 文档里值得注意的 |
 | --- | --- | --- | --- |
-| **Claude 应用**（claude.ai） | 自定义 → Skills → "+" → 上传 skill（把文件夹打成 ZIP） | 相关时 Claude 自己调用；每个 skill 可单独开关 | 需要先打开代码执行。Team 和 Enterprise 的所有者可以给全组织预置 skill，成员也可以分享 skill（分享给群组仅限 Enterprise；分享默认关闭） |
+| **Claude 应用**（claude.ai） | 自定义 → Skills → "+" → 上传 skill（把文件夹打成 ZIP） | 相关时 Claude 自己调用；每个 skill 可单独开关 | 需要先打开代码执行。Team 和 Enterprise 的所有者可以给全组织预置 skill，成员也可以分享 skill（群组仅限 Enterprise；所有者要先打开"Share with organization"或"Share with groups"，两者默认关闭，之后才会出现分享按钮） |
 | **[Claude Code](../agents/claude-code.md)** | `~/.claude/skills/<名字>/SKILL.md`（个人）、`.claude/skills/<名字>/SKILL.md`（项目），或放在插件里 | 自动调用，或输入 `/skill-name` | 自定义命令"have been merged into skills"（已并入 skill）。v2.1.273 起，claude.ai 账号里的 skill 会同步到 `~/.claude/skills/synced/` |
 | **Claude Agent SDK** | `.claude/skills/` 和 `~/.claude/skills/`，通过 `settingSources` 加载 | 模型自行调用，或发送 `/<名字>`；用 `skills` 选项限定范围 | 没有编程注册接口，skill 就是磁盘上的文件 |
 | **Claude API / Managed Agents** | 通过 `/v1/skills` 上传，或用预置的 `pptx` / `xlsx` / `docx` / `pdf` | 在 `container` 参数里列出 `skill_ids`，并带上代码执行工具 | 在沙箱里运行，不能联网 |

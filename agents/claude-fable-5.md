@@ -23,7 +23,7 @@ One-line take: Claude Fable 5.2 is Anthropic's Mythos-class ceiling as of Novemb
 
 Like [GPT-6 Astra](gpt-6-astra.md), this is a model rather than an agent product. It is included because it introduced a new tier (Mythos, above Opus) into the model layer that most agents in this map run on, and because its availability arc directly changed how Claude Code and Claude-based agents are selected.
 
-Fable and **Mythos** share the same underlying model at each version; the difference is safety access. Fable is the generally available version. Mythos has lighter safeguards and is limited to vetted organizations: at 5.1 through Project Glasswing, and at 5.2 through Anthropic's Cyber and Life Sciences Verification Programs.
+Fable and **Mythos** share the same underlying model at each version; the difference is safety access. Fable is the generally available version. Mythos has lighter safeguards and is limited to vetted organizations: at 5.1 through Project Glasswing, and at 5.2 through Anthropic's Cyber and Life Sciences Verification Programs, or for Claude Enterprise customers through Claude Security.
 
 ## When To Pick It
 
@@ -60,7 +60,7 @@ Fable and **Mythos** share the same underlying model at each version; the differ
 - **July 24** — [Opus 5](claude-opus-5.md) shipped and became the default under it, changing what "spend a credit" is being compared against.
 - **September 1** — **Fable 5.1 and Mythos 5.1** released. Benchmark gains above, ~60% fewer cybersecurity false positives in Claude Code, and invisible watermarking of Claude-generated text with a detection API in private preview for eligible organizations under EU law.
 - **September 22** — Claude Opus 5.5 shipped and became the default Opus in Claude Code `v2.1.280`. Anthropic says it performs at Fable 5.1's level on most work, and it scores above Fable 5.1 on Terminal-Bench 4.0 (66.4% vs 55.8%).
-- **November 9** — **Fable 5.2 and Mythos 5.2** released (`claude-fable-5-2`): 1M context, 128K output, outputs up to 30% faster than 5.1, an optional fast mode, and the scores above. [Claude Code](claude-code.md) `2.1.321` made it the default Fable model the same day and moved saved Fable 5.1 picks to the `fable` alias (at once on Pro and Max; on Team and Enterprise once the organization allows it); `/model claude-fable-5-1` switches back. Blocked requests are answered by Opus 4.8 for cybersecurity and Opus 5 for biology.
+- **November 9** — **Fable 5.2 and Mythos 5.2** released (`claude-fable-5-2`): 1M context (Claude Code changelog), 128K output (Pi release notes), outputs up to 30% faster than 5.1, an optional fast mode, and the scores above. [Claude Code](claude-code.md) `2.1.321` made it the default Fable model the same day and moved saved Fable 5.1 picks to the `fable` alias (at once on Pro and Max; on Team and Enterprise once the organization allows it); `/model claude-fable-5-1` switches back. Blocked requests are answered by Opus 4.8 for cybersecurity and Opus 5 for biology.
 
 ## Relationship To Claude Code
 

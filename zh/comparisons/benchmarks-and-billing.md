@@ -19,11 +19,11 @@
 | **GPT-6 Astra**（OpenAI） | — | DeepSWE v1.1 74.1% | **2026-09-03。**正式开放的版本**会拒绝自己一部分网安能力** |
 | **Claude Opus 5.5**（Anthropic） | — | **Terminal-Bench 4.0 66.4%** | **2026-09-22。**Anthropic 的说法是它在多数工作上达到 Fable 5.1 的水平，输出比 Opus 5 快 30%。1M 上下文。公布的九项基准全高于 Opus 5；在 AutomationBench（40.0 对 41.4）与 Terminal-Bench-Science（58.7 对 64.6）上落后 [GPT-6 Astra](../agents/gpt-6-astra.md)。当天就成为 [Claude Code](../agents/claude-code.md) `v2.1.280` 里默认的 Opus 模型 |
 | **Muse Wonder**（Meta） | — | — | **2026-10-12**——本表晚一个窗口才记下。Meta 新的 API 顶档模型，主打"前沿编码、长时运行 agent 与高级电脑操作"，100 万上下文。更大的 Muse Wonder Full 根本不上 API，只在 Muse Code 的 Power 与 Maximum 订阅档里提供 |
-| **Claude Fable 5.2**（Anthropic） | — | **FrontierSWE v2 69.9%**；FrontierCode 2.0 49.1%（Xhigh 推理强度） | **2026-11-09**（`claude-fable-5-2`）。Anthropic 的表里两项都高于 Opus 5.5（62.3 / 45.5）、[GPT-6 Astra](../agents/gpt-6-astra.md)（65.5 / 42.8）和 Gemini 4 Carbon（61.2 / 41.1）；厂商自报。1M 上下文，输出上限 128K。同日成为 [Claude Code](../agents/claude-code.md) `2.1.321` 的默认 Fable 模型，但 Anthropic 仍建议大多数编码先从 Opus 5.5 开始。被拦下的请求改由 Opus 4.8（网安）或 Opus 5（生物）回答。Mythos 5.2 只给进入 Anthropic 验证计划的机构 |
+| **Claude Fable 5.2**（Anthropic） | — | **FrontierSWE v2 69.9%**；FrontierCode 2.0 49.1%（Xhigh 推理强度） | **2026-11-09**（`claude-fable-5-2`）。Anthropic 的表里两项都高于 Opus 5.5（62.3 / 45.5）、[GPT-6 Astra](../agents/gpt-6-astra.md)（65.5 / 42.8）和 Gemini 4 Carbon（61.2 / 41.1，它的 FrontierCode 是 Medium 推理强度）；厂商自报。1M 上下文（Claude Code changelog），输出上限 128K（Pi 发布说明）。同日成为 [Claude Code](../agents/claude-code.md) `2.1.321` 的默认 Fable 模型，但 Anthropic 仍建议大多数编码先从 Opus 5.5 开始。被拦下的请求改由 Opus 4.8（网安）或 Opus 5（生物）回答。Mythos 5.2 给进入 Anthropic 验证计划的机构，Claude Enterprise 客户也能通过 Claude Security 使用 |
 | **Claude Fable 5.1**（Anthropic） | — | **SWE-bench Pro 81.2** | **2026-09-01。**1M 上下文。按额度计费，不含在订阅内。11 月 9 日被 5.2 接替 |
 | **GPT-6.1 Sol**（OpenAI） | — | — | **2026-09-29。**同日起成为 [Codex CLI](../agents/codex.md) `rust-v0.159.1` 的打包默认，替掉 Astra |
 | **Claude Sonnet 5.5**（Anthropic） | — | **Terminal-Bench 4.0 70.6%** | **2026-09-28。**比 Sonnet 5 快 30% 以上。它的 Terminal-Bench 4.0 **高于 Opus 5.5 的 66.4%**；在其他共有基准上都落后于 Opus 5.5。同日成为 [Claude Code](../agents/claude-code.md) `2.1.284` 的默认 Sonnet 模型，1M 上下文 |
-| **Gemini 4 Carbon**（Google） | — | — | **2026-10-28 发布，11 月 10 日在 Gemini API 正式可用**（`gemini-4-carbon`）；本图晚了两个窗口才记。Google 称它是自家最强模型；发布时只通过 Fairwind 计划给一部分网安防御者。Google 报告它在 Artificial Analysis *Intelligence* Index v5.0 排第一（59），这不是本表跟踪的 Coding Agent Index；它的编码基准表是图片，本图读不到。正在向 Google AI Ultra 用户的 Antigravity 和 Gemini 应用推送 |
+| **Gemini 4 Carbon**（Google） | — | — | **2026-10-28 发布，11 月 10 日在 Gemini API 正式可用**（`gemini-4-carbon`）；本图晚了一期才记（11-04 那期漏了）。Google 称它是自家最强模型；发布时只通过 Fairwind 计划给一部分网安防御者。Google 报告它在 Artificial Analysis *Intelligence* Index v5.0 排第一（59），这不是本表跟踪的 Coding Agent Index；它的编码基准表是图片，本图读不到。正在向 Google AI Ultra 用户的 Antigravity 和 Gemini 应用推送 |
 | **Gemini 4 Argon**（Google） | — | DeepSWE v1.1 77.9%；AutomationBench 51.3% | **2026-10-13 开放付费 API**（`gemini-4-argon`），9 月 30 日发布时还在网安防御者闸门之后；无防护版本仍留在 Google 的 Fairwind 计划里。只有隐式缓存；不对免费层开放；输出上限 1M。Google 的基准表不是和其他厂商同场跑的 |
 | **GPT-6 Sol**（OpenAI） | — | — | **2026-09-22。**GPT-6 的中档。**它不是 GPT-5.6 Sol** —— 两代同名，写在配置文件里是实打实的坑 |
 | **GPT-5.6 Sol**（OpenAI） | **80** | — | 最近一次测得的指数第一 |
@@ -39,7 +39,7 @@
 | **GPT-5.6 Luna**（OpenAI） | — | — | GPT-5.6 的最低一档 |
 | **Muse Spark 1.3**（Meta） | — | — | Muse Code 背后的编码模型，**2026-08-31** 转正。没有本地图愿意照抄的指数数字。Contributor 档**允许 Meta 用你的 prompt 与 completion 训练未来模型**，上限 60 请求/分，Standard 档为 3,000。这是治理决策 |
 
-> SWE-Bench Pro 参照点：Claude Opus 4.7 得 64.3%，高于 GPT-5.5 的 58.6%。破折号（—）表示本图未追踪该数字，不是零——**Astra、Fable 5.1、Opus 5 目前没有本地图愿意照抄的指数数字**，本地图也不用第三方榜单去填这个空。benchmark 取自各 profile（[Fable 5.1](../agents/claude-fable-5.md)、[Opus 5](../agents/claude-opus-5.md)、[GPT-6 Astra](../agents/gpt-6-astra.md)、[GPT-5.5](../agents/gpt-5.5.md)）与 [market-events](../market-events.md)。指数位次会变，请以来源为准。
+> SWE-Bench Pro 参照点：Claude Opus 4.7 得 64.3%，高于 GPT-5.5 的 58.6%。破折号（—）表示本图未追踪该数字，不是零——**Astra、Fable 5.1 与 5.2、Opus 5、Gemini 4 Carbon 目前没有本地图愿意照抄的指数数字**，本地图也不用第三方榜单去填这个空。benchmark 取自各 profile（[Fable 5.1](../agents/claude-fable-5.md)、[Opus 5](../agents/claude-opus-5.md)、[GPT-6 Astra](../agents/gpt-6-astra.md)、[GPT-5.5](../agents/gpt-5.5.md)）与 [market-events](../market-events.md)。指数位次会变，请以来源为准。
 
 Muse Code **没有公开仓库**，所以不进本地图的榜单。
 
@@ -68,7 +68,7 @@ Muse Code **没有公开仓库**，所以不进本地图的榜单。
 
 | Agent | 计费方式 | 你付给 |
 | --- | --- | --- |
-| [Claude Code](../agents/claude-code.md) | 订阅（Pro/Max） + Fable 5.1 **按量额度** | Anthropic |
+| [Claude Code](../agents/claude-code.md) | 订阅（Pro/Max） + Fable **按量额度**（11 月 9 日起为 5.2） | Anthropic |
 | [Codex](../agents/codex.md) | 打包进 ChatGPT 计划（Free → Pro）；重度 CLI 走 API | OpenAI |
 | [Cursor](../agents/cursor.md) | 订阅 / 席位 | Cursor |
 | [GitHub Copilot](../agents/github-copilot.md) | 订阅 / 席位；随 GitHub Enterprise 提供时从第一个请求起计量（2026-10-28） | GitHub |
@@ -82,7 +82,7 @@ Muse Code **没有公开仓库**，所以不进本地图的榜单。
 
 - **开源 agent，你直接付模型 provider。** Aider、Cline、Pi、jcode、OpenHands 和各 harness 安装不收许可费，你把它们指向一个模型 API。速率限制和 key 都归你管。
 - **打包订阅。** Claude Code、Codex、Cursor、Copilot 把模型用量折进一个计划，重度用量溢出到按量或 API。上限是计划的合理使用条款。
-- **按量额度 / 托管用量。** Claude Code 里的 Fable 5.1 额度，以及 Devin 这类托管产品，按实际干的活计费。
+- **按量额度 / 托管用量。** Claude Code 里的 Fable 额度（11 月 9 日起为 5.2），以及 Devin 这类托管产品，按实际干的活计费。
 
 还有一层**运维负担**：RAM、启动时间、自托管的运维工作。性能优先的 harness 把这点摆到明面——比如 [jcode](../agents/jcode.md) 就主打同类最低 RAM、最快启动，好让很多并行会话跑起来。每个 profile 的"使用成本"一节按项目讲这点。
 

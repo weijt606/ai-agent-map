@@ -186,6 +186,7 @@ The three structural stories shaping selection right now — full records with d
 | [ZCode](agents/zcode.md) | Direct execution | Zhipu's desktop agentic dev environment: long-horizon "Goal" tasks, steerable from WeChat/Feishu/Telegram |
 | [CodeBuddy](agents/codebuddy.md) | Direct execution | Tencent Cloud's coding line (editor plugin, CodeBuddy IDE, CodeBuddy Code CLI): a Claude-Code-shaped loop with a multi-vendor model catalog and private-cloud editions |
 | [Open Code Review](agents/open-code-review.md) | Review-first automation | Alibaba's precision-first code-review CLI — deterministic pipeline around the model, plus CI and agent-plugin surfaces |
+| [Mel – the agentic terminal](https://www.openmel.dev) | Workflow / orchestration layer | The agentic team for coding: a multi-agent, multi-model AI terminal for macOS, Windows, Linux and VS Code. Free with your own API key; Pro from $20/month. Proprietary. |
 
 </details>
 

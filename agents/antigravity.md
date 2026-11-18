@@ -42,22 +42,26 @@ Also shipped: a Plugin Marketplace (announced 2026-10-29, rolling out gradually)
 
 Where the IDE stands: when 2.0 shipped, existing IDE users were moved to the app automatically but could keep the IDE, which Google still recommended to developers, and Google said an upcoming release would remove the Agent Manager from the IDE. The IDE went from v2.5.5 (2026-08-13) to v2.6.0 (2026-10-26) with nothing in between, while the app shipped more than ten releases over the same stretch. Enterprise sign-in does not work in the standalone IDE, and Google's enterprise docs say it is not supported for enterprise deployments. The extensions are where Google points organisations that want Antigravity inside an editor.
 
-## Models (as of 2026-10-30)
+## Models (as of 2026-11-18)
 
-From Google's "Choose a model" page. Each model has Low, Medium or High thinking levels.
+From Google's "Choose a model" page, re-read 2026-11-18. Models have Low, Medium or High thinking levels; Gemini 4 Hydrogen adds a fourth, Extra (`xhigh` in the CLI).
 
 | Model | Free and Google AI Plus | Google AI Pro | Google AI Ultra | Enterprise |
 | --- | --- | --- | --- | --- |
+| Gemini 4 Carbon | No | No | Yes | Yes |
 | Gemini 4 Argon | No | Yes (paid plans, or trial on eligible devices) | Yes | Yes |
+| Gemini 4 Hydrogen | No | Yes (paid, not trial) | Yes | Yes |
+| Orchestrator (Carbon plans, Hydrogen implements) | No | No | Yes | No |
+| Orchestrator (Argon plans, Hydrogen implements) | No | Yes (paid plans, or trial on eligible devices) | Yes | No |
 | Gemini 3.8 Flash | Yes | Yes | Yes | Yes |
 | Gemini 3.7 Flash, 3.6 Flash, 3.1 Pro | No | No | No | Yes |
 | Claude Sonnet 5.5 and Opus 5.5 (thinking) | No | Yes (paid, not trial) | Yes | Yes (admin opt-in, billed by token) |
-| Claude Sonnet 4.6 and Opus 4.6 (thinking) | Yes, removed 2026-11-02 | Yes, removed 2026-11-02 | No | No |
-| GPT-OSS-120b | Yes, removed 2026-11-02 | Yes, removed 2026-11-02 | Yes, removed 2026-11-02 | No |
+| Claude Sonnet 4.6 and Opus 4.6 (thinking) | Yes, removed 2026-11-18 | Yes, removed 2026-11-18 | No | No |
+| GPT-OSS-120b | Yes, removed 2026-11-18 | Yes, removed 2026-11-18 | Yes, removed 2026-11-18 | No |
 
-**Update (2026-11-11):** Google's Nov 10 post says Gemini 4 Carbon is "rolling out to all Google AI Ultra subscribers in Google Antigravity"; the table above has not been re-read against the Choose a model page since 10-30.
+**Update (2026-11-18):** the table was re-read against the Choose a model page. Gemini 4 Carbon is listed for Ultra and Enterprise. [Gemini 4 Hydrogen](https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity) (Nov 12) is listed for paid Pro, Ultra and Enterprise, and the two Orchestrator options pair a Carbon or Argon planner with Hydrogen doing the implementation. The page now gives **Nov 18** as the removal date for Claude 4.6 and GPT-OSS-120b; on 10-30 this map recorded Nov 2.
 
-Reading the table: after 2026-11-02 the free tier's only reasoning model is Gemini 3.8 Flash, and Claude stays only on paid Pro, Ultra and Enterprise. Gemini and the third-party models draw on separate quotas, each with a weekly limit and a five-hour limit. Image generation uses Nano Banana 2 and cannot be changed. Automations default to Flash (v2.24.0). When signed in with Google Cloud Application Default Credentials, the app and CLI can also offer Claude Opus 5.5 and Sonnet 5.5 if your Vertex AI project has access.
+Reading the table: after 2026-11-18 the free tier's only reasoning model is Gemini 3.8 Flash, and Claude stays only on paid Pro, Ultra and Enterprise. Gemini and the third-party models draw on separate quotas, each with a weekly limit and a five-hour limit. Image generation uses Nano Banana 2 and cannot be changed. Automations default to Flash (v2.24.0). When signed in with Google Cloud Application Default Credentials, the app and CLI can also offer Claude Opus 5.5 and Sonnet 5.5 if your Vertex AI project has access.
 
 ## Plans And Limits (as of 2026-10-30)
 
@@ -81,7 +85,7 @@ Details worth knowing:
 - You want to run several local agents at once and supervise them from one place: projects, subagents you can message directly, worktrees, Automations, and Remote Control from a browser.
 - Your work needs browser verification. The agent can open and drive a browser, record what it did, and hand back screenshots and recordings as artifacts you comment on.
 - You want plan review before code: `/plan` and implementation-plan artifacts are built in.
-- You need a free tier for real evaluation. It is weekly-capped and, from 2026-11-02, Gemini-only.
+- You need a free tier for real evaluation. It is weekly-capped and, from 2026-11-18, Gemini-only.
 - You are coming from Gemini CLI. `agy` reads `GEMINI.md` and `AGENTS.md`, and `agy plugin import gemini` converts extensions to plugins. Workspace skills have to move from `.gemini/skills/` to `.agents/skills/`, and MCP servers move into `mcp_config.json`. Google says parity is not 1:1.
 - Your organisation is already on Gemini Enterprise. App, CLI and extensions inherit its IAM, VPC Service Controls and data-residency controls, and Google says enterprise code and prompts are never used to train its foundation models.
 
@@ -103,7 +107,7 @@ Details worth knowing:
 | Browser use | Strong | Browser subagent in the IDE, built-in browser in the app since v2.28.0, recordings as artifacts |
 | Plan and review | Strong | Implementation plans, walkthroughs, comments on artifacts, `/plan` with a plan review policy setting |
 | Remote operation | Strong | Remote Control from a web browser, push notifications |
-| Model choice | Medium | Gemini plus Claude 5.5 on paid plans; free is Gemini-only from 2026-11-02; no BYOK |
+| Model choice | Medium | Gemini plus Claude 5.5 on paid plans; free is Gemini-only from 2026-11-18; no BYOK |
 | Free tier | Medium | Real, but weekly-capped with no published numbers |
 | Enterprise | Strong, with a gap | App, CLI and extensions under Gemini Enterprise; standalone IDE excluded; four extensions in enterprise preview |
 | Open source | Weak | Closed app and IDE; CLI repo has no source; SDK Apache-2.0 over a compiled binary |
@@ -118,7 +122,7 @@ Google appears on this map at four points, and Antigravity now connects most of 
 
 ## Operating Cost
 
-Medium. Install is a download or a one-line script, and sign-in is a Google account. The ongoing cost is in three decisions: which surface your team standardises on, whether the unpublished quota on your plan covers your workload, and how you handle the 2026-11-02 model removals if you depend on Claude 4.6 or GPT-OSS on the free tier. Releases are frequent (the app shipped v2.21 to v2.28 in October 2026 alone) and auto-update by default; Google's releases page notes you can set updates to manual or off.
+Medium. Install is a download or a one-line script, and sign-in is a Google account. The ongoing cost is in three decisions: which surface your team standardises on, whether the unpublished quota on your plan covers your workload, and how you handle the 2026-11-18 model removals if you depend on Claude 4.6 or GPT-OSS on the free tier. Releases are frequent (the app shipped v2.21 to v2.28 in October 2026 alone) and auto-update by default; Google's releases page notes you can set updates to manual or off.
 
 ## Bottom Line
 
@@ -126,11 +130,11 @@ Antigravity is Google's answer on the editor-centric route, and since May 2026 i
 
 ## Sources
 
-All read 2026-10-30.
+All read 2026-10-30, except Choose a model and the Gemini 4 Hydrogen post, read 2026-11-18.
 
 - Product: [antigravity.google](https://antigravity.google/) · [Antigravity IDE](https://antigravity.google/product/antigravity-ide) · [Download (versions and requirements)](https://antigravity.google/download) · [Releases (update modes)](https://antigravity.google/releases)
 - Docs: [Overview](https://antigravity.google/docs/overview/) · [Choose a model](https://antigravity.google/docs/models/) · [Plans](https://antigravity.google/docs/plans/) · [FAQ (regions, age, third-party use)](https://antigravity.google/docs/faq/) · [Enterprise](https://antigravity.google/docs/enterprise/) · [Authenticate](https://antigravity.google/docs/install/) · [IDE extensions](https://antigravity.google/docs/ide/extensions/) · [IDE browser](https://antigravity.google/docs/ide/browser/) · [Migrating from Gemini CLI](https://antigravity.google/docs/cli/gcli-migration/) · [Changelog (App v2.28.1, CLI v1.4.0, IDE v2.6.0, extensions v1.10.0, SDK v0.1.22)](https://antigravity.google/docs/changelog/)
-- Blog: [Introducing Google Antigravity (2025-11-18)](https://antigravity.google/blog/introducing-google-antigravity) · [Antigravity @ I/O 2026 (2026-05-19)](https://antigravity.google/blog/google-io-2026) · [Introducing Antigravity 2.0 (2026-05-19)](https://antigravity.google/blog/introducing-google-antigravity-2) · [Introducing Antigravity CLI (2026-05-19)](https://antigravity.google/blog/introducing-google-antigravity-cli) · [Changes to Antigravity plans (2026-05-19)](https://antigravity.google/blog/changes-to-antigravity-plans) · [Remote Control (2026-08-21)](https://antigravity.google/blog/remote-control-for-antigravity) · [Gemini 4 Argon in Antigravity (2026-10-13)](https://antigravity.google/blog/gemini-4-argon-in-google-antigravity) · [Plugin Marketplace (2026-10-29)](https://antigravity.google/blog/plugin-marketplace-in-antigravity)
+- Blog: [Introducing Google Antigravity (2025-11-18)](https://antigravity.google/blog/introducing-google-antigravity) · [Antigravity @ I/O 2026 (2026-05-19)](https://antigravity.google/blog/google-io-2026) · [Introducing Antigravity 2.0 (2026-05-19)](https://antigravity.google/blog/introducing-google-antigravity-2) · [Introducing Antigravity CLI (2026-05-19)](https://antigravity.google/blog/introducing-google-antigravity-cli) · [Changes to Antigravity plans (2026-05-19)](https://antigravity.google/blog/changes-to-antigravity-plans) · [Remote Control (2026-08-21)](https://antigravity.google/blog/remote-control-for-antigravity) · [Gemini 4 Argon in Antigravity (2026-10-13)](https://antigravity.google/blog/gemini-4-argon-in-google-antigravity) · [Plugin Marketplace (2026-10-29)](https://antigravity.google/blog/plugin-marketplace-in-antigravity) · [Gemini 4 Hydrogen in Antigravity (2026-11-12)](https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity)
 - [Gemini CLI quota (replacement banner)](https://geminicli.com/docs/resources/quota-and-pricing) · [Antigravity CLI AI credits](https://antigravity.google/docs/cli/credits/)
 - [Google Developers Blog: Transitioning Gemini CLI to Antigravity CLI (2026-05-19)](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)
 - [Google AI plans](https://gemini.google/us/subscriptions/?hl=en) · [Jules](https://jules.google/)

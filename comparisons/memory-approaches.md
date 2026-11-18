@@ -18,7 +18,7 @@ But "has memory" hides more than it reveals. These projects mean very different 
 | Pre-indexed code knowledge graph | Codebase parsed into a queryable graph/DB, queried on demand | [CodeGraph](../agents/codegraph.md), [Graphify](../agents/graphify.md) | Architecture-level code context, not conversation |
 | Code graph written as files | Codebase parsed into linked markdown the agent reads with plain file tools | [Graft](../agents/graft.md) | The same code context, as an artifact a person can read and review |
 | Personal-data memory tree | Connectors sync your tools into a hierarchical summary store | [OpenHuman](../agents/openhuman.md) | What the agent knows about *you* — mail, notes, calendar |
-| Long-lived runtime memory | Memory as one subsystem of an always-on self-hosted environment | [Hermes Agent](../agents/hermes-agent.md), [Mercury Agent](../agents/mercury-agent.md) | Durable state across channels, devices, and time |
+| Long-lived runtime memory | Memory as one subsystem of an always-on self-hosted environment | [Hermes Agent](../agents/hermes-agent.md), [Mercury Agent](../agents/mercury-agent.md), [nanobot](../agents/nanobot.md) | Durable state across channels, devices, and time |
 
 ## Self-Editing Managed Memory — [Letta (MemGPT)](../agents/memgpt.md)
 
@@ -52,7 +52,7 @@ Memory pointed at your life, not your code. [OpenHuman](../agents/openhuman.md) 
 
 ## Long-Lived Runtime Memory — [Hermes Agent](../agents/hermes-agent.md), [Mercury Agent](../agents/mercury-agent.md)
 
-Here memory is one subsystem inside an always-on, self-hosted environment rather than the whole product. [Hermes Agent](../agents/hermes-agent.md) pairs memory with skills, delegation, and channels; [Mercury Agent](../agents/mercury-agent.md) pairs persistent memory with a permission-hardened, always-on daemon and approval workflows. You get durable state across channels and time, but you also own the daemon, the operations, and the curation.
+Here memory is one subsystem inside an always-on, self-hosted environment rather than the whole product. [Hermes Agent](../agents/hermes-agent.md) pairs memory with skills, delegation, and channels; [Mercury Agent](../agents/mercury-agent.md) pairs persistent memory with a permission-hardened, always-on daemon and approval workflows; [nanobot](../agents/nanobot.md) summarizes sessions as they grow and runs **Dream**, on by default every two hours, to consolidate long-term memory into workspace files such as `USER.md` and `memory/MEMORY.md` that you can read and edit. You get durable state across channels and time, but you also own the daemon, the operations, and the curation.
 
 ## How To Choose
 

@@ -518,7 +518,8 @@
     "vertical": null,
     "group": "framework",
     "profile": "agents/microsoft-agent-framework.md",
-    "scope": "in"
+    "scope": "in",
+    "tracked": false
   },
   "stablyai/orca": {
     "display": "Orca",
@@ -559,5 +560,23 @@
     "group": "memory-context",
     "profile": "agents/graphify.md",
     "scope": "in"
+  },
+  "bytedance/deer-flow": {
+    "display": "DeerFlow",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/deer-flow.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "hkuds/nanobot": {
+    "display": "nanobot",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/nanobot.md",
+    "scope": "in",
+    "tracked": false
   }
 }

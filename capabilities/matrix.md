@@ -172,8 +172,10 @@ Standouts: this group is glue, so the shape is lopsided. n8n leads on **scheduli
 | [Julep](../agents/julep.md) | ● | ◐ | ● | ● | ◐ | ○ | ● | ○ | ● |
 | [GenericAgent](../agents/generic-agent.md) | ● | ● | ● | ○ | — | ○ | — | ○ | ● |
 | [ml-intern](../agents/ml-intern.md) | ● | ● | ○ | ◐ | — | ○ | — | ○ | ● |
+| [DeerFlow](../agents/deer-flow.md) | ● | ● | ● | ● | ● | ◐ | ◐ | ● | ● |
+| [nanobot](../agents/nanobot.md) | ● | ◐ | ● | ◐ | ◐ | ○ | ● | ● | ● |
 
-Standouts: Hermes is tied with [QM](../agents/qm.md) and [eve](../agents/eve.md) as the broadest single profile on this map (seven ● each) — strong on nearly every dimension. Mercury pairs headline **human approval** with **scheduling** (permission-hardened, always-on); OpenHuman turns **memory** + **scheduling** into a life-integration loop.
+Standouts: Hermes is tied with [QM](../agents/qm.md), [Omnigent](../agents/omnigent.md), [eve](../agents/eve.md) and [DeerFlow](../agents/deer-flow.md) as the broadest single profile on this map (seven ● each) — strong on nearly every dimension. *(2026-11-18: Omnigent had been left out of this sentence; DeerFlow is new and scores exactly as Hermes does, with approval and scheduling off until the operator enables them.)* [nanobot](../agents/nanobot.md) is the other new row: ● on **scheduling** and **memory** because its heartbeat and Dream consolidation run by default, ○ on approval because it has access pairing but no per-action approval. Mercury pairs headline **human approval** with **scheduling** (permission-hardened, always-on); OpenHuman turns **memory** + **scheduling** into a life-integration loop.
 
 [WorkBuddy](../agents/workbuddy.md) and [Kimi Work](../agents/kimi-work.md) are the first desktop knowledge-work agents in this matrix, and they score almost identically for a reason: they are the same loop pointed at documents instead of repositories. Both take ● on **orchestration**, **multi-agent**, and **scheduling** — parallel specialists on one goal, running on a cron or in the vendor's cloud around the clock — and both take ○ on **human approval** and **deployment control**, which is the honest cost. These are closed clients holding authorized access to your filesystem, and in Kimi Work's case a browser you are already logged into, with no documented per-action gate. Every other ● on those two rows should be read through that ○.
 

@@ -4,6 +4,8 @@
 [![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](microsoft-agent-framework.md)
 [![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
+> *2026-11-18:* `github.com/microsoft/agent-framework` returned 404 at this map's Nov 18 fetch, on both the API and the web page; it is not a redirect, and this map found no announcement. The `agent-framework` package on PyPI (`1.26.0`, Nov 12) still links to it, the docs at [learn.microsoft.com/agent-framework](https://learn.microsoft.com/en-us/agent-framework/) still load, and [`agent-framework-go`](https://github.com/microsoft/agent-framework-go) is still public. The repository links below are left as they were; this map has paused star tracking for it until the repo returns or a new home is confirmed.
+
 One-line take: Microsoft Agent Framework is the successor to AutoGen and the reason this map does not profile AutoGen — Microsoft put AutoGen into **maintenance mode** and points new users here.
 
 ## Quick Read

@@ -42,22 +42,26 @@
 
 IDE 的处境：2.0 发布时，现有 IDE 用户被自动升级到桌面应用，但可以继续用 IDE，谷歌当时也仍建议开发者用它，并说之后的版本会把 Agent Manager 从 IDE 里拿掉。IDE 从 v2.5.5（2026-08-13）到 v2.6.0（2026-10-26）之间没有其他版本，同一时段桌面应用发了十多个版本。企业账号无法登录独立 IDE，谷歌的企业文档也写明它不支持企业部署。想在编辑器里用 Antigravity 的组织，谷歌指向的是扩展。
 
-## 模型（截至 2026-10-30）
+## 模型（截至 2026-11-18）
 
-出自谷歌的 "Choose a model" 页面。每个模型可选 Low、Medium、High 三档思考强度。
+出自谷歌的 "Choose a model" 页面，2026-11-18 重读。模型可选 Low、Medium、High 三档思考强度；Gemini 4 Hydrogen 多一档 Extra（CLI 里是 `xhigh`）。
 
 | 模型 | 免费与 Google AI Plus | Google AI Pro | Google AI Ultra | 企业版 |
 | --- | --- | --- | --- | --- |
+| Gemini 4 Carbon | 无 | 无 | 有 | 有 |
 | Gemini 4 Argon | 无 | 有（付费方案，或符合条件设备的试用） | 有 | 有 |
+| Gemini 4 Hydrogen | 无 | 有（仅付费，不含试用） | 有 | 有 |
+| Orchestrator（Carbon 规划，Hydrogen 实现） | 无 | 无 | 有 | 无 |
+| Orchestrator（Argon 规划，Hydrogen 实现） | 无 | 有（付费方案，或符合条件设备的试用） | 有 | 无 |
 | Gemini 3.8 Flash | 有 | 有 | 有 | 有 |
 | Gemini 3.7 Flash、3.6 Flash、3.1 Pro | 无 | 无 | 无 | 有 |
 | Claude Sonnet 5.5、Opus 5.5（thinking） | 无 | 有（仅付费，不含试用） | 有 | 有（需管理员开启，按 token 计费） |
-| Claude Sonnet 4.6、Opus 4.6（thinking） | 有，2026-11-02 下线 | 有，2026-11-02 下线 | 无 | 无 |
-| GPT-OSS-120b | 有，2026-11-02 下线 | 有，2026-11-02 下线 | 有，2026-11-02 下线 | 无 |
+| Claude Sonnet 4.6、Opus 4.6（thinking） | 有，2026-11-18 下线 | 有，2026-11-18 下线 | 无 | 无 |
+| GPT-OSS-120b | 有，2026-11-18 下线 | 有，2026-11-18 下线 | 有，2026-11-18 下线 | 无 |
 
-**更新（2026-11-11）：** Google 11 月 10 日的文章说 Gemini 4 Carbon "rolling out to all Google AI Ultra subscribers in Google Antigravity"；上表自 10-30 以来没有对照 Choose a model 页面重读。
+**更新（2026-11-18）：** 上表已对照 Choose a model 页面重读。Gemini 4 Carbon 列在 Ultra 和企业版；[Gemini 4 Hydrogen](https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity)（11 月 12 日）列在付费 Pro、Ultra 和企业版；两个 Orchestrator 选项由 Carbon 或 Argon 负责规划，Hydrogen 负责实现。页面现在写 Claude 4.6 和 GPT-OSS-120b 于 **11 月 18 日**下线；10-30 时本图记的是 11 月 2 日。
 
-按这张表：2026-11-02 之后，免费档唯一的推理模型是 Gemini 3.8 Flash，Claude 只留在付费的 Pro、Ultra 和企业版。Gemini 和第三方模型各走一套配额，每套都有周上限和五小时上限。图像生成固定用 Nano Banana 2，不能换。Automations 默认用 Flash（v2.24.0）。用 Google Cloud 的应用默认凭据（ADC）登录时，如果你的 Vertex AI 项目有权限，桌面应用和 CLI 也会列出 Claude Opus 5.5 和 Sonnet 5.5。
+按这张表：2026-11-18 之后，免费档唯一的推理模型是 Gemini 3.8 Flash，Claude 只留在付费的 Pro、Ultra 和企业版。Gemini 和第三方模型各走一套配额，每套都有周上限和五小时上限。图像生成固定用 Nano Banana 2，不能换。Automations 默认用 Flash（v2.24.0）。用 Google Cloud 的应用默认凭据（ADC）登录时，如果你的 Vertex AI 项目有权限，桌面应用和 CLI 也会列出 Claude Opus 5.5 和 Sonnet 5.5。
 
 ## 方案与限制（截至 2026-10-30）
 
@@ -81,7 +85,7 @@ IDE 的处境：2.0 发布时，现有 IDE 用户被自动升级到桌面应用�
 - 你想在本机同时跑几个 agent，并在一个地方管住它们：项目、可以直接发消息的子 agent、worktree、Automations，以及浏览器里的 Remote Control。
 - 你的活需要在浏览器里验证。agent 能打开并操作浏览器，把过程录下来，以截图和录屏的形式交回给你评论。
 - 你希望先审计划再写代码：`/plan` 和实现计划 artifact 都是内置的。
-- 你需要一个能认真试用的免费档。它按周封顶，2026-11-02 起只剩 Gemini。
+- 你需要一个能认真试用的免费档。它按周封顶，2026-11-18 起只剩 Gemini。
 - 你是从 Gemini CLI 迁过来的。`agy` 会读 `GEMINI.md` 和 `AGENTS.md`，`agy plugin import gemini` 能把扩展转成插件。工作区 skills 要从 `.gemini/skills/` 挪到 `.agents/skills/`，MCP 服务器要挪进 `mcp_config.json`。谷歌自己说功能不是一一对应。
 - 你的组织已经在用 Gemini Enterprise。桌面应用、CLI 和扩展会沿用它的 IAM、VPC Service Controls 和数据驻留控制；谷歌说企业版的代码和提示词不会用于训练其基础模型。
 
@@ -103,7 +107,7 @@ IDE 的处境：2.0 发布时，现有 IDE 用户被自动升级到桌面应用�
 | 浏览器操作 | 强 | IDE 里有浏览器子 agent，桌面应用 v2.28.0 起内置浏览器，录屏作为 artifact |
 | 计划与审阅 | 强 | 实现计划、走查记录、在 artifact 上评论、带审阅策略设置的 `/plan` |
 | 远程操作 | 强 | 网页浏览器里的 Remote Control，加推送通知 |
-| 模型选择 | 中 | Gemini 加付费档的 Claude 5.5；免费档 2026-11-02 起只有 Gemini；不能自带 key |
+| 模型选择 | 中 | Gemini 加付费档的 Claude 5.5；免费档 2026-11-18 起只有 Gemini；不能自带 key |
 | 免费档 | 中 | 是真能用的，但按周封顶，没有公布数字 |
 | 企业 | 强，但有缺口 | 桌面应用、CLI 和扩展纳入 Gemini Enterprise；独立 IDE 不在内；四款扩展的企业支持还是预览 |
 | 开源 | 弱 | 桌面应用和 IDE 闭源；CLI 仓库没有源码；SDK 是 Apache-2.0，但包着编译好的二进制 |
@@ -118,7 +122,7 @@ IDE 的处境：2.0 发布时，现有 IDE 用户被自动升级到桌面应用�
 
 ## 运营成本
 
-中等。安装就是下载或一行脚本，登录用 Google 账号。持续的成本在三个决定上：团队统一用哪个入口；你所在方案那份没公布数字的配额够不够你的工作负载；如果你在免费档上依赖 Claude 4.6 或 GPT-OSS，2026-11-02 下线之后怎么办。发版很频繁（光 2026 年 10 月，桌面应用就从 v2.21 发到 v2.28），默认自动更新；谷歌的发布页说明可以把更新设为手动或关闭。
+中等。安装就是下载或一行脚本，登录用 Google 账号。持续的成本在三个决定上：团队统一用哪个入口；你所在方案那份没公布数字的配额够不够你的工作负载；如果你在免费档上依赖 Claude 4.6 或 GPT-OSS，2026-11-18 下线之后怎么办。发版很频繁（光 2026 年 10 月，桌面应用就从 v2.21 发到 v2.28），默认自动更新；谷歌的发布页说明可以把更新设为手动或关闭。
 
 ## 结论
 
@@ -126,11 +130,11 @@ Antigravity 是谷歌在编辑器中心路线上的答案，2026 年 5 月以后
 
 ## 来源
 
-以下均于 2026-10-30 查阅。
+以下均于 2026-10-30 查阅；Choose a model 和 Gemini 4 Hydrogen 博文于 2026-11-18 查阅。
 
 - 产品：[antigravity.google](https://antigravity.google/) · [Antigravity IDE](https://antigravity.google/product/antigravity-ide) · [下载页（版本与系统要求）](https://antigravity.google/download) · [发布页（更新模式）](https://antigravity.google/releases)
 - 文档：[Overview](https://antigravity.google/docs/overview/) · [Choose a model](https://antigravity.google/docs/models/) · [Plans](https://antigravity.google/docs/plans/) · [FAQ（地区、年龄、第三方使用）](https://antigravity.google/docs/faq/) · [Enterprise](https://antigravity.google/docs/enterprise/) · [Authenticate](https://antigravity.google/docs/install/) · [IDE 扩展](https://antigravity.google/docs/ide/extensions/) · [IDE 浏览器](https://antigravity.google/docs/ide/browser/) · [从 Gemini CLI 迁移](https://antigravity.google/docs/cli/gcli-migration/) · [更新日志（桌面应用 v2.28.1、CLI v1.4.0、IDE v2.6.0、扩展 v1.10.0、SDK v0.1.22）](https://antigravity.google/docs/changelog/)
-- 博客：[Introducing Google Antigravity（2025-11-18）](https://antigravity.google/blog/introducing-google-antigravity) · [Antigravity @ I/O 2026（2026-05-19）](https://antigravity.google/blog/google-io-2026) · [Introducing Antigravity 2.0（2026-05-19）](https://antigravity.google/blog/introducing-google-antigravity-2) · [Introducing Antigravity CLI（2026-05-19）](https://antigravity.google/blog/introducing-google-antigravity-cli) · [Changes to Antigravity plans（2026-05-19）](https://antigravity.google/blog/changes-to-antigravity-plans) · [Remote Control（2026-08-21）](https://antigravity.google/blog/remote-control-for-antigravity) · [Gemini 4 Argon in Antigravity（2026-10-13）](https://antigravity.google/blog/gemini-4-argon-in-google-antigravity) · [Plugin Marketplace（2026-10-29）](https://antigravity.google/blog/plugin-marketplace-in-antigravity)
+- 博客：[Introducing Google Antigravity（2025-11-18）](https://antigravity.google/blog/introducing-google-antigravity) · [Antigravity @ I/O 2026（2026-05-19）](https://antigravity.google/blog/google-io-2026) · [Introducing Antigravity 2.0（2026-05-19）](https://antigravity.google/blog/introducing-google-antigravity-2) · [Introducing Antigravity CLI（2026-05-19）](https://antigravity.google/blog/introducing-google-antigravity-cli) · [Changes to Antigravity plans（2026-05-19）](https://antigravity.google/blog/changes-to-antigravity-plans) · [Remote Control（2026-08-21）](https://antigravity.google/blog/remote-control-for-antigravity) · [Gemini 4 Argon in Antigravity（2026-10-13）](https://antigravity.google/blog/gemini-4-argon-in-google-antigravity) · [Plugin Marketplace（2026-10-29）](https://antigravity.google/blog/plugin-marketplace-in-antigravity) · [Gemini 4 Hydrogen in Antigravity（2026-11-12）](https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity)
 - [Gemini CLI 配额（替换横幅）](https://geminicli.com/docs/resources/quota-and-pricing) · [Antigravity CLI AI credits](https://antigravity.google/docs/cli/credits/)
 - [谷歌开发者博客：Transitioning Gemini CLI to Antigravity CLI（2026-05-19）](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)
 - [Google AI 方案](https://gemini.google/us/subscriptions/?hl=en) · [Jules](https://jules.google/)

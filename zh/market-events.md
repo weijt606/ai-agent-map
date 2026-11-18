@@ -4,6 +4,20 @@
 
 重塑 agent 选型格局的结构性事件——模型发布、产品合并、浪潮——新的在前。每周的逐窗口记录在 [agents/README.md](agents/README.md) 的"市场事件"时间线里；本页保存长期有效的档案。
 
+## 2026-11-12 → 11-17 —— GPT-6.2 Astra 与 Sol 发布，Gemini 4 Hydrogen 发布，Copilot 下线旧模型
+
+**OpenAI 于 11 月 17 日发布 GPT-6.2 Astra 和 GPT-6.2 Sol**（`gpt-6.2-astra`、`gpt-6.2-sol`），同时上 API、ChatGPT Work 和 Codex。API changelog 原文："Use GPT-6.2 Astra for demanding reasoning and coding tasks, or GPT-6.2 Sol for everyday coding and agent workflows." 两者都支持 Responses API 和 Chat Completions，工具调用需要 Responses API。同日 Responses API 以公开测试的形式加入两小时和八小时的后台完成窗口，这是一种计费方式。OpenAI 的 changelog 没给基准分，所以两个模型在[基准表](comparisons/benchmarks-and-billing.md)里都没有分数。[Codex CLI](agents/codex.md) 的 PR 62106（11 月 17 日合并）把 GPT-6.2 Sol 设为"the default catalog selection"；本图 11 月 18 日抓取时，它只出现在预发布版 `rust-v0.171.0-alpha.13` 里，正式版 `0.170.0` 没有包含。
+
+**Google 于 11 月 12 日发布 Gemini 4 Hydrogen**（`gemini-4-hydrogen`），定位"with speed and efficiency for everyday coding and agentic workflows"，Gemini API 免费档和付费档都可用，1M 上下文，在 `low`、`medium` 和默认的 `high` 之上新增第四档 `xhigh` 思考强度。它是 Gemini Managed Agents 里 Antigravity agent 的默认模型。Google 的 Antigravity 博文报告它在 Terminal-Bench 4.1 上得 57%。在 [Antigravity](agents/antigravity.md) 里它面向付费 Google AI Pro、Ultra 和企业版；新的 Orchestrator 选项由 Carbon 或 Argon 负责规划，Hydrogen 负责实现。
+
+**GitHub Copilot 加入两个家族，并下线旧模型。** GPT-6.2 Astra 和 Sol（11 月 17 日）、Gemini 4 Hydrogen（11 月 13 日）进入 [Copilot](agents/github-copilot.md)。11 月 16 日 Copilot 下线 Claude Opus 4.8（按年付费的个人订阅仍可用）、Claude Opus 5 和 GPT-5.6 Terra；12 月 14 日还将下线 Claude Fable 5、Claude Haiku 4.5、Gemini 3.8 Flash、Gemini 4 Argon、Grok 4.6 和 Kimi K3。
+
+**窗口内另有：** Anthropic 推出自托管的 Claude Managed Agents（11 月 12 日）和测试版 Linked billing（11 月 17 日）。Antigravity 的模型页现在写 Claude 4.6 和 GPT-OSS-120b 于 11 月 18 日下线，而不是 11 月 2 日。ChatGPT dots 的文档仍写 11 月 18 日起对符合条件的工作区默认开启；本图没找到说明它已生效的带日期记录。
+
+**对选型的影响：** 本窗口没有被跟踪的编码 agent 在正式版里换默认模型，但 Codex 的 main 分支已经合入了换默认。如果你在 Codex 配置里写死了模型，要确认你说的是哪个 Sol：GPT-5.6 Sol、GPT-6 Sol、GPT-6.1 Sol 和现在的 GPT-6.2 Sol 是四个不同的模型。
+
+来源：[OpenAI API changelog](https://developers.openai.com/api/docs/changelog)、[Codex changelog](https://developers.openai.com/codex/changelog)、[openai/codex PR 62106](https://github.com/openai/codex/pull/62106)、[Gemini API changelog](https://aistudio.google.com/docs/changelog)、[Gemini API models](https://aistudio.google.com/docs/models)、[Gemini 4 Hydrogen in Google Antigravity](https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity)、[Antigravity: Choose a model](https://antigravity.google/docs/models/)、[GPT-6.2 in Copilot](https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available)、[Gemini 4 Hydrogen in Copilot](https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot)、[Copilot 11 月 16 日下线](https://github.blog/changelog/2026-11-16-github-copilot-models-deprecated-on-november-16-2026)、[Copilot 12 月 14 日下线](https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december)、[Claude 平台发布说明](https://platform.claude.com/docs/en/release-notes/overview)、[ChatGPT dots 文档](https://learn.chatgpt.com/docs/dots)。
+
 ## 2026-10-28 → 11-10 —— Fable 5.2 发布，Gemini 4 Carbon 进入 API，Kimi K3.1 Pro 开放权重，默认模型冻结期结束
 
 **Anthropic 于 11 月 9 日发布 Claude Fable 5.2 与 Claude Mythos 5.2**（`claude-fable-5-2`），输出比 5.1 快最多 30%，可选 fast mode；Claude Code 的 changelog 写明 1M 上下文，Pi 的发布说明写明输出上限 128K。按 Anthropic 自己的表，Fable 5.2 在 **FrontierSWE v2 得 69.9%**、**FrontierCode 2.0 得 49.1%**（Xhigh 推理强度），Opus 5.5 为 62.3% 和 45.5%，[GPT-6 Astra](agents/gpt-6-astra.md) 为 65.5% 和 42.8%，Gemini 4 Carbon 为 61.2% 和 41.1%（它的 FrontierCode 分数是 Medium 推理强度）。这是厂商自报，而且是本图以前没有跟踪过的基准。Anthropic 仍建议大多数编码和知识工作先从 Opus 5.5 开始。被拦下的请求现在网安类由 Opus 4.8 回答、生物类由 Opus 5 回答；Mythos 5.2 给进入 Anthropic 网安与生命科学验证计划的机构，Claude Enterprise 客户也能通过 Claude Security 用到它。[Claude Code](agents/claude-code.md) `2.1.321` 同日把 Fable 5.2 设为默认 Fable 模型，并把已保存的 Fable 5.1 选择迁到 `fable` 别名。GitHub Copilot 为 Pro+、Max、Business、Enterprise 加入了它。

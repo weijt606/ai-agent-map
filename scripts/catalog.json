@@ -518,7 +518,8 @@
     "vertical": null,
     "group": "framework",
     "profile": "agents/microsoft-agent-framework.md",
-    "scope": "in"
+    "scope": "in",
+    "tracked": false
   },
   "stablyai/orca": {
     "display": "Orca",

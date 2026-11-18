@@ -4,6 +4,10 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-11-18 — GPT-6.2 and Gemini 4 Hydrogen join the benchmark table; Antigravity's model table re-read; Microsoft Agent Framework paused from tracking
+
+[Benchmarks & billing](comparisons/benchmarks-and-billing.md) adds GPT-6.2 Astra, GPT-6.2 Sol and Gemini 4 Hydrogen. The [Antigravity](agents/antigravity.md) model table is re-read against Google's page: it adds Carbon, Hydrogen and the two Orchestrator options, and updates the removal date for Claude 4.6 and GPT-OSS-120b from November 2 to November 18. `microsoft/agent-framework` returned 404 at this refresh, so [Microsoft Agent Framework](agents/microsoft-agent-framework.md) is out of star tracking until the repo returns or a new home is confirmed; the profile carries a dated note.
+
 ## 2026-11-11 — Claude Fable profile moves to 5.2; Gemini 4 Carbon and Kimi K3.1 Pro join the benchmark tables
 
 [Claude Fable](agents/claude-fable-5.md) is updated in place to Fable 5.2 / Mythos 5.2 (November 9 2026); the profile keeps its original path so existing links hold, and current-state links across the map now name 5.2. [Benchmarks & billing](comparisons/benchmarks-and-billing.md) adds Gemini 4 Carbon, which this map missed when Google announced it on October 28, and adds Kimi K3.1 Pro to the open-weights table now that its weights are public.

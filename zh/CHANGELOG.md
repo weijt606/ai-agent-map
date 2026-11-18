@@ -4,6 +4,10 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-11-18 —— GPT-6.2 与 Gemini 4 Hydrogen 进入基准表；Antigravity 模型表重读；Microsoft Agent Framework 暂停跟踪
+
+[基准与计费](comparisons/benchmarks-and-billing.md)加入 GPT-6.2 Astra、GPT-6.2 Sol 和 Gemini 4 Hydrogen。[Antigravity](agents/antigravity.md) 的模型表对照 Google 页面重读：加入 Carbon、Hydrogen 和两个 Orchestrator 选项，并把 Claude 4.6 与 GPT-OSS-120b 的下线日期从 11 月 2 日改为 11 月 18 日。本次刷新时 `microsoft/agent-framework` 返回 404，所以 [Microsoft Agent Framework](agents/microsoft-agent-framework.md) 在仓库恢复或确认新地址之前不再跟踪 star；profile 已加带日期的说明。
+
 ## 2026-11-11 —— Claude Fable profile 升到 5.2；Gemini 4 Carbon 与 Kimi K3.1 Pro 进入基准表
 
 [Claude Fable](agents/claude-fable-5.md) 就地更新到 Fable 5.2 / Mythos 5.2（2026-11-09）；profile 沿用原路径，既有链接不断，全图描述当前状态的链接都已改称 5.2。[基准与计费](comparisons/benchmarks-and-billing.md)加入 Gemini 4 Carbon（Google 10 月 28 日发布时本图漏记了），并在权重公开后把 Kimi K3.1 Pro 加进开放权重表。

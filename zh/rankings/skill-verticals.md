@@ -4,9 +4,9 @@
 
 `.claude/skills` 浪潮按方向细分——每个垂类按当前 star 总量排序，本周增量仅作参考。浪潮本身的背景见[主页](../market-events.md#2026-05持续中-claudeskills-浪潮)。
 
-> **最后更新：** 2026-11-11
+> **最后更新：** 2026-11-18
 
-> **本期"周增量"列的说明：** 下面的数字覆盖 **2026-11-04 → 2026-11-11**：日历 7 天，按抓取时间约 7.17 天，上一期约 7.45 天，所以原始增量会把加速少算约 4%。Graphify、ECC、Orca、claude-mem、Paperclip 自 11-03 起跟踪，这一期是它们第一个可测增量，没有更早的窗口可比。
+> **本期"周增量"列的说明：** 下面的数字覆盖 **2026-11-11 → 2026-11-18**：日历 7 天，按抓取时间约 7.07 天，上一期约 7.17 天，所以原始增量会把放缓多算约 1%。Graphify、ECC、Orca、claude-mem、Paperclip 这是第二个可测窗口，也是第一次能和上一期比。Microsoft Agent Framework 的仓库在本次抓取时返回 404，所以本期没有增量，并暂停跟踪。
 
 ## 通用技能集
 
@@ -15,11 +15,11 @@
 <!-- auto:vertical:skill:collections -->
 | 排名 | 项目 | Stars | 本周增量 | 状态 |
 | --- | --- | --- | --- | --- |
-| #1 | [mattpocock/skills](https://github.com/mattpocock/skills) | 321.2k | +9,640 | 候补 |
-| #2 | [Superpowers](https://github.com/obra/superpowers) | 315.9k | +3,959 | 已收录 · [profile](../agents/superpowers.md) |
-| #3 | [ECC](https://github.com/affaan-m/ecc) | 300.9k | +4,333 | 已收录 · [profile](../agents/ecc.md) |
-| #4 | [anthropics/skills](https://github.com/anthropics/skills) | 192.6k | +5,472 | 候补 |
-| #5 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 115.4k | +2,315 | 候补 |
+| #1 | [mattpocock/skills](https://github.com/mattpocock/skills) | 327.0k | +5,791 | 候补 |
+| #2 | [Superpowers](https://github.com/obra/superpowers) | 319.6k | +3,726 | 已收录 · [profile](../agents/superpowers.md) |
+| #3 | [ECC](https://github.com/affaan-m/ecc) | 305.9k | +4,972 | 已收录 · [profile](../agents/ecc.md) |
+| #4 | [anthropics/skills](https://github.com/anthropics/skills) | 196.9k | +4,315 | 候补 |
+| #5 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 118.8k | +3,380 | 候补 |
 <!-- /auto:vertical:skill:collections -->
 
 ## 学术科研
@@ -29,8 +29,8 @@
 <!-- auto:vertical:skill:research -->
 | 排名 | 项目 | Stars | 本周增量 | 状态 |
 | --- | --- | --- | --- | --- |
-| #1 | [scientific-agent-skills](https://github.com/k-dense-ai/scientific-agent-skills) | 56.8k | +778 | 候补 |
-| #2 | [academic-research-skills](https://github.com/imbad0202/academic-research-skills) | 56.4k | +1,163 | 候补 |
+| #1 | [scientific-agent-skills](https://github.com/k-dense-ai/scientific-agent-skills) | 57.6k | +872 | 候补 |
+| #2 | [academic-research-skills](https://github.com/imbad0202/academic-research-skills) | 57.4k | +998 | 候补 |
 <!-- /auto:vertical:skill:research -->
 
 ## 金融
@@ -40,7 +40,7 @@
 <!-- auto:vertical:skill:finance -->
 | 排名 | 项目 | Stars | 本周增量 | 状态 |
 | --- | --- | --- | --- | --- |
-| #1 | [anthropics/financial-services](https://github.com/anthropics/financial-services) | 41.2k | +188 | 不收录 |
+| #1 | [anthropics/financial-services](https://github.com/anthropics/financial-services) | 41.4k | +160 | 不收录 |
 <!-- /auto:vertical:skill:finance -->
 
 ## 方法论
@@ -50,5 +50,5 @@
 <!-- auto:vertical:skill:methodology -->
 | 排名 | 项目 | Stars | 本周增量 | 状态 |
 | --- | --- | --- | --- | --- |
-| #1 | [12-factor-agents](https://github.com/humanlayer/12-factor-agents) | 27.1k | +124 | 不收录 |
+| #1 | [12-factor-agents](https://github.com/humanlayer/12-factor-agents) | 27.3k | +195 | 不收录 |
 <!-- /auto:vertical:skill:methodology -->

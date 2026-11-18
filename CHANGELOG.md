@@ -4,6 +4,10 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-11-18 — DeerFlow and nanobot profiled (100 profiles)
+
+[DeerFlow](agents/deer-flow.md) (`bytedance/deer-flow`, MIT) joins the general-purpose autonomous agent route, and [nanobot](agents/nanobot.md) (`HKUDS/nanobot`, MIT) joins the self-hosted / local runtime route. Both are scored in the [capability matrix](capabilities/matrix.md) (whose "broadest profile" line also gains Omnigent, which it had left out), nanobot is added to [memory approaches](comparisons/memory-approaches.md), and both are in the catalog as pending pickups.
+
 ## 2026-11-18 — GPT-6.2 and Gemini 4 Hydrogen join the benchmark table; Antigravity's model table re-read; Microsoft Agent Framework paused from tracking
 
 [Benchmarks & billing](comparisons/benchmarks-and-billing.md) adds GPT-6.2 Astra, GPT-6.2 Sol and Gemini 4 Hydrogen. The [Antigravity](agents/antigravity.md) model table is re-read against Google's page: it adds Carbon, Hydrogen and the two Orchestrator options, and updates the removal date for Claude 4.6 and GPT-OSS-120b from November 2 to November 18. `microsoft/agent-framework` returned 404 at this refresh, so [Microsoft Agent Framework](agents/microsoft-agent-framework.md) is out of star tracking until the repo returns or a new home is confirmed; the profile carries a dated note.

@@ -42,8 +42,8 @@ GROUPS = [
     ]),
     ("Own the loop", "自己掌控循环", "#eb6834", [
         ("Agent harness framework", "Agent harness 框架", ["DeepSeek Harness", "Pi", "TrueForge"], 10),
-        ("Self-hosted / local runtime", "自托管 / 本地 runtime", ["Hermes Agent", "OpenClaw", "Goose"], 6),
-        ("General-purpose autonomous agent", "通用自主 agent", ["AutoGPT", "WorkBuddy", "Kimi Work"], 8),
+        ("Self-hosted / local runtime", "自托管 / 本地 runtime", ["Hermes Agent", "OpenClaw", "Goose"], 7),
+        ("General-purpose autonomous agent", "通用自主 agent", ["AutoGPT", "WorkBuddy", "Kimi Work"], 9),
     ]),
     ("Build your own", "自建与基础设施", "#1baf7a", [
         ("Build-your-own system", "自建系统", ["LangChain", "LangGraph", "Agent Framework"], 10),

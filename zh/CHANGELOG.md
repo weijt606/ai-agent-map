@@ -4,6 +4,10 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-11-18 —— 收录 DeerFlow 与 nanobot（100 个 profile）
+
+[DeerFlow](agents/deer-flow.md)（`bytedance/deer-flow`，MIT）进入通用自主 agent 路线，[nanobot](agents/nanobot.md)（`HKUDS/nanobot`，MIT）进入自托管 / 本地 runtime 路线。两者都已在[能力矩阵](capabilities/matrix.md)打分（其中"覆盖面最广"那句也补上了此前漏掉的 Omnigent），nanobot 加进[记忆方式](comparisons/memory-approaches.md)，两者都以待翻正条目进入 catalog。
+
 ## 2026-11-18 —— GPT-6.2 与 Gemini 4 Hydrogen 进入基准表；Antigravity 模型表重读；Microsoft Agent Framework 暂停跟踪
 
 [基准与计费](comparisons/benchmarks-and-billing.md)加入 GPT-6.2 Astra、GPT-6.2 Sol 和 Gemini 4 Hydrogen。[Antigravity](agents/antigravity.md) 的模型表对照 Google 页面重读：加入 Carbon、Hydrogen 和两个 Orchestrator 选项，并把 Claude 4.6 与 GPT-OSS-120b 的下线日期从 11 月 2 日改为 11 月 18 日。本次刷新时 `microsoft/agent-framework` 返回 404，所以 [Microsoft Agent Framework](agents/microsoft-agent-framework.md) 在仓库恢复或确认新地址之前不再跟踪 star；profile 已加带日期的说明。

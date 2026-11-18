@@ -68,7 +68,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 - **榜面结构没变。** skills 占**五席**（#2、#3、#5、#8、#9），连续第二个窗口全是通用集合。infra 占**三席**（Orca、Graphify、claude-mem），追平上期创下的纪录。agent 只有**两席**（#4、#6），连续第二个窗口追平最少纪录。
 - **模型层：两个新档位，一个仍在预发布里的换默认。** (1) **OpenAI 发布 GPT-6.2 Astra 和 GPT-6.2 Sol**（11 月 17 日），同时上 API、ChatGPT Work 和 Codex：Astra 用于"demanding reasoning and coding tasks"，Sol 用于"everyday coding and agent workflows"。OpenAI 的 changelog 没有本图能记录的基准分。GitHub Copilot 同日加入两者。[Codex CLI](agents/codex.md) 的 PR 62106（11 月 17 日合并）把 GPT-6.2 Sol 设为"the default catalog selection"，但它只在预发布版 `rust-v0.171.0-alpha.13` 里，正式版 `0.170.0` 没有包含，所以本图暂不把它算作已发布的换默认。(2) **Google 发布 Gemini 4 Hydrogen**（11 月 12 日，`gemini-4-hydrogen`），Gemini API 免费档和付费档都可用，新增第四档 `xhigh` 思考强度。Google 自报 Terminal-Bench 4.1 得分 57%。在 [Antigravity](agents/antigravity.md) 里它面向付费 Pro、Ultra 和企业版，并在新的 Orchestrator 选项里与 Carbon 或 Argon 搭配；Copilot 11 月 13 日加入。(3) **Copilot 下线模型**：11 月 16 日下线 Claude Opus 4.8、Claude Opus 5 和 GPT-5.6 Terra，12 月 14 日还将下线 Fable 5、Gemini 4 Argon、Gemini 3.8 Flash 等。本窗口没有被跟踪的编码 agent 在正式版里换默认模型：[Claude Code](agents/claude-code.md)（四个版本）没换；[Gemini CLI](agents/gemini-cli.md) main 分支的源码默认仍是 `gemini-2.5-pro`，Google 将在 12 月 1 日把它路由到 `gemini-3.8-flash`。详见[市场事件](market-events.md)。
 - **Microsoft Agent Framework 的仓库从 GitHub 上消失了。** 本次抓取时 `microsoft/agent-framework` 的 API 和网页都返回 404，不是重定向，本图也没找到任何公告。PyPI 上的 `agent-framework` 包（`1.26.0`，11 月 12 日）仍链接到它，learn.microsoft.com/agent-framework 的文档仍能打开。它本期没有增量，在仓库恢复或确认新地址之前移出跟踪；[profile](agents/microsoft-agent-framework.md) 已加带日期的说明。
-- **本次更新无新 profile。** [DeerFlow](https://github.com/bytedance/deer-flow)（85.5k）和 [nanobot](https://github.com/HKUDS/nanobot) 正在单独起草收录。扫描还找到 [janestreet/agent_skills](https://github.com/janestreet/agent_skills)（10.0k，11 月 3 日创建），是一个 skills 集合，列入候补。
+- **新收录两个 profile。** [DeerFlow](agents/deer-flow.md)（85.5k，MIT）是字节跳动的自托管"super agent harness"，归入通用自主 agent；[nanobot](agents/nanobot.md)（50.2k，MIT）是小内核的自托管个人 agent，归入自托管 runtime。两者下一期起跟踪 star。扫描还找到 [janestreet/agent_skills](https://github.com/janestreet/agent_skills)（10.0k，11 月 3 日创建），是一个 skills 集合，列入候补。
 - 里程碑（按原始整数核过，不是表里四舍五入的数）：**mattpocock/skills 32.5 万**、**ECC 30.5 万**、DeepSeek Harness **28 万**、anthropics/skills **19.5 万**、[Codex CLI](agents/codex.md) **13.5 万**、Orca **12.5 万**、[CrewAI](agents/crewai.md) **6.1 万**、[CLI-Anything](agents/cli-anything.md) **5.9 万**、两个科研集合 **5.7 万**、Open Code Review **5 万**、[LangGraph](agents/langgraph.md) **4.5 万**、Qwen Code **3 万**、[TrueForge](agents/trueforge.md) **6.5k**。差一点：[Ruflo](agents/ruflo.md) **差 1 到 8.2 万**，[CodeGraph](agents/codegraph.md) 差 76 到 7.8 万，Graphify 差 159 到 15 万，[LangChain](agents/langchain.md) 差 164 到 15 万。
 - [OpenClaw](agents/openclaw.md) 仍是绝对第一，394.7k star（+390，按实际时长降 11%）；已写 profile，但不进增量榜，因为这么大的项目周度增量噪声太大。
 
@@ -135,16 +135,16 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 | review-first 自动化 | [Cline](agents/cline.md), [GitHub Copilot](agents/github-copilot.md), [Froge Code](agents/froge-code.md), [CoStrict](agents/costrict.md), [Open Code Review](agents/open-code-review.md) | 想把 review 和人工控制留在核心的人（CoStrict 加了企业严格流程 + 私有化部署；Open Code Review 只做评审，为 CI 里的准确率调优） |
 | 管理式后台路径 | [Claude Managed Agents](agents/claude-managed-agents.md) | 需要 Anthropic 的定时、云端或后台工作流的人 |
 | 消费级个人 agent | [ChatGPT dots](agents/chatgpt-dots.md), [Gemini Task](agents/gemini-task.md), [Claude（Cowork）](agents/claude-cowork.md), [Claude Duet](agents/claude-duet.md), [Muse（Meta）](agents/meta-muse.md), [Grok Bot](agents/grok-bot.md), [Cue（Manus）](agents/manus-cue.md), [豆包](agents/doubao.md), [千问 App](agents/qwen-app.md), [AutoGLM](agents/autoglm.md), [元宝](agents/yuanbao.md), [Today](agents/today-ai.md) | 想把跑腿、收件箱、预订或手机交给一个以产品形式出售、而不是自己运行的 agent 的人（见[个人 agent 对比](comparisons/personal-agents.md)） |
-| 通用自主 agent | [AutoGPT](agents/autogpt.md), [Agent Zero](agents/agent-zero.md), [BabyAGI](agents/babyagi.md), [Julep](agents/julep.md), [GenericAgent](agents/generic-agent.md), [ml-intern](agents/ml-intern.md), [WorkBuddy](agents/workbuddy.md), [Kimi Work](agents/kimi-work.md) | 想要通用自主任务执行的人（ml-intern 是 ML 工程取向的特化版本；WorkBuddy 和 Kimi Work 把同一套循环对准桌面知识工作，而不是代码仓库） |
+| 通用自主 agent | [AutoGPT](agents/autogpt.md), [Agent Zero](agents/agent-zero.md), [BabyAGI](agents/babyagi.md), [Julep](agents/julep.md), [GenericAgent](agents/generic-agent.md), [ml-intern](agents/ml-intern.md), [WorkBuddy](agents/workbuddy.md), [Kimi Work](agents/kimi-work.md), [DeerFlow](agents/deer-flow.md) | 想要通用自主任务执行的人（ml-intern 是 ML 工程取向的特化版本；WorkBuddy 和 Kimi Work 把同一套循环对准桌面知识工作，而不是代码仓库） |
 | 自建系统 | [LangChain](agents/langchain.md), [LangGraph](agents/langgraph.md), [CrewAI](agents/crewai.md), [LlamaIndex](agents/llamaindex.md), [Haystack](agents/haystack.md), [Semantic Kernel](agents/semantic-kernel.md), [DSPy](agents/dspy.md), [Pydantic AI](agents/pydantic-ai.md), [eve](agents/eve.md), [Microsoft Agent Framework](agents/microsoft-agent-framework.md) | 想自己搭 agent 平台的团队 |
 | 运行时 & 工具 | [n8n](agents/n8n.md), [MemGPT](agents/memgpt.md), [Open Interpreter](agents/open-interpreter.md), [LiteLLM](agents/litellm.md), [Flowise](agents/flowise.md), [CodeGraph](agents/codegraph.md), [Trail Code (Graft)](agents/graft.md), [CLI-Anything](agents/cli-anything.md), [claude-mem](agents/claude-mem.md), [Graphify](agents/graphify.md) | 需要工作流自动化、代码执行、LLM 网关、agent 上下文基础设施、agent 驱动 CLI 或可视化构建器的团队 |
 | 观测与评估 | [Langfuse](agents/langfuse.md) | agent 已经跑在生产上，需要知道它做了什么、花了多少、质量有没有漂移的人（见[观测与评估](comparisons/observability-and-evals.md)） |
 | 浏览器 agent | [Browser Use](agents/browser-use.md) | 任务活在一个没有 API 的网站上的人——这和"agent 怎么改文件"是两个问题，因为它决定的是允许一个 agent 以你的身份在开放互联网上做什么 |
-| 自托管 / 本地 runtime | [AI Edge Gallery](agents/ai-edge-gallery.md), [Goose](agents/goose.md), [Hermes Agent](agents/hermes-agent.md), [OpenClaw](agents/openclaw.md), [Mercury Agent](agents/mercury-agent.md), [OpenHuman](agents/openhuman.md) | 需要端侧隐私、长期运行、本地控制、渠道、设备或个人数据生活集成能力的人 |
+| 自托管 / 本地 runtime | [AI Edge Gallery](agents/ai-edge-gallery.md), [Goose](agents/goose.md), [Hermes Agent](agents/hermes-agent.md), [OpenClaw](agents/openclaw.md), [Mercury Agent](agents/mercury-agent.md), [OpenHuman](agents/openhuman.md), [nanobot](agents/nanobot.md) | 需要端侧隐私、长期运行、本地控制、渠道、设备或个人数据生活集成能力的人 |
 
 ## 当前已覆盖的主流项目
 
-已收录 98 个项目，按形态分组。展开任意一组，或到 [agents/](agents/README.md) 浏览完整的路线表与覆盖表。
+已收录 100 个项目，按形态分组。展开任意一组，或到 [agents/](agents/README.md) 浏览完整的路线表与覆盖表。
 
 <details>
 <summary><strong>编码 agent、编辑器与编排</strong>（36 个）</summary>
@@ -191,7 +191,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 </details>
 
 <details>
-<summary><strong>自主与自托管 agent</strong>（17 个）</summary>
+<summary><strong>自主与自托管 agent</strong>（19 个）</summary>
 
 | 项目 | 路线 | 一句话定位 |
 | --- | --- | --- |
@@ -212,6 +212,8 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 | [WorkBuddy](agents/workbuddy.md) | 通用自主 agent | 腾讯的桌面办公 agent——同一套循环，指向文档、幻灯片与表格 |
 | [Kimi Work](agents/kimi-work.md) | 通用自主 agent | 月之暗面的桌面知识工作 agent：挂载文件夹、浏览器自动化、内置 cron |
 | [TrueForge](agents/trueforge.md) | Agent harness 框架 | harness 即服务端——一个循环挂在 HTTP API 后面，带聊天 UI、TypeScript SDK 与可嵌入 UI |
+| [DeerFlow](agents/deer-flow.md) | 通用自主 agent | 字节跳动的自托管"super agent harness"：主 agent 带 sub-agent、长期记忆、沙箱执行、聊天应用渠道和定时任务 |
+| [nanobot](agents/nanobot.md) | 自托管 / 本地 runtime | 小内核自托管个人 agent：一个 gateway 接 WebUI、TUI 和 18 个聊天渠道，带 Dream 记忆与 cron 自动化 |
 
 </details>
 

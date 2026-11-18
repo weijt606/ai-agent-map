@@ -172,8 +172,10 @@
 | [Julep](../agents/julep.md) | ● | ◐ | ● | ● | ◐ | ○ | ● | ○ | ● |
 | [GenericAgent](../agents/generic-agent.md) | ● | ● | ● | ○ | — | ○ | — | ○ | ● |
 | [ml-intern](../agents/ml-intern.md) | ● | ● | ○ | ◐ | — | ○ | — | ○ | ● |
+| [DeerFlow](../agents/deer-flow.md) | ● | ● | ● | ● | ● | ◐ | ◐ | ● | ● |
+| [nanobot](../agents/nanobot.md) | ● | ◐ | ● | ◐ | ◐ | ○ | ● | ● | ● |
 
-看点：Hermes 与 [QM](../agents/qm.md)、[eve](../agents/eve.md) 并列全图覆盖面最广的单个 profile（各有七个 ●），几乎每个维度都强。Mercury 把招牌级**人工审批**和**调度**配在一起（权限硬化、常驻）；OpenHuman 把**记忆** + **调度**做成了生活集成的闭环。
+看点：Hermes 与 [QM](../agents/qm.md)、[Omnigent](../agents/omnigent.md)、[eve](../agents/eve.md)、[DeerFlow](../agents/deer-flow.md) 并列全图覆盖面最广的单个 profile（各有七个 ●），几乎每个维度都强。*（2026-11-18：这句此前漏了 Omnigent；DeerFlow 是新加的，打分与 Hermes 完全相同，审批和调度要运营者手动开启。）* 另一个新行 [nanobot](../agents/nanobot.md)：**调度**和**记忆**是 ●，因为它的 heartbeat 和 Dream 整理默认开启；审批是 ○，因为它只有访问配对，没有逐个动作的审批。Mercury 把招牌级**人工审批**和**调度**配在一起（权限硬化、常驻）；OpenHuman 把**记忆** + **调度**做成了生活集成的闭环。
 
 [WorkBuddy](../agents/workbuddy.md) 与 [Kimi Work](../agents/kimi-work.md) 是本矩阵里第一批桌面知识工作 agent，两行打分几乎一致，是有原因的：它们就是同一套循环，只不过指向文档而不是代码仓库。两者在**编排**、**多 agent**、**调度**上都是 ●——多个专职 agent 并行处理同一个目标，按 cron 或在厂商云里全天候跑——而两者在**人工审批**与**部署控制**上都是 ○，这才是诚实的代价。它们是闭源客户端，握着对你文件系统的授权访问，在 Kimi Work 的情形里还握着一个你已经登录的浏览器，而且没有任何有文档的逐动作闸门。这两行上其他每一个 ●，都要透过那两个 ○ 来读。
 

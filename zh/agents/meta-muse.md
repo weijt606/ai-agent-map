@@ -14,7 +14,7 @@
 | 路线 | 消费级个人 agent |
 | 开源 | 否 |
 | 形态 | iOS 与 Android 应用、muse.ai 网页、WhatsApp；AI 眼镜"即将推出" |
-| 状态 | **2026-09-08** 发布，"正在美国推出"；Meta 帮助中心称 Muse 及其订阅"正在小范围测试"。**2026-10-27 起在新加坡开放**，覆盖 iOS、Android 和 muse.ai |
+| 状态 | **2026-09-08** 发布，"正在美国推出"；Meta 帮助中心称 Muse 及其订阅"正在小范围测试"。**2026-10-27 起在新加坡开放**，覆盖 iOS、Android 和 muse.ai。Meta 的[日本文章](https://about.fb.com/ja/news/2026/10/muse-personal-ai-agent-launches-in-japan/)说 Muse 9 月先在北美上线，**10 月 23 日在日本开放**，是北美以外的第一个地区；Meta [11 月 18 日关于 Loblaw 的文章](https://about.fb.com/news/2026/11/meta-welcomes-loblaw-as-first-canadian-retail-partner-to-muse/)确认了加拿大用户；**2026-11-17 在澳大利亚开放**（[Meta](https://about.fb.com/news/2026/11/muse-is-now-available-in-australia/)）。*（2026-11-19 更正：这一行原先只写了美国和新加坡。）* |
 | 在哪里跑 | **Muse Secure VM**——每人一台带独立浏览器的专属云端电脑 |
 | 模型 | **Muse Spark**；Meta 称 [Muse Wonder](../market-events.md) 将"很快为 Muse 提供能力"，订阅用户优先。2026-11-06 Meta 说正在"rolling out specialized versions of our models to Muse, trained with learnings from Muse Wonder"，没有点名 |
 | 使用条件 | 免费（有用量限制）；付费的 **Power** 和 **Maximum** 套餐 |
@@ -30,7 +30,7 @@
 
 ## 什么时候不选它
 
-- 你不在美国和新加坡，或不在小范围测试名单里。
+- 你不在它开放的国家（目前是美国、加拿大、日本、新加坡和澳大利亚），或不在小范围测试名单里。
 - 你需要厂商本身也看不到你的数据。目前的架构"不阻止 Meta 在支持、保护或运营服务所必需时访问数据"；用只有你持有的密钥加密的 **Muse Confidential VM** 宣布在"今年晚些时候"推出，尚未上线。
 - 你需要用现有的登录信息。1Password 支持和 Shop Pay 都还是"即将推出"。
 
@@ -40,10 +40,11 @@
 
 ## 结论
 
-一个公开了约束设计的跑腿 agent——但在 Confidential VM 上线之前，运营方仍能接触你的数据。把它当作一个很强的预览版（目前开放美国和新加坡），而不是一个已经讲完的隐私故事。
+一个公开了约束设计的跑腿 agent——但在 Confidential VM 上线之前，运营方仍能接触你的数据。把它当作一个很强的预览版（目前开放北美、日本、新加坡和澳大利亚），而不是一个已经讲完的隐私故事。
 
 ## 来源
 
 - [Introducing Muse（Meta，2026-09-08，09-30 更新）](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/)
 - [Security and safety for AI agents: our approach with Muse](https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse)
+- [Muse 在日本上线（Meta，2026-10-23，日文）](https://about.fb.com/ja/news/2026/10/muse-personal-ai-agent-launches-in-japan/) · [Muse 在澳大利亚开放（Meta，2026-11-17）](https://about.fb.com/news/2026/11/muse-is-now-available-in-australia/) · [Loblaw 加入加拿大的 Muse（Meta，2026-11-18）](https://about.fb.com/news/2026/11/meta-welcomes-loblaw-as-first-canadian-retail-partner-to-muse/)
 - [Muse 订阅（Meta 帮助中心）](https://www.meta.com/help/subscriptions/1021145227643680/) · [Muse Wonder](https://research.meta.ai/blog/muse-wonder)

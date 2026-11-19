@@ -4,6 +4,10 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-11-19 —— 复核消费级个人 agent 与 Agent Skills 两页
+
+这两页错过了 2026-11-18 的周更，隔天按一手来源重读。[消费级个人 agent](comparisons/personal-agents.md)：Gemini Task 于 11 月 17 日在六个国家免费开放，Task 模型按套餐改为 Hydrogen、Neon 和 Carbon；Muse 在澳大利亚开放，地区格更正为包含加拿大和日本；Cue 的使用渠道已更新；[Gemini Task](agents/gemini-task.md) 和 [Muse](agents/meta-muse.md) 的 profile 同步修改。[Agent Skills](comparisons/agent-skills.md)：star 改用 11-18 快照，addyosmani/agent-skills 现在 26 个 skill、十个命令，ECC 的 README 现在写 327 个 skill、72 个 agent（[它的 profile](agents/ecc.md) 和索引页也已更新），另有几行更正：Claude API 一行拆开了 Messages API 和 Managed Agents，VS Code 的 skill 目录按 harness 列出。页面还注明，Claude Code 文档说内置的 `pdf` 和 `xlsx` skill 会同步进来，这与 Anthropic 总览页相互矛盾。
+
 ## 2026-11-18 —— 收录 DeerFlow 与 nanobot（100 个 profile）
 
 [DeerFlow](agents/deer-flow.md)（`bytedance/deer-flow`，MIT）进入通用自主 agent 路线，[nanobot](agents/nanobot.md)（`HKUDS/nanobot`，MIT）进入自托管 / 本地 runtime 路线。两者都已在[能力矩阵](capabilities/matrix.md)打分（其中"覆盖面最广"那句也补上了此前漏掉的 Omnigent），nanobot 加进[记忆方式](comparisons/memory-approaches.md)，两者都以待翻正条目进入 catalog。

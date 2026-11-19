@@ -14,7 +14,7 @@ One-line take: Muse is Meta's consumer personal agent — you message it in its 
 | Route | Consumer personal agent |
 | Open source | No |
 | Form factor | iOS and Android apps, the muse.ai web app, and WhatsApp; AI glasses "coming soon" |
-| Status | Announced **Sept 8 2026**, "rolling out in the US"; Meta's help center says Muse and its subscriptions are "in limited testing". **Available in Singapore since Oct 27 2026** on iOS, Android and muse.ai |
+| Status | Announced **Sept 8 2026**, "rolling out in the US"; Meta's help center says Muse and its subscriptions are "in limited testing". **Available in Singapore since Oct 27 2026** on iOS, Android and muse.ai. [Meta's Japan post](https://about.fb.com/ja/news/2026/10/muse-personal-ai-agent-launches-in-japan/) says Muse started in North America in September and opened in **Japan on Oct 23**, its first region outside North America; Meta's [Nov 18 Loblaw post](https://about.fb.com/news/2026/11/meta-welcomes-loblaw-as-first-canadian-retail-partner-to-muse/) confirms Canadian users; it opened in **Australia on Nov 17 2026** ([Meta](https://about.fb.com/news/2026/11/muse-is-now-available-in-australia/)). *(Corrected 2026-11-19: this row named only the US and Singapore.)* |
 | Where it runs | **Muse Secure VM** — a dedicated cloud computer per person, with its own browser |
 | Model | **Muse Spark**; Meta says [Muse Wonder](../market-events.md) will "soon power experiences in Muse", subscribers first. On Nov 6 2026 Meta said it is "rolling out specialized versions of our models to Muse, trained with learnings from Muse Wonder", without naming them |
 | Access | Free with a usage limit; paid **Power** and **Maximum** plans |
@@ -30,7 +30,7 @@ Not to be confused with Meta's Muse *models* (Muse Spark, Muse Wonder), which th
 
 ## When Not To Pick It
 
-- You are outside the US and Singapore, or not in the limited test.
+- You are outside the countries where it is offered (the US, Canada, Japan, Singapore and Australia so far), or not in the limited test.
 - You need the vendor to be unable to see your data. Today's architecture "does not prevent Meta from accessing data when necessary to support, secure or operate the service"; **Muse Confidential VM**, encrypted with a key only you hold, is announced for "later this year" and has not shipped.
 - You need your existing logins. 1Password support and Shop Pay are both "coming soon".
 
@@ -40,10 +40,11 @@ A host-side **Sentinel**, which the agent cannot override, is "the sole permissi
 
 ## Bottom Line
 
-An errand agent with a published containment design — and, until Confidential VM ships, one whose operator can still reach your data. Read it as a strong preview, so far in the US and Singapore, not a finished privacy story.
+An errand agent with a published containment design — and, until Confidential VM ships, one whose operator can still reach your data. Read it as a strong preview, so far in North America, Japan, Singapore and Australia, not a finished privacy story.
 
 ## Sources
 
 - [Introducing Muse (Meta, Sept 8 2026, updated Sept 30)](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/)
 - [Security and safety for AI agents: our approach with Muse](https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse)
+- [Muse launches in Japan (Meta, Oct 23 2026, Japanese)](https://about.fb.com/ja/news/2026/10/muse-personal-ai-agent-launches-in-japan/) · [Muse is now available in Australia (Meta, Nov 17 2026)](https://about.fb.com/news/2026/11/muse-is-now-available-in-australia/) · [Loblaw joins Muse in Canada (Meta, Nov 18 2026)](https://about.fb.com/news/2026/11/meta-welcomes-loblaw-as-first-canadian-retail-partner-to-muse/)
 - [Muse subscriptions (Meta help center)](https://www.meta.com/help/subscriptions/1021145227643680/) · [Muse Wonder](https://research.meta.ai/blog/muse-wonder)

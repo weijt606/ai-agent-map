@@ -161,7 +161,7 @@
 | [ml-intern](ml-intern.md) | autonomous（垂直领域） | 是 | 基于 Hugging Face 生态的自主 ML 工程 agent | 已核验 |
 | [GenericAgent](generic-agent.md) | autonomous（自演进） | 是 | 从小种子起步、每完成任务长 skill tree 的自主 agent | 候补 2 周后已核验 |
 | [Superpowers](superpowers.md) | skills 框架 / 方法论 | 是 | 可组合 agentic skills 框架，集成 Claude Code、Codex、Cursor、Copilot、Gemini | 已按 v5.1（2026-05）核验 |
-| [ECC](ecc.md) | skills 框架 / 插件 | 是 | 跨 harness 插件：314 个 skill、71 个 subagent、强制 hooks、记忆库和 AgentShield 配置扫描，Claude Code 优先 | 2026-10-28 对仓库 README、文档与 GitHub 元数据核验；数字于 2026-11-03 复核 |
+| [ECC](ecc.md) | skills 框架 / 插件 | 是 | 跨 harness 插件：327 个 skill、72 个 subagent、强制 hooks、记忆库和 AgentShield 配置扫描，Claude Code 优先 | 2026-10-28 对仓库 README、文档与 GitHub 元数据核验；数字于 2026-11-19 复核 |
 | [CodeWhale](codewhale.md) | execution（provider 中立） | 是 | provider 中立的 Rust 终端 coding agent，40 多条 provider 路线，默认仍是 DeepSeek（原 DeepSeek-TUI） | 已在 2026-05 飙升期核验；2026-10-14 搬到 `codewhale-hq` 后复核 |
 | [Ruflo](ruflo.md) | 多 agent 编排 | 是 | 跨机器联邦的 Claude 编排平台（前身 Claude Flow） | 改名后已核验 |
 | [Orca](orca.md) | 多 agent 编排 | 是 | 开源桌面应用：把任意 CLI coding agent 放进各自的 git worktree 并排跑，带评审、浏览器、远程服务器和手机端 | 2026-10-28 对仓库 README、文档与 GitHub 元数据核验 |

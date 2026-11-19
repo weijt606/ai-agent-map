@@ -262,7 +262,7 @@ The three structural stories shaping selection right now — full records with d
 | [DeepSeek V4](agents/deepseek-v4.md) | Open-weights agentic model | MIT at 1.6T params; SWE-bench Verified 80.6, reproducible because the weights are open |
 | [Qwen3-Coder](agents/qwen3-coder.md) | Open-weights agentic model | The one that fits — ~3B activated of 80B, 256K→1M context, runs where you are |
 | [Superpowers](agents/superpowers.md) | Agentic skills framework | Methodology and composable skills layer that plugs into Claude Code, Codex, Cursor, and other agents |
-| [ECC](agents/ecc.md) | Agentic skills framework | Cross-harness plugin bundling 314 skills, 71 subagents, enforcement hooks, a memory vault and the AgentShield config scanner; Claude Code first |
+| [ECC](agents/ecc.md) | Agentic skills framework | Cross-harness plugin bundling 327 skills, 72 subagents, enforcement hooks, a memory vault and the AgentShield config scanner; Claude Code first |
 
 </details>
 <details>

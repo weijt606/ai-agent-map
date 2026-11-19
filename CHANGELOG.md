@@ -4,6 +4,10 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-11-19 — Consumer personal agents and Agent Skills pages re-reviewed
+
+Both pages missed the 2026-11-18 refresh and were re-read against first-party sources a day later. [Consumer personal agents](comparisons/personal-agents.md): Gemini Task went free in six countries on Nov 17 and its Task models are now Hydrogen, Neon and Carbon by plan; Muse opened in Australia, and its Regions cell is corrected to include Canada and Japan; Cue's surfaces are updated; the [Gemini Task](agents/gemini-task.md) and [Muse](agents/meta-muse.md) profiles get the same fixes. [Agent Skills](comparisons/agent-skills.md): stars move to the 11-18 snapshot, addyosmani/agent-skills has 26 skills and ten commands, ECC's README now says 327 skills and 72 agents (also updated in [its profile](agents/ecc.md) and the indexes), and several rows are corrected: the Claude API row separates the Messages API from Managed Agents and VS Code's skill folders are listed per harness. The page also notes that Claude Code's docs say the built-in `pdf` and `xlsx` skills sync into it, contradicting Anthropic's overview.
+
 ## 2026-11-18 — DeerFlow and nanobot profiled (100 profiles)
 
 [DeerFlow](agents/deer-flow.md) (`bytedance/deer-flow`, MIT) joins the general-purpose autonomous agent route, and [nanobot](agents/nanobot.md) (`HKUDS/nanobot`, MIT) joins the self-hosted / local runtime route. Both are scored in the [capability matrix](capabilities/matrix.md) (whose "broadest profile" line also gains Omnigent, which it had left out), nanobot is added to [memory approaches](comparisons/memory-approaches.md), and both are in the catalog as pending pickups.

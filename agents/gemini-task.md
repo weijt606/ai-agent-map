@@ -13,11 +13,11 @@ One-line take: Task is the agent mode of the Gemini app — introduced at I/O as
 | Vendor | Google |
 | Route | Consumer personal agent |
 | Open source | No |
-| Form factor | A **Chat / Task toggle** in the Gemini mobile app, the Gemini app on Mac, and gemini.google.com |
+| Form factor | A **Chat / Task toggle** in the Gemini mobile app, the Gemini app on Mac, and gemini.google.com; in the US, also by texting Gemini and forwarding email to gemini@google.com (since Nov 17 2026) |
 | Status | Announced as Spark on **May 19 2026**, then a beta for subscribers; renamed **Task** (rename date not published) |
 | Where it runs | A cloud agent with a **remote browser and remote computer**; can also drive your local Chrome |
-| Model | Gemini 3.5 with the [Antigravity](antigravity.md) harness at the I/O announcement; Gemini 4 Argon reached the Gemini app for Pro and Ultra on Oct 13 2026. The help page now lists Flash and Argon as the Task models on AI Pro and Ultra, and says you can switch models manually in Task mode ([help page](https://support.google.com/gemini/answer/18648722?hl=en), checked 2026-11-03). On 2026-11-11 the same page lists **Flash, Argon and Carbon** for AI Ultra and Flash and Argon for AI Pro; Google says Gemini 4 Carbon is rolling out to all Ultra subscribers in the Gemini app (Nov 10) |
-| Access | Requires **Google AI Pro** or **AI Ultra** |
+| Model | Gemini 3.5 with the [Antigravity](antigravity.md) harness at the I/O announcement; Gemini 4 Argon reached the Gemini app for Pro and Ultra on Oct 13 2026. The help page now lists Flash and Argon as the Task models on AI Pro and Ultra, and says you can switch models manually in Task mode ([help page](https://support.google.com/gemini/answer/18648722?hl=en), checked 2026-11-03). On 2026-11-11 the same page lists **Flash, Argon and Carbon** for AI Ultra and Flash and Argon for AI Pro; Google says Gemini 4 Carbon is rolling out to all Ultra subscribers in the Gemini app (Nov 10). On 2026-11-19 the page lists **Hydrogen** with no plan and on AI Plus, **Hydrogen or Neon** on AI Pro, and **Hydrogen, Neon or Carbon** on AI Ultra; Flash and Argon are no longer listed. Free Tasks run on Gemini 4 Hydrogen ([Google, Nov 17](https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/)) |
+| Access | **Free since Nov 17 2026** in the US, Japan, Korea, Canada, Australia and India ([Google, Nov 17](https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/)); elsewhere it requires **Google AI Pro** or **AI Ultra**. *(Updated 2026-11-19: this row said Pro or Ultra only.)* |
 | Requirements | Personal Google account (not work or school), Keep Activity on, opted in to Personal Intelligence |
 | Regions | Wherever Gemini Apps are supported **except the EEA, Nigeria, Switzerland and the UK** |
 | Official page | https://support.google.com/gemini/answer/17094507 |

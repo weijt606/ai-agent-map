@@ -6,7 +6,7 @@
 
 这一页收的是你把日常交出去的那类 agent——跑腿、收件箱、预订、文档、你的手机——它们以消费级产品的形式出售，而不是你自己运行的软件。它们都不开源（其中一个有开源的兄弟项目）。本页做收录，按事实和控制力而不是热度来比较，并记录它们的变化。
 
-> **最近复核：** 2026-11-11 · 下面每条事实都来自厂商自己的页面、帮助中心或应用商店页面，标注 *媒体* 的除外。格子里写 **?** 表示厂商没有一手文档说明——不代表产品没有这个能力。
+> **最近复核：** 2026-11-19 · 下面每条事实都来自厂商自己的页面、帮助中心或应用商店页面，标注 *媒体* 的除外。格子里写 **?** 表示厂商没有一手文档说明——不代表产品没有这个能力。
 
 ## 为什么这里没有热度排名
 
@@ -19,12 +19,12 @@
 | Agent | 厂商 | 形态 | 状态（日期） | 在哪里干活 | 模型 | 地区 |
 | --- | --- | --- | --- | --- | --- | --- |
 | [ChatGPT dots](../agents/chatgpt-dots.md) | OpenAI | ChatGPT 应用；Slack、Teams、电话；短信（美国 Pro，测试版） | 逐步推出（2026-09-29）；符合条件的 Enterprise、Edu、Healthcare 工作区已正式可用，2026-11-18 起默认开启 | 自己的云端电脑和浏览器；一台已连接的个人电脑 | GPT-6 Astra，外加 GPT-6.1 Terra | Pro 不含欧洲经济区、英国、瑞士 |
-| [Gemini Task](../agents/gemini-task.md) | Google | Gemini 应用里的 Chat/Task 切换 | 已上线，原名 Spark（2026-05-19） | 远程浏览器/电脑；你的 Chrome | Pro：Flash 或 Argon；Ultra：Flash、Argon 或 Carbon；可手动选（帮助页） | 不含欧洲经济区、英国、瑞士、尼日利亚 |
+| [Gemini Task](../agents/gemini-task.md) | Google | Gemini 应用里的 Chat/Task 切换；短信和邮件转发（美国） | 已上线，原名 Spark（2026-05-19）；2026-11-17 起在美国、日本、韩国、加拿大、澳大利亚、印度免费 | 远程浏览器/电脑；你的 Chrome | 无套餐和 AI Plus：Hydrogen；Pro：Hydrogen 或 Neon；Ultra：Hydrogen、Neon 或 Carbon；付费套餐可手动选（帮助页） | 不含欧洲经济区、英国、瑞士、尼日利亚 |
 | [Claude（Cowork）](../agents/claude-cowork.md) | Anthropic | Claude 应用；Claude in Chrome | 已并入 Claude（2026-09-16） | 隔离的云端会话；你的电脑；Chrome | Anthropic 当前模型 | ? |
 | [Claude Duet](../agents/claude-duet.md) | Anthropic | 独立应用（iOS、Android）与 claude.ai | 研究预览，候补名单（2026-10-21） | 自己的虚拟机，带浏览器 | Claude Opus 5.5 | 仅限美国（预览期） |
-| [Muse](../agents/meta-muse.md) | Meta | 应用（移动端、Mac、Apple Watch）、网页、WhatsApp | 美国小范围测试（2026-09-08）；新加坡开放（2026-10-27） | 带浏览器的专属云端虚拟机 | Muse Spark；用 Muse Wonder 经验训练的"specialized versions"正在推送（11 月 6 日，未点名） | 美国、新加坡 |
+| [Muse](../agents/meta-muse.md) | Meta | 应用（移动端、Mac、Apple Watch）、网页、WhatsApp | 美国小范围测试（2026-09-08）；9 月起北美；日本（10 月 23 日）、新加坡（10 月 27 日）、澳大利亚（2026-11-17） | 带浏览器的专属云端虚拟机 | Muse Spark；用 Muse Wonder 经验训练的"specialized versions"正在推送（11 月 6 日，未点名） | 美国、加拿大、日本、新加坡、澳大利亚 |
 | [Grok Bot](../agents/grok-bot.md) | xAI | 桌面 + 移动应用；X 上 `@bot` | Beta（2026-08-11） | Cursor 云上一台共享云电脑，位于美国 | 由 Grok Bot 选择，无选择器 | 算力在美国 |
-| [Cue](../agents/manus-cue.md) | Manus | 网页、桌面、移动应用 | 抢先体验，仅限邀请 | 每个 agent 一台电脑 | ? | ? |
+| [Cue](../agents/manus-cue.md) | Manus | 网页、macOS、Windows、iOS、Android；Apple Messages 和 WhatsApp | 抢先体验，仅限邀请 | 每个 agent 一台电脑 | ? | ? |
 | [豆包](../agents/doubao.md) | 字节跳动 | 应用；合作手机上的系统服务 | 已上线；手机操作为 Beta（2026-09-14，*媒体*） | 字节跳动服务；**你手机的系统层** | 豆包模型 | 中国 |
 | [千问 App](../agents/qwen-app.md) | 阿里巴巴 | 应用 | 已上线 | 阿里服务及合作服务 | 千问 | 中国 |
 | [AutoGLM](../agents/autoglm.md) | 智谱 | 应用；开源框架 | 应用最近更新 2026-07-09 | 云手机 + 云电脑；或经 ADB/HDC 操作你的手机 | AutoGLM-Phone-9B | 中国（应用） |
@@ -61,6 +61,8 @@
 ## 最近变化
 
 新的在前。本记录随每周更新刷新；已注明日期的条目不改写。
+
+- **2026-11-19** —— **Gemini 的 Task 于 11 月 17 日免费开放**，覆盖美国、日本、韩国、加拿大、澳大利亚和印度，跑在 Gemini 4 Hydrogen 上；其他地区仍需 AI Pro 或 Ultra，欧洲经济区、英国、瑞士和尼日利亚仍不可用。同一天美国用户还拿到了 Google Pay 结账（"Nothing is purchased without your go-ahead"）、给 Gemini 发短信、把邮件转发到 gemini@google.com，以及在你批准通话计划后由 Gemini 给美国商家打电话。谷歌的模型帮助页现在把 Task 模型列为：无套餐和 AI Plus 是 Hydrogen，Pro 是 Hydrogen 或 Neon，Ultra 是 Hydrogen、Neon 或 Carbon；Flash 和 Argon 已从页面上消失。Gemini 4 Neon 于 11 月 18 日发布，面向 Gemini 应用里的 Pro 和 Ultra 用户。模型、状态和形态三格随之更新。**Muse 于 11 月 17 日在澳大利亚开放**，覆盖 iOS、Android 和 muse.ai，connector 逐步推出；11 月 18 日加拿大用户拿到了语音、spaces，以及首个加拿大零售 connector Loblaw。以下是更正，不是本周的变化：Meta 的[日本文章](https://about.fb.com/ja/news/2026/10/muse-personal-ai-agent-launches-in-japan/)（10 月 23 日）说 Muse 9 月先在北美上线，日本是北美以外的第一个地区，[11 月 18 日关于 Loblaw 的文章](https://about.fb.com/news/2026/11/meta-welcomes-loblaw-as-first-canadian-retail-partner-to-muse/)也确认了加拿大用户，所以原写"美国、新加坡"的地区格改为美国、加拿大、日本、新加坡、澳大利亚。Muse 为付费用户给美国商家打电话（11 月 12 日）只见于一位高管的 X 帖子和*媒体*报道，所以不改格子。**ChatGPT dots** 加了自定义指令（11 月 9–13 日）。GPT-6.2 Astra 和 Sol（11 月 17 日）上线的是 ChatGPT Work、Codex 和 API，dots 页面仍只写 GPT-6 Astra 和 GPT-6.1 Terra，所以模型格不变。dots 页面和管理员指南仍写 Enterprise、Edu、Healthcare "starting November 18, 2026"默认开启，也仍在描述预览阶段，所以本图暂不写已经切换。**Cue** 的网站现在能读到了，写明支持网页、macOS、Windows、iOS 和 Android，也能通过 Apple Messages 和 WhatsApp 使用；App Store 页面仍要求邀请码。上周漏记：Claude Duet 的 App Store v1.261108.0（11 月 6 日）把 Claude Code 会话带到了手机上，不影响任何格子。Cowork、Grok Bot、豆包、千问、AutoGLM、元宝、Today 除修 bug 和版本号外没找到变化。候补：MiniMax Code v4.24.3（11 月 17 日）和灵光 v2.0.90（11 月 16 日）的更新说明重复旧内容；支付宝 v12.12.56（11 月 16 日）上线了蚂蚁集团的"蚂蚁阿宝"。help.openai.com 和 x.ai/news 返回 403。
 
 - **2026-11-11** —— **Gemini 4 Carbon 进入 AI Ultra 的 Gemini Task**（11 月 10 日）：谷歌帮助页现在把 Flash、Argon、Carbon 列为 Ultra 的 Task 模型，Pro 是 Flash 和 Argon，所以模型格按套餐拆开写。**ChatGPT dots** 把 GPT-6.1 Terra 加进"the family of frontier models that power dots"（页面没给日期），开放范围也变了：Enterprise、Edu、Healthcare 是"Generally available in eligible workspaces"，**11 月 18 日**起默认开启（除非工作区选择退出）；Business Premium 是"Available in supported ChatGPT regions"。Pro 仍不覆盖欧洲经济区、英国、瑞士。**Muse** 加了语音和表情化头像（11 月 5 日；语音覆盖移动端、网页和 Mac，先在美国推送）、spaces（11 月 6 日，"available everywhere Muse is available"），以及 Apple Watch 伴侣应用（App Store v15.0，11 月 9 日）。11 月 6 日的文章说 Meta 正在"rolling out specialized versions of our models to Muse, trained with learnings from Muse Wonder"；它没有点名模型，所以模型格照这句写，不写具体名字。**元宝** v2.92.0（11 月 6 日）的 App Store 更新说明写"Hy4 模型上线"；没找到腾讯新闻中心的公告，所以这一格注明出自 App Store。**Grok Bot** 的安全页现在写"Grok Bot manages model selection"（原来写 Cursor），没有模型选择器，请求发往"a first-party SpaceXSI model or a third-party model"；请求仍经过 Cursor 的服务器。**Cue** 的 App Store 页面现在介绍了扫商家服务二维码下单（"You confirm the payment"），没给日期，仍需邀请码。Cowork、Duet、豆包、千问、AutoGLM、Today 除修 bug 的版本外没找到变化。x.ai/news 返回 403，读不到。
 

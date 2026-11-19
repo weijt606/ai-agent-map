@@ -4,7 +4,7 @@
 [![EN](https://img.shields.io/badge/EN-CURRENT-2563eb?style=for-the-badge&labelColor=1d4ed8)](ecc.md)
 [![Home](https://img.shields.io/badge/HOME-README-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-One-line take: ECC is a plugin you install into an existing coding agent that brings a whole engineering system with it — 71 subagents, 314 skills, hooks, rules, a local memory vault, and the AgentShield config scanner — organised around a plan → test → implement → review → verify → remember → improve loop.
+One-line take: ECC is a plugin you install into an existing coding agent that brings a whole engineering system with it — 72 subagents, 327 skills, hooks, rules, a local memory vault, and the AgentShield config scanner — organised around a plan → test → implement → review → verify → remember → improve loop.
 
 ## Quick Read
 
@@ -22,7 +22,7 @@ One-line take: ECC is a plugin you install into an existing coding agent that br
 
 ## How It Works
 
-ECC splits its work across five kinds of component, each with a different context cost. **Skills** (314) are workflows such as TDD, security review, or deep research, loaded only when a task needs them. **Agents** (71) are scoped subagents with their own context and tool permissions, used to keep planning, implementation, and review apart. **Rules** are always-loaded standards that you install per language. **Hooks** run outside the model on harness events: session summaries, continuous learning, and GateGuard, which gates destructive shell commands such as `rm` or a forced `git checkout` before they run. **Instincts** are patterns learned from past sessions, stored with confidence scores and recalled when relevant.
+ECC splits its work across five kinds of component, each with a different context cost. **Skills** (327) are workflows such as TDD, security review, or deep research, loaded only when a task needs them. **Agents** (72) are scoped subagents with their own context and tool permissions, used to keep planning, implementation, and review apart. **Rules** are always-loaded standards that you install per language. **Hooks** run outside the model on harness events: session summaries, continuous learning, and GateGuard, which gates destructive shell commands such as `rm` or a forced `git checkout` before they run. **Instincts** are patterns learned from past sessions, stored with confidence scores and recalled when relevant.
 
 Two pieces sit beside that core. The **Memory Vault** (`ecc memory`, added in the 2.2 line) stores durable context and cross-harness handoffs as local Markdown under `.ecc/memory/`; the README states that memory is unreviewed context, not executable policy. **AgentShield**, also shipped as the `ecc-agentshield` npm package, scans `CLAUDE.md`, settings, MCP configs, hooks, agent definitions, and skills for secrets, permission problems, hook injection, and risky MCP servers.
 
@@ -46,7 +46,7 @@ Two pieces sit beside that core. The **Memory Vault** (`ecc memory`, added in th
 
 | Dimension | Assessment | Notes |
 | --- | --- | --- |
-| Skill and agent catalog | Very strong | 71 agents, 314 skills, 98 command shims; skills load on demand |
+| Skill and agent catalog | Very strong | 72 agents, 327 skills, 98 command shims; skills load on demand |
 | Enforcement via hooks | Strong | GateGuard gates destructive shell commands; hooks run outside the model context |
 | Memory | Medium | Memory Vault (local Markdown, optional MCP server) plus learned instincts; recall is treated as unreviewed context |
 | Agent-config security | Strong | AgentShield scans prompts, hooks, MCP config, permissions, secrets, and agent files |

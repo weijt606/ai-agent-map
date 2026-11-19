@@ -262,7 +262,7 @@ AI Agent Map 是一个更偏实用、偏可视化的仓库，用来横向比较�
 | [DeepSeek V4](agents/deepseek-v4.md) | 开放权重 agentic 模型 | 1.6T 参数下的 MIT；SWE-bench Verified 80.6，且因权重开放而可复现 |
 | [Qwen3-Coder](agents/qwen3-coder.md) | 开放权重 agentic 模型 | 塞得进去的那个——80B 里激活约 3B，256K→100 万上下文，跑在你所在的地方 |
 | [Superpowers](agents/superpowers.md) | Agentic skills 框架 | 一整套方法论 + 可组合 skills 层，可接到 Claude Code、Codex、Cursor 等 agent 之上 |
-| [ECC](agents/ecc.md) | Agentic skills 框架 | 跨 harness 插件：314 个 skill、71 个 subagent、强制 hooks、记忆库和 AgentShield 配置扫描，Claude Code 优先 |
+| [ECC](agents/ecc.md) | Agentic skills 框架 | 跨 harness 插件：327 个 skill、72 个 subagent、强制 hooks、记忆库和 AgentShield 配置扫描，Claude Code 优先 |
 
 </details>
 <details>

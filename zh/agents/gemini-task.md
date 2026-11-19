@@ -13,11 +13,11 @@
 | 厂商 | Google |
 | 路线 | 消费级个人 agent |
 | 开源 | 否 |
-| 形态 | Gemini 移动应用、Mac 版 Gemini 应用和 gemini.google.com 里的 **Chat / Task 切换** |
+| 形态 | Gemini 移动应用、Mac 版 Gemini 应用和 gemini.google.com 里的 **Chat / Task 切换**；在美国还可以给 Gemini 发短信、把邮件转发到 gemini@google.com（2026-11-17 起） |
 | 状态 | **2026-05-19** 以 Spark 之名发布，随后向订阅用户 beta；之后改名为 **Task**（改名日期未公布） |
 | 在哪里跑 | 带**远程浏览器和远程电脑**的云端 agent；也能驱动你本地的 Chrome |
-| 模型 | I/O 发布时是 Gemini 3.5 加 [Antigravity](antigravity.md) harness；Gemini 4 Argon 于 2026 年 10 月 13 日进入 Pro 和 Ultra 用户的 Gemini 应用。帮助页现在把 Flash 和 Argon 列为 AI Pro、Ultra 的 Task 模型，并说明 Task 模式下可以手动切换（[帮助页](https://support.google.com/gemini/answer/18648722?hl=en)，2026-11-03 核对）。2026-11-11 同一页面列出 AI Ultra 为 **Flash、Argon、Carbon**，AI Pro 为 Flash 和 Argon；Google 说 Gemini 4 Carbon 正向所有 Ultra 订阅用户的 Gemini 应用推送（11 月 10 日） |
-| 使用条件 | 需要 **Google AI Pro** 或 **AI Ultra** |
+| 模型 | I/O 发布时是 Gemini 3.5 加 [Antigravity](antigravity.md) harness；Gemini 4 Argon 于 2026 年 10 月 13 日进入 Pro 和 Ultra 用户的 Gemini 应用。帮助页现在把 Flash 和 Argon 列为 AI Pro、Ultra 的 Task 模型，并说明 Task 模式下可以手动切换（[帮助页](https://support.google.com/gemini/answer/18648722?hl=en)，2026-11-03 核对）。2026-11-11 同一页面列出 AI Ultra 为 **Flash、Argon、Carbon**，AI Pro 为 Flash 和 Argon；Google 说 Gemini 4 Carbon 正向所有 Ultra 订阅用户的 Gemini 应用推送（11 月 10 日）。2026-11-19 该页面列出：无套餐和 AI Plus 为 **Hydrogen**，AI Pro 为 **Hydrogen 或 Neon**，AI Ultra 为 **Hydrogen、Neon 或 Carbon**；Flash 和 Argon 已不再列出。免费的 Task 跑在 Gemini 4 Hydrogen 上（[Google，11 月 17 日](https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/)） |
+| 使用条件 | **2026-11-17 起在美国、日本、韩国、加拿大、澳大利亚、印度免费**（[Google，11 月 17 日](https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/)）；其他地区需要 **Google AI Pro** 或 **AI Ultra**。*（2026-11-19 更新：这一行原写只限 Pro 或 Ultra。）* |
 | 前提条件 | 个人 Google 账号（不支持工作或学校账号）、开启"保留活动记录"（Keep Activity）、加入 Personal Intelligence |
 | 地区 | Gemini 应用支持的地区均可，**欧洲经济区、尼日利亚、瑞士和英国除外** |
 | 官方页面 | https://support.google.com/gemini/answer/17094507 |

@@ -12,7 +12,7 @@
 
 **Anthropic** 于 11 月 23 日宣布弃用 Claude Opus 4.5（`claude-opus-4-5-20251101`），API 于 2027 年 1 月 22 日下线，同日推出测试版 Enterprise Frontier Safeguards。它的 A 类股于 11 月 19 日在纳斯达克全球精选市场开始交易，代码"ANT"，接续下文记录的 10 月 26 日 S-1 申报。**xAI** 自 11 月 19 日起在 API 上停止提供 `grok-build-0.1`。
 
-**窗口内另有：** [Hermes Agent](agents/hermes-agent.md) 于 11 月 19 日发布安全公告 GHSA-p22p-9ph6-gmrh（CVE-2026-130164，High），影响 `0.21.6` 起、`0.23.2` 之前的版本：在 docker 或 ssh 终端后端里运行的代码可以给 agent 机器上的进程设置环境变量；`0.23.2`（11 月 16 日）已修复。[OpenCode](agents/opencode.md) `v2.4.0` 起从 models.dev 获取 ChatGPT 计划的模型列表，"so new models show up without an OpenCode update."。`microsoft/agent-framework` 仍返回 404。ChatGPT dots 的文档对 11 月 18 日起工作区默认开启仍用将来时描述，没有带日期的生效说明。
+**窗口内另有：** [Hermes Agent](agents/hermes-agent.md) 于 11 月 19 日发布安全公告 GHSA-p22p-9ph6-gmrh（CVE-2026-130164，High），影响 `0.21.6` 起、`0.23.2` 之前的版本：当 Bot Desktop 托管在 docker 或 ssh 终端后端里时，后端里的代码可以通过屏幕的 `env` 文件给 agent 机器上的进程设置环境变量；`0.23.2`（11 月 16 日）已修复。[OpenCode](agents/opencode.md) `v2.4.0` 起从 models.dev 获取 ChatGPT 计划的模型列表，"so new models show up without an OpenCode update."。`microsoft/agent-framework` 仍返回 404。ChatGPT dots 的文档对 11 月 18 日起工作区默认开启仍用将来时描述，没有带日期的生效说明。
 
 **对选型的影响：** 如果你按默认值跑 Codex 或 Pi 的 OpenAI 系 provider，现在用的是 GPT-6.2 Sol。需要上个月的行为就钉死模型 id。其他被跟踪的编码 agent 没有在正式版里换默认；[Gemini CLI](agents/gemini-cli.md) 的默认仍是 `gemini-2.5-pro`，Google 会在 12 月 1 日把它路由到 `gemini-3.8-flash`。
 

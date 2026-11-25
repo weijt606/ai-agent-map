@@ -4,6 +4,10 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-11-25 —— Gemini 4 Neon 进入基准表；记录 GPT-6.2 Sol 成为 Codex 与 Pi 的默认；DeerFlow 与 nanobot 进入跟踪
+
+[基准与计费](comparisons/benchmarks-and-billing.md)新增 Gemini 4 Neon 及 Google 自报的 Terminal-Bench 4.1 与 FrontierCode 2.0 分数；GPT-6.2 Sol 与 GPT-6.1 Sol 两行记下 11 月 20 日 [Codex CLI](agents/codex.md) `rust-v0.171.0` 与 [Pi](agents/pi.md) `v1.6.0` 的换默认；Codex、Pi、GPT-6 Astra 三个 profile、编码 CLI 对比页和主页 Market Pulse 已同步。[Gemini Task](agents/gemini-task.md) 的前提条件按谷歌帮助页从 Keep Activity 改为 History。[DeerFlow](agents/deer-flow.md) 与 [nanobot](agents/nanobot.md) 进入 star 跟踪。
+
 ## 2026-11-19 —— 复核消费级个人 agent 与 Agent Skills 两页
 
 这两页错过了 2026-11-18 的周更，隔天按一手来源重读。[消费级个人 agent](comparisons/personal-agents.md)：Gemini Task 于 11 月 17 日在六个国家免费开放，Task 模型按套餐改为 Hydrogen、Neon 和 Carbon；Muse 在澳大利亚开放，地区格更正为包含加拿大和日本；Cue 的使用渠道已更新；[Gemini Task](agents/gemini-task.md) 和 [Muse](agents/meta-muse.md) 的 profile 同步修改。[Agent Skills](comparisons/agent-skills.md)：star 改用 11-18 快照，addyosmani/agent-skills 现在 26 个 skill、十个命令，ECC 的 README 现在写 327 个 skill、72 个 agent（[它的 profile](agents/ecc.md) 和索引页也已更新），另有几行更正：Claude API 一行拆开了 Messages API 和 Managed Agents，VS Code 的 skill 目录按 harness 列出。页面还注明，Claude Code 文档说内置的 `pdf` 和 `xlsx` skill 会同步进来，这与 Anthropic 总览页相互矛盾。

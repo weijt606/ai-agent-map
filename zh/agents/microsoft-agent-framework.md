@@ -4,7 +4,7 @@
 [![EN](https://img.shields.io/badge/EN-English-2563eb?style=for-the-badge&labelColor=1d4ed8)](../../agents/microsoft-agent-framework.md)
 [![主页](https://img.shields.io/badge/%E8%BF%94%E5%9B%9E-%E4%B8%BB%E9%A1%B5-0d9488?style=for-the-badge&labelColor=0f766e)](../README.md)
 
-> *2026-11-18：* 本图 11 月 18 日抓取时，`github.com/microsoft/agent-framework` 的 API 和网页都返回 404，不是重定向，本图也没找到任何公告。PyPI 上的 `agent-framework` 包（`1.26.0`，11 月 12 日）仍链接到它，[learn.microsoft.com/agent-framework](https://learn.microsoft.com/zh-cn/agent-framework/) 的文档仍能打开，[`agent-framework-go`](https://github.com/microsoft/agent-framework-go) 仍是公开的。下面的仓库链接保持原样；在仓库恢复或确认新地址之前，本图暂停跟踪它的 star。
+> *2026-11-18：* 本图 11 月 18 日抓取时，`github.com/microsoft/agent-framework` 的 API 和网页都返回 404，不是重定向，本图也没找到任何公告。PyPI 上的 `agent-framework` 包（`1.26.0`，11 月 12 日）仍链接到它，[learn.microsoft.com/agent-framework](https://learn.microsoft.com/zh-cn/agent-framework/) 的文档仍能打开，[`agent-framework-go`](https://github.com/microsoft/agent-framework-go) 仍是公开的。下面的仓库链接保持原样；在仓库恢复或确认新地址之前，本图暂停跟踪它的 star。*2026-11-25：* 本图 11 月 25 日抓取时仍返回 404。
 
 一句话：Microsoft Agent Framework 是 AutoGen 的继任者，也是本地图不收录 AutoGen 的原因——微软已把 AutoGen 置于**维护模式**，并把新用户指到这里。
 

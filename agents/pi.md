@@ -15,7 +15,7 @@ One-line take: Pi is a minimal, opinionated coding-agent harness — the agent l
 | Open source | Yes (MIT, TypeScript) |
 | Best for | Developers who want to keep the harness small and own the orchestration choices themselves |
 | Main cost | You bring your own API keys, your own skills, and your own opinions about how to extend the agent |
-| Default model | Set per provider. `v1.5.1` (Nov 9 2026) moved the `anthropic` default from Claude Opus 4.8 to **Opus 5.5** and moved several other providers to newer models |
+| Default model | Set per provider. `v1.5.1` (Nov 9 2026) moved the `anthropic` default from Claude Opus 4.8 to **Opus 5.5** and moved several other providers to newer models; `v1.6.0` (Nov 20 2026) made **GPT-6.2 Sol** the default for the `openai`, `azure` and `openai-codex` providers |
 | Official website | https://pi.dev/ |
 | GitHub repo | https://github.com/earendil-works/pi |
 

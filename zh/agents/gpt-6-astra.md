@@ -52,7 +52,7 @@ Astra 还是本地图记录到的第一个"**公开版本本身就是受限版�
 
 - **ChatGPT**——付费档，受限的公开版本。
 - **API**。
-- **Codex**——产品边界见 [Codex profile](codex.md)。Astra 从 9 月 4 日（`rust-v0.153.4`）起是 Codex CLI 的内置默认，直到 9 月 29 日 `rust-v0.159.1` 把默认换成 GPT-6.1 Sol。
+- **Codex**——产品边界见 [Codex profile](codex.md)。Astra 从 9 月 4 日（`rust-v0.153.4`）起是 Codex CLI 的内置默认，直到 9 月 29 日 `rust-v0.159.1` 把默认换成 GPT-6.1 Sol；11 月 20 日 `rust-v0.171.0` 起是 GPT-6.2 Sol。
 - 分批放量：9 月 3 日限定伙伴预览，9 月 4 日付费用户，随后扩展到 API 与云。
 
 ## 与 GPT-5.6、GPT-5.5 的关系

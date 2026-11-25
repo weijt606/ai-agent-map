@@ -4,6 +4,10 @@
 
 Structural milestones of the map, newest first. The heat tables are refreshed every Wednesday; those routine updates are recorded in the git history and in the "Market events" timeline in [agents/README.md](agents/README.md), not here.
 
+## 2026-11-25 — Gemini 4 Neon joins the benchmark table; GPT-6.2 Sol recorded as Codex's and Pi's default; DeerFlow and nanobot tracked
+
+[Benchmarks & billing](comparisons/benchmarks-and-billing.md) adds Gemini 4 Neon with Google's Terminal-Bench 4.1 and FrontierCode 2.0 scores, and the GPT-6.2 Sol and GPT-6.1 Sol rows now record the Nov 20 default change in [Codex CLI](agents/codex.md) `rust-v0.171.0` and [Pi](agents/pi.md) `v1.6.0`; the Codex, Pi and GPT-6 Astra profiles, the coding CLI comparison and the home page's Market Pulse are updated to match. [Gemini Task](agents/gemini-task.md)'s prerequisite is renamed from Keep Activity to History, following Google's help page. [DeerFlow](agents/deer-flow.md) and [nanobot](agents/nanobot.md) enter star tracking.
+
 ## 2026-11-19 — Consumer personal agents and Agent Skills pages re-reviewed
 
 Both pages missed the 2026-11-18 refresh and were re-read against first-party sources a day later. [Consumer personal agents](comparisons/personal-agents.md): Gemini Task went free in six countries on Nov 17 and its Task models are now Hydrogen, Neon and Carbon by plan; Muse opened in Australia, and its Regions cell is corrected to include Canada and Japan; Cue's surfaces are updated; the [Gemini Task](agents/gemini-task.md) and [Muse](agents/meta-muse.md) profiles get the same fixes. [Agent Skills](comparisons/agent-skills.md): stars move to the 11-18 snapshot, addyosmani/agent-skills has 26 skills and ten commands, ECC's README now says 327 skills and 72 agents (also updated in [its profile](agents/ecc.md) and the indexes), and several rows are corrected: the Claude API row separates the Messages API from Managed Agents and VS Code's skill folders are listed per harness. The page also notes that Claude Code's docs say the built-in `pdf` and `xlsx` skills sync into it, contradicting Anthropic's overview.

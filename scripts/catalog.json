@@ -567,8 +567,7 @@
     "vertical": "general",
     "group": null,
     "profile": "agents/deer-flow.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   },
   "hkuds/nanobot": {
     "display": "nanobot",
@@ -576,7 +575,6 @@
     "vertical": "general",
     "group": null,
     "profile": "agents/nanobot.md",
-    "scope": "in",
-    "tracked": false
+    "scope": "in"
   }
 }

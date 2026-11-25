@@ -52,7 +52,7 @@ Astra is also the first release on this map where the *public* version of a fron
 
 - **ChatGPT** — paid tiers, in the restricted public version.
 - **API**.
-- **Codex** — see the [Codex profile](codex.md) for the product boundary. Astra was Codex CLI's bundled default from Sept 4 (`rust-v0.153.4`) until `rust-v0.159.1` (Sept 29) switched the default to GPT-6.1 Sol.
+- **Codex** — see the [Codex profile](codex.md) for the product boundary. Astra was Codex CLI's bundled default from Sept 4 (`rust-v0.153.4`) until `rust-v0.159.1` (Sept 29) switched the default to GPT-6.1 Sol; since `rust-v0.171.0` (Nov 20) it is GPT-6.2 Sol.
 - Staged rollout ran from a limited partner preview (Sept 3) to paid users (Sept 4), then broader API and cloud availability.
 
 ## Relationship To GPT-5.6 And GPT-5.5

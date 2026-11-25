@@ -86,7 +86,7 @@ changes actually touch them — see step 5.
    only ever a profile written during the *previous* refresh, so carry it
    forward by naming it here when you write it. **Rewrite this line every
    refresh** — it went stale for two months once (it named `vercel/eve`, long
-   since flipped). **As of 2026-11-18: no pending pickups.** `microsoft/agent-framework` returned 404 (not a redirect) at this fetch, so it was removed from `tracked-repos.txt` and marked `"tracked": false` in `catalog.json`; when the repo returns or a new home is confirmed, re-add it (and migrate its key if it moved). **Pending for the next refresh:** `bytedance/deer-flow` and `hkuds/nanobot`, profiled on 2026-11-18 and in `catalog.json` with `"tracked": false`; flip them and add them to `tracked-repos.txt`. No other tracked repo moved (the `.fetch-cache.json` and `snapshot.json` `full_name` values all matched). When a repo does move,
+   since flipped). **As of 2026-11-25: no pending pickups.** `bytedance/deer-flow` and `hkuds/nanobot` were flipped to tracked at this refresh (their first gain arrives on 2026-12-02). `microsoft/agent-framework` still returned 404 at this fetch; it stays out of `tracked-repos.txt` with `"tracked": false` in `catalog.json` until the repo returns or a new home is confirmed (migrate its key if it moved). No other tracked repo moved (the `.fetch-cache.json` and `snapshot.json` `full_name` values all matched). When a repo does move,
    migrate tracked-repos.txt, catalog.json, snapshot.json and history.json raw
    together so the gain history stays continuous.
 

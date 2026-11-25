@@ -22,7 +22,7 @@
 | 项目 | 厂商 | 模型（默认） | 语言 / 许可 | 最擅长的一件事 |
 | --- | --- | --- | --- | --- |
 | [Claude Code](../agents/claude-code.md) | Anthropic | Claude（Opus / Sonnet） | 闭源 | 参考实现——最深的 IDE/桌面/web 触达，最丰富的 skills + 插件生态 |
-| [Codex](../agents/codex.md) | OpenAI | GPT-6.1 Sol（`rust-v0.159.1` 起的打包默认） | CLI 开源 | 在同一产品表面把终端循环和隔离云端委派、并行 agent 结合 |
+| [Codex](../agents/codex.md) | OpenAI | GPT-6.2 Sol（`rust-v0.171.0` 起的打包默认，2026-11-20） | CLI 开源 | 在同一产品表面把终端循环和隔离云端委派、并行 agent 结合 |
 | [OpenCode](../agents/opencode.md) | Anomaly Co（社区） | 自带 | TypeScript / MIT | 体量最大的厂商中立循环，22.2 万 star（2026-10-28），也是别的 harness 架在上面的那个 |
 | [Gemini CLI](../agents/gemini-cli.md) | 谷歌 | Gemini 3 | TypeScript / Apache-2.0 | 开源循环，内置谷歌搜索接地；2026-06-18 起服务 Code Assist 标准版/企业版许可与付费 API key，不再服务免费用户和 Google AI Pro/Ultra 订阅用户 |
 | [Antigravity CLI](../agents/antigravity.md)（`agy`） | 谷歌 | Gemini（付费档可用 Claude） | Go / 闭源（CLI 仓库只有文档） | 谷歌在 2026-06-18 把 Gemini CLI 个人用户迁到这里：免费档按周给额度，2026-11-02 起只剩 Gemini，和 Antigravity 应用共用；条款禁止从第三方 agent 驱动它 |

@@ -15,7 +15,7 @@
 | 开源 | 是（MIT，TypeScript） |
 | 适合谁 | 想把 harness 保持精简、自己掌控编排选择的开发者 |
 | 主要代价 | 自带 API key、自带 skill、自带"agent 该怎么扩展"的主张 |
-| 默认模型 | 按 provider 分别设定。`v1.5.1`（2026-11-09）把 `anthropic` 的默认从 Claude Opus 4.8 换成 **Opus 5.5**，另有多个 provider 换到更新的模型 |
+| 默认模型 | 按 provider 分别设定。`v1.5.1`（2026-11-09）把 `anthropic` 的默认从 Claude Opus 4.8 换成 **Opus 5.5**，另有多个 provider 换到更新的模型；`v1.6.0`（2026-11-20）把 `openai`、`azure`、`openai-codex` 三个 provider 的默认换成 **GPT-6.2 Sol** |
 | 官网 | https://pi.dev/ |
 | GitHub 仓库 | https://github.com/earendil-works/pi |
 

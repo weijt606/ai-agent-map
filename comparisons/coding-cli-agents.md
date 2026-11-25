@@ -22,7 +22,7 @@ In scope: foreground, single-developer terminal loops whose primary job is writi
 | Project | Vendor | Models (default) | Lang / License | One thing it does best |
 | --- | --- | --- | --- | --- |
 | [Claude Code](../agents/claude-code.md) | Anthropic | Claude (Opus / Sonnet) | Proprietary | The reference implementation — deepest IDE/desktop/web reach and the richest skills + plugin ecosystem |
-| [Codex](../agents/codex.md) | OpenAI | GPT-6.1 Sol (bundled default since `rust-v0.159.1`) | Open source CLI | Pairs a terminal loop with isolated cloud delegation and parallel agents on the same product surface |
+| [Codex](../agents/codex.md) | OpenAI | GPT-6.2 Sol (bundled default since `rust-v0.171.0`, Nov 20 2026) | Open source CLI | Pairs a terminal loop with isolated cloud delegation and parallel agents on the same product surface |
 | [OpenCode](../agents/opencode.md) | Anomaly Co (community) | Bring your own | TypeScript / MIT | The largest vendor-neutral loop — 222k stars (2026-10-28), and the one other harnesses build on |
 | [Gemini CLI](../agents/gemini-cli.md) | Google | Gemini 3 | TypeScript / Apache-2.0 | Open-source loop with Google Search grounding built in; since 2026-06-18 it serves Code Assist Standard/Enterprise licences and paid API keys, not free or Google AI Pro/Ultra users |
 | [Antigravity CLI](../agents/antigravity.md) (`agy`) | Google | Gemini (Claude on paid plans) | Go / closed (the CLI repo holds docs only) | Where Google moved consumer Gemini CLI users on 2026-06-18: a free weekly quota, Gemini-only from 2026-11-02, shared with the Antigravity app; the terms forbid driving it from third-party agents |

@@ -67,3 +67,5 @@ paperclipai/paperclip
 affaan-m/ECC
 thedotmack/claude-mem
 Graphify-Labs/graphify
+bytedance/deer-flow
+HKUDS/nanobot

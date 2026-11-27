@@ -40,7 +40,7 @@ README 把 Paseo 描述为"an open source agentic development environment for de
 
 - 你在用不止一个编程 agent，或者同一个 agent 开多个会话，想让每个都有自己的 worktree，旁边配好 diff、终端和浏览器。
 - 你想让 agent 跨厂商互相委派。文档的示例包括"先实现再审查"，以及用一个 agent 做规划再交给另一个；内置的 skill `/paseo-handoff`、`/paseo-advisor` 和 `/paseo-committee` 把这些打包好了。
-- 你想在手机上用完整的应用。README 说"The mobile app is the full app, native on iOS and Android"，配对可以走端到端加密的 relay，也可以直连（TCP、Tailscale 或 SSH）。
+- 你想在手机上用完整的应用。README 说"The mobile app is the full app, native on iOS and Android"，配对可以走端到端加密的 relay，也可以直连（TCP、Tailscale 或其他 VPN）；SSH 隧道只用于桌面应用和 CLI。
 - 你想在服务器或虚拟机上跑 agent，再从任何地方操作：`npm install -g @getpaseo/cli`、`paseo`，然后把客户端或 `paseo run --host` 指过去。
 - 你想用脚本驱动 agent。CLI 和 TypeScript SDK 覆盖创建 agent、等待结果和追加指令。
 - 你在意遥测。README 说"No telemetry, tracking, or forced login."
@@ -63,7 +63,7 @@ README 把 Paseo 描述为"an open source agentic development environment for de
 | 协同多 agent | 强 | agent 能跨 provider 启动其他 agent、给它们发消息并收集结果；工具途径默认关闭，CLI 途径只需要 shell 权限 |
 | 定时调度 | 强 | 应用、CLI 和 MCP 里都有 cron 定时任务和 heartbeat；可选的 Hub 提供事件触发 |
 | 审查 | 强 | diff、编辑器、PR 和桌面浏览器在同一个工作区里 |
-| 人工审批 | 中 | 待处理的权限请求可以在任何客户端、CLI 或 MCP 里回应；策略取决于各 provider 的模式，默认值偏向自动审查 |
+| 人工审批 | 中 | 待处理的权限请求可以在任何客户端、CLI 或 MCP 里回应；策略取决于各 provider 的模式：Claude Code 默认是由分类器审查的 `auto`，Codex 默认模式下由用户审批 |
 | 记忆 | 弱 | 自己没有记忆；空闲 agent 一小时后被释放，下一条 prompt"resumes the same conversation" |
 | 治理 | 中 | Apache-2.0，可以端到端自托管，有 `hub.execute` 这类明确的 daemon 权限；决策权在单一维护者手里 |
 

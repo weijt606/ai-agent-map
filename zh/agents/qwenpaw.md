@@ -47,7 +47,7 @@ README 的概括是 *"Your personal AI assistant — deploy locally or in the cl
 - **你以为内核沙箱默认开着。** README 把 Seatbelt、Bubblewrap / Landlock 和 AppContainer 隔离列为核心一层，但配置字段 `security.sandbox_enabled` 默认是 `False`：没有匹配规则的 shell 调用会"run directly without the sandbox"。即便打开，文档也列了限制：`network_allow` 默认 `["*"]`，"Bubblewrap does not isolate the network at all"，默认的 `allow_read_all: true` 让整个文件系统可读。
 - 你打算不配登录就把 Console 暴露到 localhost 之外。网页认证"**disabled by default**"，要用 `QWENPAW_AUTH_ENABLED` 打开；来自 localhost 的请求总是跳过认证。
 - 你需要一个公开的多租户服务。Hub 文档说当前版本"intended only for internal teams whose members trust one another"，并提醒不要把它当作"as a public multi-tenant service for unknown users."来运营。
-- 你希望默认不收遥测。`qwenpaw init --defaults` 会自动同意匿名使用数据收集（版本、安装方式、操作系统、Python 版本、CPU 架构、是否有 GPU）；交互式 `init` 会询问。
+- 你希望默认不收遥测。`qwenpaw init --defaults` 会自动同意匿名使用数据收集（版本、安装方式、操作系统、Python 版本、CPU 架构、是否有 GPU），而且 agent 运行时（包括定时任务）每天还会发送这些字段、一个持久的随机 runtime UUID 和 UTC 日期；交互式 `init` 会询问，设置 `QWENPAW_TELEMETRY_DISABLED` 可两者都关掉。
 
 ## 能力形状
 

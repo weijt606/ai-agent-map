@@ -40,7 +40,7 @@
 | [Grok Build](../agents/grok-build.md) | ● | ● | ○ | ◐ | — | ◐ | ○ | ◐ | ◐ |
 | [CodeBuddy](../agents/codebuddy.md) | ● | ● | ◐ | ◐ | ◐ | ◐ | ◐ | ● | ● |
 | [OpenCode](../agents/opencode.md) | ● | ● | ○ | ◐ | ○ | ◐ | — | ◐ | ● |
-| [oh-my-pi](../agents/oh-my-pi.md) | ● | ● | ○ | ◐ | ● | ◐ | — | ◐ | ● |
+| [oh-my-pi](../agents/oh-my-pi.md) | ● | ● | ◐ | ◐ | ● | ◐ | ○ | ◐ | ● |
 | [Gemini CLI](../agents/gemini-cli.md) | ● | ● | ○ | ○ | — | ◐ | — | ◐ | ◐ |
 | [Qwen Code](../agents/qwen-code.md) | ● | ● | ◐ | ◐ | ◐ | ◐ | — | ● | ● |
 | [ZCode](../agents/zcode.md) | ● | ● | ◐ | ◐ | ◐ | ◐ | ○ | ● | ○ |
@@ -113,10 +113,10 @@
 | [Orca](../agents/orca.md) | ◐ | ● | ○ | ● | ● | ◐ | ◐ | ● | ● |
 | [T3 Code](../agents/t3-code.md) | ◐ | ● | ○ | ● | ● | ◐ | ◐ | ● | ● |
 | [Paseo](../agents/paseo.md) | ◐ | ● | ○ | ● | ● | ◐ | ◐ | ● | ● |
-| [herdr](../agents/herdr.md) | ○ | ◐ | ○ | ● | ● | ○ | — | ◐ | ● |
+| [herdr](../agents/herdr.md) | ○ | ◐ | ○ | ● | ● | ○ | ○ | ◐ | ● |
 | [Paperclip](../agents/paperclip.md) | ◐ | ◐ | ○ | ● | ● | ◐ | ● | ◐ | ● |
 
-看点：**编排**就是它们存在的理由。oh-my-claudecode、oh-my-codex 和 Ruflo 给基座 agent 加上 teams、skills 和持久工作流，其中 Ruflo 在多机联邦上走得最远。Orca 和 Paperclip 则横跨许多不同的 agent：Orca 是并行 worktree 的工作台，Paperclip 是带工单、预算和 routine 的受治理组织（**调度** ●；审批给 ◐，因为它驱动的 harness 默认全自动）。[T3 Code](../agents/t3-code.md)、[Paseo](../agents/paseo.md) 和 [herdr](../agents/herdr.md) 同样驱动你已有的 agent。T3 Code 和 Paseo 从一个 server 或 daemon 出发，配桌面、网页和手机客户端；T3 Code 的审批是 ◐，因为新 thread 默认 Full access，Paseo 的是 ◐，因为策略取决于各 provider 自己的模式。herdr 是终端那一端：类 tmux 的工作区加 CLI 和 socket API，审批是 ○，因为决定留在各 agent 自己的界面里，调度是 —。
+看点：**编排**就是它们存在的理由。oh-my-claudecode、oh-my-codex 和 Ruflo 给基座 agent 加上 teams、skills 和持久工作流，其中 Ruflo 在多机联邦上走得最远。Orca 和 Paperclip 则横跨许多不同的 agent：Orca 是并行 worktree 的工作台，Paperclip 是带工单、预算和 routine 的受治理组织（**调度** ●；审批给 ◐，因为它驱动的 harness 默认全自动）。[T3 Code](../agents/t3-code.md)、[Paseo](../agents/paseo.md) 和 [herdr](../agents/herdr.md) 同样驱动你已有的 agent。T3 Code 和 Paseo 从一个 server 或 daemon 出发，配桌面、网页和手机客户端；T3 Code 的审批是 ◐，因为新 thread 默认 Full access，Paseo 的是 ◐，因为策略取决于各 provider 自己的模式。herdr 是终端那一端：类 tmux 的工作区加 CLI 和 socket API，审批是 ○，因为决定留在各 agent 自己的界面里，调度是 ○。
 
 ## 自建框架
 
@@ -183,7 +183,7 @@
 | [ZeroClaw](../agents/zeroclaw.md) | ● | ● | ◐ | ◐ | ◐ | ● | ◐ | ● | ● |
 | [NanoClaw](../agents/nanoclaw.md) | ● | ● | ◐ | ◐ | ● | ◐ | ◐ | ● | ● |
 
-看点：Hermes 与 [QM](../agents/qm.md)、[Omnigent](../agents/omnigent.md)、[eve](../agents/eve.md)、[DeerFlow](../agents/deer-flow.md) 并列全图覆盖面最广的单个 profile（各有七个 ●），几乎每个维度都强。*（2026-11-18：这句此前漏了 Omnigent；DeerFlow 是新加的，打分与 Hermes 完全相同，审批和调度要运营者手动开启。）* 另一个新行 [nanobot](../agents/nanobot.md)：**调度**和**记忆**是 ●，因为它的 heartbeat 和 Dream 整理默认开启；审批是 ○，因为它只有访问配对，没有逐个动作的审批。2026-11-27 新加的四行里，[ZeroClaw](../agents/zeroclaw.md) 和 Mercury 一起成为这组里**人工审批**仅有的两个 ●（默认 `supervised` autonomy，中风险操作会在发起对话的渠道里等批准）；[CowAgent](../agents/cowagent.md) 和 [QwenPaw](../agents/qwenpaw.md) 在**记忆**上拿 ●，CowAgent 的审批是 ○，因为源码和 Docker 安装默认 `full-access`；[NanoClaw](../agents/nanoclaw.md) 把每个 agent 会话放进独立的 Docker 容器。Mercury 把招牌级**人工审批**和**调度**配在一起（权限硬化、常驻）；OpenHuman 把**记忆** + **调度**做成了生活集成的闭环。
+看点：Hermes 与 [QM](../agents/qm.md)、[Omnigent](../agents/omnigent.md)、[eve](../agents/eve.md)、[DeerFlow](../agents/deer-flow.md) 并列全图覆盖面最广的单个 profile（各有七个 ●），几乎每个维度都强。*（2026-11-18：这句此前漏了 Omnigent；DeerFlow 是新加的，打分与 Hermes 完全相同，审批和调度要运营者手动开启。）* 另一个新行 [nanobot](../agents/nanobot.md)：**调度**和**记忆**是 ●，因为它的 heartbeat 和 Dream 整理默认开启；审批是 ○，因为它只有访问配对，没有逐个动作的审批。2026-11-27 新加的四行里，[ZeroClaw](../agents/zeroclaw.md) 和 Mercury 一起成为这组里**人工审批**仅有的两个 ●（默认 `supervised` autonomy，中风险操作会在发起对话的渠道里等批准）；[CowAgent](../agents/cowagent.md) 和 [QwenPaw](../agents/qwenpaw.md) 在**记忆**上拿 ●，CowAgent 的审批是 ○，因为源码和 Docker 安装默认 `full-access`。两者的**调度**是 ◐ 而不是 nanobot 那样的 ●：夜间的记忆任务默认会跑，但面向用户的调度在 CowAgent 里只是一个工具，QwenPaw 的 heartbeat 默认关闭；[NanoClaw](../agents/nanoclaw.md) 把每个 agent 会话放进独立的 Docker 容器。Mercury 把招牌级**人工审批**和**调度**配在一起（权限硬化、常驻）；OpenHuman 把**记忆** + **调度**做成了生活集成的闭环。
 
 [WorkBuddy](../agents/workbuddy.md) 与 [Kimi Work](../agents/kimi-work.md) 是本矩阵里第一批桌面知识工作 agent，两行打分几乎一致，是有原因的：它们就是同一套循环，只不过指向文档而不是代码仓库。两者在**编排**、**多 agent**、**调度**上都是 ●——多个专职 agent 并行处理同一个目标，按 cron 或在厂商云里全天候跑——而两者在**人工审批**与**部署控制**上都是 ○，这才是诚实的代价。它们是闭源客户端，握着对你文件系统的授权访问，在 Kimi Work 的情形里还握着一个你已经登录的浏览器，而且没有任何有文档的逐动作闸门。这两行上其他每一个 ●，都要透过那两个 ○ 来读。
 

@@ -36,7 +36,7 @@ Around that runtime it puts:
 
 ## When To Pick It
 
-- You want approvals before risky actions without building them yourself. Under the default `supervised` level, low-risk tools run, medium-risk tools ask, high-risk tools are blocked. The prompt arrives in the channel that started the conversation: Telegram inline buttons, Slack Block Kit buttons, a `<token> approve|deny|always` reply on Discord, Signal, Matrix and WhatsApp, or an inline CLI prompt. Unanswered requests time out after 120 seconds by default and "Timeouts are treated as denials."
+- You want approvals before risky actions without building them yourself. Under the default `supervised` level, low-risk tools run, medium-risk tools ask, high-risk tools are blocked. The prompt arrives in the channel that started the conversation: Telegram inline buttons, Slack Block Kit buttons, a `<token> approve|deny|always` reply on Discord, Signal, Matrix and WhatsApp, or an inline CLI prompt. Unanswered requests time out by default after 120 seconds on Telegram and 300 seconds on the other approval-capable channels (per the config schema), and "Timeouts are treated as denials."
 - You want approvals routed somewhere else. `approval_route` sends a risk profile's approvals to a separate approver channel, and it fails closed by default (`on_no_approver = "deny"`).
 - You want one agent on many surfaces, including email, voice, Git forges and an editor over ACP.
 - You want to run it on small or unusual hardware, or drive sensors and pins from the agent.
@@ -58,8 +58,8 @@ Around that runtime it puts:
 | Delivery surfaces | Very strong | 30+ channels, web dashboard, `zerocode` terminal interface, REST/WebSocket gateway, ACP for editors; channel set depends on the build |
 | Human approval | Very strong | `supervised` by default, per-channel approval buttons or tokens, `always_ask`, cross-channel approval routing that fails closed, optional OTP per action |
 | Tool use | Strong | Shell, files, web, browser, HTTP, MCP, cron tools, skills, WASM plugins, hardware peripherals |
-| Code execution | Strong | Shell under command allowlist and validator, workspace boundary, OS sandbox backends (Landlock, Firejail, Bubblewrap, Seatbelt, Docker); none on Windows |
-| Memory | Medium | Six pluggable backends, SQLite by default, opt-in cross-agent sharing; no automatic consolidation is documented |
+| Code execution | Strong | Shell under command allowlist and validator, workspace boundary, OS sandbox backends (Firejail, Seatbelt, Docker in a stock build; Landlock and Bubblewrap are compile-time features); none on Windows |
+| Memory | Medium | Six pluggable backends, SQLite by default, opt-in cross-agent sharing; `auto_save` is on by default and channel turns run an LLM-driven consolidation pass (summaries, fact extraction) |
 | Scheduling | Medium | Cron jobs the agent can manage, SOP cron triggers, a heartbeat monitor in the daemon; cron runs "are never pre-approved" |
 | Multi-agent | Medium | Depth-1 subagents, delegation to other agents (forbidden by default per risk profile), peer groups on shared channels |
 | Governance | Strong | MIT or Apache-2.0, open PRs with an RFC process and a CLA |

@@ -70,7 +70,7 @@ README 这样描述它：*"An AI assistant that runs agents securely in their ow
 
 ## 和本地图其他条目的关系
 
-NanoClaw 和 [OpenClaw](openclaw.md)、[nanobot](nanobot.md)、[Hermes Agent](hermes-agent.md)、[Mercury Agent](mercury-agent.md) 在同一条自托管赛道上：一个归你所有的 runtime、多个聊天入口、记忆和定时任务。它自己的 README 拿 OpenClaw 作对照，说 OpenClaw 的安全"is at the application level (allowlists, pairing codes) rather than true OS-level isolation"；这是 NanoClaw 自己的说法，不是本地图的结论。对 [nanobot](nanobot.md)，两者都主打"小而读得懂"，但边界不同。nanobot 的默认是"workspace-restricted access, not an OS sandbox"，而 NanoClaw 把每个会话放进容器、把 key 留在 gateway 里。nanobot 用 Dream 自动整理记忆；NanoClaw 把记忆维护交给 agent 自己。两者都没有在每次工具调用前放一道确认，而这正是 [Mercury Agent](mercury-agent.md) 围绕的那一层。
+NanoClaw 和 [OpenClaw](openclaw.md)、[nanobot](nanobot.md)、[Hermes Agent](hermes-agent.md)、[Mercury Agent](mercury-agent.md) 在同一条自托管赛道上：一个归你所有的 runtime、多个聊天入口、记忆和定时任务。它自己的 README 拿 OpenClaw 作对照，说 OpenClaw 的安全"is at the application level (allowlists, pairing codes) rather than true OS-level isolation"；这是 NanoClaw 自己的说法，不是本地图的结论。对 [nanobot](nanobot.md)，两者都主打小内核（NanoClaw："Small enough to understand"；nanobot："Small core"），但边界不同。nanobot 的默认是"workspace-restricted access, not an OS sandbox"，而 NanoClaw 把每个会话放进容器、把 key 留在 gateway 里。nanobot 用 Dream 自动整理记忆；NanoClaw 把记忆维护交给 agent 自己。两者都没有在每次工具调用前放一道确认，而这正是 [Mercury Agent](mercury-agent.md) 围绕的那一层。
 
 ## 结论
 

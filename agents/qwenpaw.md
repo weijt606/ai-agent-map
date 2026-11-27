@@ -47,7 +47,7 @@ Around that agent it puts:
 - **You expect the kernel sandbox to be on.** The README presents Seatbelt, Bubblewrap / Landlock and AppContainer isolation as a core layer, but the config field `security.sandbox_enabled` defaults to `False`: shell calls with no matching rule "run directly without the sandbox". Even when on, the docs list limits: `network_allow` defaults to `["*"]`, "Bubblewrap does not isolate the network at all", and the default `allow_read_all: true` leaves the whole filesystem readable.
 - You plan to expose the Console beyond localhost without setting up login. Web authentication is "**disabled by default**" and is turned on with `QWENPAW_AUTH_ENABLED`; requests from localhost always skip it.
 - You need a public multi-tenant service. The Hub docs say the current release is "intended only for internal teams whose members trust one another" and warn not to run it "as a public multi-tenant service for unknown users."
-- You want no telemetry by default. `qwenpaw init --defaults` accepts anonymous usage collection automatically (version, install method, OS, Python version, CPU architecture, GPU availability); the interactive `init` asks.
+- You want no telemetry by default. `qwenpaw init --defaults` accepts anonymous usage collection automatically (version, install method, OS, Python version, CPU architecture, GPU availability), and while agents run, including scheduled tasks, a daily ping sends those fields with a persistent random runtime UUID and the UTC date; the interactive `init` asks, and `QWENPAW_TELEMETRY_DISABLED` turns both off.
 
 ## Capability Shape
 

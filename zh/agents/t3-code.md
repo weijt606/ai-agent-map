@@ -17,7 +17,7 @@
 | 形态 | macOS、Windows、Linux 桌面应用；一个 `t3` CLI，启动 server 并打开网页版；托管网页客户端 `app.t3.codes`；iOS 和 Android 应用 |
 | Agent | Claude Code、Codex、Cursor、OpenCode、Grok Build、Antigravity、Kiro、Pi、Muse Code、fx，"and any [ACP](https://github.com/pingdotgg/t3code/blob/main/docs/user/providers-acp.md) agent"（GitHub Copilot 通过 ACP Registry 添加） |
 | 模型与计费 | 用你自己的订阅或 key："T3 Code does not resell tokens." FAQ 对"How much does T3 Code cost?"的回答是"Nothing. You pay your own model/agent providers." 额外的 provider 实例可以用 API key 或 OpenRouter |
-| 默认模型 | T3 Code 自己不选模型，用的是 provider CLI 登录的那个。源码里默认启用的 provider 实例是 Codex 和 Claude，其余八个 driver 默认关闭；之后新 thread 沿用"your last provider, model, and options"。后台文字任务（标题、commit、PR 文案）默认用 Codex 实例的 `gpt-6-luna`，推理强度 low |
+| 默认模型 | T3 Code 会自己设定 Codex 的默认：`DEFAULT_MODEL = "gpt-6-astra"`，并把默认挪到账号里能用的 `gpt-6-astra`、`gpt-5.6-sol`、`gpt-5.6-terra` 中的第一个，三个都没有时才用 Codex 自己的默认。Claude 兜底用 `claude-opus-5-5`；其他 provider 沿用各自会话或账号的模型。源码里默认启用的 provider 实例是 Codex 和 Claude，其余八个 driver 默认关闭；之后新 thread 沿用"your last provider, model, and options"。后台文字任务（标题、commit、PR 文案）默认用 Codex 实例的 `gpt-6-luna`，推理强度 low |
 | 默认安全姿态 | 新 thread 默认 **Full access**（"Runs commands and edits without approval prompts"；源码里 `DEFAULT_RUNTIME_MODE = "full-access"`）。SECURITY.md：environment "is not a sandbox"，全权限会话"equals a shell as the server's OS user"，并且"is the default grant"。新装的后台服务"bind to localhost only" |
 | 最适合 | 已经在用 Claude Code 或 Codex（或两个都用）、想在自己的机器上用一个界面管并行 worktree thread、跨 agent 委派和手机审批的开发者 |
 | 主要代价 | 开箱模式就是不弹审批，审批得你自己打开；主机必须保持唤醒；版本还在 1.0 之前且发得很勤，好几项功能（workflows、linked environments、guest links）放在 Labs 里 |
@@ -65,7 +65,7 @@ FAQ 划清了它和 harness 的界线："A harness turns an LLM into an agent (t
 | 交付面 | 很强 | 三个系统的桌面端、带网页版的 `t3` CLI、`app.t3.codes`、iOS 和 Android，以及一个 MCP 端点 |
 | 协同多 agent | 强 | `delegate_task` 可跨 provider、worktree 和 linked machine；持久的多阶段 workflow 在 Labs 里 |
 | 审查 | 强 | 按 turn 和分支看 diff、行内审查评论发回 agent、一键 PR、支持多家源码托管 |
-| 定时调度 | 强 | Settings 里的定时任务和 webhook 任务；workflow 的定时和 issue/PR 触发（Labs）；主机必须在线 |
+| 定时调度 | 中 | Settings 里的定时任务和 webhook 任务；workflow 的定时和 issue/PR 触发（Labs）；主机必须在线 |
 | 人工审批 | 中 | 四种权限模式、手机端审批、低于 Full access 时的 push hook 确认、workflow 的 `ask`；但默认是 Full access，执行方式因 provider 而异 |
 | 记忆 | 弱 | thread、会话导入和上下文交接；没有自己的记忆层 |
 | 治理 | 中 | MIT、managed policy、限定 scope 的 token 和设备审批；fork 受商标限制，贡献政策收得很窄 |

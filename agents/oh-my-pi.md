@@ -63,7 +63,7 @@ Around the agent loop it puts:
 | Multi-agent | Strong | `task` fan-out (32 concurrent by default), Agent Hub, `orchestrate` and `workflowz` keywords; isolation is opt-in |
 | Delivery surfaces | Strong | TUI, one-shot, Node SDK, RPC, ACP for editors, browser guests through `/collab` |
 | Human approval | Medium | Four approval modes, per-tool policies and restricted folders, but the default is `yolo` |
-| Memory | Medium | Five backends with retain, recall and learn tools, all off by default |
+| Memory | Medium | Four backends (plus `off`) with retain, recall and learn tools, all off by default |
 | Scheduling | Weak | No scheduler described in the docs |
 | Governance | Medium | MIT, PRs open to everyone as a trial that may be withdrawn |
 

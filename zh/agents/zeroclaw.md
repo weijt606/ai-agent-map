@@ -36,7 +36,7 @@ README 这样描述它："an agent runtime — a single Rust binary you configur
 
 ## 什么时候选它
 
-- 你想在高风险操作前有审批，又不想自己搭。默认的 `supervised` 级别下，低风险工具直接跑，中风险工具要询问，高风险工具被拦下。审批提示出现在发起对话的那个渠道里：Telegram 用内联按钮，Slack 用 Block Kit 按钮，Discord、Signal、Matrix 和 WhatsApp 回复 `<token> approve|deny|always`，CLI 里是行内提示。无人应答的请求默认 120 秒后过期，并且"Timeouts are treated as denials."
+- 你想在高风险操作前有审批，又不想自己搭。默认的 `supervised` 级别下，低风险工具直接跑，中风险工具要询问，高风险工具被拦下。审批提示出现在发起对话的那个渠道里：Telegram 用内联按钮，Slack 用 Block Kit 按钮，Discord、Signal、Matrix 和 WhatsApp 回复 `<token> approve|deny|always`，CLI 里是行内提示。无人应答的请求默认在 Telegram 上 120 秒、在其他支持审批的渠道上 300 秒后过期（以配置 schema 为准），并且"Timeouts are treated as denials."
 - 你想把审批发到别处。`approval_route` 能把一个 risk profile 的审批发到单独的审批渠道，默认失败即拒绝（`on_no_approver = "deny"`）。
 - 你想让一个 agent 出现在很多入口上，包括邮件、语音、Git 托管平台和通过 ACP 接入的编辑器。
 - 你想在小型或特殊硬件上跑它，或者让 agent 驱动传感器和引脚。
@@ -58,8 +58,8 @@ README 这样描述它："an agent runtime — a single Rust binary you configur
 | 交付面 | 很强 | 30+ 渠道、Web 管理面板、`zerocode` 终端界面、REST/WebSocket gateway、面向编辑器的 ACP；具体渠道取决于构建 |
 | 人工审批 | 很强 | 默认 `supervised`，按渠道的审批按钮或 token、`always_ask`、失败即拒绝的跨渠道审批路由，可选的逐操作 OTP |
 | 工具调用 | 强 | shell、文件、网页、浏览器、HTTP、MCP、cron 工具、skill、WASM 插件、硬件外设 |
-| 代码执行 | 强 | shell 受命令白名单和校验器约束，有工作区边界和操作系统沙箱后端（Landlock、Firejail、Bubblewrap、Seatbelt、Docker）；Windows 上没有 |
-| 记忆 | 中 | 六种可插拔后端，默认 SQLite，跨 agent 共享需显式开启；文档没有写自动整理 |
+| 代码执行 | 强 | shell 受命令白名单和校验器约束，有工作区边界和操作系统沙箱后端（默认构建里是 Firejail、Seatbelt、Docker；Landlock 和 Bubblewrap 需编译时开启）；Windows 上没有 |
+| 记忆 | 中 | 六种可插拔后端，默认 SQLite，跨 agent 共享需显式开启；`auto_save` 默认开启，渠道对话每轮会跑一次由 LLM 驱动的整理（摘要、事实提取） |
 | 定时调度 | 中 | agent 可自行管理的 cron 任务、SOP 的 cron 触发器、daemon 里的 heartbeat 监控；cron 运行"are never pre-approved" |
 | 多 agent | 中 | 只有一层的 subagent、向其他 agent 委派（每个 risk profile 默认禁止）、共享渠道上的 peer group |
 | 治理 | 强 | MIT 或 Apache-2.0，PR 开放，有 RFC 流程和 CLA |

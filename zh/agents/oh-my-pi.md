@@ -63,7 +63,7 @@ README 称它为"A coding agent with the IDE wired in."，还把项目描述为"
 | 多 agent | 强 | `task` 分发（默认并发 32 个）、Agent Hub、`orchestrate` 和 `workflowz` 关键词；隔离需手动开启 |
 | 交付面 | 强 | TUI、一次性模式、Node SDK、RPC、面向编辑器的 ACP、通过 `/collab` 的浏览器访客 |
 | 人工审批 | 中 | 四种审批模式、按工具的策略和受限目录，但默认是 `yolo` |
-| 记忆 | 中 | 五种后端，带 retain、recall、learn 工具，默认全部关闭 |
+| 记忆 | 中 | 四种后端（外加 `off`），带 retain、recall、learn 工具，默认全部关闭 |
 | 定时调度 | 弱 | 文档里没有描述调度器 |
 | 治理 | 中 | MIT，PR 作为可能撤回的试行对所有人开放 |
 

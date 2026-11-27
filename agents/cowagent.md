@@ -46,7 +46,7 @@ Around that loop it puts:
 ## When Not To Pick It
 
 - **You need an approval step before risky actions on a computer or server.** The three permission modes (`read-only`, `workspace-write`, `full-access`) allow or refuse a call; the docs describe no per-action approval on the desktop or server. Per-action prompts exist only for phone capabilities in the mobile app: "It asks before each action".
-- You expect confinement by default. `agent_permission_mode` defaults to `full-access`; only "a fresh desktop or mobile client" is set to `workspace-write`, and "docker/source stay at full-access." SECURITY.md says the modes "are argument-level checks, not an OS sandbox", and the policy code says a program started by `bash` "can still write wherever the OS lets it." The docs advise "for strong isolation, run inside a container."
+- You expect confinement by default. `agent_permission_mode` defaults to `full-access`; only fresh desktop and mobile installs are set to `workspace-write`, and "docker/source stay at full-access." SECURITY.md says the modes "are argument-level checks, not an OS sandbox", and the policy code says a program started by `bash` "can still write wherever the OS lets it." The docs advise "for strong isolation, run inside a container."
 - You plan to expose it without hardening. `web_password` is empty by default ("empty means no authentication required"). With `web_host` left empty, the console listens on `127.0.0.1` without a password and on `0.0.0.0` once a password is set. The README's disclaimer says "only deploy it in trusted environments."
 - You need roles, workspaces and audit logs in the open-source build. The README lists "role-based access, audit logs" under LinkAI's enterprise features, not the open-source project.
 

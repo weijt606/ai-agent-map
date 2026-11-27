@@ -46,7 +46,7 @@ README 开头这样写：*"**CowAgent** is your own open-source personal AI agen
 ## 什么时候不选它
 
 - **你需要在电脑或服务器上的高风险操作前有一道审批。** 三种权限模式（`read-only`、`workspace-write`、`full-access`）只决定放行或拒绝一次调用；文档没有描述桌面端或服务器上的逐操作审批。逐操作的询问只存在于手机 App 的手机能力上："It asks before each action"。
-- 你期望默认就有约束。`agent_permission_mode` 默认 `full-access`；只有"a fresh desktop or mobile client"会被设为 `workspace-write`，而"docker/source stay at full-access."SECURITY.md 说这些模式"are argument-level checks, not an OS sandbox"，权限策略代码也写明由 `bash` 启动的程序"can still write wherever the OS lets it."文档的建议是"for strong isolation, run inside a container."
+- 你期望默认就有约束。`agent_permission_mode` 默认 `full-access`；只有全新安装的桌面端和手机端会被设为 `workspace-write`，而"docker/source stay at full-access."SECURITY.md 说这些模式"are argument-level checks, not an OS sandbox"，权限策略代码也写明由 `bash` 启动的程序"can still write wherever the OS lets it."文档的建议是"for strong isolation, run inside a container."
 - 你打算不加固就对外暴露。`web_password` 默认为空（"empty means no authentication required"）。`web_host` 留空时，没有密码的控制台监听 `127.0.0.1`，设了密码后改为监听 `0.0.0.0`。README 的免责声明写着"only deploy it in trusted environments."
 - 你需要开源版自带角色、工作区和审计日志。README 把"role-based access, audit logs"列在 LinkAI 的企业功能下，而不是开源项目里。
 

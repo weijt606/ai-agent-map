@@ -40,7 +40,7 @@ Around those agents it puts:
 
 - You run more than one coding agent, or several sessions of one, and want each in its own worktree with a diff, a terminal and a browser next to it.
 - You want agents to delegate to each other across vendors. The docs' examples include implement-then-review and planning with one agent before handing off to another; the bundled skills `/paseo-handoff`, `/paseo-advisor` and `/paseo-committee` package these.
-- You want the full app on your phone. The README says "The mobile app is the full app, native on iOS and Android", and pairing goes through an end-to-end encrypted relay or a direct connection (TCP, Tailscale or SSH).
+- You want the full app on your phone. The README says "The mobile app is the full app, native on iOS and Android", and pairing goes through an end-to-end encrypted relay or a direct connection (TCP, Tailscale or another VPN); SSH tunnelling is for the desktop app and CLI.
 - You want to run agents on a server or VM and drive them from anywhere: `npm install -g @getpaseo/cli`, `paseo`, then point clients or `paseo run --host` at it.
 - You want to script agents. The CLI and the TypeScript SDK cover creating agents, waiting for results and following up.
 - You care about telemetry. The README says "No telemetry, tracking, or forced login."
@@ -63,7 +63,7 @@ Around those agents it puts:
 | Coordinated multi-agent | Strong | Agents launch, message and collect results from other agents across providers; the tool route is off by default, the CLI route needs only shell access |
 | Scheduling | Strong | Cron schedules and heartbeats in the app, CLI and MCP; event triggers through the optional Hub |
 | Review | Strong | Diffs, an editor, pull requests and a desktop browser in the same workspace |
-| Human approval | Medium | Pending permission requests can be answered from any client, CLI or MCP; the policy is each provider's mode, and defaults lean toward automatic review |
+| Human approval | Medium | Pending permission requests can be answered from any client, CLI or MCP; the policy is each provider's mode: Claude Code starts in classifier-reviewed `auto`, Codex in its default mode with approvals from the user |
 | Memory | Weak | No memory of its own; idle agents are released after an hour and the next prompt "resumes the same conversation" |
 | Governance | Medium | Apache-2.0 and self-hostable end to end, with explicit daemon permissions such as `hub.execute`; decisions rest with a single maintainer |
 

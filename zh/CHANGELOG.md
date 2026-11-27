@@ -4,6 +4,10 @@
 
 记录本仓库的结构性里程碑，新的在前。热度表每周三例行刷新，例行更新见 git 历史和 [agents/README.md](agents/README.md) 的"市场事件"时间线，不在此处逐条记录。
 
+## 2026-11-27 —— 新增八个 profile（共 108 个）：T3 Code、Paseo、herdr、oh-my-pi、CowAgent、QwenPaw、ZeroClaw、NanoClaw
+
+按产品形态做的一次覆盖扫描，找到八个本图从未提过、且在收录范围内的开源项目。三个进工作流编排层，和 [Orca](agents/orca.md) 并列：[T3 Code](agents/t3-code.md) 与 [Paseo](agents/paseo.md) 从一个 server 驱动你已有的编码 agent，配桌面、网页和手机客户端；[herdr](agents/herdr.md) 是给 agent 用的终端工作区。[oh-my-pi](agents/oh-my-pi.md) 是 [Pi](agents/pi.md) 的 fork，进直接执行。四个进自托管 runtime，和 [nanobot](agents/nanobot.md) 并列：[CowAgent](agents/cowagent.md)、[QwenPaw](agents/qwenpaw.md)、[ZeroClaw](agents/zeroclaw.md)、[NanoClaw](agents/nanoclaw.md)。八个都已在[能力矩阵](capabilities/matrix.md)里打分；CowAgent 与 QwenPaw 加进了[记忆方式](comparisons/memory-approaches.md)。它们在 `catalog.json` 里带 `"tracked": false`，2026-12-02 那期起跟踪 star。DeepSeek-Reasonix 考虑过但没有收录：它的仓库已于 2026-11-12 归档。直接执行那组的矩阵看点里补上了此前漏掉的 CodeBuddy。
+
 ## 2026-11-25 —— Gemini 4 Neon 进入基准表；记录 GPT-6.2 Sol 成为 Codex 与 Pi 的默认；DeerFlow 与 nanobot 进入跟踪
 
 [基准与计费](comparisons/benchmarks-and-billing.md)新增 Gemini 4 Neon 及 Google 自报的 Terminal-Bench 4.1 与 FrontierCode 2.0 分数；GPT-6.2 Sol 与 GPT-6.1 Sol 两行记下 11 月 20 日 [Codex CLI](agents/codex.md) `rust-v0.171.0` 与 [Pi](agents/pi.md) `v1.6.0` 的换默认；Codex、Pi、GPT-6 Astra 三个 profile、编码 CLI 对比页和主页 Market Pulse 已同步。[Gemini Task](agents/gemini-task.md) 的前提条件按谷歌帮助页从 Keep Activity 改为 History。[DeerFlow](agents/deer-flow.md) 与 [nanobot](agents/nanobot.md) 进入 star 跟踪。

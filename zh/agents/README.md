@@ -12,12 +12,12 @@
 
 | 路线 | 代表项目 | 适合谁 |
 | --- | --- | --- |
-| 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Kimi Code](kimi-code.md), [MiMoCode](mimocode.md), [CodeWhale](codewhale.md), [ZCode](zcode.md), [CodeBuddy](codebuddy.md), [OpenCode](opencode.md), [Gemini CLI](gemini-cli.md), [Qwen Code](qwen-code.md), [Grok Build](grok-build.md), [Devin](devin.md), [Jules](jules.md) | 想直接把 coding 任务交给 agent（在[终端编码 CLI agent](../comparisons/coding-cli-agents.md) 里对比） |
+| 直接执行 | [Claude Code](claude-code.md), [Aider](aider.md), [Codex](codex.md), [Kimi Code](kimi-code.md), [MiMoCode](mimocode.md), [CodeWhale](codewhale.md), [ZCode](zcode.md), [CodeBuddy](codebuddy.md), [OpenCode](opencode.md), [Gemini CLI](gemini-cli.md), [Qwen Code](qwen-code.md), [Grok Build](grok-build.md), [Devin](devin.md), [Jules](jules.md), [oh-my-pi](oh-my-pi.md) | 想直接把 coding 任务交给 agent（在[终端编码 CLI agent](../comparisons/coding-cli-agents.md) 里对比） |
 | Agent harness 框架 | [DeepSeek Harness](deepseek-harness.md), [Pi](pi.md), [jcode](jcode.md), [OpenHands](openhands.md), [SWE-agent](swe-agent.md), [mini-swe-agent](mini-swe-agent.md), [OpenHarness](openharness.md), [QM](qm.md), [Omnigent](omnigent.md), [TrueForge](trueforge.md) | 想自己掌控 loop、工具表面和权限，不直接接受厂商成品（QM 和 Omnigent 在一层之下同时跑多个 harness） |
 | 前沿 agentic 模型 | [Claude Fable 5.2](claude-fable-5.md)、[Claude Opus 5](claude-opus-5.md)、[GPT-6 Astra](gpt-6-astra.md)、[GPT-5.5](gpt-5.5.md) | 在选要接入自己 agent 系统的模型，或在评估 Anthropic / OpenAI 系 agent 能力上限——天花板与其下的默认档是两个独立决策（Claude Code 的默认 Opus 已于 9 月 22 日从 Opus 5 换成 Opus 5.5） |
 | 开放权重 agentic 模型 | [Kimi K3](kimi-k3.md)、[GLM-5.3](glm-5.md)、[DeepSeek V4](deepseek-v4.md)、[Qwen3-Coder](qwen3-coder.md) | 想在自己托管、自己承担许可的权重上拿到前沿级能力的人；这几个之间，许可的差别比 benchmark 的差别更大 |
 | Agentic skills 框架 | [Superpowers](superpowers.md), [ECC](ecc.md) | 想要一套方法论 + 可组合 skills 层、能接到 Claude Code、Codex、Cursor 等 agent 之上 |
-| 工作流 / orchestration layer | [oh-my-claudecode](oh-my-claudecode.md), [oh-my-codex](oh-my-codex.md), [Ruflo](ruflo.md), [Orca](orca.md), [Paperclip](paperclip.md) | 已经在用 Claude Code 或 Codex，只想补强 teams、skills 和持久工作流（Ruflo 进一步推到跨机器联邦）；Orca 和 Paperclip 同时调度多个不同的 agent |
+| 工作流 / orchestration layer | [oh-my-claudecode](oh-my-claudecode.md), [oh-my-codex](oh-my-codex.md), [Ruflo](ruflo.md), [Orca](orca.md), [Paperclip](paperclip.md), [T3 Code](t3-code.md), [Paseo](paseo.md), [herdr](herdr.md) | 已经在用 Claude Code 或 Codex，只想补强 teams、skills 和持久工作流（Ruflo 进一步推到跨机器联邦）；Orca 和 Paperclip 同时调度多个不同的 agent |
 | 编辑器中心工作流 | [Cursor](cursor.md), [Windsurf](windsurf.md), [Google Antigravity](antigravity.md), [TRAE](trae.md), [Continue](continue.md) | 想让编辑器本身成为 agent 主表面 |
 | review-first 自动化 | [Cline](cline.md), [GitHub Copilot](github-copilot.md), [Froge Code](froge-code.md), [CoStrict](costrict.md), [Open Code Review](open-code-review.md) | 想把 review 和人工节奏留在核心（CoStrict 瞄准企业严格流程 + 私有化部署；Open Code Review 只做评审，为 CI 里的准确率调优） |
 | 通用自主 agent | [AutoGPT](autogpt.md), [Agent Zero](agent-zero.md), [BabyAGI](babyagi.md), [Julep](julep.md), [GenericAgent](generic-agent.md), [ml-intern](ml-intern.md), [WorkBuddy](workbuddy.md), [Kimi Work](kimi-work.md), [DeerFlow](deer-flow.md) | 想要通用自主任务执行（ml-intern 是 ML 工程取向的特化版） |
@@ -25,7 +25,7 @@
 | 运行时 & 工具 | [n8n](n8n.md), [MemGPT](memgpt.md), [Open Interpreter](open-interpreter.md), [LiteLLM](litellm.md), [Flowise](flowise.md), [CodeGraph](codegraph.md), [Graft](graft.md), [CLI-Anything](cli-anything.md), [claude-mem](claude-mem.md), [Graphify](graphify.md) | 需要工作流自动化、代码执行、LLM 网关、agent 上下文基础设施、agent 驱动 CLI 或可视化构建器 |
 | 观测与评估 | [Langfuse](langfuse.md) | agent 已经跑在生产上，需要知道它做了什么、花了多少、质量有没有漂移的团队（对比见[观测与评估](../comparisons/observability-and-evals.md)） |
 | 浏览器 agent | [Browser Use](browser-use.md) | 任务活在没有 API 的网站上的人；选型问题是"允许一个 agent 以你的身份在开放互联网上做什么" |
-| 自托管 / 本地 runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md), [Mercury Agent](mercury-agent.md), [OpenHuman](openhuman.md), [nanobot](nanobot.md) | 需要端侧隐私、本地控制、扩展、渠道、runtime ownership 或个人数据生活集成 |
+| 自托管 / 本地 runtime | [AI Edge Gallery](ai-edge-gallery.md), [Goose](goose.md), [Hermes Agent](hermes-agent.md), [OpenClaw](openclaw.md), [Mercury Agent](mercury-agent.md), [OpenHuman](openhuman.md), [nanobot](nanobot.md), [CowAgent](cowagent.md), [QwenPaw](qwenpaw.md), [ZeroClaw](zeroclaw.md), [NanoClaw](nanoclaw.md) | 需要端侧隐私、本地控制、扩展、渠道、runtime ownership 或个人数据生活集成 |
 | 管理式后台路径 | [Claude Managed Agents](claude-managed-agents.md) | 需要云端、定时、后台执行 |
 | 消费级个人 agent | [ChatGPT dots](chatgpt-dots.md), [Gemini Task](gemini-task.md), [Claude（Cowork）](claude-cowork.md), [Claude Duet](claude-duet.md), [Muse（Meta）](meta-muse.md), [Grok Bot](grok-bot.md), [Cue（Manus）](manus-cue.md), [豆包](doubao.md), [千问 App](qwen-app.md), [AutoGLM](autoglm.md), [元宝](yuanbao.md), [Today](today-ai.md) | 想把跑腿、收件箱或手机交给闭源消费级产品的人；对比见[个人 agent](../comparisons/personal-agents.md) |
 
@@ -130,6 +130,7 @@
 | [DeepSeek V4](deepseek-v4.md) | model / 开放权重 | 是（MIT） | 1.6T / 激活 49B，100 万上下文，SWE-bench Verified 80.6 | 已按 Hugging Face 模型卡与 DeepSeek API 公告核验 |
 | [Qwen3-Coder](qwen3-coder.md) | model / 开放权重 | 权重开放，许可按 checkpoint 而异 | 效率首选——Next 在 80B 里激活约 3B | 已按仓库 README 核验；许可不代为断言 |
 | [OpenCode](opencode.md) | execution | 是 | 厂商中立的开源编码 agent，22.2 万 star（2026-10-28） | 已按仓库核验；注意 sst → anomalyco 的迁移 |
+| [oh-my-pi](oh-my-pi.md) | execution | 是 | Stencil Labs 基于 [Pi](pi.md) 的 fork：内置 LSP、调试器、subagent、60+ provider 和 ACP 的终端编码 agent；审批默认 `yolo` | 已对照仓库 README、文档、源码默认值和最新发布核实 |
 | [Gemini CLI](gemini-cli.md) | execution | 是 | 谷歌的开源终端 agent，内置搜索接地；2026-06-18 起只服务 Code Assist 标准版/企业版与付费 API key，个人用户已转到 Antigravity CLI | 已按仓库 README 核验 |
 | [Qwen Code](qwen-code.md) | execution | 是 | 客户端与权重都开放；多协议且可运行时切换 | 已按仓库 README 核验 |
 | [Browser Use](browser-use.md) | browser | 是 | 把真浏览器交给 agent——浏览器 agent 路线的第一个条目 | 已按仓库 README 核验 |
@@ -158,6 +159,10 @@
 | [Froge Code](froge-code.md) | automation | 是 | 当前映射为 Automagik Genie | 对外命名仍在演进 |
 | [Mercury Agent](mercury-agent.md) | multi-channel runtime | 是 | 权限硬化的 CLI + Telegram 自托管 agent，带 token 预算 | 已按当前仓库核验 |
 | [nanobot](nanobot.md) | multi-channel runtime | 是 | 小内核自托管个人 agent：一个 gateway 接 WebUI、TUI 和 18 个聊天渠道，带 Dream 记忆与 cron 自动化 | 已按仓库 README、文档与配置 schema 核验 |
+| [CowAgent](cowagent.md) | multi-channel runtime | 是 | 自托管个人 agent（前身 chatgpt-on-wechat）：Web 控制台、桌面、手机和包括微信、飞书、钉钉在内的十一个 IM 渠道，带文件记忆、Deep Dream 与 Self-Evolution | 已对照仓库 README、文档、源码默认值和最新发布核实 |
+| [QwenPaw](qwenpaw.md) | multi-channel runtime | 是 | AgentScope 团队的自托管个人助手：Console、TUI 与桌面应用，从钉钉到 Slack 的聊天渠道，基于 ReMe 的三层记忆，一个实例多个 agent | 已对照仓库 README、文档、源码默认值和最新发布核实 |
+| [ZeroClaw](zeroclaw.md) | multi-channel runtime | 是 | 单个 Rust 二进制的自托管 agent runtime：一个 agent 覆盖聊天应用、邮件、语音和 webhook，默认 `supervised` autonomy，中风险操作要等批准 | 已对照仓库 README、文档、源码默认值和最新发布核实 |
+| [NanoClaw](nanoclaw.md) | 容器隔离 runtime | 是 | 常驻助手：一个小型 Node 宿主把每个 agent 会话放进独立 Docker 容器，默认跑 Claude Agent SDK，从聊天应用接入 | 已对照仓库 README、文档、源码默认值和最新发布核实 |
 | [Pi](pi.md) | execution / toolkit | 是 | 极简终端 coding agent harness，多 LLM provider 支持 | 2026-04 被 Earendil 收购后已核验 |
 | [ml-intern](ml-intern.md) | autonomous（垂直领域） | 是 | 基于 Hugging Face 生态的自主 ML 工程 agent | 已核验 |
 | [GenericAgent](generic-agent.md) | autonomous（自演进） | 是 | 从小种子起步、每完成任务长 skill tree 的自主 agent | 候补 2 周后已核验 |
@@ -166,6 +171,9 @@
 | [CodeWhale](codewhale.md) | execution（provider 中立） | 是 | provider 中立的 Rust 终端 coding agent，40 多条 provider 路线，默认仍是 DeepSeek（原 DeepSeek-TUI） | 已在 2026-05 飙升期核验；2026-10-14 搬到 `codewhale-hq` 后复核 |
 | [Ruflo](ruflo.md) | 多 agent 编排 | 是 | 跨机器联邦的 Claude 编排平台（前身 Claude Flow） | 改名后已核验 |
 | [Orca](orca.md) | 多 agent 编排 | 是 | 开源桌面应用：把任意 CLI coding agent 放进各自的 git worktree 并排跑，带评审、浏览器、远程服务器和手机端 | 2026-10-28 对仓库 README、文档与 GitHub 元数据核验 |
+| [T3 Code](t3-code.md) | 多 agent 编排 | 是 | 开源控制面：一个 server 驱动 Claude Code、Codex 等十个 agent（外加任何 ACP agent），桌面、网页、手机三端共用 thread；新 thread 默认 Full access | 已对照仓库 README、文档、源码默认值和最新发布核实 |
+| [Paseo](paseo.md) | 多 agent 编排 | 是 | "agentic development environment"：一个 daemon 把你已有的编程 agent 放进各自的 worktree 并行跑，桌面、手机、网页、CLI 四端接入，agent 之间可跨 provider 互相委派 | 已对照仓库 README、文档、源码默认值和最新发布核实 |
+| [herdr](herdr.md) | 终端编排 | 是 | 一个 Rust 单文件的类 tmux 终端工作区，追踪每个 pane 里的 agent 是在工作、被卡住还是空闲，并提供 CLI 和 socket API 来启动、发 prompt、等待 agent | 已对照仓库 README、文档、源码默认值和最新发布核实 |
 | [Paperclip](paperclip.md) | 多 agent 编排 | 是 | 自托管控制平面，像管公司一样管 agent 团队：关联目标的工单、组织架构、预算、审批和定时 routine | 2026-10-28 对仓库 README、文档与 GitHub 元数据核验 |
 | [OpenHuman](openhuman.md) | 自托管 / 本地 runtime | 是 | 带 118+ 连接器、本地 Memory Tree、Ollama 支持的开源桌面生活集成 agent | 连续两周热度后已核验 |
 | [CodeGraph](codegraph.md) | runtime / agent 上下文 | 是 | 为 Claude Code、Cursor、Codex CLI、opencode、Hermes Agent 服务的预索引代码知识图谱 + MCP server | 2026-05 trending 期间已核验 |

@@ -576,5 +576,77 @@
     "group": null,
     "profile": "agents/nanobot.md",
     "scope": "in"
+  },
+  "pingdotgg/t3code": {
+    "display": "T3 Code",
+    "category": "infra",
+    "vertical": null,
+    "group": "orchestration",
+    "profile": "agents/t3-code.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "getpaseo/paseo": {
+    "display": "Paseo",
+    "category": "infra",
+    "vertical": null,
+    "group": "orchestration",
+    "profile": "agents/paseo.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "herdrdev/herdr": {
+    "display": "herdr",
+    "category": "infra",
+    "vertical": null,
+    "group": "orchestration",
+    "profile": "agents/herdr.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "can1357/oh-my-pi": {
+    "display": "oh-my-pi",
+    "category": "agent",
+    "vertical": "coding",
+    "group": null,
+    "profile": "agents/oh-my-pi.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "zhayujie/cowagent": {
+    "display": "CowAgent",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/cowagent.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "agentscope-ai/qwenpaw": {
+    "display": "QwenPaw",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/qwenpaw.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "zeroclaw-labs/zeroclaw": {
+    "display": "ZeroClaw",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/zeroclaw.md",
+    "scope": "in",
+    "tracked": false
+  },
+  "nanocoai/nanoclaw": {
+    "display": "NanoClaw",
+    "category": "agent",
+    "vertical": "general",
+    "group": null,
+    "profile": "agents/nanoclaw.md",
+    "scope": "in",
+    "tracked": false
   }
 }

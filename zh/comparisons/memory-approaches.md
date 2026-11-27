@@ -18,7 +18,7 @@
 | 预索引代码知识图谱 | 代码库解析成可查询的图/库，按需查询 | [CodeGraph](../agents/codegraph.md), [Graphify](../agents/graphify.md) | 架构级代码上下文，不是对话 |
 | 写成文件的代码图谱 | 代码库解析成互相链接的 markdown，agent 用普通文件工具就能读 | [Graft](../agents/graft.md) | 同一种代码上下文，但产物是人能读、能审的 |
 | 个人数据记忆树 | 连接器把你的工具同步进分层摘要存储 | [OpenHuman](../agents/openhuman.md) | agent 关于*你*知道什么——邮件、笔记、日历 |
-| 长驻运行时记忆 | 记忆是常驻自托管环境里的一个子系统 | [Hermes Agent](../agents/hermes-agent.md)、[Mercury Agent](../agents/mercury-agent.md)、[nanobot](../agents/nanobot.md) | 跨渠道、跨设备、跨时间的持久状态 |
+| 长驻运行时记忆 | 记忆是常驻自托管环境里的一个子系统 | [Hermes Agent](../agents/hermes-agent.md)、[Mercury Agent](../agents/mercury-agent.md)、[nanobot](../agents/nanobot.md)、[CowAgent](../agents/cowagent.md)、[QwenPaw](../agents/qwenpaw.md) | 跨渠道、跨设备、跨时间的持久状态 |
 
 ## 自编辑托管记忆 —— [Letta (MemGPT)](../agents/memgpt.md)
 
@@ -52,7 +52,7 @@ jcode 把每一轮嵌入成语义向量，用余弦相似度查一张**记忆图
 
 ## 长驻运行时记忆 —— [Hermes Agent](../agents/hermes-agent.md)、[Mercury Agent](../agents/mercury-agent.md)
 
-这里记忆是常驻、自托管环境里的一个子系统，而不是整个产品。[Hermes Agent](../agents/hermes-agent.md) 把记忆和 skills、delegation、channels 配在一起；[Mercury Agent](../agents/mercury-agent.md) 把持久记忆和权限硬化的常驻守护进程、审批流配在一起；[nanobot](../agents/nanobot.md) 在会话变长时做摘要，并运行默认开启、每两小时一次的 **Dream**，把长期记忆整理进 `USER.md`、`memory/MEMORY.md` 这类可读可改的工作区文件。你得到跨渠道跨时间的持久状态，但你也要自己扛守护进程、运维和策展。
+这里记忆是常驻、自托管环境里的一个子系统，而不是整个产品。[Hermes Agent](../agents/hermes-agent.md) 把记忆和 skills、delegation、channels 配在一起；[Mercury Agent](../agents/mercury-agent.md) 把持久记忆和权限硬化的常驻守护进程、审批流配在一起；[nanobot](../agents/nanobot.md) 在会话变长时做摘要，并运行默认开启、每两小时一次的 **Dream**，把长期记忆整理进 `USER.md`、`memory/MEMORY.md` 这类可读可改的工作区文件；[CowAgent](../agents/cowagent.md) 按天写记忆文件，每天 23:55 做一次总结，并在夜间运行 **Deep Dream** 把它们提炼进 `MEMORY.md`，这个文件会注入每一次对话；[QwenPaw](../agents/qwenpaw.md) 分三层：工作上下文、完整的原文历史和基于 ReMe 的个人知识库，**Auto-Memory** 默认每五轮用户对话写一次 Markdown 笔记。你得到跨渠道跨时间的持久状态，但你也要自己扛守护进程、运维和策展。
 
 ## 怎么选
 

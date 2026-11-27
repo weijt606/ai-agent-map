@@ -127,12 +127,12 @@ The three structural stories shaping selection right now — full records with d
 
 | Route | Representative projects | Typical user |
 | --- | --- | --- |
-| Direct execution | [Claude Code](agents/claude-code.md), [Aider](agents/aider.md), [Codex](agents/codex.md), [Kimi Code](agents/kimi-code.md), [MiMoCode](agents/mimocode.md), [CodeWhale](agents/codewhale.md), [ZCode](agents/zcode.md), [CodeBuddy](agents/codebuddy.md), [OpenCode](agents/opencode.md), [Gemini CLI](agents/gemini-cli.md), [Qwen Code](agents/qwen-code.md), [Grok Build](agents/grok-build.md), [Devin](agents/devin.md), [Jules](agents/jules.md) | Someone who wants to hand a concrete coding task to an agent (see the [terminal coding CLI comparison](comparisons/coding-cli-agents.md)) |
+| Direct execution | [Claude Code](agents/claude-code.md), [Aider](agents/aider.md), [Codex](agents/codex.md), [Kimi Code](agents/kimi-code.md), [MiMoCode](agents/mimocode.md), [CodeWhale](agents/codewhale.md), [ZCode](agents/zcode.md), [CodeBuddy](agents/codebuddy.md), [OpenCode](agents/opencode.md), [Gemini CLI](agents/gemini-cli.md), [Qwen Code](agents/qwen-code.md), [Grok Build](agents/grok-build.md), [Devin](agents/devin.md), [Jules](agents/jules.md), [oh-my-pi](agents/oh-my-pi.md) | Someone who wants to hand a concrete coding task to an agent (see the [terminal coding CLI comparison](comparisons/coding-cli-agents.md)) |
 | Agent harness framework | [DeepSeek Harness](agents/deepseek-harness.md), [Pi](agents/pi.md), [jcode](agents/jcode.md), [OpenHands](agents/openhands.md), [SWE-agent](agents/swe-agent.md), [mini-swe-agent](agents/mini-swe-agent.md), [OpenHarness](agents/openharness.md), [QM](agents/qm.md), [Omnigent](agents/omnigent.md), [TrueForge](agents/trueforge.md) | Someone who wants to own the agent loop, tool surface, and permissions instead of inheriting a vendor's product — QM and Omnigent extend this to running *several* harnesses under one layer (see the [harness comparison](comparisons/agent-harness-frameworks.md)) |
 | Frontier agentic model | [Claude Fable 5.2](agents/claude-fable-5.md), [Claude Opus 5](agents/claude-opus-5.md), [GPT-6 Astra](agents/gpt-6-astra.md), [GPT-5.5](agents/gpt-5.5.md) | Someone choosing which model to wire into their own agent system or evaluating the capability ceiling of Anthropic / OpenAI surfaces — the ceilings (Fable 5.2, Astra) and the tier you actually run under them are separate decisions (Opus 5 was Claude Code's default Opus until Opus 5.5 replaced it on Sept 22, and Sonnet 5.5 became the default Sonnet on Sept 28) |
 | Open-weights agentic model | [Kimi K3](agents/kimi-k3.md), [GLM-5.3](agents/glm-5.md), [DeepSeek V4](agents/deepseek-v4.md), [Qwen3-Coder](agents/qwen3-coder.md) | Someone who wants frontier-class capability on weights they host and licence themselves — a different decision from picking between the closed ceilings |
 | Agentic skills framework | [Superpowers](agents/superpowers.md), [ECC](agents/ecc.md) | Someone who wants a methodology + composable skills layer that plugs into Claude Code, Codex, Cursor, and similar agents |
-| Workflow / orchestration layer | [oh-my-claudecode](agents/oh-my-claudecode.md), [oh-my-codex](agents/oh-my-codex.md), [Ruflo](agents/ruflo.md), [Orca](agents/orca.md), [Paperclip](agents/paperclip.md) | Someone who already likes Claude Code or Codex and wants stronger orchestration on top (Ruflo extends this to multi-machine federation and 100+ specialized agents); Orca and Paperclip coordinate many different agents at once |
+| Workflow / orchestration layer | [oh-my-claudecode](agents/oh-my-claudecode.md), [oh-my-codex](agents/oh-my-codex.md), [Ruflo](agents/ruflo.md), [Orca](agents/orca.md), [Paperclip](agents/paperclip.md), [T3 Code](agents/t3-code.md), [Paseo](agents/paseo.md), [herdr](agents/herdr.md) | Someone who already likes Claude Code or Codex and wants stronger orchestration on top (Ruflo extends this to multi-machine federation and 100+ specialized agents); Orca and Paperclip coordinate many different agents at once |
 | Editor-centric AI workflow | [Cursor](agents/cursor.md), [Windsurf](agents/windsurf.md), [Google Antigravity](agents/antigravity.md), [TRAE](agents/trae.md), [Continue](agents/continue.md) | Someone who wants the editor itself to stay central |
 | Review-first automation | [Cline](agents/cline.md), [GitHub Copilot](agents/github-copilot.md), [Froge Code](agents/froge-code.md), [CoStrict](agents/costrict.md), [Open Code Review](agents/open-code-review.md) | Someone who wants review and human control to stay central (CoStrict adds enterprise strict-workflow + private deployment; Open Code Review is review only, tuned for precision in CI) |
 | Managed background path | [Claude Managed Agents](agents/claude-managed-agents.md) | Someone who needs scheduled, cloud, or detached Anthropic workflows |
@@ -142,14 +142,14 @@ The three structural stories shaping selection right now — full records with d
 | Runtime and tools | [n8n](agents/n8n.md), [MemGPT](agents/memgpt.md), [Open Interpreter](agents/open-interpreter.md), [LiteLLM](agents/litellm.md), [Flowise](agents/flowise.md), [CodeGraph](agents/codegraph.md), [Trail Code (Graft)](agents/graft.md), [CLI-Anything](agents/cli-anything.md), [claude-mem](agents/claude-mem.md), [Graphify](agents/graphify.md) | Teams that need workflow automation, code execution, LLM gateways, agent context infrastructure, agent-driven CLIs, or visual builders |
 | Observability and evals | [Langfuse](agents/langfuse.md) | Someone whose agents already run in production and needs to know what they did, what they cost, and whether quality is drifting (see [observability & evaluation](comparisons/observability-and-evals.md)) |
 | Browser agent | [Browser Use](agents/browser-use.md) | Someone whose task lives on a website with no API — a different question from how an agent edits files, because it decides what an agent may do as you on the open web |
-| Self-hosted / local runtime | [AI Edge Gallery](agents/ai-edge-gallery.md), [Goose](agents/goose.md), [Hermes Agent](agents/hermes-agent.md), [OpenClaw](agents/openclaw.md), [Mercury Agent](agents/mercury-agent.md), [OpenHuman](agents/openhuman.md), [nanobot](agents/nanobot.md) | Users who need on-device privacy, long-running agents, local control, channels, devices, or personal-data life integration |
+| Self-hosted / local runtime | [AI Edge Gallery](agents/ai-edge-gallery.md), [Goose](agents/goose.md), [Hermes Agent](agents/hermes-agent.md), [OpenClaw](agents/openclaw.md), [Mercury Agent](agents/mercury-agent.md), [OpenHuman](agents/openhuman.md), [nanobot](agents/nanobot.md), [CowAgent](agents/cowagent.md), [QwenPaw](agents/qwenpaw.md), [ZeroClaw](agents/zeroclaw.md), [NanoClaw](agents/nanoclaw.md) | Users who need on-device privacy, long-running agents, local control, channels, devices, or personal-data life integration |
 
 ## Current Mainstream Coverage
 
-100 profiled projects, grouped by what they are. Expand a group, or browse the full route/coverage tables in [agents/](agents/README.md).
+108 profiled projects, grouped by what they are. Expand a group, or browse the full route/coverage tables in [agents/](agents/README.md).
 
 <details>
-<summary><strong>Coding agents, editors, and orchestration</strong> (36 projects)</summary>
+<summary><strong>Coding agents, editors, and orchestration</strong> (40 projects)</summary>
 
 | Project | Route | One-line positioning |
 | --- | --- | --- |
@@ -160,6 +160,9 @@ The three structural stories shaping selection right now — full records with d
 | [oh-my-claudecode](agents/oh-my-claudecode.md) | Workflow layer | Teams-first orchestration layer on top of Claude Code |
 | [oh-my-codex](agents/oh-my-codex.md) | Workflow layer | Stronger workflow, teams, and persistent state around Codex CLI |
 | [Orca](agents/orca.md) | Workflow / orchestration layer | Open-source desktop app that runs any CLI coding agent side by side, each in its own git worktree, with review, browser, remote servers and a phone companion |
+| [T3 Code](agents/t3-code.md) | Workflow / orchestration layer | Open-source control plane that drives Claude Code, Codex and eight more agents (plus any ACP agent) from one server, with desktop, web and phone clients; new threads default to Full access |
+| [Paseo](agents/paseo.md) | Workflow / orchestration layer | "Agentic development environment": one daemon runs your existing coding agents in parallel worktrees, with desktop, mobile, web and CLI clients and cross-provider agent-to-agent delegation |
+| [herdr](agents/herdr.md) | Workflow / orchestration layer | tmux-like terminal workspace in one Rust binary that tracks whether each pane's agent is working, blocked or idle, with a CLI and socket API to start, prompt and wait on agents |
 | [Cursor](agents/cursor.md) | Editor-centric platform | AI editor spanning local coding, cloud agents, and integrations |
 | [GitHub Copilot](agents/github-copilot.md) | Platform | Multi-surface agent platform across VS Code and GitHub |
 | [Cline](agents/cline.md) | Review-first execution | Approval-first editor-native coding agent |
@@ -183,6 +186,7 @@ The three structural stories shaping selection right now — full records with d
 | [OpenHarness](agents/openharness.md) | Agent harness framework | HKUDS's 10-subsystem open agent harness with 43+ tools, anthropics/skills, and MCP |
 | [Omnigent](agents/omnigent.md) | Agent harness framework | Meta-harness that mixes Claude Code, Codex, Cursor, OpenCode, Hermes, and Pi in one session, with policies and cloud sandboxes |
 | [OpenCode](agents/opencode.md) | Direct execution | The largest vendor-neutral open-source coding agent — 222k stars (2026-10-28), MIT |
+| [oh-my-pi](agents/oh-my-pi.md) | Direct execution | Stencil Labs' fork of [Pi](agents/pi.md): a terminal coding agent with LSP, debugger, subagents, 60+ providers and ACP built in; approvals default to `yolo` |
 | [Gemini CLI](agents/gemini-cli.md) | Direct execution | Google's open-source terminal agent with Search grounding built in; since 2026-06-18 it serves Code Assist Standard/Enterprise and paid API keys, while consumer users were moved to Antigravity CLI |
 | [Qwen Code](agents/qwen-code.md) | Direct execution | Open client and open weights, switchable across OpenAI/Anthropic/Gemini/local at runtime |
 | [DeepSeek Harness](agents/deepseek-harness.md) | Agent harness framework | Everything-is-a-plugin harness — even the agent loop is swappable from config |
@@ -193,7 +197,7 @@ The three structural stories shaping selection right now — full records with d
 </details>
 
 <details>
-<summary><strong>Autonomous and self-hosted agents</strong> (19 projects)</summary>
+<summary><strong>Autonomous and self-hosted agents</strong> (23 projects)</summary>
 
 | Project | Route | One-line positioning |
 | --- | --- | --- |
@@ -216,6 +220,10 @@ The three structural stories shaping selection right now — full records with d
 | [TrueForge](agents/trueforge.md) | Agent harness framework | Harness-as-a-server — one loop behind an HTTP API, with a chat UI, a TypeScript SDK, and an embeddable UI |
 | [DeerFlow](agents/deer-flow.md) | General-purpose autonomous agent | ByteDance's self-hosted "super agent harness": a lead agent with sub-agents, long-term memory, sandboxed execution, chat-app channels and schedules |
 | [nanobot](agents/nanobot.md) | Self-hosted / local runtime | Small-core self-hosted personal agent: one gateway behind a WebUI, TUI and 18 chat channels, with Dream memory and cron automations |
+| [CowAgent](agents/cowagent.md) | Self-hosted / local runtime | Self-hosted personal agent (formerly chatgpt-on-wechat) for a web console, desktop, phone and eleven IM channels including WeChat, Feishu and DingTalk, with file memory, Deep Dream and Self-Evolution |
+| [QwenPaw](agents/qwenpaw.md) | Self-hosted / local runtime | The AgentScope team's self-hosted personal assistant: Console, TUI and desktop app, chat channels from DingTalk to Slack, three-layer ReMe memory and several agents per instance |
+| [ZeroClaw](agents/zeroclaw.md) | Self-hosted / local runtime | Self-hosted agent runtime in a single Rust binary: one agent across chat apps, email, voice and webhooks, with `supervised` autonomy by default so medium-risk actions wait for approval |
+| [NanoClaw](agents/nanoclaw.md) | Self-hosted / local runtime | Always-on assistant whose small Node host runs each agent session in its own Docker container, on the Claude Agent SDK by default, reached from chat apps |
 
 </details>
 
